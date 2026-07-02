@@ -1,0 +1,402 @@
+[
+  {
+    "op": "add_machine",
+    "params": {
+      "machine_id": "5m31yqg9",
+      "init_shift": null,
+      "init_rotation": null
+    },
+    "result": "You have successfully added sub-structure A using machine 5m31yqg9\nExisting Blocks: 33\nExisting Machines: 1\nExisting Blocks: 33\n(The starting block) <ID A_1: Starting Block>\nPosition: [ 0. ,-5. , 5.5]\nAttachable Faces:\nFace label: C, Face center: [ 0., -5.,  6.], Facing towards <straight up>\nFace label: D, Face center: [ 0., -5.,  5.], Facing towards <straight down>\nFace label: F, Face center: [ 0. , -5.5,  5.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "add_machine",
+    "params": {
+      "machine_id": "us7mdz5w",
+      "init_shift": null,
+      "init_rotation": null
+    },
+    "result": "You have successfully added sub-structure B using machine us7mdz5w\nExisting Blocks: 44\nExisting Machines: 2\nExisting Blocks: 33\n(The starting block) <ID A_1: Starting Block>\nPosition: [ 0. ,-5. , 5.5]\nAttachable Faces:\nFace label: C, Face center: [ 0., -5.,  6.], Facing towards <straight up>\nFace label: D, Face center: [ 0., -5.,  5.], Facing towards <straight down>\nFace label: F, Face center: [ 0. , -5.5,  5.5], Facing towards <South with 0.0\u00b0 pitch>\nExisting Blocks: 11\n(The starting block) <ID B_1: Starting Block>\nPosition: [ 0. ,-5. , 7.5]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -5. ,  7.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -5. ,  7.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0., -5.,  8.], Facing towards <straight up>\nFace label: D, Face center: [ 0., -5.,  7.], Facing towards <straight down>\nFace label: F, Face center: [ 0. , -5.5,  7.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_1",
+      "face_a": "D",
+      "block_b": "A_1",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "First vertical truss support at southern end"
+    },
+    "result": "You have successfully added <ID 1: Brace>.\nExisting Blocks: 45\n(First vertical truss support at southern end) <ID 1: Brace>\nConnecting <ID 1: Starting Block> at [ 0. -5.  7.] and <ID 1: Starting Block> at [ 0. -5.  6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_2",
+      "face_a": "D",
+      "block_b": "A_2",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Second vertical truss support"
+    },
+    "result": "You have successfully added <ID 2: Brace>.\nExisting Blocks: 46\n(Second vertical truss support) <ID 2: Brace>\nConnecting <ID 2: Small Wooden Block> at [ 0. -4.  7.] and <ID 2: Small Wooden Block> at [ 0. -4.  6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_3",
+      "face_a": "D",
+      "block_b": "A_3",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Third vertical truss support"
+    },
+    "result": "You have successfully added <ID 3: Brace>.\nExisting Blocks: 47\n(Third vertical truss support) <ID 3: Brace>\nConnecting <ID 3: Small Wooden Block> at [ 0. -3.  7.] and <ID 3: Small Wooden Block> at [ 0. -3.  6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_4",
+      "face_a": "D",
+      "block_b": "A_4",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Fourth vertical truss support"
+    },
+    "result": "You have successfully added <ID 4: Brace>.\nExisting Blocks: 48\n(Fourth vertical truss support) <ID 4: Brace>\nConnecting <ID 4: Small Wooden Block> at [ 0. -2.  7.] and <ID 4: Small Wooden Block> at [ 0. -2.  6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_5",
+      "face_a": "D",
+      "block_b": "A_5",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Fifth vertical truss support"
+    },
+    "result": "You have successfully added <ID 5: Brace>.\nExisting Blocks: 49\n(Fifth vertical truss support) <ID 5: Brace>\nConnecting <ID 5: Small Wooden Block> at [ 0. -1.  7.] and <ID 5: Small Wooden Block> at [ 0. -1.  6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_6",
+      "face_a": "D",
+      "block_b": "A_6",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Sixth vertical truss support"
+    },
+    "result": "You have successfully added <ID 6: Brace>.\nExisting Blocks: 50\n(Sixth vertical truss support) <ID 6: Brace>\nConnecting <ID 6: Small Wooden Block> at [0. 0. 7.] and <ID 6: Small Wooden Block> at [0. 0. 6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_7",
+      "face_a": "D",
+      "block_b": "A_7",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Seventh vertical truss support"
+    },
+    "result": "You have successfully added <ID 7: Brace>.\nExisting Blocks: 51\n(Seventh vertical truss support) <ID 7: Brace>\nConnecting <ID 7: Small Wooden Block> at [0. 1. 7.] and <ID 7: Small Wooden Block> at [0. 1. 6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_8",
+      "face_a": "D",
+      "block_b": "A_8",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Eighth vertical truss support"
+    },
+    "result": "You have successfully added <ID 8: Brace>.\nExisting Blocks: 52\n(Eighth vertical truss support) <ID 8: Brace>\nConnecting <ID 8: Small Wooden Block> at [0. 2. 7.] and <ID 8: Small Wooden Block> at [0. 2. 6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_1",
+      "face_a": "D",
+      "block_b": "A_2",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal truss brace from southern upper to adjacent lower ahead"
+    },
+    "result": "You have successfully added <ID 9: Brace>.\nExisting Blocks: 53\n(Diagonal truss brace from southern upper to adjacent lower ahead) <ID 9: Brace>\nConnecting <ID 1: Starting Block> at [ 0. -5.  7.] and <ID 2: Small Wooden Block> at [ 0. -4.  6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_2",
+      "face_a": "D",
+      "block_b": "A_1",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal truss brace from upper at y=-4 to lower at y=-5"
+    },
+    "result": "You have successfully added <ID 10: Brace>.\nExisting Blocks: 54\n(Diagonal truss brace from upper at y=-4 to lower at y=-5) <ID 10: Brace>\nConnecting <ID 2: Small Wooden Block> at [ 0. -4.  7.] and <ID 1: Starting Block> at [ 0. -5.  6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_9",
+      "face_a": "D",
+      "block_b": "A_9",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Ninth vertical truss support"
+    },
+    "result": "You have successfully added <ID 11: Brace>.\nExisting Blocks: 55\n(Ninth vertical truss support) <ID 11: Brace>\nConnecting <ID 9: Small Wooden Block> at [0. 3. 7.] and <ID 9: Small Wooden Block> at [0. 3. 6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_10",
+      "face_a": "D",
+      "block_b": "A_10",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Tenth vertical truss support"
+    },
+    "result": "You have successfully added <ID 12: Brace>.\nExisting Blocks: 56\n(Tenth vertical truss support) <ID 12: Brace>\nConnecting <ID 10: Small Wooden Block> at [0. 4. 7.] and <ID 10: Small Wooden Block> at [0. 4. 6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_11",
+      "face_a": "D",
+      "block_b": "A_11",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Eleventh vertical truss support"
+    },
+    "result": "You have successfully added <ID 13: Brace>.\nExisting Blocks: 57\n(Eleventh vertical truss support) <ID 13: Brace>\nConnecting <ID 11: Small Wooden Block> at [0. 5. 7.] and <ID 11: Small Wooden Block> at [0. 5. 6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_2",
+      "face_a": "D",
+      "block_b": "A_3",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal truss brace from upper at y=-4 to lower at y=-3"
+    },
+    "result": "You have successfully added <ID 14: Brace>.\nExisting Blocks: 58\n(Diagonal truss brace from upper at y=-4 to lower at y=-3) <ID 14: Brace>\nConnecting <ID 2: Small Wooden Block> at [ 0. -4.  7.] and <ID 3: Small Wooden Block> at [ 0. -3.  6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_3",
+      "face_a": "D",
+      "block_b": "A_2",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal truss brace from upper at y=-3 to lower at y=-4"
+    },
+    "result": "You have successfully added <ID 15: Brace>.\nExisting Blocks: 59\n(Diagonal truss brace from upper at y=-3 to lower at y=-4) <ID 15: Brace>\nConnecting <ID 3: Small Wooden Block> at [ 0. -3.  7.] and <ID 2: Small Wooden Block> at [ 0. -4.  6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_3",
+      "face_a": "D",
+      "block_b": "A_4",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal truss brace from upper at y=-3 to lower at y=-2"
+    },
+    "result": "You have successfully added <ID 16: Brace>.\nExisting Blocks: 60\n(Diagonal truss brace from upper at y=-3 to lower at y=-2) <ID 16: Brace>\nConnecting <ID 3: Small Wooden Block> at [ 0. -3.  7.] and <ID 4: Small Wooden Block> at [ 0. -2.  6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_4",
+      "face_a": "D",
+      "block_b": "A_3",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal truss brace from upper at y=-2 to lower at y=-3"
+    },
+    "result": "You have successfully added <ID 17: Brace>.\nExisting Blocks: 61\n(Diagonal truss brace from upper at y=-2 to lower at y=-3) <ID 17: Brace>\nConnecting <ID 4: Small Wooden Block> at [ 0. -2.  7.] and <ID 3: Small Wooden Block> at [ 0. -3.  6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_4",
+      "face_a": "D",
+      "block_b": "A_5",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal truss brace from upper at y=-2 to lower at y=-1"
+    },
+    "result": "You have successfully added <ID 18: Brace>.\nExisting Blocks: 62\n(Diagonal truss brace from upper at y=-2 to lower at y=-1) <ID 18: Brace>\nConnecting <ID 4: Small Wooden Block> at [ 0. -2.  7.] and <ID 5: Small Wooden Block> at [ 0. -1.  6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_5",
+      "face_a": "D",
+      "block_b": "A_4",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal truss brace from upper at y=-1 to lower at y=-2"
+    },
+    "result": "You have successfully added <ID 19: Brace>.\nExisting Blocks: 63\n(Diagonal truss brace from upper at y=-1 to lower at y=-2) <ID 19: Brace>\nConnecting <ID 5: Small Wooden Block> at [ 0. -1.  7.] and <ID 4: Small Wooden Block> at [ 0. -2.  6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_5",
+      "face_a": "D",
+      "block_b": "A_6",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal truss brace from upper at y=-1 to lower at y=0"
+    },
+    "result": "You have successfully added <ID 20: Brace>.\nExisting Blocks: 64\n(Diagonal truss brace from upper at y=-1 to lower at y=0) <ID 20: Brace>\nConnecting <ID 5: Small Wooden Block> at [ 0. -1.  7.] and <ID 6: Small Wooden Block> at [0. 0. 6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_6",
+      "face_a": "D",
+      "block_b": "A_5",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal truss brace from upper at y=0 to lower at y=-1"
+    },
+    "result": "You have successfully added <ID 21: Brace>.\nExisting Blocks: 65\n(Diagonal truss brace from upper at y=0 to lower at y=-1) <ID 21: Brace>\nConnecting <ID 6: Small Wooden Block> at [0. 0. 7.] and <ID 5: Small Wooden Block> at [ 0. -1.  6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_6",
+      "face_a": "D",
+      "block_b": "A_7",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal truss brace from upper at y=0 to lower at y=1"
+    },
+    "result": "You have successfully added <ID 22: Brace>.\nExisting Blocks: 66\n(Diagonal truss brace from upper at y=0 to lower at y=1) <ID 22: Brace>\nConnecting <ID 6: Small Wooden Block> at [0. 0. 7.] and <ID 7: Small Wooden Block> at [0. 1. 6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_7",
+      "face_a": "D",
+      "block_b": "A_6",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal truss brace from upper at y=1 to lower at y=0"
+    },
+    "result": "You have successfully added <ID 23: Brace>.\nExisting Blocks: 67\n(Diagonal truss brace from upper at y=1 to lower at y=0) <ID 23: Brace>\nConnecting <ID 7: Small Wooden Block> at [0. 1. 7.] and <ID 6: Small Wooden Block> at [0. 0. 6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_7",
+      "face_a": "D",
+      "block_b": "A_8",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal truss brace from upper at y=1 to lower at y=2"
+    },
+    "result": "You have successfully added <ID 24: Brace>.\nExisting Blocks: 68\n(Diagonal truss brace from upper at y=1 to lower at y=2) <ID 24: Brace>\nConnecting <ID 7: Small Wooden Block> at [0. 1. 7.] and <ID 8: Small Wooden Block> at [0. 2. 6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_8",
+      "face_a": "D",
+      "block_b": "A_7",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal truss brace from upper at y=2 to lower at y=1"
+    },
+    "result": "You have successfully added <ID 25: Brace>.\nExisting Blocks: 69\n(Diagonal truss brace from upper at y=2 to lower at y=1) <ID 25: Brace>\nConnecting <ID 8: Small Wooden Block> at [0. 2. 7.] and <ID 7: Small Wooden Block> at [0. 1. 6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_8",
+      "face_a": "D",
+      "block_b": "A_9",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal truss brace from upper at y=2 to lower at y=3"
+    },
+    "result": "You have successfully added <ID 26: Brace>.\nExisting Blocks: 70\n(Diagonal truss brace from upper at y=2 to lower at y=3) <ID 26: Brace>\nConnecting <ID 8: Small Wooden Block> at [0. 2. 7.] and <ID 9: Small Wooden Block> at [0. 3. 6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_9",
+      "face_a": "D",
+      "block_b": "A_8",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal truss brace from upper at y=3 to lower at y=2"
+    },
+    "result": "You have successfully added <ID 27: Brace>.\nExisting Blocks: 71\n(Diagonal truss brace from upper at y=3 to lower at y=2) <ID 27: Brace>\nConnecting <ID 9: Small Wooden Block> at [0. 3. 7.] and <ID 8: Small Wooden Block> at [0. 2. 6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_9",
+      "face_a": "D",
+      "block_b": "A_10",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal truss brace from upper at y=3 to lower at y=4"
+    },
+    "result": "You have successfully added <ID 28: Brace>.\nExisting Blocks: 72\n(Diagonal truss brace from upper at y=3 to lower at y=4) <ID 28: Brace>\nConnecting <ID 9: Small Wooden Block> at [0. 3. 7.] and <ID 10: Small Wooden Block> at [0. 4. 6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_10",
+      "face_a": "D",
+      "block_b": "A_9",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal truss brace from upper at y=4 to lower at y=3"
+    },
+    "result": "You have successfully added <ID 29: Brace>.\nExisting Blocks: 73\n(Diagonal truss brace from upper at y=4 to lower at y=3) <ID 29: Brace>\nConnecting <ID 10: Small Wooden Block> at [0. 4. 7.] and <ID 9: Small Wooden Block> at [0. 3. 6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_10",
+      "face_a": "D",
+      "block_b": "A_11",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal truss brace from upper at y=4 to lower at y=5"
+    },
+    "result": "You have successfully added <ID 30: Brace>.\nExisting Blocks: 74\n(Diagonal truss brace from upper at y=4 to lower at y=5) <ID 30: Brace>\nConnecting <ID 10: Small Wooden Block> at [0. 4. 7.] and <ID 11: Small Wooden Block> at [0. 5. 6.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "B_11",
+      "face_a": "D",
+      "block_b": "A_10",
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Final diagonal truss brace from upper at y=5 to lower at y=4"
+    },
+    "result": "You have successfully added <ID 31: Brace>.\nExisting Blocks: 75\n(Final diagonal truss brace from upper at y=5 to lower at y=4) <ID 31: Brace>\nConnecting <ID 11: Small Wooden Block> at [0. 5. 7.] and <ID 10: Small Wooden Block> at [0. 4. 6.].\t"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 75\n\nMachine Summary: None\n(The starting block) <ID A_1: Starting Block>\nPosition: [ 0. ,-5. , 5.5]\n(Center row block) <ID A_2: Small Wooden Block>\nPosition: [ 0. ,-4. , 5.5]\n(Center row block) <ID A_3: Small Wooden Block>\nPosition: [ 0. ,-3. , 5.5]\n(Center row block) <ID A_4: Small Wooden Block>\nPosition: [ 0. ,-2. , 5.5]\n(Center row block) <ID A_5: Small Wooden Block>\nPosition: [ 0. ,-1. , 5.5]\n(Center row block) <ID A_6: Small Wooden Block>\nPosition: [0. ,0. ,5.5]\n(Center row block) <ID A_7: Small Wooden Block>\nPosition: [0. ,1. ,5.5]\n(Center row block) <ID A_8: Small Wooden Block>\nPosition: [0. ,2. ,5.5]\n(Center row block) <ID A_9: Small Wooden Block>\nPosition: [0. ,3. ,5.5]\n(Center row block) <ID A_10: Small Wooden Block>\nPosition: [0. ,4. ,5.5]\n(Center row block, north end) <ID A_11: Small Wooden Block>\nPosition: [0. ,5. ,5.5]\n(East row block, south end) <ID A_12: Small Wooden Block>\nPosition: [ 1. ,-5. , 5.5]\n(East row block) <ID A_13: Small Wooden Block>\nPosition: [ 1. ,-4. , 5.5]\n(East row block) <ID A_14: Small Wooden Block>\nPosition: [ 1. ,-3. , 5.5]\n(East row block) <ID A_15: Small Wooden Block>\nPosition: [ 1. ,-2. , 5.5]\n(East row block) <ID A_16: Small Wooden Block>\nPosition: [ 1. ,-1. , 5.5]\n(East row block) <ID A_17: Small Wooden Block>\nPosition: [1. ,0. ,5.5]\n(East row block) <ID A_18: Small Wooden Block>\nPosition: [1. ,1. ,5.5]\n(East row block) <ID A_19: Small Wooden Block>\nPosition: [1. ,2. ,5.5]\n(East row block) <ID A_20: Small Wooden Block>\nPosition: [1. ,3. ,5.5]\n(East row block) <ID A_21: Small Wooden Block>\nPosition: [1. ,4. ,5.5]\n(East row block, north end) <ID A_22: Small Wooden Block>\nPosition: [1. ,5. ,5.5]\n(West row block, south end) <ID A_23: Small Wooden Block>\nPosition: [-1. ,-5. , 5.5]\n(West row block) <ID A_24: Small Wooden Block>\nPosition: [-1. ,-4. , 5.5]\n(West row block) <ID A_25: Small Wooden Block>\nPosition: [-1. ,-3. , 5.5]\n(West row block) <ID A_26: Small Wooden Block>\nPosition: [-1. ,-2. , 5.5]\n(West row block) <ID A_27: Small Wooden Block>\nPosition: [-1. ,-1. , 5.5]\n(West row block) <ID A_28: Small Wooden Block>\nPosition: [-1. , 0. , 5.5]\n(West row block) <ID A_29: Small Wooden Block>\nPosition: [-1. , 1. , 5.5]\n(West row block) <ID A_30: Small Wooden Block>\nPosition: [-1. , 2. , 5.5]\n(West row block) <ID A_31: Small Wooden Block>\nPosition: [-1. , 3. , 5.5]\n(West row block) <ID A_32: Small Wooden Block>\nPosition: [-1. , 4. , 5.5]\n(West row block, north end) <ID A_33: Small Wooden Block>\nPosition: [-1. , 5. , 5.5]\n(The starting block) <ID B_1: Starting Block>\nPosition: [ 0. ,-5. , 7.5]\n(Second block in the linear y-axis chain for compressive support) <ID B_2: Small Wooden Block>\nPosition: [ 0. ,-4. , 7.5]\n(Third block in the linear y-axis chain for compressive support) <ID B_3: Small Wooden Block>\nPosition: [ 0. ,-3. , 7.5]\n(Fourth block in the linear y-axis chain for compressive support) <ID B_4: Small Wooden Block>\nPosition: [ 0. ,-2. , 7.5]\n(Fifth block in the linear y-axis chain for compressive support) <ID B_5: Small Wooden Block>\nPosition: [ 0. ,-1. , 7.5]\n(Sixth block in the linear y-axis chain for compressive support) <ID B_6: Small Wooden Block>\nPosition: [0. ,0. ,7.5]\n(Seventh block in the linear y-axis chain for compressive support) <ID B_7: Small Wooden Block>\nPosition: [0. ,1. ,7.5]\n(Eighth block in the linear y-axis chain for compressive support) <ID B_8: Small Wooden Block>\nPosition: [0. ,2. ,7.5]\n(Ninth block in the linear y-axis chain for compressive support) <ID B_9: Small Wooden Block>\nPosition: [0. ,3. ,7.5]\n(Tenth block in the linear y-axis chain for compressive support) <ID B_10: Small Wooden Block>\nPosition: [0. ,4. ,7.5]\n(Eleventh and final block in the linear y-axis chain for compressive support) <ID B_11: Small Wooden Block>\nPosition: [0. ,5. ,7.5]\n(First vertical truss support at southern end) <ID 1: Brace>\nConnecting <ID 1: Starting Block> at [ 0. -5.  7.] and <ID 1: Starting Block> at [ 0. -5.  6.].\t\n(Second vertical truss support) <ID 2: Brace>\nConnecting <ID 2: Small Wooden Block> at [ 0. -4.  7.] and <ID 2: Small Wooden Block> at [ 0. -4.  6.].\t\n(Third vertical truss support) <ID 3: Brace>\nConnecting <ID 3: Small Wooden Block> at [ 0. -3.  7.] and <ID 3: Small Wooden Block> at [ 0. -3.  6.].\t\n(Fourth vertical truss support) <ID 4: Brace>\nConnecting <ID 4: Small Wooden Block> at [ 0. -2.  7.] and <ID 4: Small Wooden Block> at [ 0. -2.  6.].\t\n(Fifth vertical truss support) <ID 5: Brace>\nConnecting <ID 5: Small Wooden Block> at [ 0. -1.  7.] and <ID 5: Small Wooden Block> at [ 0. -1.  6.].\t\n(Sixth vertical truss support) <ID 6: Brace>\nConnecting <ID 6: Small Wooden Block> at [0. 0. 7.] and <ID 6: Small Wooden Block> at [0. 0. 6.].\t\n(Seventh vertical truss support) <ID 7: Brace>\nConnecting <ID 7: Small Wooden Block> at [0. 1. 7.] and <ID 7: Small Wooden Block> at [0. 1. 6.].\t\n(Eighth vertical truss support) <ID 8: Brace>\nConnecting <ID 8: Small Wooden Block> at [0. 2. 7.] and <ID 8: Small Wooden Block> at [0. 2. 6.].\t\n(Diagonal truss brace from southern upper to adjacent lower ahead) <ID 9: Brace>\nConnecting <ID 1: Starting Block> at [ 0. -5.  7.] and <ID 2: Small Wooden Block> at [ 0. -4.  6.].\t\n(Diagonal truss brace from upper at y=-4 to lower at y=-5) <ID 10: Brace>\nConnecting <ID 2: Small Wooden Block> at [ 0. -4.  7.] and <ID 1: Starting Block> at [ 0. -5.  6.].\t\n(Ninth vertical truss support) <ID 11: Brace>\nConnecting <ID 9: Small Wooden Block> at [0. 3. 7.] and <ID 9: Small Wooden Block> at [0. 3. 6.].\t\n(Tenth vertical truss support) <ID 12: Brace>\nConnecting <ID 10: Small Wooden Block> at [0. 4. 7.] and <ID 10: Small Wooden Block> at [0. 4. 6.].\t\n(Eleventh vertical truss support) <ID 13: Brace>\nConnecting <ID 11: Small Wooden Block> at [0. 5. 7.] and <ID 11: Small Wooden Block> at [0. 5. 6.].\t\n(Diagonal truss brace from upper at y=-4 to lower at y=-3) <ID 14: Brace>\nConnecting <ID 2: Small Wooden Block> at [ 0. -4.  7.] and <ID 3: Small Wooden Block> at [ 0. -3.  6.].\t\n(Diagonal truss brace from upper at y=-3 to lower at y=-4) <ID 15: Brace>\nConnecting <ID 3: Small Wooden Block> at [ 0. -3.  7.] and <ID 2: Small Wooden Block> at [ 0. -4.  6.].\t\n(Diagonal truss brace from upper at y=-3 to lower at y=-2) <ID 16: Brace>\nConnecting <ID 3: Small Wooden Block> at [ 0. -3.  7.] and <ID 4: Small Wooden Block> at [ 0. -2.  6.].\t\n(Diagonal truss brace from upper at y=-2 to lower at y=-3) <ID 17: Brace>\nConnecting <ID 4: Small Wooden Block> at [ 0. -2.  7.] and <ID 3: Small Wooden Block> at [ 0. -3.  6.].\t\n(Diagonal truss brace from upper at y=-2 to lower at y=-1) <ID 18: Brace>\nConnecting <ID 4: Small Wooden Block> at [ 0. -2.  7.] and <ID 5: Small Wooden Block> at [ 0. -1.  6.].\t\n(Diagonal truss brace from upper at y=-1 to lower at y=-2) <ID 19: Brace>\nConnecting <ID 5: Small Wooden Block> at [ 0. -1.  7.] and <ID 4: Small Wooden Block> at [ 0. -2.  6.].\t\n(Diagonal truss brace from upper at y=-1 to lower at y=0) <ID 20: Brace>\nConnecting <ID 5: Small Wooden Block> at [ 0. -1.  7.] and <ID 6: Small Wooden Block> at [0. 0. 6.].\t\n(Diagonal truss brace from upper at y=0 to lower at y=-1) <ID 21: Brace>\nConnecting <ID 6: Small Wooden Block> at [0. 0. 7.] and <ID 5: Small Wooden Block> at [ 0. -1.  6.].\t\n(Diagonal truss brace from upper at y=0 to lower at y=1) <ID 22: Brace>\nConnecting <ID 6: Small Wooden Block> at [0. 0. 7.] and <ID 7: Small Wooden Block> at [0. 1. 6.].\t\n(Diagonal truss brace from upper at y=1 to lower at y=0) <ID 23: Brace>\nConnecting <ID 7: Small Wooden Block> at [0. 1. 7.] and <ID 6: Small Wooden Block> at [0. 0. 6.].\t\n(Diagonal truss brace from upper at y=1 to lower at y=2) <ID 24: Brace>\nConnecting <ID 7: Small Wooden Block> at [0. 1. 7.] and <ID 8: Small Wooden Block> at [0. 2. 6.].\t\n(Diagonal truss brace from upper at y=2 to lower at y=1) <ID 25: Brace>\nConnecting <ID 8: Small Wooden Block> at [0. 2. 7.] and <ID 7: Small Wooden Block> at [0. 1. 6.].\t\n(Diagonal truss brace from upper at y=2 to lower at y=3) <ID 26: Brace>\nConnecting <ID 8: Small Wooden Block> at [0. 2. 7.] and <ID 9: Small Wooden Block> at [0. 3. 6.].\t\n(Diagonal truss brace from upper at y=3 to lower at y=2) <ID 27: Brace>\nConnecting <ID 9: Small Wooden Block> at [0. 3. 7.] and <ID 8: Small Wooden Block> at [0. 2. 6.].\t\n(Diagonal truss brace from upper at y=3 to lower at y=4) <ID 28: Brace>\nConnecting <ID 9: Small Wooden Block> at [0. 3. 7.] and <ID 10: Small Wooden Block> at [0. 4. 6.].\t\n(Diagonal truss brace from upper at y=4 to lower at y=3) <ID 29: Brace>\nConnecting <ID 10: Small Wooden Block> at [0. 4. 7.] and <ID 9: Small Wooden Block> at [0. 3. 6.].\t\n(Diagonal truss brace from upper at y=4 to lower at y=5) <ID 30: Brace>\nConnecting <ID 10: Small Wooden Block> at [0. 4. 7.] and <ID 11: Small Wooden Block> at [0. 5. 6.].\t\n(Final diagonal truss brace from upper at y=5 to lower at y=4) <ID 31: Brace>\nConnecting <ID 11: Small Wooden Block> at [0. 5. 7.] and <ID 10: Small Wooden Block> at [0. 4. 6.].\t"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 75\n\nMachine Summary: None\n(The starting block) <ID A_1: Starting Block>\nPosition: [ 0. ,-5. , 5.5]\n(Center row block) <ID A_2: Small Wooden Block>\nPosition: [ 0. ,-4. , 5.5]\n(Center row block) <ID A_3: Small Wooden Block>\nPosition: [ 0. ,-3. , 5.5]\n(Center row block) <ID A_4: Small Wooden Block>\nPosition: [ 0. ,-2. , 5.5]\n(Center row block) <ID A_5: Small Wooden Block>\nPosition: [ 0. ,-1. , 5.5]\n(Center row block) <ID A_6: Small Wooden Block>\nPosition: [0. ,0. ,5.5]\n(Center row block) <ID A_7: Small Wooden Block>\nPosition: [0. ,1. ,5.5]\n(Center row block) <ID A_8: Small Wooden Block>\nPosition: [0. ,2. ,5.5]\n(Center row block) <ID A_9: Small Wooden Block>\nPosition: [0. ,3. ,5.5]\n(Center row block) <ID A_10: Small Wooden Block>\nPosition: [0. ,4. ,5.5]\n(Center row block, north end) <ID A_11: Small Wooden Block>\nPosition: [0. ,5. ,5.5]\n(East row block, south end) <ID A_12: Small Wooden Block>\nPosition: [ 1. ,-5. , 5.5]\n(East row block) <ID A_13: Small Wooden Block>\nPosition: [ 1. ,-4. , 5.5]\n(East row block) <ID A_14: Small Wooden Block>\nPosition: [ 1. ,-3. , 5.5]\n(East row block) <ID A_15: Small Wooden Block>\nPosition: [ 1. ,-2. , 5.5]\n(East row block) <ID A_16: Small Wooden Block>\nPosition: [ 1. ,-1. , 5.5]\n(East row block) <ID A_17: Small Wooden Block>\nPosition: [1. ,0. ,5.5]\n(East row block) <ID A_18: Small Wooden Block>\nPosition: [1. ,1. ,5.5]\n(East row block) <ID A_19: Small Wooden Block>\nPosition: [1. ,2. ,5.5]\n(East row block) <ID A_20: Small Wooden Block>\nPosition: [1. ,3. ,5.5]\n(East row block) <ID A_21: Small Wooden Block>\nPosition: [1. ,4. ,5.5]\n(East row block, north end) <ID A_22: Small Wooden Block>\nPosition: [1. ,5. ,5.5]\n(West row block, south end) <ID A_23: Small Wooden Block>\nPosition: [-1. ,-5. , 5.5]\n(West row block) <ID A_24: Small Wooden Block>\nPosition: [-1. ,-4. , 5.5]\n(West row block) <ID A_25: Small Wooden Block>\nPosition: [-1. ,-3. , 5.5]\n(West row block) <ID A_26: Small Wooden Block>\nPosition: [-1. ,-2. , 5.5]\n(West row block) <ID A_27: Small Wooden Block>\nPosition: [-1. ,-1. , 5.5]\n(West row block) <ID A_28: Small Wooden Block>\nPosition: [-1. , 0. , 5.5]\n(West row block) <ID A_29: Small Wooden Block>\nPosition: [-1. , 1. , 5.5]\n(West row block) <ID A_30: Small Wooden Block>\nPosition: [-1. , 2. , 5.5]\n(West row block) <ID A_31: Small Wooden Block>\nPosition: [-1. , 3. , 5.5]\n(West row block) <ID A_32: Small Wooden Block>\nPosition: [-1. , 4. , 5.5]\n(West row block, north end) <ID A_33: Small Wooden Block>\nPosition: [-1. , 5. , 5.5]\n(The starting block) <ID B_1: Starting Block>\nPosition: [ 0. ,-5. , 7.5]\n(Second block in the linear y-axis chain for compressive support) <ID B_2: Small Wooden Block>\nPosition: [ 0. ,-4. , 7.5]\n(Third block in the linear y-axis chain for compressive support) <ID B_3: Small Wooden Block>\nPosition: [ 0. ,-3. , 7.5]\n(Fourth block in the linear y-axis chain for compressive support) <ID B_4: Small Wooden Block>\nPosition: [ 0. ,-2. , 7.5]\n(Fifth block in the linear y-axis chain for compressive support) <ID B_5: Small Wooden Block>\nPosition: [ 0. ,-1. , 7.5]\n(Sixth block in the linear y-axis chain for compressive support) <ID B_6: Small Wooden Block>\nPosition: [0. ,0. ,7.5]\n(Seventh block in the linear y-axis chain for compressive support) <ID B_7: Small Wooden Block>\nPosition: [0. ,1. ,7.5]\n(Eighth block in the linear y-axis chain for compressive support) <ID B_8: Small Wooden Block>\nPosition: [0. ,2. ,7.5]\n(Ninth block in the linear y-axis chain for compressive support) <ID B_9: Small Wooden Block>\nPosition: [0. ,3. ,7.5]\n(Tenth block in the linear y-axis chain for compressive support) <ID B_10: Small Wooden Block>\nPosition: [0. ,4. ,7.5]\n(Eleventh and final block in the linear y-axis chain for compressive support) <ID B_11: Small Wooden Block>\nPosition: [0. ,5. ,7.5]\n(First vertical truss support at southern end) <ID 1: Brace>\nConnecting <ID 1: Starting Block> at [ 0. -5.  7.] and <ID 1: Starting Block> at [ 0. -5.  6.].\t\n(Second vertical truss support) <ID 2: Brace>\nConnecting <ID 2: Small Wooden Block> at [ 0. -4.  7.] and <ID 2: Small Wooden Block> at [ 0. -4.  6.].\t\n(Third vertical truss support) <ID 3: Brace>\nConnecting <ID 3: Small Wooden Block> at [ 0. -3.  7.] and <ID 3: Small Wooden Block> at [ 0. -3.  6.].\t\n(Fourth vertical truss support) <ID 4: Brace>\nConnecting <ID 4: Small Wooden Block> at [ 0. -2.  7.] and <ID 4: Small Wooden Block> at [ 0. -2.  6.].\t\n(Fifth vertical truss support) <ID 5: Brace>\nConnecting <ID 5: Small Wooden Block> at [ 0. -1.  7.] and <ID 5: Small Wooden Block> at [ 0. -1.  6.].\t\n(Sixth vertical truss support) <ID 6: Brace>\nConnecting <ID 6: Small Wooden Block> at [0. 0. 7.] and <ID 6: Small Wooden Block> at [0. 0. 6.].\t\n(Seventh vertical truss support) <ID 7: Brace>\nConnecting <ID 7: Small Wooden Block> at [0. 1. 7.] and <ID 7: Small Wooden Block> at [0. 1. 6.].\t\n(Eighth vertical truss support) <ID 8: Brace>\nConnecting <ID 8: Small Wooden Block> at [0. 2. 7.] and <ID 8: Small Wooden Block> at [0. 2. 6.].\t\n(Diagonal truss brace from southern upper to adjacent lower ahead) <ID 9: Brace>\nConnecting <ID 1: Starting Block> at [ 0. -5.  7.] and <ID 2: Small Wooden Block> at [ 0. -4.  6.].\t\n(Diagonal truss brace from upper at y=-4 to lower at y=-5) <ID 10: Brace>\nConnecting <ID 2: Small Wooden Block> at [ 0. -4.  7.] and <ID 1: Starting Block> at [ 0. -5.  6.].\t\n(Ninth vertical truss support) <ID 11: Brace>\nConnecting <ID 9: Small Wooden Block> at [0. 3. 7.] and <ID 9: Small Wooden Block> at [0. 3. 6.].\t\n(Tenth vertical truss support) <ID 12: Brace>\nConnecting <ID 10: Small Wooden Block> at [0. 4. 7.] and <ID 10: Small Wooden Block> at [0. 4. 6.].\t\n(Eleventh vertical truss support) <ID 13: Brace>\nConnecting <ID 11: Small Wooden Block> at [0. 5. 7.] and <ID 11: Small Wooden Block> at [0. 5. 6.].\t\n(Diagonal truss brace from upper at y=-4 to lower at y=-3) <ID 14: Brace>\nConnecting <ID 2: Small Wooden Block> at [ 0. -4.  7.] and <ID 3: Small Wooden Block> at [ 0. -3.  6.].\t\n(Diagonal truss brace from upper at y=-3 to lower at y=-4) <ID 15: Brace>\nConnecting <ID 3: Small Wooden Block> at [ 0. -3.  7.] and <ID 2: Small Wooden Block> at [ 0. -4.  6.].\t\n(Diagonal truss brace from upper at y=-3 to lower at y=-2) <ID 16: Brace>\nConnecting <ID 3: Small Wooden Block> at [ 0. -3.  7.] and <ID 4: Small Wooden Block> at [ 0. -2.  6.].\t\n(Diagonal truss brace from upper at y=-2 to lower at y=-3) <ID 17: Brace>\nConnecting <ID 4: Small Wooden Block> at [ 0. -2.  7.] and <ID 3: Small Wooden Block> at [ 0. -3.  6.].\t\n(Diagonal truss brace from upper at y=-2 to lower at y=-1) <ID 18: Brace>\nConnecting <ID 4: Small Wooden Block> at [ 0. -2.  7.] and <ID 5: Small Wooden Block> at [ 0. -1.  6.].\t\n(Diagonal truss brace from upper at y=-1 to lower at y=-2) <ID 19: Brace>\nConnecting <ID 5: Small Wooden Block> at [ 0. -1.  7.] and <ID 4: Small Wooden Block> at [ 0. -2.  6.].\t\n(Diagonal truss brace from upper at y=-1 to lower at y=0) <ID 20: Brace>\nConnecting <ID 5: Small Wooden Block> at [ 0. -1.  7.] and <ID 6: Small Wooden Block> at [0. 0. 6.].\t\n(Diagonal truss brace from upper at y=0 to lower at y=-1) <ID 21: Brace>\nConnecting <ID 6: Small Wooden Block> at [0. 0. 7.] and <ID 5: Small Wooden Block> at [ 0. -1.  6.].\t\n(Diagonal truss brace from upper at y=0 to lower at y=1) <ID 22: Brace>\nConnecting <ID 6: Small Wooden Block> at [0. 0. 7.] and <ID 7: Small Wooden Block> at [0. 1. 6.].\t\n(Diagonal truss brace from upper at y=1 to lower at y=0) <ID 23: Brace>\nConnecting <ID 7: Small Wooden Block> at [0. 1. 7.] and <ID 6: Small Wooden Block> at [0. 0. 6.].\t\n(Diagonal truss brace from upper at y=1 to lower at y=2) <ID 24: Brace>\nConnecting <ID 7: Small Wooden Block> at [0. 1. 7.] and <ID 8: Small Wooden Block> at [0. 2. 6.].\t\n(Diagonal truss brace from upper at y=2 to lower at y=1) <ID 25: Brace>\nConnecting <ID 8: Small Wooden Block> at [0. 2. 7.] and <ID 7: Small Wooden Block> at [0. 1. 6.].\t\n(Diagonal truss brace from upper at y=2 to lower at y=3) <ID 26: Brace>\nConnecting <ID 8: Small Wooden Block> at [0. 2. 7.] and <ID 9: Small Wooden Block> at [0. 3. 6.].\t\n(Diagonal truss brace from upper at y=3 to lower at y=2) <ID 27: Brace>\nConnecting <ID 9: Small Wooden Block> at [0. 3. 7.] and <ID 8: Small Wooden Block> at [0. 2. 6.].\t\n(Diagonal truss brace from upper at y=3 to lower at y=4) <ID 28: Brace>\nConnecting <ID 9: Small Wooden Block> at [0. 3. 7.] and <ID 10: Small Wooden Block> at [0. 4. 6.].\t\n(Diagonal truss brace from upper at y=4 to lower at y=3) <ID 29: Brace>\nConnecting <ID 10: Small Wooden Block> at [0. 4. 7.] and <ID 9: Small Wooden Block> at [0. 3. 6.].\t\n(Diagonal truss brace from upper at y=4 to lower at y=5) <ID 30: Brace>\nConnecting <ID 10: Small Wooden Block> at [0. 4. 7.] and <ID 11: Small Wooden Block> at [0. 5. 6.].\t\n(Final diagonal truss brace from upper at y=5 to lower at y=4) <ID 31: Brace>\nConnecting <ID 11: Small Wooden Block> at [0. 5. 7.] and <ID 10: Small Wooden Block> at [0. 4. 6.].\t"
+  }
+]

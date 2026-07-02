@@ -1,0 +1,144 @@
+# user (default) (TextMessage): 
+
+The plan of the specific sub-structure 2: {'name': 'Symmetric Central Chassis', 'description': 'A minimal vertical frame to which two identical engine units are braced symmetrically to the east and west. The chassis aligns its side faces at the same two heights as the engine’s stacked wooden blocks for rigid dual-point bracing per engine. This maintains symmetry and reduces trajectory deviation.', 'components': '- Base: Default 1x1x1 stone block (mass 0.25)\n        - Structural: Small Wooden Block C (1x1x1, mass 0.3), Small Wooden Block D (1x1x1, mass 0.3), stacked vertically\n        - Connectors: 4 Braces (mass 0.5 each) for engine-to-chassis links (two per engine, upper and lower)', 'assembly': 'Build relative to the chassis base stone and then assemble engines:\n        - Step 1: Place the chassis base stone so its bottom rests at z = 0 (world origin for the assembled rocket). Its center is at (x = 0, y = 0, z = 0.5).\n        - Step 2: Attach Small Wooden Block C to the chassis base’s top (z+) face; C’s center at z = 1.5.\n        - Step 3: Attach Small Wooden Block D to the top (z+) face of C; D’s center at z = 2.5.\n        - Step 4: Position the two completed Engine Units:\n          • East Engine: place its base stone so its center is at (x = +3.0, y = 0.0, z = 0.5). This sets its Block A center at z = 1.5 and Block B center at z = 2.5; the water cannon outlet at z = 0.5.\n          • West Engine: place its base stone so its center is at (x = −3.0, y = 0.0, z = 0.5), mirroring the east engine.\n        - Step 5: Connect Braces (each between free faces of wooden blocks):\n          • East lower brace: from the West face center of East Engine Block A (x = +2.5, y = 0.0, z = 1.5) to the East face center of Chassis Block C (x = +0.5, y = 0.0, z = 1.5).\n          • East upper brace: from the West face center of East Engine Block B (x = +2.5, y = 0.0, z = 2.5) to the East face center of Chassis Block D (x = +0.5, y = 0.0, z = 2.5).\n          • West lower brace: from the East face center of West Engine Block A (x = −2.5, y = 0.0, z = 1.5) to the West face center of Chassis Block C (x = −0.5, y = 0.0, z = 1.5).\n          • West upper brace: from the East face center of West Engine Block B (x = −2.5, y = 0.0, z = 2.5) to the West face center of Chassis Block D (x = −0.5, y = 0.0, z = 2.5).\n        This creates two rigid, mirrored brace pairs, holding both engines symmetrically on either side of the central chassis.', 'motion_control': '- No active motion blocks in the chassis. It provides passive structural alignment. Ensure both engines’ water cannons are mapped to the same Fire control input to operate simultaneously.', 'function': 'Provides structural integrity and a symmetry reference for mounting the engines. The dual-height bracing per engine reduces flex, keeps thrust vectors parallel and centered, and minimizes trajectory deviation.', 'design_requirements': '- Keep Block C and Block D side faces free and aligned with the engine Blocks A and B to accept braces.\n        - Braces must connect between unoccupied wooden block faces, not to water cannons or torches.\n        - Position the two engines equidistant (±3.0 in x) from the chassis centerline for symmetry.\n        - Ensure all components’ lowest points remain at z ≥ 0 to avoid ground intersection.\n        - Positions may be micro‑adjusted in later stages to resolve conflicts based on actual build execution.'}
+
+# drafter (gpt-5) (TextMessage): 
+
+1 - Default Starting Block - Chassis base block (default 1x1x1). Note: center at [0.0, 0.0, 0.5], bottom flush at z = 0.0 - N/A (starting block)
+
+2 - Small Wooden Block - Chassis Block C (lower brace plane; keep east/west faces free) - top face of Block 1 - static structural placement; center at [0.0, 0.0, 1.5]
+
+3 - Small Wooden Block - Chassis Block D (upper brace plane; keep east/west faces free) - top face of Block 2 - static structural placement; center at [0.0, 0.0, 2.5]
+
+4 - Brace - East lower brace linking East Engine Block A to Chassis Block C - east face of Block 2 (Block C) - structural function: solid hinge/brace between East Engine Block A west face center [2.5, 0.0, 1.5] and Chassis Block C east face center [0.5, 0.0, 1.5]; holds east engine’s lower mount rigidly, maintains parallel thrust alignment
+
+5 - Brace - East upper brace linking East Engine Block B to Chassis Block D - east face of Block 3 (Block D) - structural function: solid hinge/brace between East Engine Block B west face center [2.5, 0.0, 2.5] and Chassis Block D east face center [0.5, 0.0, 2.5]; holds east engine’s upper mount rigidly, reduces flex
+
+6 - Brace - West lower brace linking West Engine Block A to Chassis Block C - west face of Block 2 (Block C) - structural function: solid hinge/brace between West Engine Block A east face center [-2.5, 0.0, 1.5] and Chassis Block C west face center [-0.5, 0.0, 1.5]; holds west engine’s lower mount rigidly, mirrors east side
+
+7 - Brace - West upper brace linking West Engine Block B to Chassis Block D - west face of Block 3 (Block D) - structural function: solid hinge/brace between West Engine Block B east face center [-2.5, 0.0, 2.5] and Chassis Block D west face center [-0.5, 0.0, 2.5]; holds west engine’s upper mount rigidly, mirrors east side
+
+Assembly alignment notes:
+- External engine unit placement reference (for brace endpoints): East Engine base at [3.0, 0.0, 0.5]; West Engine base at [-3.0, 0.0, 0.5]. Engine Blocks A and B centers align at z = 1.5 and z = 2.5 respectively; braces above connect strictly to the wooden blocks (not to water cannons or torches).
+- All components’ lowest points are at z ≥ 0 (base bottom at z = 0; wooden blocks span upward).
+- No active motion blocks in this chassis; map both engines’ water cannons to the same Fire control to operate simultaneously.
+
+Position adjustment note:
+- None required at this stage. If later build execution shows interference with engine accessories, we will micro‑adjust brace anchor points by ±0.1 on X while keeping endpoints on the same faces to maintain symmetry and rigidity.
+
+# draft_reviewer (gpt-5) (TextMessage): 
+
+Review of Sub-Structure 2: Symmetric Central Chassis
+
+Assumptions and geometry used
+- Default starting block: 1x1x1 cube, center at (0, 0, 0.5), faces at x = ±0.5, y = ±0.5, z = 0 and 1. Treated as the chassis base.
+- Small Wooden Block: 1x1x1, center-to-face offset = 0.5 along any axis.
+- Brace: no physical volume/collider; must connect two existing attachable faces; endpoints must lie on the respective face planes.
+- Engine units (referenced for brace endpoints): Each engine has a base at (±3.0, 0.0, 0.5); Engine Block A center at (±3.0, 0.0, 1.5), Engine Block B center at (±3.0, 0.0, 2.5). These are 1x1x1 wooden blocks with faces at x = ±3.0 ± 0.5 as appropriate. Braces attach to these A/B blocks, not to cannons/torches.
+
+Step-by-step structural placement and clearance checks
+
+Block 1 (reference): Default starting block, chassis base
+- Center: (0.0, 0.0, 0.5). Bottom at z = 0. No action required.
+
+Block 2: Small Wooden Block C (lower brace plane)
+- Placement: on top (+z face) of Block 1.
+- Center: (0.0, 0.0, 1.5).
+- Neighbor checks (1x1x1 vs 1x1x1; min non-overlap center spacing along any axis is 1.0):
+  - To Block 1 center: Δ = (0, 0, +1.0). z distance = 1.0 = sum of half-heights; face-to-face contact, no overlap.
+  - To Block 3 (D) center: Δ = (0, 0, −1.0). z distance = 1.0; face-to-face contact, no overlap.
+  - To East Engine Block A (3.0, 0.0, 1.5): Δ = (+3.0, 0, 0). x distance = 3.0 > 1.0; no overlap.
+  - To West Engine Block A (−3.0, 0.0, 1.5): Δ = (−3.0, 0, 0). x distance = 3.0 > 1.0; no overlap.
+  - To East Engine Block B (3.0, 0.0, 2.5): Δ = (+3.0, 0, +1.0). x distance = 3.0 > 1.0; no overlap.
+  - To West Engine Block B (−3.0, 0.0, 2.5): Δ = (−3.0, 0, +1.0). x distance = 3.0 > 1.0; no overlap.
+- Side faces (east/west) are free for braces as specified.
+
+Block 3: Small Wooden Block D (upper brace plane)
+- Placement: on top (+z face) of Block 2.
+- Center: (0.0, 0.0, 2.5).
+- Neighbor checks:
+  - To Block 2 (C): Δ = (0, 0, +1.0). z distance = 1.0; face-to-face contact, no overlap.
+  - To Block 1 (base): Δ = (0, 0, +2.0). z distance = 2.0 > 1.0; no overlap.
+  - To East Engine Block B (3.0, 0.0, 2.5): Δ = (+3.0, 0, 0). x distance = 3.0 > 1.0; no overlap.
+  - To West Engine Block B (−3.0, 0.0, 2.5): Δ = (−3.0, 0, 0). x distance = 3.0 > 1.0; no overlap.
+  - To East Engine Block A (3.0, 0.0, 1.5): Δ = (+3.0, 0, −1.0). x distance = 3.0 > 1.0; no overlap.
+  - To West Engine Block A (−3.0, 0.0, 1.5): Δ = (−3.0, 0, −1.0). x distance = 3.0 > 1.0; no overlap.
+- Side faces (east/west) are free for braces as specified.
+
+Connectors (Braces): All have no volume; collision-free by definition. Validate endpoints and on-face placement:
+
+Brace 4: East lower brace (Engine A west face to Chassis C east face)
+- Endpoints given: (2.5, 0.0, 1.5) ↔ (0.5, 0.0, 1.5).
+- On-face verification:
+  - East Engine Block A center (3.0, 0.0, 1.5), west face plane x = 3.0 − 0.5 = 2.5 → OK.
+  - Chassis Block C center (0.0, 0.0, 1.5), east face plane x = 0.0 + 0.5 = 0.5 → OK.
+- Span/length: 2.0 along x. Valid two-block connection.
+
+Brace 5: East upper brace (Engine B west face to Chassis D east face)
+- Endpoints: (2.5, 0.0, 2.5) ↔ (0.5, 0.0, 2.5).
+- On-face verification:
+  - East Engine Block B center (3.0, 0.0, 2.5), west face x = 2.5 → OK.
+  - Chassis Block D center (0.0, 0.0, 2.5), east face x = 0.5 → OK.
+- Span/length: 2.0 along x. Valid two-block connection.
+
+Brace 6: West lower brace (Engine A east face to Chassis C west face)
+- Endpoints: (−2.5, 0.0, 1.5) ↔ (−0.5, 0.0, 1.5).
+- On-face verification:
+  - West Engine Block A center (−3.0, 0.0, 1.5), east face x = −3.0 + 0.5 = −2.5 → OK.
+  - Chassis Block C center (0.0, 0.0, 1.5), west face x = −0.5 → OK.
+- Span/length: 2.0 along x. Valid two-block connection.
+
+Brace 7: West upper brace (Engine B east face to Chassis D west face)
+- Endpoints: (−2.5, 0.0, 2.5) ↔ (−0.5, 0.0, 2.5).
+- On-face verification:
+  - West Engine Block B center (−3.0, 0.0, 2.5), east face x = −2.5 → OK.
+  - Chassis Block D center (0.0, 0.0, 2.5), west face x = −0.5 → OK.
+- Span/length: 2.0 along x. Valid two-block connection.
+
+Global ground-clearance check
+- All cubes: lowest z faces at z = 0 (chassis base and engine bases). All other elements are above z = 0. Braces have no volume; their endpoints lie at z = 1.5 and 2.5. Requirement z ≥ 0 satisfied.
+
+Functional validation
+- No active motion blocks on chassis; it serves as a rigid alignment frame.
+- Dual-height brace pairs per engine create symmetric, two-point connections at z = 1.5 and z = 2.5. This substantially reduces flex and helps maintain parallel thrust vectors.
+- Braces connect between unoccupied wooden faces as specified. Note: This is contingent on the engine Blocks A and B having their west/east faces free. From the provided engine placement reference, this is consistent.
+- Control mapping note (both engines’ water cannons to same Fire input) is external to this sub-structure; no conflict detected here.
+
+Physical feasibility assessment
+- Geometry is symmetric about the chassis centerline; engine placements at x = ±3.0 are equidistant. Braces are equal length (2.0) and mirrored, so net structural and thrust symmetry is preserved.
+- Face-to-face stacking of chassis blocks is correct; no overlaps detected.
+- The plan reduces trajectory deviation by aligning bracing planes with engine block heights, providing moment resistance against pitch/yaw induced by recoil.
+
+Issues/clarifications
+- Micro-adjustment note: Adjusting brace endpoints by ±0.1 on X while “keeping endpoints on the same faces” is not valid. The x-coordinate of a face anchor is fixed by the face plane (e.g., x = 2.5 for the west face of an east engine block, x = 0.5 for the east face of a chassis block). If interference occurs, adjust along the face plane (y and/or z), not along x. This does not affect the current design but should be corrected for future iterations.
+- Brace connectivity dependency: This sub-structure assumes the engine Blocks A and B exist at the stated coordinates. If those are not present at assembly time, the braces would violate the rule that a brace must connect two existing attachable faces.
+
+Conclusion
+- Structural integrity: Pass. All placements are collision-free, with proper face-to-face contacts and brace endpoints lying exactly on valid face planes.
+- Functional implementation: Pass. Braces connect the correct faces at two heights per engine, maintaining symmetry and alignment. No improper attachments to water cannons or torches.
+- Physical feasibility: Pass. Symmetry, clearances, and brace geometry are appropriate to minimize trajectory deviation.
+
+Approval
+The blueprint, as specified, meets the design requirements and passes all checks, with the advisory to adjust brace anchors along y/z (not x) if micro-adjustments are needed later.
+
+TERMINATE
+
+# drafter (gpt-5) (TextMessage): 
+
+1 - Default Starting Block - Chassis base block (default 1x1x1; center at [0.0, 0.0, 0.5], bottom at z = 0.0) - N/A (starting block)
+
+2 - Small Wooden Block - Chassis Block C (lower brace plane; keep east/west faces clear) - top face of Block 1
+
+3 - Small Wooden Block - Chassis Block D (upper brace plane; keep east/west faces clear) - top face of Block 2
+
+4 - Brace - East lower brace linking East Engine Block A (west face) to Chassis Block C (east face) - east face of Block 2 - structural function: solid hinge/brace between endpoints [2.5, 0.0, 1.5] (engine A west face center) and [0.5, 0.0, 1.5] (Block C east face center)
+
+5 - Brace - East upper brace linking East Engine Block B (west face) to Chassis Block D (east face) - east face of Block 3 - structural function: solid hinge/brace between endpoints [2.5, 0.0, 2.5] (engine B west face center) and [0.5, 0.0, 2.5] (Block D east face center)
+
+6 - Brace - West lower brace linking West Engine Block A (east face) to Chassis Block C (west face) - west face of Block 2 - structural function: solid hinge/brace between endpoints [-2.5, 0.0, 1.5] (engine A east face center) and [-0.5, 0.0, 1.5] (Block C west face center)
+
+7 - Brace - West upper brace linking West Engine Block B (east face) to Chassis Block D (west face) - west face of Block 3 - structural function: solid hinge/brace between endpoints [-2.5, 0.0, 2.5] (engine B east face center) and [-0.5, 0.0, 2.5] (Block D west face center)
+
+Position adjustment note:
+- None required. If later build execution reveals interference with engine accessories, we will micro-adjust brace anchor points by ±0.1 on X while keeping endpoints on the same faces to maintain symmetry and rigidity.
+

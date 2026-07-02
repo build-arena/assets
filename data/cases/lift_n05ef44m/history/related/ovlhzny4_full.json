@@ -1,0 +1,113 @@
+[
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "central chassis base; origin reference - initial base"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "lower spine segment C0; EAST/WEST faces reserved for Braces"
+    },
+    "result": "You have successfully added <ID 2: Small Wooden Block>.\nExisting Blocks: 2\n(lower spine segment C0; EAST/WEST faces reserved for Braces) <ID 2: Small Wooden Block>\nPosition: [0.,0.,1.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "upper spine segment C1; EAST/WEST faces reserved for Braces"
+    },
+    "result": "You have successfully added <ID 3: Small Wooden Block>.\nExisting Blocks: 3\n(upper spine segment C1; EAST/WEST faces reserved for Braces) <ID 3: Small Wooden Block>\nPosition: [0.,0.,2.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 3\n\nMachine Summary: central chassis base; origin reference - initial base\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\n(lower spine segment C0; EAST/WEST faces reserved for Braces) <ID 2: Small Wooden Block>\nPosition: [0.,0.,1.]\n(upper spine segment C1; EAST/WEST faces reserved for Braces) <ID 3: Small Wooden Block>\nPosition: [0.,0.,2.]"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 3\n\nMachine Summary: central chassis base; origin reference - initial base\n(lower spine segment C0; EAST/WEST faces reserved for Braces) <ID 2: Small Wooden Block>\nPosition: [0.,0.,1.]\n(upper spine segment C1; EAST/WEST faces reserved for Braces) <ID 3: Small Wooden Block>\nPosition: [0.,0.,2.]\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]"
+  },
+  {
+    "op": "reset",
+    "params": {},
+    "result": "The machine has been reset, please start again."
+  },
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "central chassis base; origin reference - initial base"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "lower spine segment C0; EAST/WEST faces reserved for Braces"
+    },
+    "result": "You have successfully added <ID 2: Small Wooden Block>.\nExisting Blocks: 2\n(lower spine segment C0; EAST/WEST faces reserved for Braces) <ID 2: Small Wooden Block>\nPosition: [0.,0.,1.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "upper spine segment C1; EAST/WEST faces reserved for Braces"
+    },
+    "result": "You have successfully added <ID 3: Small Wooden Block>.\nExisting Blocks: 3\n(upper spine segment C1; EAST/WEST faces reserved for Braces) <ID 3: Small Wooden Block>\nPosition: [0.,0.,2.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "reset",
+    "params": {},
+    "result": "The machine has been reset, please start again."
+  },
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "central chassis base; origin reference - initial base"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  }
+]

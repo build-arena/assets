@@ -1,0 +1,452 @@
+# user (default) (TextMessage): 
+
+The plan of the specific sub-structure 1: {'name': 'Steam Rocket Engine Unit', 'description': 'A single-direction rocket engine that produces upward thrust via a downward-pointing water cannon operated in steam mode by a downward-facing torch heating its inlet end. It is built as a vertical stack so the nozzle sits above ground, avoiding collisions at liftoff and ensuring the torch is safely out of the steam plume.', 'components': '- Base: Default 1x1x1 stone block (mass 0.25)\n        - Structural: Small Wooden Block A (1x1x1, mass 0.3), Small Wooden Block B (1x1x1, mass 0.3)\n        - Propulsion: Water Cannon (1.75x1x1, mass 1.5)\n        - Heat Source: Torch (1.5x0.5x0.5, mass 1.0)', 'assembly': 'Build relative to the engine’s own base stone (centered initially at its own origin; later positioned in the overall assembly):\n        - Step 1: Attach Small Wooden Block A to the top (z+) face of the base stone. This places Block A’s center 0.5 units above the base’s top face center (A’s center ends at z = base center z + 1.0).\n        - Step 2: Attach Small Wooden Block B to the top (z+) face of Block A so Block B’s center is at z = base center z + 2.0.\n        - Step 3: Attach the Water Cannon to the bottom (z−) face of Block B, oriented to point straight down (negative z). The cannon’s center sits 0.5 units below Block B’s bottom face; its outlet end is 1.0 unit below the cannon center and its inlet end is 0.75 unit above the cannon center.\n          • With base center at z = 0.5 (ground), Block A center at z = 1.5 and Block B center at z = 2.5, the cannon center is at z = 1.5; the outlet end is at z = 0.5 (safely above ground), and the inlet end is at z = 2.25.\n        - Step 4: Attach the Torch to the top (z+) face of Block B, oriented to point straight down (negative z). The torch body sits 0.5 units above Block B’s top face, and the flame center is 1.0 unit below the torch body center, placing the heating sphere center at z = 2.5. This is 0.25 units above the water cannon inlet (z = 2.25), so the 0.3-radius heating sphere overlaps the inlet end. This reliably triggers steam mode while keeping the torch clear of the downward steam plume.\n        - Reserve faces for bracing: Leave Block A’s west/east faces and Block B’s west/east faces free for brace connections to the chassis in the final assembly.', 'motion_control': '- Control: Configure this engine’s Water Cannon to respond to the shared Fire control input. No control is needed for the torch; it remains lit until extinguished (placement above the nozzle minimizes extinguishing risk).\n        - Expected behavior: When fired, the cannon produces steam-powered recoil upward (~13.76 units of mass-equivalent thrust per cannon). The engine provides thrust in a single direction (up) continuously.', 'function': 'Provides upward propulsion. One unit is used for the east side and one identical unit for the west side of the rocket to achieve symmetric thrust.', 'design_requirements': '- Keep the water cannon axis exactly vertical (pointing down) for maximum vertical lift.\n        - Ensure the torch’s heating sphere overlaps the water cannon inlet end to trigger steam mode while staying out of the downward plume.\n        - Maintain Block A and Block B side faces unoccupied for brace connection to the chassis.\n        - The lowest part of the cannon (outlet) must remain at or above z = 0.5 so nothing intersects the ground at placement.\n        - Positions may be micro‑adjusted in later stages to resolve conflicts based on actual build execution.'}
+
+# drafter (gpt-5) (TextMessage): 
+
+1 - Base Starting Block - default 1x1x1 cubic base (mass 0.25) with center at z = 0.5 (ground reference) - starting reference
+
+2 - Small Wooden Block A - first vertical riser above base; reserve west/east faces for later bracing - top face of Block 1
+
+3 - Small Wooden Block B - second vertical riser above A; reserve west/east faces for later bracing - top face of Block 2
+
+4 - Water Cannon - downward-pointing nozzle attached under Block B; center sits 0.5 units below Block B’s bottom face; inlet end is 0.75 units above cannon center; outlet end is 1.0 unit below cannon center - bottom face of Block 3 - fires straight down (negative z); recoil thrust straight up; configure to respond to shared Fire control; operate in steam mode by heating inlet end
+
+5 - Torch - downward-facing heater attached above Block B; torch body center sits 0.5 units above Block B’s top face; flame/heating sphere center sits 1.0 unit below torch body center (radius 0.3), overlapping the cannon inlet end - top face of Block 3 - flame points straight down (negative z); remains lit (no control); purpose is to heat the Water Cannon inlet to trigger steam mode while staying out of the downward plume
+
+Assembly notes:
+- With the base center at z = 0.5, Block A center at z = 1.5, and Block B center at z = 2.5:
+  • Water Cannon center is at z = 1.5; outlet end at z = 0.5 (at/above ground requirement satisfied); inlet end at z = 2.25.
+  • Torch body center is at z = 3.5; flame/heating sphere center at z = 2.5, which is 0.25 units above the inlet end (overlap within the 0.3 radius ensures steam mode).
+- Keep west/east faces of Blocks A and B unoccupied to allow brace connections to the chassis during final assembly.
+- Motion/control behavior: Water Cannon uses the shared Fire control input; Torch has no control and remains lit until extinguished.
+
+# draft_reviewer (gpt-5) (TextMessage): 
+
+Review assumptions and coordinate frame
+- I take the base block’s center as (x=0, y=0, z=0.5). All listed components are stacked coaxially (same x, y as the base). Where face offsets are specified by the part definitions (e.g., water cannon center is 0.5 away from the attached face along the face normal; torch body center is 0.5 away from its attached face along the face normal), I use those exactly.
+
+Step-by-step structural check (placement, center coordinates, neighbor distances, overlap tests)
+
+1) Base starting block (1x1x1)
+- Center: (0, 0, 0.5); extents in z: [0.0, 1.0].
+- Neighbors at this stage: none.
+- Overlaps: none.
+
+2) Small Wooden Block A (1x1x1)
+- Attachment: on the base top face (z+).
+- Center: z = 0.5 + 1.0 = 1.5; full center (0, 0, 1.5); extents in z: [1.0, 2.0].
+- Distances to neighboring centers:
+  • To Base: |Δz| = |1.5 − 0.5| = 1.0.
+- Minimum required separation along z to avoid overlap: 0.5 (base half-height) + 0.5 (Block A half-height) = 1.0.
+- Result: face-to-face contact only; no overlap. OK.
+- Side-face reservation: West/East faces remain unoccupied. OK.
+
+3) Small Wooden Block B (1x1x1)
+- Attachment: on Block A top face (z+).
+- Center: z = 1.5 + 1.0 = 2.5; full center (0, 0, 2.5); extents in z: [2.0, 3.0].
+- Distances to neighboring centers:
+  • To Block A: |Δz| = |2.5 − 1.5| = 1.0.
+  • To Base: |Δz| = |2.5 − 0.5| = 2.0.
+- Minimum required separation along z:
+  • A–B: 0.5 + 0.5 = 1.0 → OK (face-contact, no overlap).
+  • Base–B: 0.5 + 0.5 = 1.0 → 2.0 ≥ 1.0 → OK.
+- Side-face reservation: West/East faces remain unoccupied. OK.
+
+4) Water Cannon (length along firing axis = 1.75; width = 1; height = 1)
+- Attachment: to Block B bottom face (z−), oriented to point straight down (−z).
+- By spec: the cannon center is 0.5 units away from the attached face along the face normal. For a bottom face, that means 0.5 below the face.
+- Block B bottom face is at z = 2.5 − 0.5 = 2.0 → Water Cannon center z = 2.0 − 0.5 = 1.5; full center (0, 0, 1.5).
+- Axis endpoints (along z):
+  • Inlet end: center + 0.75 → z = 1.5 + 0.75 = 2.25 (toward +z).
+  • Outlet end: center − 1.0 → z = 1.5 − 1.0 = 0.5 (toward −z).
+- Occupied z-span by cannon body: [0.5, 2.25].
+- Distances to neighboring centers and overlap checks (use half-lengths along each axis):
+  • Against Base: center separation |Δz| = |1.5 − 0.5| = 1.0.
+    - Required along z: cannon half-length 0.875 + base half-height 0.5 = 1.375 → 1.0 < 1.375 → overlap in z.
+    - In x/y, centers coincide and half-widths are 0.5 each → overlap in x and y as well.
+    - Conclusion: Water Cannon overlaps the Base block (z overlap range is [0.5, 1.0]).
+  • Against Block A: center separation |Δz| = |1.5 − 1.5| = 0.
+    - Required along z: 0.875 + 0.5 = 1.375 → 0 < 1.375 → severe overlap in z.
+    - In x/y, centers coincide → overlap in x and y.
+    - Conclusion: Water Cannon volume overlaps Block A extensively (Block A z-range [1.0, 2.0] lies inside cannon z-span).
+  • Against Block B: center separation |Δz| = |1.5 − 2.5| = 1.0.
+    - Required along z: 0.875 + 0.5 = 1.375 → 1.0 < 1.375 → overlap in z.
+    - In x/y, centers coincide → overlap in x and y.
+    - Conclusion: Water Cannon intrudes 0.25 units into Block B above its bottom face (2.0 to 2.25).
+- Attachment validity: While “attached to bottom face of Block B” is an allowed attachment, the cannon’s geometry always extends 0.25 above that face (because 0.75 above center − 0.5 offset = 0.25), guaranteeing intrusion into the host block. This violates the no-overlap requirement.
+
+5) Torch (shape reported as [1.5, 0.5, 0.5]; functional offsets: 0.5 away from face along face normal, flame/heating sphere center 1.0 from body center along the torch’s shaft direction)
+- Attachment: to Block B top face (z+), pointing straight down (−z).
+- Torch body center: by spec, 0.5 above the top face → z = 3.0 + 0.5 = 3.5; full center (0, 0, 3.5).
+- Heating sphere center: 1.0 below torch body center along −z → z = 3.5 − 1.0 = 2.5; radius = 0.3.
+- Proximity to Water Cannon inlet:
+  • Water Cannon inlet z = 2.25; Torch heating sphere center z = 2.5 → |Δz| = 0.25, x/y coincide.
+  • 0.25 < 0.3 radius → inlet end lies inside the heating sphere. Heating coverage is achieved.
+- Collision check (Torch vs Block B):
+  • The torch support is offset 0.5 above the top face (outside the block); the vertical shaft extends downward in free space in front of the torch, not through the block. No geometric intrusion into Block B’s solid volume is implied by the given torch geometry. Acceptable (no overlap).
+- Collision check (Torch vs Water Cannon):
+  • Torch body center at z=3.5; cannon body spans [0.5, 2.25]. Separation is at least 1.25 in z; no overlap.
+
+Structural integrity conclusion
+- The Water Cannon placement creates multiple overlaps:
+  • With Block B (intrudes 0.25 above the bottom face).
+  • With Block A (overlaps its entire 1.0 ≤ z ≤ 2.0 span).
+  • With the Base block (overlaps 0.5 ≤ z ≤ 1.0).
+- Per the review requirements, any overlap must be flagged and causes failure. Therefore, the current sub-structure does not pass structural integrity.
+
+Functional validation
+- Orientation: The cannon is described to point straight down, which is correct for upward recoil. Torch is placed above and aimed down, and its heating sphere does overlap the inlet by 0.25 (< 0.3 radius), meeting the steam-mode heating requirement.
+- Motion/control: Configured to shared Fire input; torch remains lit. In principle, this would work to generate steam-mode thrust (~13.76 mass-equivalent) if the structure were collision-free.
+- Mounting and alignment: Despite correct orientation, the cannon’s mounting geometry into the bottom face inherently intrudes into the host block and, with the current stack, into neighboring blocks and the base. As mounted, motion would be obstructed by overlapping solids and is not verifiably feasible.
+
+Physical feasibility
+- Thrust and direction are theoretically correct. However, the cannon cannot physically occupy the specified space without colliding with the base and the risers. Steam operation might also heat or damage overlapping wooden blocks. Thus, the physical system is not feasible as currently assembled.
+
+Specific reasons for failure and what must change
+- Fundamental geometric conflict: A Water Cannon attached to a 1x1x1 block’s bottom face and oriented downward will always extend 0.25 units into that block due to the 0.5 mounting offset and 0.75 inlet-side length. With a flush vertical stack over the base, the cannon’s body z-span [0.5, 2.25] also overlaps the underlying riser (Block A) and base.
+- Therefore, the plan’s Step 3 (bottom-face mount of the cannon under Block B, with the stack centered over the base) is incompatible with the no-overlap requirement.
+
+Corrective recommendations (one viable path)
+- Mount the Water Cannon on a vertical side face of Block B (east or west), still oriented to point down (−z). This avoids the intrinsic host-block intrusion created by bottom-face mounting.
+- Then reposition the Torch so its heating sphere overlaps the cannon inlet:
+  • For a side-face-mounted cannon, the cannon center z is 2.5, inlet z = 3.25. The current torch placement on Block B’s top face yields heating sphere z = 2.5, which is too far (Δz = 0.75 > 0.3).
+  • Add one more small wooden block above Block B (a “Block C”) and attach the torch to Block C’s top face pointing down. With Block C center at z = 3.5, top face at z = 4.0 → torch body center at 4.5 → heating sphere center at 3.5 → Δz to inlet = |3.5 − 3.25| = 0.25 (< 0.3), satisfying steam heating.
+- Also, laterally offset the entire unit at least 1.0 units in x or y from the base center to ensure the cannon’s 1×1 cross section does not overlap the 1×1 base footprint, since the cannon occupies [0.5, 2.25] in z.
+- Preserve Block A and Block B west/east faces for bracing as required.
+
+If bottom-face mounting is absolute (cannot be changed):
+- Then the design is untenable under the no-overlap rule. Bottom-face mounting of this cannon into a 1×1×1 solid will always intrude 0.25 into that solid, and with the present stack it necessarily overlaps the base and Block A. You would need a non-solid host (e.g., a cutout or a different mount geometry) not available in the current block set.
+
+Decision
+- FAIL: The current blueprint does not meet the structural requirements due to multiple overlaps caused by the Water Cannon placement. Please revise the mounting approach (preferably side-face mount for the cannon plus adjusted torch placement as outlined) and provide updated coordinates so I can re-run the structural and functional checks.
+
+# drafter (gpt-5) (TextMessage): 
+
+Revision to resolve overlaps and preserve bracing faces
+
+Position adjustment note:
+- Moved Water Cannon from Block B bottom face to Block B north face (y+), still pointing straight down, to eliminate host intrusion and overlaps with Base and Block A while keeping Block A/B west/east faces free for bracing.
+- Added Small Wooden Block C above Block B to raise the Torch so its heating sphere overlaps the Water Cannon inlet in side-mount configuration without entering the plume.
+- Functional intent unchanged: single-direction upward thrust via downward-pointing steam Water Cannon; Torch heats inlet to trigger steam mode; water cannon axis remains exactly vertical.
+
+Blueprint declaration (build each new block at the center of an unoccupied face of the previous block)
+
+1 - Base Starting Block - default 1x1x1 cubic base (mass 0.25); global reference with center at (0, 0, 0.5) - starting reference
+
+2 - Small Wooden Block A - first vertical riser; reserve west/east faces for bracing - top face of Block 1
+
+3 - Small Wooden Block B - second vertical riser; reserve west/east faces for bracing - top face of Block 2
+
+4 - Small Wooden Block C - torch riser to align heating sphere with side-mounted cannon inlet - top face of Block 3
+
+5 - Water Cannon - downward-pointing propulsion unit; mounted on a vertical side to avoid intrusion; center offset 0.5 outward from face - north face of Block 3 - fires straight down (negative z) producing upward recoil; configure to shared Fire control; intended to operate in steam mode via torch heating of inlet
+
+6 - Torch - downward-facing heater; center offset 0.5 above the attached top face; flame/heating sphere 1.0 below body center (radius 0.3) - top face of Block 4 - flame points straight down (negative z); no control (remains lit); heats Water Cannon inlet to trigger steam mode while staying clear of the downward plume
+
+Assembly and coordinate notes (using global frame: +x east, +y north, +z up)
+
+- Base (Block 1): center (0, 0, 0.5); z extents [0.0, 1.0].
+- Block A (Block 2): attached on top of Base; center (0, 0, 1.5); z extents [1.0, 2.0]. West/East faces unused.
+- Block B (Block 3): attached on top of A; center (0, 0, 2.5); z extents [2.0, 3.0]. West/East faces unused.
+- Block C (Block 4): attached on top of B; center (0, 0, 3.5); z extents [3.0, 4.0].
+
+Water Cannon (Block 5):
+- Attachment: Block 3 north face (vertical; face center at (0, +0.5, 2.5)).
+- Center: (0, +1.0, 2.5) due to 0.5 offset outward along +y.
+- Axis and endpoints along z: inlet z = 2.5 + 0.75 = 3.25; outlet z = 2.5 − 1.0 = 1.5.
+- Occupied spans: x ∈ [−0.5, +0.5], y ∈ [+0.5, +1.5], z ∈ [1.5, 3.25].
+- Overlap checks:
+  • vs Base: separated in z (cannon z ≥ 1.5, base z ≤ 1.0) → no overlap.
+  • vs Block A: separated along y (center Δy = 1.0 equals half-width sum 1.0 → face contact only); no overlap.
+  • vs Block B (host): separated along y (center Δy = 1.0 equals half-width sum 1.0 → face contact only); no overlap.
+- Lowest outlet z = 1.5 ≥ 0.5 → meets “no ground contact” requirement.
+- Axis perfectly vertical, pointing −z.
+
+Torch (Block 6):
+- Attachment: Block 4 top face; body center (0, 0, 4.5) via 0.5 offset above top face.
+- Heating sphere center (flame): (0, 0, 3.5); radius 0.3.
+- Proximity to Water Cannon inlet: inlet at z = 3.25; |Δz| = 0.25 < 0.3 → inlet lies inside heating sphere, ensuring steam mode.
+- Torch body and shaft occupy free space above Block C; clear of cannon body; sphere sits above plume region.
+
+Controls and behavior
+- Water Cannon: configure to shared Fire input; when active in steam mode, delivers ~13.76 units of mass-equivalent upward thrust.
+- Torch: no control; remains lit until extinguished; positioned to avoid direct exposure to downward steam plume while heating the cannon inlet.
+
+Reserved faces for later bracing
+- Block A and Block B west/east faces remain unoccupied, as required for chassis bracing.
+- Cannon uses Block B north face (y+), not west/east.
+
+Micro-adjustment readiness
+- If later chassis integration reveals conflicts, we can:
+  • Swap the cannon to the south face (y−) with equivalent geometry (center (0, −1.0, 2.5); inlet z 3.25; outlet z 1.5) without changing function.
+  • Nudge torch mounting ±0.1 in x/y (by rotating its horizontal support) while keeping the heating sphere centered at (0, 0, 3.5), if needed to avoid nearby parts.
+
+# draft_reviewer (gpt-5) (TextMessage): 
+
+Review assumptions and coordinate frame
+- Global frame: +x east, +y north, +z up.
+- Base block (1×1×1) center is at (0, 0, 0.5). All 1×1×1 blocks have half-extents (0.5, 0.5, 0.5).
+- Water Cannon oriented vertically (axis along z), with overall axis length 1.75; we use half-extent along z = 0.875 and half-extents along x,y = 0.5.
+- Torch mounting offsets per spec: body center sits 0.5 along the face normal from the face; heating sphere center is at body center + 1.0 along the torch’s “flame” direction. Sphere radius = 0.3.
+
+Step-by-step structural integrity (positions, neighbor distances, overlap checks)
+
+1) Block 1: Base (given)
+- Center: (0, 0, 0.5); z-extents: [0.0, 1.0].
+- Neighbors: none at this step.
+
+2) Block 2: Small Wooden Block A
+- Attachment: Base top (+z) face.
+- Center: (0, 0, 1.5); z-extents: [1.0, 2.0].
+- Neighbor checks:
+  • vs Base: Δ = (0, 0, 1.0); half-sums = (1.0, 1.0, 1.0).
+    - x: 0 < 1.0, y: 0 < 1.0, z: 1.0 = 1.0 → face contact only along z; no overlap. OK.
+- Side-face reservation (A west/east): unoccupied. OK.
+
+3) Block 3: Small Wooden Block B
+- Attachment: A top (+z) face.
+- Center: (0, 0, 2.5); z-extents: [2.0, 3.0].
+- Neighbor checks:
+  • vs A: Δ = (0, 0, 1.0); half-sums = (1.0, 1.0, 1.0) → face contact along z; no overlap.
+  • vs Base: Δ = (0, 0, 2.0) → separated; no overlap.
+- Side-face reservation (B west/east): unoccupied. OK.
+
+4) Block 4: Small Wooden Block C
+- Attachment: B top (+z) face.
+- Center: (0, 0, 3.5); z-extents: [3.0, 4.0].
+- Neighbor checks:
+  • vs B: Δ = (0, 0, 1.0); half-sums = (1.0, 1.0, 1.0) → face contact along z; no overlap.
+  • vs A/Base: clearly separated in z; no overlap.
+
+5) Block 5: Water Cannon (mounted on B north face, axis vertical, firing −z)
+- Attachment face: B north (+y) face; face center = (0, 0.5, 2.5).
+- Cannon center (0.5 outward along +y): (0, 1.0, 2.5).
+- Axis endpoints along z:
+  • Inlet: z = 2.5 + 0.75 = 3.25.
+  • Outlet: z = 2.5 − 1.0 = 1.5.
+- AABB spans: x ∈ [−0.5, +0.5], y ∈ [+0.5, +1.5], z ∈ [1.5, 3.25].
+- Neighbor checks (using center deltas and half-sums with cannon half-extents 0.5, 0.5, 0.875):
+  • vs Base (0, 0, 0.5): Δ = (0, 1.0, 2.0); half-sums = (1.0, 1.0, 1.375).
+    - x: 0 < 1.0; y: 1.0 = 1.0 (contact only); z: 2.0 > 1.375 → at least one axis separated → no overlap. Also by spans: base z ≤ 1.0, cannon z ≥ 1.5. OK.
+  • vs A (0, 0, 1.5): Δ = (0, 1.0, 1.0); half-sums = (1.0, 1.0, 1.375).
+    - x: 0 < 1.0; y: 1.0 = 1.0 (contact only); z: 1.0 < 1.375 (overlap in z).
+    - Since y is exact face contact (no overlap), overall volumes do not intersect. OK.
+  • vs B (0, 0, 2.5): Δ = (0, 1.0, 0.0); half-sums = (1.0, 1.0, 1.375).
+    - x: 0 < 1.0; y: 1.0 = 1.0 (face contact to host); z: 0.0 < 1.375 (overlap in z).
+    - As expected: face contact to its host with overlap in other axes is acceptable; no volumetric interpenetration because along y it’s exactly at the face. OK.
+  • vs C (0, 0, 3.5): Δ = (0, 1.0, 1.0); half-sums = (1.0, 1.0, 1.375).
+    - y: 1.0 = 1.0 (contact only); z overlaps; overall non-intersecting due to face contact in y. OK.
+- Ground clearance: outlet z = 1.5 ≥ 0.5 → meets “no ground contact” requirement.
+
+6) Block 6: Torch (as declared by drafter)
+- Attachment: C top (+z) face, pointing downward (−z).
+- Torch body center: (0, 0, 4.5).
+- Heating sphere center: (0, 0, 3.5); radius 0.3.
+- Neighbor checks (collisions):
+  • vs C: torch body is offset 0.5 above top face per spec → no intrusion into C. OK.
+  • vs Water Cannon: cannon max z = 3.25; torch body center z = 4.5. Clear separation; no overlap. The heating sphere is not a solid collider, so only functional proximity matters.
+
+Structural integrity summary
+- No overlaps detected among solid parts in the revised geometry. Host/face contacts are correct.
+- Reserved bracing faces: A and B west/east faces remain unused. OK.
+
+Functional validation
+
+1) Motion and orientation
+- Water Cannon axis is vertical, firing straight down (−z). Recoil thrust direction is straight up (+z). Satisfies the “keep the water cannon axis exactly vertical” requirement.
+- Wheel and other moving elements: none. No rotation constraints to check.
+
+2) Heating and steam-mode activation
+- Water Cannon inlet location: (0, 1.0, 3.25).
+- Torch heating sphere center: (0, 0, 3.5); radius = 0.3.
+- 3D distance from heating sphere center to inlet:
+  • Δ = (0, −1.0, +0.25); |Δ| = sqrt(0^2 + 1.0^2 + 0.25^2) ≈ 1.031.
+  • 1.031 > 0.3 → The heating sphere does NOT reach the inlet. Steam mode will not trigger with the current torch placement.
+- The prior z-only comparison is insufficient; the y-offset introduced by side-mounting the cannon must be considered. This is a functional failure.
+
+3) Clearance from plume
+- Cannon outlet at z = 1.5; torch heating sphere center at z = 3.5. The torch is well above the nozzle and out of the direct downward plume path. No extinguishing risk from the vertical plume in nominal operation.
+
+Physical feasibility
+- With the current torch placement, the cannon will operate in water mode only (recoil equivalent 1.6 units), not the intended steam mode (8.6×). Aside from this, structural massing and clearances are feasible.
+
+Additional note on assembly sequencing statement
+- Your “build each new block at the center of an unoccupied face of the previous block” is internally contradicted by Step 5 (Water Cannon attached to Block 3 while the previous block is Block 4). This does not affect build feasibility in this system (you may attach a new part to any existing block), but it should be clarified if you’re enforcing a strict step-by-step attachment rule.
+
+Decision
+- FAIL: Functional requirement not met. The torch’s heating sphere does not intersect the water cannon inlet; steam mode cannot be confirmed.
+
+Minimal corrective change to meet steam-mode requirement while preserving clearances and reserved faces
+- Add one more Small Wooden Block D atop Block C (center at (0, 0, 4.5)).
+- Move the Torch to the north (+y) face of Block D, oriented to point downward (−z):
+  • Torch body center becomes (0, 1.0, 4.5) (0.5 outward from D’s north face).
+  • Heating sphere center becomes (0, 1.0, 3.5).
+  • Distance to inlet (0, 1.0, 3.25) is |Δ| = 0.25 < 0.3 → inlet is inside the heating sphere; steam mode achieved.
+- Collision checks with this change:
+  • Block D vs cannon: Block D spans z ∈ [4.0, 5.0] and y ∈ [−0.5, 0.5]; cannon max z = 3.25 and y ∈ [0.5, 1.5]. They are separated in z (no overlap).
+  • Torch vs cannon: y matches (1.0), but torch body is at z = 4.5 while cannon max z = 3.25 → separated in z.
+  • Reserved faces (A and B west/east): remain free.
+
+If you update the blueprint accordingly (add Block D as above and relocate the torch), I can re-run the full structural and functional checks.
+
+# drafter (gpt-5) (TextMessage): 
+
+Position adjustment note:
+- Adopted reviewer’s corrective change to meet steam-mode heating: added Small Wooden Block D above the stack and relocated the Torch to Block D’s north face, pointing downward. This places the heating sphere at (0, 1.0, 3.5), overlapping the Water Cannon inlet at (0, 1.0, 3.25) by 0.25 (< 0.3 radius).
+- Retained the Water Cannon side-mount on Block B’s north face with axis vertical and pointing down to eliminate host intrusion and avoid overlaps with Base and Block A.
+- Clarification: Functional parts may be attached to any existing block; “relative position” calls out the actual host block’s face for clarity even if it is not the immediately previous index.
+
+Blueprint declaration
+
+1 - Base Starting Block - default 1x1x1 cubic base (mass 0.25), center at (0, 0, 0.5) - starting reference
+
+2 - Small Wooden Block A - first vertical riser; reserve west/east faces for bracing - top face of Block 1
+
+3 - Small Wooden Block B - second vertical riser; reserve west/east faces for bracing - top face of Block 2
+
+4 - Water Cannon - downward-pointing propulsion unit mounted on a vertical side; center offset 0.5 outward from host face - north face of Block 3 - fires straight down (negative z); axis exactly vertical; recoil thrust straight up; configure to respond to shared Fire control; intended to operate in steam mode by torch heating of inlet
+
+5 - Small Wooden Block C - torch standoff riser - top face of Block 3
+
+6 - Small Wooden Block D - torch standoff riser (additional height to align heating sphere with side-mounted cannon inlet) - top face of Block 5
+
+7 - Torch - downward-facing heater; body center sits 0.5 outward from host face; heating sphere center 1.0 below body center (radius 0.3) - north face of Block 6 - flame points straight down (negative z); no control (remains lit); heats Water Cannon inlet to trigger steam mode while staying clear of the downward plume
+
+Assembly and coordinate notes (global frame: +x east, +y north, +z up)
+- Block 1 (Base): center (0, 0, 0.5); z-extents [0.0, 1.0].
+- Block 2 (A): center (0, 0, 1.5); z-extents [1.0, 2.0]. West/East faces unused.
+- Block 3 (B): center (0, 0, 2.5); z-extents [2.0, 3.0]. West/East faces unused.
+- Block 5 (C): center (0, 0, 3.5); z-extents [3.0, 4.0].
+- Block 6 (D): center (0, 0, 4.5); z-extents [4.0, 5.0].
+
+Water Cannon (Block 4):
+- Host face: Block 3 north (+y); face center (0, 0.5, 2.5); cannon center (0, 1.0, 2.5) via 0.5 offset outward.
+- Axis endpoints: inlet z = 2.5 + 0.75 = 3.25; outlet z = 2.5 − 1.0 = 1.5.
+- Occupied spans: x ∈ [−0.5, +0.5], y ∈ [+0.5, +1.5], z ∈ [1.5, 3.25].
+- Clearances: no overlap with Base (base z ≤ 1.0), Block A (contact only along +y), Block B (host face contact only). Ground clearance OK: outlet z = 1.5 ≥ 0.5.
+
+Torch (Block 7):
+- Host face: Block 6 north (+y); torch body center (0, 1.0, 4.5) via 0.5 outward from face.
+- Heating sphere center: (0, 1.0, 3.5); radius 0.3.
+- Heating coverage: Water Cannon inlet at (0, 1.0, 3.25); distance = 0.25 < 0.3 → inlet lies inside heating sphere; steam mode assured.
+- Separation: torch body center z = 4.5; cannon max z = 3.25 → no overlap; torch remains above and out of the downward plume.
+
+Controls and behavior
+- Water Cannon (Block 4): assign shared Fire input; in steam mode delivers ~13.76 units of mass-equivalent upward thrust (8.6× water mode).
+- Torch (Block 7): no control; remains lit until extinguished; positioned to heat the inlet and minimize extinguishing by the plume.
+
+Reserved faces for later bracing
+- Block A and Block B west/east faces remain unoccupied for brace connections to the chassis, per design requirements.
+
+Micro-adjustment readiness
+- If later integration requires, the cannon can be mirrored to Block 3 south (y−) face with identical z endpoints (center at (0, −1.0, 2.5); inlet z 3.25; outlet z 1.5); the torch can be mirrored to Block 6 south face accordingly (heating sphere center (0, −1.0, 3.5)). Functional intent remains unchanged.
+
+# draft_reviewer (gpt-5) (TextMessage): 
+
+Review assumptions and frame
+- Global axes: +x east, +y north, +z up.
+- Base block (1×1×1) center at (0, 0, 0.5). All small wooden blocks are 1×1×1 with half-extents (0.5, 0.5, 0.5).
+- Water Cannon is mounted so its axis is vertical (along z). Geom for collision checks: half-extents (x=0.5, y=0.5), and along z we use a center-based half-length of 0.875 for separation tests, but also track its asymmetric end points (center−1.0 to center+0.75).
+- Torch mounting offsets per spec: body center sits 0.5 outward from the host face along the face normal; heating sphere center is at body center + 1.0 along its flame direction; sphere radius = 0.3. For collision estimates, we conservatively use torch half-extents (0.25, 0.25, 0.25) because the spec’s examples guarantee the body is fully outside the host at 0.5 offset and the torch is slender relative to 1×1 blocks.
+
+Step-by-step structural integrity (positions, neighbor distances, and overlap checks)
+
+1) Block 1: Base (1×1×1)
+- Center: (0, 0, 0.5); z-span [0.0, 1.0].
+- Neighbors: none. Overlaps: none.
+
+2) Block 2: Small Wooden Block A (1×1×1)
+- Attachment: Base top (+z).
+- Center: (0, 0, 1.5); z-span [1.0, 2.0].
+- Neighbor checks:
+  • vs Base center (0, 0, 0.5): Δ = (0, 0, 1.0); half-sums = (1.0, 1.0, 1.0) → face contact along z only; no overlap.
+
+3) Block 3: Small Wooden Block B (1×1×1)
+- Attachment: A top (+z).
+- Center: (0, 0, 2.5); z-span [2.0, 3.0].
+- Neighbor checks:
+  • vs A (0, 0, 1.5): Δ = (0, 0, 1.0); half-sums = (1.0, 1.0, 1.0) → face contact along z only; no overlap.
+  • vs Base (0, 0, 0.5): Δ = (0, 0, 2.0) ≥ half-sums → separated; no overlap.
+
+4) Block 4: Water Cannon (mounted on B north face; axis vertical; points −z)
+- Host face: B north (+y); face center (0, 0.5, 2.5).
+- Cannon center: (0, 1.0, 2.5) (0.5 outward along +y).
+- Endpoints along z: outlet z = 2.5 − 1.0 = 1.5; inlet z = 2.5 + 0.75 = 3.25. Occupied spans: x ∈ [−0.5, +0.5], y ∈ [+0.5, +1.5], z ∈ [1.5, 3.25].
+- Neighbor checks (half-extents: cannon 0.5, 0.5, 0.875; cubes 0.5 each axis):
+  • vs Base (0, 0, 0.5): Δ = (0, 1.0, 2.0); half-sums = (1.0, 1.0, 1.375). Separated along z (2.0 > 1.375); no overlap. Also z-spans disjoint (base z ≤ 1.0; cannon z ≥ 1.5).
+  • vs A (0, 0, 1.5): Δ = (0, 1.0, 1.0); half-sums = (1.0, 1.0, 1.375). y is exact face contact (1.0 = 1.0), so despite x/z overlap, volumes do not interpenetrate. No overlap.
+  • vs B (0, 0, 2.5): Δ = (0, 1.0, 0.0); half-sums = (1.0, 1.0, 1.375). Face contact to host along y; no overlap.
+- Ground clearance: outlet z = 1.5 ≥ 0.5 → meets “no ground contact” requirement.
+
+5) Block 5: Small Wooden Block C (1×1×1)
+- Attachment: B top (+z).
+- Center: (0, 0, 3.5); z-span [3.0, 4.0].
+- Neighbor checks:
+  • vs B (0, 0, 2.5): Δ = (0, 0, 1.0); half-sums = (1.0, 1.0, 1.0) → face contact along z; no overlap.
+  • vs A (0, 0, 1.5): Δ = (0, 0, 2.0) → separated; no overlap.
+  • vs Water Cannon (0, 1.0, 2.5): Δ = (0, 1.0, 1.0); half-sums = (1.0, 1.0, 1.375). y is exact face contact (1.0 = 1.0); no overlap.
+
+6) Block 6: Small Wooden Block D (1×1×1)
+- Attachment: C top (+z).
+- Center: (0, 0, 4.5); z-span [4.0, 5.0].
+- Neighbor checks:
+  • vs C (0, 0, 3.5): Δ = (0, 0, 1.0); half-sums = (1.0, 1.0, 1.0) → face contact along z; no overlap.
+  • vs Water Cannon (0, 1.0, 2.5): Δ = (0, 1.0, 2.0); half-sums = (1.0, 1.0, 1.375). Separated along z (2.0 > 1.375); no overlap.
+  • vs B/A/Base: larger z separations → no overlaps.
+
+7) Block 7: Torch (attached to D north face; flame points −z)
+- Host face: D north (+y). Torch body center: (0, 1.0, 4.5) (0.5 outward from face).
+- Heating sphere center (flame): (0, 1.0, 3.5); radius 0.3.
+- Neighbor checks (torch half-extents used: 0.25, 0.25, 0.25):
+  • vs D (0, 0, 4.5): Δ = (0, 1.0, 0.0); half-sums = (0.75, 0.75, 0.75). Separated along y (1.0 > 0.75); no overlap.
+  • vs C (0, 0, 3.5): Δ = (0, 1.0, 1.0); half-sums = (0.75, 0.75, 0.75). Separated along both y and z; no overlap.
+  • vs Water Cannon (0, 1.0, 2.5): Δ = (0, 0.0, 2.0); half-sums = (0.75, 0.75, 1.125). Separated along z (2.0 > 1.125); no overlap.
+
+Structural integrity summary
+- All solid parts are either face-contacting or separated on at least one axis; no volumetric interpenetration detected.
+- Reserved faces: Block A and Block B west/east faces remain unoccupied for future bracing. OK.
+
+Functional validation
+
+1) Orientation and motion
+- Water Cannon axis exactly vertical, firing straight down (−z). Recoil is straight up (+z) as required.
+- Lowest outlet at z = 1.5 ≥ 0.5 satisfies ground-clearance at placement.
+
+2) Heating and steam mode
+- Water Cannon inlet: (0, 1.0, 3.25).
+- Torch heating sphere center: (0, 1.0, 3.5); radius 0.3.
+- Distance inlet to heating center: |Δ| = 0.25 < 0.3 → inlet lies inside heating sphere. Steam mode is reliably triggered.
+
+3) Interference risks and mounting
+- Torch sits well above the cannon body (torch body z = 4.5; cannon z ≤ 3.25) and is aligned along the same y. It is out of the downward plume path and unlikely to be extinguished during nominal vertical thrust.
+- Water Cannon has no attachable faces used by other parts; mounting to B’s north face is valid.
+
+Physical feasibility
+- Mass estimate: 4 small wooden blocks × 0.3 = 1.2; Water Cannon 1.5; Torch 1.0; Base 0.25 → total ≈ 3.95 units. Steam-mode recoil ≈ 8.6 × 1.6 = 13.76 mass-equivalent thrust upward. One unit provides ample thrust margin for its own mass; paired units (east/west) will provide symmetric lift as intended.
+
+Conclusion
+- PASS: The revised blueprint meets structural integrity (no overlaps), functional requirements (vertical axis, ground clearance, heating for steam mode), and physical feasibility. The bracing faces remain available.
+
+TERMINATE
+
+# drafter (gpt-5) (TextMessage): 
+
+Position adjustment note:
+- Moved Water Cannon to Block B’s north face (y+) with axis vertical and firing downward to eliminate host intrusion and base overlap.
+- Added Small Wooden Block D above Block C and relocated the Torch to Block D’s north face, pointing downward, so its heating sphere center (0, 1.0, 3.5) overlaps the Water Cannon inlet (0, 1.0, 3.25) by 0.25 (< 0.3), meeting steam-mode activation.
+
+1 - Base Starting Block - default 1x1x1 cubic base (mass 0.25), center at (0, 0, 0.5) - starting reference
+
+2 - Small Wooden Block A - first vertical riser; reserve west/east faces for bracing - top face of Block 1
+
+3 - Small Wooden Block B - second vertical riser; reserve west/east faces for bracing - top face of Block 2
+
+4 - Water Cannon - downward-pointing vertical-axis propulsion unit; center offset 0.5 outward from host face - north face of Block 3 - fires straight down (negative z); recoil thrust straight up; configure to shared Fire control; operate in steam mode via inlet heating. Coordinates: center (0, 1.0, 2.5); inlet z = 3.25; outlet z = 1.5 (≥ 0.5 ground clearance).
+
+5 - Small Wooden Block C - torch standoff riser - top face of Block 3
+
+6 - Small Wooden Block D - additional torch standoff riser to align heating sphere with cannon inlet - top face of Block 5
+
+7 - Torch - downward-facing heater; body center 0.5 outward from host face; heating sphere center 1.0 below body (radius 0.3) - north face of Block 6 - flame points straight down (negative z); no control (remains lit); heats Water Cannon inlet to trigger steam mode while staying clear of the downward plume. Coordinates: body center (0, 1.0, 4.5); heating sphere center (0, 1.0, 3.5), 0.25 above cannon inlet.
+

@@ -1,0 +1,1791 @@
+[
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "0 - Starting Block - 1x1x1 base stone (reference only) - fixed origin"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #1 - Floor tile W1 (Small Wooden Block) attached to west face of Starting Block"
+    },
+    "result": "You have successfully added <ID 2: Small Wooden Block>.\nExisting Blocks: 2\n(Blueprint #1 - Floor tile W1 (Small Wooden Block) attached to west face of Starting Block) <ID 2: Small Wooden Block>\nPosition: [-1., 0., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1. ,  0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  0. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-1. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-1.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #2 - Floor tile E1 (Small Wooden Block) attached to east face of Starting Block"
+    },
+    "result": "You have successfully added <ID 3: Small Wooden Block>.\nExisting Blocks: 3\n(Blueprint #2 - Floor tile E1 (Small Wooden Block) attached to east face of Starting Block) <ID 3: Small Wooden Block>\nPosition: [1.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [1. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [1.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #3 - Floor tile N1 (Small Wooden Block) attached to north face of Starting Block"
+    },
+    "result": "You have successfully added <ID 4: Small Wooden Block>.\nExisting Blocks: 4\n(Blueprint #3 - Floor tile N1 (Small Wooden Block) attached to north face of Starting Block) <ID 4: Small Wooden Block>\nPosition: [0.,1.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 1. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 1. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  1. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 1.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "F",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #4 - Floor tile S1 (Small Wooden Block) attached to south face of Starting Block"
+    },
+    "result": "You have successfully added <ID 5: Small Wooden Block>.\nExisting Blocks: 5\n(Blueprint #4 - Floor tile S1 (Small Wooden Block) attached to south face of Starting Block) <ID 5: Small Wooden Block>\nPosition: [ 0.,-1., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -1. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -1. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [ 0. , -1. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [ 0. , -1.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #5 - Floor tile NW1 (Small Wooden Block) attached to north face of Floor tile W1 (ID 2)"
+    },
+    "result": "You have successfully added <ID 6: Small Wooden Block>.\nExisting Blocks: 6\n(Blueprint #5 - Floor tile NW1 (Small Wooden Block) attached to north face of Floor tile W1 (ID 2)) <ID 6: Small Wooden Block>\nPosition: [-1., 1., 0.]\nAttachable Faces:\nFace label: A, Face center: [-0.5,  1. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5,  1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  1. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-1. ,  1. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-1. ,  1.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #6 - Floor tile NE1 (Small Wooden Block) attached to north face of Floor tile E1 (ID 3)"
+    },
+    "result": "You have successfully added <ID 7: Small Wooden Block>.\nExisting Blocks: 7\n(Blueprint #6 - Floor tile NE1 (Small Wooden Block) attached to north face of Floor tile E1 (ID 3)) <ID 7: Small Wooden Block>\nPosition: [1.,1.,0.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 1. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 1. , 0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 1. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. ,  1. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [1. , 1.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #7 - Floor tile SW1 (Small Wooden Block) attached to south face of Floor tile W1 (ID 2)"
+    },
+    "result": "You have successfully added <ID 8: Small Wooden Block>.\nExisting Blocks: 8\n(Blueprint #7 - Floor tile SW1 (Small Wooden Block) attached to south face of Floor tile W1 (ID 2)) <ID 8: Small Wooden Block>\nPosition: [-1.,-1., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -1. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -1. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-1. , -1. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-1. , -1.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #8 - Floor tile SE1 (Small Wooden Block) attached to south face of Floor tile E1 (ID 3)"
+    },
+    "result": "You have successfully added <ID 9: Small Wooden Block>.\nExisting Blocks: 9\n(Blueprint #8 - Floor tile SE1 (Small Wooden Block) attached to south face of Floor tile E1 (ID 3)) <ID 9: Small Wooden Block>\nPosition: [ 1.,-1., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 1.5, -1. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -1. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. , -1. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [ 1. , -1.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #9 - West lower wall at W1 column (Small Wooden Block) attached to west face of Floor tile W1 (ID 2)"
+    },
+    "result": "You have successfully added <ID 10: Small Wooden Block>.\nExisting Blocks: 10\n(Blueprint #9 - West lower wall at W1 column (Small Wooden Block) attached to west face of Floor tile W1 (ID 2)) <ID 10: Small Wooden Block>\nPosition: [-2., 0., 0.]\nAttachable Faces:\nFace label: A, Face center: [-2. ,  0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. ,  0. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-2. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-2.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 10,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #10 - West upper wall at W1 column (Small Wooden Block) attached to top face of West lower wall at W1 column (ID 10)"
+    },
+    "result": "You have successfully added <ID 11: Small Wooden Block>.\nExisting Blocks: 11\n(Blueprint #10 - West upper wall at W1 column (Small Wooden Block) attached to top face of West lower wall at W1 column (ID 10)) <ID 11: Small Wooden Block>\nPosition: [-2., 0., 1.]\nAttachable Faces:\nFace label: A, Face center: [-2. ,  0.5,  1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: B, Face center: [-2. , -0.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1.5,  0. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2.5,  0. ,  1. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: E, Face center: [-2. ,  0. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 6,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #11 - West lower wall at NW1 column (Small Wooden Block) attached to west face of Floor tile NW1 (ID 6)"
+    },
+    "result": "You have successfully added <ID 12: Small Wooden Block>.\nExisting Blocks: 12\n(Blueprint #11 - West lower wall at NW1 column (Small Wooden Block) attached to west face of Floor tile NW1 (ID 6)) <ID 12: Small Wooden Block>\nPosition: [-2., 1., 0.]\nAttachable Faces:\nFace label: A, Face center: [-2. ,  1.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. ,  0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. ,  1. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-2. ,  1. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-2.5,  1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 12,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #12 - West upper wall at NW1 column (Small Wooden Block) attached to top face of West lower wall at NW1 column (ID 12)"
+    },
+    "result": "You have successfully added <ID 13: Small Wooden Block>.\nExisting Blocks: 13\n(Blueprint #12 - West upper wall at NW1 column (Small Wooden Block) attached to top face of West lower wall at NW1 column (ID 12)) <ID 13: Small Wooden Block>\nPosition: [-2., 1., 1.]\nAttachable Faces:\nFace label: A, Face center: [-2. ,  1.5,  1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: B, Face center: [-2. ,  0.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1.5,  1. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2.5,  1. ,  1. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: E, Face center: [-2. ,  1. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 8,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #13 - West lower wall at SW1 column (Small Wooden Block) attached to west face of Floor tile SW1 (ID 8)"
+    },
+    "result": "You have successfully added <ID 14: Small Wooden Block>.\nExisting Blocks: 14\n(Blueprint #13 - West lower wall at SW1 column (Small Wooden Block) attached to west face of Floor tile SW1 (ID 8)) <ID 14: Small Wooden Block>\nPosition: [-2.,-1., 0.]\nAttachable Faces:\nFace label: A, Face center: [-2. , -0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. , -1.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. , -1. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-2. , -1. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-2.5, -1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 14,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #14 - West upper wall at SW1 column (Small Wooden Block) attached to top face of West lower wall at SW1 column (ID 14)"
+    },
+    "result": "You have successfully added <ID 15: Small Wooden Block>.\nExisting Blocks: 15\n(Blueprint #14 - West upper wall at SW1 column (Small Wooden Block) attached to top face of West lower wall at SW1 column (ID 14)) <ID 15: Small Wooden Block>\nPosition: [-2.,-1., 1.]\nAttachable Faces:\nFace label: A, Face center: [-2. , -0.5,  1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: B, Face center: [-2. , -1.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1.5, -1. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2.5, -1. ,  1. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: E, Face center: [-2. , -1. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #15 - East lower wall at E1 column (Small Wooden Block) attached to east face of Floor tile E1 (ID 3)"
+    },
+    "result": "You have successfully added <ID 16: Small Wooden Block>.\nExisting Blocks: 16\n(Blueprint #15 - East lower wall at E1 column (Small Wooden Block) attached to east face of Floor tile E1 (ID 3)) <ID 16: Small Wooden Block>\nPosition: [2.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [2. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [2. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 2. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [2.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 16,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #16 - East upper wall at E1 column (Small Wooden Block) attached to top face of East lower wall at E1 column (ID 16)"
+    },
+    "result": "You have successfully added <ID 17: Small Wooden Block>.\nExisting Blocks: 17\n(Blueprint #16 - East upper wall at E1 column (Small Wooden Block) attached to top face of East lower wall at E1 column (ID 16)) <ID 17: Small Wooden Block>\nPosition: [2.,0.,1.]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -0.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [2. , 0.5, 1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: C, Face center: [1.5, 0. , 1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [2.5, 0. , 1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [2. , 0. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 7,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #17 - East lower wall at NE1 column (Small Wooden Block) attached to east face of Floor tile NE1 (ID 7)"
+    },
+    "result": "You have successfully added <ID 18: Small Wooden Block>.\nExisting Blocks: 18\n(Blueprint #17 - East lower wall at NE1 column (Small Wooden Block) attached to east face of Floor tile NE1 (ID 7)) <ID 18: Small Wooden Block>\nPosition: [2.,1.,0.]\nAttachable Faces:\nFace label: A, Face center: [2. , 0.5, 0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [2. , 1.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [2. , 1. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 2. ,  1. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [2.5, 1. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 18,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #18 - East upper wall at NE1 column (Small Wooden Block) attached to top face of East lower wall at NE1 column (ID 18)"
+    },
+    "result": "You have successfully added <ID 19: Small Wooden Block>.\nExisting Blocks: 19\n(Blueprint #18 - East upper wall at NE1 column (Small Wooden Block) attached to top face of East lower wall at NE1 column (ID 18)) <ID 19: Small Wooden Block>\nPosition: [2.,1.,1.]\nAttachable Faces:\nFace label: A, Face center: [2. , 0.5, 1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [2. , 1.5, 1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: C, Face center: [1.5, 1. , 1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [2.5, 1. , 1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [2. , 1. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 9,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #19 - East lower wall at SE1 column (Small Wooden Block) attached to east face of Floor tile SE1 (ID 9)"
+    },
+    "result": "You have successfully added <ID 20: Small Wooden Block>.\nExisting Blocks: 20\n(Blueprint #19 - East lower wall at SE1 column (Small Wooden Block) attached to east face of Floor tile SE1 (ID 9)) <ID 20: Small Wooden Block>\nPosition: [ 2.,-1., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -1.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2. , -0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2. , -1. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [ 2. , -1. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [ 2.5, -1. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 20,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #20 - East upper wall at SE1 column (Small Wooden Block) attached to top face of East lower wall at SE1 column (ID 20)"
+    },
+    "result": "You have successfully added <ID 21: Small Wooden Block>.\nExisting Blocks: 21\n(Blueprint #20 - East upper wall at SE1 column (Small Wooden Block) attached to top face of East lower wall at SE1 column (ID 20)) <ID 21: Small Wooden Block>\nPosition: [ 2.,-1., 1.]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -1.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2. , -0.5,  1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: C, Face center: [ 1.5, -1. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 2.5, -1. ,  1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [ 2. , -1. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 4,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #21 - North lower wall at N1 column (Small Wooden Block) attached to north face of Floor tile N1 (ID 4)"
+    },
+    "result": "You have successfully added <ID 22: Small Wooden Block>.\nExisting Blocks: 22\n(Blueprint #21 - North lower wall at N1 column (Small Wooden Block) attached to north face of Floor tile N1 (ID 4)) <ID 22: Small Wooden Block>\nPosition: [0.,2.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 2. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  2. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 2. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  2. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 2.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 22,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #22 - North upper wall at N1 column (Small Wooden Block) attached to top face of North lower wall at N1 column (ID 22)"
+    },
+    "result": "You have successfully added <ID 23: Small Wooden Block>.\nExisting Blocks: 23\n(Blueprint #22 - North upper wall at N1 column (Small Wooden Block) attached to top face of North lower wall at N1 column (ID 22)) <ID 23: Small Wooden Block>\nPosition: [0.,2.,1.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 2. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  2. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 1.5, 1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 2.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 2. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 7,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #23 - North lower wall at NE1 column (Small Wooden Block) attached to north face of Floor tile NE1 (ID 7)"
+    },
+    "result": "You have successfully added <ID 24: Small Wooden Block>.\nExisting Blocks: 24\n(Blueprint #23 - North lower wall at NE1 column (Small Wooden Block) attached to north face of Floor tile NE1 (ID 7)) <ID 24: Small Wooden Block>\nPosition: [1.,2.,0.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 2. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 2. , 0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 2. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. ,  2. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [1. , 2.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 6,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #24 - North lower wall at NW1 column (Small Wooden Block) attached to north face of Floor tile NW1 (ID 6)"
+    },
+    "result": "You have successfully added <ID 25: Small Wooden Block>.\nExisting Blocks: 25\n(Blueprint #24 - North lower wall at NW1 column (Small Wooden Block) attached to north face of Floor tile NW1 (ID 6)) <ID 25: Small Wooden Block>\nPosition: [-1., 2., 0.]\nAttachable Faces:\nFace label: A, Face center: [-0.5,  2. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5,  2. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  2. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-1. ,  2. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-1. ,  2.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 24,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #25 - North upper wall at NE1 column (Small Wooden Block) attached to top face of North lower wall at NE1 column (ID 24)"
+    },
+    "result": "You have successfully added <ID 26: Small Wooden Block>.\nExisting Blocks: 26\n(Blueprint #25 - North upper wall at NE1 column (Small Wooden Block) attached to top face of North lower wall at NE1 column (ID 24)) <ID 26: Small Wooden Block>\nPosition: [1.,2.,1.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 2. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 2. , 1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 1.5, 1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [1. , 2.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [1. , 2. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 25,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #26 - North upper wall at NW1 column (Small Wooden Block) attached to top face of North lower wall at NW1 column (ID 25)"
+    },
+    "result": "You have successfully added <ID 27: Small Wooden Block>.\nExisting Blocks: 27\n(Blueprint #26 - North upper wall at NW1 column (Small Wooden Block) attached to top face of North lower wall at NW1 column (ID 25)) <ID 27: Small Wooden Block>\nPosition: [-1., 2., 1.]\nAttachable Faces:\nFace label: A, Face center: [-0.5,  2. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5,  2. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  1.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1. ,  2.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1. ,  2. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 5,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #27 - South lower wall at S1 column (Small Wooden Block) attached to south face of Floor tile S1 (ID 5)"
+    },
+    "result": "You have successfully added <ID 28: Small Wooden Block>.\nExisting Blocks: 28\n(Blueprint #27 - South lower wall at S1 column (Small Wooden Block) attached to south face of Floor tile S1 (ID 5)) <ID 28: Small Wooden Block>\nPosition: [ 0.,-2., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -2. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -2. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -2. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [ 0. , -2. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [ 0. , -2.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 28,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #28 - South upper wall at S1 column (Small Wooden Block) attached to top face of South lower wall at S1 column (ID 28)"
+    },
+    "result": "You have successfully added <ID 29: Small Wooden Block>.\nExisting Blocks: 29\n(Blueprint #28 - South upper wall at S1 column (Small Wooden Block) attached to top face of South lower wall at S1 column (ID 28)) <ID 29: Small Wooden Block>\nPosition: [ 0.,-2., 1.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -2. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -2. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -2.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 0. , -1.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 0. , -2. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 9,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #29 - South lower wall at SE1 column (Small Wooden Block) attached to south face of Floor tile SE1 (ID 9)"
+    },
+    "result": "You have successfully added <ID 30: Small Wooden Block>.\nExisting Blocks: 30\n(Blueprint #29 - South lower wall at SE1 column (Small Wooden Block) attached to south face of Floor tile SE1 (ID 9)) <ID 30: Small Wooden Block>\nPosition: [ 1.,-2., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -2. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 1.5, -2. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -2. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. , -2. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [ 1. , -2.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 30,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #30 - South upper wall at SE1 column (Small Wooden Block) attached to top face of South lower wall at SE1 column (ID 30)"
+    },
+    "result": "You have successfully added <ID 31: Small Wooden Block>.\nExisting Blocks: 31\n(Blueprint #30 - South upper wall at SE1 column (Small Wooden Block) attached to top face of South lower wall at SE1 column (ID 30)) <ID 31: Small Wooden Block>\nPosition: [ 1.,-2., 1.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -2. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 1.5, -2. ,  1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -1.5,  1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 1. , -2.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 1. , -2. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 8,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #31 - South lower wall at SW1 column (Small Wooden Block) attached to south face of Floor tile SW1 (ID 8)"
+    },
+    "result": "You have successfully added <ID 32: Small Wooden Block>.\nExisting Blocks: 32\n(Blueprint #31 - South lower wall at SW1 column (Small Wooden Block) attached to south face of Floor tile SW1 (ID 8)) <ID 32: Small Wooden Block>\nPosition: [-1.,-2., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -2. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -2. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -2. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-1. , -2. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-1. , -2.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 32,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #32 - South upper wall at SW1 column (Small Wooden Block) attached to top face of South lower wall at SW1 column (ID 32)"
+    },
+    "result": "You have successfully added <ID 33: Small Wooden Block>.\nExisting Blocks: 33\n(Blueprint #32 - South upper wall at SW1 column (Small Wooden Block) attached to top face of South lower wall at SW1 column (ID 32)) <ID 33: Small Wooden Block>\nPosition: [-1.,-2., 1.]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -2. ,  1. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -2. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -1.5,  1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [-1. , -2.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1. , -2. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 15,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #33 - Shield for west lower torch (awning) relocated to top face of West upper wall at SW1 column (ID 15) to sit above/behind Torch 41"
+    },
+    "result": "You have successfully added <ID 34: Small Wooden Block>.\nExisting Blocks: 34\n(Blueprint #33 - Shield for west lower torch (awning) relocated to top face of West upper wall at SW1 column (ID 15) to sit above/behind Torch 41) <ID 34: Small Wooden Block>\nPosition: [-2.,-1., 2.]\nAttachable Faces:\nFace label: A, Face center: [-2. , -0.5,  2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. , -1.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1.5, -1. ,  2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2.5, -1. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2. , -1. ,  2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 13,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #34 - Shield for west upper torch (awning) attached to top face of West upper wall at NW1 column (ID 13)"
+    },
+    "result": "You have successfully added <ID 35: Small Wooden Block>.\nExisting Blocks: 35\n(Blueprint #34 - Shield for west upper torch (awning) attached to top face of West upper wall at NW1 column (ID 13)) <ID 35: Small Wooden Block>\nPosition: [-2., 1., 2.]\nAttachable Faces:\nFace label: A, Face center: [-2. ,  1.5,  2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. ,  0.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1.5,  1. ,  2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2.5,  1. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2. ,  1. ,  2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 31,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint Step 35 - South-side awning/shield to protect SE torches; attached to top face of South upper wall at SE1 column (ID 31)"
+    },
+    "result": "You have successfully added <ID 36: Small Wooden Block>.\nExisting Blocks: 36\n(Blueprint Step 35 - South-side awning/shield to protect SE torches; attached to top face of South upper wall at SE1 column (ID 31)) <ID 36: Small Wooden Block>\nPosition: [ 1.,-2., 2.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -2. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 1.5, -2. ,  2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -1.5,  2. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 1. , -2.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 1. , -2. ,  2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 10,
+      "face": "E",
+      "new_block": "Water Cannon",
+      "note": "Blueprint #36 - Water Cannon 37 - West lower thruster at W1 column; attached to west face of block 10; Fires horizontally to the west (\u2212x) so recoil pushes east (+x). Steam Mode when heated by Torch 41. Control: W key (paired with 38)."
+    },
+    "result": "You have successfully added <ID 37: Water Cannon>.\nExisting Blocks: 37\n(Blueprint #36 - Water Cannon 37 - West lower thruster at W1 column; attached to west face of block 10; Fires horizontally to the west (\u2212x) so recoil pushes east (+x). Steam Mode when heated by Torch 41. Control: W key (paired with 38).) <ID 37: Water Cannon>\nPosition: [-3., 0., 0.]\nPointing at <straight down>\nInlet is at [-3.00, 0.00, 0.75], outlet is at [-3.00, 0.00, -1.00], sprays towards <straight down>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 37,
+      "angle": 90.0
+    },
+    "result": "The block 37 <Water Cannon> is twisted by 90.0 degrees. \n (Blueprint #36 - Water Cannon 37 - West lower thruster at W1 column; attached to west face of block 10; Fires horizontally to the west (\u2212x) so recoil pushes east (+x). Steam Mode when heated by Torch 41. Control: W key (paired with 38).) <ID 37: Water Cannon>\nPosition: [-3., 0., 0.]\nPointing at <North with -0.0\u00b0 pitch>\nInlet is at [-3.00, -0.75, 0.00], outlet is at [-3.00, 1.00, -0.00], sprays towards <North with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 37,
+      "angle": 90.0
+    },
+    "result": "The block 37 <Water Cannon> is twisted by 90.0 degrees. \n (Blueprint #36 - Water Cannon 37 - West lower thruster at W1 column; attached to west face of block 10; Fires horizontally to the west (\u2212x) so recoil pushes east (+x). Steam Mode when heated by Torch 41. Control: W key (paired with 38).) <ID 37: Water Cannon>\nPosition: [-3., 0., 0.]\nPointing at <straight up>\nInlet is at [-3.00, 0.00, -0.75], outlet is at [-3.00, 0.00, 1.00], sprays towards <straight up>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 37,
+      "angle": 90.0
+    },
+    "result": "The block 37 <Water Cannon> is twisted by 90.0 degrees. \n (Blueprint #36 - Water Cannon 37 - West lower thruster at W1 column; attached to west face of block 10; Fires horizontally to the west (\u2212x) so recoil pushes east (+x). Steam Mode when heated by Torch 41. Control: W key (paired with 38).) <ID 37: Water Cannon>\nPosition: [-3., 0., 0.]\nPointing at <South with 0.0\u00b0 pitch>\nInlet is at [-3.00, 0.75, -0.00], outlet is at [-3.00, -1.00, 0.00], sprays towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 37
+    },
+    "result": "You have successfully removed <ID 37: Water Cannon>."
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "attach_block_to",
+      "message": "Operation failed! The new block <Water Cannon> overlaps with existing blocks and it's been restored to previous state already, please try again\nOverlapping detected between <ID 14: Small Wooden Block> and <ID 38: Water Cannon>"
+    }
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 10,
+      "face": "B",
+      "new_block": "Water Cannon",
+      "note": "Blueprint #36 (relocated) - Water Cannon 37 - West lower thruster at W1 column; reattached to south face of block 10 to enable twist to West; Control: W key (paired with 38)."
+    },
+    "result": "Operation failed! The new block <Water Cannon> overlaps with existing blocks and it's been restored to previous state already, please try again\nOverlapping detected between <ID 14: Small Wooden Block> and <ID 38: Water Cannon>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 10,
+      "face": "D",
+      "new_block": "Water Cannon",
+      "note": "Blueprint #36 (relocated, v2) - Water Cannon 37 - West lower thruster at W1 column; attached to bottom face of block 10 (Face D) to allow twist to West (\u2212x). Control: W key (paired with 38)."
+    },
+    "result": "You have successfully added <ID 38: Water Cannon>.\nExisting Blocks: 37\n(Blueprint #36 (relocated, v2) - Water Cannon 37 - West lower thruster at W1 column; attached to bottom face of block 10 (Face D) to allow twist to West (\u2212x). Control: W key (paired with 38).) <ID 38: Water Cannon>\nPosition: [-2., 0.,-1.]\nPointing at <East with -0.0\u00b0 pitch>\nInlet is at [-2.75, 0.00, -1.00], outlet is at [-1.00, 0.00, -1.00], sprays towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 38,
+      "angle": 180.0
+    },
+    "result": "The block 38 <Water Cannon> is twisted by 180.0 degrees. \n (Blueprint #36 (relocated, v2) - Water Cannon 37 - West lower thruster at W1 column; attached to bottom face of block 10 (Face D) to allow twist to West (\u2212x). Control: W key (paired with 38).) <ID 38: Water Cannon>\nPosition: [-2., 0.,-1.]\nPointing at <West with 0.0\u00b0 pitch>\nInlet is at [-1.25, 0.00, -1.00], outlet is at [-3.00, 0.00, -1.00], sprays towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 11,
+      "face": "E",
+      "new_block": "Water Cannon",
+      "note": "Blueprint #38 - Water Cannon 39 - West upper thruster at W1 column; attached to top face of block 11 (Face E). Will twist to point West (\u2212x). Control: W key (paired with lower west thruster)."
+    },
+    "result": "You have successfully added <ID 39: Water Cannon>.\nExisting Blocks: 38\n(Blueprint #38 - Water Cannon 39 - West upper thruster at W1 column; attached to top face of block 11 (Face E). Will twist to point West (\u2212x). Control: W key (paired with lower west thruster).) <ID 39: Water Cannon>\nPosition: [-2., 0., 2.]\nPointing at <West with 0.0\u00b0 pitch>\nInlet is at [-1.25, 0.00, 2.00], outlet is at [-3.00, 0.00, 2.00], sprays towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "attach_block_to",
+      "message": "Face D of base block 10 Small Wooden Block is already occupied, please try again."
+    }
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 10,
+      "face": "D",
+      "new_block": "Torch",
+      "note": "Blueprint #39 - Torch 41 - Heater for west lower cannon (38); attached to bottom face of block 10 (Face D). Intended flame pointing East to heat cannon inlet/body while staying behind west-going plume; target heating sphere center near [-1.0, 0.0, -1.0]."
+    },
+    "result": "Face D of base block 10 Small Wooden Block is already occupied, please try again."
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "attach_block_to",
+      "message": "Operation failed! The new block <Torch> overlaps with existing blocks and it's been restored to previous state already, please try again\nOverlapping detected between <ID 14: Small Wooden Block> and <ID 40: Torch>\nOverlapping detected between <ID 15: Small Wooden Block> and <ID 40: Torch>"
+    }
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 10,
+      "face": "B",
+      "new_block": "Torch",
+      "note": "Blueprint #39 - Torch 41 - Heater for west lower cannon (38); attached to south face of block 10 (Face B). Will twist to aim diagonally toward cannon inlet/body (~[+0.33,+0.50,\u22120.80]) so heating sphere centers near [-1.67, -0.50, -0.80] and remains behind west-going plume."
+    },
+    "result": "Operation failed! The new block <Torch> overlaps with existing blocks and it's been restored to previous state already, please try again\nOverlapping detected between <ID 14: Small Wooden Block> and <ID 40: Torch>\nOverlapping detected between <ID 15: Small Wooden Block> and <ID 40: Torch>"
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "attach_block_to",
+      "message": "Operation failed! The new block <Torch> overlaps with existing blocks and it's been restored to previous state already, please try again\nOverlapping detected between <ID 38: Water Cannon> and <ID 40: Torch>"
+    }
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "D",
+      "new_block": "Torch",
+      "note": "Blueprint #39 (workaround) - Torch 41 - Heater for west lower cannon (38); attached to bottom face of Floor tile W1 (ID 2, Face D) at approx [-1,0,-0.5]. Intended flame horizontal West to place heating sphere center near [-2, 0, -1] overlapping cannon 38 body/inlet while staying out of westward exhaust line."
+    },
+    "result": "Operation failed! The new block <Torch> overlaps with existing blocks and it's been restored to previous state already, please try again\nOverlapping detected between <ID 38: Water Cannon> and <ID 40: Torch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 12,
+      "face": "D",
+      "new_block": "Torch",
+      "note": "Blueprint #39 - Torch 41 - Heater for west lower cannon (38); attached to bottom face of block 12 (Face D) at approx [-2,1,-0.5]. Intended to aim due South (0,-1,0) so heating sphere centers near [-2,0,-1] overlapping cannon 38 while staying behind westward plume."
+    },
+    "result": "You have successfully added <ID 40: Torch>.\nExisting Blocks: 39\n(Blueprint #39 - Torch 41 - Heater for west lower cannon (38); attached to bottom face of block 12 (Face D) at approx [-2,1,-0.5]. Intended to aim due South (0,-1,0) so heating sphere centers near [-2,0,-1] overlapping cannon 38 while staying behind westward plume.) <ID 40: Torch>\nPosition: [-2., 1.,-1.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-3.00, 1.00, -1.00]"
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "twist_block",
+      "message": "Operation failed! The block 40 <Torch> overlaps with existing blocks and it's been restored to previous state already, please try again\nOverlapping detected between <ID 38: Water Cannon> and <ID 40: Torch>"
+    }
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 40,
+      "angle": 90.0
+    },
+    "result": "Operation failed! The block 40 <Torch> overlaps with existing blocks and it's been restored to previous state already, please try again\nOverlapping detected between <ID 38: Water Cannon> and <ID 40: Torch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 28,
+      "face": "C",
+      "new_block": "Water Cannon",
+      "note": "Blueprint #40 - South lower thruster at S1 column; Water Cannon attached to bottom face of block 28 (Face C). Will twist to point South (\u2212y) next. Control: S key (paired later with upper south thruster)."
+    },
+    "result": "You have successfully added <ID 41: Water Cannon>.\nExisting Blocks: 40\n(Blueprint #40 - South lower thruster at S1 column; Water Cannon attached to bottom face of block 28 (Face C). Will twist to point South (\u2212y) next. Control: S key (paired later with upper south thruster).) <ID 41: Water Cannon>\nPosition: [ 0.,-2.,-1.]\nPointing at <South with 0.0\u00b0 pitch>\nInlet is at [0.00, -1.25, -1.00], outlet is at [0.00, -3.00, -1.00], sprays towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 29,
+      "face": "E",
+      "new_block": "Water Cannon",
+      "note": "Blueprint #41 - South upper thruster at S1 column; Water Cannon attached to top face of block 29 (Face E). Will twist to point South (\u2212y). Control: S key (paired with lower south thruster ID 41)."
+    },
+    "result": "You have successfully added <ID 42: Water Cannon>.\nExisting Blocks: 41\n(Blueprint #41 - South upper thruster at S1 column; Water Cannon attached to top face of block 29 (Face E). Will twist to point South (\u2212y). Control: S key (paired with lower south thruster ID 41).) <ID 42: Water Cannon>\nPosition: [ 0.,-2., 2.]\nPointing at <North with 0.0\u00b0 pitch>\nInlet is at [0.00, -2.75, 2.00], outlet is at [0.00, -1.00, 2.00], sprays towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 42,
+      "angle": 180.0
+    },
+    "result": "The block 42 <Water Cannon> is twisted by 180.0 degrees. \n (Blueprint #41 - South upper thruster at S1 column; Water Cannon attached to top face of block 29 (Face E). Will twist to point South (\u2212y). Control: S key (paired with lower south thruster ID 41).) <ID 42: Water Cannon>\nPosition: [ 0.,-2., 2.]\nPointing at <South with -0.0\u00b0 pitch>\nInlet is at [0.00, -1.25, 2.00], outlet is at [0.00, -3.00, 2.00], sprays towards <South with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 35,
+      "face": "C",
+      "new_block": "Torch",
+      "note": "Blueprint #43 - Torch 42 - Heater for west upper cannon (39); attached to east face of shield block 35 (Face C) at approx [-1.5,1,2]. Intended flame pointing due South so heating sphere centers near [-1,0,2], overlapping inlet/body of Water Cannon 39 while staying behind westward plume."
+    },
+    "result": "You have successfully added <ID 43: Torch>.\nExisting Blocks: 42\n(Blueprint #43 - Torch 42 - Heater for west upper cannon (39); attached to east face of shield block 35 (Face C) at approx [-1.5,1,2]. Intended flame pointing due South so heating sphere centers near [-1,0,2], overlapping inlet/body of Water Cannon 39 while staying behind westward plume.) <ID 43: Torch>\nPosition: [-1., 1., 2.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [-1.00, 1.00, 1.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 43,
+      "angle": 90.0
+    },
+    "result": "The block 43 <Torch> is twisted by 90.0 degrees. \n (Blueprint #43 - Torch 42 - Heater for west upper cannon (39); attached to east face of shield block 35 (Face C) at approx [-1.5,1,2]. Intended flame pointing due South so heating sphere centers near [-1,0,2], overlapping inlet/body of Water Cannon 39 while staying behind westward plume.) <ID 43: Torch>\nPosition: [-1., 1., 2.]\nPointing at <South with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-1.00, -0.00, 2.00]"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 30,
+      "face": "D",
+      "new_block": "Torch",
+      "note": "Blueprint #45 - Torch (heater) for south lower cannon (41); attached to bottom face of block 30 (Face D) at approx [1,-2,-0.5]. Intended to aim due West so heating sphere centers near [0,-2,-1], overlapping cannon 41 inlet/body and staying clear of south-going plume."
+    },
+    "result": "You have successfully added <ID 44: Torch>.\nExisting Blocks: 43\n(Blueprint #45 - Torch (heater) for south lower cannon (41); attached to bottom face of block 30 (Face D) at approx [1,-2,-0.5]. Intended to aim due West so heating sphere centers near [0,-2,-1], overlapping cannon 41 inlet/body and staying clear of south-going plume.) <ID 44: Torch>\nPosition: [ 1.,-2.,-1.]\nPointing at <South with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [1.00, -3.00, -1.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 44,
+      "angle": 90.0
+    },
+    "result": "The block 44 <Torch> is twisted by 90.0 degrees. \n (Blueprint #45 - Torch (heater) for south lower cannon (41); attached to bottom face of block 30 (Face D) at approx [1,-2,-0.5]. Intended to aim due West so heating sphere centers near [0,-2,-1], overlapping cannon 41 inlet/body and staying clear of south-going plume.) <ID 44: Torch>\nPosition: [ 1.,-2.,-1.]\nPointing at <East with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [2.00, -2.00, -1.00]"
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "twist_block",
+      "message": "Operation failed! The block 44 <Torch> overlaps with existing blocks and it's been restored to previous state already, please try again\nOverlapping detected between <ID 41: Water Cannon> and <ID 44: Torch>"
+    }
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 44,
+      "angle": 180.0
+    },
+    "result": "Operation failed! The block 44 <Torch> overlaps with existing blocks and it's been restored to previous state already, please try again\nOverlapping detected between <ID 41: Water Cannon> and <ID 44: Torch>"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 44
+    },
+    "result": "You have successfully removed <ID 44: Torch>."
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "attach_block_to",
+      "message": "Operation failed! The new block <Torch> overlaps with existing blocks and it's been restored to previous state already, please try again\nOverlapping detected between <ID 28: Small Wooden Block> and <ID 45: Torch>\nOverlapping detected between <ID 29: Small Wooden Block> and <ID 45: Torch>"
+    }
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 32,
+      "face": "B",
+      "new_block": "Torch",
+      "note": "Blueprint #46 - Torch (heater) for south lower cannon 41; attached to east face of block 32 (Face B) to enable aiming approx [0,+0.6,\u22120.8] so heating sphere centers near [0.00, \u22121.40, \u22120.80], overlapping cannon 41 inlet/body while staying behind south-going plume."
+    },
+    "result": "Operation failed! The new block <Torch> overlaps with existing blocks and it's been restored to previous state already, please try again\nOverlapping detected between <ID 28: Small Wooden Block> and <ID 45: Torch>\nOverlapping detected between <ID 29: Small Wooden Block> and <ID 45: Torch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 9,
+      "face": "D",
+      "new_block": "Torch",
+      "note": "Blueprint #46 (attempt 2) - Torch (heater) for south lower cannon 41; attached to bottom face of Floor tile SE1 (ID 9, Face D) at approx [1,-1,-0.5]. Will twist to aim West next so heating sphere centers near [0.00,-1.00,-1.00]."
+    },
+    "result": "You have successfully added <ID 45: Torch>.\nExisting Blocks: 43\n(Blueprint #46 (attempt 2) - Torch (heater) for south lower cannon 41; attached to bottom face of Floor tile SE1 (ID 9, Face D) at approx [1,-1,-0.5]. Will twist to aim West next so heating sphere centers near [0.00,-1.00,-1.00].) <ID 45: Torch>\nPosition: [ 1.,-1.,-1.]\nPointing at <South with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [1.00, -2.00, -1.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 45,
+      "angle": 270.0
+    },
+    "result": "The block 45 <Torch> is twisted by 270.0 degrees. \n (Blueprint #46 (attempt 2) - Torch (heater) for south lower cannon 41; attached to bottom face of Floor tile SE1 (ID 9, Face D) at approx [1,-1,-0.5]. Will twist to aim West next so heating sphere centers near [0.00,-1.00,-1.00].) <ID 45: Torch>\nPosition: [ 1.,-1.,-1.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [0.00, -1.00, -1.00]"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 36,
+      "face": "C",
+      "new_block": "Torch",
+      "note": "Blueprint #47 - Torch (heater) for south upper cannon 42; attached to north face of shield block 36 (Face C) at approx [1, -1.5, 2]. Will twist to point due West so heating sphere centers near [0, -1.5, 2], overlapping cannon 42 inlet/body while staying behind south-going plume."
+    },
+    "result": "You have successfully added <ID 46: Torch>.\nExisting Blocks: 44\n(Blueprint #47 - Torch (heater) for south upper cannon 42; attached to north face of shield block 36 (Face C) at approx [1, -1.5, 2]. Will twist to point due West so heating sphere centers near [0, -1.5, 2], overlapping cannon 42 inlet/body while staying behind south-going plume.) <ID 46: Torch>\nPosition: [ 1.,-1., 2.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [1.00, -1.00, 1.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 46,
+      "angle": 90.0
+    },
+    "result": "The block 46 <Torch> is twisted by 90.0 degrees. \n (Blueprint #47 - Torch (heater) for south upper cannon 42; attached to north face of shield block 36 (Face C) at approx [1, -1.5, 2]. Will twist to point due West so heating sphere centers near [0, -1.5, 2], overlapping cannon 42 inlet/body while staying behind south-going plume.) <ID 46: Torch>\nPosition: [ 1.,-1., 2.]\nPointing at <East with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [2.00, -1.00, 2.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 46,
+      "angle": 180.0
+    },
+    "result": "The block 46 <Torch> is twisted by 180.0 degrees. \n (Blueprint #47 - Torch (heater) for south upper cannon 42; attached to north face of shield block 36 (Face C) at approx [1, -1.5, 2]. Will twist to point due West so heating sphere centers near [0, -1.5, 2], overlapping cannon 42 inlet/body while staying behind south-going plume.) <ID 46: Torch>\nPosition: [ 1.,-1., 2.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [0.00, -1.00, 2.00]"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 40
+    },
+    "result": "You have successfully removed <ID 40: Torch>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 14,
+      "face": "D",
+      "new_block": "Torch",
+      "note": "Blueprint #50 - Torch (heater) for west lower cannon 38; attached to bottom face of block 14 (Face D) at approx [-2,-1,-0.5]. Will twist to point due North so heating sphere centers near [-2.00, 0.00, -1.00] overlapping cannon 38 inlet/body while staying behind west-going plume."
+    },
+    "result": "You have successfully added <ID 47: Torch>.\nExisting Blocks: 44\n(Blueprint #50 - Torch (heater) for west lower cannon 38; attached to bottom face of block 14 (Face D) at approx [-2,-1,-0.5]. Will twist to point due North so heating sphere centers near [-2.00, 0.00, -1.00] overlapping cannon 38 inlet/body while staying behind west-going plume.) <ID 47: Torch>\nPosition: [-2.,-1.,-1.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-3.00, -1.00, -1.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 47,
+      "angle": 90.0
+    },
+    "result": "The block 47 <Torch> is twisted by 90.0 degrees. \n (Blueprint #50 - Torch (heater) for west lower cannon 38; attached to bottom face of block 14 (Face D) at approx [-2,-1,-0.5]. Will twist to point due North so heating sphere centers near [-2.00, 0.00, -1.00] overlapping cannon 38 inlet/body while staying behind west-going plume.) <ID 47: Torch>\nPosition: [-2.,-1.,-1.]\nPointing at <South with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-2.00, -2.00, -1.00]"
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "twist_block",
+      "message": "Operation failed! The block 47 <Torch> overlaps with existing blocks and it's been restored to previous state already, please try again\nOverlapping detected between <ID 38: Water Cannon> and <ID 47: Torch>"
+    }
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 47,
+      "angle": 180.0
+    },
+    "result": "Operation failed! The block 47 <Torch> overlaps with existing blocks and it's been restored to previous state already, please try again\nOverlapping detected between <ID 38: Water Cannon> and <ID 47: Torch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "D",
+      "new_block": "Torch",
+      "note": "Blueprint #53 - Torch (heater) for west lower cannon 38; attached to bottom face of Starting Block (ID 1, Face D). Will twist to aim West next to heat cannon 38 from central position while staying behind west-going plume."
+    },
+    "result": "You have successfully added <ID 48: Torch>.\nExisting Blocks: 45\n(Blueprint #53 - Torch (heater) for west lower cannon 38; attached to bottom face of Starting Block (ID 1, Face D). Will twist to aim West next to heat cannon 38 from central position while staying behind west-going plume.) <ID 48: Torch>\nPosition: [ 0., 0.,-1.]\nPointing at <North with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [0.00, 1.00, -1.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 48,
+      "angle": 270.0
+    },
+    "result": "The block 48 <Torch> is twisted by 270.0 degrees. \n (Blueprint #53 - Torch (heater) for west lower cannon 38; attached to bottom face of Starting Block (ID 1, Face D). Will twist to aim West next to heat cannon 38 from central position while staying behind west-going plume.) <ID 48: Torch>\nPosition: [ 0., 0.,-1.]\nPointing at <East with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [1.00, 0.00, -1.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 48,
+      "angle": 180.0
+    },
+    "result": "The block 48 <Torch> is twisted by 180.0 degrees. \n (Blueprint #53 - Torch (heater) for west lower cannon 38; attached to bottom face of Starting Block (ID 1, Face D). Will twist to aim West next to heat cannon 38 from central position while staying behind west-going plume.) <ID 48: Torch>\nPosition: [ 0., 0.,-1.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-1.00, 0.00, -1.00]"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 6,
+      "face_a": "A",
+      "block_b": 7,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Brace 57 - Corner torsion brace (NW1-NE1 span) between block 6 east face and block 7 west face to increase torsional rigidity along the north edge."
+    },
+    "result": "You have successfully added <ID 49: Brace>.\nExisting Blocks: 46\n(Brace 57 - Corner torsion brace (NW1-NE1 span) between block 6 east face and block 7 west face to increase torsional rigidity along the north edge.) <ID 49: Brace>\nConnecting <ID 6: Small Wooden Block> at [-0.5  1.   0. ] and <ID 7: Small Wooden Block> at [0.5 1.  0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 2,
+      "face_a": "E",
+      "block_b": 10,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Brace 45 - Wall-to-floor shear brace (W1 column) between block 2 west face (E) and block 10 south face (B) to stiffen west wall to its floor tile."
+    },
+    "result": "You have successfully added <ID 50: Brace>.\nExisting Blocks: 47\n(Brace 45 - Wall-to-floor shear brace (W1 column) between block 2 west face (E) and block 10 south face (B) to stiffen west wall to its floor tile.) <ID 50: Brace>\nConnecting <ID 2: Small Wooden Block> at [-1.50000000e+00  2.22044605e-16  0.00000000e+00] and <ID 10: Small Wooden Block> at [-2.  -0.5  0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 6,
+      "face_a": "C",
+      "block_b": 12,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Brace 46 - Wall-to-floor shear brace (NW1 column) between block 6 top face (C) and block 12 south face (B) to stiffen west wall to its floor tile."
+    },
+    "result": "You have successfully added <ID 51: Brace>.\nExisting Blocks: 48\n(Brace 46 - Wall-to-floor shear brace (NW1 column) between block 6 top face (C) and block 12 south face (B) to stiffen west wall to its floor tile.) <ID 51: Brace>\nConnecting <ID 6: Small Wooden Block> at [-1.   1.   0.5] and <ID 12: Small Wooden Block> at [-2.   0.5  0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 8,
+      "face_a": "A",
+      "block_b": 14,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Brace 47 - Wall-to-floor shear brace (SW1 column) between block 8 west face (A) and block 14 south face (B) to stiffen west wall to its floor tile."
+    },
+    "result": "You have successfully added <ID 52: Brace>.\nExisting Blocks: 49\n(Brace 47 - Wall-to-floor shear brace (SW1 column) between block 8 west face (A) and block 14 south face (B) to stiffen west wall to its floor tile.) <ID 52: Brace>\nConnecting <ID 8: Small Wooden Block> at [-1.5 -1.   0. ] and <ID 14: Small Wooden Block> at [-2.  -1.5  0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 3,
+      "face_a": "E",
+      "block_b": 16,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Brace 48 - Wall-to-floor shear brace (E1 column) between block 3 east face (E) and block 16 south face (A) to stiffen east wall to its floor tile."
+    },
+    "result": "You have successfully added <ID 53: Brace>.\nExisting Blocks: 50\n(Brace 48 - Wall-to-floor shear brace (E1 column) between block 3 east face (E) and block 16 south face (A) to stiffen east wall to its floor tile.) <ID 53: Brace>\nConnecting <ID 3: Small Wooden Block> at [1.50000000e+00 2.22044605e-16 0.00000000e+00] and <ID 16: Small Wooden Block> at [ 2.  -0.5  0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 7,
+      "face_a": "A",
+      "block_b": 18,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Brace 49 - Wall-to-floor shear brace (NE1 east column) between block 7 east face (A) and block 18 south face (A) to stiffen east wall to its floor tile."
+    },
+    "result": "You have successfully added <ID 54: Brace>.\nExisting Blocks: 51\n(Brace 49 - Wall-to-floor shear brace (NE1 east column) between block 7 east face (A) and block 18 south face (A) to stiffen east wall to its floor tile.) <ID 54: Brace>\nConnecting <ID 7: Small Wooden Block> at [1.5 1.  0. ] and <ID 18: Small Wooden Block> at [2.  0.5 0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 18,
+      "face_a": "A",
+      "block_b": 20,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Brace 58 - East-edge torsion brace (NE1\u2013SE1 span) between block 18 south face (A) and block 20 north face (B) to increase torsional rigidity along the east edge."
+    },
+    "result": "You have successfully added <ID 55: Brace>.\nExisting Blocks: 52\n(Brace 58 - East-edge torsion brace (NE1\u2013SE1 span) between block 18 south face (A) and block 20 north face (B) to increase torsional rigidity along the east edge.) <ID 55: Brace>\nConnecting <ID 18: Small Wooden Block> at [2.  0.5 0. ] and <ID 20: Small Wooden Block> at [ 2.  -0.5  0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 9,
+      "face_a": "B",
+      "block_b": 20,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Brace 50 - Wall-to-floor shear brace (SE1 east column) between block 9 east face (B) and block 20 north face (B) to stiffen east wall to its floor tile."
+    },
+    "result": "You have successfully added <ID 56: Brace>.\nExisting Blocks: 53\n(Brace 50 - Wall-to-floor shear brace (SE1 east column) between block 9 east face (B) and block 20 north face (B) to stiffen east wall to its floor tile.) <ID 56: Brace>\nConnecting <ID 9: Small Wooden Block> at [ 1.5 -1.   0. ] and <ID 20: Small Wooden Block> at [ 2.  -0.5  0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 4,
+      "face_a": "E",
+      "block_b": 22,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Brace 51 - Wall-to-floor shear brace (N1 column) between block 4 north face (E) and block 22 west face (B) to stiffen north wall to its floor tile while avoiding hidden south face."
+    },
+    "result": "You have successfully added <ID 57: Brace>.\nExisting Blocks: 54\n(Brace 51 - Wall-to-floor shear brace (N1 column) between block 4 north face (E) and block 22 west face (B) to stiffen north wall to its floor tile while avoiding hidden south face.) <ID 57: Brace>\nConnecting <ID 4: Small Wooden Block> at [0.  1.5 0. ] and <ID 22: Small Wooden Block> at [-0.5  2.   0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 7,
+      "face_a": "E",
+      "block_b": 24,
+      "face_b": "D",
+      "connector": "Brace",
+      "note": "Brace 52 - Wall-to-floor shear brace (NE1 north column) between block 7 north face (E) and block 24 bottom face (D) using non-coincident faces."
+    },
+    "result": "You have successfully added <ID 58: Brace>.\nExisting Blocks: 55\n(Brace 52 - Wall-to-floor shear brace (NE1 north column) between block 7 north face (E) and block 24 bottom face (D) using non-coincident faces.) <ID 58: Brace>\nConnecting <ID 7: Small Wooden Block> at [1.  1.5 0. ] and <ID 24: Small Wooden Block> at [ 1.   2.  -0.5].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 6,
+      "face_a": "E",
+      "block_b": 25,
+      "face_b": "D",
+      "connector": "Brace",
+      "note": "Brace 53 - Wall-to-floor shear brace (NW1 north column) between block 6 north face (E) and block 25 bottom face (D) using non-coincident faces."
+    },
+    "result": "You have successfully added <ID 59: Brace>.\nExisting Blocks: 56\n(Brace 53 - Wall-to-floor shear brace (NW1 north column) between block 6 north face (E) and block 25 bottom face (D) using non-coincident faces.) <ID 59: Brace>\nConnecting <ID 6: Small Wooden Block> at [-1.   1.5  0. ] and <ID 25: Small Wooden Block> at [-1.   2.  -0.5].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 5,
+      "face_a": "E",
+      "block_b": 28,
+      "face_b": "D",
+      "connector": "Brace",
+      "note": "Brace 54 - Wall-to-floor shear brace (S1 column) between block 5 south face (E) and block 28 top face (D) to stiffen south wall to its floor tile."
+    },
+    "result": "You have successfully added <ID 60: Brace>.\nExisting Blocks: 57\n(Brace 54 - Wall-to-floor shear brace (S1 column) between block 5 south face (E) and block 28 top face (D) to stiffen south wall to its floor tile.) <ID 60: Brace>\nConnecting <ID 5: Small Wooden Block> at [ 0.  -1.5  0. ] and <ID 28: Small Wooden Block> at [ 0.  -2.   0.5].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 9,
+      "face_a": "E",
+      "block_b": 30,
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Brace 55 - Wall-to-floor shear brace (SE1 south column) between block 9 south face (E) and block 30 top face (C) to stiffen south wall at SE1 to its floor tile (non-coincident faces)."
+    },
+    "result": "You have successfully added <ID 61: Brace>.\nExisting Blocks: 58\n(Brace 55 - Wall-to-floor shear brace (SE1 south column) between block 9 south face (E) and block 30 top face (C) to stiffen south wall at SE1 to its floor tile (non-coincident faces).) <ID 61: Brace>\nConnecting <ID 9: Small Wooden Block> at [ 1.  -1.5  0. ] and <ID 30: Small Wooden Block> at [ 1.  -2.   0.5].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 8,
+      "face_a": "E",
+      "block_b": 32,
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Brace 56 - Wall-to-floor shear brace (SW1 south column) between block 8 south face (E) and block 32 top face (C) to stiffen the south wall at SW1 to its floor tile (non-coincident faces)."
+    },
+    "result": "You have successfully added <ID 62: Brace>.\nExisting Blocks: 59\n(Brace 56 - Wall-to-floor shear brace (SW1 south column) between block 8 south face (E) and block 32 top face (C) to stiffen the south wall at SW1 to its floor tile (non-coincident faces).) <ID 62: Brace>\nConnecting <ID 8: Small Wooden Block> at [-1.  -1.5  0. ] and <ID 32: Small Wooden Block> at [-1.  -2.   0.5].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 9,
+      "face_a": "A",
+      "block_b": 8,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Brace 59 - Corner torsion brace (SE1\u2013SW1 span) between block 9 west face (A) and block 8 east face (B) to increase torsional rigidity along the south edge."
+    },
+    "result": "You have successfully added <ID 63: Brace>.\nExisting Blocks: 60\n(Brace 59 - Corner torsion brace (SE1\u2013SW1 span) between block 9 west face (A) and block 8 east face (B) to increase torsional rigidity along the south edge.) <ID 63: Brace>\nConnecting <ID 9: Small Wooden Block> at [ 0.5 -1.   0. ] and <ID 8: Small Wooden Block> at [-0.5 -1.   0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 8,
+      "face_a": "C",
+      "block_b": 6,
+      "face_b": "D",
+      "connector": "Brace",
+      "note": "Brace 60 - West-edge torsion brace (SW1\u2013NW1 span) between block 8 top face (C) and block 6 bottom face (D) to finish the perimeter torsional ties."
+    },
+    "result": "You have successfully added <ID 64: Brace>.\nExisting Blocks: 61\n(Brace 60 - West-edge torsion brace (SW1\u2013NW1 span) between block 8 top face (C) and block 6 bottom face (D) to finish the perimeter torsional ties.) <ID 64: Brace>\nConnecting <ID 8: Small Wooden Block> at [-1.  -1.   0.5] and <ID 6: Small Wooden Block> at [-1.   1.  -0.5].\t"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 47
+    },
+    "result": "You have successfully removed <ID 47: Torch>."
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 60\n\nMachine Summary: 0 - Starting Block - 1x1x1 base stone (reference only) - fixed origin\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\n(Blueprint #1 - Floor tile W1 (Small Wooden Block) attached to west face of Starting Block) <ID 2: Small Wooden Block>\nPosition: [-1., 0., 0.]\n(Blueprint #2 - Floor tile E1 (Small Wooden Block) attached to east face of Starting Block) <ID 3: Small Wooden Block>\nPosition: [1.,0.,0.]\n(Blueprint #3 - Floor tile N1 (Small Wooden Block) attached to north face of Starting Block) <ID 4: Small Wooden Block>\nPosition: [0.,1.,0.]\n(Blueprint #4 - Floor tile S1 (Small Wooden Block) attached to south face of Starting Block) <ID 5: Small Wooden Block>\nPosition: [ 0.,-1., 0.]\n(Blueprint #5 - Floor tile NW1 (Small Wooden Block) attached to north face of Floor tile W1 (ID 2)) <ID 6: Small Wooden Block>\nPosition: [-1., 1., 0.]\n(Blueprint #6 - Floor tile NE1 (Small Wooden Block) attached to north face of Floor tile E1 (ID 3)) <ID 7: Small Wooden Block>\nPosition: [1.,1.,0.]\n(Blueprint #7 - Floor tile SW1 (Small Wooden Block) attached to south face of Floor tile W1 (ID 2)) <ID 8: Small Wooden Block>\nPosition: [-1.,-1., 0.]\n(Blueprint #8 - Floor tile SE1 (Small Wooden Block) attached to south face of Floor tile E1 (ID 3)) <ID 9: Small Wooden Block>\nPosition: [ 1.,-1., 0.]\n(Blueprint #9 - West lower wall at W1 column (Small Wooden Block) attached to west face of Floor tile W1 (ID 2)) <ID 10: Small Wooden Block>\nPosition: [-2., 0., 0.]\n(Blueprint #10 - West upper wall at W1 column (Small Wooden Block) attached to top face of West lower wall at W1 column (ID 10)) <ID 11: Small Wooden Block>\nPosition: [-2., 0., 1.]\n(Blueprint #11 - West lower wall at NW1 column (Small Wooden Block) attached to west face of Floor tile NW1 (ID 6)) <ID 12: Small Wooden Block>\nPosition: [-2., 1., 0.]\n(Blueprint #12 - West upper wall at NW1 column (Small Wooden Block) attached to top face of West lower wall at NW1 column (ID 12)) <ID 13: Small Wooden Block>\nPosition: [-2., 1., 1.]\n(Blueprint #13 - West lower wall at SW1 column (Small Wooden Block) attached to west face of Floor tile SW1 (ID 8)) <ID 14: Small Wooden Block>\nPosition: [-2.,-1., 0.]\n(Blueprint #14 - West upper wall at SW1 column (Small Wooden Block) attached to top face of West lower wall at SW1 column (ID 14)) <ID 15: Small Wooden Block>\nPosition: [-2.,-1., 1.]\n(Blueprint #15 - East lower wall at E1 column (Small Wooden Block) attached to east face of Floor tile E1 (ID 3)) <ID 16: Small Wooden Block>\nPosition: [2.,0.,0.]\n(Blueprint #16 - East upper wall at E1 column (Small Wooden Block) attached to top face of East lower wall at E1 column (ID 16)) <ID 17: Small Wooden Block>\nPosition: [2.,0.,1.]\n(Blueprint #17 - East lower wall at NE1 column (Small Wooden Block) attached to east face of Floor tile NE1 (ID 7)) <ID 18: Small Wooden Block>\nPosition: [2.,1.,0.]\n(Blueprint #18 - East upper wall at NE1 column (Small Wooden Block) attached to top face of East lower wall at NE1 column (ID 18)) <ID 19: Small Wooden Block>\nPosition: [2.,1.,1.]\n(Blueprint #19 - East lower wall at SE1 column (Small Wooden Block) attached to east face of Floor tile SE1 (ID 9)) <ID 20: Small Wooden Block>\nPosition: [ 2.,-1., 0.]\n(Blueprint #20 - East upper wall at SE1 column (Small Wooden Block) attached to top face of East lower wall at SE1 column (ID 20)) <ID 21: Small Wooden Block>\nPosition: [ 2.,-1., 1.]\n(Blueprint #21 - North lower wall at N1 column (Small Wooden Block) attached to north face of Floor tile N1 (ID 4)) <ID 22: Small Wooden Block>\nPosition: [0.,2.,0.]\n(Blueprint #22 - North upper wall at N1 column (Small Wooden Block) attached to top face of North lower wall at N1 column (ID 22)) <ID 23: Small Wooden Block>\nPosition: [0.,2.,1.]\n(Blueprint #23 - North lower wall at NE1 column (Small Wooden Block) attached to north face of Floor tile NE1 (ID 7)) <ID 24: Small Wooden Block>\nPosition: [1.,2.,0.]\n(Blueprint #24 - North lower wall at NW1 column (Small Wooden Block) attached to north face of Floor tile NW1 (ID 6)) <ID 25: Small Wooden Block>\nPosition: [-1., 2., 0.]\n(Blueprint #25 - North upper wall at NE1 column (Small Wooden Block) attached to top face of North lower wall at NE1 column (ID 24)) <ID 26: Small Wooden Block>\nPosition: [1.,2.,1.]\n(Blueprint #26 - North upper wall at NW1 column (Small Wooden Block) attached to top face of North lower wall at NW1 column (ID 25)) <ID 27: Small Wooden Block>\nPosition: [-1., 2., 1.]\n(Blueprint #27 - South lower wall at S1 column (Small Wooden Block) attached to south face of Floor tile S1 (ID 5)) <ID 28: Small Wooden Block>\nPosition: [ 0.,-2., 0.]\n(Blueprint #28 - South upper wall at S1 column (Small Wooden Block) attached to top face of South lower wall at S1 column (ID 28)) <ID 29: Small Wooden Block>\nPosition: [ 0.,-2., 1.]\n(Blueprint #29 - South lower wall at SE1 column (Small Wooden Block) attached to south face of Floor tile SE1 (ID 9)) <ID 30: Small Wooden Block>\nPosition: [ 1.,-2., 0.]\n(Blueprint #30 - South upper wall at SE1 column (Small Wooden Block) attached to top face of South lower wall at SE1 column (ID 30)) <ID 31: Small Wooden Block>\nPosition: [ 1.,-2., 1.]\n(Blueprint #31 - South lower wall at SW1 column (Small Wooden Block) attached to south face of Floor tile SW1 (ID 8)) <ID 32: Small Wooden Block>\nPosition: [-1.,-2., 0.]\n(Blueprint #32 - South upper wall at SW1 column (Small Wooden Block) attached to top face of South lower wall at SW1 column (ID 32)) <ID 33: Small Wooden Block>\nPosition: [-1.,-2., 1.]\n(Blueprint #33 - Shield for west lower torch (awning) relocated to top face of West upper wall at SW1 column (ID 15) to sit above/behind Torch 41) <ID 34: Small Wooden Block>\nPosition: [-2.,-1., 2.]\n(Blueprint #34 - Shield for west upper torch (awning) attached to top face of West upper wall at NW1 column (ID 13)) <ID 35: Small Wooden Block>\nPosition: [-2., 1., 2.]\n(Blueprint Step 35 - South-side awning/shield to protect SE torches; attached to top face of South upper wall at SE1 column (ID 31)) <ID 36: Small Wooden Block>\nPosition: [ 1.,-2., 2.]\n(Blueprint #36 (relocated, v2) - Water Cannon 37 - West lower thruster at W1 column; attached to bottom face of block 10 (Face D) to allow twist to West (\u2212x). Control: W key (paired with 38).) <ID 38: Water Cannon>\nPosition: [-2., 0.,-1.]\nPointing at <West with 0.0\u00b0 pitch>\nInlet is at [-1.25, 0.00, -1.00], outlet is at [-3.00, 0.00, -1.00], sprays towards <West with 0.0\u00b0 pitch>\n(Blueprint #38 - Water Cannon 39 - West upper thruster at W1 column; attached to top face of block 11 (Face E). Will twist to point West (\u2212x). Control: W key (paired with lower west thruster).) <ID 39: Water Cannon>\nPosition: [-2., 0., 2.]\nPointing at <West with 0.0\u00b0 pitch>\nInlet is at [-1.25, 0.00, 2.00], outlet is at [-3.00, 0.00, 2.00], sprays towards <West with 0.0\u00b0 pitch>\n(Blueprint #40 - South lower thruster at S1 column; Water Cannon attached to bottom face of block 28 (Face C). Will twist to point South (\u2212y) next. Control: S key (paired later with upper south thruster).) <ID 41: Water Cannon>\nPosition: [ 0.,-2.,-1.]\nPointing at <South with 0.0\u00b0 pitch>\nInlet is at [0.00, -1.25, -1.00], outlet is at [0.00, -3.00, -1.00], sprays towards <South with 0.0\u00b0 pitch>\n(Blueprint #41 - South upper thruster at S1 column; Water Cannon attached to top face of block 29 (Face E). Will twist to point South (\u2212y). Control: S key (paired with lower south thruster ID 41).) <ID 42: Water Cannon>\nPosition: [ 0.,-2., 2.]\nPointing at <South with -0.0\u00b0 pitch>\nInlet is at [0.00, -1.25, 2.00], outlet is at [0.00, -3.00, 2.00], sprays towards <South with -0.0\u00b0 pitch>\n(Blueprint #43 - Torch 42 - Heater for west upper cannon (39); attached to east face of shield block 35 (Face C) at approx [-1.5,1,2]. Intended flame pointing due South so heating sphere centers near [-1,0,2], overlapping inlet/body of Water Cannon 39 while staying behind westward plume.) <ID 43: Torch>\nPosition: [-1., 1., 2.]\nPointing at <South with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-1.00, -0.00, 2.00]\n(Blueprint #46 (attempt 2) - Torch (heater) for south lower cannon 41; attached to bottom face of Floor tile SE1 (ID 9, Face D) at approx [1,-1,-0.5]. Will twist to aim West next so heating sphere centers near [0.00,-1.00,-1.00].) <ID 45: Torch>\nPosition: [ 1.,-1.,-1.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [0.00, -1.00, -1.00]\n(Blueprint #47 - Torch (heater) for south upper cannon 42; attached to north face of shield block 36 (Face C) at approx [1, -1.5, 2]. Will twist to point due West so heating sphere centers near [0, -1.5, 2], overlapping cannon 42 inlet/body while staying behind south-going plume.) <ID 46: Torch>\nPosition: [ 1.,-1., 2.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [0.00, -1.00, 2.00]\n(Blueprint #53 - Torch (heater) for west lower cannon 38; attached to bottom face of Starting Block (ID 1, Face D). Will twist to aim West next to heat cannon 38 from central position while staying behind west-going plume.) <ID 48: Torch>\nPosition: [ 0., 0.,-1.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-1.00, 0.00, -1.00]\n(Brace 57 - Corner torsion brace (NW1-NE1 span) between block 6 east face and block 7 west face to increase torsional rigidity along the north edge.) <ID 49: Brace>\nConnecting <ID 6: Small Wooden Block> at [-0.5  1.   0. ] and <ID 7: Small Wooden Block> at [0.5 1.  0. ].\t\n(Brace 45 - Wall-to-floor shear brace (W1 column) between block 2 west face (E) and block 10 south face (B) to stiffen west wall to its floor tile.) <ID 50: Brace>\nConnecting <ID 2: Small Wooden Block> at [-1.50000000e+00  2.22044605e-16  0.00000000e+00] and <ID 10: Small Wooden Block> at [-2.  -0.5  0. ].\t\n(Brace 46 - Wall-to-floor shear brace (NW1 column) between block 6 top face (C) and block 12 south face (B) to stiffen west wall to its floor tile.) <ID 51: Brace>\nConnecting <ID 6: Small Wooden Block> at [-1.   1.   0.5] and <ID 12: Small Wooden Block> at [-2.   0.5  0. ].\t\n(Brace 47 - Wall-to-floor shear brace (SW1 column) between block 8 west face (A) and block 14 south face (B) to stiffen west wall to its floor tile.) <ID 52: Brace>\nConnecting <ID 8: Small Wooden Block> at [-1.5 -1.   0. ] and <ID 14: Small Wooden Block> at [-2.  -1.5  0. ].\t\n(Brace 48 - Wall-to-floor shear brace (E1 column) between block 3 east face (E) and block 16 south face (A) to stiffen east wall to its floor tile.) <ID 53: Brace>\nConnecting <ID 3: Small Wooden Block> at [1.50000000e+00 2.22044605e-16 0.00000000e+00] and <ID 16: Small Wooden Block> at [ 2.  -0.5  0. ].\t\n(Brace 49 - Wall-to-floor shear brace (NE1 east column) between block 7 east face (A) and block 18 south face (A) to stiffen east wall to its floor tile.) <ID 54: Brace>\nConnecting <ID 7: Small Wooden Block> at [1.5 1.  0. ] and <ID 18: Small Wooden Block> at [2.  0.5 0. ].\t\n(Brace 58 - East-edge torsion brace (NE1\u2013SE1 span) between block 18 south face (A) and block 20 north face (B) to increase torsional rigidity along the east edge.) <ID 55: Brace>\nConnecting <ID 18: Small Wooden Block> at [2.  0.5 0. ] and <ID 20: Small Wooden Block> at [ 2.  -0.5  0. ].\t\n(Brace 50 - Wall-to-floor shear brace (SE1 east column) between block 9 east face (B) and block 20 north face (B) to stiffen east wall to its floor tile.) <ID 56: Brace>\nConnecting <ID 9: Small Wooden Block> at [ 1.5 -1.   0. ] and <ID 20: Small Wooden Block> at [ 2.  -0.5  0. ].\t\n(Brace 51 - Wall-to-floor shear brace (N1 column) between block 4 north face (E) and block 22 west face (B) to stiffen north wall to its floor tile while avoiding hidden south face.) <ID 57: Brace>\nConnecting <ID 4: Small Wooden Block> at [0.  1.5 0. ] and <ID 22: Small Wooden Block> at [-0.5  2.   0. ].\t\n(Brace 52 - Wall-to-floor shear brace (NE1 north column) between block 7 north face (E) and block 24 bottom face (D) using non-coincident faces.) <ID 58: Brace>\nConnecting <ID 7: Small Wooden Block> at [1.  1.5 0. ] and <ID 24: Small Wooden Block> at [ 1.   2.  -0.5].\t\n(Brace 53 - Wall-to-floor shear brace (NW1 north column) between block 6 north face (E) and block 25 bottom face (D) using non-coincident faces.) <ID 59: Brace>\nConnecting <ID 6: Small Wooden Block> at [-1.   1.5  0. ] and <ID 25: Small Wooden Block> at [-1.   2.  -0.5].\t\n(Brace 54 - Wall-to-floor shear brace (S1 column) between block 5 south face (E) and block 28 top face (D) to stiffen south wall to its floor tile.) <ID 60: Brace>\nConnecting <ID 5: Small Wooden Block> at [ 0.  -1.5  0. ] and <ID 28: Small Wooden Block> at [ 0.  -2.   0.5].\t\n(Brace 55 - Wall-to-floor shear brace (SE1 south column) between block 9 south face (E) and block 30 top face (C) to stiffen south wall at SE1 to its floor tile (non-coincident faces).) <ID 61: Brace>\nConnecting <ID 9: Small Wooden Block> at [ 1.  -1.5  0. ] and <ID 30: Small Wooden Block> at [ 1.  -2.   0.5].\t\n(Brace 56 - Wall-to-floor shear brace (SW1 south column) between block 8 south face (E) and block 32 top face (C) to stiffen the south wall at SW1 to its floor tile (non-coincident faces).) <ID 62: Brace>\nConnecting <ID 8: Small Wooden Block> at [-1.  -1.5  0. ] and <ID 32: Small Wooden Block> at [-1.  -2.   0.5].\t\n(Brace 59 - Corner torsion brace (SE1\u2013SW1 span) between block 9 west face (A) and block 8 east face (B) to increase torsional rigidity along the south edge.) <ID 63: Brace>\nConnecting <ID 9: Small Wooden Block> at [ 0.5 -1.   0. ] and <ID 8: Small Wooden Block> at [-0.5 -1.   0. ].\t\n(Brace 60 - West-edge torsion brace (SW1\u2013NW1 span) between block 8 top face (C) and block 6 bottom face (D) to finish the perimeter torsional ties.) <ID 64: Brace>\nConnecting <ID 8: Small Wooden Block> at [-1.  -1.   0.5] and <ID 6: Small Wooden Block> at [-1.   1.  -0.5].\t"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 60\n\nMachine Summary: 0 - Starting Block - 1x1x1 base stone (reference only) - fixed origin\n(Blueprint #1 - Floor tile W1 (Small Wooden Block) attached to west face of Starting Block) <ID 2: Small Wooden Block>\nPosition: [-1., 0., 0.]\n(Blueprint #2 - Floor tile E1 (Small Wooden Block) attached to east face of Starting Block) <ID 3: Small Wooden Block>\nPosition: [1.,0.,0.]\n(Blueprint #3 - Floor tile N1 (Small Wooden Block) attached to north face of Starting Block) <ID 4: Small Wooden Block>\nPosition: [0.,1.,0.]\n(Blueprint #4 - Floor tile S1 (Small Wooden Block) attached to south face of Starting Block) <ID 5: Small Wooden Block>\nPosition: [ 0.,-1., 0.]\n(Blueprint #5 - Floor tile NW1 (Small Wooden Block) attached to north face of Floor tile W1 (ID 2)) <ID 6: Small Wooden Block>\nPosition: [-1., 1., 0.]\n(Blueprint #6 - Floor tile NE1 (Small Wooden Block) attached to north face of Floor tile E1 (ID 3)) <ID 7: Small Wooden Block>\nPosition: [1.,1.,0.]\n(Blueprint #7 - Floor tile SW1 (Small Wooden Block) attached to south face of Floor tile W1 (ID 2)) <ID 8: Small Wooden Block>\nPosition: [-1.,-1., 0.]\n(Blueprint #8 - Floor tile SE1 (Small Wooden Block) attached to south face of Floor tile E1 (ID 3)) <ID 9: Small Wooden Block>\nPosition: [ 1.,-1., 0.]\n(Blueprint #9 - West lower wall at W1 column (Small Wooden Block) attached to west face of Floor tile W1 (ID 2)) <ID 10: Small Wooden Block>\nPosition: [-2., 0., 0.]\n(Blueprint #10 - West upper wall at W1 column (Small Wooden Block) attached to top face of West lower wall at W1 column (ID 10)) <ID 11: Small Wooden Block>\nPosition: [-2., 0., 1.]\n(Blueprint #11 - West lower wall at NW1 column (Small Wooden Block) attached to west face of Floor tile NW1 (ID 6)) <ID 12: Small Wooden Block>\nPosition: [-2., 1., 0.]\n(Blueprint #12 - West upper wall at NW1 column (Small Wooden Block) attached to top face of West lower wall at NW1 column (ID 12)) <ID 13: Small Wooden Block>\nPosition: [-2., 1., 1.]\n(Blueprint #13 - West lower wall at SW1 column (Small Wooden Block) attached to west face of Floor tile SW1 (ID 8)) <ID 14: Small Wooden Block>\nPosition: [-2.,-1., 0.]\n(Blueprint #14 - West upper wall at SW1 column (Small Wooden Block) attached to top face of West lower wall at SW1 column (ID 14)) <ID 15: Small Wooden Block>\nPosition: [-2.,-1., 1.]\n(Blueprint #15 - East lower wall at E1 column (Small Wooden Block) attached to east face of Floor tile E1 (ID 3)) <ID 16: Small Wooden Block>\nPosition: [2.,0.,0.]\n(Blueprint #16 - East upper wall at E1 column (Small Wooden Block) attached to top face of East lower wall at E1 column (ID 16)) <ID 17: Small Wooden Block>\nPosition: [2.,0.,1.]\n(Blueprint #17 - East lower wall at NE1 column (Small Wooden Block) attached to east face of Floor tile NE1 (ID 7)) <ID 18: Small Wooden Block>\nPosition: [2.,1.,0.]\n(Blueprint #18 - East upper wall at NE1 column (Small Wooden Block) attached to top face of East lower wall at NE1 column (ID 18)) <ID 19: Small Wooden Block>\nPosition: [2.,1.,1.]\n(Blueprint #19 - East lower wall at SE1 column (Small Wooden Block) attached to east face of Floor tile SE1 (ID 9)) <ID 20: Small Wooden Block>\nPosition: [ 2.,-1., 0.]\n(Blueprint #20 - East upper wall at SE1 column (Small Wooden Block) attached to top face of East lower wall at SE1 column (ID 20)) <ID 21: Small Wooden Block>\nPosition: [ 2.,-1., 1.]\n(Blueprint #21 - North lower wall at N1 column (Small Wooden Block) attached to north face of Floor tile N1 (ID 4)) <ID 22: Small Wooden Block>\nPosition: [0.,2.,0.]\n(Blueprint #22 - North upper wall at N1 column (Small Wooden Block) attached to top face of North lower wall at N1 column (ID 22)) <ID 23: Small Wooden Block>\nPosition: [0.,2.,1.]\n(Blueprint #23 - North lower wall at NE1 column (Small Wooden Block) attached to north face of Floor tile NE1 (ID 7)) <ID 24: Small Wooden Block>\nPosition: [1.,2.,0.]\n(Blueprint #24 - North lower wall at NW1 column (Small Wooden Block) attached to north face of Floor tile NW1 (ID 6)) <ID 25: Small Wooden Block>\nPosition: [-1., 2., 0.]\n(Blueprint #25 - North upper wall at NE1 column (Small Wooden Block) attached to top face of North lower wall at NE1 column (ID 24)) <ID 26: Small Wooden Block>\nPosition: [1.,2.,1.]\n(Blueprint #26 - North upper wall at NW1 column (Small Wooden Block) attached to top face of North lower wall at NW1 column (ID 25)) <ID 27: Small Wooden Block>\nPosition: [-1., 2., 1.]\n(Blueprint #27 - South lower wall at S1 column (Small Wooden Block) attached to south face of Floor tile S1 (ID 5)) <ID 28: Small Wooden Block>\nPosition: [ 0.,-2., 0.]\n(Blueprint #28 - South upper wall at S1 column (Small Wooden Block) attached to top face of South lower wall at S1 column (ID 28)) <ID 29: Small Wooden Block>\nPosition: [ 0.,-2., 1.]\n(Blueprint #29 - South lower wall at SE1 column (Small Wooden Block) attached to south face of Floor tile SE1 (ID 9)) <ID 30: Small Wooden Block>\nPosition: [ 1.,-2., 0.]\n(Blueprint #30 - South upper wall at SE1 column (Small Wooden Block) attached to top face of South lower wall at SE1 column (ID 30)) <ID 31: Small Wooden Block>\nPosition: [ 1.,-2., 1.]\n(Blueprint #31 - South lower wall at SW1 column (Small Wooden Block) attached to south face of Floor tile SW1 (ID 8)) <ID 32: Small Wooden Block>\nPosition: [-1.,-2., 0.]\n(Blueprint #32 - South upper wall at SW1 column (Small Wooden Block) attached to top face of South lower wall at SW1 column (ID 32)) <ID 33: Small Wooden Block>\nPosition: [-1.,-2., 1.]\n(Blueprint #33 - Shield for west lower torch (awning) relocated to top face of West upper wall at SW1 column (ID 15) to sit above/behind Torch 41) <ID 34: Small Wooden Block>\nPosition: [-2.,-1., 2.]\n(Blueprint #34 - Shield for west upper torch (awning) attached to top face of West upper wall at NW1 column (ID 13)) <ID 35: Small Wooden Block>\nPosition: [-2., 1., 2.]\n(Blueprint Step 35 - South-side awning/shield to protect SE torches; attached to top face of South upper wall at SE1 column (ID 31)) <ID 36: Small Wooden Block>\nPosition: [ 1.,-2., 2.]\n(Blueprint #36 (relocated, v2) - Water Cannon 37 - West lower thruster at W1 column; attached to bottom face of block 10 (Face D) to allow twist to West (\u2212x). Control: W key (paired with 38).) <ID 38: Water Cannon>\nPosition: [-2., 0.,-1.]\nPointing at <West with 0.0\u00b0 pitch>\nInlet is at [-1.25, 0.00, -1.00], outlet is at [-3.00, 0.00, -1.00], sprays towards <West with 0.0\u00b0 pitch>\n(Blueprint #38 - Water Cannon 39 - West upper thruster at W1 column; attached to top face of block 11 (Face E). Will twist to point West (\u2212x). Control: W key (paired with lower west thruster).) <ID 39: Water Cannon>\nPosition: [-2., 0., 2.]\nPointing at <West with 0.0\u00b0 pitch>\nInlet is at [-1.25, 0.00, 2.00], outlet is at [-3.00, 0.00, 2.00], sprays towards <West with 0.0\u00b0 pitch>\n(Blueprint #40 - South lower thruster at S1 column; Water Cannon attached to bottom face of block 28 (Face C). Will twist to point South (\u2212y) next. Control: S key (paired later with upper south thruster).) <ID 41: Water Cannon>\nPosition: [ 0.,-2.,-1.]\nPointing at <South with 0.0\u00b0 pitch>\nInlet is at [0.00, -1.25, -1.00], outlet is at [0.00, -3.00, -1.00], sprays towards <South with 0.0\u00b0 pitch>\n(Blueprint #41 - South upper thruster at S1 column; Water Cannon attached to top face of block 29 (Face E). Will twist to point South (\u2212y). Control: S key (paired with lower south thruster ID 41).) <ID 42: Water Cannon>\nPosition: [ 0.,-2., 2.]\nPointing at <South with -0.0\u00b0 pitch>\nInlet is at [0.00, -1.25, 2.00], outlet is at [0.00, -3.00, 2.00], sprays towards <South with -0.0\u00b0 pitch>\n(Blueprint #43 - Torch 42 - Heater for west upper cannon (39); attached to east face of shield block 35 (Face C) at approx [-1.5,1,2]. Intended flame pointing due South so heating sphere centers near [-1,0,2], overlapping inlet/body of Water Cannon 39 while staying behind westward plume.) <ID 43: Torch>\nPosition: [-1., 1., 2.]\nPointing at <South with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-1.00, -0.00, 2.00]\n(Blueprint #46 (attempt 2) - Torch (heater) for south lower cannon 41; attached to bottom face of Floor tile SE1 (ID 9, Face D) at approx [1,-1,-0.5]. Will twist to aim West next so heating sphere centers near [0.00,-1.00,-1.00].) <ID 45: Torch>\nPosition: [ 1.,-1.,-1.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [0.00, -1.00, -1.00]\n(Blueprint #47 - Torch (heater) for south upper cannon 42; attached to north face of shield block 36 (Face C) at approx [1, -1.5, 2]. Will twist to point due West so heating sphere centers near [0, -1.5, 2], overlapping cannon 42 inlet/body while staying behind south-going plume.) <ID 46: Torch>\nPosition: [ 1.,-1., 2.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [0.00, -1.00, 2.00]\n(Blueprint #53 - Torch (heater) for west lower cannon 38; attached to bottom face of Starting Block (ID 1, Face D). Will twist to aim West next to heat cannon 38 from central position while staying behind west-going plume.) <ID 48: Torch>\nPosition: [ 0., 0.,-1.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-1.00, 0.00, -1.00]\n(Brace 57 - Corner torsion brace (NW1-NE1 span) between block 6 east face and block 7 west face to increase torsional rigidity along the north edge.) <ID 49: Brace>\nConnecting <ID 6: Small Wooden Block> at [-0.5  1.   0. ] and <ID 7: Small Wooden Block> at [0.5 1.  0. ].\t\n(Brace 45 - Wall-to-floor shear brace (W1 column) between block 2 west face (E) and block 10 south face (B) to stiffen west wall to its floor tile.) <ID 50: Brace>\nConnecting <ID 2: Small Wooden Block> at [-1.50000000e+00  2.22044605e-16  0.00000000e+00] and <ID 10: Small Wooden Block> at [-2.  -0.5  0. ].\t\n(Brace 46 - Wall-to-floor shear brace (NW1 column) between block 6 top face (C) and block 12 south face (B) to stiffen west wall to its floor tile.) <ID 51: Brace>\nConnecting <ID 6: Small Wooden Block> at [-1.   1.   0.5] and <ID 12: Small Wooden Block> at [-2.   0.5  0. ].\t\n(Brace 47 - Wall-to-floor shear brace (SW1 column) between block 8 west face (A) and block 14 south face (B) to stiffen west wall to its floor tile.) <ID 52: Brace>\nConnecting <ID 8: Small Wooden Block> at [-1.5 -1.   0. ] and <ID 14: Small Wooden Block> at [-2.  -1.5  0. ].\t\n(Brace 48 - Wall-to-floor shear brace (E1 column) between block 3 east face (E) and block 16 south face (A) to stiffen east wall to its floor tile.) <ID 53: Brace>\nConnecting <ID 3: Small Wooden Block> at [1.50000000e+00 2.22044605e-16 0.00000000e+00] and <ID 16: Small Wooden Block> at [ 2.  -0.5  0. ].\t\n(Brace 49 - Wall-to-floor shear brace (NE1 east column) between block 7 east face (A) and block 18 south face (A) to stiffen east wall to its floor tile.) <ID 54: Brace>\nConnecting <ID 7: Small Wooden Block> at [1.5 1.  0. ] and <ID 18: Small Wooden Block> at [2.  0.5 0. ].\t\n(Brace 58 - East-edge torsion brace (NE1\u2013SE1 span) between block 18 south face (A) and block 20 north face (B) to increase torsional rigidity along the east edge.) <ID 55: Brace>\nConnecting <ID 18: Small Wooden Block> at [2.  0.5 0. ] and <ID 20: Small Wooden Block> at [ 2.  -0.5  0. ].\t\n(Brace 50 - Wall-to-floor shear brace (SE1 east column) between block 9 east face (B) and block 20 north face (B) to stiffen east wall to its floor tile.) <ID 56: Brace>\nConnecting <ID 9: Small Wooden Block> at [ 1.5 -1.   0. ] and <ID 20: Small Wooden Block> at [ 2.  -0.5  0. ].\t\n(Brace 51 - Wall-to-floor shear brace (N1 column) between block 4 north face (E) and block 22 west face (B) to stiffen north wall to its floor tile while avoiding hidden south face.) <ID 57: Brace>\nConnecting <ID 4: Small Wooden Block> at [0.  1.5 0. ] and <ID 22: Small Wooden Block> at [-0.5  2.   0. ].\t\n(Brace 52 - Wall-to-floor shear brace (NE1 north column) between block 7 north face (E) and block 24 bottom face (D) using non-coincident faces.) <ID 58: Brace>\nConnecting <ID 7: Small Wooden Block> at [1.  1.5 0. ] and <ID 24: Small Wooden Block> at [ 1.   2.  -0.5].\t\n(Brace 53 - Wall-to-floor shear brace (NW1 north column) between block 6 north face (E) and block 25 bottom face (D) using non-coincident faces.) <ID 59: Brace>\nConnecting <ID 6: Small Wooden Block> at [-1.   1.5  0. ] and <ID 25: Small Wooden Block> at [-1.   2.  -0.5].\t\n(Brace 54 - Wall-to-floor shear brace (S1 column) between block 5 south face (E) and block 28 top face (D) to stiffen south wall to its floor tile.) <ID 60: Brace>\nConnecting <ID 5: Small Wooden Block> at [ 0.  -1.5  0. ] and <ID 28: Small Wooden Block> at [ 0.  -2.   0.5].\t\n(Brace 55 - Wall-to-floor shear brace (SE1 south column) between block 9 south face (E) and block 30 top face (C) to stiffen south wall at SE1 to its floor tile (non-coincident faces).) <ID 61: Brace>\nConnecting <ID 9: Small Wooden Block> at [ 1.  -1.5  0. ] and <ID 30: Small Wooden Block> at [ 1.  -2.   0.5].\t\n(Brace 56 - Wall-to-floor shear brace (SW1 south column) between block 8 south face (E) and block 32 top face (C) to stiffen the south wall at SW1 to its floor tile (non-coincident faces).) <ID 62: Brace>\nConnecting <ID 8: Small Wooden Block> at [-1.  -1.5  0. ] and <ID 32: Small Wooden Block> at [-1.  -2.   0.5].\t\n(Brace 59 - Corner torsion brace (SE1\u2013SW1 span) between block 9 west face (A) and block 8 east face (B) to increase torsional rigidity along the south edge.) <ID 63: Brace>\nConnecting <ID 9: Small Wooden Block> at [ 0.5 -1.   0. ] and <ID 8: Small Wooden Block> at [-0.5 -1.   0. ].\t\n(Brace 60 - West-edge torsion brace (SW1\u2013NW1 span) between block 8 top face (C) and block 6 bottom face (D) to finish the perimeter torsional ties.) <ID 64: Brace>\nConnecting <ID 8: Small Wooden Block> at [-1.  -1.   0.5] and <ID 6: Small Wooden Block> at [-1.   1.  -0.5].\t\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]"
+  },
+  {
+    "op": "reset",
+    "params": {},
+    "result": "The machine has been reset, please start again."
+  },
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "0 - Starting Block - 1x1x1 base stone (reference only) - fixed origin"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #1 - Floor tile W1 (Small Wooden Block) attached to west face of Starting Block"
+    },
+    "result": "You have successfully added <ID 2: Small Wooden Block>.\nExisting Blocks: 2\n(Blueprint #1 - Floor tile W1 (Small Wooden Block) attached to west face of Starting Block) <ID 2: Small Wooden Block>\nPosition: [-1., 0., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1. ,  0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  0. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-1. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-1.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #2 - Floor tile E1 (Small Wooden Block) attached to east face of Starting Block"
+    },
+    "result": "You have successfully added <ID 3: Small Wooden Block>.\nExisting Blocks: 3\n(Blueprint #2 - Floor tile E1 (Small Wooden Block) attached to east face of Starting Block) <ID 3: Small Wooden Block>\nPosition: [1.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [1. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [1.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #3 - Floor tile N1 (Small Wooden Block) attached to north face of Starting Block"
+    },
+    "result": "You have successfully added <ID 4: Small Wooden Block>.\nExisting Blocks: 4\n(Blueprint #3 - Floor tile N1 (Small Wooden Block) attached to north face of Starting Block) <ID 4: Small Wooden Block>\nPosition: [0.,1.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 1. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 1. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  1. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 1.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "F",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #4 - Floor tile S1 (Small Wooden Block) attached to south face of Starting Block"
+    },
+    "result": "You have successfully added <ID 5: Small Wooden Block>.\nExisting Blocks: 5\n(Blueprint #4 - Floor tile S1 (Small Wooden Block) attached to south face of Starting Block) <ID 5: Small Wooden Block>\nPosition: [ 0.,-1., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -1. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -1. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [ 0. , -1. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [ 0. , -1.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #5 - Floor tile NW1 (Small Wooden Block) attached to north face of Floor tile W1 (ID 2)"
+    },
+    "result": "You have successfully added <ID 6: Small Wooden Block>.\nExisting Blocks: 6\n(Blueprint #5 - Floor tile NW1 (Small Wooden Block) attached to north face of Floor tile W1 (ID 2)) <ID 6: Small Wooden Block>\nPosition: [-1., 1., 0.]\nAttachable Faces:\nFace label: A, Face center: [-0.5,  1. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5,  1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  1. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-1. ,  1. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-1. ,  1.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #6 - Floor tile NE1 (Small Wooden Block) attached to north face of Floor tile E1 (ID 3)"
+    },
+    "result": "You have successfully added <ID 7: Small Wooden Block>.\nExisting Blocks: 7\n(Blueprint #6 - Floor tile NE1 (Small Wooden Block) attached to north face of Floor tile E1 (ID 3)) <ID 7: Small Wooden Block>\nPosition: [1.,1.,0.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 1. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 1. , 0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 1. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. ,  1. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [1. , 1.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #7 - Floor tile SW1 (Small Wooden Block) attached to south face of Floor tile W1 (ID 2)"
+    },
+    "result": "You have successfully added <ID 8: Small Wooden Block>.\nExisting Blocks: 8\n(Blueprint #7 - Floor tile SW1 (Small Wooden Block) attached to south face of Floor tile W1 (ID 2)) <ID 8: Small Wooden Block>\nPosition: [-1.,-1., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -1. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -1. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-1. , -1. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-1. , -1.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #8 - Floor tile SE1 (Small Wooden Block) attached to south face of Floor tile E1 (ID 3)"
+    },
+    "result": "You have successfully added <ID 9: Small Wooden Block>.\nExisting Blocks: 9\n(Blueprint #8 - Floor tile SE1 (Small Wooden Block) attached to south face of Floor tile E1 (ID 3)) <ID 9: Small Wooden Block>\nPosition: [ 1.,-1., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 1.5, -1. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -1. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. , -1. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [ 1. , -1.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #9 - West lower wall at W1 column (Small Wooden Block) attached to west face of Floor tile W1 (ID 2)"
+    },
+    "result": "You have successfully added <ID 10: Small Wooden Block>.\nExisting Blocks: 10\n(Blueprint #9 - West lower wall at W1 column (Small Wooden Block) attached to west face of Floor tile W1 (ID 2)) <ID 10: Small Wooden Block>\nPosition: [-2., 0., 0.]\nAttachable Faces:\nFace label: A, Face center: [-2. ,  0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. ,  0. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-2. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-2.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 10,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #10 - West upper wall at W1 column (Small Wooden Block) attached to top face of West lower wall at W1 column (ID 10)"
+    },
+    "result": "You have successfully added <ID 11: Small Wooden Block>.\nExisting Blocks: 11\n(Blueprint #10 - West upper wall at W1 column (Small Wooden Block) attached to top face of West lower wall at W1 column (ID 10)) <ID 11: Small Wooden Block>\nPosition: [-2., 0., 1.]\nAttachable Faces:\nFace label: A, Face center: [-2. ,  0.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. , -0.5,  1. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [-1.5,  0. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2.5,  0. ,  1. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: E, Face center: [-2. , -0. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 6,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #11 - West lower wall at NW1 column (Small Wooden Block) attached to west face of Floor tile NW1 (ID 6)"
+    },
+    "result": "You have successfully added <ID 12: Small Wooden Block>.\nExisting Blocks: 12\n(Blueprint #11 - West lower wall at NW1 column (Small Wooden Block) attached to west face of Floor tile NW1 (ID 6)) <ID 12: Small Wooden Block>\nPosition: [-2., 1., 0.]\nAttachable Faces:\nFace label: A, Face center: [-2. ,  1.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. ,  0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. ,  1. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-2. ,  1. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-2.5,  1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 12,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #12 - West upper wall at NW1 column (Small Wooden Block) attached to top face of West lower wall at NW1 column (ID 12)"
+    },
+    "result": "You have successfully added <ID 13: Small Wooden Block>.\nExisting Blocks: 13\n(Blueprint #12 - West upper wall at NW1 column (Small Wooden Block) attached to top face of West lower wall at NW1 column (ID 12)) <ID 13: Small Wooden Block>\nPosition: [-2., 1., 1.]\nAttachable Faces:\nFace label: A, Face center: [-2. ,  1.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. ,  0.5,  1. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [-1.5,  1. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2.5,  1. ,  1. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: E, Face center: [-2. ,  1. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 8,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #13 - West lower wall at SW1 column (Small Wooden Block) attached to west face of Floor tile SW1 (ID 8)"
+    },
+    "result": "You have successfully added <ID 14: Small Wooden Block>.\nExisting Blocks: 14\n(Blueprint #13 - West lower wall at SW1 column (Small Wooden Block) attached to west face of Floor tile SW1 (ID 8)) <ID 14: Small Wooden Block>\nPosition: [-2.,-1., 0.]\nAttachable Faces:\nFace label: A, Face center: [-2. , -0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. , -1.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. , -1. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-2. , -1. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-2.5, -1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 14,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #14 - West upper wall at SW1 column (Small Wooden Block) attached to top face of West lower wall at SW1 column (ID 14)"
+    },
+    "result": "You have successfully added <ID 15: Small Wooden Block>.\nExisting Blocks: 15\n(Blueprint #14 - West upper wall at SW1 column (Small Wooden Block) attached to top face of West lower wall at SW1 column (ID 14)) <ID 15: Small Wooden Block>\nPosition: [-2.,-1., 1.]\nAttachable Faces:\nFace label: A, Face center: [-2. , -0.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. , -1.5,  1. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [-1.5, -1. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2.5, -1. ,  1. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: E, Face center: [-2. , -1. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #15 - East lower wall at E1 column (Small Wooden Block) attached to east face of Floor tile E1 (ID 3)"
+    },
+    "result": "You have successfully added <ID 16: Small Wooden Block>.\nExisting Blocks: 16\n(Blueprint #15 - East lower wall at E1 column (Small Wooden Block) attached to east face of Floor tile E1 (ID 3)) <ID 16: Small Wooden Block>\nPosition: [2.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [2. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [2. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 2. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [2.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 16,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #16 - East upper wall at E1 column (Small Wooden Block) attached to top face of East lower wall at E1 column (ID 16)"
+    },
+    "result": "You have successfully added <ID 17: Small Wooden Block>.\nExisting Blocks: 17\n(Blueprint #16 - East upper wall at E1 column (Small Wooden Block) attached to top face of East lower wall at E1 column (ID 16)) <ID 17: Small Wooden Block>\nPosition: [2.,0.,1.]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -0.5,  1. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: B, Face center: [2. , 0.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [1.5, 0. , 1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [2.5, 0. , 1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [ 2. , -0. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 7,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #17 - East lower wall at NE1 column (Small Wooden Block) attached to east face of Floor tile NE1 (ID 7)"
+    },
+    "result": "You have successfully added <ID 18: Small Wooden Block>.\nExisting Blocks: 18\n(Blueprint #17 - East lower wall at NE1 column (Small Wooden Block) attached to east face of Floor tile NE1 (ID 7)) <ID 18: Small Wooden Block>\nPosition: [2.,1.,0.]\nAttachable Faces:\nFace label: A, Face center: [2. , 0.5, 0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [2. , 1.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [2. , 1. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 2. ,  1. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [2.5, 1. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 18,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #18 - East upper wall at NE1 column (Small Wooden Block) attached to top face of East lower wall at NE1 column (ID 18)"
+    },
+    "result": "You have successfully added <ID 19: Small Wooden Block>.\nExisting Blocks: 19\n(Blueprint #18 - East upper wall at NE1 column (Small Wooden Block) attached to top face of East lower wall at NE1 column (ID 18)) <ID 19: Small Wooden Block>\nPosition: [2.,1.,1.]\nAttachable Faces:\nFace label: A, Face center: [2. , 0.5, 1. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: B, Face center: [2. , 1.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [1.5, 1. , 1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [2.5, 1. , 1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [2. , 1. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 9,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #19 - East lower wall at SE1 column (Small Wooden Block) attached to east face of Floor tile SE1 (ID 9)"
+    },
+    "result": "You have successfully added <ID 20: Small Wooden Block>.\nExisting Blocks: 20\n(Blueprint #19 - East lower wall at SE1 column (Small Wooden Block) attached to east face of Floor tile SE1 (ID 9)) <ID 20: Small Wooden Block>\nPosition: [ 2.,-1., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -1.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2. , -0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2. , -1. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [ 2. , -1. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [ 2.5, -1. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 20,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #20 - East upper wall at SE1 column (Small Wooden Block) attached to top face of East lower wall at SE1 column (ID 20)"
+    },
+    "result": "You have successfully added <ID 21: Small Wooden Block>.\nExisting Blocks: 21\n(Blueprint #20 - East upper wall at SE1 column (Small Wooden Block) attached to top face of East lower wall at SE1 column (ID 20)) <ID 21: Small Wooden Block>\nPosition: [ 2.,-1., 1.]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -1.5,  1. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: B, Face center: [ 2. , -0.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1.5, -1. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 2.5, -1. ,  1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [ 2. , -1. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 4,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #21 - North lower wall at N1 column (Small Wooden Block) attached to north face of Floor tile N1 (ID 4)"
+    },
+    "result": "You have successfully added <ID 22: Small Wooden Block>.\nExisting Blocks: 22\n(Blueprint #21 - North lower wall at N1 column (Small Wooden Block) attached to north face of Floor tile N1 (ID 4)) <ID 22: Small Wooden Block>\nPosition: [0.,2.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 2. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  2. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 2. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  2. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 2.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 22,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #22 - North upper wall at N1 column (Small Wooden Block) attached to top face of North lower wall at N1 column (ID 22)"
+    },
+    "result": "You have successfully added <ID 23: Small Wooden Block>.\nExisting Blocks: 23\n(Blueprint #22 - North upper wall at N1 column (Small Wooden Block) attached to top face of North lower wall at N1 column (ID 22)) <ID 23: Small Wooden Block>\nPosition: [0.,2.,1.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 2. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  2. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 1.5, 1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 2.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 2. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 7,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #23 - North lower wall at NE1 column (Small Wooden Block) attached to north face of Floor tile NE1 (ID 7)"
+    },
+    "result": "You have successfully added <ID 24: Small Wooden Block>.\nExisting Blocks: 24\n(Blueprint #23 - North lower wall at NE1 column (Small Wooden Block) attached to north face of Floor tile NE1 (ID 7)) <ID 24: Small Wooden Block>\nPosition: [1.,2.,0.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 2. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 2. , 0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 2. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. ,  2. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [1. , 2.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 6,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #24 - North lower wall at NW1 column (Small Wooden Block) attached to north face of Floor tile NW1 (ID 6)"
+    },
+    "result": "You have successfully added <ID 25: Small Wooden Block>.\nExisting Blocks: 25\n(Blueprint #24 - North lower wall at NW1 column (Small Wooden Block) attached to north face of Floor tile NW1 (ID 6)) <ID 25: Small Wooden Block>\nPosition: [-1., 2., 0.]\nAttachable Faces:\nFace label: A, Face center: [-0.5,  2. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5,  2. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  2. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-1. ,  2. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-1. ,  2.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 24,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #25 - North upper wall at NE1 column (Small Wooden Block) attached to top face of North lower wall at NE1 column (ID 24)"
+    },
+    "result": "You have successfully added <ID 26: Small Wooden Block>.\nExisting Blocks: 26\n(Blueprint #25 - North upper wall at NE1 column (Small Wooden Block) attached to top face of North lower wall at NE1 column (ID 24)) <ID 26: Small Wooden Block>\nPosition: [1.,2.,1.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 2. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 2. , 1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 1.5, 1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [1. , 2.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [1. , 2. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 25,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #26 - North upper wall at NW1 column (Small Wooden Block) attached to top face of North lower wall at NW1 column (ID 25)"
+    },
+    "result": "You have successfully added <ID 27: Small Wooden Block>.\nExisting Blocks: 27\n(Blueprint #26 - North upper wall at NW1 column (Small Wooden Block) attached to top face of North lower wall at NW1 column (ID 25)) <ID 27: Small Wooden Block>\nPosition: [-1., 2., 1.]\nAttachable Faces:\nFace label: A, Face center: [-0.5,  2. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5,  2. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  1.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1. ,  2.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1. ,  2. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 5,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #27 - South lower wall at S1 column (Small Wooden Block) attached to south face of Floor tile S1 (ID 5)"
+    },
+    "result": "You have successfully added <ID 28: Small Wooden Block>.\nExisting Blocks: 28\n(Blueprint #27 - South lower wall at S1 column (Small Wooden Block) attached to south face of Floor tile S1 (ID 5)) <ID 28: Small Wooden Block>\nPosition: [ 0.,-2., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -2. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -2. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -2. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [ 0. , -2. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [ 0. , -2.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 28,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #28 - South upper wall at S1 column (Small Wooden Block) attached to top face of South lower wall at S1 column (ID 28)"
+    },
+    "result": "You have successfully added <ID 29: Small Wooden Block>.\nExisting Blocks: 29\n(Blueprint #28 - South upper wall at S1 column (Small Wooden Block) attached to top face of South lower wall at S1 column (ID 28)) <ID 29: Small Wooden Block>\nPosition: [ 0.,-2., 1.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -2. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -2. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -2.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 0. , -1.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 0. , -2. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 9,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #29 - South lower wall at SE1 column (Small Wooden Block) attached to south face of Floor tile SE1 (ID 9)"
+    },
+    "result": "You have successfully added <ID 30: Small Wooden Block>.\nExisting Blocks: 30\n(Blueprint #29 - South lower wall at SE1 column (Small Wooden Block) attached to south face of Floor tile SE1 (ID 9)) <ID 30: Small Wooden Block>\nPosition: [ 1.,-2., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -2. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 1.5, -2. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -2. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. , -2. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [ 1. , -2.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 30,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #30 - South upper wall at SE1 column (Small Wooden Block) attached to top face of South lower wall at SE1 column (ID 30)"
+    },
+    "result": "You have successfully added <ID 31: Small Wooden Block>.\nExisting Blocks: 31\n(Blueprint #30 - South upper wall at SE1 column (Small Wooden Block) attached to top face of South lower wall at SE1 column (ID 30)) <ID 31: Small Wooden Block>\nPosition: [ 1.,-2., 1.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -2. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 1.5, -2. ,  1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -1.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 1. , -2.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 1. , -2. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 8,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #31 - South lower wall at SW1 column (Small Wooden Block) attached to south face of Floor tile SW1 (ID 8)"
+    },
+    "result": "You have successfully added <ID 32: Small Wooden Block>.\nExisting Blocks: 32\n(Blueprint #31 - South lower wall at SW1 column (Small Wooden Block) attached to south face of Floor tile SW1 (ID 8)) <ID 32: Small Wooden Block>\nPosition: [-1.,-2., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -2. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -2. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -2. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-1. , -2. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-1. , -2.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 32,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #32 - South upper wall at SW1 column (Small Wooden Block) attached to top face of South lower wall at SW1 column (ID 32)"
+    },
+    "result": "You have successfully added <ID 33: Small Wooden Block>.\nExisting Blocks: 33\n(Blueprint #32 - South upper wall at SW1 column (Small Wooden Block) attached to top face of South lower wall at SW1 column (ID 32)) <ID 33: Small Wooden Block>\nPosition: [-1.,-2., 1.]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -2. ,  1. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -2. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -1.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1. , -2.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1. , -2. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 15,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #33 - Shield for west lower torch (awning) relocated to top face of West upper wall at SW1 column (ID 15) to sit above/behind Torch 41"
+    },
+    "result": "You have successfully added <ID 34: Small Wooden Block>.\nExisting Blocks: 34\n(Blueprint #33 - Shield for west lower torch (awning) relocated to top face of West upper wall at SW1 column (ID 15) to sit above/behind Torch 41) <ID 34: Small Wooden Block>\nPosition: [-2.,-1., 2.]\nAttachable Faces:\nFace label: A, Face center: [-2. , -0.5,  2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. , -1.5,  2. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [-1.5, -1. ,  2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2.5, -1. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2. , -1. ,  2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 13,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint #34 - Shield for west upper torch (awning) attached to top face of West upper wall at NW1 column (ID 13)"
+    },
+    "result": "You have successfully added <ID 35: Small Wooden Block>.\nExisting Blocks: 35\n(Blueprint #34 - Shield for west upper torch (awning) attached to top face of West upper wall at NW1 column (ID 13)) <ID 35: Small Wooden Block>\nPosition: [-2., 1., 2.]\nAttachable Faces:\nFace label: A, Face center: [-2. ,  1.5,  2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. ,  0.5,  2. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [-1.5,  1. ,  2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2.5,  1. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2. ,  1. ,  2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 31,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Blueprint Step 35 - South-side awning/shield to protect SE torches; attached to top face of South upper wall at SE1 column (ID 31)"
+    },
+    "result": "You have successfully added <ID 36: Small Wooden Block>.\nExisting Blocks: 36\n(Blueprint Step 35 - South-side awning/shield to protect SE torches; attached to top face of South upper wall at SE1 column (ID 31)) <ID 36: Small Wooden Block>\nPosition: [ 1.,-2., 2.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -2. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 1.5, -2. ,  2. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -1.5,  2. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 1. , -2.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 1. , -2. ,  2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 10,
+      "face": "E",
+      "new_block": "Water Cannon",
+      "note": "Blueprint #36 - Water Cannon 37 - West lower thruster at W1 column; attached to west face of block 10; Fires horizontally to the west (\u2212x) so recoil pushes east (+x). Steam Mode when heated by Torch 41. Control: W key (paired with 38)."
+    },
+    "result": "You have successfully added <ID 37: Water Cannon>.\nExisting Blocks: 37\n(Blueprint #36 - Water Cannon 37 - West lower thruster at W1 column; attached to west face of block 10; Fires horizontally to the west (\u2212x) so recoil pushes east (+x). Steam Mode when heated by Torch 41. Control: W key (paired with 38).) <ID 37: Water Cannon>\nPosition: [-3., 0., 0.]\nPointing at <straight down>\nInlet is at [-3.00, 0.00, 0.75], outlet is at [-3.00, 0.00, -1.00], sprays towards <straight down>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 37,
+      "angle": 90.0
+    },
+    "result": "The block 37 <Water Cannon> is twisted by 90.0 degrees. \n (Blueprint #36 - Water Cannon 37 - West lower thruster at W1 column; attached to west face of block 10; Fires horizontally to the west (\u2212x) so recoil pushes east (+x). Steam Mode when heated by Torch 41. Control: W key (paired with 38).) <ID 37: Water Cannon>\nPosition: [-3., 0., 0.]\nPointing at <North with 0.0\u00b0 pitch>\nInlet is at [-3.00, -0.75, -0.00], outlet is at [-3.00, 1.00, 0.00], sprays towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 37,
+      "angle": 90.0
+    },
+    "result": "The block 37 <Water Cannon> is twisted by 90.0 degrees. \n (Blueprint #36 - Water Cannon 37 - West lower thruster at W1 column; attached to west face of block 10; Fires horizontally to the west (\u2212x) so recoil pushes east (+x). Steam Mode when heated by Torch 41. Control: W key (paired with 38).) <ID 37: Water Cannon>\nPosition: [-3., 0., 0.]\nPointing at <straight up>\nInlet is at [-3.00, 0.00, -0.75], outlet is at [-3.00, 0.00, 1.00], sprays towards <straight up>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 37,
+      "angle": 90.0
+    },
+    "result": "The block 37 <Water Cannon> is twisted by 90.0 degrees. \n (Blueprint #36 - Water Cannon 37 - West lower thruster at W1 column; attached to west face of block 10; Fires horizontally to the west (\u2212x) so recoil pushes east (+x). Steam Mode when heated by Torch 41. Control: W key (paired with 38).) <ID 37: Water Cannon>\nPosition: [-3., 0., 0.]\nPointing at <South with -0.0\u00b0 pitch>\nInlet is at [-3.00, 0.75, 0.00], outlet is at [-3.00, -1.00, -0.00], sprays towards <South with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 37
+    },
+    "result": "You have successfully removed <ID 37: Water Cannon>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 10,
+      "face": "D",
+      "new_block": "Water Cannon",
+      "note": "Blueprint #36 (relocated, v2) - Water Cannon 37 - West lower thruster at W1 column; attached to bottom face of block 10 (Face D) to allow twist to West (\u2212x). Control: W key (paired with 38)."
+    },
+    "result": "You have successfully added <ID 38: Water Cannon>.\nExisting Blocks: 37\n(Blueprint #36 (relocated, v2) - Water Cannon 37 - West lower thruster at W1 column; attached to bottom face of block 10 (Face D) to allow twist to West (\u2212x). Control: W key (paired with 38).) <ID 38: Water Cannon>\nPosition: [-2., 0.,-1.]\nPointing at <East with -0.0\u00b0 pitch>\nInlet is at [-2.75, 0.00, -1.00], outlet is at [-1.00, 0.00, -1.00], sprays towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 38,
+      "angle": 180.0
+    },
+    "result": "The block 38 <Water Cannon> is twisted by 180.0 degrees. \n (Blueprint #36 (relocated, v2) - Water Cannon 37 - West lower thruster at W1 column; attached to bottom face of block 10 (Face D) to allow twist to West (\u2212x). Control: W key (paired with 38).) <ID 38: Water Cannon>\nPosition: [-2., 0.,-1.]\nPointing at <West with 0.0\u00b0 pitch>\nInlet is at [-1.25, 0.00, -1.00], outlet is at [-3.00, -0.00, -1.00], sprays towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 11,
+      "face": "E",
+      "new_block": "Water Cannon",
+      "note": "Blueprint #38 - Water Cannon 39 - West upper thruster at W1 column; attached to top face of block 11 (Face E). Will twist to point West (\u2212x). Control: W key (paired with lower west thruster)."
+    },
+    "result": "You have successfully added <ID 39: Water Cannon>.\nExisting Blocks: 38\n(Blueprint #38 - Water Cannon 39 - West upper thruster at W1 column; attached to top face of block 11 (Face E). Will twist to point West (\u2212x). Control: W key (paired with lower west thruster).) <ID 39: Water Cannon>\nPosition: [-2.,-0., 2.]\nPointing at <West with 0.0\u00b0 pitch>\nInlet is at [-1.25, -0.00, 2.00], outlet is at [-3.00, -0.00, 2.00], sprays towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 12,
+      "face": "D",
+      "new_block": "Torch",
+      "note": "Blueprint #39 - Torch 41 - Heater for west lower cannon (38); attached to bottom face of block 12 (Face D) at approx [-2,1,-0.5]. Intended to aim due South (0,-1,0) so heating sphere centers near [-2,0,-1] overlapping cannon 38 while staying behind westward plume."
+    },
+    "result": "You have successfully added <ID 40: Torch>.\nExisting Blocks: 39\n(Blueprint #39 - Torch 41 - Heater for west lower cannon (38); attached to bottom face of block 12 (Face D) at approx [-2,1,-0.5]. Intended to aim due South (0,-1,0) so heating sphere centers near [-2,0,-1] overlapping cannon 38 while staying behind westward plume.) <ID 40: Torch>\nPosition: [-2., 1.,-1.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-3.00, 1.00, -1.00]"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 28,
+      "face": "C",
+      "new_block": "Water Cannon",
+      "note": "Blueprint #40 - South lower thruster at S1 column; Water Cannon attached to bottom face of block 28 (Face C). Will twist to point South (\u2212y) next. Control: S key (paired later with upper south thruster)."
+    },
+    "result": "You have successfully added <ID 41: Water Cannon>.\nExisting Blocks: 40\n(Blueprint #40 - South lower thruster at S1 column; Water Cannon attached to bottom face of block 28 (Face C). Will twist to point South (\u2212y) next. Control: S key (paired later with upper south thruster).) <ID 41: Water Cannon>\nPosition: [ 0.,-2.,-1.]\nPointing at <South with 0.0\u00b0 pitch>\nInlet is at [0.00, -1.25, -1.00], outlet is at [0.00, -3.00, -1.00], sprays towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 29,
+      "face": "E",
+      "new_block": "Water Cannon",
+      "note": "Blueprint #41 - South upper thruster at S1 column; Water Cannon attached to top face of block 29 (Face E). Will twist to point South (\u2212y). Control: S key (paired with lower south thruster ID 41)."
+    },
+    "result": "You have successfully added <ID 42: Water Cannon>.\nExisting Blocks: 41\n(Blueprint #41 - South upper thruster at S1 column; Water Cannon attached to top face of block 29 (Face E). Will twist to point South (\u2212y). Control: S key (paired with lower south thruster ID 41).) <ID 42: Water Cannon>\nPosition: [ 0.,-2., 2.]\nPointing at <North with 0.0\u00b0 pitch>\nInlet is at [0.00, -2.75, 2.00], outlet is at [0.00, -1.00, 2.00], sprays towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 42,
+      "angle": 180.0
+    },
+    "result": "The block 42 <Water Cannon> is twisted by 180.0 degrees. \n (Blueprint #41 - South upper thruster at S1 column; Water Cannon attached to top face of block 29 (Face E). Will twist to point South (\u2212y). Control: S key (paired with lower south thruster ID 41).) <ID 42: Water Cannon>\nPosition: [ 0.,-2., 2.]\nPointing at <South with -0.0\u00b0 pitch>\nInlet is at [0.00, -1.25, 2.00], outlet is at [0.00, -3.00, 2.00], sprays towards <South with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 35,
+      "face": "C",
+      "new_block": "Torch",
+      "note": "Blueprint #43 - Torch 42 - Heater for west upper cannon (39); attached to east face of shield block 35 (Face C) at approx [-1.5,1,2]. Intended flame pointing due South so heating sphere centers near [-1,0,2], overlapping inlet/body of Water Cannon 39 while staying behind westward plume."
+    },
+    "result": "You have successfully added <ID 43: Torch>.\nExisting Blocks: 42\n(Blueprint #43 - Torch 42 - Heater for west upper cannon (39); attached to east face of shield block 35 (Face C) at approx [-1.5,1,2]. Intended flame pointing due South so heating sphere centers near [-1,0,2], overlapping inlet/body of Water Cannon 39 while staying behind westward plume.) <ID 43: Torch>\nPosition: [-1., 1., 2.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [-1.00, 1.00, 1.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 43,
+      "angle": 90.0
+    },
+    "result": "The block 43 <Torch> is twisted by 90.0 degrees. \n (Blueprint #43 - Torch 42 - Heater for west upper cannon (39); attached to east face of shield block 35 (Face C) at approx [-1.5,1,2]. Intended flame pointing due South so heating sphere centers near [-1,0,2], overlapping inlet/body of Water Cannon 39 while staying behind westward plume.) <ID 43: Torch>\nPosition: [-1., 1., 2.]\nPointing at <South with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-1.00, -0.00, 2.00]"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 30,
+      "face": "D",
+      "new_block": "Torch",
+      "note": "Blueprint #45 - Torch (heater) for south lower cannon (41); attached to bottom face of block 30 (Face D) at approx [1,-2,-0.5]. Intended to aim due West so heating sphere centers near [0,-2,-1], overlapping cannon 41 inlet/body and staying clear of south-going plume."
+    },
+    "result": "You have successfully added <ID 44: Torch>.\nExisting Blocks: 43\n(Blueprint #45 - Torch (heater) for south lower cannon (41); attached to bottom face of block 30 (Face D) at approx [1,-2,-0.5]. Intended to aim due West so heating sphere centers near [0,-2,-1], overlapping cannon 41 inlet/body and staying clear of south-going plume.) <ID 44: Torch>\nPosition: [ 1.,-2.,-1.]\nPointing at <South with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [1.00, -3.00, -1.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 44,
+      "angle": 90.0
+    },
+    "result": "The block 44 <Torch> is twisted by 90.0 degrees. \n (Blueprint #45 - Torch (heater) for south lower cannon (41); attached to bottom face of block 30 (Face D) at approx [1,-2,-0.5]. Intended to aim due West so heating sphere centers near [0,-2,-1], overlapping cannon 41 inlet/body and staying clear of south-going plume.) <ID 44: Torch>\nPosition: [ 1.,-2.,-1.]\nPointing at <East with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [2.00, -2.00, -1.00]"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 44
+    },
+    "result": "You have successfully removed <ID 44: Torch>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 9,
+      "face": "D",
+      "new_block": "Torch",
+      "note": "Blueprint #46 (attempt 2) - Torch (heater) for south lower cannon 41; attached to bottom face of Floor tile SE1 (ID 9, Face D) at approx [1,-1,-0.5]. Will twist to aim West next so heating sphere centers near [0.00,-1.00,-1.00]."
+    },
+    "result": "You have successfully added <ID 45: Torch>.\nExisting Blocks: 43\n(Blueprint #46 (attempt 2) - Torch (heater) for south lower cannon 41; attached to bottom face of Floor tile SE1 (ID 9, Face D) at approx [1,-1,-0.5]. Will twist to aim West next so heating sphere centers near [0.00,-1.00,-1.00].) <ID 45: Torch>\nPosition: [ 1.,-1.,-1.]\nPointing at <South with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [1.00, -2.00, -1.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 45,
+      "angle": 270.0
+    },
+    "result": "The block 45 <Torch> is twisted by 270.0 degrees. \n (Blueprint #46 (attempt 2) - Torch (heater) for south lower cannon 41; attached to bottom face of Floor tile SE1 (ID 9, Face D) at approx [1,-1,-0.5]. Will twist to aim West next so heating sphere centers near [0.00,-1.00,-1.00].) <ID 45: Torch>\nPosition: [ 1.,-1.,-1.]\nPointing at <West with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [0.00, -1.00, -1.00]"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 36,
+      "face": "C",
+      "new_block": "Torch",
+      "note": "Blueprint #47 - Torch (heater) for south upper cannon 42; attached to north face of shield block 36 (Face C) at approx [1, -1.5, 2]. Will twist to point due West so heating sphere centers near [0, -1.5, 2], overlapping cannon 42 inlet/body while staying behind south-going plume."
+    },
+    "result": "You have successfully added <ID 46: Torch>.\nExisting Blocks: 44\n(Blueprint #47 - Torch (heater) for south upper cannon 42; attached to north face of shield block 36 (Face C) at approx [1, -1.5, 2]. Will twist to point due West so heating sphere centers near [0, -1.5, 2], overlapping cannon 42 inlet/body while staying behind south-going plume.) <ID 46: Torch>\nPosition: [ 1.,-1., 2.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [1.00, -1.00, 1.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 46,
+      "angle": 90.0
+    },
+    "result": "The block 46 <Torch> is twisted by 90.0 degrees. \n (Blueprint #47 - Torch (heater) for south upper cannon 42; attached to north face of shield block 36 (Face C) at approx [1, -1.5, 2]. Will twist to point due West so heating sphere centers near [0, -1.5, 2], overlapping cannon 42 inlet/body while staying behind south-going plume.) <ID 46: Torch>\nPosition: [ 1.,-1., 2.]\nPointing at <East with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [2.00, -1.00, 2.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 46,
+      "angle": 180.0
+    },
+    "result": "The block 46 <Torch> is twisted by 180.0 degrees. \n (Blueprint #47 - Torch (heater) for south upper cannon 42; attached to north face of shield block 36 (Face C) at approx [1, -1.5, 2]. Will twist to point due West so heating sphere centers near [0, -1.5, 2], overlapping cannon 42 inlet/body while staying behind south-going plume.) <ID 46: Torch>\nPosition: [ 1.,-1., 2.]\nPointing at <West with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [0.00, -1.00, 2.00]"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 40
+    },
+    "result": "You have successfully removed <ID 40: Torch>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 14,
+      "face": "D",
+      "new_block": "Torch",
+      "note": "Blueprint #50 - Torch (heater) for west lower cannon 38; attached to bottom face of block 14 (Face D) at approx [-2,-1,-0.5]. Will twist to point due North so heating sphere centers near [-2.00, 0.00, -1.00] overlapping cannon 38 inlet/body while staying behind west-going plume."
+    },
+    "result": "You have successfully added <ID 47: Torch>.\nExisting Blocks: 44\n(Blueprint #50 - Torch (heater) for west lower cannon 38; attached to bottom face of block 14 (Face D) at approx [-2,-1,-0.5]. Will twist to point due North so heating sphere centers near [-2.00, 0.00, -1.00] overlapping cannon 38 inlet/body while staying behind west-going plume.) <ID 47: Torch>\nPosition: [-2.,-1.,-1.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-3.00, -1.00, -1.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 47,
+      "angle": 90.0
+    },
+    "result": "The block 47 <Torch> is twisted by 90.0 degrees. \n (Blueprint #50 - Torch (heater) for west lower cannon 38; attached to bottom face of block 14 (Face D) at approx [-2,-1,-0.5]. Will twist to point due North so heating sphere centers near [-2.00, 0.00, -1.00] overlapping cannon 38 inlet/body while staying behind west-going plume.) <ID 47: Torch>\nPosition: [-2.,-1.,-1.]\nPointing at <South with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-2.00, -2.00, -1.00]"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "D",
+      "new_block": "Torch",
+      "note": "Blueprint #53 - Torch (heater) for west lower cannon 38; attached to bottom face of Starting Block (ID 1, Face D). Will twist to aim West next to heat cannon 38 from central position while staying behind west-going plume."
+    },
+    "result": "You have successfully added <ID 48: Torch>.\nExisting Blocks: 45\n(Blueprint #53 - Torch (heater) for west lower cannon 38; attached to bottom face of Starting Block (ID 1, Face D). Will twist to aim West next to heat cannon 38 from central position while staying behind west-going plume.) <ID 48: Torch>\nPosition: [ 0., 0.,-1.]\nPointing at <North with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [0.00, 1.00, -1.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 48,
+      "angle": 270.0
+    },
+    "result": "The block 48 <Torch> is twisted by 270.0 degrees. \n (Blueprint #53 - Torch (heater) for west lower cannon 38; attached to bottom face of Starting Block (ID 1, Face D). Will twist to aim West next to heat cannon 38 from central position while staying behind west-going plume.) <ID 48: Torch>\nPosition: [ 0., 0.,-1.]\nPointing at <East with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [1.00, -0.00, -1.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 48,
+      "angle": 180.0
+    },
+    "result": "The block 48 <Torch> is twisted by 180.0 degrees. \n (Blueprint #53 - Torch (heater) for west lower cannon 38; attached to bottom face of Starting Block (ID 1, Face D). Will twist to aim West next to heat cannon 38 from central position while staying behind west-going plume.) <ID 48: Torch>\nPosition: [ 0., 0.,-1.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-1.00, 0.00, -1.00]"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 6,
+      "face_a": "A",
+      "block_b": 7,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Brace 57 - Corner torsion brace (NW1-NE1 span) between block 6 east face and block 7 west face to increase torsional rigidity along the north edge."
+    },
+    "result": "You have successfully added <ID 49: Brace>.\nExisting Blocks: 46\n(Brace 57 - Corner torsion brace (NW1-NE1 span) between block 6 east face and block 7 west face to increase torsional rigidity along the north edge.) <ID 49: Brace>\nConnecting <ID 6: Small Wooden Block> at [-0.5  1.   0. ] and <ID 7: Small Wooden Block> at [0.5 1.  0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 2,
+      "face_a": "E",
+      "block_b": 10,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Brace 45 - Wall-to-floor shear brace (W1 column) between block 2 west face (E) and block 10 south face (B) to stiffen west wall to its floor tile."
+    },
+    "result": "You have successfully added <ID 50: Brace>.\nExisting Blocks: 47\n(Brace 45 - Wall-to-floor shear brace (W1 column) between block 2 west face (E) and block 10 south face (B) to stiffen west wall to its floor tile.) <ID 50: Brace>\nConnecting <ID 2: Small Wooden Block> at [-1.50000000e+00  2.22044605e-16  0.00000000e+00] and <ID 10: Small Wooden Block> at [-2.  -0.5  0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 6,
+      "face_a": "C",
+      "block_b": 12,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Brace 46 - Wall-to-floor shear brace (NW1 column) between block 6 top face (C) and block 12 south face (B) to stiffen west wall to its floor tile."
+    },
+    "result": "You have successfully added <ID 51: Brace>.\nExisting Blocks: 48\n(Brace 46 - Wall-to-floor shear brace (NW1 column) between block 6 top face (C) and block 12 south face (B) to stiffen west wall to its floor tile.) <ID 51: Brace>\nConnecting <ID 6: Small Wooden Block> at [-1.   1.   0.5] and <ID 12: Small Wooden Block> at [-2.   0.5  0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 8,
+      "face_a": "A",
+      "block_b": 14,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Brace 47 - Wall-to-floor shear brace (SW1 column) between block 8 west face (A) and block 14 south face (B) to stiffen west wall to its floor tile."
+    },
+    "result": "You have successfully added <ID 52: Brace>.\nExisting Blocks: 49\n(Brace 47 - Wall-to-floor shear brace (SW1 column) between block 8 west face (A) and block 14 south face (B) to stiffen west wall to its floor tile.) <ID 52: Brace>\nConnecting <ID 8: Small Wooden Block> at [-1.5 -1.   0. ] and <ID 14: Small Wooden Block> at [-2.  -1.5  0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 3,
+      "face_a": "E",
+      "block_b": 16,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Brace 48 - Wall-to-floor shear brace (E1 column) between block 3 east face (E) and block 16 south face (A) to stiffen east wall to its floor tile."
+    },
+    "result": "You have successfully added <ID 53: Brace>.\nExisting Blocks: 50\n(Brace 48 - Wall-to-floor shear brace (E1 column) between block 3 east face (E) and block 16 south face (A) to stiffen east wall to its floor tile.) <ID 53: Brace>\nConnecting <ID 3: Small Wooden Block> at [1.50000000e+00 2.22044605e-16 0.00000000e+00] and <ID 16: Small Wooden Block> at [ 2.  -0.5  0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 7,
+      "face_a": "A",
+      "block_b": 18,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Brace 49 - Wall-to-floor shear brace (NE1 east column) between block 7 east face (A) and block 18 south face (A) to stiffen east wall to its floor tile."
+    },
+    "result": "You have successfully added <ID 54: Brace>.\nExisting Blocks: 51\n(Brace 49 - Wall-to-floor shear brace (NE1 east column) between block 7 east face (A) and block 18 south face (A) to stiffen east wall to its floor tile.) <ID 54: Brace>\nConnecting <ID 7: Small Wooden Block> at [1.5 1.  0. ] and <ID 18: Small Wooden Block> at [2.  0.5 0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 18,
+      "face_a": "A",
+      "block_b": 20,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Brace 58 - East-edge torsion brace (NE1\u2013SE1 span) between block 18 south face (A) and block 20 north face (B) to increase torsional rigidity along the east edge."
+    },
+    "result": "You have successfully added <ID 55: Brace>.\nExisting Blocks: 52\n(Brace 58 - East-edge torsion brace (NE1\u2013SE1 span) between block 18 south face (A) and block 20 north face (B) to increase torsional rigidity along the east edge.) <ID 55: Brace>\nConnecting <ID 18: Small Wooden Block> at [2.  0.5 0. ] and <ID 20: Small Wooden Block> at [ 2.  -0.5  0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 9,
+      "face_a": "B",
+      "block_b": 20,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Brace 50 - Wall-to-floor shear brace (SE1 east column) between block 9 east face (B) and block 20 north face (B) to stiffen east wall to its floor tile."
+    },
+    "result": "You have successfully added <ID 56: Brace>.\nExisting Blocks: 53\n(Brace 50 - Wall-to-floor shear brace (SE1 east column) between block 9 east face (B) and block 20 north face (B) to stiffen east wall to its floor tile.) <ID 56: Brace>\nConnecting <ID 9: Small Wooden Block> at [ 1.5 -1.   0. ] and <ID 20: Small Wooden Block> at [ 2.  -0.5  0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 4,
+      "face_a": "E",
+      "block_b": 22,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Brace 51 - Wall-to-floor shear brace (N1 column) between block 4 north face (E) and block 22 west face (B) to stiffen north wall to its floor tile while avoiding hidden south face."
+    },
+    "result": "You have successfully added <ID 57: Brace>.\nExisting Blocks: 54\n(Brace 51 - Wall-to-floor shear brace (N1 column) between block 4 north face (E) and block 22 west face (B) to stiffen north wall to its floor tile while avoiding hidden south face.) <ID 57: Brace>\nConnecting <ID 4: Small Wooden Block> at [0.  1.5 0. ] and <ID 22: Small Wooden Block> at [-0.5  2.   0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 7,
+      "face_a": "E",
+      "block_b": 24,
+      "face_b": "D",
+      "connector": "Brace",
+      "note": "Brace 52 - Wall-to-floor shear brace (NE1 north column) between block 7 north face (E) and block 24 bottom face (D) using non-coincident faces."
+    },
+    "result": "You have successfully added <ID 58: Brace>.\nExisting Blocks: 55\n(Brace 52 - Wall-to-floor shear brace (NE1 north column) between block 7 north face (E) and block 24 bottom face (D) using non-coincident faces.) <ID 58: Brace>\nConnecting <ID 7: Small Wooden Block> at [1.  1.5 0. ] and <ID 24: Small Wooden Block> at [ 1.   2.  -0.5].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 6,
+      "face_a": "E",
+      "block_b": 25,
+      "face_b": "D",
+      "connector": "Brace",
+      "note": "Brace 53 - Wall-to-floor shear brace (NW1 north column) between block 6 north face (E) and block 25 bottom face (D) using non-coincident faces."
+    },
+    "result": "You have successfully added <ID 59: Brace>.\nExisting Blocks: 56\n(Brace 53 - Wall-to-floor shear brace (NW1 north column) between block 6 north face (E) and block 25 bottom face (D) using non-coincident faces.) <ID 59: Brace>\nConnecting <ID 6: Small Wooden Block> at [-1.   1.5  0. ] and <ID 25: Small Wooden Block> at [-1.   2.  -0.5].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 5,
+      "face_a": "E",
+      "block_b": 28,
+      "face_b": "D",
+      "connector": "Brace",
+      "note": "Brace 54 - Wall-to-floor shear brace (S1 column) between block 5 south face (E) and block 28 top face (D) to stiffen south wall to its floor tile."
+    },
+    "result": "You have successfully added <ID 60: Brace>.\nExisting Blocks: 57\n(Brace 54 - Wall-to-floor shear brace (S1 column) between block 5 south face (E) and block 28 top face (D) to stiffen south wall to its floor tile.) <ID 60: Brace>\nConnecting <ID 5: Small Wooden Block> at [ 0.  -1.5  0. ] and <ID 28: Small Wooden Block> at [ 0.  -2.   0.5].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 9,
+      "face_a": "E",
+      "block_b": 30,
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Brace 55 - Wall-to-floor shear brace (SE1 south column) between block 9 south face (E) and block 30 top face (C) to stiffen south wall at SE1 to its floor tile (non-coincident faces)."
+    },
+    "result": "You have successfully added <ID 61: Brace>.\nExisting Blocks: 58\n(Brace 55 - Wall-to-floor shear brace (SE1 south column) between block 9 south face (E) and block 30 top face (C) to stiffen south wall at SE1 to its floor tile (non-coincident faces).) <ID 61: Brace>\nConnecting <ID 9: Small Wooden Block> at [ 1.  -1.5  0. ] and <ID 30: Small Wooden Block> at [ 1.  -2.   0.5].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 8,
+      "face_a": "E",
+      "block_b": 32,
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Brace 56 - Wall-to-floor shear brace (SW1 south column) between block 8 south face (E) and block 32 top face (C) to stiffen the south wall at SW1 to its floor tile (non-coincident faces)."
+    },
+    "result": "You have successfully added <ID 62: Brace>.\nExisting Blocks: 59\n(Brace 56 - Wall-to-floor shear brace (SW1 south column) between block 8 south face (E) and block 32 top face (C) to stiffen the south wall at SW1 to its floor tile (non-coincident faces).) <ID 62: Brace>\nConnecting <ID 8: Small Wooden Block> at [-1.  -1.5  0. ] and <ID 32: Small Wooden Block> at [-1.  -2.   0.5].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 9,
+      "face_a": "A",
+      "block_b": 8,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Brace 59 - Corner torsion brace (SE1\u2013SW1 span) between block 9 west face (A) and block 8 east face (B) to increase torsional rigidity along the south edge."
+    },
+    "result": "You have successfully added <ID 63: Brace>.\nExisting Blocks: 60\n(Brace 59 - Corner torsion brace (SE1\u2013SW1 span) between block 9 west face (A) and block 8 east face (B) to increase torsional rigidity along the south edge.) <ID 63: Brace>\nConnecting <ID 9: Small Wooden Block> at [ 0.5 -1.   0. ] and <ID 8: Small Wooden Block> at [-0.5 -1.   0. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 8,
+      "face_a": "C",
+      "block_b": 6,
+      "face_b": "D",
+      "connector": "Brace",
+      "note": "Brace 60 - West-edge torsion brace (SW1\u2013NW1 span) between block 8 top face (C) and block 6 bottom face (D) to finish the perimeter torsional ties."
+    },
+    "result": "You have successfully added <ID 64: Brace>.\nExisting Blocks: 61\n(Brace 60 - West-edge torsion brace (SW1\u2013NW1 span) between block 8 top face (C) and block 6 bottom face (D) to finish the perimeter torsional ties.) <ID 64: Brace>\nConnecting <ID 8: Small Wooden Block> at [-1.  -1.   0.5] and <ID 6: Small Wooden Block> at [-1.   1.  -0.5].\t"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 47
+    },
+    "result": "You have successfully removed <ID 47: Torch>."
+  },
+  {
+    "op": "reset",
+    "params": {},
+    "result": "The machine has been reset, please start again."
+  },
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "0 - Starting Block - 1x1x1 base stone (reference only) - fixed origin"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  }
+]

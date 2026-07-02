@@ -1,0 +1,194 @@
+[
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0,
+        0,
+        0
+      ],
+      "init_rotation": [
+        0,
+        0,
+        0
+      ],
+      "note": "Starting block of the Right Arm structure"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "First extension block"
+    },
+    "result": "You have successfully added <ID 2: Small Wooden Block>.\nExisting Blocks: 2\n(First extension block) <ID 2: Small Wooden Block>\nPosition: [1.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [1. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [1.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Second extension block"
+    },
+    "result": "You have successfully added <ID 3: Small Wooden Block>.\nExisting Blocks: 3\n(Second extension block) <ID 3: Small Wooden Block>\nPosition: [2.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [2. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [2. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 2. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [2.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 2,
+      "face_a": "E",
+      "block_b": 3,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Reinforces between Block 1 and Block 2"
+    },
+    "result": "You have successfully added <ID 4: Brace>.\nExisting Blocks: 4\n(Reinforces between Block 1 and Block 2) <ID 4: Brace>\nConnecting <ID 2: Small Wooden Block> at [1.50000000e+00 2.22044605e-16 0.00000000e+00] and <ID 3: Small Wooden Block> at [ 2.  -0.5  0. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Third extension block"
+    },
+    "result": "You have successfully added <ID 5: Small Wooden Block>.\nExisting Blocks: 5\n(Third extension block) <ID 5: Small Wooden Block>\nPosition: [3.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 3. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [3. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [3. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 3. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [3.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 5,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Fourth extension block"
+    },
+    "result": "You have successfully added <ID 6: Small Wooden Block>.\nExisting Blocks: 6\n(Fourth extension block) <ID 6: Small Wooden Block>\nPosition: [4.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 4. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [4. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [4. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 4. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [4.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 5,
+      "face_a": "E",
+      "block_b": 6,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Reinforces between Block 3 and Block 4"
+    },
+    "result": "You have successfully added <ID 7: Brace>.\nExisting Blocks: 7\n(Reinforces between Block 3 and Block 4) <ID 7: Brace>\nConnecting <ID 5: Small Wooden Block> at [3.50000000e+00 6.66133815e-16 0.00000000e+00] and <ID 6: Small Wooden Block> at [ 4.  -0.5  0. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 6,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Fifth extension block"
+    },
+    "result": "You have successfully added <ID 8: Small Wooden Block>.\nExisting Blocks: 8\n(Fifth extension block) <ID 8: Small Wooden Block>\nPosition: [5.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 5. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [5. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [5. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 5. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [5.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 8,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Sixth extension block"
+    },
+    "result": "You have successfully added <ID 9: Small Wooden Block>.\nExisting Blocks: 9\n(Sixth extension block) <ID 9: Small Wooden Block>\nPosition: [6.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 6. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [6. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [6. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 6. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [6.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 8,
+      "face_a": "E",
+      "block_b": 9,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Reinforces between Block 5 and Block 6"
+    },
+    "result": "You have successfully added <ID 10: Brace>.\nExisting Blocks: 10\n(Reinforces between Block 5 and Block 6) <ID 10: Brace>\nConnecting <ID 8: Small Wooden Block> at [5.50000000e+00 1.11022302e-15 0.00000000e+00] and <ID 9: Small Wooden Block> at [ 6.  -0.5  0. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 9,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Seventh extension block"
+    },
+    "result": "You have successfully added <ID 11: Small Wooden Block>.\nExisting Blocks: 11\n(Seventh extension block) <ID 11: Small Wooden Block>\nPosition: [7.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 7. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [7. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [7. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 7. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [7.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 11,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Eighth extension block"
+    },
+    "result": "You have successfully added <ID 12: Small Wooden Block>.\nExisting Blocks: 12\n(Eighth extension block) <ID 12: Small Wooden Block>\nPosition: [8.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 8. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [8. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [8. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 8. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [8.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 11,
+      "face_a": "E",
+      "block_b": 12,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Reinforces between Block 7 and Block 8"
+    },
+    "result": "You have successfully added <ID 13: Brace>.\nExisting Blocks: 13\n(Reinforces between Block 7 and Block 8) <ID 13: Brace>\nConnecting <ID 11: Small Wooden Block> at [7.50000000e+00 1.55431223e-15 0.00000000e+00] and <ID 12: Small Wooden Block> at [ 8.  -0.5  0. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 12,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Ninth extension block"
+    },
+    "result": "You have successfully added <ID 14: Small Wooden Block>.\nExisting Blocks: 14\n(Ninth extension block) <ID 14: Small Wooden Block>\nPosition: [9.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 9. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [9. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [9. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 9. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [9.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 14,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Tenth extension block"
+    },
+    "result": "You have successfully added <ID 15: Small Wooden Block>.\nExisting Blocks: 15\n(Tenth extension block) <ID 15: Small Wooden Block>\nPosition: [10., 0., 0.]\nAttachable Faces:\nFace label: A, Face center: [10. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [10. ,  0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [10. ,  0. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [10. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [10.5,  0. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 14,
+      "face_a": "E",
+      "block_b": 15,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Reinforces between Block 9 and Block 10"
+    },
+    "result": "You have successfully added <ID 16: Brace>.\nExisting Blocks: 16\n(Reinforces between Block 9 and Block 10) <ID 16: Brace>\nConnecting <ID 14: Small Wooden Block> at [9.50000000e+00 1.99840144e-15 0.00000000e+00] and <ID 15: Small Wooden Block> at [10.  -0.5  0. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 15,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Final extension block"
+    },
+    "result": "You have successfully added <ID 17: Small Wooden Block>.\nExisting Blocks: 17\n(Final extension block) <ID 17: Small Wooden Block>\nPosition: [11., 0., 0.]\nAttachable Faces:\nFace label: A, Face center: [11. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [11. ,  0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [11. ,  0. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [11. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [11.5,  0. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 17\n\nMachine Summary: Starting block of the Right Arm structure\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\n(First extension block) <ID 2: Small Wooden Block>\nPosition: [1.,0.,0.]\n(Second extension block) <ID 3: Small Wooden Block>\nPosition: [2.,0.,0.]\n(Reinforces between Block 1 and Block 2) <ID 4: Brace>\nConnecting <ID 2: Small Wooden Block> at [1.50000000e+00 2.22044605e-16 0.00000000e+00] and <ID 3: Small Wooden Block> at [ 2.  -0.5  0. ].\t\n(Third extension block) <ID 5: Small Wooden Block>\nPosition: [3.,0.,0.]\n(Fourth extension block) <ID 6: Small Wooden Block>\nPosition: [4.,0.,0.]\n(Reinforces between Block 3 and Block 4) <ID 7: Brace>\nConnecting <ID 5: Small Wooden Block> at [3.50000000e+00 6.66133815e-16 0.00000000e+00] and <ID 6: Small Wooden Block> at [ 4.  -0.5  0. ].\t\n(Fifth extension block) <ID 8: Small Wooden Block>\nPosition: [5.,0.,0.]\n(Sixth extension block) <ID 9: Small Wooden Block>\nPosition: [6.,0.,0.]\n(Reinforces between Block 5 and Block 6) <ID 10: Brace>\nConnecting <ID 8: Small Wooden Block> at [5.50000000e+00 1.11022302e-15 0.00000000e+00] and <ID 9: Small Wooden Block> at [ 6.  -0.5  0. ].\t\n(Seventh extension block) <ID 11: Small Wooden Block>\nPosition: [7.,0.,0.]\n(Eighth extension block) <ID 12: Small Wooden Block>\nPosition: [8.,0.,0.]\n(Reinforces between Block 7 and Block 8) <ID 13: Brace>\nConnecting <ID 11: Small Wooden Block> at [7.50000000e+00 1.55431223e-15 0.00000000e+00] and <ID 12: Small Wooden Block> at [ 8.  -0.5  0. ].\t\n(Ninth extension block) <ID 14: Small Wooden Block>\nPosition: [9.,0.,0.]\n(Tenth extension block) <ID 15: Small Wooden Block>\nPosition: [10., 0., 0.]\n(Reinforces between Block 9 and Block 10) <ID 16: Brace>\nConnecting <ID 14: Small Wooden Block> at [9.50000000e+00 1.99840144e-15 0.00000000e+00] and <ID 15: Small Wooden Block> at [10.  -0.5  0. ].\t\n(Final extension block) <ID 17: Small Wooden Block>\nPosition: [11., 0., 0.]"
+  }
+]

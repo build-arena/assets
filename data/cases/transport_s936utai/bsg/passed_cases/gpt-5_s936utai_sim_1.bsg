@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Besiege machine save file.-->
+<Machine version="1" bsgVersion="1.4" name="s936utai_sim_1">
+    <!--The machine's position and rotation.-->
+    <Global>
+        <Position x="0.075" y="5.0" z="0.125" />
+        <Rotation x="0" y="0" z="0" w="1" />
+    </Global>
+    <!--The machine's additional data or modded data.-->
+    <Data>
+        <StringArray key="lua_files">LuaRoot/main.lua</StringArray>
+        <StringArray key="lua_data">-- Created 21/01/2026 21:24:02
+local frame_count = 0
+local refresh_rate = 25
+local ballast_ref_key = "Ballast_0b3d8123"
+local mass_min = 5.0
+local mass_max = 50.0
+local ramp_duration = 2.0
+-- Start of the control configuration
+local rightarrow = machine.new_key_emulator('RightArrow')
+local alpha1 = machine.new_key_emulator('Alpha1')
+local uparrow = machine.new_key_emulator('UpArrow')
+-- End of the control configuration
+local function play()
+  ballast_control = machine.get_refs_control(ballast_ref_key)
+  end
+local function update()
+  end
+local function late_update()
+  end
+local function fixed_update()
+  -- frame-rate independent update (called 100 times per second)
+  frame_count = frame_count + 1
+  current_time = frame_count / 100
+  -- Start of the control sequence
+  local t = math.max(math.min((current_time - 0.5) / ramp_duration, 1.0), 0.005)
+  mass_value = mass_min + (mass_max - mass_min) * t
+  ballast_control.set_slider("mass", mass_value)
+  if current_time  &gt;= 0.0 then alpha1.start() end
+  if current_time  &gt;= 0.0 then alpha1.stop() end
+  if current_time  &gt;= 0.5 then alpha1.start() end
+  if current_time  &gt;= 7.5 then alpha1.stop() end
+  if current_time  &gt;= 8.0 then alpha1.start() end
+  if current_time  &gt;= 8.6 then alpha1.stop() end
+  -- End of the control sequence
+  -- Print the position of the starting block every 1/5 seconds
+  if frame_count % (100 / refresh_rate) == 0 then
+    machine_info = machine.get_machine_info()
+    block_1 = machine_info.get_block_info(0)
+    position_1 = block_1.position()
+    print(string.format("%.1f, %s, %.1f, %.1f, %.1f", current_time, "ID_1", position_1.x, position_1.y, position_1.z))
+    block_Ballast = machine_info.get_block_info("Ballast_0b3d8123")
+    position_Ballast = block_Ballast.position()
+    print(string.format("%.1f, %s, %.1f", current_time, "ID_Ballast", mass_value))
+    print(string.format("%.1f, %s, %.1f, %.1f, %.1f", current_time, "ID_Ballast", position_Ballast.x, position_Ballast.y, position_Ballast.z))
+    end
+  end
+local function on_gui()
+  end
+return {play = play, update = update, late_update = late_update, fixed_update = fixed_update, on_gui = on_gui} 
+</StringArray>
+        <StringArray key="lua_modules_names">default</StringArray>
+        <StringArray key="lua_modules_paths">LuaRoot/main.lua</StringArray>
+        <Boolean key="lua">True</Boolean>
+        <StringArray key="requiredMods" />
+    </Data>
+    <!--The machine's blocks.-->
+    <Blocks>
+        <Block id="0" guid="d8206f09-e6bf-420b-a66b-d416188b467f">
+            <Transform>
+                <Position x="0.0" y="0.0" z="0.0" />
+                <Rotation x="-0.0" y="-0.0" z="-0.0" w="1.0" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <Integer key="bmt-version">1</Integer>
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">StartingBlock_d8206f09</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="7a4fbcbe-9d03-4848-a6e8-39f734ecb6e7">
+            <Transform>
+                <Position x="-0.5" y="0.0" z="0.0" />
+                <Rotation x="-0.0" y="0.7071067811865475" z="-0.0" w="-0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_7a4fbcbe</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="fea38510-b41c-4f91-86d2-494b728d7c99">
+            <Transform>
+                <Position x="0.5" y="0.0" z="0.0" />
+                <Rotation x="-0.0" y="0.7071067811865475" z="-0.0" w="0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_fea38510</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="377a0296-244e-443d-8e8e-33a36af693d9">
+            <Transform>
+                <Position x="0.0" y="0.0" z="0.5" />
+                <Rotation x="-0.0" y="-0.0" z="-0.0" w="1.0" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_377a0296</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="e0a90669-e1d3-4118-ad82-92c32c758168">
+            <Transform>
+                <Position x="0.0" y="0.0" z="-0.5" />
+                <Rotation x="-1.0" y="-0.0" z="-0.0" w="0.0" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_e0a90669</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="0a51bd18-7631-4cd4-8600-3911facc3b49">
+            <Transform>
+                <Position x="-0.9999999999999999" y="0.0" z="0.5000000000000001" />
+                <Rotation x="-0.0" y="-0.0" z="-0.0" w="-1.0" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_0a51bd18</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="c7115ab1-be60-4658-86ad-1ef83fbada32">
+            <Transform>
+                <Position x="0.9999999999999999" y="0.0" z="0.5000000000000001" />
+                <Rotation x="-0.0" y="-0.0" z="-0.0" w="1.0" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_c7115ab1</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="cadbdb0a-2c3f-48d2-bd20-3188960a4ff6">
+            <Transform>
+                <Position x="-1.0" y="0.0" z="-0.4999999999999999" />
+                <Rotation x="-0.0" y="-1.0" z="-0.0" w="2.2204460492503136e-16" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_cadbdb0a</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="c421f2ba-bf3a-4d9a-a4d4-c4d6d7001f02">
+            <Transform>
+                <Position x="1.0" y="0.0" z="-0.4999999999999999" />
+                <Rotation x="-0.0" y="-1.0" z="-0.0" w="-2.2204460492503136e-16" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_c421f2ba</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="17241e98-04f8-4bc7-a5ab-e05c0ca11e46">
+            <Transform>
+                <Position x="-1.5" y="0.0" z="2.220446049250313e-16" />
+                <Rotation x="-0.0" y="0.7071067811865475" z="-0.0" w="-0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_17241e98</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="cd842d99-7192-481d-a716-6ad06cbcc930">
+            <Transform>
+                <Position x="-2.0" y="0.5" z="3.3306690738754696e-16" />
+                <Rotation x="0.5" y="0.5000000000000002" z="0.49999999999999994" w="-0.5000000000000001" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_cd842d99</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="e4bf1b6b-dcbd-4b9d-9b49-5b14265d023d">
+            <Transform>
+                <Position x="-1.5" y="0.0" z="1.0" />
+                <Rotation x="-0.0" y="0.7071067811865475" z="-0.0" w="-0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_e4bf1b6b</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="05c76c05-6168-4bce-873b-ca5ffef1fea8">
+            <Transform>
+                <Position x="-2.0" y="0.5" z="1.0" />
+                <Rotation x="0.5" y="0.5000000000000002" z="0.49999999999999994" w="-0.5000000000000001" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_05c76c05</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="c4888d1d-0a5e-4af0-b7ea-ecb9a6653c85">
+            <Transform>
+                <Position x="-1.5000000000000002" y="0.0" z="-0.9999999999999997" />
+                <Rotation x="-0.0" y="0.7071067811865475" z="-0.0" w="-0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_c4888d1d</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="a0596be0-652b-4d63-ace0-893391ab18f6">
+            <Transform>
+                <Position x="-2.0" y="0.5" z="-0.9999999999999996" />
+                <Rotation x="0.5" y="0.5000000000000002" z="0.49999999999999994" w="-0.5000000000000001" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_a0596be0</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="80a577a2-4822-492c-8dc1-287ae3acf268">
+            <Transform>
+                <Position x="1.5" y="0.0" z="2.220446049250313e-16" />
+                <Rotation x="-0.0" y="0.7071067811865475" z="-0.0" w="0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_80a577a2</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="7e62ad00-f78a-4e10-a9c8-a905a37f1ac4">
+            <Transform>
+                <Position x="2.0" y="0.5" z="3.3306690738754696e-16" />
+                <Rotation x="-0.5" y="0.5000000000000002" z="0.49999999999999994" w="0.5000000000000001" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_7e62ad00</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="85d79eca-061e-4b66-a1e3-34fd80dddaf6">
+            <Transform>
+                <Position x="1.5" y="0.0" z="1.0" />
+                <Rotation x="-0.0" y="0.7071067811865475" z="-0.0" w="0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_85d79eca</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="efdd6e5a-d300-48db-bf77-f13ddec37dfe">
+            <Transform>
+                <Position x="2.0" y="0.5" z="1.0" />
+                <Rotation x="-0.5" y="0.5000000000000002" z="0.49999999999999994" w="0.5000000000000001" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_efdd6e5a</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="c31d2561-987e-4da3-ab69-5ca8380553bc">
+            <Transform>
+                <Position x="1.5000000000000002" y="0.0" z="-0.9999999999999997" />
+                <Rotation x="-0.0" y="0.7071067811865475" z="-0.0" w="0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_c31d2561</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="73ff0f43-ef24-47eb-9b6c-0b8fd5fd5156">
+            <Transform>
+                <Position x="2.0" y="0.5" z="-0.9999999999999996" />
+                <Rotation x="-0.5" y="0.5000000000000002" z="0.49999999999999994" w="0.5000000000000001" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_73ff0f43</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="c366ee0a-39e1-4124-8b24-93e87d13e445">
+            <Transform>
+                <Position x="0.0" y="0.0" z="1.5" />
+                <Rotation x="-0.0" y="-0.0" z="-0.0" w="1.0" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_c366ee0a</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="4b26f789-d259-4985-bfe3-338ed3defe25">
+            <Transform>
+                <Position x="0.0" y="0.5" z="2.0" />
+                <Rotation x="0.7071067811865475" y="-0.0" z="-0.0" w="-0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_4b26f789</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="093b63df-c389-4efc-b78a-e33f29b4e115">
+            <Transform>
+                <Position x="0.9999999999999999" y="0.0" z="1.5" />
+                <Rotation x="-0.0" y="-0.0" z="-0.0" w="1.0" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_093b63df</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="dda539a3-c49a-4ae0-bd21-61c0bea7813e">
+            <Transform>
+                <Position x="-0.9999999999999999" y="0.0" z="1.5" />
+                <Rotation x="-0.0" y="-0.0" z="-0.0" w="1.0" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_dda539a3</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="e6c1b95f-0457-4a98-b44e-40abc400779b">
+            <Transform>
+                <Position x="0.9999999999999999" y="0.5" z="2.0" />
+                <Rotation x="0.7071067811865475" y="-0.0" z="-0.0" w="-0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_e6c1b95f</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="a0fbb510-6822-4395-8c39-c0b4a2fa0b6f">
+            <Transform>
+                <Position x="-0.9999999999999999" y="0.5" z="2.0" />
+                <Rotation x="0.7071067811865475" y="-0.0" z="-0.0" w="-0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_a0fbb510</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="071dafd4-14bd-4a57-ae1e-d543196bb786">
+            <Transform>
+                <Position x="0.0" y="0.0" z="-1.5" />
+                <Rotation x="-1.0" y="-0.0" z="-0.0" w="0.0" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_071dafd4</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="636ddf46-dbf1-4774-9c01-7364be74c302">
+            <Transform>
+                <Position x="0.0" y="0.5" z="-2.0" />
+                <Rotation x="-0.7071067811865476" y="-0.0" z="-0.0" w="0.7071067811865475" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_636ddf46</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="9b7a4fbc-8d7d-4fd8-9dd9-6932bb0193c0">
+            <Transform>
+                <Position x="1.0000000000000004" y="0.0" z="-1.5" />
+                <Rotation x="-0.0" y="-1.0" z="-0.0" w="-2.220446049250314e-16" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_9b7a4fbc</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="e8358e74-b190-4993-95c8-ffb0a8788f7f">
+            <Transform>
+                <Position x="1.0000000000000007" y="0.5" z="-2.0" />
+                <Rotation x="-1.5700924586837762e-16" y="0.7071067811865475" z="0.7071067811865475" w="1.5700924586837764e-16" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_e8358e74</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="c4e14ac1-6c30-43e0-8cf4-c9d28957b2f7">
+            <Transform>
+                <Position x="-1.0000000000000004" y="0.0" z="-1.5" />
+                <Rotation x="-0.0" y="-1.0" z="-0.0" w="2.220446049250314e-16" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_c4e14ac1</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="80e988e1-37e4-4390-b171-f8664df82b6e">
+            <Transform>
+                <Position x="-1.0000000000000007" y="0.5" z="-2.0" />
+                <Rotation x="1.5700924586837762e-16" y="0.7071067811865475" z="0.7071067811865475" w="-1.5700924586837764e-16" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_80e988e1</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="3f6f7912-6426-4e5e-8f00-bff8bb940f3b">
+            <Transform>
+                <Position x="-2.0000000000000004" y="1.5000000000000002" z="-1.0" />
+                <Rotation x="0.5" y="0.5000000000000001" z="0.4999999999999999" w="-0.4999999999999999" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_3f6f7912</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="94d16b52-98e9-403a-935e-06d8ee5d816a">
+            <Transform>
+                <Position x="-2.0000000000000004" y="1.5000000000000002" z="0.9999999999999996" />
+                <Rotation x="0.5" y="0.5000000000000001" z="0.4999999999999999" w="-0.4999999999999999" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_94d16b52</String>
+            </Data>
+        </Block>
+        <Block id="15" guid="cfc372e8-f251-44db-9b8c-8c18f9b33997">
+            <Transform>
+                <Position x="1.0000000000000007" y="1.4999999999999998" z="-1.9999999999999998" />
+                <Rotation x="-1.570092458683777e-16" y="0.7071067811865472" z="0.7071067811865474" w="1.5700924586837764e-16" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">SingleWoodenBlock_cfc372e8</String>
+            </Data>
+        </Block>
+        <Block id="56" guid="51eab468-ad0c-4157-a4bf-1e65b175319f">
+            <Transform>
+                <Position x="-2.0" y="-0.5" z="3.3306690738754696e-16" />
+                <Rotation x="0.5000000000000003" y="0.4999999999999998" z="-0.49999999999999994" w="0.49999999999999967" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <StringArray key="bmt-shoot"><String>RightArrow</String><String>Alpha1</String><String>UpArrow</String></StringArray>
+                <Boolean key="bmt-hold-to-fire">True</Boolean>
+                <Single key="bmt-strength">4</Single>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">WaterCannon_51eab468</String>
+            </Data>
+        </Block>
+        <Block id="56" guid="d5a64f89-d88b-42d4-91b0-3f8802e097f2">
+            <Transform>
+                <Position x="-2.0000000000000004" y="1.5000000000000002" z="-1.1102230246251565e-16" />
+                <Rotation x="0.5" y="0.5000000000000001" z="0.4999999999999999" w="-0.4999999999999999" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <StringArray key="bmt-shoot"><String>RightArrow</String><String>Alpha1</String><String>UpArrow</String></StringArray>
+                <Boolean key="bmt-hold-to-fire">True</Boolean>
+                <Single key="bmt-strength">4</Single>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">WaterCannon_d5a64f89</String>
+            </Data>
+        </Block>
+        <Block id="56" guid="c0d98170-12ad-40e3-8610-0ed9ce2a88bd">
+            <Transform>
+                <Position x="0.0" y="-0.5" z="-2.0" />
+                <Rotation x="-0.7071067811865476" y="-0.0" z="-0.0" w="-0.7071067811865475" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <StringArray key="bmt-shoot"><String>RightArrow</String><String>Alpha1</String><String>UpArrow</String></StringArray>
+                <Boolean key="bmt-hold-to-fire">True</Boolean>
+                <Single key="bmt-strength">4</Single>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">WaterCannon_c0d98170</String>
+            </Data>
+        </Block>
+        <Block id="56" guid="5f715a21-ed25-447a-b597-d8a2f4589f64">
+            <Transform>
+                <Position x="0.0" y="1.5" z="-2.0" />
+                <Rotation x="-0.0" y="0.7071067811865475" z="0.7071067811865474" w="0.0" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <StringArray key="bmt-shoot"><String>RightArrow</String><String>Alpha1</String><String>UpArrow</String></StringArray>
+                <Boolean key="bmt-hold-to-fire">True</Boolean>
+                <Single key="bmt-strength">4</Single>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">WaterCannon_5f715a21</String>
+            </Data>
+        </Block>
+        <Block id="47" guid="53d9517a-db39-474e-9ca2-3804868e34ee">
+            <Transform>
+                <Position x="-1.5000000000000004" y="2.0" z="0.9999999999999996" />
+                <Rotation x="-0.5000000000000001" y="0.4999999999999998" z="-0.5" w="0.5000000000000002" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Torch_53d9517a</String>
+            </Data>
+        </Block>
+        <Block id="47" guid="a529d037-6a51-4481-b0ab-579c7bc414d6">
+            <Transform>
+                <Position x="1.0000000000000002" y="-0.5" z="-0.9999999999999999" />
+                <Rotation x="-0.5000000000000001" y="0.5" z="-0.4999999999999999" w="-0.4999999999999997" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Torch_a529d037</String>
+            </Data>
+        </Block>
+        <Block id="47" guid="1b30ebc9-5edf-4cb2-baaf-3efca18a4ee9">
+            <Transform>
+                <Position x="1.0000000000000004" y="1.9999999999999996" z="-1.4999999999999998" />
+                <Rotation x="-0.0" y="2.220446049250313e-16" z="-0.7071067811865475" w="-0.7071067811865475" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Torch_1b30ebc9</String>
+            </Data>
+        </Block>
+        <Block id="47" guid="4b6bff10-331c-4a27-8ca9-814babebf80c">
+            <Transform>
+                <Position x="0.0" y="-0.5" z="0.0" />
+                <Rotation x="-0.5000000000000001" y="0.4999999999999999" z="-0.5000000000000001" w="-0.5000000000000002" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                None
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Torch_4b6bff10</String>
+            </Data>
+        </Block>
+        <Block id="7" guid="07e29019-04b5-4d5c-9497-b62329ab6df8">
+            <Transform>
+                <Position x="-0.4999999999999999" y="0.0" z="1.0" />
+                <Rotation x="-0.0" y="0.7071067811865475" z="-0.0" w="0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <Vector3 key="start-position">
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3 key="end-position">
+                    <X>2.2204460492503126e-16</X>
+                    <Y>0.0</Y>
+                    <Z>0.9999999999999996</Z>
+                </Vector3>
+                <Vector3 key="start-rotation">
+                    <X>270.0</X>
+                    <Y>90.0</Y>
+                    <Z>0.0</Z>
+                </Vector3>
+                <Vector3 key="end-rotation">
+                    <X>90.0</X>
+                    <Y>90.0</Y>
+                    <Z>-180.0</Z>
+                </Vector3>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Brace_07e29019</String>
+            </Data>
+        </Block>
+        <Block id="7" guid="be9e86af-728c-4e69-8435-4f4ea4370270">
+            <Transform>
+                <Position x="-1.5" y="0.0" z="2.220446049250313e-16" />
+                <Rotation x="-0.0" y="0.7071067811865475" z="-0.0" w="-0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <Vector3 key="start-position">
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3 key="end-position">
+                    <X>-0.5</X>
+                    <Y>0.0</Y>
+                    <Z>0.4999999999999999</Z>
+                </Vector3>
+                <Vector3 key="start-rotation">
+                    <X>90.0</X>
+                    <Y>90.0</Y>
+                    <Z>-180.0</Z>
+                </Vector3>
+                <Vector3 key="end-rotation">
+                    <X>450.0</X>
+                    <Y>179.99999999999997</Y>
+                    <Z>-180.0</Z>
+                </Vector3>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Brace_be9e86af</String>
+            </Data>
+        </Block>
+        <Block id="7" guid="46efe1bf-4a4c-47d2-9f72-2e8f57d36a83">
+            <Transform>
+                <Position x="-0.9999999999999999" y="0.5" z="1.0" />
+                <Rotation x="0.7071067811865475" y="-0.0" z="-0.0" w="-0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <Vector3 key="start-position">
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3 key="end-position">
+                    <X>-1.0</X>
+                    <Y>0.49999999999999967</Y>
+                    <Z>-0.5</Z>
+                </Vector3>
+                <Vector3 key="start-rotation">
+                    <X>0.0</X>
+                    <Y>90.0</Y>
+                    <Z>-90.0</Z>
+                </Vector3>
+                <Vector3 key="end-rotation">
+                    <X>450.0</X>
+                    <Y>179.99999999999997</Y>
+                    <Z>-180.0</Z>
+                </Vector3>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Brace_46efe1bf</String>
+            </Data>
+        </Block>
+        <Block id="7" guid="eaeea9e3-c8bd-47e6-9de8-bc482e9bf4bb">
+            <Transform>
+                <Position x="-1.5000000000000002" y="0.0" z="-0.9999999999999997" />
+                <Rotation x="-0.0" y="0.7071067811865475" z="-0.0" w="-0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <Vector3 key="start-position">
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3 key="end-position">
+                    <X>-0.4999999999999999</X>
+                    <Y>0.0</Y>
+                    <Z>0.5</Z>
+                </Vector3>
+                <Vector3 key="start-rotation">
+                    <X>90.0</X>
+                    <Y>90.0</Y>
+                    <Z>-180.0</Z>
+                </Vector3>
+                <Vector3 key="end-rotation">
+                    <X>450.0</X>
+                    <Y>179.99999999999997</Y>
+                    <Z>-180.0</Z>
+                </Vector3>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Brace_eaeea9e3</String>
+            </Data>
+        </Block>
+        <Block id="7" guid="d7068b82-8e44-429b-8fd1-94316235f300">
+            <Transform>
+                <Position x="1.5" y="0.0" z="2.220446049250313e-16" />
+                <Rotation x="-0.0" y="0.7071067811865475" z="-0.0" w="0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <Vector3 key="start-position">
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3 key="end-position">
+                    <X>0.5</X>
+                    <Y>0.0</Y>
+                    <Z>0.4999999999999999</Z>
+                </Vector3>
+                <Vector3 key="start-rotation">
+                    <X>270.0</X>
+                    <Y>90.0</Y>
+                    <Z>0.0</Z>
+                </Vector3>
+                <Vector3 key="end-rotation">
+                    <X>270.0</X>
+                    <Y>179.99999999999997</Y>
+                    <Z>-360.0</Z>
+                </Vector3>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Brace_d7068b82</String>
+            </Data>
+        </Block>
+        <Block id="7" guid="037d2141-370f-4f99-9b04-7ef3d7dee17b">
+            <Transform>
+                <Position x="1.5" y="0.0" z="1.0" />
+                <Rotation x="-0.0" y="0.7071067811865475" z="-0.0" w="0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <Vector3 key="start-position">
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3 key="end-position">
+                    <X>0.4999999999999999</X>
+                    <Y>0.0</Y>
+                    <Z>0.4999999999999998</Z>
+                </Vector3>
+                <Vector3 key="start-rotation">
+                    <X>270.0</X>
+                    <Y>90.0</Y>
+                    <Z>0.0</Z>
+                </Vector3>
+                <Vector3 key="end-rotation">
+                    <X>270.0</X>
+                    <Y>179.99999999999997</Y>
+                    <Z>-360.0</Z>
+                </Vector3>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Brace_037d2141</String>
+            </Data>
+        </Block>
+        <Block id="7" guid="d1720c37-4439-40a2-acfa-5447c0e97875">
+            <Transform>
+                <Position x="2.0" y="0.0" z="0.5000000000000001" />
+                <Rotation x="-0.0" y="-1.0" z="-0.0" w="-2.2204460492503136e-16" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <Vector3 key="start-position">
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3 key="end-position">
+                    <X>4.440892098500624e-16</X>
+                    <Y>0.0</Y>
+                    <Z>0.9999999999999994</Z>
+                </Vector3>
+                <Vector3 key="start-rotation">
+                    <X>270.0</X>
+                    <Y>179.99999999999997</Y>
+                    <Z>-360.0</Z>
+                </Vector3>
+                <Vector3 key="end-rotation">
+                    <X>450.0</X>
+                    <Y>0.0</Y>
+                    <Z>-180.0</Z>
+                </Vector3>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Brace_d1720c37</String>
+            </Data>
+        </Block>
+        <Block id="7" guid="e9e543ee-1532-44ba-ad03-0adefe4c69e7">
+            <Transform>
+                <Position x="1.5000000000000002" y="0.0" z="-0.9999999999999997" />
+                <Rotation x="-0.0" y="0.7071067811865475" z="-0.0" w="0.7071067811865476" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <Vector3 key="start-position">
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3 key="end-position">
+                    <X>-0.4999999999999999</X>
+                    <Y>0.0</Y>
+                    <Z>0.4999999999999998</Z>
+                </Vector3>
+                <Vector3 key="start-rotation">
+                    <X>270.0</X>
+                    <Y>90.0</Y>
+                    <Z>0.0</Z>
+                </Vector3>
+                <Vector3 key="end-rotation">
+                    <X>450.0</X>
+                    <Y>0.0</Y>
+                    <Z>-180.0</Z>
+                </Vector3>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Brace_e9e543ee</String>
+            </Data>
+        </Block>
+        <Block id="7" guid="dd42f63f-c9d1-4737-ade2-ef0b68845430">
+            <Transform>
+                <Position x="0.0" y="0.0" z="1.5" />
+                <Rotation x="-0.0" y="-0.0" z="-0.0" w="1.0" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <Vector3 key="start-position">
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3 key="end-position">
+                    <X>-0.5</X>
+                    <Y>0.0</Y>
+                    <Z>0.5</Z>
+                </Vector3>
+                <Vector3 key="start-rotation">
+                    <X>450.0</X>
+                    <Y>0.0</Y>
+                    <Z>-180.0</Z>
+                </Vector3>
+                <Vector3 key="end-rotation">
+                    <X>90.0</X>
+                    <Y>90.0</Y>
+                    <Z>-180.0</Z>
+                </Vector3>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Brace_dd42f63f</String>
+            </Data>
+        </Block>
+        <Block id="7" guid="7d334135-eeb1-412c-ba18-bf65d9096df2">
+            <Transform>
+                <Position x="0.9999999999999999" y="0.0" z="1.5" />
+                <Rotation x="-0.0" y="-0.0" z="-0.0" w="1.0" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <Vector3 key="start-position">
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3 key="end-position">
+                    <X>0.0</X>
+                    <Y>-0.5</Y>
+                    <Z>0.5</Z>
+                </Vector3>
+                <Vector3 key="start-rotation">
+                    <X>450.0</X>
+                    <Y>0.0</Y>
+                    <Z>-180.0</Z>
+                </Vector3>
+                <Vector3 key="end-rotation">
+                    <X>180.0</X>
+                    <Y>90.0</Y>
+                    <Z>90.0</Z>
+                </Vector3>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Brace_7d334135</String>
+            </Data>
+        </Block>
+        <Block id="7" guid="351c012f-7a11-4f83-8260-d76bd6cb1d46">
+            <Transform>
+                <Position x="-0.9999999999999999" y="0.0" z="1.5" />
+                <Rotation x="-0.0" y="-0.0" z="-0.0" w="1.0" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <Vector3 key="start-position">
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3 key="end-position">
+                    <X>0.0</X>
+                    <Y>-0.5</Y>
+                    <Z>0.5</Z>
+                </Vector3>
+                <Vector3 key="start-rotation">
+                    <X>450.0</X>
+                    <Y>0.0</Y>
+                    <Z>-180.0</Z>
+                </Vector3>
+                <Vector3 key="end-rotation">
+                    <X>180.0</X>
+                    <Y>90.0</Y>
+                    <Z>90.0</Z>
+                </Vector3>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Brace_351c012f</String>
+            </Data>
+        </Block>
+        <Block id="7" guid="efa268b6-ad65-4a5f-b4d5-0402234cc47c">
+            <Transform>
+                <Position x="0.0" y="0.0" z="-1.5" />
+                <Rotation x="-1.0" y="-0.0" z="-0.0" w="0.0" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <Vector3 key="start-position">
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3 key="end-position">
+                    <X>0.0</X>
+                    <Y>-0.5</Y>
+                    <Z>0.5</Z>
+                </Vector3>
+                <Vector3 key="start-rotation">
+                    <X>360.0</X>
+                    <Y>180.0</Y>
+                    <Z>-90.0</Z>
+                </Vector3>
+                <Vector3 key="end-rotation">
+                    <X>360.0</X>
+                    <Y>90.00000000000001</Y>
+                    <Z>-90.0</Z>
+                </Vector3>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Brace_efa268b6</String>
+            </Data>
+        </Block>
+        <Block id="7" guid="8bbfd68a-bb5b-43d8-b5e1-134bf095469c">
+            <Transform>
+                <Position x="1.0000000000000004" y="0.0" z="-1.5" />
+                <Rotation x="-0.0" y="-1.0" z="-0.0" w="-2.220446049250314e-16" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <Vector3 key="start-position">
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3 key="end-position">
+                    <X>4.930380657631324e-32</X>
+                    <Y>0.5</Y>
+                    <Z>0.5</Z>
+                </Vector3>
+                <Vector3 key="start-rotation">
+                    <X>270.0</X>
+                    <Y>179.99999999999997</Y>
+                    <Z>-360.0</Z>
+                </Vector3>
+                <Vector3 key="end-rotation">
+                    <X>360.0</X>
+                    <Y>90.0</Y>
+                    <Z>89.99999999999997</Z>
+                </Vector3>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Brace_8bbfd68a</String>
+            </Data>
+        </Block>
+        <Block id="7" guid="1d3c493a-ea20-48f7-bb5b-09ab6bfbc0d9">
+            <Transform>
+                <Position x="-1.0000000000000004" y="0.0" z="-1.5" />
+                <Rotation x="-0.0" y="-1.0" z="-0.0" w="2.220446049250314e-16" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <Vector3 key="start-position">
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3 key="end-position">
+                    <X>-4.930380657631324e-32</X>
+                    <Y>0.5</Y>
+                    <Z>0.5</Z>
+                </Vector3>
+                <Vector3 key="start-rotation">
+                    <X>450.0</X>
+                    <Y>179.99999999999997</Y>
+                    <Z>-180.0</Z>
+                </Vector3>
+                <Vector3 key="end-rotation">
+                    <X>360.0</X>
+                    <Y>90.0</Y>
+                    <Z>90.00000000000003</Z>
+                </Vector3>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Brace_1d3c493a</String>
+            </Data>
+        </Block>
+        <Block id="7" guid="87334e33-ad66-4876-8aa2-85558f11becf">
+            <Transform>
+                <Position x="0.5000000000000002" y="0.0" z="-1.0" />
+                <Rotation x="-0.0" y="-0.7071067811865479" z="-0.0" w="0.7071067811865474" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <Vector3 key="start-position">
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3 key="end-position">
+                    <X>6.661338147750942e-16</X>
+                    <Y>0.0</Y>
+                    <Z>1.0000000000000002</Z>
+                </Vector3>
+                <Vector3 key="start-rotation">
+                    <X>450.0</X>
+                    <Y>90.00000000000006</Y>
+                    <Z>-180.0</Z>
+                </Vector3>
+                <Vector3 key="end-rotation">
+                    <X>270.0</X>
+                    <Y>90.00000000000006</Y>
+                    <Z>-360.0</Z>
+                </Vector3>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Brace_87334e33</String>
+            </Data>
+        </Block>
+        <Block id="7" guid="9a073695-2348-4a43-ad1c-aeaf22dbda24">
+            <Transform>
+                <Position x="-1.0000000000000002" y="0.5" z="-0.9999999999999999" />
+                <Rotation x="1.5700924586837747e-16" y="0.7071067811865477" z="0.7071067811865474" w="-1.5700924586837747e-16" />
+                <Scale x="1.0" y="1.0" z="1.0" />
+            </Transform>
+            <Data>
+                <Vector3 key="start-position">
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3 key="end-position">
+                    <X>5.551115123125785e-16</X>
+                    <Y>1.9999999999999993</Y>
+                    <Z>-1.0000000000000002</Z>
+                </Vector3>
+                <Vector3 key="start-rotation">
+                    <X>360.0</X>
+                    <Y>90.00000000000004</Y>
+                    <Z>90.00000000000003</Z>
+                </Vector3>
+                <Vector3 key="end-rotation">
+                    <X>180.0</X>
+                    <Y>90.0</Y>
+                    <Z>90.0</Z>
+                </Vector3>
+                
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Brace_9a073695</String>
+            </Data>
+        </Block>
+        <Block id="35" guid="0b3d8123-5ffc-480d-84a6-9a0b1970b376">
+            <Transform>
+                <Position x="-0.075" y="5.0" z="-0.125" />
+                <Rotation x="-0.7071067811865476" y="-0.0" z="-0.0" w="0.7071067811865475" />
+                <Scale x="2.5" y="2.5" z="1.5" />
+            </Transform>
+            <Data>
+                <Single key="bmt-mass">5.0</Single>
+
+                <String key="bmt-lua_module">default</String>
+                <String key="bmt-lua_ref_key">Ballast_0b3d8123</String>
+            </Data>
+        </Block>
+    </Blocks>
+</Machine>

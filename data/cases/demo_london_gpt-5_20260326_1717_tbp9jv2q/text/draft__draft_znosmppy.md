@@ -1,0 +1,984 @@
+# user (default) (TextMessage): 
+
+The plan of the specific sub-structure 1: {'name': 'Twin-Tower Rope-Suspended Tower-Bridge (Single Sub-Structure)', 'description': 'One integrated bridge featuring two tall, braced wooden towers with decorative rose-wheel panels, an upper cross-braced tie-walkway, and a 3‑unit-wide deck suspended by rope winches. The deck height is set around z=6 once the towers seat on the terrain edges. The interior of each tower is hollow with cross-bracing levels that produce tiered, Gothic-like elevations. Torches crown the turrets; water cannons project from outer faces as sculptural features. The entire structure builds from the central stone base located at mid-deck.', 'components': '- Required starter: 1 Stone Base Block (1×1×1), used as the center of the deck.\n        - Small Wooden Block: 88 units (approx.)\n          • Deck: 32 wooden blocks (11×3 deck grid minus 1 slot occupied by the stone base).\n          • Towers: 56 wooden blocks for posts (2 towers × 4 posts × 7‑high = 56).\n        - Powered Wheel: 2 units (ornamental rose windows on inner tower faces).\n        - Torch: 4 units (lantern finials at tower tops).\n        - Water Cannon: 2 units (decorative “gargoyle” spouts on outer faces; inactive).\n        - Brace connectors: ~60–90 units (horizontal rings at multiple heights, diagonal X bracing on tower faces, and upper tie-walkway lattice). Connectors have no volume; use as needed for rigidity and ornament.\n        - Winch connectors: 14 units\n          • 12 deck suspension lines (6 from each tower to the near half of the deck edges).\n          • 2 top inter-tower “main cable” lines (y=±1).', 'assembly': 'Layout orientation and target dimensions:\n        - Global axes: +x east (span direction), +y north (bridge width), +z up.\n        - Gap runs along y; span across x must be ≥10. Place tower centers roughly at x≈−6 (west) and x≈+6 (east), giving ≈12 units between towers; deck length ≈11 units centered on x=0 from about x≈−5 to x≈+5. Deck width = 3 (y=−1,0,+1). Deck top elevation ≈z=6 when seated.\n        \n        Step A. Build the suspended deck (from the stone base):\n        1) Place the Stone Base as the central deck tile at (x≈0, y=0, z≈6 target). Use this as the datum.\n        2) Deck spine (center row y=0): Attach Small Wooden Blocks along x to form an 11‑unit run (e.g., five to the west, five to the east). This creates the centerline beam.\n        3) Deck edges (y=±1): Along the same x run, attach wooden blocks to form two parallel edge beams at y=+1 and y=−1, creating an 11×3 platform (33 tiles total; one occupied by stone base → 32 wood).\n        4) Under-deck aesthetic truss (optional, using braces only): Brace diagonally between the center row and each edge row at z≈5 to simulate a lattice girder. Also brace across y between opposite edges at intervals of 2 units along x for torsional stiffness. These braces add ornamental complexity without extra blocks.\n        5) Temporary rail posts (scaffold): If needed for placing upper braces later, add a few temporary wood blocks at deck corners (x≈±5, y=±1, z≈7) and remove them after completing Step C.\n        \n        Step B. Erect the two towers (initially attached; later “freed” via scaffold removal):\n        6) Left (west) tower footprint: plan a 2×2 post grid using four vertical posts:\n           - x positions: inner posts at x≈−6, outer posts at x≈−7.\n           - y positions: y=−1 and y=+1.\n           - Each post: stack 7 Small Wooden Blocks from z=0 up to z=6 (top at z=7).\n           For initial placement, temporarily bridge each inner post to the deck end at x≈−5 using a single wooden “scaffold” block (one per inner post at y=±1). This allows you to place the posts offset by 1 unit from the deck. You will delete these scaffold blocks after winches are installed (Step D).\n        7) Right (east) tower: mirror Step 6 at x≈+6 (inner) and x≈+7 (outer).\n        8) Tower horizontal rings (braces): At z=1, 3, and 5, brace around each tower connecting adjacent posts along x and y, forming square frames (four edges per level). Add a second ring at the same levels as diagonal X braces on each face for Gothic lattice effect.\n        9) Tower arches (diagonals): On the inner faces (toward the deck), install tall diagonal braces from the base (z≈0) to near deck level (z≈6), forming pointed “portals” framing the suspended deck. Repeat on outer faces for symmetry.\n        \n        Step C. Upper tie-walkway between tower tops (braces only):\n        10) At z≈7, connect the inner top blocks (y=±1) of the left and right towers with long braces along x, one brace at y=+1 and one brace at y=−1.\n        11) Add two diagonal braces between those top connections to form an “X” lattice when seen from the side (e.g., one diagonal from left y=+1 top to right y=−1 top, and one from left y=−1 top to right y=+1 top). This emulates the Tower Bridge’s upper walkways/ties and rigidly fixes tower spacing.\n        \n        Step D. Rope suspension (winches) and scaffold removal:\n        12) Left tower fan stays: From the inner faces of the left tower’s top inner posts (z≈6 top blocks at y=±1, x≈−6), attach winches down to the deck edge blocks on the west half:\n            - To y=+1 edge: x≈−5, x≈−3, x≈−1.\n            - To y=−1 edge: x≈−5, x≈−3, x≈−1.\n            Set lengths to produce slight sag toward midspan.\n        13) Right tower fan stays: Mirror Step 12 on the east half from x≈+6 to deck edge blocks at x≈+5, x≈+3, x≈+1 (both y edges).\n        14) Top “main cables”: Add two winches between the left and right towers’ top inner posts across x at y=+1 and y=−1. These provide visual main cables and lateral tie at the crown.\n        15) Remove the temporary wooden scaffold blocks that rigidly linked each tower inner post to the deck ends. After removal, the only connections between deck and towers are the winches (ropes), ensuring the deck is truly suspended. Towers remain rigidly tied to each other only via the upper walkway braces and the two top winch “cables.”\n        \n        Step E. Ornaments and finishing touches:\n        16) Powered Wheels (rose windows): Attach 1 Powered Wheel to the inner face of each tower at mid-height (z≈4) on the inner post at y=0 plane (choose the inner post that faces the deck). The wheel faces the deck (vertical orientation), suggesting a round Gothic window. Leave controls unassigned so they remain stationary.\n        17) Torches (lantern finials): Attach 2 Torches per tower to the topmost block faces at y=±1, oriented upward and outward, so their flame spheres are clear of other blocks (heating radius 0.3). They act as crest lanterns.\n        18) Water Cannons (gargoyle spouts): Attach 1 Water Cannon on the outer face of each tower at z≈6, pointing horizontally outward along ±y. Leave unbound so they never fire. Ensure torches are more than 1 unit away from cannons to avoid any heating; with placements on opposite faces, there will be no accidental steam mode.\n        \n        Temporary scaffold policy:\n        - During tower placement and upper bracing, you may place temporary wooden blocks to achieve reach and alignment. After installing all winches and upper braces, remove these scaffolds so the towers have hollow interiors and the deck is cleanly hung by ropes.', 'motion_control': '- No propulsion or wheel control is required. Do not assign keys to wheels or water cannons.\n        - Winches are static-length during evaluation; set lengths during assembly for symmetric tension and a slight deck sag. If needed, micro-adjust individual winch lengths so the deck sits level near z≈6 at the ends and modestly lower at midspan, while remaining ≥5 units above the gap bottom.', 'function': '- The towers stand on the opposite edges of the gap and carry vertical loads to terrain. \n        - The deck is supported exclusively by ropes (winches) from the tower tops; there are no rigid block attachments between deck and towers after scaffold removal, satisfying the “suspended by ropes” requirement.\n        - The upper cross-braced walkway stabilizes tower spacing and reproduces the Tower Bridge’s iconic twin high-level ties.\n        - Wheels, torches, and water cannons significantly enhance block variety and ornamentation without compromising stability.', 'design_requirements': '- Keep the deck length ≥10 units and centered so it spans the full gap; the described 11×3 deck satisfies this.\n        - Ensure final deck elevation remains ≥5 units above the gap bottom; target z≈6 with winch length tuning.\n        - Place torches at least 1 block away from water cannons; torch heating radius is 0.3, so this separation prevents steam mode or ignition of wood near cannons.\n        - Do not assign control keys to wheels or water cannons to avoid unintended motion or recoil.\n        - Use braces liberally for ornament and stiffness; they have no volume and can span between any two faces.\n        - After installing all winches, remove any temporary rigid wood connections between deck and towers so the deck is supported only by ropes.\n        - Positions may be micro‑adjusted in later stages to resolve conflicts based on actual build execution.'}
+
+# drafter (gpt-5) (TextMessage): 
+
+Assumptions and orientation
+- Global axes per spec: +x east (span), +y north (bridge width), +z up.
+- We treat the default 1×1×1 starting block as the “Stone Base” deck center at z≈6 (datum). If your starting block spawns at z=0 in your world, simply treat all z-values as relative; the structure’s internal relations remain identical. You may raise/lower winch lengths at the end to hit a deck surface near z≈6.
+
+Position adjustment note: For clarity and suspension integrity, we avoid any rigid wood contact between deck and towers after Step D. Temporary scaffold pieces used to place towers are removed in Step D. Slight micro-tuning of winch lengths will be needed to achieve a slight mid-span sag while keeping ends near z≈6 and minimum clearance ≥5 above the gap bottom.
+
+Core build blueprint (all declared blocks and connectors)
+
+Block 1 – Stone Base (starter, 1×1×1) – Central deck datum at z≈6 – [origin for placement references]
+
+Step A – Suspended deck (11×3 grid centered on Stone Base)
+We build an 11-long (x from −5 to +5) by 3-wide (y = −1,0,+1) deck. To keep face-to-face placement unambiguous, we lay the deck in a continuous “snake” path that covers all 33 tiles (Stone Base occupies the center tile at x=0,y=0). Deck blocks are all Small Wooden Blocks.
+
+Deck centerline east run (y=0, x=+1 to +5)
+2 – Small Wooden Block – Deck centerline x=+1 – east of Block 1
+3 – Small Wooden Block – Deck centerline x=+2 – east of Block 2
+4 – Small Wooden Block – Deck centerline x=+3 – east of Block 3
+5 – Small Wooden Block – Deck centerline x=+4 – east of Block 4
+6 – Small Wooden Block – Deck centerline x=+5 – east of Block 5
+
+Turn up to top row then snake west fully
+7 – Small Wooden Block – Deck top row (x=+5,y=+1) – north of Block 6
+8 – Small Wooden Block – Deck top row x=+4 – west of Block 7
+9 – Small Wooden Block – Deck top row x=+3 – west of Block 8
+10 – Small Wooden Block – Deck top row x=+2 – west of Block 9
+11 – Small Wooden Block – Deck top row x=+1 – west of Block 10
+12 – Small Wooden Block – Deck top row x=0 – west of Block 11
+13 – Small Wooden Block – Deck top row x=−1 – west of Block 12
+14 – Small Wooden Block – Deck top row x=−2 – west of Block 13
+15 – Small Wooden Block – Deck top row x=−3 – west of Block 14
+16 – Small Wooden Block – Deck top row x=−4 – west of Block 15
+17 – Small Wooden Block – Deck top row x=−5 – west of Block 16
+
+Drop to center row west end, then continue snake east partially
+18 – Small Wooden Block – Deck center row (x=−5,y=0) – south of Block 17
+19 – Small Wooden Block – Deck bottom row (x=−5,y=−1) – south of Block 18
+20 – Small Wooden Block – Deck bottom row x=−4 – east of Block 19
+21 – Small Wooden Block – Deck bottom row x=−3 – east of Block 20
+22 – Small Wooden Block – Deck bottom row x=−2 – east of Block 21
+23 – Small Wooden Block – Deck bottom row x=−1 – east of Block 22
+24 – Small Wooden Block – Deck bottom row x=0 – east of Block 23
+25 – Small Wooden Block – Deck bottom row x=+1 – east of Block 24
+26 – Small Wooden Block – Deck bottom row x=+2 – east of Block 25
+27 – Small Wooden Block – Deck bottom row x=+3 – east of Block 26
+28 – Small Wooden Block – Deck bottom row x=+4 – east of Block 27
+29 – Small Wooden Block – Deck bottom row x=+5 – east of Block 28
+
+Climb up to center row east end, then run center row back to close the grid
+30 – Small Wooden Block – Deck center row (x=+5,y=0) – north of Block 29
+31 – Small Wooden Block – Deck center row x=+4 – west of Block 30
+32 – Small Wooden Block – Deck center row x=+3 – west of Block 31
+33 – Small Wooden Block – Deck center row x=+2 – west of Block 32
+34 – Small Wooden Block – Deck center row x=+1 – west of Block 33
+35 – Small Wooden Block – Deck center row x=0 (already occupied by Block 1) – west of Block 34 – position adjustment note: skip placement here; the Stone Base occupies this tile.
+36 – Small Wooden Block – Deck center row x=−1 – west of Block 34 (attach to west face of Block 34 but align at x=−1 relative to Block 1) – position adjustment note: because Block 35 is the Stone Base, place this at the next open deck center x=−1 by moving attachment to the nearest existing neighbor along the center spine (Block 12 north face works if needed).
+37 – Small Wooden Block – Deck center row x=−2 – west of Block 36
+38 – Small Wooden Block – Deck center row x=−3 – west of Block 37
+39 – Small Wooden Block – Deck center row x=−4 – west of Block 38
+40 – Small Wooden Block – Deck center row x=−5 – west of Block 39
+
+Deck check: With Blocks 1 and 2–6, 7–17, 18–29, 30–34, 36–40, we have fully covered the 11×3 deck, using 32 Small Wooden Blocks plus the Stone Base.
+
+Optional under-deck lattice (braces only; no volume)
+B1 – Brace – Under-deck diagonal from each center row block to adjacent bottom-row neighbors every 2 x-steps – connects bottom faces of top-row blocks to top faces of bottom-row blocks at x=… −5, −3, −1, +1, +3, +5 – function: decorative truss and torsional stiffness.
+B2 – Brace – Cross-y ties at x=… −5, −3, −1, +1, +3, +5 between top and bottom deck rows – connects north face of bottom-row block to south face of top-row block at same x – function: stiffen deck.
+
+Note: Braces have no collision/volume; you may add more diagonals as ornament. The above lists the primary ones to achieve the visual and structural truss effect.
+
+Step B – Twin towers (2×2 posts, 7-high each, hollow core)
+We now erect two 2×2-post towers centered near x≈−6 (west) and x≈+6 (east). Each post is 7 Small Wooden Blocks stacked up from tower base elevation. For construction reach, place a temporary 1-block “scaffold” at the deck ends (x≈−5 and +5, y=±1) and from those, place the inner tower posts offset by 1 unit (these scaffolds will be removed in Step D).
+
+Left (west) tower posts (x≈−6 inner, x≈−7 outer; y=±1). We’ll attach from the west deck end blocks at x=−5, y=±1.
+
+West tower, inner-north post at x≈−6,y=+1:
+41 – Small Wooden Block – Left tower inner-north post, level z≈0 – west of Block 16 (tower foot set one unit west of deck edge top-row at x=−5) – position adjustment note: if your deck sits at z≈6, place this post’s base on terrain by stacking downward later; here we define the tower stack relative to the deck with a 1-unit horizontal offset west.
+42 – Small Wooden Block – Post stack z≈1 – top of Block 41
+43 – Small Wooden Block – Post stack z≈2 – top of Block 42
+44 – Small Wooden Block – Post stack z≈3 – top of Block 43
+45 – Small Wooden Block – Post stack z≈4 – top of Block 44
+46 – Small Wooden Block – Post stack z≈5 – top of Block 45
+47 – Small Wooden Block – Post stack z≈6 (top block) – top of Block 46
+
+West tower, inner-south post at x≈−6,y=−1:
+48 – Small Wooden Block – Left tower inner-south post, level z≈0 – west of Block 19
+49 – Small Wooden Block – Post stack z≈1 – top of Block 48
+50 – Small Wooden Block – Post stack z≈2 – top of Block 49
+51 – Small Wooden Block – Post stack z≈3 – top of Block 50
+52 – Small Wooden Block – Post stack z≈4 – top of Block 51
+53 – Small Wooden Block – Post stack z≈5 – top of Block 52
+54 – Small Wooden Block – Post stack z≈6 (top block) – top of Block 53
+
+West tower, outer-north post at x≈−7,y=+1:
+55 – Small Wooden Block – Left tower outer-north post, level z≈0 – west of Block 41
+56 – Small Wooden Block – Post stack z≈1 – top of Block 55
+57 – Small Wooden Block – Post stack z≈2 – top of Block 56
+58 – Small Wooden Block – Post stack z≈3 – top of Block 57
+59 – Small Wooden Block – Post stack z≈4 – top of Block 58
+60 – Small Wooden Block – Post stack z≈5 – top of Block 59
+61 – Small Wooden Block – Post stack z≈6 (top block) – top of Block 60
+
+West tower, outer-south post at x≈−7,y=−1:
+62 – Small Wooden Block – Left tower outer-south post, level z≈0 – west of Block 48
+63 – Small Wooden Block – Post stack z≈1 – top of Block 62
+64 – Small Wooden Block – Post stack z≈2 – top of Block 63
+65 – Small Wooden Block – Post stack z≈3 – top of Block 64
+66 – Small Wooden Block – Post stack z≈4 – top of Block 65
+67 – Small Wooden Block – Post stack z≈5 – top of Block 66
+68 – Small Wooden Block – Post stack z≈6 (top block) – top of Block 67
+
+Right (east) tower posts (mirror at x≈+6 inner, x≈+7 outer; y=±1). Attach from deck end blocks at x=+5, y=±1.
+
+East tower, inner-north post at x≈+6,y=+1:
+69 – Small Wooden Block – Right tower inner-north post, level z≈0 – east of Block 7
+70 – Small Wooden Block – Post stack z≈1 – top of Block 69
+71 – Small Wooden Block – Post stack z≈2 – top of Block 70
+72 – Small Wooden Block – Post stack z≈3 – top of Block 71
+73 – Small Wooden Block – Post stack z≈4 – top of Block 72
+74 – Small Wooden Block – Post stack z≈5 – top of Block 73
+75 – Small Wooden Block – Post stack z≈6 (top block) – top of Block 74
+
+East tower, inner-south post at x≈+6,y=−1:
+76 – Small Wooden Block – Right tower inner-south post, level z≈0 – east of Block 29
+77 – Small Wooden Block – Post stack z≈1 – top of Block 76
+78 – Small Wooden Block – Post stack z≈2 – top of Block 77
+79 – Small Wooden Block – Post stack z≈3 – top of Block 78
+80 – Small Wooden Block – Post stack z≈4 – top of Block 79
+81 – Small Wooden Block – Post stack z≈5 – top of Block 80
+82 – Small Wooden Block – Post stack z≈6 (top block) – top of Block 81
+
+East tower, outer-north post at x≈+7,y=+1:
+83 – Small Wooden Block – Right tower outer-north post, level z≈0 – east of Block 69
+84 – Small Wooden Block – Post stack z≈1 – top of Block 83
+85 – Small Wooden Block – Post stack z≈2 – top of Block 84
+86 – Small Wooden Block – Post stack z≈3 – top of Block 85
+87 – Small Wooden Block – Post stack z≈4 – top of Block 86
+88 – Small Wooden Block – Post stack z≈5 – top of Block 87
+89 – Small Wooden Block – Post stack z≈6 (top block) – top of Block 88
+
+East tower, outer-south post at x≈+7,y=−1:
+90 – Small Wooden Block – Right tower outer-south post, level z≈0 – east of Block 76
+91 – Small Wooden Block – Post stack z≈1 – top of Block 90
+92 – Small Wooden Block – Post stack z≈2 – top of Block 91
+93 – Small Wooden Block – Post stack z≈3 – top of Block 92
+94 – Small Wooden Block – Post stack z≈4 – top of Block 93
+95 – Small Wooden Block – Post stack z≈5 – top of Block 94
+96 – Small Wooden Block – Post stack z≈6 (top block) – top of Block 95
+
+Tower bracing rings and diagonals (braces; no volume)
+Per tower at z≈1,3,5: horizontal square rings and face X-braces.
+- Left tower rings:
+B3 – Brace – z≈1: connect Block 42 ↔ 49 (inner top ring, north-south), 49 ↔ 63 (south outer), 63 ↔ 56 (outer ring west edge), 56 ↔ 42 (north inner) – function: square frame.
+B4 – Brace – z≈3: connect Block 44 ↔ 51, 51 ↔ 65, 65 ↔ 58, 58 ↔ 44 – function: square frame.
+B5 – Brace – z≈5: connect Block 46 ↔ 53, 53 ↔ 67, 67 ↔ 60, 60 ↔ 46 – function: square frame.
+B6 – Brace – Left tower face X-braces z≈1–5: inner face (toward deck): Block 41↔47 diagonal up, and Block 48↔46 diagonal up; outer face: Block 55↔61 diagonal up, and Block 62↔60 diagonal up; north face: Block 41↔61, and Block 55↔47; south face: Block 48↔68, and Block 62↔54 – function: Gothic lattice.
+
+- Right tower rings:
+B7 – Brace – z≈1: connect Block 70 ↔ 77, 77 ↔ 91, 91 ↔ 84, 84 ↔ 70 – function: square frame.
+B8 – Brace – z≈3: connect Block 72 ↔ 79, 79 ↔ 93, 93 ↔ 86, 86 ↔ 72 – function: square frame.
+B9 – Brace – z≈5: connect Block 74 ↔ 81, 81 ↔ 95, 95 ↔ 88, 88 ↔ 74 – function: square frame.
+B10 – Brace – Right tower face X-braces z≈1–5: inner face: Block 69↔75, and Block 76↔74; outer face: Block 83↔89, and Block 90↔88; north face: Block 69↔89, and Block 83↔75; south face: Block 76↔96, and Block 90↔82.
+
+Tower tall arch diagonals (braces)
+- Left inner portal: B11 – Brace – Block 41 (base inner-north) ↔ Block 54 (inner-south near top), and B12 – Brace – Block 48 ↔ Block 47, forming pointed arch on inner face.
+- Left outer portal: B13 – Brace – Block 55 ↔ Block 68, and B14 – Brace – Block 62 ↔ Block 61.
+- Right inner portal: B15 – Brace – Block 69 ↔ Block 82, and B16 – Brace – Block 76 ↔ Block 75.
+- Right outer portal: B17 – Brace – Block 83 ↔ Block 96, and B18 – Brace – Block 90 ↔ Block 89.
+
+Step C – Upper tie-walkway (braces only)
+Top tie at z≈7 between inner posts (y=±1):
+B19 – Brace – Top tie north: connect Block 47 (left inner-north top) ↔ Block 75 (right inner-north top) along +x.
+B20 – Brace – Top tie south: connect Block 54 (left inner-south top) ↔ Block 82 (right inner-south top) along +x.
+Side X lattice across the ties:
+B21 – Brace – Diagonal: Block 47 ↔ Block 82 (forms one diagonal).
+B22 – Brace – Diagonal: Block 54 ↔ Block 75 (forms the opposite diagonal).
+
+Step D – Rope suspension (winches) and scaffold removal
+Set winch lengths for slight sag toward midspan; ends near z≈6; do not bind winches to controls (static-length).
+
+Left tower fan stays (from left inner posts top blocks):
+W1 – Winch – From Block 47 (left inner-north top) to Block 16 (deck top row x=−5,y=+1)
+W2 – Winch – From Block 47 to Block 10 (deck top row x=+2,y=+1) – position adjustment note: per plan aims at x=−3; if you prefer symmetric west-half anchors: use Block 14 (x=−3,y=+1) instead of 10.
+W3 – Winch – From Block 47 to Block 12 (deck top row x=0,y=+1) – position adjustment: to fit plan x=−1, use Block 13 (x=−1,y=+1).
+W4 – Winch – From Block 54 (left inner-south top) to Block 19 (deck bottom row x=−5,y=−1)
+W5 – Winch – From Block 54 to Block 21 (deck bottom row x=−3,y=−1)
+W6 – Winch – From Block 54 to Block 23 (deck bottom row x=−1,y=−1)
+
+Right tower fan stays (mirror on east half):
+W7 – Winch – From Block 75 (right inner-north top) to Block 7 (deck top row x=+5,y=+1)
+W8 – Winch – From Block 75 to Block 11 (deck top row x=+1,y=+1) – position adjustment: to match plan x=+3, use Block 9 (x=+3,y=+1).
+W9 – Winch – From Block 75 to Block 10 (deck top row x=+2,y=+1) – position adjustment: to match plan x=+1, use Block 11 (x=+1,y=+1).
+W10 – Winch – From Block 82 (right inner-south top) to Block 29 (deck bottom row x=+5,y=−1)
+W11 – Winch – From Block 82 to Block 27 (deck bottom row x=+3,y=−1)
+W12 – Winch – From Block 82 to Block 25 (deck bottom row x=+1,y=−1)
+
+Top “main cables” between tower crowns:
+W13 – Winch – From Block 47 (left inner-north top) ↔ Block 75 (right inner-north top) along +x
+W14 – Winch – From Block 54 (left inner-south top) ↔ Block 82 (right inner-south top) along +x
+
+Temporary scaffold removal
+- Remove any temporary 1-block bridges used to reach tower inner posts from deck ends (those between Blocks 16/19 and 41/48, and between Blocks 7/29 and 69/76). After removal, only winches connect deck to towers.
+
+Step E – Ornaments and finishing
+Powered Wheels as rose windows (vertical, facing deck; leave unassigned so they remain stationary)
+97 – Powered Wheel – Left tower inner face rose – attached to east face of Block 44 (z≈3–4 mid-height) – function: vertical wheel facing east toward deck; decorative only (no control assigned).
+98 – Powered Wheel – Right tower inner face rose – attached to west face of Block 72 – function: vertical wheel facing west toward deck; decorative only (no control assigned).
+
+Torches as lantern finials (oriented upward/outward, keep ≥1 unit from water cannons)
+99 – Torch – Left tower north finial – attached to top face of Block 47; oriented up and slightly north – function: lantern; flame sphere centered about 1 unit above Block 47. Keep clear of braces.
+100 – Torch – Left tower south finial – attached to top face of Block 54; oriented up and slightly south.
+101 – Torch – Right tower north finial – attached to top face of Block 75; oriented up and slightly north.
+102 – Torch – Right tower south finial – attached to top face of Block 82; oriented up and slightly south.
+
+Water Cannons as gargoyle spouts (decorative only; leave unassigned; ensure ≥1 unit from torches)
+103 – Water Cannon – Left tower outer face – attached to west face of Block 60 (z≈5–6), oriented horizontally west (−x) – function: decorative; never fire; placement opposite face from torches ensures >1 unit separation, avoiding heating/steam mode.
+104 – Water Cannon – Right tower outer face – attached to east face of Block 88, oriented horizontally east (+x) – function: decorative; never fire.
+
+Functional and motion behavior summary
+- Powered Wheels (Blocks 97, 98): Oriented vertically on inner faces, rolling direction toward/away from deck. Leave controls unassigned; used solely as stationary ornament.
+- Torches (Blocks 99–102): Oriented upward/outward. Heating radius 0.3 kept clear of wood joints and water cannons. Decorative light/crest.
+- Water Cannons (Blocks 103, 104): Mounted on outer faces, oriented ±x horizontally. No controls assigned; decorative only. Located >1 unit from torches to prevent steam mode or heating.
+- Winches (W1–W14): Provide all suspension. Set static lengths: ends near z≈6, center sag modest (visual catenary). Adjust per side for symmetry.
+
+Final checks and notes
+- Deck length: 11 units (x from −5 to +5), deck width 3 (y=−1,0,+1). Central Stone Base is the center tile.
+- Towers: 2×2 posts each, 7-high (z=0..6), hollow with ring and diagonal bracing for rigidity and Gothic appearance. Upper tie-walkway braced (B19–B22) secures tower spacing.
+- Suspension: After scaffold removal, the deck is supported exclusively by winches from tower tops plus two top winch cables. No rigid deck-to-tower wood remains.
+- Clearances: Torches and water cannons are placed on opposite faces (top vs. outer), ensuring >1 unit separation; torch heating radius 0.3 cannot trigger steam mode.
+- Position adjustment: If your world’s base is at z=0, the tower “z≈0” levels will coincidentally be above the terrain. You may extend posts downward (adding Small Wooden Blocks beneath Blocks 41, 48, 55, 62, 69, 76, 83, 90) until they meet terrain, or lower the entire assembly in-world. This does not change functional intent.
+
+You may add additional braces (no volume) across tower faces and under-deck as desired for ornament and stiffness without affecting counts or clearances.
+
+# draft_reviewer (gpt-5) (TextMessage): 
+
+Reviewer analysis of “Twin‑Tower Rope‑Suspended Tower‑Bridge (Single Sub‑Structure)”
+
+Coordinate and shape conventions used in this review
+- I place the default 1×1×1 starter block (the “Stone Base”) at the origin with center [0, 0, 0]. All subsequent coordinates are given relative to this base block’s center.
+- Small Wooden Block (SWB): 1×1×1. When two cubes are face‑attached, their centers differ by exactly 1 along one axis and are equal along the other two. Minimum non‑overlap (face sharing) distance along the attaching axis is 1.
+- Powered Wheel: 2×2×0.5. Axis is perpendicular to the attached face. Thickness 0.5 along axis; plane diameter 2 in the face plane. (No explicit mounting offset was provided in the block spec; I assume the wheel sits outside the attached face and does not intrude into the host cube. Clearance risk checks are therefore done against nearby blocks at similar z.)
+- Torch: 1.5×0.5×0.5 overall; it mounts to a face and projects 0.5 outward to a vertical shaft of length 1. Flame center is 1 unit beyond the torch body tip in the orientation direction per the spec’s example; heating radius 0.3.
+- Water Cannon: 1×1×1.75 peanut cylinder; center is 0.5 from the attached face along the outward normal (per the spec example). Outlet points along the cannon’s main axis. Steam mode occurs if any part is heated.
+
+STEP‑BY‑STEP STRUCTURAL CHECK
+
+Step A: Deck (11×3 grid; y ∈ {−1, 0, +1}, x ∈ {−5…+5}, z=0)
+- Block 1 (Stone Base): center [0, 0, 0].
+
+Deck centerline, east of the base (Blocks 2–6)
+- 2: [ +1, 0, 0 ] (east neighbor 1 unit from Block 1; distance=1 → face contact, no overlap)
+- 3: [ +2, 0, 0 ] (to 2: 1)
+- 4: [ +3, 0, 0 ] (to 3: 1)
+- 5: [ +4, 0, 0 ] (to 4: 1)
+- 6: [ +5, 0, 0 ] (to 5: 1)
+
+Top row y=+1 running west (Blocks 7–17)
+- 7: [ +5, +1, 0 ] (to 6: dy=+1; distance=1 → face contact)
+- 8: [ +4, +1, 0 ] (to 7: dx=−1; distance=1)
+- 9: [ +3, +1, 0 ] (to 8: 1)
+- 10: [ +2, +1, 0 ] (to 9: 1)
+- 11: [ +1, +1, 0 ] (to 10: 1)
+- 12: [ 0, +1, 0 ] (to 11: 1)
+- 13: [ −1, +1, 0 ] (to 12: 1)
+- 14: [ −2, +1, 0 ] (to 13: 1)
+- 15: [ −3, +1, 0 ] (to 14: 1)
+- 16: [ −4, +1, 0 ] (to 15: 1)
+- 17: [ −5, +1, 0 ] (to 16: 1) → this is the true west‑end top row tile.
+
+Bottom row y=−1 running east (Blocks 19–29) anchored from 18
+- 18: [ −5, 0, 0 ] (to 17: dy=−1; distance=1)
+- 19: [ −5, −1, 0 ] (to 18: 1) → west‑end bottom row tile
+- 20: [ −4, −1, 0 ] (to 19: 1)
+- 21: [ −3, −1, 0 ] (to 20: 1)
+- 22: [ −2, −1, 0 ] (to 21: 1)
+- 23: [ −1, −1, 0 ] (to 22: 1)
+- 24: [ 0, −1, 0 ] (to 23: 1)
+- 25: [ +1, −1, 0 ] (to 24: 1)
+- 26: [ +2, −1, 0 ] (to 25: 1)
+- 27: [ +3, −1, 0 ] (to 26: 1)
+- 28: [ +4, −1, 0 ] (to 27: 1)
+- 29: [ +5, −1, 0 ] (to 28: 1)
+
+Return up to center row east and run back west (Blocks 30–34, 36–40)
+- 30: [ +5, 0, 0 ] (to 29: dy=+1; 1)
+- 31: [ +4, 0, 0 ] (to 30: 1)
+- 32: [ +3, 0, 0 ] (to 31: 1)
+- 33: [ +2, 0, 0 ] (to 32: 1)
+- 34: [ +1, 0, 0 ] (to 33: 1)
+- 35 is intentionally skipped; [0,0,0] is Block 1
+- 36: [ −1, 0, 0 ] (to 1: 1)
+- 37: [ −2, 0, 0 ] (to 36: 1)
+- 38: [ −3, 0, 0 ] (to 37: 1)
+- 39: [ −4, 0, 0 ] (to 38: 1)
+- 40: [ −5, 0, 0 ] (to 39: 1) → west‑end center row tile
+
+Deck summary:
+- All deck placements are axis-aligned at z=0 with face-to-face contact; minimum required separations are met; no overlaps among deck blocks.
+- Neighbor distances for each new deck block equal 1 to the block it attaches to; no diagonal overlaps since non‑attached neighbors are ≥√2 away.
+
+Step B: Towers (each post is a 7‑stack at z=0…6, 1‑unit increments)
+Intended left (west) tower inner posts at x≈−6; outer posts at x≈−7; y=±1.
+
+Critical consistency issue 1 (overlap): The drafter’s line “41 – west of Block 16” is incompatible with the deck that already occupies [−5, +1, 0] as Block 17.
+- If we follow the literal instruction “west of Block 16 ([−4, +1, 0])”, Block 41 would be placed at [−5, +1, 0]—which is already occupied by Block 17. This is a direct overlap. Minimum distance required between two 1×1×1 cubes along x to avoid overlap is 1. Here distance=0 ⇒ overlap. This must be corrected to “west of Block 17” if x=−6 is desired.
+
+Assuming the author’s intended coordinates (inner at x=−6, outer at x=−7) and correcting that typo to avoid overlap:
+Left tower posts (corrected, no scaffold yet):
+- 41 (inner‑north base): [ −6, +1, 0 ] (west of 17)
+  • Neighbors: Block 17 at [−5,+1,0] (dx=1 → face contact); risk: this is a rigid deck‑to‑tower attachment.
+- 42…47: [ −6, +1, z ] for z=1…6 stacked above 41 (dz=1 to each neighbor below/above → face contact)
+- 48 (inner‑south base): [ −6, −1, 0 ] (west of 19)
+  • Neighbors: Block 19 at [−5, −1, 0] (dx=1 → rigid deck attachment)
+- 49…54: [ −6, −1, z ] for z=1…6
+
+Outer posts:
+- 55 (outer‑north base): [ −7, +1, 0 ] (west of 41; dx=1 face contact)
+  • 56…61: [ −7, +1, z ] for z=1…6
+- 62 (outer‑south base): [ −7, −1, 0 ] (west of 48; dx=1 face contact)
+  • 63…68: [ −7, −1, z ] for z=1…6
+
+Right (east) tower posts (mirror, inner at x=+6, outer at x=+7):
+- 69 (inner‑north base): [ +6, +1, 0 ] (east of 7 at [ +5, +1, 0 ]; dx=1)
+  • 70…75: [ +6, +1, z ] for z=1…6
+- 76 (inner‑south base): [ +6, −1, 0 ] (east of 29 at [ +5, −1, 0 ]; dx=1)
+  • 77…82: [ +6, −1, z ] for z=1…6
+- 83 (outer‑north base): [ +7, +1, 0 ] (east of 69; dx=1)
+  • 84…89: [ +7, +1, z ] for z=1…6
+- 90 (outer‑south base): [ +7, −1, 0 ] (east of 76; dx=1)
+  • 91…96: [ +7, −1, z ] for z=1…6
+
+Tower neighbor checks (selected, representative):
+- Vertical stacking within each post: centers differ by dz=1 → face contact, no overlap.
+- Inner↔outer at same y,z: centers differ by |dx|=1 → face contact, no overlap.
+- Inner posts to deck edges at base level (z=0):
+  • Left: 41↔17 and 48↔19 are in rigid face contact (dx=1).
+  • Right: 69↔7 and 76↔29 are in rigid face contact (dx=1).
+
+Flag: These four contacts are rigid tower‑to‑deck connections at z=0. The drafter mentions “temporary scaffolds to be removed,” but no such scaffold blocks are enumerated between these pairs; the posts themselves are directly attached to the deck blocks. As written, there is no way to remove these rigid connections without deleting the tower posts, which violates the intended “suspended only by ropes” final condition.
+
+Step C: Upper tie‑walkway (braces only)
+- Braces have no volume; no collision risk. The specified connections (B19–B22) between the inner post top blocks (47↔75 and 54↔82, plus diagonals) are feasible with the centers at z=6 for the top blocks. A claim of “z≈7” is cosmetic; brace endpoints are on the blocks’ faces at z=6. No physical interference.
+
+Step D: Winches (connectors with no volume)
+Anchor mapping issues:
+- Left‑north anchors intended at x=−5, −3, −1 along y=+1 should be Blocks 17 (x=−5), 14 (x=−2), 13 (x=−1), not 16 (x=−4) and 10 (x=+2) as listed in W1–W3. The plan’s IDs don’t consistently match their stated coordinates.
+- Right‑north anchors intended at x=+5, +3, +1 along y=+1 should be 7 (x=+5), 9 (x=+3), 11 (x=+1), not 11 and 10 as listed in W8–W9.
+- Similarly for the south (y=−1) edge: use 19 (−5), 21 (−3), 23 (−1) on the west half; use 29 (+5), 27 (+3), 25 (+1) on the east half.
+
+Functional impedance: Even if the winch IDs are corrected, the inner tower base posts at z=0 remain rigidly attached to the deck edge blocks at z=0 (41↔17, 48↔19, 69↔7, 76↔29). Removing “temporary scaffolds” per the current enumeration will not sever these rigid contacts because those scaffolds were never instantiated as separate blocks in the list. The deck is therefore not exclusively suspended by ropes.
+
+Step E: Ornaments
+
+Powered Wheels (97, 98)
+- 97 on left, attached to the east face of Block 44 (center [−6, +1, 3]). The wheel axis is along +x (perpendicular to the face); the wheel plane is vertical. At z=3, the nearest deck blocks are at z=0; there is no volume collision. Neighbor clearance: nearest wooden blocks are 42 ([−6, +1, 1]) below and 45 ([−6, +1, 4]) above—separation in z ≥1 so the wheel disk (radius 1 in y–z) may approach the tower post edges in y but is mounted on the face; no host overlap is assumed since the wheel sits outside the face.
+- 98 on right, attached to the west face of Block 72 ([+6, +1, 3]) mirrors the above. Both wheels satisfy orientation constraints; they will spin at 100 rpm by default but have empty surroundings in their rolling planes. No controls assigned—acceptable for ornament.
+
+Torches (99–102)
+- Mounted on the top faces of 47 ([−6, +1, 6]), 54 ([−6, −1, 6]), 75 ([+6, +1, 6]), 82 ([+6, −1, 6]), oriented upward and slightly outward. Flame sphere centers are ~1 unit above the mounting face plus any short support offset. Nearest wooden blocks are below by ≥1; nearest water cannons are on outer faces at z≈5 (see below). Heating radius 0.3 → no unintended ignition if placed as described.
+
+Water Cannons (103, 104)
+- 103 mounted on the west face of 60 ([−7, +1, 5]), pointing −x. Cannon center is at [−7.5, +1, 5] (0.5 offset from the face). Nearest torch flame (99) is around [~−6, +1, ~7]; straight‑line distance ≈ √((1.5)^2 + 0^2 + (2)^2) = 2.5 > 1, safely outside torch heating radius; opposite faces further increase separation.
+- 104 mounted on the east face of 88 ([+7, +1, 5]), pointing +x; symmetric clearances.
+
+No collision risks are evident for torches and cannons given the placements.
+
+FUNCTIONAL VALIDATION
+
+1) Motion/structure intent: “Deck supported exclusively by ropes after scaffold removal.”
+- Fails: As enumerated, the left and right inner tower bases (Blocks 41, 48, 69, 76) are in rigid face contact with deck edge blocks (17, 19, 7, 29) at z=0. No scaffold blocks exist in the enumeration between these contacts; therefore, there is no way to “remove the rigid connection” without removing the posts themselves. The deck remains rigidly attached to the towers at four points. This violates the “suspended by ropes only” requirement.
+
+2) Winch anchor correctness and symmetry:
+- Fails: Several winch endpoints reference the wrong block IDs for the intended coordinates (e.g., W1 uses 16 but the west‑end top row block is 17; W8–W9 anchor to 11/10 rather than 9/11 per the described x positions). This must be corrected to verify exact geometry and symmetry.
+
+3) Functional components orientation and clearance:
+- Powered Wheels: Orientation constraints satisfied; sufficient clearance.
+- Water Cannons: Oriented horizontally outward; >1 unit from torches; left unassigned (won’t fire). OK.
+- Torches: flame spheres isolated; OK.
+
+PHYSICAL FEASIBILITY
+
+- With towers directly attached to deck at z=0 (four rigid joints), the structure is not a rope‑suspended deck as specified. Even if the towers seat on terrain in a different coordinate frame, the current block listing leaves rigid connections intact, defeating the rope‑only support.
+- The upper tie braces are feasible and give lateral bracing as intended.
+- If the rigid tower‑to‑deck contacts were eliminated and winch IDs corrected, the remaining elements are physically consistent within the game constraints (braces no volume; rope lengths adjustable).
+
+CONCLUSIONS AND REQUIRED CORRECTIONS BEFORE APPROVAL
+
+The blueprint fails the approval checklist due to:
+- Overlap/error: “41 – west of Block 16” collides with Block 17 (same tile). This is a placement error.
+- More critically: The towers are rigidly attached to the deck via 41↔17, 48↔19, 69↔7, 76↔29. The plan to “remove scaffold” cannot work because no intermediate scaffold blocks are enumerated. The final structure is not rope‑suspended.
+- Winch anchor IDs mismatch intended coordinates on multiple entries (W1–W3, W8–W9, etc.), preventing precise validation.
+
+Specific fixes to pass all checks:
+1) Eliminate all rigid tower‑to‑deck contacts at z=0.
+   - Recommended: Shift both towers one unit farther from the deck:
+     • Left tower inner posts at x=−7 (outer at x=−8); right tower inner posts at x=+7 (outer at x=+8).
+     • Update all tower block coordinates and brace references accordingly.
+     • Then your deck edges at x=±5 will be separated by a 1‑unit air gap from the inner posts at x=±7, ensuring no rigid contact.
+   - Alternatively (less preferred): Remove the deck’s extreme top/bottom edge tiles at x=±5 (Blocks 17, 19, 7, 29) and shift winch anchors inward, but this shortens the usable 11×3 perimeter at the ends and compromises the stated 11×3 fullness.
+
+2) Correct winch endpoints to match the stated x positions:
+   - Left north (y=+1): 17 (−5), 14 (−2), 13 (−1) or per your intended (−5, −3, −1) adjust IDs to 17, 15, 13.
+   - Left south (y=−1): 19 (−5), 21 (−3), 23 (−1).
+   - Right north (y=+1): 7 (+5), 9 (+3), 11 (+1).
+   - Right south (y=−1): 29 (+5), 27 (+3), 25 (+1).
+   Ensure symmetry and consistent pairing.
+
+3) Fix the Block 41 placement typo:
+   - Change “west of Block 16” to “west of Block 17” if you retain x=−6 for the inner post (but see item 1 about eliminating rigid contact).
+
+4) Re‑verify decorations after tower shift:
+   - Wheels on inner faces remain fine (now with a larger gap to the deck; even safer).
+   - Torches and cannons retain >1 unit separation.
+   - Recompute any brace endpoints if tower x‑coordinates change.
+
+Until the above corrections are implemented, the design does not meet the structural and functional requirements (deck not suspended solely by ropes; one enumerated overlap; anchor mismatches). Please revise the placements accordingly and resubmit for a full per‑block clearance audit.
+
+Result: Not approved. Please address the specific placement conflicts and rope‑only support requirement.
+
+# drafter (gpt-5) (TextMessage): 
+
+Revised blueprint addressing reviewer findings
+
+Position adjustment note (major): Shifted both towers 1 unit farther from the deck to ensure rope-only suspension (inner tower posts now at x=−7 and x=+7; outer posts at x=−8 and x=+8). Added four explicit 1×1×1 temporary scaffold blocks at x=±6, y=±1 to reach tower placement; these are removed in Step D after winches and the upper braces are installed. Winch anchor IDs have been corrected to match the intended deck coordinates.
+
+Assumptions and orientation
+- Global axes per spec: +x east (span), +y north (bridge width), +z up.
+- Starter Stone Base is at deck center. Reviewer used z=0; the internal relations are consistent either way.
+
+Block and connector declarations
+
+Block 1 – Small Wooden Block (Stone Base: starter 1×1×1) – Central deck datum – [origin for all placement references]
+
+Step A – Deck, 11×3 grid centered on Stone Base (reusing reviewer-validated layout)
+2 – Small Wooden Block – Deck centerline x=+1 – east of Block 1
+3 – Small Wooden Block – Deck centerline x=+2 – east of Block 2
+4 – Small Wooden Block – Deck centerline x=+3 – east of Block 3
+5 – Small Wooden Block – Deck centerline x=+4 – east of Block 4
+6 – Small Wooden Block – Deck centerline x=+5 – east of Block 5
+
+7 – Small Wooden Block – Deck top row (x=+5,y=+1) – north of Block 6
+8 – Small Wooden Block – Deck top row x=+4 – west of Block 7
+9 – Small Wooden Block – Deck top row x=+3 – west of Block 8
+10 – Small Wooden Block – Deck top row x=+2 – west of Block 9
+11 – Small Wooden Block – Deck top row x=+1 – west of Block 10
+12 – Small Wooden Block – Deck top row x=0 – west of Block 11
+13 – Small Wooden Block – Deck top row x=−1 – west of Block 12
+14 – Small Wooden Block – Deck top row x=−2 – west of Block 13
+15 – Small Wooden Block – Deck top row x=−3 – west of Block 14
+16 – Small Wooden Block – Deck top row x=−4 – west of Block 15
+17 – Small Wooden Block – Deck top row x=−5 – west of Block 16
+
+18 – Small Wooden Block – Deck center row (x=−5,y=0) – south of Block 17
+19 – Small Wooden Block – Deck bottom row (x=−5,y=−1) – south of Block 18
+20 – Small Wooden Block – Deck bottom row x=−4 – east of Block 19
+21 – Small Wooden Block – Deck bottom row x=−3 – east of Block 20
+22 – Small Wooden Block – Deck bottom row x=−2 – east of Block 21
+23 – Small Wooden Block – Deck bottom row x=−1 – east of Block 22
+24 – Small Wooden Block – Deck bottom row x=0 – east of Block 23
+25 – Small Wooden Block – Deck bottom row x=+1 – east of Block 24
+26 – Small Wooden Block – Deck bottom row x=+2 – east of Block 25
+27 – Small Wooden Block – Deck bottom row x=+3 – east of Block 26
+28 – Small Wooden Block – Deck bottom row x=+4 – east of Block 27
+29 – Small Wooden Block – Deck bottom row x=+5 – east of Block 28
+
+30 – Small Wooden Block – Deck center row (x=+5,y=0) – north of Block 29
+31 – Small Wooden Block – Deck center row x=+4 – west of Block 30
+32 – Small Wooden Block – Deck center row x=+3 – west of Block 31
+33 – Small Wooden Block – Deck center row x=+2 – west of Block 32
+34 – Small Wooden Block – Deck center row x=+1 – west of Block 33
+35 – [intentionally skipped; x=0,y=0 occupied by Stone Base Block 1]
+36 – Small Wooden Block – Deck center row x=−1 – west of Block 34 – position adjustment note: attach to the nearest previously placed center-row neighbor (e.g., south of Block 12 then south of Block 13) to reach x=−1 without colliding with Block 1; result matches reviewer-validated grid.
+37 – Small Wooden Block – Deck center row x=−2 – west of Block 36
+38 – Small Wooden Block – Deck center row x=−3 – west of Block 37
+39 – Small Wooden Block – Deck center row x=−4 – west of Block 38
+40 – Small Wooden Block – Deck center row x=−5 – west of Block 39
+
+Optional under-deck truss (braces; no volume)
+B1 – Brace – Under-deck diagonals every 2 units along x tying center row to bottom row – connects underside of top-row blocks to top of bottom-row blocks at x=−5, −3, −1, +1, +3, +5 – function: decorative truss and torsional stiffness.
+B2 – Brace – Cross-y ties at x=−5, −3, −1, +1, +3, +5 between top and bottom deck rows – connects north face of bottom-row block to south face of top-row block – function: stiffen deck.
+
+Step B – Twin towers with outward offset and explicit temporary scaffolds
+
+Temporary scaffolds to reach tower inner posts (to be removed in Step D)
+41 – Small Wooden Block – Temporary scaffold (left inner-north reach) at x=−6,y=+1,z=0 – west of Block 17
+49 – Small Wooden Block – Temporary scaffold (left inner-south reach) at x=−6,y=−1,z=0 – west of Block 19
+71 – Small Wooden Block – Temporary scaffold (right inner-north reach) at x=+6,y=+1,z=0 – east of Block 7
+79 – Small Wooden Block – Temporary scaffold (right inner-south reach) at x=+6,y=−1,z=0 – east of Block 29
+
+Left (west) tower posts – inner at x=−7, outer at x=−8; y=±1; each stacked to z=6
+42 – Small Wooden Block – Left inner-north post base [x=−7,y=+1,z=0] – west of Block 41
+43 – Small Wooden Block – Left inner-north z=1 – top of Block 42
+44 – Small Wooden Block – Left inner-north z=2 – top of Block 43
+45 – Small Wooden Block – Left inner-north z=3 – top of Block 44
+46 – Small Wooden Block – Left inner-north z=4 – top of Block 45
+47 – Small Wooden Block – Left inner-north z=5 – top of Block 46
+48 – Small Wooden Block – Left inner-north top z=6 – top of Block 47
+
+50 – Small Wooden Block – Left inner-south post base [x=−7,y=−1,z=0] – west of Block 49
+51 – Small Wooden Block – Left inner-south z=1 – top of Block 50
+52 – Small Wooden Block – Left inner-south z=2 – top of Block 51
+53 – Small Wooden Block – Left inner-south z=3 – top of Block 52
+54 – Small Wooden Block – Left inner-south z=4 – top of Block 53
+55 – Small Wooden Block – Left inner-south z=5 – top of Block 54
+56 – Small Wooden Block – Left inner-south top z=6 – top of Block 55
+
+57 – Small Wooden Block – Left outer-north post base [x=−8,y=+1,z=0] – west of Block 42
+58 – Small Wooden Block – Left outer-north z=1 – top of Block 57
+59 – Small Wooden Block – Left outer-north z=2 – top of Block 58
+60 – Small Wooden Block – Left outer-north z=3 – top of Block 59
+61 – Small Wooden Block – Left outer-north z=4 – top of Block 60
+62 – Small Wooden Block – Left outer-north z=5 – top of Block 61
+63 – Small Wooden Block – Left outer-north top z=6 – top of Block 62
+
+64 – Small Wooden Block – Left outer-south post base [x=−8,y=−1,z=0] – west of Block 50
+65 – Small Wooden Block – Left outer-south z=1 – top of Block 64
+66 – Small Wooden Block – Left outer-south z=2 – top of Block 65
+67 – Small Wooden Block – Left outer-south z=3 – top of Block 66
+68 – Small Wooden Block – Left outer-south z=4 – top of Block 67
+69 – Small Wooden Block – Left outer-south z=5 – top of Block 68
+70 – Small Wooden Block – Left outer-south top z=6 – top of Block 69
+
+Right (east) tower posts – inner at x=+7, outer at x=+8; y=±1
+72 – Small Wooden Block – Right inner-north post base [x=+7,y=+1,z=0] – east of Block 71
+73 – Small Wooden Block – Right inner-north z=1 – top of Block 72
+74 – Small Wooden Block – Right inner-north z=2 – top of Block 73
+75 – Small Wooden Block – Right inner-north z=3 – top of Block 74
+76 – Small Wooden Block – Right inner-north z=4 – top of Block 75
+77 – Small Wooden Block – Right inner-north z=5 – top of Block 76
+78 – Small Wooden Block – Right inner-north top z=6 – top of Block 77
+
+80 – Small Wooden Block – Right inner-south post base [x=+7,y=−1,z=0] – east of Block 79
+81 – Small Wooden Block – Right inner-south z=1 – top of Block 80
+82 – Small Wooden Block – Right inner-south z=2 – top of Block 81
+83 – Small Wooden Block – Right inner-south z=3 – top of Block 82
+84 – Small Wooden Block – Right inner-south z=4 – top of Block 83
+85 – Small Wooden Block – Right inner-south z=5 – top of Block 84
+86 – Small Wooden Block – Right inner-south top z=6 – top of Block 85
+
+87 – Small Wooden Block – Right outer-north post base [x=+8,y=+1,z=0] – east of Block 72
+88 – Small Wooden Block – Right outer-north z=1 – top of Block 87
+89 – Small Wooden Block – Right outer-north z=2 – top of Block 88
+90 – Small Wooden Block – Right outer-north z=3 – top of Block 89
+91 – Small Wooden Block – Right outer-north z=4 – top of Block 90
+92 – Small Wooden Block – Right outer-north z=5 – top of Block 91
+93 – Small Wooden Block – Right outer-north top z=6 – top of Block 92
+
+94 – Small Wooden Block – Right outer-south post base [x=+8,y=−1,z=0] – east of Block 80
+95 – Small Wooden Block – Right outer-south z=1 – top of Block 94
+96 – Small Wooden Block – Right outer-south z=2 – top of Block 95
+97 – Small Wooden Block – Right outer-south z=3 – top of Block 96
+98 – Small Wooden Block – Right outer-south z=4 – top of Block 97
+99 – Small Wooden Block – Right outer-south z=5 – top of Block 98
+100 – Small Wooden Block – Right outer-south top z=6 – top of Block 99
+
+Tower bracing rings and diagonals (braces; no volume)
+
+Left tower rings (z=1,3,5 levels):
+B3 – Brace – z=1 square: 43↔51↔65↔58↔43 – function: ring frame
+B4 – Brace – z=3 square: 45↔53↔67↔60↔45 – function: ring frame
+B5 – Brace – z=5 square: 47↔55↔69↔62↔47 – function: ring frame
+
+Left tower face X-bracing and portals:
+B6 – Brace – Inner face X: 42↔56 and 50↔48 – function: Gothic lattice/portal toward deck
+B7 – Brace – Outer face X: 57↔70 and 64↔63 – function: symmetric outer portal
+B8 – Brace – North face X: 42↔63 and 57↔48 – function: lateral stiffening
+B9 – Brace – South face X: 50↔70 and 64↔56 – function: lateral stiffening
+
+Right tower rings (z=1,3,5 levels):
+B10 – Brace – z=1 square: 73↔81↔95↔88↔73 – function: ring frame
+B11 – Brace – z=3 square: 75↔83↔97↔90↔75 – function: ring frame
+B12 – Brace – z=5 square: 77↔85↔99↔92↔77 – function: ring frame
+
+Right tower face X-bracing and portals:
+B13 – Brace – Inner face X: 72↔86 and 80↔78 – function: Gothic lattice/portal toward deck
+B14 – Brace – Outer face X: 87↔100 and 94↔93 – function: symmetric outer portal
+B15 – Brace – North face X: 72↔93 and 87↔78 – function: lateral stiffening
+B16 – Brace – South face X: 80↔100 and 94↔86 – function: lateral stiffening
+
+Step C – Upper tie-walkway between tower tops (braces)
+B17 – Brace – Top tie north: 48 ↔ 78 along +x – function: crown tie
+B18 – Brace – Top tie south: 56 ↔ 86 along +x – function: crown tie
+B19 – Brace – Top tie diagonal: 48 ↔ 86 – function: side lattice
+B20 – Brace – Top tie diagonal: 56 ↔ 78 – function: side lattice
+
+Step D – Rope suspension (winches) and scaffold removal
+Set all winches static-length with slight sag toward midspan; ends near z≈deck level. Leave unassigned (no controls).
+
+Left tower fan stays (from left inner post tops to west-half deck edges):
+W1 – Winch – From 48 (left inner-north top) to 17 (deck x=−5,y=+1) – function: north fan stay (outermost)
+W2 – Winch – From 48 to 15 (deck x=−3,y=+1) – function: north fan stay (mid)
+W3 – Winch – From 48 to 13 (deck x=−1,y=+1) – function: north fan stay (inboard)
+W4 – Winch – From 56 (left inner-south top) to 19 (deck x=−5,y=−1) – function: south fan stay (outermost)
+W5 – Winch – From 56 to 21 (deck x=−3,y=−1) – function: south fan stay (mid)
+W6 – Winch – From 56 to 23 (deck x=−1,y=−1) – function: south fan stay (inboard)
+
+Right tower fan stays (from right inner post tops to east-half deck edges):
+W7 – Winch – From 78 (right inner-north top) to 7 (deck x=+5,y=+1) – function: north fan stay (outermost)
+W8 – Winch – From 78 to 9 (deck x=+3,y=+1) – function: north fan stay (mid)
+W9 – Winch – From 78 to 11 (deck x=+1,y=+1) – function: north fan stay (inboard)
+W10 – Winch – From 86 (right inner-south top) to 29 (deck x=+5,y=−1) – function: south fan stay (outermost)
+W11 – Winch – From 86 to 27 (deck x=+3,y=−1) – function: south fan stay (mid)
+W12 – Winch – From 86 to 25 (deck x=+1,y=−1) – function: south fan stay (inboard)
+
+Top “main cables” between tower crowns:
+W13 – Winch – From 48 ↔ 78 (north crown) – function: visual main cable; lateral tie
+W14 – Winch – From 56 ↔ 86 (south crown) – function: visual main cable; lateral tie
+
+Temporary scaffold removal (after W1–W14 and B17–B20 are in place)
+- Remove Block 41 (left inner-north scaffold), Block 49 (left inner-south scaffold), Block 71 (right inner-north scaffold), and Block 79 (right inner-south scaffold). Position adjustment note: this severs all rigid block contacts between towers and deck; the deck remains supported exclusively by winches, while the towers remain mutually tied by the upper walkway braces and the two crown winches.
+
+Step E – Ornaments and finishing touches
+
+Powered wheels (rose windows on inner tower faces; leave unassigned so they remain stationary)
+101 – Powered Wheel – Left tower rose – attached to east face of Block 45 (left inner-north post z=3) – vertical wheel facing east toward deck; decorative only (no control)
+102 – Powered Wheel – Right tower rose – attached to west face of Block 75 (right inner-north post z=3) – vertical wheel facing west toward deck; decorative only (no control)
+
+Torches (lantern finials; oriented upward and outward; keep clear of water cannons)
+103 – Torch – Left tower north finial – top face of Block 48; oriented up and slightly north – function: decorative flame; heating radius 0.3 kept clear
+104 – Torch – Left tower south finial – top face of Block 56; oriented up and slightly south – function: decorative flame
+105 – Torch – Right tower north finial – top face of Block 78; oriented up and slightly north – function: decorative flame
+106 – Torch – Right tower south finial – top face of Block 86; oriented up and slightly south – function: decorative flame
+
+Water cannons (gargoyle spouts; decorative only; leave unassigned; oriented outward along ±y as per plan)
+107 – Water Cannon – Left tower gargoyle – attached to north face of Block 62 (left outer-north post z=5), pointing +y – function: sculptural spout; never fire; >1 unit from torches prevents heating/steam mode
+108 – Water Cannon – Right tower gargoyle – attached to south face of Block 99 (right outer-south post z=5), pointing −y – function: sculptural spout; never fire
+
+Functional and motion behavior summary
+- Powered Wheels (101, 102): Oriented vertically on inner faces; default spin 100 rpm but left unassigned (no user input). Decorative “rose windows”.
+- Torches (103–106): Oriented upward/outward; flame spheres (radius 0.3) clear of wood and >1 unit from water cannons.
+- Water Cannons (107, 108): Mounted on outer faces, pointing ±y; no controls assigned; purely decorative (no recoil).
+- Winches (W1–W14): Provide all deck support and crown ties; set lengths so deck ends are near z≈deck baseline with a modest midspan sag; adjust symmetrically as needed.
+
+Final compliance checklist (post-revision)
+- Deck geometry: 11×3 (x=−5…+5; y=−1,0,+1) centered on the Stone Base, as previously validated by the reviewer.
+- Towers: Inner posts at x=±7 and outer posts at x=±8; no rigid contact with deck after scaffold removal. Rings and X-braces present at z=1,3,5 with tall portal diagonals.
+- Upper tie-walkway: Two braces (north/south) plus diagonals; locks tower spacing.
+- Rope suspension: After removing Blocks 41, 49, 71, 79, the only tower-to-deck connections are winches (W1–W12); requirement “deck supported exclusively by ropes” satisfied.
+- Ornaments: Wheels, torches, and water cannons placed with proper clearances; torches >1 unit from cannons to avoid steam mode.
+
+If any further micro-collisions or reach issues arise during assembly, we will adjust by:
+- Slightly reordering brace/winch placement so towers are always connected to at least one other element before scaffold removal.
+- Minor repositioning of the powered wheels (up/down one level) to avoid any mounting interference with braces (no change to function).
+
+# draft_reviewer (gpt-5) (TextMessage): 
+
+Review of Revised “Twin‑Tower Rope‑Suspended Tower‑Bridge (Single Sub‑Structure)”
+
+Reference frame and block shapes used in checks
+- Coordinates: base block center at [0, 0, 0]. +x east (span), +y north (width), +z up.
+- Small Wooden Block (SWB): 1×1×1 cube; half‑size 0.5 along each axis.
+- Powered Wheel: 2×2×0.5 (disk diameter 2 in the face plane; thickness 0.5 along its axis, axis ⟂ mounting face). Assumed to mount flush and extend outward from host face (no intrusion).
+- Torch: body projects 0.5 from host face along the face normal; vertical shaft length 1 in orientation direction; flame center at body center + 1×orientation; heating radius 0.3. No attachable faces for further attachment.
+- Water Cannon: 1×1.75×1 with axis along the firing direction; center offset 0.5 outward from the mounting face along the firing axis. Half‑sizes: x=0.5, y=0.875 (if firing along ±y), z=0.5. Connectors (braces, winches) have no volume/collider.
+
+STEP‑BY‑STEP STRUCTURAL INTEGRITY AND COLLISION CHECKS
+
+Base and deck (z=0 plane)
+- Block 1 (Stone Base SWB): [0, 0, 0].
+
+Deck centerline east run (SWBs 2–6):
+- 2..6 centers: [1..5, 0, 0] in unit steps.
+- Neighbor distances: each new block has a face‑to‑face neighbor at distance 1 along x; no overlaps.
+
+Deck top row (SWBs 7–17):
+- 7..17 centers: [5..−5, +1, 0] in unit steps along x.
+- Neighbor distances: each new block contacts its predecessor at 1 along x or its parent at 1 along y (7 contacts 6 at dy=1). No overlaps.
+
+Deck bottom row and return center (SWBs 18–29, 30–34, 36–40):
+- 18: [−5, 0, 0] (dy=1 to 17).
+- 19..29: [−5..+5, −1, 0] (unit dx increments).
+- 30: [+5, 0, 0] (dy=1 to 29).
+- 31..34: [+4..+1, 0, 0]; 36..40: [−1..−5, 0, 0] (unit dx decrements; 35 intentionally skipped because Block 1 is at [0,0,0]).
+- All adjacent contacts at distance 1 along a single axis; no diagonal overlaps. The full 11×3 grid is complete (Stone Base plus 32 SWBs).
+
+Temporary scaffolds (four SWBs; to be removed in Step D)
+- 41: [−6, +1, 0] (west of 17). Distances: to 17 dx=1 (face contact), to 42 (when placed) dx=1 (face contact). No overlap.
+- 49: [−6, −1, 0] (west of 19). Distances: to 19 dx=1, to 50 dx=1. No overlap.
+- 71: [+6, +1, 0] (east of 7). Distances: to 7 dx=1, to 72 dx=1. No overlap.
+- 79: [+6, −1, 0] (east of 29). Distances: to 29 dx=1, to 80 dx=1. No overlap.
+
+Left (west) tower posts (inner at x=−7; outer at x=−8; y=±1; z=0..6)
+- Inner‑north stack 42..48: centers [−7, +1, z] for z=0..6.
+  - Vertical neighbor distances: dz=1 between consecutive blocks (face contact).
+  - To scaffold 41 at base: dx=1 (face contact) for 42 only.
+  - To outer‑north stack at same z: centers [−8, +1, z]; dx=1 (face contact). No overlaps.
+  - To inner‑south stack at same z: dy=2 (> sum of half‑sizes 1) → clear.
+- Inner‑south stack 50..56: centers [−7, −1, z] for z=0..6.
+  - Checks symmetrical to inner‑north; 50 dx=1 face‑contacts scaffold 49.
+- Outer‑north stack 57..63: centers [−8, +1, z].
+- Outer‑south stack 64..70: centers [−8, −1, z].
+- Clearances to deck: nearest deck edge x=−5 → |dx|≥2 to any tower post (≥ sum of half‑sizes 1) → clear.
+
+Right (east) tower posts (inner at x=+7; outer at x=+8; y=±1; z=0..6)
+- Inner‑north stack 72..78: centers [+7, +1, z]; 72 face‑contacts scaffold 71 at dx=1.
+- Inner‑south stack 80..86: centers [+7, −1, z]; 80 face‑contacts scaffold 79 at dx=1.
+- Outer‑north stack 87..93: centers [+8, +1, z].
+- Outer‑south stack 94..100: centers [+8, −1, z].
+- Clearances to deck: nearest deck edge x=+5 → |dx|≥2 → clear.
+- All vertical and lateral neighbor spacings as for the left tower; no overlaps.
+
+Braces (B1–B20): Connectors only, no volume
+- All under‑deck truss braces, tower rings/X‑braces, and upper tie/walkway braces do not introduce collisions. Endpoints reference existing block faces at stated z levels. No attachability violations.
+
+Winches (W1–W14): Connectors only, no volume
+- Anchors reference existing blocks with corrected IDs:
+  - Left, north edge: 48→17 (−5), 48→15 (−3), 48→13 (−1).
+  - Left, south edge: 56→19 (−5), 56→21 (−3), 56→23 (−1).
+  - Right, north edge: 78→7 (+5), 78→9 (+3), 78→11 (+1).
+  - Right, south edge: 86→29 (+5), 86→27 (+3), 86→25 (+1).
+  - Main cables: 48↔78 (north crowns), 56↔86 (south crowns).
+- No volume; attachability satisfied (between faces of existing blocks).
+
+Scaffold removal (Step D)
+- Removing 41, 49, 71, 79 severs all rigid deck‑to‑tower block contacts. Post‑removal, the deck is connected to towers only via winches (W1–W12). Towers remain rigidly tied to each other via top tie braces and the two crown winches.
+
+Ornaments
+
+Powered Wheels (101, 102)
+- 101 attached to east face of Block 45 (left inner‑north at [−7, +1, 3]).
+  - Wheel axis along +x; disk plane vertical (y–z). The disk radius 1 occupies z≈[2,4], y≈[0,2]; thickness 0.5 projects outward from the face. Nearest solids:
+    • Same‑post neighbors at z=2 and 4 (44 and 46) lie behind the mounting face; no interference.
+    • Deck blocks are ≥1.5 units in x away (nearest at x=−5); no interference.
+    • Tower outer‑north post is at x=−8 (behind); no interference.
+  - No overlaps; mounting respects axis alignment constraints.
+- 102 attached to west face of Block 75 ([+6, +1, 3]); symmetric clearance as above. No overlaps.
+
+Torches (103–106)
+- 103 on top face of Block 48 [−7, +1, 6]; 104 on 56 [−7, −1, 6]; 105 on 78 [+7, +1, 6]; 106 on 86 [+7, −1, 6]. Each oriented up and slightly outward.
+  - Torch body centers are 0.5 above the host top faces; flame centers ~1 unit further in the orientation direction (z ≈ 7.5; slight ±y as oriented).
+  - No attachments depend on torches; no volume conflicts with tower blocks (nearest is ≥1 in z below).
+
+Water Cannons (107, 108)
+- 107 on north face of Block 62 (left outer‑north at [−8, +1, 5]), axis +y.
+  - Cannon center at [−8, +1.5, 5]; extents: x∈[−8.5, −7.5], y∈[+0.625, +2.375], z∈[+4.5, +5.5].
+  - Nearest solid possibly Block 48 [−7, +1, 6]; center separations: |dx|=1 (sum half‑sizes along x = 1.0 → boundary touch), |dy|=0.5 (sum along y = 1.375 → overlap in projection), |dz|=1 (sum along z = 1.0 → boundary touch). Result: no interior overlap—only edge/point boundary contact at most; acceptable. No other blocks intrude into the cannon volume.
+  - Nearest torch (103 flame) at approx [−7, ≈+1.1, ≈7.5]; 3D distance >2 units → well beyond heating radius 0.3 and >1 unit separation requirement.
+- 108 on south face of Block 99 (right outer‑south at [+8, −1, 5]), axis −y; symmetric checks to 107; no overlap and >1 unit from nearby torches (106).
+
+FUNCTIONAL VALIDATION
+
+1) Rope‑only suspension and motion constraints
+- After scaffold removal (41, 49, 71, 79), there is no rigid block contact between towers and deck. The deck is supported exclusively by winches W1–W12. This satisfies the “suspended by ropes” requirement.
+- Braces only tie tower posts within each tower and tie the two tower tops together (B17–B20). They do not connect to the deck.
+- Winch endpoints and IDs align with the stated deck coordinates (west half −5/−3/−1; east half +1/+3/+5), preserving symmetry and intended catenary sag.
+
+2) Functional components alignment
+- Powered Wheels (101, 102): Attached to vertical faces; axis ⟂ face; wheel planes vertical; rolling direction as defined by the block constrained relative to the face. No controls assigned—operate as stationary ornaments.
+- Water Cannons (107, 108): Mounted to outer tower faces; axes along ±y; centers offset 0.5 from mounting faces; left unassigned so they never fire. Minimum separation from torches >1 unit; no chance of inadvertent steam mode.
+- Torches (103–106): Mounted to top faces; flames are above tower tops; heating radius 0.3 keeps all other components clear.
+
+3) Moving components mounting and alignment
+- Wheels have clear surroundings (no nearby solids intruding into their 2‑unit disk envelopes); mounting faces are solid tower posts; orientations are consistent.
+- Cannons have clear forward arcs; although they have boundary contacts with nearby tower blocks at edges, there is no volume overlap and no attachments rely on the cannon bodies.
+
+PHYSICAL FEASIBILITY
+
+- The deck is a contiguous 11×3 grid with adequate under‑deck bracing (connectors, no volume).
+- Towers are rigid, braced at multiple levels (z=1,3,5) with diagonals; the top tie braces and crown winches provide inter‑tower stability consistent with the intended “upper walkway” effect.
+- Rope loads are properly distributed to six anchors per side; small length adjustments can set deck ends near the deck datum with slight mid‑span sag as required.
+- Ornaments do not induce forces (wheels unassigned; cannons unassigned). Torches’ heat spheres are isolated from cannons and structural wood per placement.
+
+APPROVAL DECISION
+
+- Structural integrity and collision‑free placement: Pass. All blocks have well‑defined coordinates; all neighbor separations satisfy minimums (equals or exceed sum of half‑sizes); no overlaps or improper attachments. Explicit scaffolds are removable, leaving rope‑only suspension.
+- Functional implementation: Pass. Winch anchors corrected and symmetric; wheels, torches, and cannons comply with orientation and safety constraints.
+- Physical feasibility: Pass. The design is feasible as a rope‑suspended deck between two braced towers with a top tie; ornaments are safely placed.
+
+The revised blueprint meets the design requirements. TERMINATE
+
+# drafter (gpt-5) (TextMessage): 
+
+Position adjustment note (major): Per reviewer decision, both towers are shifted 1 unit farther from the deck so the deck is rope‑supported only. Inner tower posts now sit at x=−7 and x=+7 (outer at x=−8 and x=+8). Four explicit temporary scaffold blocks at x=±6, y=±1 are added purely to reach tower placement and are removed after winches and upper braces are installed in Step D. Winch anchors are corrected to the intended deck tiles.
+
+Assumptions and orientation
+- Global axes: +x east (span), +y north (bridge width), +z up (height).
+- Block 1 is the default 1×1×1 starter Stone Base at the center of the deck grid.
+
+Core build blueprint (formatted)
+
+Block 1 - Stone Base (starter 1×1×1) - Central deck datum at the bridge midspan - [start/reference]
+
+Step A – Deck (11×3 grid; y = −1, 0, +1; x = −5…+5), laid in a continuous “snake” to maintain face attachments
+
+2 - Small Wooden Block - Deck centerline x=+1 (y=0) - east of Block 1  
+3 - Small Wooden Block - Deck centerline x=+2 - east of Block 2  
+4 - Small Wooden Block - Deck centerline x=+3 - east of Block 3  
+5 - Small Wooden Block - Deck centerline x=+4 - east of Block 4  
+6 - Small Wooden Block - Deck centerline x=+5 - east of Block 5
+
+7 - Small Wooden Block - Deck top row (x=+5,y=+1) - north of Block 6  
+8 - Small Wooden Block - Deck top row x=+4 - west of Block 7  
+9 - Small Wooden Block - Deck top row x=+3 - west of Block 8  
+10 - Small Wooden Block - Deck top row x=+2 - west of Block 9  
+11 - Small Wooden Block - Deck top row x=+1 - west of Block 10  
+12 - Small Wooden Block - Deck top row x=0 - west of Block 11  
+13 - Small Wooden Block - Deck top row x=−1 - west of Block 12  
+14 - Small Wooden Block - Deck top row x=−2 - west of Block 13  
+15 - Small Wooden Block - Deck top row x=−3 - west of Block 14  
+16 - Small Wooden Block - Deck top row x=−4 - west of Block 15  
+17 - Small Wooden Block - Deck top row x=−5 - west of Block 16
+
+18 - Small Wooden Block - Deck center row node at x=−5 (y=0) - south of Block 17  
+19 - Small Wooden Block - Deck bottom row (x=−5,y=−1) - south of Block 18  
+20 - Small Wooden Block - Deck bottom row x=−4 - east of Block 19  
+21 - Small Wooden Block - Deck bottom row x=−3 - east of Block 20  
+22 - Small Wooden Block - Deck bottom row x=−2 - east of Block 21  
+23 - Small Wooden Block - Deck bottom row x=−1 - east of Block 22  
+24 - Small Wooden Block - Deck bottom row x=0 - east of Block 23  
+25 - Small Wooden Block - Deck bottom row x=+1 - east of Block 24  
+26 - Small Wooden Block - Deck bottom row x=+2 - east of Block 25  
+27 - Small Wooden Block - Deck bottom row x=+3 - east of Block 26  
+28 - Small Wooden Block - Deck bottom row x=+4 - east of Block 27  
+29 - Small Wooden Block - Deck bottom row x=+5 - east of Block 28
+
+30 - Small Wooden Block - Deck center row node at x=+5 (y=0) - north of Block 29  
+31 - Small Wooden Block - Deck center row x=+4 - west of Block 30  
+32 - Small Wooden Block - Deck center row x=+3 - west of Block 31  
+33 - Small Wooden Block - Deck center row x=+2 - west of Block 32  
+34 - Small Wooden Block - Deck center row x=+1 - west of Block 33  
+35 - [skip; center (x=0,y=0) occupied by Block 1]  
+36 - Small Wooden Block - Deck center row x=−1 - west of Block 34 - position adjustment note: because x=0 is Block 1, attach 36 to the west face of Block 1 to achieve the same location; functional intent unchanged.  
+37 - Small Wooden Block - Deck center row x=−2 - west of Block 36  
+38 - Small Wooden Block - Deck center row x=−3 - west of Block 37  
+39 - Small Wooden Block - Deck center row x=−4 - west of Block 38  
+40 - Small Wooden Block - Deck center row x=−5 - west of Block 39
+
+Optional under-deck trusswork (connectors; no volume)
+B1 - Brace - Under-deck diagonals tying center (y=0) to bottom edge (y=−1) every 2 units along x (−5, −3, −1, +1, +3, +5) - connects appropriate opposed faces - function: ornamental lattice; torsional stiffening  
+B2 - Brace - Cross-y ties at x=−5, −3, −1, +1, +3, +5 between y=+1 and y=−1 rows - connects north face to south face across deck - function: torsional stiffening
+
+Step B – Towers (shifted 1 unit farther from deck) with explicit temporary scaffolds
+
+Temporary scaffold stubs (to be removed in Step D)
+41 - Small Wooden Block - Temporary scaffold stub to reach left inner-north tower base - west of Block 17  
+49 - Small Wooden Block - Temporary scaffold stub to reach left inner-south tower base - west of Block 19  
+71 - Small Wooden Block - Temporary scaffold stub to reach right inner-north tower base - east of Block 7  
+79 - Small Wooden Block - Temporary scaffold stub to reach right inner-south tower base - east of Block 29
+
+Left (west) tower posts – inner at x=−7, outer at x=−8 (each stack 7 high; z from 0 to 6)
+
+42 - Small Wooden Block - Left inner-north post base (x=−7,y=+1,z=0) - west of Block 41  
+43 - Small Wooden Block - Left inner-north z=1 - top of Block 42  
+44 - Small Wooden Block - Left inner-north z=2 - top of Block 43  
+45 - Small Wooden Block - Left inner-north z=3 - top of Block 44  
+46 - Small Wooden Block - Left inner-north z=4 - top of Block 45  
+47 - Small Wooden Block - Left inner-north z=5 - top of Block 46  
+48 - Small Wooden Block - Left inner-north top z=6 - top of Block 47
+
+50 - Small Wooden Block - Left inner-south post base (x=−7,y=−1,z=0) - west of Block 49  
+51 - Small Wooden Block - Left inner-south z=1 - top of Block 50  
+52 - Small Wooden Block - Left inner-south z=2 - top of Block 51  
+53 - Small Wooden Block - Left inner-south z=3 - top of Block 52  
+54 - Small Wooden Block - Left inner-south z=4 - top of Block 53  
+55 - Small Wooden Block - Left inner-south z=5 - top of Block 54  
+56 - Small Wooden Block - Left inner-south top z=6 - top of Block 55
+
+57 - Small Wooden Block - Left outer-north post base (x=−8,y=+1,z=0) - west of Block 42  
+58 - Small Wooden Block - Left outer-north z=1 - top of Block 57  
+59 - Small Wooden Block - Left outer-north z=2 - top of Block 58  
+60 - Small Wooden Block - Left outer-north z=3 - top of Block 59  
+61 - Small Wooden Block - Left outer-north z=4 - top of Block 60  
+62 - Small Wooden Block - Left outer-north z=5 - top of Block 61  
+63 - Small Wooden Block - Left outer-north top z=6 - top of Block 62
+
+64 - Small Wooden Block - Left outer-south post base (x=−8,y=−1,z=0) - west of Block 50  
+65 - Small Wooden Block - Left outer-south z=1 - top of Block 64  
+66 - Small Wooden Block - Left outer-south z=2 - top of Block 65  
+67 - Small Wooden Block - Left outer-south z=3 - top of Block 66  
+68 - Small Wooden Block - Left outer-south z=4 - top of Block 67  
+69 - Small Wooden Block - Left outer-south z=5 - top of Block 68  
+70 - Small Wooden Block - Left outer-south top z=6 - top of Block 69
+
+Right (east) tower posts – inner at x=+7, outer at x=+8
+
+72 - Small Wooden Block - Right inner-north post base (x=+7,y=+1,z=0) - east of Block 71  
+73 - Small Wooden Block - Right inner-north z=1 - top of Block 72  
+74 - Small Wooden Block - Right inner-north z=2 - top of Block 73  
+75 - Small Wooden Block - Right inner-north z=3 - top of Block 74  
+76 - Small Wooden Block - Right inner-north z=4 - top of Block 75  
+77 - Small Wooden Block - Right inner-north z=5 - top of Block 76  
+78 - Small Wooden Block - Right inner-north top z=6 - top of Block 77
+
+80 - Small Wooden Block - Right inner-south post base (x=+7,y=−1,z=0) - east of Block 79  
+81 - Small Wooden Block - Right inner-south z=1 - top of Block 80  
+82 - Small Wooden Block - Right inner-south z=2 - top of Block 81  
+83 - Small Wooden Block - Right inner-south z=3 - top of Block 82  
+84 - Small Wooden Block - Right inner-south z=4 - top of Block 83  
+85 - Small Wooden Block - Right inner-south z=5 - top of Block 84  
+86 - Small Wooden Block - Right inner-south top z=6 - top of Block 85
+
+87 - Small Wooden Block - Right outer-north post base (x=+8,y=+1,z=0) - east of Block 72  
+88 - Small Wooden Block - Right outer-north z=1 - top of Block 87  
+89 - Small Wooden Block - Right outer-north z=2 - top of Block 88  
+90 - Small Wooden Block - Right outer-north z=3 - top of Block 89  
+91 - Small Wooden Block - Right outer-north z=4 - top of Block 90  
+92 - Small Wooden Block - Right outer-north z=5 - top of Block 91  
+93 - Small Wooden Block - Right outer-north top z=6 - top of Block 92
+
+94 - Small Wooden Block - Right outer-south post base (x=+8,y=−1,z=0) - east of Block 80  
+95 - Small Wooden Block - Right outer-south z=1 - top of Block 94  
+96 - Small Wooden Block - Right outer-south z=2 - top of Block 95  
+97 - Small Wooden Block - Right outer-south z=3 - top of Block 96  
+98 - Small Wooden Block - Right outer-south z=4 - top of Block 97  
+99 - Small Wooden Block - Right outer-south z=5 - top of Block 98  
+100 - Small Wooden Block - Right outer-south top z=6 - top of Block 99
+
+Tower rings and diagonals (connectors; no volume)
+
+B3 - Brace - Left tower z=1 square ring - connects 43↔51↔65↔58↔43 - function: horizontal frame  
+B4 - Brace - Left tower z=3 square ring - connects 45↔53↔67↔60↔45 - function: horizontal frame  
+B5 - Brace - Left tower z=5 square ring - connects 47↔55↔69↔62↔47 - function: horizontal frame
+
+B6 - Brace - Left tower inner face X (portal) - connects 42↔56 and 50↔48 - function: tall pointed inner portal toward deck  
+B7 - Brace - Left tower outer face X (portal) - connects 57↔70 and 64↔63 - function: tall pointed outer portal  
+B8 - Brace - Left tower north face X - connects 42↔63 and 57↔48 - function: lateral stiffening  
+B9 - Brace - Left tower south face X - connects 50↔70 and 64↔56 - function: lateral stiffening
+
+B10 - Brace - Right tower z=1 square ring - connects 73↔81↔95↔88↔73 - function: horizontal frame  
+B11 - Brace - Right tower z=3 square ring - connects 75↔83↔97↔90↔75 - function: horizontal frame  
+B12 - Brace - Right tower z=5 square ring - connects 77↔85↔99↔92↔77 - function: horizontal frame
+
+B13 - Brace - Right tower inner face X (portal) - connects 72↔86 and 80↔78 - function: tall pointed inner portal  
+B14 - Brace - Right tower outer face X (portal) - connects 87↔100 and 94↔93 - function: tall pointed outer portal  
+B15 - Brace - Right tower north face X - connects 72↔93 and 87↔78 - function: lateral stiffening  
+B16 - Brace - Right tower south face X - connects 80↔100 and 94↔86 - function: lateral stiffening
+
+Step C – Upper tie-walkway (braces only)
+
+B17 - Brace - Top tie (north, between inner-north tops) - connects 48↔78 - function: crown tie  
+B18 - Brace - Top tie (south, between inner-south tops) - connects 56↔86 - function: crown tie  
+B19 - Brace - Top tie diagonal - connects 48↔86 - function: side lattice  
+B20 - Brace - Top tie diagonal - connects 56↔78 - function: side lattice
+
+Step D – Rope suspension (winches) and scaffold removal
+
+W1 - Winch - Left inner-north top to west edge outermost - connects 48 to 17 (x=−5,y=+1) - function: static-length stay; set for slight sag toward midspan  
+W2 - Winch - Left inner-north top to west edge mid - connects 48 to 15 (x=−3,y=+1) - function: static-length stay  
+W3 - Winch - Left inner-north top to west edge inboard - connects 48 to 13 (x=−1,y=+1) - function: static-length stay
+
+W4 - Winch - Left inner-south top to west edge outermost - connects 56 to 19 (x=−5,y=−1) - function: static-length stay  
+W5 - Winch - Left inner-south top to west edge mid - connects 56 to 21 (x=−3,y=−1) - function: static-length stay  
+W6 - Winch - Left inner-south top to west edge inboard - connects 56 to 23 (x=−1,y=−1) - function: static-length stay
+
+W7 - Winch - Right inner-north top to east edge outermost - connects 78 to 7 (x=+5,y=+1) - function: static-length stay  
+W8 - Winch - Right inner-north top to east edge mid - connects 78 to 9 (x=+3,y=+1) - function: static-length stay  
+W9 - Winch - Right inner-north top to east edge inboard - connects 78 to 11 (x=+1,y=+1) - function: static-length stay
+
+W10 - Winch - Right inner-south top to east edge outermost - connects 86 to 29 (x=+5,y=−1) - function: static-length stay  
+W11 - Winch - Right inner-south top to east edge mid - connects 86 to 27 (x=+3,y=−1) - function: static-length stay  
+W12 - Winch - Right inner-south top to east edge inboard - connects 86 to 25 (x=+1,y=−1) - function: static-length stay
+
+W13 - Winch - Top “main cable” north - connects 48↔78 - function: crown line; lateral tie  
+W14 - Winch - Top “main cable” south - connects 56↔86 - function: crown line; lateral tie
+
+Scaffold removal note: After W1–W14 and B17–B20 are installed and tensioned, remove Blocks 41, 49, 71, and 79 (temporary scaffold stubs). This severs all rigid deck–tower block contacts so the deck is supported exclusively by ropes; towers remain rigid via upper ties and tower bracing.
+
+Step E – Ornaments (functional blocks)
+
+101 - Powered Wheel - Left tower rose window on inner face - east face of Block 45 (left inner-north post z=3) - vertical wheel facing east toward the deck; auto-braked; controls unassigned (decorative only) - function: spins at 100 rpm but unused; purely ornamental
+
+102 - Powered Wheel - Right tower rose window on inner face - west face of Block 75 (right inner-north post z=3) - vertical wheel facing west toward the deck; auto-braked; controls unassigned (decorative only) - function: spins at 100 rpm but unused; purely ornamental
+
+103 - Torch - Left tower north finial - top face of Block 48; oriented upward and slightly north - function: decorative light; flame sphere radius 0.3 above the tip; placed >1 unit from any water cannon  
+104 - Torch - Left tower south finial - top face of Block 56; oriented upward and slightly south - function: decorative light; flame sphere radius 0.3; safe clearances maintained  
+105 - Torch - Right tower north finial - top face of Block 78; oriented upward and slightly north - function: decorative light; flame sphere radius 0.3; safe clearances maintained  
+106 - Torch - Right tower south finial - top face of Block 86; oriented upward and slightly south - function: decorative light; flame sphere radius 0.3; safe clearances maintained
+
+107 - Water Cannon - Left tower gargoyle spout - north face of Block 62 (left outer-north post z=5), pointing +y - function: decorative only; leave unassigned so it never fires; >1 unit from torches prevents any heating/steam mode  
+108 - Water Cannon - Right tower gargoyle spout - south face of Block 99 (right outer-south post z=5), pointing −y - function: decorative only; leave unassigned; >1 unit from torches prevents any heating/steam mode
+
+Functional summary and final compliance
+- Deck: 11×3 grid centered on Stone Base; validated geometry with no overlaps.  
+- Towers: Inner posts at x=±7 and outer posts at x=±8; no rigid contact with deck after scaffold removal; ring and X bracing provide rigidity and Gothic portals.  
+- Upper tie-walkway: Two horizontal braces plus two diagonals across tower tops; locks spacing.  
+- Suspension: After removing Blocks 41, 49, 71, 79, the only tower–deck connections are winches W1–W12; deck hangs with adjustable, static-length sag.  
+- Ornaments: Powered wheels unassigned (stationary visually), torches clear of cannons (heating radius 0.3), water cannons unassigned and oriented outward along ±y.
+
+Position adjustment note (minor, deck centerline x=−1): Block 36 is specified “west of Block 34”; in practice, attach 36 to the west face of Block 1 (Stone Base) to realize the intended x=−1 center tile without attempting to traverse through the occupied x=0 tile. Functional placement remains identical.
+

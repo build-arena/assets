@@ -1,0 +1,37 @@
+{
+  "overall_structure": {
+    "description": "A rigid bridge structure designed to span a 20-unit wide gap between two flat terrains (north-south axis) at 5 units height. The bridge consists of three interconnected sub-structures: a central load-bearing Main Deck Beam, diagonal Reinforcement Braces for structural rigidity, and widened End Support Pads at both ends. The Main Deck Beam forms the core span, measuring 3 units wide (x-axis: -1 to 1), 20 units long (y-axis: -10 to 10), and 2 units tall (z-axis: 5 to 6). Reinforcement Braces are attached diagonally along the beam's sides to prevent bending under load. End Support Pads extend the beam's width to 5 units at both ends (x-axis: -2 to 2) to distribute weight across the terrain surfaces. The top surface (z=6) provides a flat platform for the 2.5×2.5×1.5 cargo.",
+    "functionality": "The bridge achieves gap-spanning by using a dense array of Small Wooden Blocks (SWBs) in the Main Deck Beam to create a continuous structural span. The Reinforcement Braces (solid hinges) connect diagonal SWB pairs, resisting shear and bending forces induced by the cargo's weight. End Support Pads increase the contact area with the terrain, preventing the bridge from sinking or sliding off the terrains. As the cargo's weight increases, the combined mass of the SWBs and rigidity from braces distribute the load evenly across the span, maintaining structural integrity until the cargo's maximum supported weight is reached.",
+    "assembly": "The Main Deck Beam is constructed first as the core structure. Reinforcement Braces are then attached diagonally between SWBs on the beam's x=1 and x=-1 faces, spanning from z=5 (lower layer) to z=6 (upper layer) and offset by 1 unit along the y-axis. End Support Pads are assembled last by attaching additional SWBs to the Main Deck Beam's north (y=10) and south (y=-10) ends, extending the x-axis width from -1 to 1 to -2 to 2 at z=5-6.",
+    "motion_control": "The bridge is a stationary structure with no active motion components. Its position is stabilized by resting on the terrains via End Support Pads, requiring no motion control beyond initial placement."
+  },
+  "sub_structures": {
+    "sub_structure_1": {
+      "name": "Main Deck Beam",
+      "description": "A rectangular prism of Small Wooden Blocks (SWBs) forming the primary load-bearing span. Dimensions: 3 units (x-axis: -1 to 1) × 20 units (y-axis: -10 to 10) × 2 units (z-axis: 5 to 6). This creates a continuous, solid beam spanning the 20-unit gap with a flat top surface (z=6) to support the cargo.",
+      "components": "120 Small Wooden Blocks",
+      "assembly": "SWBs are attached sequentially to form a 3×20×2 grid: x from -1 to 1 (3 columns), y from -10 to 10 (20 rows), z from 5 to 6 (2 layers). Each SWB is attached to adjacent SWBs via face centers (e.g., (x=0,y=0,z=5) attaches to (x=1,y=0,z=5), (x=0,y=1,z=5), etc.).",
+      "motion_control": "None (stationary structural component)",
+      "function": "Primary load-bearing structure spanning the gap; provides a stable top surface for the cargo to rest on; transfers cargo weight to the terrain via End Support Pads.",
+      "design_requirements": "Must span exactly 20 units (y=-10 to y=10) to reach both terrains; top surface (z=6) must be flat and continuous to support the 2.5×2.5 cargo base; Positions may be micro‑adjusted in later stages to resolve conflicts based on actual build execution."
+    },
+    "sub_structure_2": {
+      "name": "Reinforcement Braces",
+      "description": "Diagonal brace network attached to the Main Deck Beam's x=1 (east) and x=-1 (west) faces. Each brace connects a lower-layer SWB (z=5) to an upper-layer SWB (z=6) offset by +1 unit along the y-axis, forming a 45° diagonal pattern to resist bending.",
+      "components": "38 Braces",
+      "assembly": "On the x=1 face: Attach braces between (x=1,y,z=5) and (x=0,y+1,z=6) for y=-9 to y=9 (19 braces). Repeat symmetrically on the x=-1 face: Attach braces between (x=-1,y,z=5) and (x=0,y+1,z=6) for y=-9 to y=9 (19 braces). Braces are connected via the center of attachable faces on the SWBs.",
+      "motion_control": "None (passive structural reinforcement)",
+      "function": "Reinforces the Main Deck Beam by resisting shear and bending forces induced by the cargo's weight; increases structural rigidity to prevent mid-span sagging; distributes load across adjacent SWBs.",
+      "design_requirements": "Braces must connect SWBs in a diagonal pattern (z=5 to z=6, y+1) to maximize tensile strength; must not overlap with Main Deck Beam or End Support Pads; Positions may be micro‑adjusted in later stages to resolve conflicts based on actual build execution."
+    },
+    "sub_structure_3": {
+      "name": "End Support Pads",
+      "description": "Widened SWB extensions at the Main Deck Beam's north (y=10) and south (y=-10) ends. Each pad extends the x-axis width from -1 to 1 to -2 to 2 (5 units total) at z=5-6, increasing terrain contact area.",
+      "components": "20 Small Wooden Blocks",
+      "assembly": "North Pad (y=10): Attach 10 SWBs at (x=-2,y=10,z=5), (x=-2,y=10,z=6), (x=2,y=10,z=5), (x=2,y=10,z=6), and (x=-2,y=10,z=5) to (x=2,y=10,z=5) (5 x 1 x 2 grid). South Pad (y=-10): Repeat with 10 SWBs at (x=-2,y=-10,z=5) to (x=2,y=-10,z=6). SWBs are attached to the Main Deck Beam's existing y=±10 SWBs.",
+      "motion_control": "None (stationary load distribution component)",
+      "function": "Increases contact area with the terrain to prevent sinking; stabilizes the bridge's ends against lateral sliding; distributes the Main Deck Beam's weight and cargo load across a wider terrain surface.",
+      "design_requirements": "Must extend x-axis width to 5 units (-2 to 2) at y=±10 to match terrain width; must align vertically with Main Deck Beam (z=5-6) to avoid creating height disparities; Positions may be micro‑adjusted in later stages to resolve conflicts based on actual build execution."
+    }
+  }
+}

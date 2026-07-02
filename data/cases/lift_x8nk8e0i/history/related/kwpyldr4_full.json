@@ -1,0 +1,103 @@
+[
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "stone base, foundation of the vertical tower"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "1",
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "lower tower section, supports water cannon attachment"
+    },
+    "result": "You have successfully added <ID 2: Small Wooden Block>.\nExisting Blocks: 2\n(lower tower section, supports water cannon attachment) <ID 2: Small Wooden Block>\nPosition: [0.,0.,1.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "2",
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "middle tower section"
+    },
+    "result": "You have successfully added <ID 3: Small Wooden Block>.\nExisting Blocks: 3\n(middle tower section) <ID 3: Small Wooden Block>\nPosition: [0.,0.,2.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "3",
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "upper tower section, supports torch attachment"
+    },
+    "result": "You have successfully added <ID 4: Small Wooden Block>.\nExisting Blocks: 4\n(upper tower section, supports torch attachment) <ID 4: Small Wooden Block>\nPosition: [0.,0.,3.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 3. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  3. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  3. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 3. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 3.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "2",
+      "face": "A",
+      "new_block": "Water Cannon",
+      "note": "propulsion device for steam-based recoil"
+    },
+    "result": "You have successfully added <ID 5: Water Cannon>.\nExisting Blocks: 5\n(propulsion device for steam-based recoil) <ID 5: Water Cannon>\nPosition: [ 1.,-0., 1.]\nPointing at <North with 0.0\u00b0 pitch>\nInlet is at [1.00, -0.75, 1.00], outlet is at [1.00, 1.00, 1.00], sprays towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": "5",
+      "angle": 270.0
+    },
+    "result": "The block 5 <Water Cannon> is twisted by 270.0 degrees. \n (propulsion device for steam-based recoil) <ID 5: Water Cannon>\nPosition: [ 1.,-0., 1.]\nPointing at <straight up>\nInlet is at [1.00, 0.00, 0.25], outlet is at [1.00, -0.00, 2.00], sprays towards <straight up>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": "5",
+      "angle": 180.0
+    },
+    "result": "The block 5 <Water Cannon> is twisted by 180.0 degrees. \n (propulsion device for steam-based recoil) <ID 5: Water Cannon>\nPosition: [ 1.,-0., 1.]\nPointing at <straight down>\nInlet is at [1.00, -0.00, 1.75], outlet is at [1.00, 0.00, 0.00], sprays towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "4",
+      "face": "A",
+      "new_block": "Torch",
+      "note": "heating device to activate steam mode in water cannon"
+    },
+    "result": "You have successfully added <ID 6: Torch>.\nExisting Blocks: 6\n(heating device to activate steam mode in water cannon) <ID 6: Torch>\nPosition: [1.,0.,3.]\nPointing at <South with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [1.00, -1.00, 3.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": "6",
+      "angle": 270.0
+    },
+    "result": "The block 6 <Torch> is twisted by 270.0 degrees. \n (heating device to activate steam mode in water cannon) <ID 6: Torch>\nPosition: [1.,0.,3.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [1.00, 0.00, 2.00]"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 6\n\nMachine Summary: stone base, foundation of the vertical tower\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\n(lower tower section, supports water cannon attachment) <ID 2: Small Wooden Block>\nPosition: [0.,0.,1.]\n(middle tower section) <ID 3: Small Wooden Block>\nPosition: [0.,0.,2.]\n(upper tower section, supports torch attachment) <ID 4: Small Wooden Block>\nPosition: [0.,0.,3.]\n(propulsion device for steam-based recoil) <ID 5: Water Cannon>\nPosition: [ 1.,-0., 1.]\nPointing at <straight down>\nInlet is at [1.00, -0.00, 1.75], outlet is at [1.00, 0.00, 0.00], sprays towards <straight down>\n(heating device to activate steam mode in water cannon) <ID 6: Torch>\nPosition: [1.,0.,3.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [1.00, 0.00, 2.00]"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 6\n\nMachine Summary: stone base, foundation of the vertical tower\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\n(lower tower section, supports water cannon attachment) <ID 2: Small Wooden Block>\nPosition: [0.,0.,1.]\n(middle tower section) <ID 3: Small Wooden Block>\nPosition: [0.,0.,2.]\n(upper tower section, supports torch attachment) <ID 4: Small Wooden Block>\nPosition: [0.,0.,3.]\n(propulsion device for steam-based recoil) <ID 5: Water Cannon>\nPosition: [ 1.,-0., 1.]\nPointing at <straight down>\nInlet is at [1.00, -0.00, 1.75], outlet is at [1.00, 0.00, 0.00], sprays towards <straight down>\n(heating device to activate steam mode in water cannon) <ID 6: Torch>\nPosition: [1.,0.,3.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [1.00, 0.00, 2.00]"
+  }
+]

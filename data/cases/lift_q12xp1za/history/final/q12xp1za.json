@@ -1,0 +1,171 @@
+[
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "Central base block (noted as stone in plan, but using available wooden block type for construction)"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "1",
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Eastern extension arm"
+    },
+    "result": "You have successfully added <ID 2: Small Wooden Block>.\nExisting Blocks: 2\n(Eastern extension arm) <ID 2: Small Wooden Block>\nPosition: [1.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [1. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [1.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "2",
+      "face": "E",
+      "new_block": "Water Cannon",
+      "note": "Eastern downward thruster - oriented to spray downward (-z direction), providing upward recoil thrust (+z direction); enters steam mode when heated by adjacent torch for 8.6x recoil force; all water cannons in design activated simultaneously via single shared control key for balanced vertical lift and stability"
+    },
+    "result": "You have successfully added <ID 3: Water Cannon>.\nExisting Blocks: 3\n(Eastern downward thruster - oriented to spray downward (-z direction), providing upward recoil thrust (+z direction); enters steam mode when heated by adjacent torch for 8.6x recoil force; all water cannons in design activated simultaneously via single shared control key for balanced vertical lift and stability) <ID 3: Water Cannon>\nPosition: [2.,0.,0.]\nPointing at <straight down>\nInlet is at [2.00, 0.00, 0.75], outlet is at [2.00, 0.00, -1.00], sprays towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "2",
+      "face": "C",
+      "new_block": "Torch",
+      "note": "Heater for eastern water cannon - oriented laterally eastward with flame shaft extending horizontally east to position heating sphere (radius 0.3) intersecting the water cannon body for steam activation, without intersecting or igniting wooden blocks or being extinguished by steam plumes"
+    },
+    "result": "You have successfully added <ID 4: Torch>.\nExisting Blocks: 4\n(Heater for eastern water cannon - oriented laterally eastward with flame shaft extending horizontally east to position heating sphere (radius 0.3) intersecting the water cannon body for steam activation, without intersecting or igniting wooden blocks or being extinguished by steam plumes) <ID 4: Torch>\nPosition: [ 1.,-0., 1.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [0.00, -0.00, 1.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": "4",
+      "angle": 180.0
+    },
+    "result": "The block 4 <Torch> is twisted by 180.0 degrees. \n (Heater for eastern water cannon - oriented laterally eastward with flame shaft extending horizontally east to position heating sphere (radius 0.3) intersecting the water cannon body for steam activation, without intersecting or igniting wooden blocks or being extinguished by steam plumes) <ID 4: Torch>\nPosition: [ 1.,-0., 1.]\nPointing at <East with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [2.00, -0.00, 1.00]"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "1",
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Western extension arm"
+    },
+    "result": "You have successfully added <ID 5: Small Wooden Block>.\nExisting Blocks: 5\n(Western extension arm) <ID 5: Small Wooden Block>\nPosition: [-1., 0., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1. ,  0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  0. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-1. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-1.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "5",
+      "face": "E",
+      "new_block": "Water Cannon",
+      "note": "Western downward thruster - oriented to spray downward (-z direction), providing upward recoil thrust (+z direction); enters steam mode when heated by adjacent torch for 8.6x recoil force; all water cannons in design activated simultaneously via single shared control key for balanced vertical lift and stability"
+    },
+    "result": "You have successfully added <ID 6: Water Cannon>.\nExisting Blocks: 6\n(Western downward thruster - oriented to spray downward (-z direction), providing upward recoil thrust (+z direction); enters steam mode when heated by adjacent torch for 8.6x recoil force; all water cannons in design activated simultaneously via single shared control key for balanced vertical lift and stability) <ID 6: Water Cannon>\nPosition: [-2., 0., 0.]\nPointing at <straight down>\nInlet is at [-2.00, 0.00, 0.75], outlet is at [-2.00, 0.00, -1.00], sprays towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "5",
+      "face": "C",
+      "new_block": "Torch",
+      "note": "Heater for western water cannon - oriented laterally westward with flame shaft extending horizontally west to position heating sphere (radius 0.3) intersecting the water cannon body for steam activation, without intersecting or igniting wooden blocks or being extinguished by steam plumes"
+    },
+    "result": "You have successfully added <ID 7: Torch>.\nExisting Blocks: 7\n(Heater for western water cannon - oriented laterally westward with flame shaft extending horizontally west to position heating sphere (radius 0.3) intersecting the water cannon body for steam activation, without intersecting or igniting wooden blocks or being extinguished by steam plumes) <ID 7: Torch>\nPosition: [-1.,-0., 1.]\nPointing at <East with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [0.00, -0.00, 1.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": "7",
+      "angle": 180.0
+    },
+    "result": "The block 7 <Torch> is twisted by 180.0 degrees. \n (Heater for western water cannon - oriented laterally westward with flame shaft extending horizontally west to position heating sphere (radius 0.3) intersecting the water cannon body for steam activation, without intersecting or igniting wooden blocks or being extinguished by steam plumes) <ID 7: Torch>\nPosition: [-1.,-0., 1.]\nPointing at <West with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-2.00, -0.00, 1.00]"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "1",
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Northern extension arm"
+    },
+    "result": "You have successfully added <ID 8: Small Wooden Block>.\nExisting Blocks: 8\n(Northern extension arm) <ID 8: Small Wooden Block>\nPosition: [0.,1.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 1. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 1. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  1. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 1.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "8",
+      "face": "E",
+      "new_block": "Water Cannon",
+      "note": "Northern downward thruster - oriented to spray downward (-z direction), providing upward recoil thrust (+z direction); enters steam mode when heated by adjacent torch for 8.6x recoil force; all water cannons in design activated simultaneously via single shared control key for balanced vertical lift and stability"
+    },
+    "result": "You have successfully added <ID 9: Water Cannon>.\nExisting Blocks: 9\n(Northern downward thruster - oriented to spray downward (-z direction), providing upward recoil thrust (+z direction); enters steam mode when heated by adjacent torch for 8.6x recoil force; all water cannons in design activated simultaneously via single shared control key for balanced vertical lift and stability) <ID 9: Water Cannon>\nPosition: [0.,2.,0.]\nPointing at <straight down>\nInlet is at [0.00, 2.00, 0.75], outlet is at [0.00, 2.00, -1.00], sprays towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "8",
+      "face": "C",
+      "new_block": "Torch",
+      "note": "Heater for northern water cannon - oriented laterally northward with flame shaft extending horizontally north to position heating sphere (radius 0.3) intersecting the water cannon body for steam activation, without intersecting or igniting wooden blocks or being extinguished by steam plumes"
+    },
+    "result": "You have successfully added <ID 10: Torch>.\nExisting Blocks: 10\n(Heater for northern water cannon - oriented laterally northward with flame shaft extending horizontally north to position heating sphere (radius 0.3) intersecting the water cannon body for steam activation, without intersecting or igniting wooden blocks or being extinguished by steam plumes) <ID 10: Torch>\nPosition: [0.,1.,1.]\nPointing at <South with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [0.00, 0.00, 1.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": "10",
+      "angle": 180.0
+    },
+    "result": "The block 10 <Torch> is twisted by 180.0 degrees. \n (Heater for northern water cannon - oriented laterally northward with flame shaft extending horizontally north to position heating sphere (radius 0.3) intersecting the water cannon body for steam activation, without intersecting or igniting wooden blocks or being extinguished by steam plumes) <ID 10: Torch>\nPosition: [0.,1.,1.]\nPointing at <North with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [0.00, 2.00, 1.00]"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "1",
+      "face": "F",
+      "new_block": "Small Wooden Block",
+      "note": "Southern extension arm"
+    },
+    "result": "You have successfully added <ID 11: Small Wooden Block>.\nExisting Blocks: 11\n(Southern extension arm) <ID 11: Small Wooden Block>\nPosition: [ 0.,-1., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -1. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -1. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [ 0. , -1. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [ 0. , -1.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "11",
+      "face": "E",
+      "new_block": "Water Cannon",
+      "note": "Southern downward thruster - oriented to spray downward (-z direction), providing upward recoil thrust (+z direction); enters steam mode when heated by adjacent torch for 8.6x recoil force; all water cannons in design activated simultaneously via single shared control key for balanced vertical lift and stability"
+    },
+    "result": "You have successfully added <ID 12: Water Cannon>.\nExisting Blocks: 12\n(Southern downward thruster - oriented to spray downward (-z direction), providing upward recoil thrust (+z direction); enters steam mode when heated by adjacent torch for 8.6x recoil force; all water cannons in design activated simultaneously via single shared control key for balanced vertical lift and stability) <ID 12: Water Cannon>\nPosition: [ 0.,-2., 0.]\nPointing at <straight up>\nInlet is at [0.00, -2.00, -0.75], outlet is at [0.00, -2.00, 1.00], sprays towards <straight up>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": "12",
+      "angle": 180.0
+    },
+    "result": "The block 12 <Water Cannon> is twisted by 180.0 degrees. \n (Southern downward thruster - oriented to spray downward (-z direction), providing upward recoil thrust (+z direction); enters steam mode when heated by adjacent torch for 8.6x recoil force; all water cannons in design activated simultaneously via single shared control key for balanced vertical lift and stability) <ID 12: Water Cannon>\nPosition: [ 0.,-2., 0.]\nPointing at <straight down>\nInlet is at [0.00, -2.00, 0.75], outlet is at [0.00, -2.00, -1.00], sprays towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "11",
+      "face": "D",
+      "new_block": "Torch",
+      "note": "Heater for southern water cannon - oriented laterally southward with flame shaft extending horizontally south to position heating sphere (radius 0.3) intersecting the water cannon body for steam activation, without intersecting or igniting wooden blocks or being extinguished by steam plumes"
+    },
+    "result": "You have successfully added <ID 13: Torch>.\nExisting Blocks: 13\n(Heater for southern water cannon - oriented laterally southward with flame shaft extending horizontally south to position heating sphere (radius 0.3) intersecting the water cannon body for steam activation, without intersecting or igniting wooden blocks or being extinguished by steam plumes) <ID 13: Torch>\nPosition: [ 0.,-1., 1.]\nPointing at <South with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [0.00, -2.00, 1.00]"
+  }
+]

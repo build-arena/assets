@@ -1,0 +1,767 @@
+[
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "Default Base Block (#0) - origin reference; lower frame center at z=0.5; supports vertical stack to floor at z=1.5 (top z=2.0)"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0. ,0. ,0.5]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0., 0., 1.], Facing towards <straight up>\nFace label: D, Face center: [0., 0., 0.], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "#1 Lower frame east extension to [1, 0, 0.5] from east face of base block (#0 blueprint \u2194 ID 1). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 2: Small Wooden Block>.\nExisting Blocks: 2\n(#1 Lower frame east extension to [1, 0, 0.5] from east face of base block (#0 blueprint \u2194 ID 1). Flush alignment; default orientation.) <ID 2: Small Wooden Block>\nPosition: [1. ,0. ,0.5]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -0.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [1. , 0.5, 0.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [1., 0., 1.], Facing towards <straight up>\nFace label: D, Face center: [1., 0., 0.], Facing towards <straight down>\nFace label: E, Face center: [1.5, 0. , 0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#2 Lower frame east extension to [2, 0, 0.5] from east face of block ID 2 (blueprint block #2). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 3: Small Wooden Block>.\nExisting Blocks: 3\n(#2 Lower frame east extension to [2, 0, 0.5] from east face of block ID 2 (blueprint block #2). Flush alignment; default orientation.) <ID 3: Small Wooden Block>\nPosition: [2. ,0. ,0.5]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -0.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [2. , 0.5, 0.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [2., 0., 1.], Facing towards <straight up>\nFace label: D, Face center: [2., 0., 0.], Facing towards <straight down>\nFace label: E, Face center: [2.5, 0. , 0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "#3 Lower frame west extension to [-1, 0, 0.5] from west face (Face B) of Starting Block ID 1 (blueprint step 3). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 4: Small Wooden Block>.\nExisting Blocks: 4\n(#3 Lower frame west extension to [-1, 0, 0.5] from west face (Face B) of Starting Block ID 1 (blueprint step 3). Flush alignment; default orientation.) <ID 4: Small Wooden Block>\nPosition: [-1. , 0. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [-1. ,  0.5,  0.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -0.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1.,  0.,  1.], Facing towards <straight up>\nFace label: D, Face center: [-1.,  0.,  0.], Facing towards <straight down>\nFace label: E, Face center: [-1.5,  0. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 4,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#4 Lower frame west extension to [-2, 0, 0.5] from west face (Face E) of block ID 4 (blueprint step 4). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 5: Small Wooden Block>.\nExisting Blocks: 5\n(#4 Lower frame west extension to [-2, 0, 0.5] from west face (Face E) of block ID 4 (blueprint step 4). Flush alignment; default orientation.) <ID 5: Small Wooden Block>\nPosition: [-2. , 0. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [-2. ,  0.5,  0.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. , -0.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2.,  0.,  1.], Facing towards <straight up>\nFace label: D, Face center: [-2.,  0.,  0.], Facing towards <straight down>\nFace label: E, Face center: [-2.5,  0. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "#5 Front arm segment to [2, 1, 0.5] from north face (Face B) of block ID 3 (blueprint step 5). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 6: Small Wooden Block>.\nExisting Blocks: 6\n(#5 Front arm segment to [2, 1, 0.5] from north face (Face B) of block ID 3 (blueprint step 5). Flush alignment; default orientation.) <ID 6: Small Wooden Block>\nPosition: [2. ,1. ,0.5]\nAttachable Faces:\nFace label: A, Face center: [2.5, 1. , 0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [1.5, 1. , 0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [2., 1., 1.], Facing towards <straight up>\nFace label: D, Face center: [2., 1., 0.], Facing towards <straight down>\nFace label: E, Face center: [2. , 1.5, 0.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 6,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#6 Front arm segment to [2, 2, 0.5] from north face (Face E) of block ID 6 (blueprint step 6). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 7: Small Wooden Block>.\nExisting Blocks: 7\n(#6 Front arm segment to [2, 2, 0.5] from north face (Face E) of block ID 6 (blueprint step 6). Flush alignment; default orientation.) <ID 7: Small Wooden Block>\nPosition: [2. ,2. ,0.5]\nAttachable Faces:\nFace label: A, Face center: [2.5, 2. , 0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [1.5, 2. , 0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [2., 2., 1.], Facing towards <straight up>\nFace label: D, Face center: [2., 2., 0.], Facing towards <straight down>\nFace label: E, Face center: [2. , 2.5, 0.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 7,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#7 Front arm end to [2, 3, 0.5] from north face (Face E) of block ID 7 (blueprint step 7). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 8: Small Wooden Block>.\nExisting Blocks: 8\n(#7 Front arm end to [2, 3, 0.5] from north face (Face E) of block ID 7 (blueprint step 7). Flush alignment; default orientation.) <ID 8: Small Wooden Block>\nPosition: [2. ,3. ,0.5]\nAttachable Faces:\nFace label: A, Face center: [2.5, 3. , 0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [1.5, 3. , 0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [2., 3., 1.], Facing towards <straight up>\nFace label: D, Face center: [2., 3., 0.], Facing towards <straight down>\nFace label: E, Face center: [2. , 3.5, 0.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "#8 Front arm segment to [2, -1, 0.5] from south face (Face A) of block ID 3 (blueprint step 8). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 9: Small Wooden Block>.\nExisting Blocks: 9\n(#8 Front arm segment to [2, -1, 0.5] from south face (Face A) of block ID 3 (blueprint step 8). Flush alignment; default orientation.) <ID 9: Small Wooden Block>\nPosition: [ 2. ,-1. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -1. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2.5, -1. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2., -1.,  1.], Facing towards <straight up>\nFace label: D, Face center: [ 2., -1.,  0.], Facing towards <straight down>\nFace label: E, Face center: [ 2. , -1.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 9,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#9 Front arm segment to [2, -2, 0.5] from south face (Face E) of block ID 9 (blueprint step 9). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 10: Small Wooden Block>.\nExisting Blocks: 10\n(#9 Front arm segment to [2, -2, 0.5] from south face (Face E) of block ID 9 (blueprint step 9). Flush alignment; default orientation.) <ID 10: Small Wooden Block>\nPosition: [ 2. ,-2. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -2. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2.5, -2. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2., -2.,  1.], Facing towards <straight up>\nFace label: D, Face center: [ 2., -2.,  0.], Facing towards <straight down>\nFace label: E, Face center: [ 2. , -2.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 5,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "#11 Rear arm segment to [-2, 1, 0.5] from north face (Face A) of block ID 5 (blueprint step 11). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 11: Small Wooden Block>.\nExisting Blocks: 11\n(#11 Rear arm segment to [-2, 1, 0.5] from north face (Face A) of block ID 5 (blueprint step 11). Flush alignment; default orientation.) <ID 11: Small Wooden Block>\nPosition: [-2. , 1. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  1. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5,  1. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2.,  1.,  1.], Facing towards <straight up>\nFace label: D, Face center: [-2.,  1.,  0.], Facing towards <straight down>\nFace label: E, Face center: [-2. ,  1.5,  0.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 11,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#12 Rear arm segment to [-2, 2, 0.5] from north face (Face E) of block ID 11 (blueprint step 12). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 12: Small Wooden Block>.\nExisting Blocks: 12\n(#12 Rear arm segment to [-2, 2, 0.5] from north face (Face E) of block ID 11 (blueprint step 12). Flush alignment; default orientation.) <ID 12: Small Wooden Block>\nPosition: [-2. , 2. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  2. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5,  2. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2.,  2.,  1.], Facing towards <straight up>\nFace label: D, Face center: [-2.,  2.,  0.], Facing towards <straight down>\nFace label: E, Face center: [-2. ,  2.5,  0.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 10,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#10 Front arm end to [2, -3, 0.5] from south face (Face E) of block ID 10 (blueprint step 10). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 13: Small Wooden Block>.\nExisting Blocks: 13\n(#10 Front arm end to [2, -3, 0.5] from south face (Face E) of block ID 10 (blueprint step 10). Flush alignment; default orientation.) <ID 13: Small Wooden Block>\nPosition: [ 2. ,-3. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -3. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2.5, -3. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2., -3.,  1.], Facing towards <straight up>\nFace label: D, Face center: [ 2., -3.,  0.], Facing towards <straight down>\nFace label: E, Face center: [ 2. , -3.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 12,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#13 Rear arm end to [-2, 3, 0.5] from north face (Face E) of block ID 12 (blueprint step 13). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 14: Small Wooden Block>.\nExisting Blocks: 14\n(#13 Rear arm end to [-2, 3, 0.5] from north face (Face E) of block ID 12 (blueprint step 13). Flush alignment; default orientation.) <ID 14: Small Wooden Block>\nPosition: [-2. , 3. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  3. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5,  3. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2.,  3.,  1.], Facing towards <straight up>\nFace label: D, Face center: [-2.,  3.,  0.], Facing towards <straight down>\nFace label: E, Face center: [-2. ,  3.5,  0.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 5,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "#14 Rear arm segment to [-2, -1, 0.5] from south face (Face B) of block ID 5 (blueprint step 14). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 15: Small Wooden Block>.\nExisting Blocks: 15\n(#14 Rear arm segment to [-2, -1, 0.5] from south face (Face B) of block ID 5 (blueprint step 14). Flush alignment; default orientation.) <ID 15: Small Wooden Block>\nPosition: [-2. ,-1. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [-2.5, -1. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5, -1. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2., -1.,  1.], Facing towards <straight up>\nFace label: D, Face center: [-2., -1.,  0.], Facing towards <straight down>\nFace label: E, Face center: [-2. , -1.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 15,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#15 Rear arm segment to [-2, -2, 0.5] from south face (Face E) of block ID 15 (blueprint step 15). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 16: Small Wooden Block>.\nExisting Blocks: 16\n(#15 Rear arm segment to [-2, -2, 0.5] from south face (Face E) of block ID 15 (blueprint step 15). Flush alignment; default orientation.) <ID 16: Small Wooden Block>\nPosition: [-2. ,-2. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [-2.5, -2. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5, -2. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2., -2.,  1.], Facing towards <straight up>\nFace label: D, Face center: [-2., -2.,  0.], Facing towards <straight down>\nFace label: E, Face center: [-2. , -2.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 16,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#16 Rear arm end to [-2, -3, 0.5] from south face (Face E) of block ID 16 (blueprint step 16). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 17: Small Wooden Block>.\nExisting Blocks: 17\n(#16 Rear arm end to [-2, -3, 0.5] from south face (Face E) of block ID 16 (blueprint step 16). Flush alignment; default orientation.) <ID 17: Small Wooden Block>\nPosition: [-2. ,-3. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [-2.5, -3. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5, -3. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2., -3.,  1.], Facing towards <straight up>\nFace label: D, Face center: [-2., -3.,  0.], Facing towards <straight down>\nFace label: E, Face center: [-2. , -3.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "#17 Central floor to [0, 0, 1.5] from top face (Face C) of Starting Block ID 1 (blueprint step 17). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 18: Small Wooden Block>.\nExisting Blocks: 18\n(#17 Central floor to [0, 0, 1.5] from top face (Face C) of Starting Block ID 1 (blueprint step 17). Flush alignment; default orientation.) <ID 18: Small Wooden Block>\nPosition: [0. ,0. ,1.5]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 1.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0., 0., 2.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 18,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "#18 Floor deck to [1, 0, 1.5] from east face (Face A) of block ID 18 (blueprint step 18). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 19: Small Wooden Block>.\nExisting Blocks: 19\n(#18 Floor deck to [1, 0, 1.5] from east face (Face A) of block ID 18 (blueprint step 18). Flush alignment; default orientation.) <ID 19: Small Wooden Block>\nPosition: [1. ,0. ,1.5]\nAttachable Faces:\nFace label: A, Face center: [1., 0., 1.], Facing towards <straight down>\nFace label: B, Face center: [1., 0., 2.], Facing towards <straight up>\nFace label: C, Face center: [ 1. , -0.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [1. , 0.5, 1.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [1.5, 0. , 1.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 19,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#19 Floor deck to [2, 0, 1.5] from east face (Face E) of block ID 19 (blueprint step 19). Flush alignment; default orientation; extending east row."
+    },
+    "result": "You have successfully added <ID 20: Small Wooden Block>.\nExisting Blocks: 20\n(#19 Floor deck to [2, 0, 1.5] from east face (Face E) of block ID 19 (blueprint step 19). Flush alignment; default orientation; extending east row.) <ID 20: Small Wooden Block>\nPosition: [2. ,0. ,1.5]\nAttachable Faces:\nFace label: A, Face center: [2., 0., 1.], Facing towards <straight down>\nFace label: B, Face center: [2., 0., 2.], Facing towards <straight up>\nFace label: C, Face center: [ 2. , -0.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [2. , 0.5, 1.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [2.5, 0. , 1.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 18,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "#20 Floor deck to [-1, 0, 1.5] from west face (Face B) of block ID 18 (blueprint step 20). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 21: Small Wooden Block>.\nExisting Blocks: 21\n(#20 Floor deck to [-1, 0, 1.5] from west face (Face B) of block ID 18 (blueprint step 20). Flush alignment; default orientation.) <ID 21: Small Wooden Block>\nPosition: [-1. , 0. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [-1.,  0.,  2.], Facing towards <straight up>\nFace label: B, Face center: [-1.,  0.,  1.], Facing towards <straight down>\nFace label: C, Face center: [-1. , -0.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1. ,  0.5,  1.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [-1.5,  0. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 21,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#21 Floor deck to [-2, 0, 1.5] from west face (Face E) of block ID 21 (blueprint step 21). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 22: Small Wooden Block>.\nExisting Blocks: 22\n(#21 Floor deck to [-2, 0, 1.5] from west face (Face E) of block ID 21 (blueprint step 21). Flush alignment; default orientation.) <ID 22: Small Wooden Block>\nPosition: [-2. , 0. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [-2.,  0.,  2.], Facing towards <straight up>\nFace label: B, Face center: [-2.,  0.,  1.], Facing towards <straight down>\nFace label: C, Face center: [-2. , -0.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2. ,  0.5,  1.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [-2.5,  0. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 18,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "#22 Floor deck north extension to [0, 1, 1.5] from north face (Face D) of block ID 18 (blueprint step 22). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 23: Small Wooden Block>.\nExisting Blocks: 23\n(#22 Floor deck north extension to [0, 1, 1.5] from north face (Face D) of block ID 18 (blueprint step 22). Flush alignment; default orientation.) <ID 23: Small Wooden Block>\nPosition: [0. ,1. ,1.5]\nAttachable Faces:\nFace label: A, Face center: [0.5, 1. , 1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  1. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0., 1., 2.], Facing towards <straight up>\nFace label: D, Face center: [0., 1., 1.], Facing towards <straight down>\nFace label: E, Face center: [0. , 1.5, 1.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 23,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#23 Floor deck north extension to [0, 2, 1.5] from north face (Face E) of block ID 23 (blueprint step 23). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 24: Small Wooden Block>.\nExisting Blocks: 24\n(#23 Floor deck north extension to [0, 2, 1.5] from north face (Face E) of block ID 23 (blueprint step 23). Flush alignment; default orientation.) <ID 24: Small Wooden Block>\nPosition: [0. ,2. ,1.5]\nAttachable Faces:\nFace label: A, Face center: [0.5, 2. , 1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  2. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0., 2., 2.], Facing towards <straight up>\nFace label: D, Face center: [0., 2., 1.], Facing towards <straight down>\nFace label: E, Face center: [0. , 2.5, 1.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 19,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "#24 Floor deck north extension to [1, 1, 1.5] from north face (Face D) of block ID 19 (blueprint step 24). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 25: Small Wooden Block>.\nExisting Blocks: 25\n(#24 Floor deck north extension to [1, 1, 1.5] from north face (Face D) of block ID 19 (blueprint step 24). Flush alignment; default orientation.) <ID 25: Small Wooden Block>\nPosition: [1. ,1. ,1.5]\nAttachable Faces:\nFace label: A, Face center: [1., 1., 1.], Facing towards <straight down>\nFace label: B, Face center: [1., 1., 2.], Facing towards <straight up>\nFace label: C, Face center: [1.5, 1. , 1.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [0.5, 1. , 1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [1. , 1.5, 1.5], Facing towards <North with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 25,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#25 Floor deck north extension to [1, 2, 1.5] from north face (Face E) of block ID 25 (blueprint step 25). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 26: Small Wooden Block>.\nExisting Blocks: 26\n(#25 Floor deck north extension to [1, 2, 1.5] from north face (Face E) of block ID 25 (blueprint step 25). Flush alignment; default orientation.) <ID 26: Small Wooden Block>\nPosition: [1. ,2. ,1.5]\nAttachable Faces:\nFace label: A, Face center: [1., 2., 1.], Facing towards <straight down>\nFace label: B, Face center: [1., 2., 2.], Facing towards <straight up>\nFace label: C, Face center: [1.5, 2. , 1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [0.5, 2. , 1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [1. , 2.5, 1.5], Facing towards <North with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 20,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "#26 Floor deck north extension to [2, 1, 1.5] from north face (Face D) of block ID 20 (blueprint step 26). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 27: Small Wooden Block>.\nExisting Blocks: 27\n(#26 Floor deck north extension to [2, 1, 1.5] from north face (Face D) of block ID 20 (blueprint step 26). Flush alignment; default orientation.) <ID 27: Small Wooden Block>\nPosition: [2. ,1. ,1.5]\nAttachable Faces:\nFace label: A, Face center: [2., 1., 1.], Facing towards <straight down>\nFace label: B, Face center: [2., 1., 2.], Facing towards <straight up>\nFace label: C, Face center: [2.5, 1. , 1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [1.5, 1. , 1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [2. , 1.5, 1.5], Facing towards <North with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 27,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#27 Floor deck to [2, 2, 1.5] from north face (Face E) of block ID 27 (complete NE corner of 5x5 deck per blueprint step 27). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 28: Small Wooden Block>.\nExisting Blocks: 28\n(#27 Floor deck to [2, 2, 1.5] from north face (Face E) of block ID 27 (complete NE corner of 5x5 deck per blueprint step 27). Flush alignment; default orientation.) <ID 28: Small Wooden Block>\nPosition: [2. ,2. ,1.5]\nAttachable Faces:\nFace label: A, Face center: [2., 2., 1.], Facing towards <straight down>\nFace label: B, Face center: [2., 2., 2.], Facing towards <straight up>\nFace label: C, Face center: [2.5, 2. , 1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [1.5, 2. , 1.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: E, Face center: [2. , 2.5, 1.5], Facing towards <North with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 21,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "#28 Floor deck north extension to [-1, 1, 1.5] from north face (Face D) of block ID 21 (blueprint step 28). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 29: Small Wooden Block>.\nExisting Blocks: 29\n(#28 Floor deck north extension to [-1, 1, 1.5] from north face (Face D) of block ID 21 (blueprint step 28). Flush alignment; default orientation.) <ID 29: Small Wooden Block>\nPosition: [-1. , 1. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [-1.,  1.,  2.], Facing towards <straight up>\nFace label: B, Face center: [-1.,  1.,  1.], Facing towards <straight down>\nFace label: C, Face center: [-1.5,  1. ,  1.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: D, Face center: [-0.5,  1. ,  1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1. ,  1.5,  1.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 29,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#29 Floor deck north extension to [-1, 2, 1.5] from north face (Face E) of block ID 29 (blueprint step 29). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 30: Small Wooden Block>.\nExisting Blocks: 30\n(#29 Floor deck north extension to [-1, 2, 1.5] from north face (Face E) of block ID 29 (blueprint step 29). Flush alignment; default orientation.) <ID 30: Small Wooden Block>\nPosition: [-1. , 2. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [-1.,  2.,  2.], Facing towards <straight up>\nFace label: B, Face center: [-1.,  2.,  1.], Facing towards <straight down>\nFace label: C, Face center: [-1.5,  2. ,  1.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: D, Face center: [-0.5,  2. ,  1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1. ,  2.5,  1.5], Facing towards <North with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 22,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "#30 Floor deck north extension to [-2, 1, 1.5] from north face (Face D) of block ID 22 (blueprint step 30). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 31: Small Wooden Block>.\nExisting Blocks: 31\n(#30 Floor deck north extension to [-2, 1, 1.5] from north face (Face D) of block ID 22 (blueprint step 30). Flush alignment; default orientation.) <ID 31: Small Wooden Block>\nPosition: [-2. , 1. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [-2.,  1.,  2.], Facing towards <straight up>\nFace label: B, Face center: [-2.,  1.,  1.], Facing towards <straight down>\nFace label: C, Face center: [-2.5,  1. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5,  1. ,  1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2. ,  1.5,  1.5], Facing towards <North with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 31,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#31 Floor deck to [-2, 2, 1.5] from north face (Face E) of block ID 31 (complete NW corner of 5x5 deck per blueprint step 31). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 32: Small Wooden Block>.\nExisting Blocks: 32\n(#31 Floor deck to [-2, 2, 1.5] from north face (Face E) of block ID 31 (complete NW corner of 5x5 deck per blueprint step 31). Flush alignment; default orientation.) <ID 32: Small Wooden Block>\nPosition: [-2. , 2. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [-2.,  2.,  2.], Facing towards <straight up>\nFace label: B, Face center: [-2.,  2.,  1.], Facing towards <straight down>\nFace label: C, Face center: [-2.5,  2. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5,  2. ,  1.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [-2. ,  2.5,  1.5], Facing towards <North with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 18,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "#32 Floor deck south extension to [0, -1, 1.5] from south face (Face C) of block ID 18 (blueprint step 32). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 33: Small Wooden Block>.\nExisting Blocks: 33\n(#32 Floor deck south extension to [0, -1, 1.5] from south face (Face C) of block ID 18 (blueprint step 32). Flush alignment; default orientation.) <ID 33: Small Wooden Block>\nPosition: [ 0. ,-1. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -1. ,  1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -1. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0., -1.,  1.], Facing towards <straight down>\nFace label: D, Face center: [ 0., -1.,  2.], Facing towards <straight up>\nFace label: E, Face center: [ 0. , -1.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 33,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#33 Floor deck south extension to [0, -2, 1.5] from south face (Face E) of block ID 33 (blueprint step 33). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 34: Small Wooden Block>.\nExisting Blocks: 34\n(#33 Floor deck south extension to [0, -2, 1.5] from south face (Face E) of block ID 33 (blueprint step 33). Flush alignment; default orientation.) <ID 34: Small Wooden Block>\nPosition: [ 0. ,-2. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -2. ,  1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -2. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0., -2.,  1.], Facing towards <straight down>\nFace label: D, Face center: [ 0., -2.,  2.], Facing towards <straight up>\nFace label: E, Face center: [ 0. , -2.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 19,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "#34 Floor deck south extension to [1, -1, 1.5] from south face (Face C) of block ID 19 (corresponds to blueprint step 34; using neighbor\u2019s south face to achieve intended coordinates). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 35: Small Wooden Block>.\nExisting Blocks: 35\n(#34 Floor deck south extension to [1, -1, 1.5] from south face (Face C) of block ID 19 (corresponds to blueprint step 34; using neighbor\u2019s south face to achieve intended coordinates). Flush alignment; default orientation.) <ID 35: Small Wooden Block>\nPosition: [ 1. ,-1. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [ 1., -1.,  1.], Facing towards <straight down>\nFace label: B, Face center: [ 1., -1.,  2.], Facing towards <straight up>\nFace label: C, Face center: [ 0.5, -1. ,  1.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -1. ,  1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 1. , -1.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 35,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#35 Floor deck south extension to [1, -2, 1.5] from south face (Face E) of block ID 35 (blueprint step 35). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 36: Small Wooden Block>.\nExisting Blocks: 36\n(#35 Floor deck south extension to [1, -2, 1.5] from south face (Face E) of block ID 35 (blueprint step 35). Flush alignment; default orientation.) <ID 36: Small Wooden Block>\nPosition: [ 1. ,-2. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [ 1., -2.,  1.], Facing towards <straight down>\nFace label: B, Face center: [ 1., -2.,  2.], Facing towards <straight up>\nFace label: C, Face center: [ 0.5, -2. ,  1.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -2. ,  1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 1. , -2.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 20,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "#36 Floor deck south extension to [2, -1, 1.5] from south face (Face C) of block ID 20 (blueprint step 36). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 37: Small Wooden Block>.\nExisting Blocks: 37\n(#36 Floor deck south extension to [2, -1, 1.5] from south face (Face C) of block ID 20 (blueprint step 36). Flush alignment; default orientation.) <ID 37: Small Wooden Block>\nPosition: [ 2. ,-1. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [ 2., -1.,  1.], Facing towards <straight down>\nFace label: B, Face center: [ 2., -1.,  2.], Facing towards <straight up>\nFace label: C, Face center: [ 1.5, -1. ,  1.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 2.5, -1. ,  1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2. , -1.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 37,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#37 Floor deck south extension to [2, -2, 1.5] from south face (Face E) of block ID 37 (blueprint step 37). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 38: Small Wooden Block>.\nExisting Blocks: 38\n(#37 Floor deck south extension to [2, -2, 1.5] from south face (Face E) of block ID 37 (blueprint step 37). Flush alignment; default orientation.) <ID 38: Small Wooden Block>\nPosition: [ 2. ,-2. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [ 2., -2.,  1.], Facing towards <straight down>\nFace label: B, Face center: [ 2., -2.,  2.], Facing towards <straight up>\nFace label: C, Face center: [ 1.5, -2. ,  1.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 2.5, -2. ,  1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2. , -2.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 21,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "#38 Floor deck south extension to [-1, -1, 1.5] from south face (Face C) of block ID 21 (blueprint step 38). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 39: Small Wooden Block>.\nExisting Blocks: 39\n(#38 Floor deck south extension to [-1, -1, 1.5] from south face (Face C) of block ID 21 (blueprint step 38). Flush alignment; default orientation.) <ID 39: Small Wooden Block>\nPosition: [-1. ,-1. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [-1., -1.,  2.], Facing towards <straight up>\nFace label: B, Face center: [-1., -1.,  1.], Facing towards <straight down>\nFace label: C, Face center: [-0.5, -1. ,  1.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5, -1. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1. , -1.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 39,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#39 Floor deck south extension to [-1, -2, 1.5] from south face (Face E) of block ID 39 (blueprint step 39). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 40: Small Wooden Block>.\nExisting Blocks: 40\n(#39 Floor deck south extension to [-1, -2, 1.5] from south face (Face E) of block ID 39 (blueprint step 39). Flush alignment; default orientation.) <ID 40: Small Wooden Block>\nPosition: [-1. ,-2. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [-1., -2.,  2.], Facing towards <straight up>\nFace label: B, Face center: [-1., -2.,  1.], Facing towards <straight down>\nFace label: C, Face center: [-0.5, -2. ,  1.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5, -2. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1. , -2.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 22,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "#40 Floor deck south extension to [-2, -1, 1.5] from south face (Face C) of block ID 22 (blueprint step 40). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 41: Small Wooden Block>.\nExisting Blocks: 41\n(#40 Floor deck south extension to [-2, -1, 1.5] from south face (Face C) of block ID 22 (blueprint step 40). Flush alignment; default orientation.) <ID 41: Small Wooden Block>\nPosition: [-2. ,-1. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [-2., -1.,  2.], Facing towards <straight up>\nFace label: B, Face center: [-2., -1.,  1.], Facing towards <straight down>\nFace label: C, Face center: [-1.5, -1. ,  1.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [-2.5, -1. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2. , -1.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 41,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#41 Floor deck to [-2, -2, 1.5] from south face (Face E) of block ID 41 (completes 5x5 floor deck per blueprint step 41). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 42: Small Wooden Block>.\nExisting Blocks: 42\n(#41 Floor deck to [-2, -2, 1.5] from south face (Face E) of block ID 41 (completes 5x5 floor deck per blueprint step 41). Flush alignment; default orientation.) <ID 42: Small Wooden Block>\nPosition: [-2. ,-2. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [-2., -2.,  2.], Facing towards <straight up>\nFace label: B, Face center: [-2., -2.,  1.], Facing towards <straight down>\nFace label: C, Face center: [-1.5, -2. ,  1.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [-2.5, -2. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2. , -2.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 30,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#42 North wall lower at [-1, 2.5, 1.5] from north face (Face E) of floor block ID 30 (outside perimeter; blueprint step 42). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 43: Small Wooden Block>.\nExisting Blocks: 43\n(#42 North wall lower at [-1, 2.5, 1.5] from north face (Face E) of floor block ID 30 (outside perimeter; blueprint step 42). Flush alignment; default orientation.) <ID 43: Small Wooden Block>\nPosition: [-1. , 3. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [-1.,  3.,  2.], Facing towards <straight up>\nFace label: B, Face center: [-1.,  3.,  1.], Facing towards <straight down>\nFace label: C, Face center: [-1.5,  3. ,  1.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: D, Face center: [-0.5,  3. ,  1.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [-1. ,  3.5,  1.5], Facing towards <North with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 43,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "#43 North wall upper at [-1, 3, 2.5] from top face (Face A) of lower north wall block ID 43 (blueprint step 43). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 44: Small Wooden Block>.\nExisting Blocks: 44\n(#43 North wall upper at [-1, 3, 2.5] from top face (Face A) of lower north wall block ID 43 (blueprint step 43). Flush alignment; default orientation.) <ID 44: Small Wooden Block>\nPosition: [-1. , 3. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-1. ,  2.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. ,  3.5,  2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: C, Face center: [-1.5,  3. ,  2.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: D, Face center: [-0.5,  3. ,  2.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1.,  3.,  3.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 24,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#44 North wall lower at [0, 3, 1.5] from north face (Face E) of floor block ID 24 (outside perimeter; blueprint step 44). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 45: Small Wooden Block>.\nExisting Blocks: 45\n(#44 North wall lower at [0, 3, 1.5] from north face (Face E) of floor block ID 24 (outside perimeter; blueprint step 44). Flush alignment; default orientation.) <ID 45: Small Wooden Block>\nPosition: [0. ,3. ,1.5]\nAttachable Faces:\nFace label: A, Face center: [0.5, 3. , 1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  3. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0., 3., 2.], Facing towards <straight up>\nFace label: D, Face center: [0., 3., 1.], Facing towards <straight down>\nFace label: E, Face center: [0. , 3.5, 1.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 45,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "#45 North wall upper at [0, 3, 2.5] from top face (Face C) of lower north wall block ID 45 (blueprint step 45). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 46: Small Wooden Block>.\nExisting Blocks: 46\n(#45 North wall upper at [0, 3, 2.5] from top face (Face C) of lower north wall block ID 45 (blueprint step 45). Flush alignment; default orientation.) <ID 46: Small Wooden Block>\nPosition: [0. ,3. ,2.5]\nAttachable Faces:\nFace label: A, Face center: [0.5, 3. , 2.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  3. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 2.5, 2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 3.5, 2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0., 3., 3.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 37,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "#54 East wall lower at [3, -1, 1.5] from east face (Face D) of floor block ID 37 (outside perimeter; blueprint step 54 adapted to grid placement). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 47: Small Wooden Block>.\nExisting Blocks: 47\n(#54 East wall lower at [3, -1, 1.5] from east face (Face D) of floor block ID 37 (outside perimeter; blueprint step 54 adapted to grid placement). Flush alignment; default orientation.) <ID 47: Small Wooden Block>\nPosition: [ 3. ,-1. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [ 3., -1.,  1.], Facing towards <straight down>\nFace label: B, Face center: [ 3., -1.,  2.], Facing towards <straight up>\nFace label: C, Face center: [ 3. , -1.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 3. , -0.5,  1.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [ 3.5, -1. ,  1.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 26,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#46 North wall lower at [1, 3, 1.5] from north face (Face E) of floor block ID 26 (outside perimeter; blueprint step 46). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 48: Small Wooden Block>.\nExisting Blocks: 48\n(#46 North wall lower at [1, 3, 1.5] from north face (Face E) of floor block ID 26 (outside perimeter; blueprint step 46). Flush alignment; default orientation.) <ID 48: Small Wooden Block>\nPosition: [1. ,3. ,1.5]\nAttachable Faces:\nFace label: A, Face center: [1., 3., 1.], Facing towards <straight down>\nFace label: B, Face center: [1., 3., 2.], Facing towards <straight up>\nFace label: C, Face center: [1.5, 3. , 1.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [0.5, 3. , 1.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: E, Face center: [1. , 3.5, 1.5], Facing towards <North with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 48,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "#47 North wall upper at [1, 3, 2.5] from top face of lower north wall block ID 48 (blueprint step 47 adapted outward). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 49: Small Wooden Block>.\nExisting Blocks: 49\n(#47 North wall upper at [1, 3, 2.5] from top face of lower north wall block ID 48 (blueprint step 47 adapted outward). Flush alignment; default orientation.) <ID 49: Small Wooden Block>\nPosition: [1. ,3. ,2.5]\nAttachable Faces:\nFace label: A, Face center: [1. , 3.5, 2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: B, Face center: [1. , 2.5, 2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [1.5, 3. , 2.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [0.5, 3. , 2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [1., 3., 3.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 8,
+      "face": "E",
+      "new_block": "Powered Wheel",
+      "note": "#66 Front-left Powered Wheel at +y end of front arm; attached to north face of block ID 8 at [2,3.5,0.5]. Vertical wheel with rotation axis along +y; intended forward rolling along +x. Control group: Left Drive (forward=+x, reverse=-x)."
+    },
+    "result": "You have successfully added <ID 50: Powered Wheel>.\nExisting Blocks: 50\n(#66 Front-left Powered Wheel at +y end of front arm; attached to north face of block ID 8 at [2,3.5,0.5]. Vertical wheel with rotation axis along +y; intended forward rolling along +x. Control group: Left Drive (forward=+x, reverse=-x).) <ID 50: Powered Wheel>\nPosition: [2. ,3.5,0.5]\nRolling towards <West with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [2. , 4. , 0.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 13,
+      "face": "E",
+      "new_block": "Powered Wheel",
+      "note": "#67 Front-right Powered Wheel at -y end of front arm; attached to south face of block ID 13 at [2,-3.5,0.5]. Vertical wheel with rotation axis along -y; intended forward rolling along +x. Control group: Right Drive (forward=+x, reverse=-x)."
+    },
+    "result": "You have successfully added <ID 51: Powered Wheel>.\nExisting Blocks: 51\n(#67 Front-right Powered Wheel at -y end of front arm; attached to south face of block ID 13 at [2,-3.5,0.5]. Vertical wheel with rotation axis along -y; intended forward rolling along +x. Control group: Right Drive (forward=+x, reverse=-x).) <ID 51: Powered Wheel>\nPosition: [ 2. ,-3.5, 0.5]\nRolling towards <East with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [ 2. , -4. ,  0.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 14,
+      "face": "E",
+      "new_block": "Powered Wheel",
+      "note": "#68 Rear-left Powered Wheel at +y end of rear arm; attached to north face of block ID 14 at [-2,3.5,0.5]. Vertical wheel with rotation axis along +y; intended forward rolling along +x. Control group: Left Drive (forward=+x, reverse=-x)."
+    },
+    "result": "You have successfully added <ID 52: Powered Wheel>.\nExisting Blocks: 52\n(#68 Rear-left Powered Wheel at +y end of rear arm; attached to north face of block ID 14 at [-2,3.5,0.5]. Vertical wheel with rotation axis along +y; intended forward rolling along +x. Control group: Left Drive (forward=+x, reverse=-x).) <ID 52: Powered Wheel>\nPosition: [-2. , 3.5, 0.5]\nRolling towards <West with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [-2. ,  4. ,  0.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 17,
+      "face": "E",
+      "new_block": "Powered Wheel",
+      "note": "#69 Rear-right Powered Wheel at -y end of rear arm; attached to south face of block ID 17 at [-2,-3.5,0.5]. Vertical wheel with rotation axis along -y; intended forward rolling along +x. Control group: Right Drive (forward=+x, reverse=-x)."
+    },
+    "result": "You have successfully added <ID 53: Powered Wheel>.\nExisting Blocks: 53\n(#69 Rear-right Powered Wheel at -y end of rear arm; attached to south face of block ID 17 at [-2,-3.5,0.5]. Vertical wheel with rotation axis along -y; intended forward rolling along +x. Control group: Right Drive (forward=+x, reverse=-x).) <ID 53: Powered Wheel>\nPosition: [-2. ,-3.5, 0.5]\nRolling towards <East with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [-2. , -4. ,  0.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 47,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "#55 East wall upper at [3, -1, 2.5] from top face (Face B) of lower east wall block ID 47 (completes y=-1 east wall stack; blueprint step 55 adapted outward). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 54: Small Wooden Block>.\nExisting Blocks: 54\n(#55 East wall upper at [3, -1, 2.5] from top face (Face B) of lower east wall block ID 47 (completes y=-1 east wall stack; blueprint step 55 adapted outward). Flush alignment; default orientation.) <ID 54: Small Wooden Block>\nPosition: [ 3. ,-1. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [ 3.5, -1. ,  2.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2.5, -1. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 3. , -1.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 3. , -0.5,  2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [ 3., -1.,  3.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 40,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#48 South wall lower at [-1, -3, 1.5] from south face (Face E) of floor block ID 40 (outside perimeter; blueprint step 48 adapted outward). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 55: Small Wooden Block>.\nExisting Blocks: 55\n(#48 South wall lower at [-1, -3, 1.5] from south face (Face E) of floor block ID 40 (outside perimeter; blueprint step 48 adapted outward). Flush alignment; default orientation.) <ID 55: Small Wooden Block>\nPosition: [-1. ,-3. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [-1., -3.,  2.], Facing towards <straight up>\nFace label: B, Face center: [-1., -3.,  1.], Facing towards <straight down>\nFace label: C, Face center: [-0.5, -3. ,  1.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5, -3. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1. , -3.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 55,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "#49 South wall upper at [-1, -3, 2.5] from top face (Face A) of lower south wall block ID 55 (blueprint step 49 adapted outward). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 56: Small Wooden Block>.\nExisting Blocks: 56\n(#49 South wall upper at [-1, -3, 2.5] from top face (Face A) of lower south wall block ID 55 (blueprint step 49 adapted outward). Flush alignment; default orientation.) <ID 56: Small Wooden Block>\nPosition: [-1. ,-3. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-1. , -2.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -3.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-0.5, -3. ,  2.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5, -3. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1., -3.,  3.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 20,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#56 East wall lower at [3, 0, 1.5] from east face (Face E) of floor block ID 20 (outside perimeter; blueprint step 56 adapted outward). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 57: Small Wooden Block>.\nExisting Blocks: 57\n(#56 East wall lower at [3, 0, 1.5] from east face (Face E) of floor block ID 20 (outside perimeter; blueprint step 56 adapted outward). Flush alignment; default orientation.) <ID 57: Small Wooden Block>\nPosition: [3. ,0. ,1.5]\nAttachable Faces:\nFace label: A, Face center: [3., 0., 1.], Facing towards <straight down>\nFace label: B, Face center: [3., 0., 2.], Facing towards <straight up>\nFace label: C, Face center: [ 3. , -0.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [3. , 0.5, 1.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [3.5, 0. , 1.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 57,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "#57 East wall upper at [3, 0, 2.5] from top face (Face B) of lower east wall block ID 57 (blueprint step 57 adapted outward). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 58: Small Wooden Block>.\nExisting Blocks: 58\n(#57 East wall upper at [3, 0, 2.5] from top face (Face B) of lower east wall block ID 57 (blueprint step 57 adapted outward). Flush alignment; default orientation.) <ID 58: Small Wooden Block>\nPosition: [3. ,0. ,2.5]\nAttachable Faces:\nFace label: A, Face center: [3.5, 0. , 2.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [2.5, 0. , 2.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: C, Face center: [ 3. , -0.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [3. , 0.5, 2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [3., 0., 3.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 34,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#50 South wall lower at [0, -3, 1.5] from south face (Face E) of floor block ID 34 (outside perimeter; blueprint step 50 adapted outward). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 59: Small Wooden Block>.\nExisting Blocks: 59\n(#50 South wall lower at [0, -3, 1.5] from south face (Face E) of floor block ID 34 (outside perimeter; blueprint step 50 adapted outward). Flush alignment; default orientation.) <ID 59: Small Wooden Block>\nPosition: [ 0. ,-3. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -3. ,  1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -3. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0., -3.,  1.], Facing towards <straight down>\nFace label: D, Face center: [ 0., -3.,  2.], Facing towards <straight up>\nFace label: E, Face center: [ 0. , -3.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 59,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "#51 South wall upper at [0, -3, 2.5] from top face (Face D) of lower south wall block ID 59 (blueprint step 51 adapted outward). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 60: Small Wooden Block>.\nExisting Blocks: 60\n(#51 South wall upper at [0, -3, 2.5] from top face (Face D) of lower south wall block ID 59 (blueprint step 51 adapted outward). Flush alignment; default orientation.) <ID 60: Small Wooden Block>\nPosition: [ 0. ,-3. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -3. ,  2.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -3. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -3.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 0. , -2.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 0., -3.,  3.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 36,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#52 South wall lower at [1, -3, 1.5] from south face (Face E) of floor block ID 36 (outside perimeter; blueprint step 52 adapted outward). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 61: Small Wooden Block>.\nExisting Blocks: 61\n(#52 South wall lower at [1, -3, 1.5] from south face (Face E) of floor block ID 36 (outside perimeter; blueprint step 52 adapted outward). Flush alignment; default orientation.) <ID 61: Small Wooden Block>\nPosition: [ 1. ,-3. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [ 1., -3.,  1.], Facing towards <straight down>\nFace label: B, Face center: [ 1., -3.,  2.], Facing towards <straight up>\nFace label: C, Face center: [ 0.5, -3. ,  1.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -3. ,  1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 1. , -3.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 61,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "#53 South wall upper at [1, -3, 2.5] from top face of lower south wall block ID 61 (blueprint step 53 adapted outward). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 62: Small Wooden Block>.\nExisting Blocks: 62\n(#53 South wall upper at [1, -3, 2.5] from top face of lower south wall block ID 61 (blueprint step 53 adapted outward). Flush alignment; default orientation.) <ID 62: Small Wooden Block>\nPosition: [ 1. ,-3. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -3.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 1. , -2.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0.5, -3. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -3. ,  2.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 1., -3.,  3.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 27,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "#58 East wall lower at [3, 1, 1.5] from east face (Face C) of floor block ID 27 (outside perimeter; blueprint step 58 adapted outward). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 63: Small Wooden Block>.\nExisting Blocks: 63\n(#58 East wall lower at [3, 1, 1.5] from east face (Face C) of floor block ID 27 (outside perimeter; blueprint step 58 adapted outward). Flush alignment; default orientation.) <ID 63: Small Wooden Block>\nPosition: [3. ,1. ,1.5]\nAttachable Faces:\nFace label: A, Face center: [3., 1., 1.], Facing towards <straight down>\nFace label: B, Face center: [3., 1., 2.], Facing towards <straight up>\nFace label: C, Face center: [3. , 0.5, 1.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [3. , 1.5, 1.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [3.5, 1. , 1.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 63,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "#59 East wall upper at [3, 1, 2.5] from top face (Face B) of lower east wall block ID 63 (completes east wall stack at y=+1; blueprint step 59 adapted outward). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 64: Small Wooden Block>.\nExisting Blocks: 64\n(#59 East wall upper at [3, 1, 2.5] from top face (Face B) of lower east wall block ID 63 (completes east wall stack at y=+1; blueprint step 59 adapted outward). Flush alignment; default orientation.) <ID 64: Small Wooden Block>\nPosition: [3. ,1. ,2.5]\nAttachable Faces:\nFace label: A, Face center: [3.5, 1. , 2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [2.5, 1. , 2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [3. , 0.5, 2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [3. , 1.5, 2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [3., 1., 3.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 41,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "#60 West wall lower at [-3, -1, 1.5] from west face (Face D) of floor block ID 41 (outside perimeter; blueprint step 60 adapted outward). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 65: Small Wooden Block>.\nExisting Blocks: 65\n(#60 West wall lower at [-3, -1, 1.5] from west face (Face D) of floor block ID 41 (outside perimeter; blueprint step 60 adapted outward). Flush alignment; default orientation.) <ID 65: Small Wooden Block>\nPosition: [-3. ,-1. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [-3., -1.,  2.], Facing towards <straight up>\nFace label: B, Face center: [-3., -1.,  1.], Facing towards <straight down>\nFace label: C, Face center: [-3. , -1.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-3. , -0.5,  1.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [-3.5, -1. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 65,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "#61 West wall upper at [-3, -1, 2.5] from top face (Face A) of lower west wall block ID 65 (blueprint step 61 adapted outward). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 66: Small Wooden Block>.\nExisting Blocks: 66\n(#61 West wall upper at [-3, -1, 2.5] from top face (Face A) of lower west wall block ID 65 (blueprint step 61 adapted outward). Flush alignment; default orientation.) <ID 66: Small Wooden Block>\nPosition: [-3. ,-1. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-2.5, -1. ,  2.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-3.5, -1. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-3. , -1.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-3. , -0.5,  2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [-3., -1.,  3.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 22,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "#62 West wall lower at [-3, 0, 1.5] from west face (Face E) of floor block ID 22 (outside perimeter; blueprint step 62 adapted outward). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 67: Small Wooden Block>.\nExisting Blocks: 67\n(#62 West wall lower at [-3, 0, 1.5] from west face (Face E) of floor block ID 22 (outside perimeter; blueprint step 62 adapted outward). Flush alignment; default orientation.) <ID 67: Small Wooden Block>\nPosition: [-3. , 0. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [-3.,  0.,  2.], Facing towards <straight up>\nFace label: B, Face center: [-3.,  0.,  1.], Facing towards <straight down>\nFace label: C, Face center: [-3. , -0.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-3. ,  0.5,  1.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-3.5,  0. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 67,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "#63 West wall upper at [-3, 0, 2.5] from top face (Face A) of lower west wall block ID 67 (blueprint step 63 adapted outward). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 68: Small Wooden Block>.\nExisting Blocks: 68\n(#63 West wall upper at [-3, 0, 2.5] from top face (Face A) of lower west wall block ID 67 (blueprint step 63 adapted outward). Flush alignment; default orientation.) <ID 68: Small Wooden Block>\nPosition: [-3. , 0. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-2.5,  0. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-3.5,  0. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-3. , -0.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-3. ,  0.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-3.,  0.,  3.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 31,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "#64 West wall lower at [-3, 1, 1.5] from west face of floor block ID 31 (outside perimeter; blueprint step 64 adapted outward). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 69: Small Wooden Block>.\nExisting Blocks: 69\n(#64 West wall lower at [-3, 1, 1.5] from west face of floor block ID 31 (outside perimeter; blueprint step 64 adapted outward). Flush alignment; default orientation.) <ID 69: Small Wooden Block>\nPosition: [-3. , 1. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [-3.,  1.,  2.], Facing towards <straight up>\nFace label: B, Face center: [-3.,  1.,  1.], Facing towards <straight down>\nFace label: C, Face center: [-3. ,  0.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-3. ,  1.5,  1.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [-3.5,  1. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 69,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "#65 West wall upper at [-3, 1, 2.5] from top face (Face A) of lower west wall block ID 69 (blueprint step 65 adapted outward). Flush alignment; default orientation."
+    },
+    "result": "You have successfully added <ID 70: Small Wooden Block>.\nExisting Blocks: 70\n(#65 West wall upper at [-3, 1, 2.5] from top face (Face A) of lower west wall block ID 69 (blueprint step 65 adapted outward). Flush alignment; default orientation.) <ID 70: Small Wooden Block>\nPosition: [-3. , 1. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-2.5,  1. ,  2.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-3.5,  1. ,  2.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: C, Face center: [-3. ,  0.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-3. ,  1.5,  2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [-3.,  1.,  3.], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 28,
+      "face_a": "E",
+      "block_b": 8,
+      "face_b": "F",
+      "connector": "Brace",
+      "note": "#70 Brace linking floor corner [2,2,1.5] (Block ID 28 north face) to front-left arm end [2,3,0.5] (Block ID 8 south face). Purpose: rigid structural link to reduce bending under cargo load."
+    },
+    "result": "You have successfully added <ID 71: Brace>.\nExisting Blocks: 71\n(#70 Brace linking floor corner [2,2,1.5] (Block ID 28 north face) to front-left arm end [2,3,0.5] (Block ID 8 south face). Purpose: rigid structural link to reduce bending under cargo load.) <ID 71: Brace>\nConnecting <ID 28: Small Wooden Block> at [2.  2.5 1.5] and <ID 8: Small Wooden Block> at [2.  2.5 0.5].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 38,
+      "face_a": "E",
+      "block_b": 13,
+      "face_b": "E",
+      "connector": "Brace",
+      "note": "#71 Brace linking floor corner [2,-2,1.5] (Block ID 38 south face) to front-right arm end [2,-3,0.5] (Block ID 13 south face). Purpose: rigid structural link to reduce bending under cargo load."
+    },
+    "result": "You have successfully added <ID 72: Brace>.\nExisting Blocks: 72\n(#71 Brace linking floor corner [2,-2,1.5] (Block ID 38 south face) to front-right arm end [2,-3,0.5] (Block ID 13 south face). Purpose: rigid structural link to reduce bending under cargo load.) <ID 72: Brace>\nConnecting <ID 38: Small Wooden Block> at [ 2.  -2.5  1.5] and <ID 13: Small Wooden Block> at [ 2.  -3.5  0.5].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 32,
+      "face_a": "E",
+      "block_b": 14,
+      "face_b": "F",
+      "connector": "Brace",
+      "note": "#72 Brace linking floor corner [-2,2,1.5] (Block ID 32 north face) to rear-left arm end [-2,3,0.5] (Block ID 14 south face). Purpose: rigid structural link to reduce bending under cargo load."
+    },
+    "result": "You have successfully added <ID 73: Brace>.\nExisting Blocks: 73\n(#72 Brace linking floor corner [-2,2,1.5] (Block ID 32 north face) to rear-left arm end [-2,3,0.5] (Block ID 14 south face). Purpose: rigid structural link to reduce bending under cargo load.) <ID 73: Brace>\nConnecting <ID 32: Small Wooden Block> at [-2.   2.5  1.5] and <ID 14: Small Wooden Block> at [-2.   2.5  0.5].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 42,
+      "face_a": "E",
+      "block_b": 17,
+      "face_b": "F",
+      "connector": "Brace",
+      "note": "#73 Brace linking floor corner [-2,-2,1.5] (Block ID 42 south face) to rear-right arm end [-2,-3,0.5] (Block ID 17 north face). Purpose: rigid structural link to reduce bending under cargo load."
+    },
+    "result": "You have successfully added <ID 74: Brace>.\nExisting Blocks: 74\n(#73 Brace linking floor corner [-2,-2,1.5] (Block ID 42 south face) to rear-right arm end [-2,-3,0.5] (Block ID 17 north face). Purpose: rigid structural link to reduce bending under cargo load.) <ID 74: Brace>\nConnecting <ID 42: Small Wooden Block> at [-2.  -2.5  1.5] and <ID 17: Small Wooden Block> at [-2.  -2.5  0.5].\t"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 74\n\nMachine Summary: Default Base Block (#0) - origin reference; lower frame center at z=0.5; supports vertical stack to floor at z=1.5 (top z=2.0)\n(The starting block) <ID 1: Starting Block>\nPosition: [0. ,0. ,0.5]\n(#1 Lower frame east extension to [1, 0, 0.5] from east face of base block (#0 blueprint \u2194 ID 1). Flush alignment; default orientation.) <ID 2: Small Wooden Block>\nPosition: [1. ,0. ,0.5]\n(#2 Lower frame east extension to [2, 0, 0.5] from east face of block ID 2 (blueprint block #2). Flush alignment; default orientation.) <ID 3: Small Wooden Block>\nPosition: [2. ,0. ,0.5]\n(#3 Lower frame west extension to [-1, 0, 0.5] from west face (Face B) of Starting Block ID 1 (blueprint step 3). Flush alignment; default orientation.) <ID 4: Small Wooden Block>\nPosition: [-1. , 0. , 0.5]\n(#4 Lower frame west extension to [-2, 0, 0.5] from west face (Face E) of block ID 4 (blueprint step 4). Flush alignment; default orientation.) <ID 5: Small Wooden Block>\nPosition: [-2. , 0. , 0.5]\n(#5 Front arm segment to [2, 1, 0.5] from north face (Face B) of block ID 3 (blueprint step 5). Flush alignment; default orientation.) <ID 6: Small Wooden Block>\nPosition: [2. ,1. ,0.5]\n(#6 Front arm segment to [2, 2, 0.5] from north face (Face E) of block ID 6 (blueprint step 6). Flush alignment; default orientation.) <ID 7: Small Wooden Block>\nPosition: [2. ,2. ,0.5]\n(#7 Front arm end to [2, 3, 0.5] from north face (Face E) of block ID 7 (blueprint step 7). Flush alignment; default orientation.) <ID 8: Small Wooden Block>\nPosition: [2. ,3. ,0.5]\n(#8 Front arm segment to [2, -1, 0.5] from south face (Face A) of block ID 3 (blueprint step 8). Flush alignment; default orientation.) <ID 9: Small Wooden Block>\nPosition: [ 2. ,-1. , 0.5]\n(#9 Front arm segment to [2, -2, 0.5] from south face (Face E) of block ID 9 (blueprint step 9). Flush alignment; default orientation.) <ID 10: Small Wooden Block>\nPosition: [ 2. ,-2. , 0.5]\n(#11 Rear arm segment to [-2, 1, 0.5] from north face (Face A) of block ID 5 (blueprint step 11). Flush alignment; default orientation.) <ID 11: Small Wooden Block>\nPosition: [-2. , 1. , 0.5]\n(#12 Rear arm segment to [-2, 2, 0.5] from north face (Face E) of block ID 11 (blueprint step 12). Flush alignment; default orientation.) <ID 12: Small Wooden Block>\nPosition: [-2. , 2. , 0.5]\n(#10 Front arm end to [2, -3, 0.5] from south face (Face E) of block ID 10 (blueprint step 10). Flush alignment; default orientation.) <ID 13: Small Wooden Block>\nPosition: [ 2. ,-3. , 0.5]\n(#13 Rear arm end to [-2, 3, 0.5] from north face (Face E) of block ID 12 (blueprint step 13). Flush alignment; default orientation.) <ID 14: Small Wooden Block>\nPosition: [-2. , 3. , 0.5]\n(#14 Rear arm segment to [-2, -1, 0.5] from south face (Face B) of block ID 5 (blueprint step 14). Flush alignment; default orientation.) <ID 15: Small Wooden Block>\nPosition: [-2. ,-1. , 0.5]\n(#15 Rear arm segment to [-2, -2, 0.5] from south face (Face E) of block ID 15 (blueprint step 15). Flush alignment; default orientation.) <ID 16: Small Wooden Block>\nPosition: [-2. ,-2. , 0.5]\n(#16 Rear arm end to [-2, -3, 0.5] from south face (Face E) of block ID 16 (blueprint step 16). Flush alignment; default orientation.) <ID 17: Small Wooden Block>\nPosition: [-2. ,-3. , 0.5]\n(#17 Central floor to [0, 0, 1.5] from top face (Face C) of Starting Block ID 1 (blueprint step 17). Flush alignment; default orientation.) <ID 18: Small Wooden Block>\nPosition: [0. ,0. ,1.5]\n(#18 Floor deck to [1, 0, 1.5] from east face (Face A) of block ID 18 (blueprint step 18). Flush alignment; default orientation.) <ID 19: Small Wooden Block>\nPosition: [1. ,0. ,1.5]\n(#19 Floor deck to [2, 0, 1.5] from east face (Face E) of block ID 19 (blueprint step 19). Flush alignment; default orientation; extending east row.) <ID 20: Small Wooden Block>\nPosition: [2. ,0. ,1.5]\n(#20 Floor deck to [-1, 0, 1.5] from west face (Face B) of block ID 18 (blueprint step 20). Flush alignment; default orientation.) <ID 21: Small Wooden Block>\nPosition: [-1. , 0. , 1.5]\n(#21 Floor deck to [-2, 0, 1.5] from west face (Face E) of block ID 21 (blueprint step 21). Flush alignment; default orientation.) <ID 22: Small Wooden Block>\nPosition: [-2. , 0. , 1.5]\n(#22 Floor deck north extension to [0, 1, 1.5] from north face (Face D) of block ID 18 (blueprint step 22). Flush alignment; default orientation.) <ID 23: Small Wooden Block>\nPosition: [0. ,1. ,1.5]\n(#23 Floor deck north extension to [0, 2, 1.5] from north face (Face E) of block ID 23 (blueprint step 23). Flush alignment; default orientation.) <ID 24: Small Wooden Block>\nPosition: [0. ,2. ,1.5]\n(#24 Floor deck north extension to [1, 1, 1.5] from north face (Face D) of block ID 19 (blueprint step 24). Flush alignment; default orientation.) <ID 25: Small Wooden Block>\nPosition: [1. ,1. ,1.5]\n(#25 Floor deck north extension to [1, 2, 1.5] from north face (Face E) of block ID 25 (blueprint step 25). Flush alignment; default orientation.) <ID 26: Small Wooden Block>\nPosition: [1. ,2. ,1.5]\n(#26 Floor deck north extension to [2, 1, 1.5] from north face (Face D) of block ID 20 (blueprint step 26). Flush alignment; default orientation.) <ID 27: Small Wooden Block>\nPosition: [2. ,1. ,1.5]\n(#27 Floor deck to [2, 2, 1.5] from north face (Face E) of block ID 27 (complete NE corner of 5x5 deck per blueprint step 27). Flush alignment; default orientation.) <ID 28: Small Wooden Block>\nPosition: [2. ,2. ,1.5]\n(#28 Floor deck north extension to [-1, 1, 1.5] from north face (Face D) of block ID 21 (blueprint step 28). Flush alignment; default orientation.) <ID 29: Small Wooden Block>\nPosition: [-1. , 1. , 1.5]\n(#29 Floor deck north extension to [-1, 2, 1.5] from north face (Face E) of block ID 29 (blueprint step 29). Flush alignment; default orientation.) <ID 30: Small Wooden Block>\nPosition: [-1. , 2. , 1.5]\n(#30 Floor deck north extension to [-2, 1, 1.5] from north face (Face D) of block ID 22 (blueprint step 30). Flush alignment; default orientation.) <ID 31: Small Wooden Block>\nPosition: [-2. , 1. , 1.5]\n(#31 Floor deck to [-2, 2, 1.5] from north face (Face E) of block ID 31 (complete NW corner of 5x5 deck per blueprint step 31). Flush alignment; default orientation.) <ID 32: Small Wooden Block>\nPosition: [-2. , 2. , 1.5]\n(#32 Floor deck south extension to [0, -1, 1.5] from south face (Face C) of block ID 18 (blueprint step 32). Flush alignment; default orientation.) <ID 33: Small Wooden Block>\nPosition: [ 0. ,-1. , 1.5]\n(#33 Floor deck south extension to [0, -2, 1.5] from south face (Face E) of block ID 33 (blueprint step 33). Flush alignment; default orientation.) <ID 34: Small Wooden Block>\nPosition: [ 0. ,-2. , 1.5]\n(#34 Floor deck south extension to [1, -1, 1.5] from south face (Face C) of block ID 19 (corresponds to blueprint step 34; using neighbor\u2019s south face to achieve intended coordinates). Flush alignment; default orientation.) <ID 35: Small Wooden Block>\nPosition: [ 1. ,-1. , 1.5]\n(#35 Floor deck south extension to [1, -2, 1.5] from south face (Face E) of block ID 35 (blueprint step 35). Flush alignment; default orientation.) <ID 36: Small Wooden Block>\nPosition: [ 1. ,-2. , 1.5]\n(#36 Floor deck south extension to [2, -1, 1.5] from south face (Face C) of block ID 20 (blueprint step 36). Flush alignment; default orientation.) <ID 37: Small Wooden Block>\nPosition: [ 2. ,-1. , 1.5]\n(#37 Floor deck south extension to [2, -2, 1.5] from south face (Face E) of block ID 37 (blueprint step 37). Flush alignment; default orientation.) <ID 38: Small Wooden Block>\nPosition: [ 2. ,-2. , 1.5]\n(#38 Floor deck south extension to [-1, -1, 1.5] from south face (Face C) of block ID 21 (blueprint step 38). Flush alignment; default orientation.) <ID 39: Small Wooden Block>\nPosition: [-1. ,-1. , 1.5]\n(#39 Floor deck south extension to [-1, -2, 1.5] from south face (Face E) of block ID 39 (blueprint step 39). Flush alignment; default orientation.) <ID 40: Small Wooden Block>\nPosition: [-1. ,-2. , 1.5]\n(#40 Floor deck south extension to [-2, -1, 1.5] from south face (Face C) of block ID 22 (blueprint step 40). Flush alignment; default orientation.) <ID 41: Small Wooden Block>\nPosition: [-2. ,-1. , 1.5]\n(#41 Floor deck to [-2, -2, 1.5] from south face (Face E) of block ID 41 (completes 5x5 floor deck per blueprint step 41). Flush alignment; default orientation.) <ID 42: Small Wooden Block>\nPosition: [-2. ,-2. , 1.5]\n(#42 North wall lower at [-1, 2.5, 1.5] from north face (Face E) of floor block ID 30 (outside perimeter; blueprint step 42). Flush alignment; default orientation.) <ID 43: Small Wooden Block>\nPosition: [-1. , 3. , 1.5]\n(#43 North wall upper at [-1, 3, 2.5] from top face (Face A) of lower north wall block ID 43 (blueprint step 43). Flush alignment; default orientation.) <ID 44: Small Wooden Block>\nPosition: [-1. , 3. , 2.5]\n(#44 North wall lower at [0, 3, 1.5] from north face (Face E) of floor block ID 24 (outside perimeter; blueprint step 44). Flush alignment; default orientation.) <ID 45: Small Wooden Block>\nPosition: [0. ,3. ,1.5]\n(#45 North wall upper at [0, 3, 2.5] from top face (Face C) of lower north wall block ID 45 (blueprint step 45). Flush alignment; default orientation.) <ID 46: Small Wooden Block>\nPosition: [0. ,3. ,2.5]\n(#54 East wall lower at [3, -1, 1.5] from east face (Face D) of floor block ID 37 (outside perimeter; blueprint step 54 adapted to grid placement). Flush alignment; default orientation.) <ID 47: Small Wooden Block>\nPosition: [ 3. ,-1. , 1.5]\n(#46 North wall lower at [1, 3, 1.5] from north face (Face E) of floor block ID 26 (outside perimeter; blueprint step 46). Flush alignment; default orientation.) <ID 48: Small Wooden Block>\nPosition: [1. ,3. ,1.5]\n(#47 North wall upper at [1, 3, 2.5] from top face of lower north wall block ID 48 (blueprint step 47 adapted outward). Flush alignment; default orientation.) <ID 49: Small Wooden Block>\nPosition: [1. ,3. ,2.5]\n(#66 Front-left Powered Wheel at +y end of front arm; attached to north face of block ID 8 at [2,3.5,0.5]. Vertical wheel with rotation axis along +y; intended forward rolling along +x. Control group: Left Drive (forward=+x, reverse=-x).) <ID 50: Powered Wheel>\nPosition: [2. ,3.5,0.5]\nRolling towards <West with 0.0\u00b0 pitch> with 0\u00b0 camber\n(#67 Front-right Powered Wheel at -y end of front arm; attached to south face of block ID 13 at [2,-3.5,0.5]. Vertical wheel with rotation axis along -y; intended forward rolling along +x. Control group: Right Drive (forward=+x, reverse=-x).) <ID 51: Powered Wheel>\nPosition: [ 2. ,-3.5, 0.5]\nRolling towards <East with 0.0\u00b0 pitch> with 0\u00b0 camber\n(#68 Rear-left Powered Wheel at +y end of rear arm; attached to north face of block ID 14 at [-2,3.5,0.5]. Vertical wheel with rotation axis along +y; intended forward rolling along +x. Control group: Left Drive (forward=+x, reverse=-x).) <ID 52: Powered Wheel>\nPosition: [-2. , 3.5, 0.5]\nRolling towards <West with 0.0\u00b0 pitch> with 0\u00b0 camber\n(#69 Rear-right Powered Wheel at -y end of rear arm; attached to south face of block ID 17 at [-2,-3.5,0.5]. Vertical wheel with rotation axis along -y; intended forward rolling along +x. Control group: Right Drive (forward=+x, reverse=-x).) <ID 53: Powered Wheel>\nPosition: [-2. ,-3.5, 0.5]\nRolling towards <East with 0.0\u00b0 pitch> with 0\u00b0 camber\n(#55 East wall upper at [3, -1, 2.5] from top face (Face B) of lower east wall block ID 47 (completes y=-1 east wall stack; blueprint step 55 adapted outward). Flush alignment; default orientation.) <ID 54: Small Wooden Block>\nPosition: [ 3. ,-1. , 2.5]\n(#48 South wall lower at [-1, -3, 1.5] from south face (Face E) of floor block ID 40 (outside perimeter; blueprint step 48 adapted outward). Flush alignment; default orientation.) <ID 55: Small Wooden Block>\nPosition: [-1. ,-3. , 1.5]\n(#49 South wall upper at [-1, -3, 2.5] from top face (Face A) of lower south wall block ID 55 (blueprint step 49 adapted outward). Flush alignment; default orientation.) <ID 56: Small Wooden Block>\nPosition: [-1. ,-3. , 2.5]\n(#56 East wall lower at [3, 0, 1.5] from east face (Face E) of floor block ID 20 (outside perimeter; blueprint step 56 adapted outward). Flush alignment; default orientation.) <ID 57: Small Wooden Block>\nPosition: [3. ,0. ,1.5]\n(#57 East wall upper at [3, 0, 2.5] from top face (Face B) of lower east wall block ID 57 (blueprint step 57 adapted outward). Flush alignment; default orientation.) <ID 58: Small Wooden Block>\nPosition: [3. ,0. ,2.5]\n(#50 South wall lower at [0, -3, 1.5] from south face (Face E) of floor block ID 34 (outside perimeter; blueprint step 50 adapted outward). Flush alignment; default orientation.) <ID 59: Small Wooden Block>\nPosition: [ 0. ,-3. , 1.5]\n(#51 South wall upper at [0, -3, 2.5] from top face (Face D) of lower south wall block ID 59 (blueprint step 51 adapted outward). Flush alignment; default orientation.) <ID 60: Small Wooden Block>\nPosition: [ 0. ,-3. , 2.5]\n(#52 South wall lower at [1, -3, 1.5] from south face (Face E) of floor block ID 36 (outside perimeter; blueprint step 52 adapted outward). Flush alignment; default orientation.) <ID 61: Small Wooden Block>\nPosition: [ 1. ,-3. , 1.5]\n(#53 South wall upper at [1, -3, 2.5] from top face of lower south wall block ID 61 (blueprint step 53 adapted outward). Flush alignment; default orientation.) <ID 62: Small Wooden Block>\nPosition: [ 1. ,-3. , 2.5]\n(#58 East wall lower at [3, 1, 1.5] from east face (Face C) of floor block ID 27 (outside perimeter; blueprint step 58 adapted outward). Flush alignment; default orientation.) <ID 63: Small Wooden Block>\nPosition: [3. ,1. ,1.5]\n(#59 East wall upper at [3, 1, 2.5] from top face (Face B) of lower east wall block ID 63 (completes east wall stack at y=+1; blueprint step 59 adapted outward). Flush alignment; default orientation.) <ID 64: Small Wooden Block>\nPosition: [3. ,1. ,2.5]\n(#60 West wall lower at [-3, -1, 1.5] from west face (Face D) of floor block ID 41 (outside perimeter; blueprint step 60 adapted outward). Flush alignment; default orientation.) <ID 65: Small Wooden Block>\nPosition: [-3. ,-1. , 1.5]\n(#61 West wall upper at [-3, -1, 2.5] from top face (Face A) of lower west wall block ID 65 (blueprint step 61 adapted outward). Flush alignment; default orientation.) <ID 66: Small Wooden Block>\nPosition: [-3. ,-1. , 2.5]\n(#62 West wall lower at [-3, 0, 1.5] from west face (Face E) of floor block ID 22 (outside perimeter; blueprint step 62 adapted outward). Flush alignment; default orientation.) <ID 67: Small Wooden Block>\nPosition: [-3. , 0. , 1.5]\n(#63 West wall upper at [-3, 0, 2.5] from top face (Face A) of lower west wall block ID 67 (blueprint step 63 adapted outward). Flush alignment; default orientation.) <ID 68: Small Wooden Block>\nPosition: [-3. , 0. , 2.5]\n(#64 West wall lower at [-3, 1, 1.5] from west face of floor block ID 31 (outside perimeter; blueprint step 64 adapted outward). Flush alignment; default orientation.) <ID 69: Small Wooden Block>\nPosition: [-3. , 1. , 1.5]\n(#65 West wall upper at [-3, 1, 2.5] from top face (Face A) of lower west wall block ID 69 (blueprint step 65 adapted outward). Flush alignment; default orientation.) <ID 70: Small Wooden Block>\nPosition: [-3. , 1. , 2.5]\n(#70 Brace linking floor corner [2,2,1.5] (Block ID 28 north face) to front-left arm end [2,3,0.5] (Block ID 8 south face). Purpose: rigid structural link to reduce bending under cargo load.) <ID 71: Brace>\nConnecting <ID 28: Small Wooden Block> at [2.  2.5 1.5] and <ID 8: Small Wooden Block> at [2.  2.5 0.5].\t\n(#71 Brace linking floor corner [2,-2,1.5] (Block ID 38 south face) to front-right arm end [2,-3,0.5] (Block ID 13 south face). Purpose: rigid structural link to reduce bending under cargo load.) <ID 72: Brace>\nConnecting <ID 38: Small Wooden Block> at [ 2.  -2.5  1.5] and <ID 13: Small Wooden Block> at [ 2.  -3.5  0.5].\t\n(#72 Brace linking floor corner [-2,2,1.5] (Block ID 32 north face) to rear-left arm end [-2,3,0.5] (Block ID 14 south face). Purpose: rigid structural link to reduce bending under cargo load.) <ID 73: Brace>\nConnecting <ID 32: Small Wooden Block> at [-2.   2.5  1.5] and <ID 14: Small Wooden Block> at [-2.   2.5  0.5].\t\n(#73 Brace linking floor corner [-2,-2,1.5] (Block ID 42 south face) to rear-right arm end [-2,-3,0.5] (Block ID 17 north face). Purpose: rigid structural link to reduce bending under cargo load.) <ID 74: Brace>\nConnecting <ID 42: Small Wooden Block> at [-2.  -2.5  1.5] and <ID 17: Small Wooden Block> at [-2.  -2.5  0.5].\t"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 74\n\nMachine Summary: Default Base Block (#0) - origin reference; lower frame center at z=0.5; supports vertical stack to floor at z=1.5 (top z=2.0)\n(#1 Lower frame east extension to [1, 0, 0.5] from east face of base block (#0 blueprint \u2194 ID 1). Flush alignment; default orientation.) <ID 2: Small Wooden Block>\nPosition: [1. ,0. ,0.5]\n(#2 Lower frame east extension to [2, 0, 0.5] from east face of block ID 2 (blueprint block #2). Flush alignment; default orientation.) <ID 3: Small Wooden Block>\nPosition: [2. ,0. ,0.5]\n(#3 Lower frame west extension to [-1, 0, 0.5] from west face (Face B) of Starting Block ID 1 (blueprint step 3). Flush alignment; default orientation.) <ID 4: Small Wooden Block>\nPosition: [-1. , 0. , 0.5]\n(#4 Lower frame west extension to [-2, 0, 0.5] from west face (Face E) of block ID 4 (blueprint step 4). Flush alignment; default orientation.) <ID 5: Small Wooden Block>\nPosition: [-2. , 0. , 0.5]\n(#5 Front arm segment to [2, 1, 0.5] from north face (Face B) of block ID 3 (blueprint step 5). Flush alignment; default orientation.) <ID 6: Small Wooden Block>\nPosition: [2. ,1. ,0.5]\n(#6 Front arm segment to [2, 2, 0.5] from north face (Face E) of block ID 6 (blueprint step 6). Flush alignment; default orientation.) <ID 7: Small Wooden Block>\nPosition: [2. ,2. ,0.5]\n(#7 Front arm end to [2, 3, 0.5] from north face (Face E) of block ID 7 (blueprint step 7). Flush alignment; default orientation.) <ID 8: Small Wooden Block>\nPosition: [2. ,3. ,0.5]\n(#8 Front arm segment to [2, -1, 0.5] from south face (Face A) of block ID 3 (blueprint step 8). Flush alignment; default orientation.) <ID 9: Small Wooden Block>\nPosition: [ 2. ,-1. , 0.5]\n(#9 Front arm segment to [2, -2, 0.5] from south face (Face E) of block ID 9 (blueprint step 9). Flush alignment; default orientation.) <ID 10: Small Wooden Block>\nPosition: [ 2. ,-2. , 0.5]\n(#11 Rear arm segment to [-2, 1, 0.5] from north face (Face A) of block ID 5 (blueprint step 11). Flush alignment; default orientation.) <ID 11: Small Wooden Block>\nPosition: [-2. , 1. , 0.5]\n(#12 Rear arm segment to [-2, 2, 0.5] from north face (Face E) of block ID 11 (blueprint step 12). Flush alignment; default orientation.) <ID 12: Small Wooden Block>\nPosition: [-2. , 2. , 0.5]\n(#10 Front arm end to [2, -3, 0.5] from south face (Face E) of block ID 10 (blueprint step 10). Flush alignment; default orientation.) <ID 13: Small Wooden Block>\nPosition: [ 2. ,-3. , 0.5]\n(#13 Rear arm end to [-2, 3, 0.5] from north face (Face E) of block ID 12 (blueprint step 13). Flush alignment; default orientation.) <ID 14: Small Wooden Block>\nPosition: [-2. , 3. , 0.5]\n(#14 Rear arm segment to [-2, -1, 0.5] from south face (Face B) of block ID 5 (blueprint step 14). Flush alignment; default orientation.) <ID 15: Small Wooden Block>\nPosition: [-2. ,-1. , 0.5]\n(#15 Rear arm segment to [-2, -2, 0.5] from south face (Face E) of block ID 15 (blueprint step 15). Flush alignment; default orientation.) <ID 16: Small Wooden Block>\nPosition: [-2. ,-2. , 0.5]\n(#16 Rear arm end to [-2, -3, 0.5] from south face (Face E) of block ID 16 (blueprint step 16). Flush alignment; default orientation.) <ID 17: Small Wooden Block>\nPosition: [-2. ,-3. , 0.5]\n(#17 Central floor to [0, 0, 1.5] from top face (Face C) of Starting Block ID 1 (blueprint step 17). Flush alignment; default orientation.) <ID 18: Small Wooden Block>\nPosition: [0. ,0. ,1.5]\n(#18 Floor deck to [1, 0, 1.5] from east face (Face A) of block ID 18 (blueprint step 18). Flush alignment; default orientation.) <ID 19: Small Wooden Block>\nPosition: [1. ,0. ,1.5]\n(#19 Floor deck to [2, 0, 1.5] from east face (Face E) of block ID 19 (blueprint step 19). Flush alignment; default orientation; extending east row.) <ID 20: Small Wooden Block>\nPosition: [2. ,0. ,1.5]\n(#20 Floor deck to [-1, 0, 1.5] from west face (Face B) of block ID 18 (blueprint step 20). Flush alignment; default orientation.) <ID 21: Small Wooden Block>\nPosition: [-1. , 0. , 1.5]\n(#21 Floor deck to [-2, 0, 1.5] from west face (Face E) of block ID 21 (blueprint step 21). Flush alignment; default orientation.) <ID 22: Small Wooden Block>\nPosition: [-2. , 0. , 1.5]\n(#22 Floor deck north extension to [0, 1, 1.5] from north face (Face D) of block ID 18 (blueprint step 22). Flush alignment; default orientation.) <ID 23: Small Wooden Block>\nPosition: [0. ,1. ,1.5]\n(#23 Floor deck north extension to [0, 2, 1.5] from north face (Face E) of block ID 23 (blueprint step 23). Flush alignment; default orientation.) <ID 24: Small Wooden Block>\nPosition: [0. ,2. ,1.5]\n(#24 Floor deck north extension to [1, 1, 1.5] from north face (Face D) of block ID 19 (blueprint step 24). Flush alignment; default orientation.) <ID 25: Small Wooden Block>\nPosition: [1. ,1. ,1.5]\n(#25 Floor deck north extension to [1, 2, 1.5] from north face (Face E) of block ID 25 (blueprint step 25). Flush alignment; default orientation.) <ID 26: Small Wooden Block>\nPosition: [1. ,2. ,1.5]\n(#26 Floor deck north extension to [2, 1, 1.5] from north face (Face D) of block ID 20 (blueprint step 26). Flush alignment; default orientation.) <ID 27: Small Wooden Block>\nPosition: [2. ,1. ,1.5]\n(#27 Floor deck to [2, 2, 1.5] from north face (Face E) of block ID 27 (complete NE corner of 5x5 deck per blueprint step 27). Flush alignment; default orientation.) <ID 28: Small Wooden Block>\nPosition: [2. ,2. ,1.5]\n(#28 Floor deck north extension to [-1, 1, 1.5] from north face (Face D) of block ID 21 (blueprint step 28). Flush alignment; default orientation.) <ID 29: Small Wooden Block>\nPosition: [-1. , 1. , 1.5]\n(#29 Floor deck north extension to [-1, 2, 1.5] from north face (Face E) of block ID 29 (blueprint step 29). Flush alignment; default orientation.) <ID 30: Small Wooden Block>\nPosition: [-1. , 2. , 1.5]\n(#30 Floor deck north extension to [-2, 1, 1.5] from north face (Face D) of block ID 22 (blueprint step 30). Flush alignment; default orientation.) <ID 31: Small Wooden Block>\nPosition: [-2. , 1. , 1.5]\n(#31 Floor deck to [-2, 2, 1.5] from north face (Face E) of block ID 31 (complete NW corner of 5x5 deck per blueprint step 31). Flush alignment; default orientation.) <ID 32: Small Wooden Block>\nPosition: [-2. , 2. , 1.5]\n(#32 Floor deck south extension to [0, -1, 1.5] from south face (Face C) of block ID 18 (blueprint step 32). Flush alignment; default orientation.) <ID 33: Small Wooden Block>\nPosition: [ 0. ,-1. , 1.5]\n(#33 Floor deck south extension to [0, -2, 1.5] from south face (Face E) of block ID 33 (blueprint step 33). Flush alignment; default orientation.) <ID 34: Small Wooden Block>\nPosition: [ 0. ,-2. , 1.5]\n(#34 Floor deck south extension to [1, -1, 1.5] from south face (Face C) of block ID 19 (corresponds to blueprint step 34; using neighbor\u2019s south face to achieve intended coordinates). Flush alignment; default orientation.) <ID 35: Small Wooden Block>\nPosition: [ 1. ,-1. , 1.5]\n(#35 Floor deck south extension to [1, -2, 1.5] from south face (Face E) of block ID 35 (blueprint step 35). Flush alignment; default orientation.) <ID 36: Small Wooden Block>\nPosition: [ 1. ,-2. , 1.5]\n(#36 Floor deck south extension to [2, -1, 1.5] from south face (Face C) of block ID 20 (blueprint step 36). Flush alignment; default orientation.) <ID 37: Small Wooden Block>\nPosition: [ 2. ,-1. , 1.5]\n(#37 Floor deck south extension to [2, -2, 1.5] from south face (Face E) of block ID 37 (blueprint step 37). Flush alignment; default orientation.) <ID 38: Small Wooden Block>\nPosition: [ 2. ,-2. , 1.5]\n(#38 Floor deck south extension to [-1, -1, 1.5] from south face (Face C) of block ID 21 (blueprint step 38). Flush alignment; default orientation.) <ID 39: Small Wooden Block>\nPosition: [-1. ,-1. , 1.5]\n(#39 Floor deck south extension to [-1, -2, 1.5] from south face (Face E) of block ID 39 (blueprint step 39). Flush alignment; default orientation.) <ID 40: Small Wooden Block>\nPosition: [-1. ,-2. , 1.5]\n(#40 Floor deck south extension to [-2, -1, 1.5] from south face (Face C) of block ID 22 (blueprint step 40). Flush alignment; default orientation.) <ID 41: Small Wooden Block>\nPosition: [-2. ,-1. , 1.5]\n(#41 Floor deck to [-2, -2, 1.5] from south face (Face E) of block ID 41 (completes 5x5 floor deck per blueprint step 41). Flush alignment; default orientation.) <ID 42: Small Wooden Block>\nPosition: [-2. ,-2. , 1.5]\n(#42 North wall lower at [-1, 2.5, 1.5] from north face (Face E) of floor block ID 30 (outside perimeter; blueprint step 42). Flush alignment; default orientation.) <ID 43: Small Wooden Block>\nPosition: [-1. , 3. , 1.5]\n(#43 North wall upper at [-1, 3, 2.5] from top face (Face A) of lower north wall block ID 43 (blueprint step 43). Flush alignment; default orientation.) <ID 44: Small Wooden Block>\nPosition: [-1. , 3. , 2.5]\n(#44 North wall lower at [0, 3, 1.5] from north face (Face E) of floor block ID 24 (outside perimeter; blueprint step 44). Flush alignment; default orientation.) <ID 45: Small Wooden Block>\nPosition: [0. ,3. ,1.5]\n(#45 North wall upper at [0, 3, 2.5] from top face (Face C) of lower north wall block ID 45 (blueprint step 45). Flush alignment; default orientation.) <ID 46: Small Wooden Block>\nPosition: [0. ,3. ,2.5]\n(#54 East wall lower at [3, -1, 1.5] from east face (Face D) of floor block ID 37 (outside perimeter; blueprint step 54 adapted to grid placement). Flush alignment; default orientation.) <ID 47: Small Wooden Block>\nPosition: [ 3. ,-1. , 1.5]\n(#46 North wall lower at [1, 3, 1.5] from north face (Face E) of floor block ID 26 (outside perimeter; blueprint step 46). Flush alignment; default orientation.) <ID 48: Small Wooden Block>\nPosition: [1. ,3. ,1.5]\n(#47 North wall upper at [1, 3, 2.5] from top face of lower north wall block ID 48 (blueprint step 47 adapted outward). Flush alignment; default orientation.) <ID 49: Small Wooden Block>\nPosition: [1. ,3. ,2.5]\n(#66 Front-left Powered Wheel at +y end of front arm; attached to north face of block ID 8 at [2,3.5,0.5]. Vertical wheel with rotation axis along +y; intended forward rolling along +x. Control group: Left Drive (forward=+x, reverse=-x).) <ID 50: Powered Wheel>\nPosition: [2. ,3.5,0.5]\nRolling towards <West with 0.0\u00b0 pitch> with 0\u00b0 camber\n(#67 Front-right Powered Wheel at -y end of front arm; attached to south face of block ID 13 at [2,-3.5,0.5]. Vertical wheel with rotation axis along -y; intended forward rolling along +x. Control group: Right Drive (forward=+x, reverse=-x).) <ID 51: Powered Wheel>\nPosition: [ 2. ,-3.5, 0.5]\nRolling towards <East with 0.0\u00b0 pitch> with 0\u00b0 camber\n(#68 Rear-left Powered Wheel at +y end of rear arm; attached to north face of block ID 14 at [-2,3.5,0.5]. Vertical wheel with rotation axis along +y; intended forward rolling along +x. Control group: Left Drive (forward=+x, reverse=-x).) <ID 52: Powered Wheel>\nPosition: [-2. , 3.5, 0.5]\nRolling towards <West with 0.0\u00b0 pitch> with 0\u00b0 camber\n(#69 Rear-right Powered Wheel at -y end of rear arm; attached to south face of block ID 17 at [-2,-3.5,0.5]. Vertical wheel with rotation axis along -y; intended forward rolling along +x. Control group: Right Drive (forward=+x, reverse=-x).) <ID 53: Powered Wheel>\nPosition: [-2. ,-3.5, 0.5]\nRolling towards <East with 0.0\u00b0 pitch> with 0\u00b0 camber\n(#55 East wall upper at [3, -1, 2.5] from top face (Face B) of lower east wall block ID 47 (completes y=-1 east wall stack; blueprint step 55 adapted outward). Flush alignment; default orientation.) <ID 54: Small Wooden Block>\nPosition: [ 3. ,-1. , 2.5]\n(#48 South wall lower at [-1, -3, 1.5] from south face (Face E) of floor block ID 40 (outside perimeter; blueprint step 48 adapted outward). Flush alignment; default orientation.) <ID 55: Small Wooden Block>\nPosition: [-1. ,-3. , 1.5]\n(#49 South wall upper at [-1, -3, 2.5] from top face (Face A) of lower south wall block ID 55 (blueprint step 49 adapted outward). Flush alignment; default orientation.) <ID 56: Small Wooden Block>\nPosition: [-1. ,-3. , 2.5]\n(#56 East wall lower at [3, 0, 1.5] from east face (Face E) of floor block ID 20 (outside perimeter; blueprint step 56 adapted outward). Flush alignment; default orientation.) <ID 57: Small Wooden Block>\nPosition: [3. ,0. ,1.5]\n(#57 East wall upper at [3, 0, 2.5] from top face (Face B) of lower east wall block ID 57 (blueprint step 57 adapted outward). Flush alignment; default orientation.) <ID 58: Small Wooden Block>\nPosition: [3. ,0. ,2.5]\n(#50 South wall lower at [0, -3, 1.5] from south face (Face E) of floor block ID 34 (outside perimeter; blueprint step 50 adapted outward). Flush alignment; default orientation.) <ID 59: Small Wooden Block>\nPosition: [ 0. ,-3. , 1.5]\n(#51 South wall upper at [0, -3, 2.5] from top face (Face D) of lower south wall block ID 59 (blueprint step 51 adapted outward). Flush alignment; default orientation.) <ID 60: Small Wooden Block>\nPosition: [ 0. ,-3. , 2.5]\n(#52 South wall lower at [1, -3, 1.5] from south face (Face E) of floor block ID 36 (outside perimeter; blueprint step 52 adapted outward). Flush alignment; default orientation.) <ID 61: Small Wooden Block>\nPosition: [ 1. ,-3. , 1.5]\n(#53 South wall upper at [1, -3, 2.5] from top face of lower south wall block ID 61 (blueprint step 53 adapted outward). Flush alignment; default orientation.) <ID 62: Small Wooden Block>\nPosition: [ 1. ,-3. , 2.5]\n(#58 East wall lower at [3, 1, 1.5] from east face (Face C) of floor block ID 27 (outside perimeter; blueprint step 58 adapted outward). Flush alignment; default orientation.) <ID 63: Small Wooden Block>\nPosition: [3. ,1. ,1.5]\n(#59 East wall upper at [3, 1, 2.5] from top face (Face B) of lower east wall block ID 63 (completes east wall stack at y=+1; blueprint step 59 adapted outward). Flush alignment; default orientation.) <ID 64: Small Wooden Block>\nPosition: [3. ,1. ,2.5]\n(#60 West wall lower at [-3, -1, 1.5] from west face (Face D) of floor block ID 41 (outside perimeter; blueprint step 60 adapted outward). Flush alignment; default orientation.) <ID 65: Small Wooden Block>\nPosition: [-3. ,-1. , 1.5]\n(#61 West wall upper at [-3, -1, 2.5] from top face (Face A) of lower west wall block ID 65 (blueprint step 61 adapted outward). Flush alignment; default orientation.) <ID 66: Small Wooden Block>\nPosition: [-3. ,-1. , 2.5]\n(#62 West wall lower at [-3, 0, 1.5] from west face (Face E) of floor block ID 22 (outside perimeter; blueprint step 62 adapted outward). Flush alignment; default orientation.) <ID 67: Small Wooden Block>\nPosition: [-3. , 0. , 1.5]\n(#63 West wall upper at [-3, 0, 2.5] from top face (Face A) of lower west wall block ID 67 (blueprint step 63 adapted outward). Flush alignment; default orientation.) <ID 68: Small Wooden Block>\nPosition: [-3. , 0. , 2.5]\n(#64 West wall lower at [-3, 1, 1.5] from west face of floor block ID 31 (outside perimeter; blueprint step 64 adapted outward). Flush alignment; default orientation.) <ID 69: Small Wooden Block>\nPosition: [-3. , 1. , 1.5]\n(#65 West wall upper at [-3, 1, 2.5] from top face (Face A) of lower west wall block ID 69 (blueprint step 65 adapted outward). Flush alignment; default orientation.) <ID 70: Small Wooden Block>\nPosition: [-3. , 1. , 2.5]\n(#70 Brace linking floor corner [2,2,1.5] (Block ID 28 north face) to front-left arm end [2,3,0.5] (Block ID 8 south face). Purpose: rigid structural link to reduce bending under cargo load.) <ID 71: Brace>\nConnecting <ID 28: Small Wooden Block> at [2.  2.5 1.5] and <ID 8: Small Wooden Block> at [2.  2.5 0.5].\t\n(#71 Brace linking floor corner [2,-2,1.5] (Block ID 38 south face) to front-right arm end [2,-3,0.5] (Block ID 13 south face). Purpose: rigid structural link to reduce bending under cargo load.) <ID 72: Brace>\nConnecting <ID 38: Small Wooden Block> at [ 2.  -2.5  1.5] and <ID 13: Small Wooden Block> at [ 2.  -3.5  0.5].\t\n(#72 Brace linking floor corner [-2,2,1.5] (Block ID 32 north face) to rear-left arm end [-2,3,0.5] (Block ID 14 south face). Purpose: rigid structural link to reduce bending under cargo load.) <ID 73: Brace>\nConnecting <ID 32: Small Wooden Block> at [-2.   2.5  1.5] and <ID 14: Small Wooden Block> at [-2.   2.5  0.5].\t\n(#73 Brace linking floor corner [-2,-2,1.5] (Block ID 42 south face) to rear-right arm end [-2,-3,0.5] (Block ID 17 north face). Purpose: rigid structural link to reduce bending under cargo load.) <ID 74: Brace>\nConnecting <ID 42: Small Wooden Block> at [-2.  -2.5  1.5] and <ID 17: Small Wooden Block> at [-2.  -2.5  0.5].\t\n(The starting block) <ID 1: Starting Block>\nPosition: [0. ,0. ,0.5]"
+  }
+]

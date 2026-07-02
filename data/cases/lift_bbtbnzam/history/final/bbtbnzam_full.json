@@ -1,0 +1,564 @@
+[
+  {
+    "op": "add_machine",
+    "params": {
+      "machine_id": "iw1l6scg",
+      "init_shift": null,
+      "init_rotation": [
+        90.0,
+        0.0,
+        0.0
+      ]
+    },
+    "result": "You have successfully added sub-structure A using machine iw1l6scg\nExisting Blocks: 17\nExisting Machines: 1\nExisting Blocks: 17\n(The starting block) <ID A_1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: F, Face center: [-0.5, -0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "add_machine",
+    "params": {
+      "machine_id": "iw1l6scg",
+      "init_shift": null,
+      "init_rotation": null
+    },
+    "result": "You have successfully added sub-structure A using machine iw1l6scg\nExisting Blocks: 17\nExisting Machines: 1\nExisting Blocks: 17\n(The starting block) <ID A_1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "attach_block_to",
+      "message": "Base block 8 not found, please try again."
+    }
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 8,
+      "face": "E",
+      "new_block": "Water Cannon",
+      "note": "East Engine Water Cannon mounted on Block B North face; required orientation: point straight down (-z); shared Fire control; clears ground/support; inlet positioned for torch heating from above"
+    },
+    "result": "Base block 8 not found, please try again."
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 17\n\nMachine Summary: None\n(The starting block) <ID A_1: Starting Block>\nPosition: [0.,0.,0.]\n(Chassis Block C (lower brace plane; keep east/west faces clear)) <ID A_2: Small Wooden Block>\nPosition: [0.,0.,1.]\n(Chassis Block D (upper brace plane; keep east/west faces clear)) <ID A_3: Small Wooden Block>\nPosition: [0.,0.,2.]\n(East Engine Support Column Segment (E0), west face mated to ID 1 Face A) <ID A_4: Small Wooden Block>\nPosition: [1.,0.,0.]\n(East Engine Support Column Segment (E1), west face mated to ID 4 Face E) <ID A_5: Small Wooden Block>\nPosition: [2.,0.,0.]\n(East Engine Support Column Segment (E2), west face mated to ID 5 Face E; base for engine stack) <ID A_6: Small Wooden Block>\nPosition: [3.,0.,0.]\n(East Engine Block A (lower) at [3.0, 0.0, 1.0]; west face reserved for lower east brace) <ID A_7: Small Wooden Block>\nPosition: [3.,0.,1.]\n(East Engine Block B (upper) at [3.0, 0.0, 2.0]; west face reserved for upper east brace) <ID A_8: Small Wooden Block>\nPosition: [3.,0.,2.]\n(East lower brace linking East Engine Block A (ID 7 west face) to Chassis Block C (ID 2 east face); solid hinge/brace between endpoints [2.5, 0.0, 1.0] (engine A west face center) and [0.5, 0.0, 1.0] (Block C east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0.) <ID A_9: Brace>\nConnecting <ID 2: Small Wooden Block> at [5.00000000e-01 1.11022302e-16 1.00000000e+00] and <ID 7: Small Wooden Block> at [2.50000000e+00 4.71844785e-16 1.00000000e+00].\t\n(East upper brace linking East Engine Block B (ID 8 west face) to Chassis Block D (ID 3 east face); solid hinge/brace between endpoints [2.5, 0.0, 2.0] (engine B west face center) and [0.5, 0.0, 2.0] (Block D east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0.) <ID A_10: Brace>\nConnecting <ID 3: Small Wooden Block> at [5.00000000e-01 3.33066907e-16 2.00000000e+00] and <ID 8: Small Wooden Block> at [2.50000000e+00 4.99600361e-16 2.00000000e+00].\t\n(West Engine Support Column Segment (W0), east face mated to ID 1 Face B) <ID A_11: Small Wooden Block>\nPosition: [-1., 0., 0.]\n(West Engine Support Column Segment (W1), east face mated to ID 11 Face E) <ID A_12: Small Wooden Block>\nPosition: [-2., 0., 0.]\n(West Engine Support Column Segment (W2), east face mated to ID 12 Face E; base for engine stack) <ID A_13: Small Wooden Block>\nPosition: [-3., 0., 0.]\n(West Engine Block A (lower) at [-3.0, 0.0, 1.0]; east face reserved for lower west brace) <ID A_14: Small Wooden Block>\nPosition: [-3., 0., 1.]\n(West Engine Block B (upper) at [-3.0, 0.0, 2.0]; east face reserved for upper west brace) <ID A_15: Small Wooden Block>\nPosition: [-3., 0., 2.]\n(West lower brace linking West Engine Block A (ID 14 east face) to Chassis Block C (ID 2 west face); solid hinge/brace between endpoints [-2.5, 0.0, 1.0] (engine A east face center) and [-0.5, 0.0, 1.0] (Block C west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0.) <ID A_16: Brace>\nConnecting <ID 2: Small Wooden Block> at [-5.00000000e-01  1.11022302e-16  1.00000000e+00] and <ID 14: Small Wooden Block> at [-2.50000000e+00  4.71844785e-16  1.00000000e+00].\t\n(West upper brace linking West Engine Block B (ID 15 east face) to Chassis Block D (ID 3 west face); solid hinge/brace between endpoints [-2.5, 0.0, 2.0] (engine B east face center) and [-0.5, 0.0, 2.0] (Block D west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0.) <ID A_17: Brace>\nConnecting <ID 3: Small Wooden Block> at [-5.00000000e-01  3.33066907e-16  2.00000000e+00] and <ID 15: Small Wooden Block> at [-2.50000000e+00  4.99600361e-16  2.00000000e+00].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_8",
+      "face": "E",
+      "new_block": "Water Cannon",
+      "note": "East Engine Water Cannon on Block B (ID A_8) North face; orientation straight down (-z); shared Fire control; outlet kept safely above ground; inlet positioned for torch heating from above"
+    },
+    "result": "You have successfully added <ID 1: Water Cannon>.\nExisting Blocks: 18\n(East Engine Water Cannon on Block B (ID A_8) North face; orientation straight down (-z); shared Fire control; outlet kept safely above ground; inlet positioned for torch heating from above) <ID 1: Water Cannon>\nPosition: [3.,0.,3.]\nPointing at <East with 0.0\u00b0 pitch>\nInlet is at [2.25, 0.00, 3.00], outlet is at [4.00, 0.00, 3.00], sprays towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 1
+    },
+    "result": "You have successfully removed <ID 1: Water Cannon>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_8",
+      "face": "E",
+      "new_block": "Water Cannon",
+      "note": "East Engine Water Cannon mounted to A_8 North face; required orientation: straight down (-z); shared Fire control; expected center [3.0, 1.0, 2.0], inlet [3.0, 1.0, 2.75], outlet [3.0, 1.0, 1.0]"
+    },
+    "result": "You have successfully added <ID 2: Water Cannon>.\nExisting Blocks: 18\n(East Engine Water Cannon mounted to A_8 North face; required orientation: straight down (-z); shared Fire control; expected center [3.0, 1.0, 2.0], inlet [3.0, 1.0, 2.75], outlet [3.0, 1.0, 1.0]) <ID 2: Water Cannon>\nPosition: [3.,0.,3.]\nPointing at <East with 0.0\u00b0 pitch>\nInlet is at [2.25, 0.00, 3.00], outlet is at [4.00, 0.00, 3.00], sprays towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 2
+    },
+    "result": "You have successfully removed <ID 2: Water Cannon>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_8",
+      "face": "D",
+      "new_block": "Water Cannon",
+      "note": "East Engine Water Cannon mounted to the bottom (z\u2212) face of A_8; orientation straight down (\u2212z); shared Fire control; expected center [3.0, 0.0, 1.0], inlet [3.0, 0.0, 1.75], outlet [3.0, 0.0, 0.0]"
+    },
+    "result": "You have successfully added <ID 3: Water Cannon>.\nExisting Blocks: 18\n(East Engine Water Cannon mounted to the bottom (z\u2212) face of A_8; orientation straight down (\u2212z); shared Fire control; expected center [3.0, 0.0, 1.0], inlet [3.0, 0.0, 1.75], outlet [3.0, 0.0, 0.0]) <ID 3: Water Cannon>\nPosition: [4.,0.,2.]\nPointing at <straight down>\nInlet is at [4.00, 0.00, 2.75], outlet is at [4.00, 0.00, 1.00], sprays towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_8",
+      "face": "B",
+      "new_block": "Torch",
+      "note": "East engine Torch on A_8 East face; required orientation: straight up (+z) to heat Water Cannon inlet. Expected body center [4.0, 0.0, 2.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3), overlapping inlet at [4.0, 0.0, 2.75]."
+    },
+    "result": "You have successfully added <ID 4: Torch>.\nExisting Blocks: 19\n(East engine Torch on A_8 East face; required orientation: straight up (+z) to heat Water Cannon inlet. Expected body center [4.0, 0.0, 2.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3), overlapping inlet at [4.0, 0.0, 2.75].) <ID 4: Torch>\nPosition: [3.,1.,2.]\nPointing at <West with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [2.00, 1.00, 2.00]"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 4
+    },
+    "result": "You have successfully removed <ID 4: Torch>."
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "attach_block_to",
+      "message": "Face D of base block A_8 Small Wooden Block is already occupied, please try again."
+    }
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_8",
+      "face": "D",
+      "new_block": "Torch",
+      "note": "East engine Torch mounted on A_8 East face; intended orientation: straight up (+z) to heat Water Cannon inlet. Target body center [4.0, 0.0, 2.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3), overlapping inlet at [4.0, 0.0, 2.75]."
+    },
+    "result": "Face D of base block A_8 Small Wooden Block is already occupied, please try again."
+  },
+  {
+    "op": "get_block_details",
+    "params": {
+      "block_id": "A_8"
+    },
+    "result": "(East Engine Block B (upper) at [3.0, 0.0, 2.0]; west face reserved for upper east brace) <ID A_8: Small Wooden Block>\nPosition: [3.,0.,2.]\nAttachable Faces:\nFace label: A, Face center: [ 3. , -0.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [3. , 0.5, 2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [2.5, 0. , 2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [3. , 0. , 2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_8",
+      "face": "E",
+      "new_block": "Torch",
+      "note": "East Engine Torch mounted on A_8 top (z+) face; intended orientation: East (+x) to heat Water Cannon inlet at [4.0, 0.0, 2.75]. Expected body center [3.0, 0.0, 3.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3)."
+    },
+    "result": "You have successfully added <ID 5: Torch>.\nExisting Blocks: 19\n(East Engine Torch mounted on A_8 top (z+) face; intended orientation: East (+x) to heat Water Cannon inlet at [4.0, 0.0, 2.75]. Expected body center [3.0, 0.0, 3.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3).) <ID 5: Torch>\nPosition: [3.,0.,3.]\nPointing at <West with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [2.00, 0.00, 3.00]"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 5
+    },
+    "result": "You have successfully removed <ID 5: Torch>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_8",
+      "face": "E",
+      "new_block": "Torch",
+      "note": "Torch attached to top (z+) face of East Engine Block B (ID A_8); intended orientation East (+x) to heat Water Cannon inlet at [4.0, 0.0, 2.75]. Expected body center [3.0, 0.0, 3.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3). If orientation is not East by default, we will twist the torch in the next step."
+    },
+    "result": "You have successfully added <ID 6: Torch>.\nExisting Blocks: 19\n(Torch attached to top (z+) face of East Engine Block B (ID A_8); intended orientation East (+x) to heat Water Cannon inlet at [4.0, 0.0, 2.75]. Expected body center [3.0, 0.0, 3.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3). If orientation is not East by default, we will twist the torch in the next step.) <ID 6: Torch>\nPosition: [3.,0.,3.]\nPointing at <West with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [2.00, 0.00, 3.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 6,
+      "angle": 180.0
+    },
+    "result": "The block 6 <Torch> is twisted by 180.0 degrees. \n (Torch attached to top (z+) face of East Engine Block B (ID A_8); intended orientation East (+x) to heat Water Cannon inlet at [4.0, 0.0, 2.75]. Expected body center [3.0, 0.0, 3.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3). If orientation is not East by default, we will twist the torch in the next step.) <ID 6: Torch>\nPosition: [3.,0.,3.]\nPointing at <East with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [4.00, 0.00, 3.00]"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_15",
+      "face": "C",
+      "new_block": "Water Cannon",
+      "note": "West Engine Water Cannon mounted on Block B (ID A_15) West face; required orientation: straight down (\u2212z); shared Fire control; expected center [\u22124.0, 0.0, 2.0], inlet [\u22124.0, 0.0, 2.75], outlet [\u22124.0, 0.0, 1.0]"
+    },
+    "result": "You have successfully added <ID 7: Water Cannon>.\nExisting Blocks: 20\n(West Engine Water Cannon mounted on Block B (ID A_15) West face; required orientation: straight down (\u2212z); shared Fire control; expected center [\u22124.0, 0.0, 2.0], inlet [\u22124.0, 0.0, 2.75], outlet [\u22124.0, 0.0, 1.0]) <ID 7: Water Cannon>\nPosition: [-2., 0., 2.]\nPointing at <straight up>\nInlet is at [-2.00, 0.00, 1.25], outlet is at [-2.00, 0.00, 3.00], sprays towards <straight up>"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 7
+    },
+    "result": "You have successfully removed <ID 7: Water Cannon>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_15",
+      "face": "D",
+      "new_block": "Water Cannon",
+      "note": "West Engine Water Cannon mounted to the bottom (z\u2212) face of A_15; orientation straight down (\u2212z); shared Fire control; expected center [\u22123.0, 0.0, 1.0], inlet [\u22123.0, 0.0, 1.75], outlet [\u22123.0, 0.0, 0.0]"
+    },
+    "result": "You have successfully added <ID 8: Water Cannon>.\nExisting Blocks: 20\n(West Engine Water Cannon mounted to the bottom (z\u2212) face of A_15; orientation straight down (\u2212z); shared Fire control; expected center [\u22123.0, 0.0, 1.0], inlet [\u22123.0, 0.0, 1.75], outlet [\u22123.0, 0.0, 0.0]) <ID 8: Water Cannon>\nPosition: [-4., 0., 2.]\nPointing at <straight down>\nInlet is at [-4.00, 0.00, 2.75], outlet is at [-4.00, 0.00, 1.00], sprays towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_15",
+      "face": "E",
+      "new_block": "Torch",
+      "note": "West Engine Torch mounted on A_15 top (z+) face; intended orientation West (\u2212x) to heat Water Cannon inlet at [\u22124.0, 0.0, 2.75]. Expected body center [\u22123.0, 0.0, 3.0], heating sphere center [\u22124.0, 0.0, 3.0] (radius 0.3)."
+    },
+    "result": "You have successfully added <ID 9: Torch>.\nExisting Blocks: 21\n(West Engine Torch mounted on A_15 top (z+) face; intended orientation West (\u2212x) to heat Water Cannon inlet at [\u22124.0, 0.0, 2.75]. Expected body center [\u22123.0, 0.0, 3.0], heating sphere center [\u22124.0, 0.0, 3.0] (radius 0.3).) <ID 9: Torch>\nPosition: [-3., 0., 3.]\nPointing at <East with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-2.00, 0.00, 3.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 9,
+      "angle": 180.0
+    },
+    "result": "The block 9 <Torch> is twisted by 180.0 degrees. \n (West Engine Torch mounted on A_15 top (z+) face; intended orientation West (\u2212x) to heat Water Cannon inlet at [\u22124.0, 0.0, 2.75]. Expected body center [\u22123.0, 0.0, 3.0], heating sphere center [\u22124.0, 0.0, 3.0] (radius 0.3).) <ID 9: Torch>\nPosition: [-3., 0., 3.]\nPointing at <West with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-4.00, 0.00, 3.00]"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 21\n\nMachine Summary: None\n(The starting block) <ID A_1: Starting Block>\nPosition: [0.,0.,0.]\n(Chassis Block C (lower brace plane; keep east/west faces clear)) <ID A_2: Small Wooden Block>\nPosition: [0.,0.,1.]\n(Chassis Block D (upper brace plane; keep east/west faces clear)) <ID A_3: Small Wooden Block>\nPosition: [0.,0.,2.]\n(East Engine Support Column Segment (E0), west face mated to ID 1 Face A) <ID A_4: Small Wooden Block>\nPosition: [1.,0.,0.]\n(East Engine Support Column Segment (E1), west face mated to ID 4 Face E) <ID A_5: Small Wooden Block>\nPosition: [2.,0.,0.]\n(East Engine Support Column Segment (E2), west face mated to ID 5 Face E; base for engine stack) <ID A_6: Small Wooden Block>\nPosition: [3.,0.,0.]\n(East Engine Block A (lower) at [3.0, 0.0, 1.0]; west face reserved for lower east brace) <ID A_7: Small Wooden Block>\nPosition: [3.,0.,1.]\n(East Engine Block B (upper) at [3.0, 0.0, 2.0]; west face reserved for upper east brace) <ID A_8: Small Wooden Block>\nPosition: [3.,0.,2.]\n(East lower brace linking East Engine Block A (ID 7 west face) to Chassis Block C (ID 2 east face); solid hinge/brace between endpoints [2.5, 0.0, 1.0] (engine A west face center) and [0.5, 0.0, 1.0] (Block C east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0.) <ID A_9: Brace>\nConnecting <ID 2: Small Wooden Block> at [5.00000000e-01 1.11022302e-16 1.00000000e+00] and <ID 7: Small Wooden Block> at [2.50000000e+00 4.71844785e-16 1.00000000e+00].\t\n(East upper brace linking East Engine Block B (ID 8 west face) to Chassis Block D (ID 3 east face); solid hinge/brace between endpoints [2.5, 0.0, 2.0] (engine B west face center) and [0.5, 0.0, 2.0] (Block D east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0.) <ID A_10: Brace>\nConnecting <ID 3: Small Wooden Block> at [5.00000000e-01 3.33066907e-16 2.00000000e+00] and <ID 8: Small Wooden Block> at [2.50000000e+00 4.99600361e-16 2.00000000e+00].\t\n(West Engine Support Column Segment (W0), east face mated to ID 1 Face B) <ID A_11: Small Wooden Block>\nPosition: [-1., 0., 0.]\n(West Engine Support Column Segment (W1), east face mated to ID 11 Face E) <ID A_12: Small Wooden Block>\nPosition: [-2., 0., 0.]\n(West Engine Support Column Segment (W2), east face mated to ID 12 Face E; base for engine stack) <ID A_13: Small Wooden Block>\nPosition: [-3., 0., 0.]\n(West Engine Block A (lower) at [-3.0, 0.0, 1.0]; east face reserved for lower west brace) <ID A_14: Small Wooden Block>\nPosition: [-3., 0., 1.]\n(West Engine Block B (upper) at [-3.0, 0.0, 2.0]; east face reserved for upper west brace) <ID A_15: Small Wooden Block>\nPosition: [-3., 0., 2.]\n(West lower brace linking West Engine Block A (ID 14 east face) to Chassis Block C (ID 2 west face); solid hinge/brace between endpoints [-2.5, 0.0, 1.0] (engine A east face center) and [-0.5, 0.0, 1.0] (Block C west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0.) <ID A_16: Brace>\nConnecting <ID 2: Small Wooden Block> at [-5.00000000e-01  1.11022302e-16  1.00000000e+00] and <ID 14: Small Wooden Block> at [-2.50000000e+00  4.71844785e-16  1.00000000e+00].\t\n(West upper brace linking West Engine Block B (ID 15 east face) to Chassis Block D (ID 3 west face); solid hinge/brace between endpoints [-2.5, 0.0, 2.0] (engine B east face center) and [-0.5, 0.0, 2.0] (Block D west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0.) <ID A_17: Brace>\nConnecting <ID 3: Small Wooden Block> at [-5.00000000e-01  3.33066907e-16  2.00000000e+00] and <ID 15: Small Wooden Block> at [-2.50000000e+00  4.99600361e-16  2.00000000e+00].\t\n(East Engine Water Cannon mounted to the bottom (z\u2212) face of A_8; orientation straight down (\u2212z); shared Fire control; expected center [3.0, 0.0, 1.0], inlet [3.0, 0.0, 1.75], outlet [3.0, 0.0, 0.0]) <ID 3: Water Cannon>\nPosition: [4.,0.,2.]\nPointing at <straight down>\nInlet is at [4.00, 0.00, 2.75], outlet is at [4.00, 0.00, 1.00], sprays towards <straight down>\n(Torch attached to top (z+) face of East Engine Block B (ID A_8); intended orientation East (+x) to heat Water Cannon inlet at [4.0, 0.0, 2.75]. Expected body center [3.0, 0.0, 3.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3). If orientation is not East by default, we will twist the torch in the next step.) <ID 6: Torch>\nPosition: [3.,0.,3.]\nPointing at <East with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [4.00, 0.00, 3.00]\n(West Engine Water Cannon mounted to the bottom (z\u2212) face of A_15; orientation straight down (\u2212z); shared Fire control; expected center [\u22123.0, 0.0, 1.0], inlet [\u22123.0, 0.0, 1.75], outlet [\u22123.0, 0.0, 0.0]) <ID 8: Water Cannon>\nPosition: [-4., 0., 2.]\nPointing at <straight down>\nInlet is at [-4.00, 0.00, 2.75], outlet is at [-4.00, 0.00, 1.00], sprays towards <straight down>\n(West Engine Torch mounted on A_15 top (z+) face; intended orientation West (\u2212x) to heat Water Cannon inlet at [\u22124.0, 0.0, 2.75]. Expected body center [\u22123.0, 0.0, 3.0], heating sphere center [\u22124.0, 0.0, 3.0] (radius 0.3).) <ID 9: Torch>\nPosition: [-3., 0., 3.]\nPointing at <West with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-4.00, 0.00, 3.00]"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 21\n\nMachine Summary: None\n(The starting block) <ID A_1: Starting Block>\nPosition: [0.,0.,0.]\n(Chassis Block C (lower brace plane; keep east/west faces clear)) <ID A_2: Small Wooden Block>\nPosition: [0.,0.,1.]\n(Chassis Block D (upper brace plane; keep east/west faces clear)) <ID A_3: Small Wooden Block>\nPosition: [0.,0.,2.]\n(East Engine Support Column Segment (E0), west face mated to ID 1 Face A) <ID A_4: Small Wooden Block>\nPosition: [1.,0.,0.]\n(East Engine Support Column Segment (E1), west face mated to ID 4 Face E) <ID A_5: Small Wooden Block>\nPosition: [2.,0.,0.]\n(East Engine Support Column Segment (E2), west face mated to ID 5 Face E; base for engine stack) <ID A_6: Small Wooden Block>\nPosition: [3.,0.,0.]\n(East Engine Block A (lower) at [3.0, 0.0, 1.0]; west face reserved for lower east brace) <ID A_7: Small Wooden Block>\nPosition: [3.,0.,1.]\n(East Engine Block B (upper) at [3.0, 0.0, 2.0]; west face reserved for upper east brace) <ID A_8: Small Wooden Block>\nPosition: [3.,0.,2.]\n(East lower brace linking East Engine Block A (ID 7 west face) to Chassis Block C (ID 2 east face); solid hinge/brace between endpoints [2.5, 0.0, 1.0] (engine A west face center) and [0.5, 0.0, 1.0] (Block C east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0.) <ID A_9: Brace>\nConnecting <ID 2: Small Wooden Block> at [5.00000000e-01 1.11022302e-16 1.00000000e+00] and <ID 7: Small Wooden Block> at [2.50000000e+00 4.71844785e-16 1.00000000e+00].\t\n(East upper brace linking East Engine Block B (ID 8 west face) to Chassis Block D (ID 3 east face); solid hinge/brace between endpoints [2.5, 0.0, 2.0] (engine B west face center) and [0.5, 0.0, 2.0] (Block D east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0.) <ID A_10: Brace>\nConnecting <ID 3: Small Wooden Block> at [5.00000000e-01 3.33066907e-16 2.00000000e+00] and <ID 8: Small Wooden Block> at [2.50000000e+00 4.99600361e-16 2.00000000e+00].\t\n(West Engine Support Column Segment (W0), east face mated to ID 1 Face B) <ID A_11: Small Wooden Block>\nPosition: [-1., 0., 0.]\n(West Engine Support Column Segment (W1), east face mated to ID 11 Face E) <ID A_12: Small Wooden Block>\nPosition: [-2., 0., 0.]\n(West Engine Support Column Segment (W2), east face mated to ID 12 Face E; base for engine stack) <ID A_13: Small Wooden Block>\nPosition: [-3., 0., 0.]\n(West Engine Block A (lower) at [-3.0, 0.0, 1.0]; east face reserved for lower west brace) <ID A_14: Small Wooden Block>\nPosition: [-3., 0., 1.]\n(West Engine Block B (upper) at [-3.0, 0.0, 2.0]; east face reserved for upper west brace) <ID A_15: Small Wooden Block>\nPosition: [-3., 0., 2.]\n(West lower brace linking West Engine Block A (ID 14 east face) to Chassis Block C (ID 2 west face); solid hinge/brace between endpoints [-2.5, 0.0, 1.0] (engine A east face center) and [-0.5, 0.0, 1.0] (Block C west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0.) <ID A_16: Brace>\nConnecting <ID 2: Small Wooden Block> at [-5.00000000e-01  1.11022302e-16  1.00000000e+00] and <ID 14: Small Wooden Block> at [-2.50000000e+00  4.71844785e-16  1.00000000e+00].\t\n(West upper brace linking West Engine Block B (ID 15 east face) to Chassis Block D (ID 3 west face); solid hinge/brace between endpoints [-2.5, 0.0, 2.0] (engine B east face center) and [-0.5, 0.0, 2.0] (Block D west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0.) <ID A_17: Brace>\nConnecting <ID 3: Small Wooden Block> at [-5.00000000e-01  3.33066907e-16  2.00000000e+00] and <ID 15: Small Wooden Block> at [-2.50000000e+00  4.99600361e-16  2.00000000e+00].\t\n(East Engine Water Cannon mounted to the bottom (z\u2212) face of A_8; orientation straight down (\u2212z); shared Fire control; expected center [3.0, 0.0, 1.0], inlet [3.0, 0.0, 1.75], outlet [3.0, 0.0, 0.0]) <ID 3: Water Cannon>\nPosition: [4.,0.,2.]\nPointing at <straight down>\nInlet is at [4.00, 0.00, 2.75], outlet is at [4.00, 0.00, 1.00], sprays towards <straight down>\n(Torch attached to top (z+) face of East Engine Block B (ID A_8); intended orientation East (+x) to heat Water Cannon inlet at [4.0, 0.0, 2.75]. Expected body center [3.0, 0.0, 3.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3). If orientation is not East by default, we will twist the torch in the next step.) <ID 6: Torch>\nPosition: [3.,0.,3.]\nPointing at <East with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [4.00, 0.00, 3.00]\n(West Engine Water Cannon mounted to the bottom (z\u2212) face of A_15; orientation straight down (\u2212z); shared Fire control; expected center [\u22123.0, 0.0, 1.0], inlet [\u22123.0, 0.0, 1.75], outlet [\u22123.0, 0.0, 0.0]) <ID 8: Water Cannon>\nPosition: [-4., 0., 2.]\nPointing at <straight down>\nInlet is at [-4.00, 0.00, 2.75], outlet is at [-4.00, 0.00, 1.00], sprays towards <straight down>\n(West Engine Torch mounted on A_15 top (z+) face; intended orientation West (\u2212x) to heat Water Cannon inlet at [\u22124.0, 0.0, 2.75]. Expected body center [\u22123.0, 0.0, 3.0], heating sphere center [\u22124.0, 0.0, 3.0] (radius 0.3).) <ID 9: Torch>\nPosition: [-3., 0., 3.]\nPointing at <West with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-4.00, 0.00, 3.00]"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 21\n\nMachine Summary: None\n(Chassis Block C (lower brace plane; keep east/west faces clear)) <ID A_2: Small Wooden Block>\nPosition: [0.,0.,1.]\n(Chassis Block D (upper brace plane; keep east/west faces clear)) <ID A_3: Small Wooden Block>\nPosition: [0.,0.,2.]\n(East Engine Support Column Segment (E0), west face mated to ID 1 Face A) <ID A_4: Small Wooden Block>\nPosition: [1.,0.,0.]\n(East Engine Support Column Segment (E1), west face mated to ID 4 Face E) <ID A_5: Small Wooden Block>\nPosition: [2.,0.,0.]\n(East Engine Support Column Segment (E2), west face mated to ID 5 Face E; base for engine stack) <ID A_6: Small Wooden Block>\nPosition: [3.,0.,0.]\n(East Engine Block A (lower) at [3.0, 0.0, 1.0]; west face reserved for lower east brace) <ID A_7: Small Wooden Block>\nPosition: [3.,0.,1.]\n(East Engine Block B (upper) at [3.0, 0.0, 2.0]; west face reserved for upper east brace) <ID A_8: Small Wooden Block>\nPosition: [3.,0.,2.]\n(East lower brace linking East Engine Block A (ID 7 west face) to Chassis Block C (ID 2 east face); solid hinge/brace between endpoints [2.5, 0.0, 1.0] (engine A west face center) and [0.5, 0.0, 1.0] (Block C east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0.) <ID A_9: Brace>\nConnecting <ID 2: Small Wooden Block> at [5.00000000e-01 1.11022302e-16 1.00000000e+00] and <ID 7: Small Wooden Block> at [2.50000000e+00 4.71844785e-16 1.00000000e+00].\t\n(East upper brace linking East Engine Block B (ID 8 west face) to Chassis Block D (ID 3 east face); solid hinge/brace between endpoints [2.5, 0.0, 2.0] (engine B west face center) and [0.5, 0.0, 2.0] (Block D east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0.) <ID A_10: Brace>\nConnecting <ID 3: Small Wooden Block> at [5.00000000e-01 3.33066907e-16 2.00000000e+00] and <ID 8: Small Wooden Block> at [2.50000000e+00 4.99600361e-16 2.00000000e+00].\t\n(West Engine Support Column Segment (W0), east face mated to ID 1 Face B) <ID A_11: Small Wooden Block>\nPosition: [-1., 0., 0.]\n(West Engine Support Column Segment (W1), east face mated to ID 11 Face E) <ID A_12: Small Wooden Block>\nPosition: [-2., 0., 0.]\n(West Engine Support Column Segment (W2), east face mated to ID 12 Face E; base for engine stack) <ID A_13: Small Wooden Block>\nPosition: [-3., 0., 0.]\n(West Engine Block A (lower) at [-3.0, 0.0, 1.0]; east face reserved for lower west brace) <ID A_14: Small Wooden Block>\nPosition: [-3., 0., 1.]\n(West Engine Block B (upper) at [-3.0, 0.0, 2.0]; east face reserved for upper west brace) <ID A_15: Small Wooden Block>\nPosition: [-3., 0., 2.]\n(West lower brace linking West Engine Block A (ID 14 east face) to Chassis Block C (ID 2 west face); solid hinge/brace between endpoints [-2.5, 0.0, 1.0] (engine A east face center) and [-0.5, 0.0, 1.0] (Block C west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0.) <ID A_16: Brace>\nConnecting <ID 2: Small Wooden Block> at [-5.00000000e-01  1.11022302e-16  1.00000000e+00] and <ID 14: Small Wooden Block> at [-2.50000000e+00  4.71844785e-16  1.00000000e+00].\t\n(West upper brace linking West Engine Block B (ID 15 east face) to Chassis Block D (ID 3 west face); solid hinge/brace between endpoints [-2.5, 0.0, 2.0] (engine B east face center) and [-0.5, 0.0, 2.0] (Block D west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0.) <ID A_17: Brace>\nConnecting <ID 3: Small Wooden Block> at [-5.00000000e-01  3.33066907e-16  2.00000000e+00] and <ID 15: Small Wooden Block> at [-2.50000000e+00  4.99600361e-16  2.00000000e+00].\t\n(East Engine Water Cannon mounted to the bottom (z\u2212) face of A_8; orientation straight down (\u2212z); shared Fire control; expected center [3.0, 0.0, 1.0], inlet [3.0, 0.0, 1.75], outlet [3.0, 0.0, 0.0]) <ID 3: Water Cannon>\nPosition: [4.,0.,2.]\nPointing at <straight down>\nInlet is at [4.00, 0.00, 2.75], outlet is at [4.00, 0.00, 1.00], sprays towards <straight down>\n(Torch attached to top (z+) face of East Engine Block B (ID A_8); intended orientation East (+x) to heat Water Cannon inlet at [4.0, 0.0, 2.75]. Expected body center [3.0, 0.0, 3.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3). If orientation is not East by default, we will twist the torch in the next step.) <ID 6: Torch>\nPosition: [3.,0.,3.]\nPointing at <East with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [4.00, 0.00, 3.00]\n(West Engine Water Cannon mounted to the bottom (z\u2212) face of A_15; orientation straight down (\u2212z); shared Fire control; expected center [\u22123.0, 0.0, 1.0], inlet [\u22123.0, 0.0, 1.75], outlet [\u22123.0, 0.0, 0.0]) <ID 8: Water Cannon>\nPosition: [-4., 0., 2.]\nPointing at <straight down>\nInlet is at [-4.00, 0.00, 2.75], outlet is at [-4.00, 0.00, 1.00], sprays towards <straight down>\n(West Engine Torch mounted on A_15 top (z+) face; intended orientation West (\u2212x) to heat Water Cannon inlet at [\u22124.0, 0.0, 2.75]. Expected body center [\u22123.0, 0.0, 3.0], heating sphere center [\u22124.0, 0.0, 3.0] (radius 0.3).) <ID 9: Torch>\nPosition: [-3., 0., 3.]\nPointing at <West with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-4.00, 0.00, 3.00]\n(The starting block) <ID A_1: Starting Block>\nPosition: [0.,0.,0.]"
+  },
+  {
+    "op": "reset",
+    "params": {},
+    "result": "The machine has been reset, please start again."
+  },
+  {
+    "op": "add_machine",
+    "params": {
+      "machine_id": "iw1l6scg",
+      "init_shift": null,
+      "init_rotation": null
+    },
+    "result": "You have successfully added sub-structure A using machine iw1l6scg\nExisting Blocks: 17\nExisting Machines: 1\nExisting Blocks: 17\n(The starting block) <ID A_1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_8",
+      "face": "E",
+      "new_block": "Water Cannon",
+      "note": "East Engine Water Cannon on Block B (ID A_8) North face; orientation straight down (-z); shared Fire control; outlet kept safely above ground; inlet positioned for torch heating from above"
+    },
+    "result": "You have successfully added <ID 1: Water Cannon>.\nExisting Blocks: 18\n(East Engine Water Cannon on Block B (ID A_8) North face; orientation straight down (-z); shared Fire control; outlet kept safely above ground; inlet positioned for torch heating from above) <ID 1: Water Cannon>\nPosition: [ 3.,-0., 3.]\nPointing at <East with -0.0\u00b0 pitch>\nInlet is at [2.25, -0.00, 3.00], outlet is at [4.00, -0.00, 3.00], sprays towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 1
+    },
+    "result": "You have successfully removed <ID 1: Water Cannon>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_8",
+      "face": "E",
+      "new_block": "Water Cannon",
+      "note": "East Engine Water Cannon mounted to A_8 North face; required orientation: straight down (-z); shared Fire control; expected center [3.0, 1.0, 2.0], inlet [3.0, 1.0, 2.75], outlet [3.0, 1.0, 1.0]"
+    },
+    "result": "You have successfully added <ID 2: Water Cannon>.\nExisting Blocks: 18\n(East Engine Water Cannon mounted to A_8 North face; required orientation: straight down (-z); shared Fire control; expected center [3.0, 1.0, 2.0], inlet [3.0, 1.0, 2.75], outlet [3.0, 1.0, 1.0]) <ID 2: Water Cannon>\nPosition: [ 3.,-0., 3.]\nPointing at <East with -0.0\u00b0 pitch>\nInlet is at [2.25, -0.00, 3.00], outlet is at [4.00, -0.00, 3.00], sprays towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 2
+    },
+    "result": "You have successfully removed <ID 2: Water Cannon>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_8",
+      "face": "D",
+      "new_block": "Water Cannon",
+      "note": "East Engine Water Cannon mounted to the bottom (z\u2212) face of A_8; orientation straight down (\u2212z); shared Fire control; expected center [3.0, 0.0, 1.0], inlet [3.0, 0.0, 1.75], outlet [3.0, 0.0, 0.0]"
+    },
+    "result": "You have successfully added <ID 3: Water Cannon>.\nExisting Blocks: 18\n(East Engine Water Cannon mounted to the bottom (z\u2212) face of A_8; orientation straight down (\u2212z); shared Fire control; expected center [3.0, 0.0, 1.0], inlet [3.0, 0.0, 1.75], outlet [3.0, 0.0, 0.0]) <ID 3: Water Cannon>\nPosition: [4.,0.,2.]\nPointing at <straight down>\nInlet is at [4.00, -0.00, 2.75], outlet is at [4.00, 0.00, 1.00], sprays towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_8",
+      "face": "B",
+      "new_block": "Torch",
+      "note": "East engine Torch on A_8 East face; required orientation: straight up (+z) to heat Water Cannon inlet. Expected body center [4.0, 0.0, 2.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3), overlapping inlet at [4.0, 0.0, 2.75]."
+    },
+    "result": "You have successfully added <ID 4: Torch>.\nExisting Blocks: 19\n(East engine Torch on A_8 East face; required orientation: straight up (+z) to heat Water Cannon inlet. Expected body center [4.0, 0.0, 2.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3), overlapping inlet at [4.0, 0.0, 2.75].) <ID 4: Torch>\nPosition: [3.,1.,2.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [2.00, 1.00, 2.00]"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 4
+    },
+    "result": "You have successfully removed <ID 4: Torch>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_8",
+      "face": "E",
+      "new_block": "Torch",
+      "note": "East Engine Torch mounted on A_8 top (z+) face; intended orientation: East (+x) to heat Water Cannon inlet at [4.0, 0.0, 2.75]. Expected body center [3.0, 0.0, 3.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3)."
+    },
+    "result": "You have successfully added <ID 5: Torch>.\nExisting Blocks: 19\n(East Engine Torch mounted on A_8 top (z+) face; intended orientation: East (+x) to heat Water Cannon inlet at [4.0, 0.0, 2.75]. Expected body center [3.0, 0.0, 3.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3).) <ID 5: Torch>\nPosition: [ 3.,-0., 3.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [2.00, -0.00, 3.00]"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 5
+    },
+    "result": "You have successfully removed <ID 5: Torch>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_8",
+      "face": "E",
+      "new_block": "Torch",
+      "note": "Torch attached to top (z+) face of East Engine Block B (ID A_8); intended orientation East (+x) to heat Water Cannon inlet at [4.0, 0.0, 2.75]. Expected body center [3.0, 0.0, 3.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3). If orientation is not East by default, we will twist the torch in the next step."
+    },
+    "result": "You have successfully added <ID 6: Torch>.\nExisting Blocks: 19\n(Torch attached to top (z+) face of East Engine Block B (ID A_8); intended orientation East (+x) to heat Water Cannon inlet at [4.0, 0.0, 2.75]. Expected body center [3.0, 0.0, 3.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3). If orientation is not East by default, we will twist the torch in the next step.) <ID 6: Torch>\nPosition: [ 3.,-0., 3.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [2.00, -0.00, 3.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 6,
+      "angle": 180.0
+    },
+    "result": "The block 6 <Torch> is twisted by 180.0 degrees. \n (Torch attached to top (z+) face of East Engine Block B (ID A_8); intended orientation East (+x) to heat Water Cannon inlet at [4.0, 0.0, 2.75]. Expected body center [3.0, 0.0, 3.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3). If orientation is not East by default, we will twist the torch in the next step.) <ID 6: Torch>\nPosition: [ 3.,-0., 3.]\nPointing at <East with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [4.00, 0.00, 3.00]"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_15",
+      "face": "C",
+      "new_block": "Water Cannon",
+      "note": "West Engine Water Cannon mounted on Block B (ID A_15) West face; required orientation: straight down (\u2212z); shared Fire control; expected center [\u22124.0, 0.0, 2.0], inlet [\u22124.0, 0.0, 2.75], outlet [\u22124.0, 0.0, 1.0]"
+    },
+    "result": "You have successfully added <ID 7: Water Cannon>.\nExisting Blocks: 20\n(West Engine Water Cannon mounted on Block B (ID A_15) West face; required orientation: straight down (\u2212z); shared Fire control; expected center [\u22124.0, 0.0, 2.0], inlet [\u22124.0, 0.0, 2.75], outlet [\u22124.0, 0.0, 1.0]) <ID 7: Water Cannon>\nPosition: [-2., 0., 2.]\nPointing at <straight up>\nInlet is at [-2.00, 0.00, 1.25], outlet is at [-2.00, -0.00, 3.00], sprays towards <straight up>"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 7
+    },
+    "result": "You have successfully removed <ID 7: Water Cannon>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_15",
+      "face": "D",
+      "new_block": "Water Cannon",
+      "note": "West Engine Water Cannon mounted to the bottom (z\u2212) face of A_15; orientation straight down (\u2212z); shared Fire control; expected center [\u22123.0, 0.0, 1.0], inlet [\u22123.0, 0.0, 1.75], outlet [\u22123.0, 0.0, 0.0]"
+    },
+    "result": "You have successfully added <ID 8: Water Cannon>.\nExisting Blocks: 20\n(West Engine Water Cannon mounted to the bottom (z\u2212) face of A_15; orientation straight down (\u2212z); shared Fire control; expected center [\u22123.0, 0.0, 1.0], inlet [\u22123.0, 0.0, 1.75], outlet [\u22123.0, 0.0, 0.0]) <ID 8: Water Cannon>\nPosition: [-4., 0., 2.]\nPointing at <straight down>\nInlet is at [-4.00, -0.00, 2.75], outlet is at [-4.00, 0.00, 1.00], sprays towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_15",
+      "face": "E",
+      "new_block": "Torch",
+      "note": "West Engine Torch mounted on A_15 top (z+) face; intended orientation West (\u2212x) to heat Water Cannon inlet at [\u22124.0, 0.0, 2.75]. Expected body center [\u22123.0, 0.0, 3.0], heating sphere center [\u22124.0, 0.0, 3.0] (radius 0.3)."
+    },
+    "result": "You have successfully added <ID 9: Torch>.\nExisting Blocks: 21\n(West Engine Torch mounted on A_15 top (z+) face; intended orientation West (\u2212x) to heat Water Cannon inlet at [\u22124.0, 0.0, 2.75]. Expected body center [\u22123.0, 0.0, 3.0], heating sphere center [\u22124.0, 0.0, 3.0] (radius 0.3).) <ID 9: Torch>\nPosition: [-3.,-0., 3.]\nPointing at <East with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-2.00, -0.00, 3.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 9,
+      "angle": 180.0
+    },
+    "result": "The block 9 <Torch> is twisted by 180.0 degrees. \n (West Engine Torch mounted on A_15 top (z+) face; intended orientation West (\u2212x) to heat Water Cannon inlet at [\u22124.0, 0.0, 2.75]. Expected body center [\u22123.0, 0.0, 3.0], heating sphere center [\u22124.0, 0.0, 3.0] (radius 0.3).) <ID 9: Torch>\nPosition: [-3.,-0., 3.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-4.00, -0.00, 3.00]"
+  },
+  {
+    "op": "reset",
+    "params": {},
+    "result": "The machine has been reset, please start again."
+  },
+  {
+    "op": "add_machine",
+    "params": {
+      "machine_id": "iw1l6scg",
+      "init_shift": null,
+      "init_rotation": null
+    },
+    "result": "You have successfully added sub-structure A using machine iw1l6scg\nExisting Blocks: 17\nExisting Machines: 1\nExisting Blocks: 17\n(The starting block) <ID A_1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "reset",
+    "params": {},
+    "result": "The machine has been reset, please start again."
+  },
+  {
+    "op": "add_machine",
+    "params": {
+      "machine_id": "iw1l6scg",
+      "init_shift": null,
+      "init_rotation": null
+    },
+    "result": "You have successfully added sub-structure A using machine iw1l6scg\nExisting Blocks: 17\nExisting Machines: 1\nExisting Blocks: 17\n(The starting block) <ID A_1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_8",
+      "face": "E",
+      "new_block": "Water Cannon",
+      "note": "East Engine Water Cannon on Block B (ID A_8) North face; orientation straight down (-z); shared Fire control; outlet kept safely above ground; inlet positioned for torch heating from above"
+    },
+    "result": "You have successfully added <ID 1: Water Cannon>.\nExisting Blocks: 18\n(East Engine Water Cannon on Block B (ID A_8) North face; orientation straight down (-z); shared Fire control; outlet kept safely above ground; inlet positioned for torch heating from above) <ID 1: Water Cannon>\nPosition: [ 3.,-0., 3.]\nPointing at <East with -0.0\u00b0 pitch>\nInlet is at [2.25, -0.00, 3.00], outlet is at [4.00, -0.00, 3.00], sprays towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 1
+    },
+    "result": "You have successfully removed <ID 1: Water Cannon>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_8",
+      "face": "E",
+      "new_block": "Water Cannon",
+      "note": "East Engine Water Cannon mounted to A_8 North face; required orientation: straight down (-z); shared Fire control; expected center [3.0, 1.0, 2.0], inlet [3.0, 1.0, 2.75], outlet [3.0, 1.0, 1.0]"
+    },
+    "result": "You have successfully added <ID 2: Water Cannon>.\nExisting Blocks: 18\n(East Engine Water Cannon mounted to A_8 North face; required orientation: straight down (-z); shared Fire control; expected center [3.0, 1.0, 2.0], inlet [3.0, 1.0, 2.75], outlet [3.0, 1.0, 1.0]) <ID 2: Water Cannon>\nPosition: [ 3.,-0., 3.]\nPointing at <East with -0.0\u00b0 pitch>\nInlet is at [2.25, -0.00, 3.00], outlet is at [4.00, -0.00, 3.00], sprays towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 2
+    },
+    "result": "You have successfully removed <ID 2: Water Cannon>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_8",
+      "face": "D",
+      "new_block": "Water Cannon",
+      "note": "East Engine Water Cannon mounted to the bottom (z\u2212) face of A_8; orientation straight down (\u2212z); shared Fire control; expected center [3.0, 0.0, 1.0], inlet [3.0, 0.0, 1.75], outlet [3.0, 0.0, 0.0]"
+    },
+    "result": "You have successfully added <ID 3: Water Cannon>.\nExisting Blocks: 18\n(East Engine Water Cannon mounted to the bottom (z\u2212) face of A_8; orientation straight down (\u2212z); shared Fire control; expected center [3.0, 0.0, 1.0], inlet [3.0, 0.0, 1.75], outlet [3.0, 0.0, 0.0]) <ID 3: Water Cannon>\nPosition: [4.,0.,2.]\nPointing at <straight down>\nInlet is at [4.00, -0.00, 2.75], outlet is at [4.00, 0.00, 1.00], sprays towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_8",
+      "face": "B",
+      "new_block": "Torch",
+      "note": "East engine Torch on A_8 East face; required orientation: straight up (+z) to heat Water Cannon inlet. Expected body center [4.0, 0.0, 2.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3), overlapping inlet at [4.0, 0.0, 2.75]."
+    },
+    "result": "You have successfully added <ID 4: Torch>.\nExisting Blocks: 19\n(East engine Torch on A_8 East face; required orientation: straight up (+z) to heat Water Cannon inlet. Expected body center [4.0, 0.0, 2.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3), overlapping inlet at [4.0, 0.0, 2.75].) <ID 4: Torch>\nPosition: [3.,1.,2.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [2.00, 1.00, 2.00]"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 4
+    },
+    "result": "You have successfully removed <ID 4: Torch>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_8",
+      "face": "E",
+      "new_block": "Torch",
+      "note": "East Engine Torch mounted on A_8 top (z+) face; intended orientation: East (+x) to heat Water Cannon inlet at [4.0, 0.0, 2.75]. Expected body center [3.0, 0.0, 3.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3)."
+    },
+    "result": "You have successfully added <ID 5: Torch>.\nExisting Blocks: 19\n(East Engine Torch mounted on A_8 top (z+) face; intended orientation: East (+x) to heat Water Cannon inlet at [4.0, 0.0, 2.75]. Expected body center [3.0, 0.0, 3.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3).) <ID 5: Torch>\nPosition: [ 3.,-0., 3.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [2.00, -0.00, 3.00]"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 5
+    },
+    "result": "You have successfully removed <ID 5: Torch>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_8",
+      "face": "E",
+      "new_block": "Torch",
+      "note": "Torch attached to top (z+) face of East Engine Block B (ID A_8); intended orientation East (+x) to heat Water Cannon inlet at [4.0, 0.0, 2.75]. Expected body center [3.0, 0.0, 3.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3). If orientation is not East by default, we will twist the torch in the next step."
+    },
+    "result": "You have successfully added <ID 6: Torch>.\nExisting Blocks: 19\n(Torch attached to top (z+) face of East Engine Block B (ID A_8); intended orientation East (+x) to heat Water Cannon inlet at [4.0, 0.0, 2.75]. Expected body center [3.0, 0.0, 3.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3). If orientation is not East by default, we will twist the torch in the next step.) <ID 6: Torch>\nPosition: [ 3.,-0., 3.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [2.00, -0.00, 3.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 6,
+      "angle": 180.0
+    },
+    "result": "The block 6 <Torch> is twisted by 180.0 degrees. \n (Torch attached to top (z+) face of East Engine Block B (ID A_8); intended orientation East (+x) to heat Water Cannon inlet at [4.0, 0.0, 2.75]. Expected body center [3.0, 0.0, 3.0], heating sphere center [4.0, 0.0, 3.0] (radius 0.3). If orientation is not East by default, we will twist the torch in the next step.) <ID 6: Torch>\nPosition: [ 3.,-0., 3.]\nPointing at <East with -0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [4.00, 0.00, 3.00]"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_15",
+      "face": "C",
+      "new_block": "Water Cannon",
+      "note": "West Engine Water Cannon mounted on Block B (ID A_15) West face; required orientation: straight down (\u2212z); shared Fire control; expected center [\u22124.0, 0.0, 2.0], inlet [\u22124.0, 0.0, 2.75], outlet [\u22124.0, 0.0, 1.0]"
+    },
+    "result": "You have successfully added <ID 7: Water Cannon>.\nExisting Blocks: 20\n(West Engine Water Cannon mounted on Block B (ID A_15) West face; required orientation: straight down (\u2212z); shared Fire control; expected center [\u22124.0, 0.0, 2.0], inlet [\u22124.0, 0.0, 2.75], outlet [\u22124.0, 0.0, 1.0]) <ID 7: Water Cannon>\nPosition: [-2., 0., 2.]\nPointing at <straight up>\nInlet is at [-2.00, 0.00, 1.25], outlet is at [-2.00, -0.00, 3.00], sprays towards <straight up>"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 7
+    },
+    "result": "You have successfully removed <ID 7: Water Cannon>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_15",
+      "face": "D",
+      "new_block": "Water Cannon",
+      "note": "West Engine Water Cannon mounted to the bottom (z\u2212) face of A_15; orientation straight down (\u2212z); shared Fire control; expected center [\u22123.0, 0.0, 1.0], inlet [\u22123.0, 0.0, 1.75], outlet [\u22123.0, 0.0, 0.0]"
+    },
+    "result": "You have successfully added <ID 8: Water Cannon>.\nExisting Blocks: 20\n(West Engine Water Cannon mounted to the bottom (z\u2212) face of A_15; orientation straight down (\u2212z); shared Fire control; expected center [\u22123.0, 0.0, 1.0], inlet [\u22123.0, 0.0, 1.75], outlet [\u22123.0, 0.0, 0.0]) <ID 8: Water Cannon>\nPosition: [-4., 0., 2.]\nPointing at <straight down>\nInlet is at [-4.00, -0.00, 2.75], outlet is at [-4.00, 0.00, 1.00], sprays towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_15",
+      "face": "E",
+      "new_block": "Torch",
+      "note": "West Engine Torch mounted on A_15 top (z+) face; intended orientation West (\u2212x) to heat Water Cannon inlet at [\u22124.0, 0.0, 2.75]. Expected body center [\u22123.0, 0.0, 3.0], heating sphere center [\u22124.0, 0.0, 3.0] (radius 0.3)."
+    },
+    "result": "You have successfully added <ID 9: Torch>.\nExisting Blocks: 21\n(West Engine Torch mounted on A_15 top (z+) face; intended orientation West (\u2212x) to heat Water Cannon inlet at [\u22124.0, 0.0, 2.75]. Expected body center [\u22123.0, 0.0, 3.0], heating sphere center [\u22124.0, 0.0, 3.0] (radius 0.3).) <ID 9: Torch>\nPosition: [-3.,-0., 3.]\nPointing at <East with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-2.00, -0.00, 3.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 9,
+      "angle": 180.0
+    },
+    "result": "The block 9 <Torch> is twisted by 180.0 degrees. \n (West Engine Torch mounted on A_15 top (z+) face; intended orientation West (\u2212x) to heat Water Cannon inlet at [\u22124.0, 0.0, 2.75]. Expected body center [\u22123.0, 0.0, 3.0], heating sphere center [\u22124.0, 0.0, 3.0] (radius 0.3).) <ID 9: Torch>\nPosition: [-3.,-0., 3.]\nPointing at <West with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-4.00, -0.00, 3.00]"
+  },
+  {
+    "op": "reset",
+    "params": {},
+    "result": "The machine has been reset, please start again."
+  },
+  {
+    "op": "add_machine",
+    "params": {
+      "machine_id": "iw1l6scg",
+      "init_shift": null,
+      "init_rotation": null
+    },
+    "result": "You have successfully added sub-structure A using machine iw1l6scg\nExisting Blocks: 17\nExisting Machines: 1\nExisting Blocks: 17\n(The starting block) <ID A_1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  }
+]

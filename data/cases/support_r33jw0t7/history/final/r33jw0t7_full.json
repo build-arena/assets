@@ -1,0 +1,908 @@
+[
+  {
+    "op": "add_machine",
+    "params": {
+      "machine_id": "cynlro34",
+      "init_shift": null,
+      "init_rotation": null
+    },
+    "result": "You have successfully added sub-structure A using machine cynlro34\nExisting Blocks: 120\nExisting Machines: 1\nExisting Blocks: 120\n(The starting block) <ID A_1: Starting Block>\nPosition: [  0.,-10.,  5.]\nAttachable Faces:\nFace label: D, Face center: [  0. , -10. ,   4.5], Facing towards <straight down>\nFace label: F, Face center: [  0. , -10.5,   5. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "connect_blocks",
+      "message": "Block 42 not found, please try again."
+    }
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 42,
+      "face_a": "WEST",
+      "block_b": 63,
+      "face_b": "EAST",
+      "connector": "Brace",
+      "note": "First diagonal reinforcement on east face: connects (x=1,y=-9,z=5) lower SWB to (x=0,y=-8,z=6) upper SWB"
+    },
+    "result": "Block 42 not found, please try again."
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "connect_blocks",
+      "message": "Block A_42 Small Wooden Block does not have face WEST, please try again."
+    }
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_42",
+      "face_a": "WEST",
+      "block_b": "A_63",
+      "face_b": "EAST",
+      "connector": "Brace",
+      "note": "First diagonal brace on east face: connects lower east SWB (x=1,y=-9,z=5) to upper middle SWB (x=0,y=-8,z=6)"
+    },
+    "result": "Block A_42 Small Wooden Block does not have face WEST, please try again."
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "connect_blocks",
+      "message": "Block A_41 Small Wooden Block does not have face WEST, please try again."
+    }
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_41",
+      "face_a": "WEST",
+      "block_b": "A_62",
+      "face_b": "EAST",
+      "connector": "Brace",
+      "note": "First diagonal brace on east face: connects lower east SWB (x=1,y=-10,z=5) to upper middle SWB (x=0,y=-9,z=6)"
+    },
+    "result": "Block A_41 Small Wooden Block does not have face WEST, please try again."
+  },
+  {
+    "op": "get_block_details",
+    "params": {
+      "block_id": "A_42"
+    },
+    "result": "(x=1, y=-9, z=5) <ID A_42: Small Wooden Block>\nPosition: [ 1.,-9., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -9. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 0.5, -9. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 1. , -9. ,  4.5], Facing towards <straight down>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_42",
+      "face_a": "B",
+      "block_b": "A_63",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "First east-face diagonal brace: connects A_42 (x=1,y=-9,z=5) West face B to A_63 (x=0,y=-8,z=6) East face A"
+    },
+    "result": "You have successfully added <ID 1: Brace>.\nExisting Blocks: 121\n(First east-face diagonal brace: connects A_42 (x=1,y=-9,z=5) West face B to A_63 (x=0,y=-8,z=6) East face A) <ID 1: Brace>\nConnecting <ID 42: Small Wooden Block> at [ 0.5 -9.   5. ] and <ID 63: Small Wooden Block> at [ 0.5 -8.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_43",
+      "face_a": "B",
+      "block_b": "A_64",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "East-face diagonal brace: connects A_43 (x=1,y=-8,z=5) West face B to A_64 (x=0,y=-7,z=6) East face A"
+    },
+    "result": "You have successfully added <ID 2: Brace>.\nExisting Blocks: 122\n(East-face diagonal brace: connects A_43 (x=1,y=-8,z=5) West face B to A_64 (x=0,y=-7,z=6) East face A) <ID 2: Brace>\nConnecting <ID 43: Small Wooden Block> at [ 0.5 -8.   5. ] and <ID 64: Small Wooden Block> at [ 0.5 -7.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_44",
+      "face_a": "B",
+      "block_b": "A_65",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "East-face diagonal brace: connects A_44 (x=1,y=-7,z=5) West face B to A_65 (x=0,y=-6,z=6) East face A"
+    },
+    "result": "You have successfully added <ID 3: Brace>.\nExisting Blocks: 123\n(East-face diagonal brace: connects A_44 (x=1,y=-7,z=5) West face B to A_65 (x=0,y=-6,z=6) East face A) <ID 3: Brace>\nConnecting <ID 44: Small Wooden Block> at [ 0.5 -7.   5. ] and <ID 65: Small Wooden Block> at [ 0.5 -6.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_45",
+      "face_a": "B",
+      "block_b": "A_66",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "East-face diagonal brace: connects A_45 (x=1,y=-6,z=5) West face B to A_66 (x=0,y=-5,z=6) East face A"
+    },
+    "result": "You have successfully added <ID 4: Brace>.\nExisting Blocks: 124\n(East-face diagonal brace: connects A_45 (x=1,y=-6,z=5) West face B to A_66 (x=0,y=-5,z=6) East face A) <ID 4: Brace>\nConnecting <ID 45: Small Wooden Block> at [ 0.5 -6.   5. ] and <ID 66: Small Wooden Block> at [ 0.5 -5.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_46",
+      "face_a": "B",
+      "block_b": "A_67",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "East-face diagonal brace: connects A_46 (x=1,y=-5,z=5) West face B to A_67 (x=0,y=-4,z=6) East face A"
+    },
+    "result": "You have successfully added <ID 5: Brace>.\nExisting Blocks: 125\n(East-face diagonal brace: connects A_46 (x=1,y=-5,z=5) West face B to A_67 (x=0,y=-4,z=6) East face A) <ID 5: Brace>\nConnecting <ID 46: Small Wooden Block> at [ 0.5 -5.   5. ] and <ID 67: Small Wooden Block> at [ 0.5 -4.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_47",
+      "face_a": "B",
+      "block_b": "A_68",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "East-face diagonal brace: connects A_47 (x=1,y=-4,z=5) West face B to A_68 (x=0,y=-3,z=6) East face A"
+    },
+    "result": "You have successfully added <ID 6: Brace>.\nExisting Blocks: 126\n(East-face diagonal brace: connects A_47 (x=1,y=-4,z=5) West face B to A_68 (x=0,y=-3,z=6) East face A) <ID 6: Brace>\nConnecting <ID 47: Small Wooden Block> at [ 0.5 -4.   5. ] and <ID 68: Small Wooden Block> at [ 0.5 -3.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_48",
+      "face_a": "B",
+      "block_b": "A_69",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "East-face diagonal brace: connects A_48 (x=1,y=-3,z=5) West face B to A_69 (x=0,y=-2,z=6) East face A"
+    },
+    "result": "You have successfully added <ID 7: Brace>.\nExisting Blocks: 127\n(East-face diagonal brace: connects A_48 (x=1,y=-3,z=5) West face B to A_69 (x=0,y=-2,z=6) East face A) <ID 7: Brace>\nConnecting <ID 48: Small Wooden Block> at [ 0.5 -3.   5. ] and <ID 69: Small Wooden Block> at [ 0.5 -2.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_49",
+      "face_a": "B",
+      "block_b": "A_70",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "East-face diagonal brace: connects A_49 (x=1,y=-2,z=5) West face B to A_70 (x=0,y=-1,z=6) East face A"
+    },
+    "result": "You have successfully added <ID 8: Brace>.\nExisting Blocks: 128\n(East-face diagonal brace: connects A_49 (x=1,y=-2,z=5) West face B to A_70 (x=0,y=-1,z=6) East face A) <ID 8: Brace>\nConnecting <ID 49: Small Wooden Block> at [ 0.5 -2.   5. ] and <ID 70: Small Wooden Block> at [ 0.5 -1.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_50",
+      "face_a": "B",
+      "block_b": "A_71",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "East-face diagonal brace: connects A_50 (x=1,y=-1,z=5) West face B to A_71 (x=0,y=0,z=6) East face A"
+    },
+    "result": "You have successfully added <ID 9: Brace>.\nExisting Blocks: 129\n(East-face diagonal brace: connects A_50 (x=1,y=-1,z=5) West face B to A_71 (x=0,y=0,z=6) East face A) <ID 9: Brace>\nConnecting <ID 50: Small Wooden Block> at [ 0.5 -1.   5. ] and <ID 71: Small Wooden Block> at [5.00000000e-01 1.11022302e-16 6.00000000e+00].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_51",
+      "face_a": "B",
+      "block_b": "A_72",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "East-face diagonal brace: connects A_51 (x=1,y=0,z=5) West face B to A_72 (x=0,y=1,z=6) East face A"
+    },
+    "result": "You have successfully added <ID 10: Brace>.\nExisting Blocks: 130\n(East-face diagonal brace: connects A_51 (x=1,y=0,z=5) West face B to A_72 (x=0,y=1,z=6) East face A) <ID 10: Brace>\nConnecting <ID 51: Small Wooden Block> at [0.5 0.  5. ] and <ID 72: Small Wooden Block> at [0.5 1.  6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_52",
+      "face_a": "B",
+      "block_b": "A_73",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "East-face diagonal brace: connects A_52 (x=1,y=1,z=5) West face B to A_73 (x=0,y=2,z=6) East face A"
+    },
+    "result": "You have successfully added <ID 11: Brace>.\nExisting Blocks: 131\n(East-face diagonal brace: connects A_52 (x=1,y=1,z=5) West face B to A_73 (x=0,y=2,z=6) East face A) <ID 11: Brace>\nConnecting <ID 52: Small Wooden Block> at [0.5 1.  5. ] and <ID 73: Small Wooden Block> at [0.5 2.  6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_53",
+      "face_a": "B",
+      "block_b": "A_74",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "East-face diagonal brace: connects A_53 (x=1,y=2,z=5) West face B to A_74 (x=0,y=3,z=6) East face A"
+    },
+    "result": "You have successfully added <ID 12: Brace>.\nExisting Blocks: 132\n(East-face diagonal brace: connects A_53 (x=1,y=2,z=5) West face B to A_74 (x=0,y=3,z=6) East face A) <ID 12: Brace>\nConnecting <ID 53: Small Wooden Block> at [0.5 2.  5. ] and <ID 74: Small Wooden Block> at [0.5 3.  6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_54",
+      "face_a": "B",
+      "block_b": "A_75",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "East-face diagonal brace: connects A_54 (x=1,y=3,z=5) West face B to A_75 (x=0,y=4,z=6) East face A"
+    },
+    "result": "You have successfully added <ID 13: Brace>.\nExisting Blocks: 133\n(East-face diagonal brace: connects A_54 (x=1,y=3,z=5) West face B to A_75 (x=0,y=4,z=6) East face A) <ID 13: Brace>\nConnecting <ID 54: Small Wooden Block> at [0.5 3.  5. ] and <ID 75: Small Wooden Block> at [0.5 4.  6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_55",
+      "face_a": "B",
+      "block_b": "A_76",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "East-face diagonal brace: connects A_55 (x=1,y=4,z=5) West face B to A_76 (x=0,y=5,z=6) East face A"
+    },
+    "result": "You have successfully added <ID 14: Brace>.\nExisting Blocks: 134\n(East-face diagonal brace: connects A_55 (x=1,y=4,z=5) West face B to A_76 (x=0,y=5,z=6) East face A) <ID 14: Brace>\nConnecting <ID 55: Small Wooden Block> at [0.5 4.  5. ] and <ID 76: Small Wooden Block> at [0.5 5.  6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_56",
+      "face_a": "B",
+      "block_b": "A_76",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "East-face diagonal brace: connects A_56 (x=1,y=5,z=5) West face B to A_76 (x=0,y=5,z=6) East face A"
+    },
+    "result": "You have successfully added <ID 15: Brace>.\nExisting Blocks: 135\n(East-face diagonal brace: connects A_56 (x=1,y=5,z=5) West face B to A_76 (x=0,y=5,z=6) East face A) <ID 15: Brace>\nConnecting <ID 56: Small Wooden Block> at [0.5 5.  5. ] and <ID 76: Small Wooden Block> at [0.5 5.  6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_57",
+      "face_a": "B",
+      "block_b": "A_78",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "East-face diagonal brace: connects A_57 (x=1,y=6,z=5) West face B to A_78 (x=0,y=7,z=6) East face A"
+    },
+    "result": "You have successfully added <ID 16: Brace>.\nExisting Blocks: 136\n(East-face diagonal brace: connects A_57 (x=1,y=6,z=5) West face B to A_78 (x=0,y=7,z=6) East face A) <ID 16: Brace>\nConnecting <ID 57: Small Wooden Block> at [0.5 6.  5. ] and <ID 78: Small Wooden Block> at [0.5 7.  6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_58",
+      "face_a": "B",
+      "block_b": "A_79",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "East-face diagonal brace: connects A_58 (x=1,y=7,z=5) West face B to A_79 (x=0,y=8,z=6) East face A"
+    },
+    "result": "You have successfully added <ID 17: Brace>.\nExisting Blocks: 137\n(East-face diagonal brace: connects A_58 (x=1,y=7,z=5) West face B to A_79 (x=0,y=8,z=6) East face A) <ID 17: Brace>\nConnecting <ID 58: Small Wooden Block> at [0.5 7.  5. ] and <ID 79: Small Wooden Block> at [0.5 8.  6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_59",
+      "face_a": "B",
+      "block_b": "A_80",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "East-face diagonal brace: connects A_59 (x=1,y=8,z=5) West face B to A_80 (x=0,y=9,z=6) East face A"
+    },
+    "result": "You have successfully added <ID 18: Brace>.\nExisting Blocks: 138\n(East-face diagonal brace: connects A_59 (x=1,y=8,z=5) West face B to A_80 (x=0,y=9,z=6) East face A) <ID 18: Brace>\nConnecting <ID 59: Small Wooden Block> at [0.5 8.  5. ] and <ID 80: Small Wooden Block> at [0.5 9.  6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_60",
+      "face_a": "B",
+      "block_b": "A_81",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "19th east-face diagonal brace: connects A_60 (x=1,y=9,z=5) West face B to A_81 (x=0,y=10,z=6) East face A"
+    },
+    "result": "You have successfully added <ID 19: Brace>.\nExisting Blocks: 139\n(19th east-face diagonal brace: connects A_60 (x=1,y=9,z=5) West face B to A_81 (x=0,y=10,z=6) East face A) <ID 19: Brace>\nConnecting <ID 60: Small Wooden Block> at [0.5 9.  5. ] and <ID 81: Small Wooden Block> at [-1.  -9.5  6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_22",
+      "face_a": "A",
+      "block_b": "A_63",
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "West-face diagonal brace: connects A_22 (x=-1,y=-9,z=5) East face A to A_63 (x=0,y=-8,z=6) West face B"
+    },
+    "result": "You have successfully added <ID 20: Brace>.\nExisting Blocks: 140\n(West-face diagonal brace: connects A_22 (x=-1,y=-9,z=5) East face A to A_63 (x=0,y=-8,z=6) West face B) <ID 20: Brace>\nConnecting <ID 22: Small Wooden Block> at [-0.5 -9.   5. ] and <ID 63: Small Wooden Block> at [-0.5 -8.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_23",
+      "face_a": "A",
+      "block_b": "A_64",
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "West-face diagonal brace: connects A_23 (x=-1,y=-8,z=5) East face A to A_64 (x=0,y=-7,z=6) West face B"
+    },
+    "result": "You have successfully added <ID 21: Brace>.\nExisting Blocks: 141\n(West-face diagonal brace: connects A_23 (x=-1,y=-8,z=5) East face A to A_64 (x=0,y=-7,z=6) West face B) <ID 21: Brace>\nConnecting <ID 23: Small Wooden Block> at [-0.5 -8.   5. ] and <ID 64: Small Wooden Block> at [-0.5 -7.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_24",
+      "face_a": "A",
+      "block_b": "A_65",
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "West-face diagonal brace: connects A_24 (x=-1,y=-7,z=5) East face A to A_65 (x=0,y=-6,z=6) West face B"
+    },
+    "result": "You have successfully added <ID 22: Brace>.\nExisting Blocks: 142\n(West-face diagonal brace: connects A_24 (x=-1,y=-7,z=5) East face A to A_65 (x=0,y=-6,z=6) West face B) <ID 22: Brace>\nConnecting <ID 24: Small Wooden Block> at [-0.5 -7.   5. ] and <ID 65: Small Wooden Block> at [-0.5 -6.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_25",
+      "face_a": "A",
+      "block_b": "A_66",
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "West-face diagonal brace: connects A_25 (x=-1,y=-6,z=5) East face A to A_66 (x=0,y=-5,z=6) West face B"
+    },
+    "result": "You have successfully added <ID 23: Brace>.\nExisting Blocks: 143\n(West-face diagonal brace: connects A_25 (x=-1,y=-6,z=5) East face A to A_66 (x=0,y=-5,z=6) West face B) <ID 23: Brace>\nConnecting <ID 25: Small Wooden Block> at [-0.5 -6.   5. ] and <ID 66: Small Wooden Block> at [-0.5 -5.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_26",
+      "face_a": "A",
+      "block_b": "A_67",
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "West-face diagonal brace: connects A_26 (x=-1,y=-5,z=5) East face A to A_67 (x=0,y=-4,z=6) West face B"
+    },
+    "result": "You have successfully added <ID 24: Brace>.\nExisting Blocks: 144\n(West-face diagonal brace: connects A_26 (x=-1,y=-5,z=5) East face A to A_67 (x=0,y=-4,z=6) West face B) <ID 24: Brace>\nConnecting <ID 26: Small Wooden Block> at [-0.5 -5.   5. ] and <ID 67: Small Wooden Block> at [-0.5 -4.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_27",
+      "face_a": "A",
+      "block_b": "A_68",
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "West-face diagonal brace: connects A_27 (x=-1,y=-4,z=5) East face A to A_68 (x=0,y=-3,z=6) West face B"
+    },
+    "result": "You have successfully added <ID 25: Brace>.\nExisting Blocks: 145\n(West-face diagonal brace: connects A_27 (x=-1,y=-4,z=5) East face A to A_68 (x=0,y=-3,z=6) West face B) <ID 25: Brace>\nConnecting <ID 27: Small Wooden Block> at [-0.5 -4.   5. ] and <ID 68: Small Wooden Block> at [-0.5 -3.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_28",
+      "face_a": "A",
+      "block_b": "A_69",
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "West-face diagonal brace: connects A_28 (x=-1,y=-3,z=5) East face A to A_69 (x=0,y=-2,z=6) West face B"
+    },
+    "result": "You have successfully added <ID 26: Brace>.\nExisting Blocks: 146\n(West-face diagonal brace: connects A_28 (x=-1,y=-3,z=5) East face A to A_69 (x=0,y=-2,z=6) West face B) <ID 26: Brace>\nConnecting <ID 28: Small Wooden Block> at [-0.5 -3.   5. ] and <ID 69: Small Wooden Block> at [-0.5 -2.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_29",
+      "face_a": "A",
+      "block_b": "A_70",
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "West-face diagonal brace: connects A_29 (x=-1,y=-2,z=5) East face A to A_70 (x=0,y=-1,z=6) West face B"
+    },
+    "result": "You have successfully added <ID 27: Brace>.\nExisting Blocks: 147\n(West-face diagonal brace: connects A_29 (x=-1,y=-2,z=5) East face A to A_70 (x=0,y=-1,z=6) West face B) <ID 27: Brace>\nConnecting <ID 29: Small Wooden Block> at [-0.5 -2.   5. ] and <ID 70: Small Wooden Block> at [-0.5 -1.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_30",
+      "face_a": "A",
+      "block_b": "A_71",
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "West-face diagonal brace: connects A_30 (x=-1,y=-1,z=5) East face A to A_71 (x=0,y=0,z=6) West face B"
+    },
+    "result": "You have successfully added <ID 28: Brace>.\nExisting Blocks: 148\n(West-face diagonal brace: connects A_30 (x=-1,y=-1,z=5) East face A to A_71 (x=0,y=0,z=6) West face B) <ID 28: Brace>\nConnecting <ID 30: Small Wooden Block> at [-0.5 -1.   5. ] and <ID 71: Small Wooden Block> at [-5.00000000e-01  1.11022302e-16  6.00000000e+00].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_31",
+      "face_a": "A",
+      "block_b": "A_72",
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "West-face diagonal brace: connects A_31 (x=-1,y=0,z=5) East face A to A_72 (x=0,y=1,z=6) West face B"
+    },
+    "result": "You have successfully added <ID 29: Brace>.\nExisting Blocks: 149\n(West-face diagonal brace: connects A_31 (x=-1,y=0,z=5) East face A to A_72 (x=0,y=1,z=6) West face B) <ID 29: Brace>\nConnecting <ID 31: Small Wooden Block> at [-0.5  0.   5. ] and <ID 72: Small Wooden Block> at [-0.5  1.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_32",
+      "face_a": "A",
+      "block_b": "A_73",
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "West-face diagonal brace: connects A_32 (x=-1,y=1,z=5) East face A to A_73 (x=0,y=2,z=6) West face B"
+    },
+    "result": "You have successfully added <ID 30: Brace>.\nExisting Blocks: 150\n(West-face diagonal brace: connects A_32 (x=-1,y=1,z=5) East face A to A_73 (x=0,y=2,z=6) West face B) <ID 30: Brace>\nConnecting <ID 32: Small Wooden Block> at [-0.5  1.   5. ] and <ID 73: Small Wooden Block> at [-0.5  2.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_33",
+      "face_a": "A",
+      "block_b": "A_74",
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "West-face diagonal brace: connects A_33 (x=-1,y=2,z=5) East face A to A_74 (x=0,y=3,z=6) West face B"
+    },
+    "result": "You have successfully added <ID 31: Brace>.\nExisting Blocks: 151\n(West-face diagonal brace: connects A_33 (x=-1,y=2,z=5) East face A to A_74 (x=0,y=3,z=6) West face B) <ID 31: Brace>\nConnecting <ID 33: Small Wooden Block> at [-0.5  2.   5. ] and <ID 74: Small Wooden Block> at [-0.5  3.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_34",
+      "face_a": "A",
+      "block_b": "A_75",
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "West-face diagonal brace: connects A_34 (x=-1,y=3,z=5) East face A to A_75 (x=0,y=4,z=6) West face B"
+    },
+    "result": "You have successfully added <ID 32: Brace>.\nExisting Blocks: 152\n(West-face diagonal brace: connects A_34 (x=-1,y=3,z=5) East face A to A_75 (x=0,y=4,z=6) West face B) <ID 32: Brace>\nConnecting <ID 34: Small Wooden Block> at [-0.5  3.   5. ] and <ID 75: Small Wooden Block> at [-0.5  4.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_35",
+      "face_a": "A",
+      "block_b": "A_76",
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "West-face diagonal brace: connects A_35 (x=-1,y=4,z=5) East face A to A_76 (x=0,y=5,z=6) West face B"
+    },
+    "result": "You have successfully added <ID 33: Brace>.\nExisting Blocks: 153\n(West-face diagonal brace: connects A_35 (x=-1,y=4,z=5) East face A to A_76 (x=0,y=5,z=6) West face B) <ID 33: Brace>\nConnecting <ID 35: Small Wooden Block> at [-0.5  4.   5. ] and <ID 76: Small Wooden Block> at [-0.5  5.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_36",
+      "face_a": "A",
+      "block_b": "A_77",
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "West-face diagonal brace: connects A_36 (x=-1,y=5,z=5) East face A to A_77 (x=0,y=6,z=6) West face B"
+    },
+    "result": "You have successfully added <ID 34: Brace>.\nExisting Blocks: 154\n(West-face diagonal brace: connects A_36 (x=-1,y=5,z=5) East face A to A_77 (x=0,y=6,z=6) West face B) <ID 34: Brace>\nConnecting <ID 36: Small Wooden Block> at [-0.5  5.   5. ] and <ID 77: Small Wooden Block> at [-0.5  6.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_37",
+      "face_a": "A",
+      "block_b": "A_78",
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "West-face diagonal brace: connects A_37 (x=-1,y=6,z=5) East face A to A_78 (x=0,y=7,z=6) West face B"
+    },
+    "result": "You have successfully added <ID 35: Brace>.\nExisting Blocks: 155\n(West-face diagonal brace: connects A_37 (x=-1,y=6,z=5) East face A to A_78 (x=0,y=7,z=6) West face B) <ID 35: Brace>\nConnecting <ID 37: Small Wooden Block> at [-0.5  6.   5. ] and <ID 78: Small Wooden Block> at [-0.5  7.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_38",
+      "face_a": "A",
+      "block_b": "A_79",
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "West-face diagonal brace: connects A_38 (x=-1,y=7,z=5) East face A to A_79 (x=0,y=8,z=6) West face B"
+    },
+    "result": "You have successfully added <ID 36: Brace>.\nExisting Blocks: 156\n(West-face diagonal brace: connects A_38 (x=-1,y=7,z=5) East face A to A_79 (x=0,y=8,z=6) West face B) <ID 36: Brace>\nConnecting <ID 38: Small Wooden Block> at [-0.5  7.   5. ] and <ID 79: Small Wooden Block> at [-0.5  8.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_39",
+      "face_a": "A",
+      "block_b": "A_80",
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "West-face diagonal brace: connects A_39 (x=-1,y=8,z=5) East face A to A_80 (x=0,y=9,z=6) West face B"
+    },
+    "result": "You have successfully added <ID 37: Brace>.\nExisting Blocks: 157\n(West-face diagonal brace: connects A_39 (x=-1,y=8,z=5) East face A to A_80 (x=0,y=9,z=6) West face B) <ID 37: Brace>\nConnecting <ID 39: Small Wooden Block> at [-0.5  8.   5. ] and <ID 80: Small Wooden Block> at [-0.5  9.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_40",
+      "face_a": "A",
+      "block_b": "A_81",
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "19th west-face diagonal brace: connects A_40 (x=-1,y=9,z=5) East face A to A_81 (x=0,y=10,z=6) West face B"
+    },
+    "result": "You have successfully added <ID 38: Brace>.\nExisting Blocks: 158\n(19th west-face diagonal brace: connects A_40 (x=-1,y=9,z=5) East face A to A_81 (x=0,y=10,z=6) West face B) <ID 38: Brace>\nConnecting <ID 40: Small Wooden Block> at [-0.5  9.   5. ] and <ID 81: Small Wooden Block> at [ -1.  -10.5   6. ].\t"
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "attach_block_to",
+      "message": "Base block A_21 Small Wooden Block does not have face WEST, please try again."
+    }
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_21",
+      "face": "WEST",
+      "new_block": "Small Wooden Block",
+      "note": "South End Support Pad: west extension (x=-2,y=-10,z=5), lower layer"
+    },
+    "result": "Base block A_21 Small Wooden Block does not have face WEST, please try again."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_41",
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "South End Support Pad: east extension (x=2,y=-10,z=5), lower layer"
+    },
+    "result": "You have successfully added <ID 39: Small Wooden Block>.\nExisting Blocks: 159\n(South End Support Pad: east extension (x=2,y=-10,z=5), lower layer) <ID 39: Small Wooden Block>\nPosition: [  1.,-11.,  5.]\nAttachable Faces:\nFace label: A, Face center: [  0.5, -11. ,   5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [  1.5, -11. ,   5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [  1. , -11. ,   5.5], Facing towards <straight up>\nFace label: D, Face center: [  1. , -11. ,   4.5], Facing towards <straight down>\nFace label: E, Face center: [  1. , -11.5,   5. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "attach_block_to",
+      "message": "Face A of base block A_41 Small Wooden Block is already occupied, please try again."
+    }
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_41",
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "South End Support Pad: east extension (x=2,y=-10,z=5), lower layer (corrected x=2 alignment)"
+    },
+    "result": "Face A of base block A_41 Small Wooden Block is already occupied, please try again."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_21",
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "South End Support Pad: west extension (x=-2,y=-10,z=5), lower layer (x=-2 alignment)"
+    },
+    "result": "You have successfully added <ID 40: Small Wooden Block>.\nExisting Blocks: 160\n(South End Support Pad: west extension (x=-2,y=-10,z=5), lower layer (x=-2 alignment)) <ID 40: Small Wooden Block>\nPosition: [ -1.,-11.,  5.]\nAttachable Faces:\nFace label: A, Face center: [ -1.5, -11. ,   5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ -0.5, -11. ,   5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ -1. , -11. ,   5.5], Facing towards <straight up>\nFace label: D, Face center: [ -1. , -11. ,   4.5], Facing towards <straight down>\nFace label: E, Face center: [ -1. , -11.5,   5. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "get_block_details",
+    "params": {
+      "block_id": "A_41"
+    },
+    "result": "(x=1, y=-10, z=5) <ID A_41: Small Wooden Block>\nPosition: [  1.,-10.,  5.]\nAttachable Faces:\nFace label: D, Face center: [  1. , -10. ,   4.5], Facing towards <straight down>\nFace label: E, Face center: [  1.5, -10. ,   5. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_41",
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "South End Support Pad: east extension (x=2,y=-10,z=5), lower layer (x=2 alignment)"
+    },
+    "result": "You have successfully added <ID 41: Small Wooden Block>.\nExisting Blocks: 161\n(South End Support Pad: east extension (x=2,y=-10,z=5), lower layer (x=2 alignment)) <ID 41: Small Wooden Block>\nPosition: [  2.,-10.,  5.]\nAttachable Faces:\nFace label: A, Face center: [  2. , -10.5,   5. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2. , -9.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [  2. , -10. ,   5.5], Facing towards <straight up>\nFace label: D, Face center: [  2. , -10. ,   4.5], Facing towards <straight down>\nFace label: E, Face center: [  2.5, -10. ,   5. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "attach_block_to",
+      "message": "Face B of base block A_21 Small Wooden Block is already occupied, please try again."
+    }
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_21",
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "South End Support Pad: west extension (x=-2,y=-10,z=5), lower layer (x=-2 alignment)"
+    },
+    "result": "Face B of base block A_21 Small Wooden Block is already occupied, please try again."
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "attach_block_to",
+      "message": "Base block A_81 Small Wooden Block does not have face WEST, please try again."
+    }
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_81",
+      "face": "WEST",
+      "new_block": "Small Wooden Block",
+      "note": "South End Support Pad: west extension (x=-2,y=-10,z=6), upper layer"
+    },
+    "result": "Base block A_81 Small Wooden Block does not have face WEST, please try again."
+  },
+  {
+    "op": "get_block_details",
+    "params": {
+      "block_id": "A_81"
+    },
+    "result": "(Upper layer: x=-1, y=-10, z=6) <ID A_81: Small Wooden Block>\nPosition: [ -1.,-10.,  6.]\nAttachable Faces:\nFace label: A, Face center: [-1. , -9.5,  6. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: B, Face center: [ -1. , -10.5,   6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [ -0.5, -10. ,   6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [ -1.5, -10. ,   6. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: E, Face center: [ -1. , -10. ,   6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_81",
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "South End Support Pad: west extension (x=-2,y=-10,z=6), upper layer (x=-2 alignment)"
+    },
+    "result": "You have successfully added <ID 42: Small Wooden Block>.\nExisting Blocks: 162\n(South End Support Pad: west extension (x=-2,y=-10,z=6), upper layer (x=-2 alignment)) <ID 42: Small Wooden Block>\nPosition: [ -2.,-10.,  6.]\nAttachable Faces:\nFace label: A, Face center: [-2. , -9.5,  6. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: B, Face center: [ -2. , -10.5,   6. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [ -2. , -10. ,   6.5], Facing towards <straight up>\nFace label: D, Face center: [ -2. , -10. ,   5.5], Facing towards <straight down>\nFace label: E, Face center: [ -2.5, -10. ,   6. ], Facing towards <West with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "42",
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "South End Support Pad: west extension (x=-2,y=-10,z=5), lower layer (connects to upper layer z=6)"
+    },
+    "result": "You have successfully added <ID 43: Small Wooden Block>.\nExisting Blocks: 163\n(South End Support Pad: west extension (x=-2,y=-10,z=5), lower layer (connects to upper layer z=6)) <ID 43: Small Wooden Block>\nPosition: [ -2.,-10.,  5.]\nAttachable Faces:\nFace label: A, Face center: [-2. , -9.5,  5. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: B, Face center: [ -2. , -10.5,   5. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [ -2.5, -10. ,   5. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: D, Face center: [ -1.5, -10. ,   5. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [ -2. , -10. ,   4.5], Facing towards <straight down>"
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "attach_block_to",
+      "message": "Base block A_101 Small Wooden Block does not have face EAST, please try again."
+    }
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_101",
+      "face": "EAST",
+      "new_block": "Small Wooden Block",
+      "note": "South End Support Pad: east extension (x=2,y=-10,z=6), upper layer (x=2 alignment)"
+    },
+    "result": "Base block A_101 Small Wooden Block does not have face EAST, please try again."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "41",
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "South End Support Pad: east extension (x=2,y=-10,z=6), upper layer (connects to lower layer z=5)"
+    },
+    "result": "You have successfully added <ID 44: Small Wooden Block>.\nExisting Blocks: 164\n(South End Support Pad: east extension (x=2,y=-10,z=6), upper layer (connects to lower layer z=5)) <ID 44: Small Wooden Block>\nPosition: [  2.,-10.,  6.]\nAttachable Faces:\nFace label: A, Face center: [  2. , -10.5,   6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2. , -9.5,  6. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: C, Face center: [  1.5, -10. ,   6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [  2.5, -10. ,   6. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [  2. , -10. ,   6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "get_block_details",
+    "params": {
+      "block_id": "A_40"
+    },
+    "result": "(x=-1, y=9, z=5) <ID A_40: Small Wooden Block>\nPosition: [-1., 9., 5.]\nAttachable Faces:\nFace label: A, Face center: [-0.5,  9. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5,  9. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1. ,  9. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1. ,  9.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_40",
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "North end of lower west layer: extends Main Deck Beam to y=10 at x=-1,z=5 (base for west support pad extension)"
+    },
+    "result": "You have successfully added <ID 45: Small Wooden Block>.\nExisting Blocks: 165\n(North end of lower west layer: extends Main Deck Beam to y=10 at x=-1,z=5 (base for west support pad extension)) <ID 45: Small Wooden Block>\nPosition: [-1.,10., 5.]\nAttachable Faces:\nFace label: A, Face center: [-0.5, 10. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5, 10. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , 10. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. , 10. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1. , 10.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "45",
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "North End Support Pad: west extension (x=-2,y=10,z=5), lower layer (x=-2 alignment)"
+    },
+    "result": "You have successfully added <ID 46: Small Wooden Block>.\nExisting Blocks: 166\n(North End Support Pad: west extension (x=-2,y=10,z=5), lower layer (x=-2 alignment)) <ID 46: Small Wooden Block>\nPosition: [-2.,10., 5.]\nAttachable Faces:\nFace label: A, Face center: [-2. , 10.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. ,  9.5,  5. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. , 10. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-2. , 10. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-2.5, 10. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_60",
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "North end of lower east layer: extends Main Deck Beam to y=10 at x=1,z=5 (base for east support pad extension)"
+    },
+    "result": "You have successfully added <ID 47: Small Wooden Block>.\nExisting Blocks: 167\n(North end of lower east layer: extends Main Deck Beam to y=10 at x=1,z=5 (base for east support pad extension)) <ID 47: Small Wooden Block>\nPosition: [ 1.,10., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, 10. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 0.5, 10. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , 10. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. , 10. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 1. , 10.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "47",
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "North End Support Pad: east extension (x=2,y=10,z=5), lower layer (x=2 alignment)"
+    },
+    "result": "You have successfully added <ID 48: Small Wooden Block>.\nExisting Blocks: 168\n(North End Support Pad: east extension (x=2,y=10,z=5), lower layer (x=2 alignment)) <ID 48: Small Wooden Block>\nPosition: [ 2.,10., 5.]\nAttachable Faces:\nFace label: A, Face center: [2. , 9.5, 5. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2. , 10.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2. , 10. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 2. , 10. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 2.5, 10. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "45",
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "North end of upper west layer: extends to z=6 at x=-1,y=10 (base for west support pad extension)"
+    },
+    "result": "You have successfully added <ID 49: Small Wooden Block>.\nExisting Blocks: 169\n(North end of upper west layer: extends to z=6 at x=-1,y=10 (base for west support pad extension)) <ID 49: Small Wooden Block>\nPosition: [-1.,10., 6.]\nAttachable Faces:\nFace label: A, Face center: [-0.5, 10. ,  6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5, 10. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  9.5,  6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1. , 10.5,  6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1. , 10. ,  6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "49",
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "North End Support Pad: west extension (x=-2,y=10,z=6), upper layer (x=-2 alignment)"
+    },
+    "result": "You have successfully added <ID 50: Small Wooden Block>.\nExisting Blocks: 170\n(North End Support Pad: west extension (x=-2,y=10,z=6), upper layer (x=-2 alignment)) <ID 50: Small Wooden Block>\nPosition: [-2.,10., 6.]\nAttachable Faces:\nFace label: A, Face center: [-2. , 10. ,  6.5], Facing towards <straight up>\nFace label: B, Face center: [-2. , 10. ,  5.5], Facing towards <straight down>\nFace label: C, Face center: [-2. ,  9.5,  6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2. , 10.5,  6. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [-2.5, 10. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "47",
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "North end of upper east layer: extends to z=6 at x=1,y=10 (base for east support pad extension)"
+    },
+    "result": "You have successfully added <ID 51: Small Wooden Block>.\nExisting Blocks: 171\n(North end of upper east layer: extends to z=6 at x=1,y=10 (base for east support pad extension)) <ID 51: Small Wooden Block>\nPosition: [ 1.,10., 6.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, 10. ,  6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 0.5, 10. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 9.5, 6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 1. , 10.5,  6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 1. , 10. ,  6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "51",
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "North End Support Pad: east extension (x=2,y=10,z=6), upper layer (x=2 alignment)"
+    },
+    "result": "You have successfully added <ID 52: Small Wooden Block>.\nExisting Blocks: 172\n(North End Support Pad: east extension (x=2,y=10,z=6), upper layer (x=2 alignment)) <ID 52: Small Wooden Block>\nPosition: [ 2.,10., 6.]\nAttachable Faces:\nFace label: A, Face center: [ 2. , 10. ,  5.5], Facing towards <straight down>\nFace label: B, Face center: [ 2. , 10. ,  6.5], Facing towards <straight up>\nFace label: C, Face center: [2. , 9.5, 6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 2. , 10.5,  6. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [ 2.5, 10. ,  6. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 172\n\nMachine Summary: None\n(The starting block) <ID A_1: Starting Block>\nPosition: [  0.,-10.,  5.]\n(x=0, y=-9, z=5) <ID A_2: Small Wooden Block>\nPosition: [ 0.,-9., 5.]\n(x=0, y=-8, z=5) <ID A_3: Small Wooden Block>\nPosition: [ 0.,-8., 5.]\n(x=0, y=-7, z=5) <ID A_4: Small Wooden Block>\nPosition: [ 0.,-7., 5.]\n(x=0, y=-6, z=5) <ID A_5: Small Wooden Block>\nPosition: [ 0.,-6., 5.]\n(x=0, y=-5, z=5) <ID A_6: Small Wooden Block>\nPosition: [ 0.,-5., 5.]\n(x=0, y=-4, z=5) <ID A_7: Small Wooden Block>\nPosition: [ 0.,-4., 5.]\n(x=0, y=-3, z=5) <ID A_8: Small Wooden Block>\nPosition: [ 0.,-3., 5.]\n(x=0, y=-2, z=5) <ID A_9: Small Wooden Block>\nPosition: [ 0.,-2., 5.]\n(x=0, y=-1, z=5) <ID A_10: Small Wooden Block>\nPosition: [ 0.,-1., 5.]\n(x=0, y=0, z=5) <ID A_11: Small Wooden Block>\nPosition: [0.,0.,5.]\n(x=0, y=1, z=5) <ID A_12: Small Wooden Block>\nPosition: [0.,1.,5.]\n(x=0, y=2, z=5) <ID A_13: Small Wooden Block>\nPosition: [0.,2.,5.]\n(x=0, y=3, z=5) <ID A_14: Small Wooden Block>\nPosition: [0.,3.,5.]\n(x=0, y=4, z=5) <ID A_15: Small Wooden Block>\nPosition: [0.,4.,5.]\n(x=0, y=5, z=5) <ID A_16: Small Wooden Block>\nPosition: [0.,5.,5.]\n(x=0, y=6, z=5) <ID A_17: Small Wooden Block>\nPosition: [0.,6.,5.]\n(x=0, y=7, z=5) <ID A_18: Small Wooden Block>\nPosition: [0.,7.,5.]\n(x=0, y=8, z=5) <ID A_19: Small Wooden Block>\nPosition: [0.,8.,5.]\n(x=0, y=9, z=5) <ID A_20: Small Wooden Block>\nPosition: [0.,9.,5.]\n(x=-1, y=-10, z=5) <ID A_21: Small Wooden Block>\nPosition: [ -1.,-10.,  5.]\n(x=-1, y=-9, z=5) <ID A_22: Small Wooden Block>\nPosition: [-1.,-9., 5.]\n(x=-1, y=-8, z=5) <ID A_23: Small Wooden Block>\nPosition: [-1.,-8., 5.]\n(x=-1, y=-7, z=5) <ID A_24: Small Wooden Block>\nPosition: [-1.,-7., 5.]\n(x=-1, y=-6, z=5) <ID A_25: Small Wooden Block>\nPosition: [-1.,-6., 5.]\n(x=-1, y=-5, z=5) <ID A_26: Small Wooden Block>\nPosition: [-1.,-5., 5.]\n(x=-1, y=-4, z=5) <ID A_27: Small Wooden Block>\nPosition: [-1.,-4., 5.]\n(x=-1, y=-3, z=5) <ID A_28: Small Wooden Block>\nPosition: [-1.,-3., 5.]\n(x=-1, y=-2, z=5) <ID A_29: Small Wooden Block>\nPosition: [-1.,-2., 5.]\n(x=-1, y=-1, z=5) <ID A_30: Small Wooden Block>\nPosition: [-1.,-1., 5.]\n(x=-1, y=0, z=5) <ID A_31: Small Wooden Block>\nPosition: [-1., 0., 5.]\n(x=-1, y=1, z=5) <ID A_32: Small Wooden Block>\nPosition: [-1., 1., 5.]\n(x=-1, y=2, z=5) <ID A_33: Small Wooden Block>\nPosition: [-1., 2., 5.]\n(x=-1, y=3, z=5) <ID A_34: Small Wooden Block>\nPosition: [-1., 3., 5.]\n(x=-1, y=4, z=5) <ID A_35: Small Wooden Block>\nPosition: [-1., 4., 5.]\n(x=-1, y=5, z=5) <ID A_36: Small Wooden Block>\nPosition: [-1., 5., 5.]\n(x=-1, y=6, z=5) <ID A_37: Small Wooden Block>\nPosition: [-1., 6., 5.]\n(x=-1, y=7, z=5) <ID A_38: Small Wooden Block>\nPosition: [-1., 7., 5.]\n(x=-1, y=8, z=5) <ID A_39: Small Wooden Block>\nPosition: [-1., 8., 5.]\n(x=-1, y=9, z=5) <ID A_40: Small Wooden Block>\nPosition: [-1., 9., 5.]\n(x=1, y=-10, z=5) <ID A_41: Small Wooden Block>\nPosition: [  1.,-10.,  5.]\n(x=1, y=-9, z=5) <ID A_42: Small Wooden Block>\nPosition: [ 1.,-9., 5.]\n(x=1, y=-8, z=5) <ID A_43: Small Wooden Block>\nPosition: [ 1.,-8., 5.]\n(x=1, y=-7, z=5) <ID A_44: Small Wooden Block>\nPosition: [ 1.,-7., 5.]\n(x=1, y=-6, z=5) <ID A_45: Small Wooden Block>\nPosition: [ 1.,-6., 5.]\n(x=1, y=-5, z=5) <ID A_46: Small Wooden Block>\nPosition: [ 1.,-5., 5.]\n(x=1, y=-4, z=5) <ID A_47: Small Wooden Block>\nPosition: [ 1.,-4., 5.]\n(x=1, y=-3, z=5) <ID A_48: Small Wooden Block>\nPosition: [ 1.,-3., 5.]\n(x=1, y=-2, z=5) <ID A_49: Small Wooden Block>\nPosition: [ 1.,-2., 5.]\n(x=1, y=-1, z=5) <ID A_50: Small Wooden Block>\nPosition: [ 1.,-1., 5.]\n(x=1, y=0, z=5) <ID A_51: Small Wooden Block>\nPosition: [1.,0.,5.]\n(x=1, y=1, z=5) <ID A_52: Small Wooden Block>\nPosition: [1.,1.,5.]\n(x=1, y=2, z=5) <ID A_53: Small Wooden Block>\nPosition: [1.,2.,5.]\n(x=1, y=3, z=5) <ID A_54: Small Wooden Block>\nPosition: [1.,3.,5.]\n(x=1, y=4, z=5) <ID A_55: Small Wooden Block>\nPosition: [1.,4.,5.]\n(x=1, y=5, z=5) <ID A_56: Small Wooden Block>\nPosition: [1.,5.,5.]\n(x=1, y=6, z=5) <ID A_57: Small Wooden Block>\nPosition: [1.,6.,5.]\n(x=1, y=7, z=5) <ID A_58: Small Wooden Block>\nPosition: [1.,7.,5.]\n(x=1, y=8, z=5) <ID A_59: Small Wooden Block>\nPosition: [1.,8.,5.]\n(x=1, y=9, z=5) <ID A_60: Small Wooden Block>\nPosition: [1.,9.,5.]\n(Upper layer: x=0, y=-10, z=6) <ID A_61: Small Wooden Block>\nPosition: [  0.,-10.,  6.]\n(Upper layer: x=0, y=-9, z=6) <ID A_62: Small Wooden Block>\nPosition: [ 0.,-9., 6.]\n(Upper layer: x=0, y=-8, z=6) <ID A_63: Small Wooden Block>\nPosition: [ 0.,-8., 6.]\n(Upper layer: x=0, y=-7, z=6) <ID A_64: Small Wooden Block>\nPosition: [ 0.,-7., 6.]\n(Upper layer: x=0, y=-6, z=6) <ID A_65: Small Wooden Block>\nPosition: [ 0.,-6., 6.]\n(Upper layer: x=0, y=-5, z=6) <ID A_66: Small Wooden Block>\nPosition: [ 0.,-5., 6.]\n(Upper layer: x=0, y=-4, z=6) <ID A_67: Small Wooden Block>\nPosition: [ 0.,-4., 6.]\n(Upper layer: x=0, y=-3, z=6) <ID A_68: Small Wooden Block>\nPosition: [ 0.,-3., 6.]\n(Upper layer: x=0, y=-2, z=6) <ID A_69: Small Wooden Block>\nPosition: [ 0.,-2., 6.]\n(Upper layer: x=0, y=-1, z=6) <ID A_70: Small Wooden Block>\nPosition: [ 0.,-1., 6.]\n(Upper layer: x=0, y=0, z=6) <ID A_71: Small Wooden Block>\nPosition: [0.,0.,6.]\n(Upper layer: x=0, y=1, z=6) <ID A_72: Small Wooden Block>\nPosition: [0.,1.,6.]\n(Upper layer: x=0, y=2, z=6) <ID A_73: Small Wooden Block>\nPosition: [0.,2.,6.]\n(Upper layer: x=0, y=3, z=6) <ID A_74: Small Wooden Block>\nPosition: [0.,3.,6.]\n(Upper layer: x=0, y=4, z=6) <ID A_75: Small Wooden Block>\nPosition: [0.,4.,6.]\n(Upper layer: x=0, y=5, z=6) <ID A_76: Small Wooden Block>\nPosition: [0.,5.,6.]\n(Upper layer: x=0, y=6, z=6) <ID A_77: Small Wooden Block>\nPosition: [0.,6.,6.]\n(Upper layer: x=0, y=7, z=6) <ID A_78: Small Wooden Block>\nPosition: [0.,7.,6.]\n(Upper layer: x=0, y=8, z=6) <ID A_79: Small Wooden Block>\nPosition: [0.,8.,6.]\n(Upper layer: x=0, y=9, z=6) <ID A_80: Small Wooden Block>\nPosition: [0.,9.,6.]\n(Upper layer: x=-1, y=-10, z=6) <ID A_81: Small Wooden Block>\nPosition: [ -1.,-10.,  6.]\n(Upper layer: x=-1, y=-9, z=6) <ID A_82: Small Wooden Block>\nPosition: [-1.,-9., 6.]\n(Upper layer: x=-1, y=-8, z=6) <ID A_83: Small Wooden Block>\nPosition: [-1.,-8., 6.]\n(Upper layer: x=-1, y=-7, z=6) <ID A_84: Small Wooden Block>\nPosition: [-1.,-7., 6.]\n(Upper layer: x=-1, y=-6, z=6) <ID A_85: Small Wooden Block>\nPosition: [-1.,-6., 6.]\n(Upper layer: x=-1, y=-5, z=6) <ID A_86: Small Wooden Block>\nPosition: [-1.,-5., 6.]\n(Upper layer: x=-1, y=-4, z=6) <ID A_87: Small Wooden Block>\nPosition: [-1.,-4., 6.]\n(Upper layer: x=-1, y=-3, z=6) <ID A_88: Small Wooden Block>\nPosition: [-1.,-3., 6.]\n(Upper layer: x=-1, y=-2, z=6) <ID A_89: Small Wooden Block>\nPosition: [-1.,-2., 6.]\n(Upper layer: x=-1, y=-1, z=6) <ID A_90: Small Wooden Block>\nPosition: [-1.,-1., 6.]\n(Upper layer: x=-1, y=0, z=6) <ID A_91: Small Wooden Block>\nPosition: [-1., 0., 6.]\n(Upper layer: x=-1, y=1, z=6) <ID A_92: Small Wooden Block>\nPosition: [-1., 1., 6.]\n(Upper layer: x=-1, y=2, z=6) <ID A_93: Small Wooden Block>\nPosition: [-1., 2., 6.]\n(Upper layer: x=-1, y=3, z=6) <ID A_94: Small Wooden Block>\nPosition: [-1., 3., 6.]\n(Upper layer: x=-1, y=4, z=6) <ID A_95: Small Wooden Block>\nPosition: [-1., 4., 6.]\n(Upper layer: x=-1, y=5, z=6) <ID A_96: Small Wooden Block>\nPosition: [-1., 5., 6.]\n(Upper layer: x=-1, y=6, z=6) <ID A_97: Small Wooden Block>\nPosition: [-1., 6., 6.]\n(Upper layer: x=-1, y=7, z=6) <ID A_98: Small Wooden Block>\nPosition: [-1., 7., 6.]\n(Upper layer: x=-1, y=8, z=6) <ID A_99: Small Wooden Block>\nPosition: [-1., 8., 6.]\n(Upper layer: x=-1, y=9, z=6) <ID A_100: Small Wooden Block>\nPosition: [-1., 9., 6.]\n(Upper layer: x=1, y=-10, z=6) <ID A_101: Small Wooden Block>\nPosition: [  1.,-10.,  6.]\n(Upper layer: x=1, y=-9, z=6) <ID A_102: Small Wooden Block>\nPosition: [ 1.,-9., 6.]\n(Upper layer: x=1, y=-8, z=6) <ID A_103: Small Wooden Block>\nPosition: [ 1.,-8., 6.]\n(Upper layer: x=1, y=-7, z=6) <ID A_104: Small Wooden Block>\nPosition: [ 1.,-7., 6.]\n(Upper layer: x=1, y=-6, z=6) <ID A_105: Small Wooden Block>\nPosition: [ 1.,-6., 6.]\n(Upper layer: x=1, y=-5, z=6) <ID A_106: Small Wooden Block>\nPosition: [ 1.,-5., 6.]\n(Upper layer: x=1, y=-4, z=6) <ID A_107: Small Wooden Block>\nPosition: [ 1.,-4., 6.]\n(Upper layer: x=1, y=-3, z=6) <ID A_108: Small Wooden Block>\nPosition: [ 1.,-3., 6.]\n(Upper layer: x=1, y=-2, z=6) <ID A_109: Small Wooden Block>\nPosition: [ 1.,-2., 6.]\n(Upper layer: x=1, y=-1, z=6) <ID A_110: Small Wooden Block>\nPosition: [ 1.,-1., 6.]\n(Upper layer: x=1, y=0, z=6) <ID A_111: Small Wooden Block>\nPosition: [1.,0.,6.]\n(Upper layer: x=1, y=1, z=6) <ID A_112: Small Wooden Block>\nPosition: [1.,1.,6.]\n(Upper layer: x=1, y=2, z=6) <ID A_113: Small Wooden Block>\nPosition: [1.,2.,6.]\n(Upper layer: x=1, y=3, z=6) <ID A_114: Small Wooden Block>\nPosition: [1.,3.,6.]\n(Upper layer: x=1, y=4, z=6) <ID A_115: Small Wooden Block>\nPosition: [1.,4.,6.]\n(Upper layer: x=1, y=5, z=6) <ID A_116: Small Wooden Block>\nPosition: [1.,5.,6.]\n(Upper layer: x=1, y=6, z=6) <ID A_117: Small Wooden Block>\nPosition: [1.,6.,6.]\n(Upper layer: x=1, y=7, z=6) <ID A_118: Small Wooden Block>\nPosition: [1.,7.,6.]\n(Upper layer: x=1, y=8, z=6) <ID A_119: Small Wooden Block>\nPosition: [1.,8.,6.]\n(Upper layer: x=1, y=9, z=6) <ID A_120: Small Wooden Block>\nPosition: [1.,9.,6.]\n(First east-face diagonal brace: connects A_42 (x=1,y=-9,z=5) West face B to A_63 (x=0,y=-8,z=6) East face A) <ID 1: Brace>\nConnecting <ID 42: Small Wooden Block> at [ 0.5 -9.   5. ] and <ID 63: Small Wooden Block> at [ 0.5 -8.   6. ].\t\n(East-face diagonal brace: connects A_43 (x=1,y=-8,z=5) West face B to A_64 (x=0,y=-7,z=6) East face A) <ID 2: Brace>\nConnecting <ID 43: Small Wooden Block> at [ 0.5 -8.   5. ] and <ID 64: Small Wooden Block> at [ 0.5 -7.   6. ].\t\n(East-face diagonal brace: connects A_44 (x=1,y=-7,z=5) West face B to A_65 (x=0,y=-6,z=6) East face A) <ID 3: Brace>\nConnecting <ID 44: Small Wooden Block> at [ 0.5 -7.   5. ] and <ID 65: Small Wooden Block> at [ 0.5 -6.   6. ].\t\n(East-face diagonal brace: connects A_45 (x=1,y=-6,z=5) West face B to A_66 (x=0,y=-5,z=6) East face A) <ID 4: Brace>\nConnecting <ID 45: Small Wooden Block> at [ 0.5 -6.   5. ] and <ID 66: Small Wooden Block> at [ 0.5 -5.   6. ].\t\n(East-face diagonal brace: connects A_46 (x=1,y=-5,z=5) West face B to A_67 (x=0,y=-4,z=6) East face A) <ID 5: Brace>\nConnecting <ID 46: Small Wooden Block> at [ 0.5 -5.   5. ] and <ID 67: Small Wooden Block> at [ 0.5 -4.   6. ].\t\n(East-face diagonal brace: connects A_47 (x=1,y=-4,z=5) West face B to A_68 (x=0,y=-3,z=6) East face A) <ID 6: Brace>\nConnecting <ID 47: Small Wooden Block> at [ 0.5 -4.   5. ] and <ID 68: Small Wooden Block> at [ 0.5 -3.   6. ].\t\n(East-face diagonal brace: connects A_48 (x=1,y=-3,z=5) West face B to A_69 (x=0,y=-2,z=6) East face A) <ID 7: Brace>\nConnecting <ID 48: Small Wooden Block> at [ 0.5 -3.   5. ] and <ID 69: Small Wooden Block> at [ 0.5 -2.   6. ].\t\n(East-face diagonal brace: connects A_49 (x=1,y=-2,z=5) West face B to A_70 (x=0,y=-1,z=6) East face A) <ID 8: Brace>\nConnecting <ID 49: Small Wooden Block> at [ 0.5 -2.   5. ] and <ID 70: Small Wooden Block> at [ 0.5 -1.   6. ].\t\n(East-face diagonal brace: connects A_50 (x=1,y=-1,z=5) West face B to A_71 (x=0,y=0,z=6) East face A) <ID 9: Brace>\nConnecting <ID 50: Small Wooden Block> at [ 0.5 -1.   5. ] and <ID 71: Small Wooden Block> at [5.00000000e-01 1.11022302e-16 6.00000000e+00].\t\n(East-face diagonal brace: connects A_51 (x=1,y=0,z=5) West face B to A_72 (x=0,y=1,z=6) East face A) <ID 10: Brace>\nConnecting <ID 51: Small Wooden Block> at [0.5 0.  5. ] and <ID 72: Small Wooden Block> at [0.5 1.  6. ].\t\n(East-face diagonal brace: connects A_52 (x=1,y=1,z=5) West face B to A_73 (x=0,y=2,z=6) East face A) <ID 11: Brace>\nConnecting <ID 52: Small Wooden Block> at [0.5 1.  5. ] and <ID 73: Small Wooden Block> at [0.5 2.  6. ].\t\n(East-face diagonal brace: connects A_53 (x=1,y=2,z=5) West face B to A_74 (x=0,y=3,z=6) East face A) <ID 12: Brace>\nConnecting <ID 53: Small Wooden Block> at [0.5 2.  5. ] and <ID 74: Small Wooden Block> at [0.5 3.  6. ].\t\n(East-face diagonal brace: connects A_54 (x=1,y=3,z=5) West face B to A_75 (x=0,y=4,z=6) East face A) <ID 13: Brace>\nConnecting <ID 54: Small Wooden Block> at [0.5 3.  5. ] and <ID 75: Small Wooden Block> at [0.5 4.  6. ].\t\n(East-face diagonal brace: connects A_55 (x=1,y=4,z=5) West face B to A_76 (x=0,y=5,z=6) East face A) <ID 14: Brace>\nConnecting <ID 55: Small Wooden Block> at [0.5 4.  5. ] and <ID 76: Small Wooden Block> at [0.5 5.  6. ].\t\n(East-face diagonal brace: connects A_56 (x=1,y=5,z=5) West face B to A_76 (x=0,y=5,z=6) East face A) <ID 15: Brace>\nConnecting <ID 56: Small Wooden Block> at [0.5 5.  5. ] and <ID 76: Small Wooden Block> at [0.5 5.  6. ].\t\n(East-face diagonal brace: connects A_57 (x=1,y=6,z=5) West face B to A_78 (x=0,y=7,z=6) East face A) <ID 16: Brace>\nConnecting <ID 57: Small Wooden Block> at [0.5 6.  5. ] and <ID 78: Small Wooden Block> at [0.5 7.  6. ].\t\n(East-face diagonal brace: connects A_58 (x=1,y=7,z=5) West face B to A_79 (x=0,y=8,z=6) East face A) <ID 17: Brace>\nConnecting <ID 58: Small Wooden Block> at [0.5 7.  5. ] and <ID 79: Small Wooden Block> at [0.5 8.  6. ].\t\n(East-face diagonal brace: connects A_59 (x=1,y=8,z=5) West face B to A_80 (x=0,y=9,z=6) East face A) <ID 18: Brace>\nConnecting <ID 59: Small Wooden Block> at [0.5 8.  5. ] and <ID 80: Small Wooden Block> at [0.5 9.  6. ].\t\n(19th east-face diagonal brace: connects A_60 (x=1,y=9,z=5) West face B to A_81 (x=0,y=10,z=6) East face A) <ID 19: Brace>\nConnecting <ID 60: Small Wooden Block> at [0.5 9.  5. ] and <ID 81: Small Wooden Block> at [-1.  -9.5  6. ].\t\n(West-face diagonal brace: connects A_22 (x=-1,y=-9,z=5) East face A to A_63 (x=0,y=-8,z=6) West face B) <ID 20: Brace>\nConnecting <ID 22: Small Wooden Block> at [-0.5 -9.   5. ] and <ID 63: Small Wooden Block> at [-0.5 -8.   6. ].\t\n(West-face diagonal brace: connects A_23 (x=-1,y=-8,z=5) East face A to A_64 (x=0,y=-7,z=6) West face B) <ID 21: Brace>\nConnecting <ID 23: Small Wooden Block> at [-0.5 -8.   5. ] and <ID 64: Small Wooden Block> at [-0.5 -7.   6. ].\t\n(West-face diagonal brace: connects A_24 (x=-1,y=-7,z=5) East face A to A_65 (x=0,y=-6,z=6) West face B) <ID 22: Brace>\nConnecting <ID 24: Small Wooden Block> at [-0.5 -7.   5. ] and <ID 65: Small Wooden Block> at [-0.5 -6.   6. ].\t\n(West-face diagonal brace: connects A_25 (x=-1,y=-6,z=5) East face A to A_66 (x=0,y=-5,z=6) West face B) <ID 23: Brace>\nConnecting <ID 25: Small Wooden Block> at [-0.5 -6.   5. ] and <ID 66: Small Wooden Block> at [-0.5 -5.   6. ].\t\n(West-face diagonal brace: connects A_26 (x=-1,y=-5,z=5) East face A to A_67 (x=0,y=-4,z=6) West face B) <ID 24: Brace>\nConnecting <ID 26: Small Wooden Block> at [-0.5 -5.   5. ] and <ID 67: Small Wooden Block> at [-0.5 -4.   6. ].\t\n(West-face diagonal brace: connects A_27 (x=-1,y=-4,z=5) East face A to A_68 (x=0,y=-3,z=6) West face B) <ID 25: Brace>\nConnecting <ID 27: Small Wooden Block> at [-0.5 -4.   5. ] and <ID 68: Small Wooden Block> at [-0.5 -3.   6. ].\t\n(West-face diagonal brace: connects A_28 (x=-1,y=-3,z=5) East face A to A_69 (x=0,y=-2,z=6) West face B) <ID 26: Brace>\nConnecting <ID 28: Small Wooden Block> at [-0.5 -3.   5. ] and <ID 69: Small Wooden Block> at [-0.5 -2.   6. ].\t\n(West-face diagonal brace: connects A_29 (x=-1,y=-2,z=5) East face A to A_70 (x=0,y=-1,z=6) West face B) <ID 27: Brace>\nConnecting <ID 29: Small Wooden Block> at [-0.5 -2.   5. ] and <ID 70: Small Wooden Block> at [-0.5 -1.   6. ].\t\n(West-face diagonal brace: connects A_30 (x=-1,y=-1,z=5) East face A to A_71 (x=0,y=0,z=6) West face B) <ID 28: Brace>\nConnecting <ID 30: Small Wooden Block> at [-0.5 -1.   5. ] and <ID 71: Small Wooden Block> at [-5.00000000e-01  1.11022302e-16  6.00000000e+00].\t\n(West-face diagonal brace: connects A_31 (x=-1,y=0,z=5) East face A to A_72 (x=0,y=1,z=6) West face B) <ID 29: Brace>\nConnecting <ID 31: Small Wooden Block> at [-0.5  0.   5. ] and <ID 72: Small Wooden Block> at [-0.5  1.   6. ].\t\n(West-face diagonal brace: connects A_32 (x=-1,y=1,z=5) East face A to A_73 (x=0,y=2,z=6) West face B) <ID 30: Brace>\nConnecting <ID 32: Small Wooden Block> at [-0.5  1.   5. ] and <ID 73: Small Wooden Block> at [-0.5  2.   6. ].\t\n(West-face diagonal brace: connects A_33 (x=-1,y=2,z=5) East face A to A_74 (x=0,y=3,z=6) West face B) <ID 31: Brace>\nConnecting <ID 33: Small Wooden Block> at [-0.5  2.   5. ] and <ID 74: Small Wooden Block> at [-0.5  3.   6. ].\t\n(West-face diagonal brace: connects A_34 (x=-1,y=3,z=5) East face A to A_75 (x=0,y=4,z=6) West face B) <ID 32: Brace>\nConnecting <ID 34: Small Wooden Block> at [-0.5  3.   5. ] and <ID 75: Small Wooden Block> at [-0.5  4.   6. ].\t\n(West-face diagonal brace: connects A_35 (x=-1,y=4,z=5) East face A to A_76 (x=0,y=5,z=6) West face B) <ID 33: Brace>\nConnecting <ID 35: Small Wooden Block> at [-0.5  4.   5. ] and <ID 76: Small Wooden Block> at [-0.5  5.   6. ].\t\n(West-face diagonal brace: connects A_36 (x=-1,y=5,z=5) East face A to A_77 (x=0,y=6,z=6) West face B) <ID 34: Brace>\nConnecting <ID 36: Small Wooden Block> at [-0.5  5.   5. ] and <ID 77: Small Wooden Block> at [-0.5  6.   6. ].\t\n(West-face diagonal brace: connects A_37 (x=-1,y=6,z=5) East face A to A_78 (x=0,y=7,z=6) West face B) <ID 35: Brace>\nConnecting <ID 37: Small Wooden Block> at [-0.5  6.   5. ] and <ID 78: Small Wooden Block> at [-0.5  7.   6. ].\t\n(West-face diagonal brace: connects A_38 (x=-1,y=7,z=5) East face A to A_79 (x=0,y=8,z=6) West face B) <ID 36: Brace>\nConnecting <ID 38: Small Wooden Block> at [-0.5  7.   5. ] and <ID 79: Small Wooden Block> at [-0.5  8.   6. ].\t\n(West-face diagonal brace: connects A_39 (x=-1,y=8,z=5) East face A to A_80 (x=0,y=9,z=6) West face B) <ID 37: Brace>\nConnecting <ID 39: Small Wooden Block> at [-0.5  8.   5. ] and <ID 80: Small Wooden Block> at [-0.5  9.   6. ].\t\n(19th west-face diagonal brace: connects A_40 (x=-1,y=9,z=5) East face A to A_81 (x=0,y=10,z=6) West face B) <ID 38: Brace>\nConnecting <ID 40: Small Wooden Block> at [-0.5  9.   5. ] and <ID 81: Small Wooden Block> at [ -1.  -10.5   6. ].\t\n(South End Support Pad: east extension (x=2,y=-10,z=5), lower layer) <ID 39: Small Wooden Block>\nPosition: [  1.,-11.,  5.]\n(South End Support Pad: west extension (x=-2,y=-10,z=5), lower layer (x=-2 alignment)) <ID 40: Small Wooden Block>\nPosition: [ -1.,-11.,  5.]\n(South End Support Pad: east extension (x=2,y=-10,z=5), lower layer (x=2 alignment)) <ID 41: Small Wooden Block>\nPosition: [  2.,-10.,  5.]\n(South End Support Pad: west extension (x=-2,y=-10,z=6), upper layer (x=-2 alignment)) <ID 42: Small Wooden Block>\nPosition: [ -2.,-10.,  6.]\n(South End Support Pad: west extension (x=-2,y=-10,z=5), lower layer (connects to upper layer z=6)) <ID 43: Small Wooden Block>\nPosition: [ -2.,-10.,  5.]\n(South End Support Pad: east extension (x=2,y=-10,z=6), upper layer (connects to lower layer z=5)) <ID 44: Small Wooden Block>\nPosition: [  2.,-10.,  6.]\n(North end of lower west layer: extends Main Deck Beam to y=10 at x=-1,z=5 (base for west support pad extension)) <ID 45: Small Wooden Block>\nPosition: [-1.,10., 5.]\n(North End Support Pad: west extension (x=-2,y=10,z=5), lower layer (x=-2 alignment)) <ID 46: Small Wooden Block>\nPosition: [-2.,10., 5.]\n(North end of lower east layer: extends Main Deck Beam to y=10 at x=1,z=5 (base for east support pad extension)) <ID 47: Small Wooden Block>\nPosition: [ 1.,10., 5.]\n(North End Support Pad: east extension (x=2,y=10,z=5), lower layer (x=2 alignment)) <ID 48: Small Wooden Block>\nPosition: [ 2.,10., 5.]\n(North end of upper west layer: extends to z=6 at x=-1,y=10 (base for west support pad extension)) <ID 49: Small Wooden Block>\nPosition: [-1.,10., 6.]\n(North End Support Pad: west extension (x=-2,y=10,z=6), upper layer (x=-2 alignment)) <ID 50: Small Wooden Block>\nPosition: [-2.,10., 6.]\n(North end of upper east layer: extends to z=6 at x=1,y=10 (base for east support pad extension)) <ID 51: Small Wooden Block>\nPosition: [ 1.,10., 6.]\n(North End Support Pad: east extension (x=2,y=10,z=6), upper layer (x=2 alignment)) <ID 52: Small Wooden Block>\nPosition: [ 2.,10., 6.]"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": "39"
+    },
+    "result": "You have successfully removed <ID 39: Small Wooden Block>."
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": "40"
+    },
+    "result": "You have successfully removed <ID 40: Small Wooden Block>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_21",
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "South End Support Pad: west extension (x=-2,y=-10,z=5), lower layer (corrected y=-10 alignment)"
+    },
+    "result": "You have successfully added <ID 53: Small Wooden Block>.\nExisting Blocks: 170\n(South End Support Pad: west extension (x=-2,y=-10,z=5), lower layer (corrected y=-10 alignment)) <ID 53: Small Wooden Block>\nPosition: [ -1.,-11.,  5.]\nAttachable Faces:\nFace label: A, Face center: [ -1.5, -11. ,   5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ -0.5, -11. ,   5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ -1. , -11. ,   5.5], Facing towards <straight up>\nFace label: D, Face center: [ -1. , -11. ,   4.5], Facing towards <straight down>\nFace label: E, Face center: [ -1. , -11.5,   5. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": "53"
+    },
+    "result": "You have successfully removed <ID 53: Small Wooden Block>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_21",
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "South End Support Pad: west extension (x=-2,y=-10,z=5), lower layer (corrected y=-10 alignment)"
+    },
+    "result": "You have successfully added <ID 54: Small Wooden Block>.\nExisting Blocks: 170\n(South End Support Pad: west extension (x=-2,y=-10,z=5), lower layer (corrected y=-10 alignment)) <ID 54: Small Wooden Block>\nPosition: [ -1.,-11.,  5.]\nAttachable Faces:\nFace label: A, Face center: [ -1.5, -11. ,   5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ -0.5, -11. ,   5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ -1. , -11. ,   5.5], Facing towards <straight up>\nFace label: D, Face center: [ -1. , -11. ,   4.5], Facing towards <straight down>\nFace label: E, Face center: [ -1. , -11.5,   5. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "attach_block_to",
+      "message": "Face D of base block A_81 Small Wooden Block is already occupied, please try again."
+    }
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "A_81",
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "South End Support Pad: west extension (x=-2,y=-10,z=6), upper layer (corrected y=-10 alignment)"
+    },
+    "result": "Face D of base block A_81 Small Wooden Block is already occupied, please try again."
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "attach_block_to",
+      "message": "Face D of base block 42 Small Wooden Block is already occupied, please try again."
+    }
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "42",
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "South End Support Pad: west extension (x=-2,y=-10,z=5), lower layer (connects to upper layer z=6, corrected y=-10 alignment)"
+    },
+    "result": "Face D of base block 42 Small Wooden Block is already occupied, please try again."
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "remove_block",
+      "message": "Specified block 15 not found, please try again."
+    }
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": "15"
+    },
+    "result": "Specified block 15 not found, please try again."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "45",
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "North End Support Pad: middle extension (x=0,y=10,z=5), lower layer (fills x=0 gap, completes 5-unit width)"
+    },
+    "result": "You have successfully added <ID 55: Small Wooden Block>.\nExisting Blocks: 171\n(North End Support Pad: middle extension (x=0,y=10,z=5), lower layer (fills x=0 gap, completes 5-unit width)) <ID 55: Small Wooden Block>\nPosition: [ 0.,10., 5.]\nAttachable Faces:\nFace label: A, Face center: [0. , 9.5, 5. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 0. , 10.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , 10. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. , 10. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 0.5, 10. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "55",
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "North End Support Pad: middle extension (x=0,y=10,z=6), upper layer (fills x=0 gap, completes 5-unit width across z=5-6)"
+    },
+    "result": "You have successfully added <ID 56: Small Wooden Block>.\nExisting Blocks: 172\n(North End Support Pad: middle extension (x=0,y=10,z=6), upper layer (fills x=0 gap, completes 5-unit width across z=5-6)) <ID 56: Small Wooden Block>\nPosition: [ 0.,10., 6.]\nAttachable Faces:\nFace label: A, Face center: [0. , 9.5, 6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 0. , 10.5,  6. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: C, Face center: [-0.5, 10. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 0.5, 10. ,  6. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [ 0. , 10. ,  6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": "A_56",
+      "face_a": "B",
+      "block_b": "A_77",
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "19th east-face diagonal brace: connects A_56 (x=1,y=5,z=5) West face B to A_77 (x=0,y=6,z=6) East face A (y+1 offset correction)"
+    },
+    "result": "You have successfully added <ID 57: Brace>.\nExisting Blocks: 173\n(19th east-face diagonal brace: connects A_56 (x=1,y=5,z=5) West face B to A_77 (x=0,y=6,z=6) East face A (y+1 offset correction)) <ID 57: Brace>\nConnecting <ID 56: Small Wooden Block> at [0.5 5.  5. ] and <ID 77: Small Wooden Block> at [0.5 6.  6. ].\t"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 173\n\nMachine Summary: None\n(The starting block) <ID A_1: Starting Block>\nPosition: [  0.,-10.,  5.]\n(x=0, y=-9, z=5) <ID A_2: Small Wooden Block>\nPosition: [ 0.,-9., 5.]\n(x=0, y=-8, z=5) <ID A_3: Small Wooden Block>\nPosition: [ 0.,-8., 5.]\n(x=0, y=-7, z=5) <ID A_4: Small Wooden Block>\nPosition: [ 0.,-7., 5.]\n(x=0, y=-6, z=5) <ID A_5: Small Wooden Block>\nPosition: [ 0.,-6., 5.]\n(x=0, y=-5, z=5) <ID A_6: Small Wooden Block>\nPosition: [ 0.,-5., 5.]\n(x=0, y=-4, z=5) <ID A_7: Small Wooden Block>\nPosition: [ 0.,-4., 5.]\n(x=0, y=-3, z=5) <ID A_8: Small Wooden Block>\nPosition: [ 0.,-3., 5.]\n(x=0, y=-2, z=5) <ID A_9: Small Wooden Block>\nPosition: [ 0.,-2., 5.]\n(x=0, y=-1, z=5) <ID A_10: Small Wooden Block>\nPosition: [ 0.,-1., 5.]\n(x=0, y=0, z=5) <ID A_11: Small Wooden Block>\nPosition: [0.,0.,5.]\n(x=0, y=1, z=5) <ID A_12: Small Wooden Block>\nPosition: [0.,1.,5.]\n(x=0, y=2, z=5) <ID A_13: Small Wooden Block>\nPosition: [0.,2.,5.]\n(x=0, y=3, z=5) <ID A_14: Small Wooden Block>\nPosition: [0.,3.,5.]\n(x=0, y=4, z=5) <ID A_15: Small Wooden Block>\nPosition: [0.,4.,5.]\n(x=0, y=5, z=5) <ID A_16: Small Wooden Block>\nPosition: [0.,5.,5.]\n(x=0, y=6, z=5) <ID A_17: Small Wooden Block>\nPosition: [0.,6.,5.]\n(x=0, y=7, z=5) <ID A_18: Small Wooden Block>\nPosition: [0.,7.,5.]\n(x=0, y=8, z=5) <ID A_19: Small Wooden Block>\nPosition: [0.,8.,5.]\n(x=0, y=9, z=5) <ID A_20: Small Wooden Block>\nPosition: [0.,9.,5.]\n(x=-1, y=-10, z=5) <ID A_21: Small Wooden Block>\nPosition: [ -1.,-10.,  5.]\n(x=-1, y=-9, z=5) <ID A_22: Small Wooden Block>\nPosition: [-1.,-9., 5.]\n(x=-1, y=-8, z=5) <ID A_23: Small Wooden Block>\nPosition: [-1.,-8., 5.]\n(x=-1, y=-7, z=5) <ID A_24: Small Wooden Block>\nPosition: [-1.,-7., 5.]\n(x=-1, y=-6, z=5) <ID A_25: Small Wooden Block>\nPosition: [-1.,-6., 5.]\n(x=-1, y=-5, z=5) <ID A_26: Small Wooden Block>\nPosition: [-1.,-5., 5.]\n(x=-1, y=-4, z=5) <ID A_27: Small Wooden Block>\nPosition: [-1.,-4., 5.]\n(x=-1, y=-3, z=5) <ID A_28: Small Wooden Block>\nPosition: [-1.,-3., 5.]\n(x=-1, y=-2, z=5) <ID A_29: Small Wooden Block>\nPosition: [-1.,-2., 5.]\n(x=-1, y=-1, z=5) <ID A_30: Small Wooden Block>\nPosition: [-1.,-1., 5.]\n(x=-1, y=0, z=5) <ID A_31: Small Wooden Block>\nPosition: [-1., 0., 5.]\n(x=-1, y=1, z=5) <ID A_32: Small Wooden Block>\nPosition: [-1., 1., 5.]\n(x=-1, y=2, z=5) <ID A_33: Small Wooden Block>\nPosition: [-1., 2., 5.]\n(x=-1, y=3, z=5) <ID A_34: Small Wooden Block>\nPosition: [-1., 3., 5.]\n(x=-1, y=4, z=5) <ID A_35: Small Wooden Block>\nPosition: [-1., 4., 5.]\n(x=-1, y=5, z=5) <ID A_36: Small Wooden Block>\nPosition: [-1., 5., 5.]\n(x=-1, y=6, z=5) <ID A_37: Small Wooden Block>\nPosition: [-1., 6., 5.]\n(x=-1, y=7, z=5) <ID A_38: Small Wooden Block>\nPosition: [-1., 7., 5.]\n(x=-1, y=8, z=5) <ID A_39: Small Wooden Block>\nPosition: [-1., 8., 5.]\n(x=-1, y=9, z=5) <ID A_40: Small Wooden Block>\nPosition: [-1., 9., 5.]\n(x=1, y=-10, z=5) <ID A_41: Small Wooden Block>\nPosition: [  1.,-10.,  5.]\n(x=1, y=-9, z=5) <ID A_42: Small Wooden Block>\nPosition: [ 1.,-9., 5.]\n(x=1, y=-8, z=5) <ID A_43: Small Wooden Block>\nPosition: [ 1.,-8., 5.]\n(x=1, y=-7, z=5) <ID A_44: Small Wooden Block>\nPosition: [ 1.,-7., 5.]\n(x=1, y=-6, z=5) <ID A_45: Small Wooden Block>\nPosition: [ 1.,-6., 5.]\n(x=1, y=-5, z=5) <ID A_46: Small Wooden Block>\nPosition: [ 1.,-5., 5.]\n(x=1, y=-4, z=5) <ID A_47: Small Wooden Block>\nPosition: [ 1.,-4., 5.]\n(x=1, y=-3, z=5) <ID A_48: Small Wooden Block>\nPosition: [ 1.,-3., 5.]\n(x=1, y=-2, z=5) <ID A_49: Small Wooden Block>\nPosition: [ 1.,-2., 5.]\n(x=1, y=-1, z=5) <ID A_50: Small Wooden Block>\nPosition: [ 1.,-1., 5.]\n(x=1, y=0, z=5) <ID A_51: Small Wooden Block>\nPosition: [1.,0.,5.]\n(x=1, y=1, z=5) <ID A_52: Small Wooden Block>\nPosition: [1.,1.,5.]\n(x=1, y=2, z=5) <ID A_53: Small Wooden Block>\nPosition: [1.,2.,5.]\n(x=1, y=3, z=5) <ID A_54: Small Wooden Block>\nPosition: [1.,3.,5.]\n(x=1, y=4, z=5) <ID A_55: Small Wooden Block>\nPosition: [1.,4.,5.]\n(x=1, y=5, z=5) <ID A_56: Small Wooden Block>\nPosition: [1.,5.,5.]\n(x=1, y=6, z=5) <ID A_57: Small Wooden Block>\nPosition: [1.,6.,5.]\n(x=1, y=7, z=5) <ID A_58: Small Wooden Block>\nPosition: [1.,7.,5.]\n(x=1, y=8, z=5) <ID A_59: Small Wooden Block>\nPosition: [1.,8.,5.]\n(x=1, y=9, z=5) <ID A_60: Small Wooden Block>\nPosition: [1.,9.,5.]\n(Upper layer: x=0, y=-10, z=6) <ID A_61: Small Wooden Block>\nPosition: [  0.,-10.,  6.]\n(Upper layer: x=0, y=-9, z=6) <ID A_62: Small Wooden Block>\nPosition: [ 0.,-9., 6.]\n(Upper layer: x=0, y=-8, z=6) <ID A_63: Small Wooden Block>\nPosition: [ 0.,-8., 6.]\n(Upper layer: x=0, y=-7, z=6) <ID A_64: Small Wooden Block>\nPosition: [ 0.,-7., 6.]\n(Upper layer: x=0, y=-6, z=6) <ID A_65: Small Wooden Block>\nPosition: [ 0.,-6., 6.]\n(Upper layer: x=0, y=-5, z=6) <ID A_66: Small Wooden Block>\nPosition: [ 0.,-5., 6.]\n(Upper layer: x=0, y=-4, z=6) <ID A_67: Small Wooden Block>\nPosition: [ 0.,-4., 6.]\n(Upper layer: x=0, y=-3, z=6) <ID A_68: Small Wooden Block>\nPosition: [ 0.,-3., 6.]\n(Upper layer: x=0, y=-2, z=6) <ID A_69: Small Wooden Block>\nPosition: [ 0.,-2., 6.]\n(Upper layer: x=0, y=-1, z=6) <ID A_70: Small Wooden Block>\nPosition: [ 0.,-1., 6.]\n(Upper layer: x=0, y=0, z=6) <ID A_71: Small Wooden Block>\nPosition: [0.,0.,6.]\n(Upper layer: x=0, y=1, z=6) <ID A_72: Small Wooden Block>\nPosition: [0.,1.,6.]\n(Upper layer: x=0, y=2, z=6) <ID A_73: Small Wooden Block>\nPosition: [0.,2.,6.]\n(Upper layer: x=0, y=3, z=6) <ID A_74: Small Wooden Block>\nPosition: [0.,3.,6.]\n(Upper layer: x=0, y=4, z=6) <ID A_75: Small Wooden Block>\nPosition: [0.,4.,6.]\n(Upper layer: x=0, y=5, z=6) <ID A_76: Small Wooden Block>\nPosition: [0.,5.,6.]\n(Upper layer: x=0, y=6, z=6) <ID A_77: Small Wooden Block>\nPosition: [0.,6.,6.]\n(Upper layer: x=0, y=7, z=6) <ID A_78: Small Wooden Block>\nPosition: [0.,7.,6.]\n(Upper layer: x=0, y=8, z=6) <ID A_79: Small Wooden Block>\nPosition: [0.,8.,6.]\n(Upper layer: x=0, y=9, z=6) <ID A_80: Small Wooden Block>\nPosition: [0.,9.,6.]\n(Upper layer: x=-1, y=-10, z=6) <ID A_81: Small Wooden Block>\nPosition: [ -1.,-10.,  6.]\n(Upper layer: x=-1, y=-9, z=6) <ID A_82: Small Wooden Block>\nPosition: [-1.,-9., 6.]\n(Upper layer: x=-1, y=-8, z=6) <ID A_83: Small Wooden Block>\nPosition: [-1.,-8., 6.]\n(Upper layer: x=-1, y=-7, z=6) <ID A_84: Small Wooden Block>\nPosition: [-1.,-7., 6.]\n(Upper layer: x=-1, y=-6, z=6) <ID A_85: Small Wooden Block>\nPosition: [-1.,-6., 6.]\n(Upper layer: x=-1, y=-5, z=6) <ID A_86: Small Wooden Block>\nPosition: [-1.,-5., 6.]\n(Upper layer: x=-1, y=-4, z=6) <ID A_87: Small Wooden Block>\nPosition: [-1.,-4., 6.]\n(Upper layer: x=-1, y=-3, z=6) <ID A_88: Small Wooden Block>\nPosition: [-1.,-3., 6.]\n(Upper layer: x=-1, y=-2, z=6) <ID A_89: Small Wooden Block>\nPosition: [-1.,-2., 6.]\n(Upper layer: x=-1, y=-1, z=6) <ID A_90: Small Wooden Block>\nPosition: [-1.,-1., 6.]\n(Upper layer: x=-1, y=0, z=6) <ID A_91: Small Wooden Block>\nPosition: [-1., 0., 6.]\n(Upper layer: x=-1, y=1, z=6) <ID A_92: Small Wooden Block>\nPosition: [-1., 1., 6.]\n(Upper layer: x=-1, y=2, z=6) <ID A_93: Small Wooden Block>\nPosition: [-1., 2., 6.]\n(Upper layer: x=-1, y=3, z=6) <ID A_94: Small Wooden Block>\nPosition: [-1., 3., 6.]\n(Upper layer: x=-1, y=4, z=6) <ID A_95: Small Wooden Block>\nPosition: [-1., 4., 6.]\n(Upper layer: x=-1, y=5, z=6) <ID A_96: Small Wooden Block>\nPosition: [-1., 5., 6.]\n(Upper layer: x=-1, y=6, z=6) <ID A_97: Small Wooden Block>\nPosition: [-1., 6., 6.]\n(Upper layer: x=-1, y=7, z=6) <ID A_98: Small Wooden Block>\nPosition: [-1., 7., 6.]\n(Upper layer: x=-1, y=8, z=6) <ID A_99: Small Wooden Block>\nPosition: [-1., 8., 6.]\n(Upper layer: x=-1, y=9, z=6) <ID A_100: Small Wooden Block>\nPosition: [-1., 9., 6.]\n(Upper layer: x=1, y=-10, z=6) <ID A_101: Small Wooden Block>\nPosition: [  1.,-10.,  6.]\n(Upper layer: x=1, y=-9, z=6) <ID A_102: Small Wooden Block>\nPosition: [ 1.,-9., 6.]\n(Upper layer: x=1, y=-8, z=6) <ID A_103: Small Wooden Block>\nPosition: [ 1.,-8., 6.]\n(Upper layer: x=1, y=-7, z=6) <ID A_104: Small Wooden Block>\nPosition: [ 1.,-7., 6.]\n(Upper layer: x=1, y=-6, z=6) <ID A_105: Small Wooden Block>\nPosition: [ 1.,-6., 6.]\n(Upper layer: x=1, y=-5, z=6) <ID A_106: Small Wooden Block>\nPosition: [ 1.,-5., 6.]\n(Upper layer: x=1, y=-4, z=6) <ID A_107: Small Wooden Block>\nPosition: [ 1.,-4., 6.]\n(Upper layer: x=1, y=-3, z=6) <ID A_108: Small Wooden Block>\nPosition: [ 1.,-3., 6.]\n(Upper layer: x=1, y=-2, z=6) <ID A_109: Small Wooden Block>\nPosition: [ 1.,-2., 6.]\n(Upper layer: x=1, y=-1, z=6) <ID A_110: Small Wooden Block>\nPosition: [ 1.,-1., 6.]\n(Upper layer: x=1, y=0, z=6) <ID A_111: Small Wooden Block>\nPosition: [1.,0.,6.]\n(Upper layer: x=1, y=1, z=6) <ID A_112: Small Wooden Block>\nPosition: [1.,1.,6.]\n(Upper layer: x=1, y=2, z=6) <ID A_113: Small Wooden Block>\nPosition: [1.,2.,6.]\n(Upper layer: x=1, y=3, z=6) <ID A_114: Small Wooden Block>\nPosition: [1.,3.,6.]\n(Upper layer: x=1, y=4, z=6) <ID A_115: Small Wooden Block>\nPosition: [1.,4.,6.]\n(Upper layer: x=1, y=5, z=6) <ID A_116: Small Wooden Block>\nPosition: [1.,5.,6.]\n(Upper layer: x=1, y=6, z=6) <ID A_117: Small Wooden Block>\nPosition: [1.,6.,6.]\n(Upper layer: x=1, y=7, z=6) <ID A_118: Small Wooden Block>\nPosition: [1.,7.,6.]\n(Upper layer: x=1, y=8, z=6) <ID A_119: Small Wooden Block>\nPosition: [1.,8.,6.]\n(Upper layer: x=1, y=9, z=6) <ID A_120: Small Wooden Block>\nPosition: [1.,9.,6.]\n(First east-face diagonal brace: connects A_42 (x=1,y=-9,z=5) West face B to A_63 (x=0,y=-8,z=6) East face A) <ID 1: Brace>\nConnecting <ID 42: Small Wooden Block> at [ 0.5 -9.   5. ] and <ID 63: Small Wooden Block> at [ 0.5 -8.   6. ].\t\n(East-face diagonal brace: connects A_43 (x=1,y=-8,z=5) West face B to A_64 (x=0,y=-7,z=6) East face A) <ID 2: Brace>\nConnecting <ID 43: Small Wooden Block> at [ 0.5 -8.   5. ] and <ID 64: Small Wooden Block> at [ 0.5 -7.   6. ].\t\n(East-face diagonal brace: connects A_44 (x=1,y=-7,z=5) West face B to A_65 (x=0,y=-6,z=6) East face A) <ID 3: Brace>\nConnecting <ID 44: Small Wooden Block> at [ 0.5 -7.   5. ] and <ID 65: Small Wooden Block> at [ 0.5 -6.   6. ].\t\n(East-face diagonal brace: connects A_45 (x=1,y=-6,z=5) West face B to A_66 (x=0,y=-5,z=6) East face A) <ID 4: Brace>\nConnecting <ID 45: Small Wooden Block> at [ 0.5 -6.   5. ] and <ID 66: Small Wooden Block> at [ 0.5 -5.   6. ].\t\n(East-face diagonal brace: connects A_46 (x=1,y=-5,z=5) West face B to A_67 (x=0,y=-4,z=6) East face A) <ID 5: Brace>\nConnecting <ID 46: Small Wooden Block> at [ 0.5 -5.   5. ] and <ID 67: Small Wooden Block> at [ 0.5 -4.   6. ].\t\n(East-face diagonal brace: connects A_47 (x=1,y=-4,z=5) West face B to A_68 (x=0,y=-3,z=6) East face A) <ID 6: Brace>\nConnecting <ID 47: Small Wooden Block> at [ 0.5 -4.   5. ] and <ID 68: Small Wooden Block> at [ 0.5 -3.   6. ].\t\n(East-face diagonal brace: connects A_48 (x=1,y=-3,z=5) West face B to A_69 (x=0,y=-2,z=6) East face A) <ID 7: Brace>\nConnecting <ID 48: Small Wooden Block> at [ 0.5 -3.   5. ] and <ID 69: Small Wooden Block> at [ 0.5 -2.   6. ].\t\n(East-face diagonal brace: connects A_49 (x=1,y=-2,z=5) West face B to A_70 (x=0,y=-1,z=6) East face A) <ID 8: Brace>\nConnecting <ID 49: Small Wooden Block> at [ 0.5 -2.   5. ] and <ID 70: Small Wooden Block> at [ 0.5 -1.   6. ].\t\n(East-face diagonal brace: connects A_50 (x=1,y=-1,z=5) West face B to A_71 (x=0,y=0,z=6) East face A) <ID 9: Brace>\nConnecting <ID 50: Small Wooden Block> at [ 0.5 -1.   5. ] and <ID 71: Small Wooden Block> at [5.00000000e-01 1.11022302e-16 6.00000000e+00].\t\n(East-face diagonal brace: connects A_51 (x=1,y=0,z=5) West face B to A_72 (x=0,y=1,z=6) East face A) <ID 10: Brace>\nConnecting <ID 51: Small Wooden Block> at [0.5 0.  5. ] and <ID 72: Small Wooden Block> at [0.5 1.  6. ].\t\n(East-face diagonal brace: connects A_52 (x=1,y=1,z=5) West face B to A_73 (x=0,y=2,z=6) East face A) <ID 11: Brace>\nConnecting <ID 52: Small Wooden Block> at [0.5 1.  5. ] and <ID 73: Small Wooden Block> at [0.5 2.  6. ].\t\n(East-face diagonal brace: connects A_53 (x=1,y=2,z=5) West face B to A_74 (x=0,y=3,z=6) East face A) <ID 12: Brace>\nConnecting <ID 53: Small Wooden Block> at [0.5 2.  5. ] and <ID 74: Small Wooden Block> at [0.5 3.  6. ].\t\n(East-face diagonal brace: connects A_54 (x=1,y=3,z=5) West face B to A_75 (x=0,y=4,z=6) East face A) <ID 13: Brace>\nConnecting <ID 54: Small Wooden Block> at [0.5 3.  5. ] and <ID 75: Small Wooden Block> at [0.5 4.  6. ].\t\n(East-face diagonal brace: connects A_55 (x=1,y=4,z=5) West face B to A_76 (x=0,y=5,z=6) East face A) <ID 14: Brace>\nConnecting <ID 55: Small Wooden Block> at [0.5 4.  5. ] and <ID 76: Small Wooden Block> at [0.5 5.  6. ].\t\n(East-face diagonal brace: connects A_57 (x=1,y=6,z=5) West face B to A_78 (x=0,y=7,z=6) East face A) <ID 16: Brace>\nConnecting <ID 57: Small Wooden Block> at [0.5 6.  5. ] and <ID 78: Small Wooden Block> at [0.5 7.  6. ].\t\n(East-face diagonal brace: connects A_58 (x=1,y=7,z=5) West face B to A_79 (x=0,y=8,z=6) East face A) <ID 17: Brace>\nConnecting <ID 58: Small Wooden Block> at [0.5 7.  5. ] and <ID 79: Small Wooden Block> at [0.5 8.  6. ].\t\n(East-face diagonal brace: connects A_59 (x=1,y=8,z=5) West face B to A_80 (x=0,y=9,z=6) East face A) <ID 18: Brace>\nConnecting <ID 59: Small Wooden Block> at [0.5 8.  5. ] and <ID 80: Small Wooden Block> at [0.5 9.  6. ].\t\n(19th east-face diagonal brace: connects A_60 (x=1,y=9,z=5) West face B to A_81 (x=0,y=10,z=6) East face A) <ID 19: Brace>\nConnecting <ID 60: Small Wooden Block> at [0.5 9.  5. ] and <ID 81: Small Wooden Block> at [-1.  -9.5  6. ].\t\n(West-face diagonal brace: connects A_22 (x=-1,y=-9,z=5) East face A to A_63 (x=0,y=-8,z=6) West face B) <ID 20: Brace>\nConnecting <ID 22: Small Wooden Block> at [-0.5 -9.   5. ] and <ID 63: Small Wooden Block> at [-0.5 -8.   6. ].\t\n(West-face diagonal brace: connects A_23 (x=-1,y=-8,z=5) East face A to A_64 (x=0,y=-7,z=6) West face B) <ID 21: Brace>\nConnecting <ID 23: Small Wooden Block> at [-0.5 -8.   5. ] and <ID 64: Small Wooden Block> at [-0.5 -7.   6. ].\t\n(West-face diagonal brace: connects A_24 (x=-1,y=-7,z=5) East face A to A_65 (x=0,y=-6,z=6) West face B) <ID 22: Brace>\nConnecting <ID 24: Small Wooden Block> at [-0.5 -7.   5. ] and <ID 65: Small Wooden Block> at [-0.5 -6.   6. ].\t\n(West-face diagonal brace: connects A_25 (x=-1,y=-6,z=5) East face A to A_66 (x=0,y=-5,z=6) West face B) <ID 23: Brace>\nConnecting <ID 25: Small Wooden Block> at [-0.5 -6.   5. ] and <ID 66: Small Wooden Block> at [-0.5 -5.   6. ].\t\n(West-face diagonal brace: connects A_26 (x=-1,y=-5,z=5) East face A to A_67 (x=0,y=-4,z=6) West face B) <ID 24: Brace>\nConnecting <ID 26: Small Wooden Block> at [-0.5 -5.   5. ] and <ID 67: Small Wooden Block> at [-0.5 -4.   6. ].\t\n(West-face diagonal brace: connects A_27 (x=-1,y=-4,z=5) East face A to A_68 (x=0,y=-3,z=6) West face B) <ID 25: Brace>\nConnecting <ID 27: Small Wooden Block> at [-0.5 -4.   5. ] and <ID 68: Small Wooden Block> at [-0.5 -3.   6. ].\t\n(West-face diagonal brace: connects A_28 (x=-1,y=-3,z=5) East face A to A_69 (x=0,y=-2,z=6) West face B) <ID 26: Brace>\nConnecting <ID 28: Small Wooden Block> at [-0.5 -3.   5. ] and <ID 69: Small Wooden Block> at [-0.5 -2.   6. ].\t\n(West-face diagonal brace: connects A_29 (x=-1,y=-2,z=5) East face A to A_70 (x=0,y=-1,z=6) West face B) <ID 27: Brace>\nConnecting <ID 29: Small Wooden Block> at [-0.5 -2.   5. ] and <ID 70: Small Wooden Block> at [-0.5 -1.   6. ].\t\n(West-face diagonal brace: connects A_30 (x=-1,y=-1,z=5) East face A to A_71 (x=0,y=0,z=6) West face B) <ID 28: Brace>\nConnecting <ID 30: Small Wooden Block> at [-0.5 -1.   5. ] and <ID 71: Small Wooden Block> at [-5.00000000e-01  1.11022302e-16  6.00000000e+00].\t\n(West-face diagonal brace: connects A_31 (x=-1,y=0,z=5) East face A to A_72 (x=0,y=1,z=6) West face B) <ID 29: Brace>\nConnecting <ID 31: Small Wooden Block> at [-0.5  0.   5. ] and <ID 72: Small Wooden Block> at [-0.5  1.   6. ].\t\n(West-face diagonal brace: connects A_32 (x=-1,y=1,z=5) East face A to A_73 (x=0,y=2,z=6) West face B) <ID 30: Brace>\nConnecting <ID 32: Small Wooden Block> at [-0.5  1.   5. ] and <ID 73: Small Wooden Block> at [-0.5  2.   6. ].\t\n(West-face diagonal brace: connects A_33 (x=-1,y=2,z=5) East face A to A_74 (x=0,y=3,z=6) West face B) <ID 31: Brace>\nConnecting <ID 33: Small Wooden Block> at [-0.5  2.   5. ] and <ID 74: Small Wooden Block> at [-0.5  3.   6. ].\t\n(West-face diagonal brace: connects A_34 (x=-1,y=3,z=5) East face A to A_75 (x=0,y=4,z=6) West face B) <ID 32: Brace>\nConnecting <ID 34: Small Wooden Block> at [-0.5  3.   5. ] and <ID 75: Small Wooden Block> at [-0.5  4.   6. ].\t\n(West-face diagonal brace: connects A_35 (x=-1,y=4,z=5) East face A to A_76 (x=0,y=5,z=6) West face B) <ID 33: Brace>\nConnecting <ID 35: Small Wooden Block> at [-0.5  4.   5. ] and <ID 76: Small Wooden Block> at [-0.5  5.   6. ].\t\n(West-face diagonal brace: connects A_36 (x=-1,y=5,z=5) East face A to A_77 (x=0,y=6,z=6) West face B) <ID 34: Brace>\nConnecting <ID 36: Small Wooden Block> at [-0.5  5.   5. ] and <ID 77: Small Wooden Block> at [-0.5  6.   6. ].\t\n(West-face diagonal brace: connects A_37 (x=-1,y=6,z=5) East face A to A_78 (x=0,y=7,z=6) West face B) <ID 35: Brace>\nConnecting <ID 37: Small Wooden Block> at [-0.5  6.   5. ] and <ID 78: Small Wooden Block> at [-0.5  7.   6. ].\t\n(West-face diagonal brace: connects A_38 (x=-1,y=7,z=5) East face A to A_79 (x=0,y=8,z=6) West face B) <ID 36: Brace>\nConnecting <ID 38: Small Wooden Block> at [-0.5  7.   5. ] and <ID 79: Small Wooden Block> at [-0.5  8.   6. ].\t\n(West-face diagonal brace: connects A_39 (x=-1,y=8,z=5) East face A to A_80 (x=0,y=9,z=6) West face B) <ID 37: Brace>\nConnecting <ID 39: Small Wooden Block> at [-0.5  8.   5. ] and <ID 80: Small Wooden Block> at [-0.5  9.   6. ].\t\n(19th west-face diagonal brace: connects A_40 (x=-1,y=9,z=5) East face A to A_81 (x=0,y=10,z=6) West face B) <ID 38: Brace>\nConnecting <ID 40: Small Wooden Block> at [-0.5  9.   5. ] and <ID 81: Small Wooden Block> at [ -1.  -10.5   6. ].\t\n(South End Support Pad: east extension (x=2,y=-10,z=5), lower layer (x=2 alignment)) <ID 41: Small Wooden Block>\nPosition: [  2.,-10.,  5.]\n(South End Support Pad: west extension (x=-2,y=-10,z=6), upper layer (x=-2 alignment)) <ID 42: Small Wooden Block>\nPosition: [ -2.,-10.,  6.]\n(South End Support Pad: west extension (x=-2,y=-10,z=5), lower layer (connects to upper layer z=6)) <ID 43: Small Wooden Block>\nPosition: [ -2.,-10.,  5.]\n(South End Support Pad: east extension (x=2,y=-10,z=6), upper layer (connects to lower layer z=5)) <ID 44: Small Wooden Block>\nPosition: [  2.,-10.,  6.]\n(North end of lower west layer: extends Main Deck Beam to y=10 at x=-1,z=5 (base for west support pad extension)) <ID 45: Small Wooden Block>\nPosition: [-1.,10., 5.]\n(North End Support Pad: west extension (x=-2,y=10,z=5), lower layer (x=-2 alignment)) <ID 46: Small Wooden Block>\nPosition: [-2.,10., 5.]\n(North end of lower east layer: extends Main Deck Beam to y=10 at x=1,z=5 (base for east support pad extension)) <ID 47: Small Wooden Block>\nPosition: [ 1.,10., 5.]\n(North End Support Pad: east extension (x=2,y=10,z=5), lower layer (x=2 alignment)) <ID 48: Small Wooden Block>\nPosition: [ 2.,10., 5.]\n(North end of upper west layer: extends to z=6 at x=-1,y=10 (base for west support pad extension)) <ID 49: Small Wooden Block>\nPosition: [-1.,10., 6.]\n(North End Support Pad: west extension (x=-2,y=10,z=6), upper layer (x=-2 alignment)) <ID 50: Small Wooden Block>\nPosition: [-2.,10., 6.]\n(North end of upper east layer: extends to z=6 at x=1,y=10 (base for east support pad extension)) <ID 51: Small Wooden Block>\nPosition: [ 1.,10., 6.]\n(North End Support Pad: east extension (x=2,y=10,z=6), upper layer (x=2 alignment)) <ID 52: Small Wooden Block>\nPosition: [ 2.,10., 6.]\n(South End Support Pad: west extension (x=-2,y=-10,z=5), lower layer (corrected y=-10 alignment)) <ID 54: Small Wooden Block>\nPosition: [ -1.,-11.,  5.]\n(North End Support Pad: middle extension (x=0,y=10,z=5), lower layer (fills x=0 gap, completes 5-unit width)) <ID 55: Small Wooden Block>\nPosition: [ 0.,10., 5.]\n(North End Support Pad: middle extension (x=0,y=10,z=6), upper layer (fills x=0 gap, completes 5-unit width across z=5-6)) <ID 56: Small Wooden Block>\nPosition: [ 0.,10., 6.]\n(19th east-face diagonal brace: connects A_56 (x=1,y=5,z=5) West face B to A_77 (x=0,y=6,z=6) East face A (y+1 offset correction)) <ID 57: Brace>\nConnecting <ID 56: Small Wooden Block> at [0.5 5.  5. ] and <ID 77: Small Wooden Block> at [0.5 6.  6. ].\t"
+  }
+]

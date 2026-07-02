@@ -1,0 +1,1245 @@
+[
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        1.0,
+        -9.0,
+        5.0
+      ],
+      "init_rotation": [
+        0,
+        0,
+        0
+      ],
+      "note": "Lower SWB (East face, y=-9, z=5)"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [ 1.,-9., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -9. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 0.5, -9. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -9. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. , -9. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 1. , -8.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 1. , -9.5,  5. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=-9, z=5) for East face brace connection"
+    },
+    "result": "You have successfully added <ID 2: Small Wooden Block>.\nExisting Blocks: 2\n(Lower SWB (x=0, y=-9, z=5) for East face brace connection) <ID 2: Small Wooden Block>\nPosition: [ 0.,-9., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 0. , -8.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0. , -9.5,  5. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -9. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. , -9. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-0.5, -9. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=-9, z=6) for East face brace connection"
+    },
+    "result": "You have successfully added <ID 3: Small Wooden Block>.\nExisting Blocks: 3\n(Upper SWB (x=0, y=-9, z=6) for East face brace connection) <ID 3: Small Wooden Block>\nPosition: [-0.,-9., 6.]\nAttachable Faces:\nFace label: A, Face center: [ 0. , -8.5,  6. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0. , -9.5,  6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0.5, -9. ,  6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-0.5, -9. ,  6. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: E, Face center: [-0. , -9. ,  6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=-8, z=6) for East face brace connection (Block ID 1)"
+    },
+    "result": "You have successfully added <ID 4: Small Wooden Block>.\nExisting Blocks: 4\n(Upper SWB (x=0, y=-8, z=6) for East face brace connection (Block ID 1)) <ID 4: Small Wooden Block>\nPosition: [ 0.,-8., 6.]\nAttachable Faces:\nFace label: A, Face center: [ 0. , -8. ,  5.5], Facing towards <straight down>\nFace label: B, Face center: [ 0. , -8. ,  6.5], Facing towards <straight up>\nFace label: C, Face center: [ 0.5, -8. ,  6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-0.5, -8. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 0. , -7.5,  6. ], Facing towards <North with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 1,
+      "face_a": "B",
+      "block_b": 4,
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=-9: z=5\u2192z=6, y+1) - Block ID 1 (East face)"
+    },
+    "result": "You have successfully added <ID 5: Brace>.\nExisting Blocks: 5\n(Diagonal brace (y=-9: z=5\u2192z=6, y+1) - Block ID 1 (East face)) <ID 5: Brace>\nConnecting <ID 1: Starting Block> at [ 0.5 -9.   5. ] and <ID 4: Small Wooden Block> at [ 0.5 -8.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=1, y=-8, z=5) for East face brace connection (Block ID 2)"
+    },
+    "result": "You have successfully added <ID 6: Small Wooden Block>.\nExisting Blocks: 6\n(Lower SWB (x=1, y=-8, z=5) for East face brace connection (Block ID 2)) <ID 6: Small Wooden Block>\nPosition: [ 1.,-8., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -8. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 0.5, -8. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -8. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. , -8. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 1. , -7.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=-8, z=5) for East face brace connection (Block ID 2)"
+    },
+    "result": "You have successfully added <ID 7: Small Wooden Block>.\nExisting Blocks: 7\n(Lower SWB (x=0, y=-8, z=5) for East face brace connection (Block ID 2)) <ID 7: Small Wooden Block>\nPosition: [ 0.,-8., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -8. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -8. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -8. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. , -8. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 0. , -7.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 7,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=-7, z=5) for East face brace connection (Block ID 2)"
+    },
+    "result": "You have successfully added <ID 8: Small Wooden Block>.\nExisting Blocks: 8\n(Lower SWB (x=0, y=-7, z=5) for East face brace connection (Block ID 2)) <ID 8: Small Wooden Block>\nPosition: [ 0.,-7., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -7. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -7. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -7. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. , -7. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 0. , -6.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 8,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=-7, z=6) for East face brace connection (Block ID 2)"
+    },
+    "result": "You have successfully added <ID 9: Small Wooden Block>.\nExisting Blocks: 9\n(Upper SWB (x=0, y=-7, z=6) for East face brace connection (Block ID 2)) <ID 9: Small Wooden Block>\nPosition: [ 0.,-7., 6.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -7. ,  6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -7. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -7.5,  6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 0. , -6.5,  6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 0. , -7. ,  6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 6,
+      "face_a": "B",
+      "block_b": 9,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=-8: z=5\u2192z=6, y+1) - Block ID 2 (East face)"
+    },
+    "result": "You have successfully added <ID 10: Brace>.\nExisting Blocks: 10\n(Diagonal brace (y=-8: z=5\u2192z=6, y+1) - Block ID 2 (East face)) <ID 10: Brace>\nConnecting <ID 6: Small Wooden Block> at [ 0.5 -8.   5. ] and <ID 9: Small Wooden Block> at [ 0.5 -7.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 6,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=1, y=-7, z=5) for East face brace connection (Block ID 3)"
+    },
+    "result": "You have successfully added <ID 11: Small Wooden Block>.\nExisting Blocks: 11\n(Lower SWB (x=1, y=-7, z=5) for East face brace connection (Block ID 3)) <ID 11: Small Wooden Block>\nPosition: [ 1.,-7., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -7. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 0.5, -7. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -7. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. , -7. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 1. , -6.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 8,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=-6, z=5) for East face brace connection (Block ID 3)"
+    },
+    "result": "You have successfully added <ID 12: Small Wooden Block>.\nExisting Blocks: 12\n(Lower SWB (x=0, y=-6, z=5) for East face brace connection (Block ID 3)) <ID 12: Small Wooden Block>\nPosition: [ 0.,-6., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -6. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -6. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -6. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. , -6. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 0. , -5.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 12,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=-6, z=6) for East face brace connection (Block ID 3)"
+    },
+    "result": "You have successfully added <ID 13: Small Wooden Block>.\nExisting Blocks: 13\n(Upper SWB (x=0, y=-6, z=6) for East face brace connection (Block ID 3)) <ID 13: Small Wooden Block>\nPosition: [ 0.,-6., 6.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -6. ,  6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -6. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -6.5,  6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 0. , -5.5,  6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 0. , -6. ,  6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 11,
+      "face_a": "B",
+      "block_b": 13,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=-7: z=5\u2192z=6, y+1) - Block ID 3 (East face)"
+    },
+    "result": "You have successfully added <ID 14: Brace>.\nExisting Blocks: 14\n(Diagonal brace (y=-7: z=5\u2192z=6, y+1) - Block ID 3 (East face)) <ID 14: Brace>\nConnecting <ID 11: Small Wooden Block> at [ 0.5 -7.   5. ] and <ID 13: Small Wooden Block> at [ 0.5 -6.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 11,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=1, y=-6, z=5) for East face brace connection (Block ID 4)"
+    },
+    "result": "You have successfully added <ID 15: Small Wooden Block>.\nExisting Blocks: 15\n(Lower SWB (x=1, y=-6, z=5) for East face brace connection (Block ID 4)) <ID 15: Small Wooden Block>\nPosition: [ 1.,-6., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -6. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 0.5, -6. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -6. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. , -6. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 1. , -5.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 12,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=-5, z=5) for East face brace connection (Block ID 4)"
+    },
+    "result": "You have successfully added <ID 16: Small Wooden Block>.\nExisting Blocks: 16\n(Lower SWB (x=0, y=-5, z=5) for East face brace connection (Block ID 4)) <ID 16: Small Wooden Block>\nPosition: [ 0.,-5., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -5. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -5. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -5. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. , -5. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 0. , -4.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 16,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=-5, z=6) for East face brace connection (Block ID 4)"
+    },
+    "result": "You have successfully added <ID 17: Small Wooden Block>.\nExisting Blocks: 17\n(Upper SWB (x=0, y=-5, z=6) for East face brace connection (Block ID 4)) <ID 17: Small Wooden Block>\nPosition: [ 0.,-5., 6.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -5. ,  6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -5. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -5.5,  6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 0. , -4.5,  6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 0. , -5. ,  6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 15,
+      "face_a": "B",
+      "block_b": 17,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=-6: z=5\u2192z=6, y+1) - Block ID 4 (East face)"
+    },
+    "result": "You have successfully added <ID 18: Brace>.\nExisting Blocks: 18\n(Diagonal brace (y=-6: z=5\u2192z=6, y+1) - Block ID 4 (East face)) <ID 18: Brace>\nConnecting <ID 15: Small Wooden Block> at [ 0.5 -6.   5. ] and <ID 17: Small Wooden Block> at [ 0.5 -5.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 15,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=1, y=-5, z=5) for East face brace connection (Block ID 5)"
+    },
+    "result": "You have successfully added <ID 19: Small Wooden Block>.\nExisting Blocks: 19\n(Lower SWB (x=1, y=-5, z=5) for East face brace connection (Block ID 5)) <ID 19: Small Wooden Block>\nPosition: [ 1.,-5., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -5. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 0.5, -5. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -5. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. , -5. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 1. , -4.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 16,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=-4, z=5) for East face brace connection (Block ID 5)"
+    },
+    "result": "You have successfully added <ID 20: Small Wooden Block>.\nExisting Blocks: 20\n(Lower SWB (x=0, y=-4, z=5) for East face brace connection (Block ID 5)) <ID 20: Small Wooden Block>\nPosition: [ 0.,-4., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -4. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -4. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -4. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. , -4. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 0. , -3.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 20,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=-4, z=6) for East face brace connection (Block ID 5)"
+    },
+    "result": "You have successfully added <ID 21: Small Wooden Block>.\nExisting Blocks: 21\n(Upper SWB (x=0, y=-4, z=6) for East face brace connection (Block ID 5)) <ID 21: Small Wooden Block>\nPosition: [ 0.,-4., 6.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -4. ,  6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -4. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -4.5,  6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 0. , -3.5,  6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 0. , -4. ,  6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 19,
+      "face_a": "B",
+      "block_b": 21,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=-5: z=5\u2192z=6, y+1) - Block ID 5 (East face)"
+    },
+    "result": "You have successfully added <ID 22: Brace>.\nExisting Blocks: 22\n(Diagonal brace (y=-5: z=5\u2192z=6, y+1) - Block ID 5 (East face)) <ID 22: Brace>\nConnecting <ID 19: Small Wooden Block> at [ 0.5 -5.   5. ] and <ID 21: Small Wooden Block> at [ 0.5 -4.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 19,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=1, y=-4, z=5) for East face brace connection (Block ID 6)"
+    },
+    "result": "You have successfully added <ID 23: Small Wooden Block>.\nExisting Blocks: 23\n(Lower SWB (x=1, y=-4, z=5) for East face brace connection (Block ID 6)) <ID 23: Small Wooden Block>\nPosition: [ 1.,-4., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -4. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 0.5, -4. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -4. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. , -4. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 1. , -3.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 20,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=-3, z=5) for East face brace connection (Block ID 6)"
+    },
+    "result": "You have successfully added <ID 24: Small Wooden Block>.\nExisting Blocks: 24\n(Lower SWB (x=0, y=-3, z=5) for East face brace connection (Block ID 6)) <ID 24: Small Wooden Block>\nPosition: [ 0.,-3., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -3. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -3. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -3. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. , -3. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 0. , -2.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 24,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=-3, z=6) for East face brace connection (Block ID 6)"
+    },
+    "result": "You have successfully added <ID 25: Small Wooden Block>.\nExisting Blocks: 25\n(Upper SWB (x=0, y=-3, z=6) for East face brace connection (Block ID 6)) <ID 25: Small Wooden Block>\nPosition: [ 0.,-3., 6.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -3. ,  6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -3. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -3.5,  6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 0. , -2.5,  6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 0. , -3. ,  6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 23,
+      "face_a": "B",
+      "block_b": 25,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=-4: z=5\u2192z=6, y+1) - Block ID 6 (East face)"
+    },
+    "result": "You have successfully added <ID 26: Brace>.\nExisting Blocks: 26\n(Diagonal brace (y=-4: z=5\u2192z=6, y+1) - Block ID 6 (East face)) <ID 26: Brace>\nConnecting <ID 23: Small Wooden Block> at [ 0.5 -4.   5. ] and <ID 25: Small Wooden Block> at [ 0.5 -3.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 23,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=1, y=-3, z=5) for East face brace connection (Block ID 7)"
+    },
+    "result": "You have successfully added <ID 27: Small Wooden Block>.\nExisting Blocks: 27\n(Lower SWB (x=1, y=-3, z=5) for East face brace connection (Block ID 7)) <ID 27: Small Wooden Block>\nPosition: [ 1.,-3., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -3. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 0.5, -3. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -3. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. , -3. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 1. , -2.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 24,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=-2, z=5) for East face brace connection (Block ID 7)"
+    },
+    "result": "You have successfully added <ID 28: Small Wooden Block>.\nExisting Blocks: 28\n(Lower SWB (x=0, y=-2, z=5) for East face brace connection (Block ID 7)) <ID 28: Small Wooden Block>\nPosition: [ 0.,-2., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -2. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -2. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -2. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. , -2. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 0. , -1.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 28,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=-2, z=6) for East face brace connection (Block ID 7)"
+    },
+    "result": "You have successfully added <ID 29: Small Wooden Block>.\nExisting Blocks: 29\n(Upper SWB (x=0, y=-2, z=6) for East face brace connection (Block ID 7)) <ID 29: Small Wooden Block>\nPosition: [ 0.,-2., 6.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -2. ,  6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -2. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -2.5,  6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 0. , -1.5,  6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 0. , -2. ,  6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 27,
+      "face_a": "B",
+      "block_b": 29,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=-3: z=5\u2192z=6, y+1) - Block ID 7 (East face)"
+    },
+    "result": "You have successfully added <ID 30: Brace>.\nExisting Blocks: 30\n(Diagonal brace (y=-3: z=5\u2192z=6, y+1) - Block ID 7 (East face)) <ID 30: Brace>\nConnecting <ID 27: Small Wooden Block> at [ 0.5 -3.   5. ] and <ID 29: Small Wooden Block> at [ 0.5 -2.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 27,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=1, y=-2, z=5) for East face brace connection (Block ID 8)"
+    },
+    "result": "You have successfully added <ID 31: Small Wooden Block>.\nExisting Blocks: 31\n(Lower SWB (x=1, y=-2, z=5) for East face brace connection (Block ID 8)) <ID 31: Small Wooden Block>\nPosition: [ 1.,-2., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -2. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 0.5, -2. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -2. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. , -2. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 1. , -1.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 28,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=-1, z=5) for East face brace connection (Block ID 8)"
+    },
+    "result": "You have successfully added <ID 32: Small Wooden Block>.\nExisting Blocks: 32\n(Lower SWB (x=0, y=-1, z=5) for East face brace connection (Block ID 8)) <ID 32: Small Wooden Block>\nPosition: [ 0.,-1., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -1. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -1. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -1. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. , -1. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 0. , -0.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 32,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=-1, z=6) for East face brace connection (Block ID 8)"
+    },
+    "result": "You have successfully added <ID 33: Small Wooden Block>.\nExisting Blocks: 33\n(Upper SWB (x=0, y=-1, z=6) for East face brace connection (Block ID 8)) <ID 33: Small Wooden Block>\nPosition: [ 0.,-1., 6.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -1. ,  6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -1. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -1.5,  6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 0. , -0.5,  6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 0. , -1. ,  6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 31,
+      "face_a": "B",
+      "block_b": 33,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=-2: z=5\u2192z=6, y+1) - Block ID 8 (East face)"
+    },
+    "result": "You have successfully added <ID 34: Brace>.\nExisting Blocks: 34\n(Diagonal brace (y=-2: z=5\u2192z=6, y+1) - Block ID 8 (East face)) <ID 34: Brace>\nConnecting <ID 31: Small Wooden Block> at [ 0.5 -2.   5. ] and <ID 33: Small Wooden Block> at [ 0.5 -1.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 31,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=1, y=-1, z=5) for East face brace connection (Block ID 9)"
+    },
+    "result": "You have successfully added <ID 35: Small Wooden Block>.\nExisting Blocks: 35\n(Lower SWB (x=1, y=-1, z=5) for East face brace connection (Block ID 9)) <ID 35: Small Wooden Block>\nPosition: [ 1.,-1., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -1. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 0.5, -1. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -1. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. , -1. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 1. , -0.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 32,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=0, z=5) for East face brace connection (Block ID 9)"
+    },
+    "result": "You have successfully added <ID 36: Small Wooden Block>.\nExisting Blocks: 36\n(Lower SWB (x=0, y=0, z=5) for East face brace connection (Block ID 9)) <ID 36: Small Wooden Block>\nPosition: [0.,0.,5.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 0. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [0. , 0. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 36,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=0, z=6) for East face brace connection (Block ID 9)"
+    },
+    "result": "You have successfully added <ID 37: Small Wooden Block>.\nExisting Blocks: 37\n(Upper SWB (x=0, y=0, z=6) for East face brace connection (Block ID 9)) <ID 37: Small Wooden Block>\nPosition: [0.,0.,6.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 35,
+      "face_a": "B",
+      "block_b": 37,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=-1: z=5\u2192z=6, y+1) - Block ID 9 (East face)"
+    },
+    "result": "You have successfully added <ID 38: Brace>.\nExisting Blocks: 38\n(Diagonal brace (y=-1: z=5\u2192z=6, y+1) - Block ID 9 (East face)) <ID 38: Brace>\nConnecting <ID 35: Small Wooden Block> at [ 0.5 -1.   5. ] and <ID 37: Small Wooden Block> at [5.00000000e-01 1.11022302e-16 6.00000000e+00].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 35,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=1, y=0, z=5) for East face brace connection (Block ID 10)"
+    },
+    "result": "You have successfully added <ID 39: Small Wooden Block>.\nExisting Blocks: 39\n(Lower SWB (x=1, y=0, z=5) for East face brace connection (Block ID 10)) <ID 39: Small Wooden Block>\nPosition: [1.,0.,5.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 0. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 0. , 5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 0. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [1. , 0. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [1. , 0.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 36,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=1, z=5) for East face brace connection (Block ID 10)"
+    },
+    "result": "You have successfully added <ID 40: Small Wooden Block>.\nExisting Blocks: 40\n(Lower SWB (x=0, y=1, z=5) for East face brace connection (Block ID 10)) <ID 40: Small Wooden Block>\nPosition: [0.,1.,5.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 1. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  1. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 1. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [0. , 1. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 1.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 40,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=1, z=6) for East face brace connection (Block ID 10)"
+    },
+    "result": "You have successfully added <ID 41: Small Wooden Block>.\nExisting Blocks: 41\n(Upper SWB (x=0, y=1, z=6) for East face brace connection (Block ID 10)) <ID 41: Small Wooden Block>\nPosition: [0.,1.,6.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 1. , 6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  1. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 0.5, 6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 1.5, 6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 1. , 6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 39,
+      "face_a": "B",
+      "block_b": 41,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=0: z=5\u2192z=6, y+1) - Block ID 10 (East face)"
+    },
+    "result": "You have successfully added <ID 42: Brace>.\nExisting Blocks: 42\n(Diagonal brace (y=0: z=5\u2192z=6, y+1) - Block ID 10 (East face)) <ID 42: Brace>\nConnecting <ID 39: Small Wooden Block> at [0.5 0.  5. ] and <ID 41: Small Wooden Block> at [0.5 1.  6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 39,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=1, y=1, z=5) for East face brace connection (Block ID 11)"
+    },
+    "result": "You have successfully added <ID 43: Small Wooden Block>.\nExisting Blocks: 43\n(Lower SWB (x=1, y=1, z=5) for East face brace connection (Block ID 11)) <ID 43: Small Wooden Block>\nPosition: [1.,1.,5.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 1. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 1. , 5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 1. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [1. , 1. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [1. , 1.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 40,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=2, z=5) for East face brace connection (Block ID 11)"
+    },
+    "result": "You have successfully added <ID 44: Small Wooden Block>.\nExisting Blocks: 44\n(Lower SWB (x=0, y=2, z=5) for East face brace connection (Block ID 11)) <ID 44: Small Wooden Block>\nPosition: [0.,2.,5.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 2. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  2. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 2. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [0. , 2. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 2.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 44,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=2, z=6) for East face brace connection (Block ID 11)"
+    },
+    "result": "You have successfully added <ID 45: Small Wooden Block>.\nExisting Blocks: 45\n(Upper SWB (x=0, y=2, z=6) for East face brace connection (Block ID 11)) <ID 45: Small Wooden Block>\nPosition: [0.,2.,6.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 2. , 6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  2. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 1.5, 6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 2.5, 6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 2. , 6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 43,
+      "face_a": "B",
+      "block_b": 45,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=1: z=5\u2192z=6, y+1) - Block ID 11 (East face)"
+    },
+    "result": "You have successfully added <ID 46: Brace>.\nExisting Blocks: 46\n(Diagonal brace (y=1: z=5\u2192z=6, y+1) - Block ID 11 (East face)) <ID 46: Brace>\nConnecting <ID 43: Small Wooden Block> at [0.5 1.  5. ] and <ID 45: Small Wooden Block> at [0.5 2.  6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 43,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=1, y=2, z=5) for East face brace connection (Block ID 12)"
+    },
+    "result": "You have successfully added <ID 47: Small Wooden Block>.\nExisting Blocks: 47\n(Lower SWB (x=1, y=2, z=5) for East face brace connection (Block ID 12)) <ID 47: Small Wooden Block>\nPosition: [1.,2.,5.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 2. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 2. , 5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 2. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [1. , 2. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [1. , 2.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 44,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=3, z=5) for East face brace connection (Block ID 12)"
+    },
+    "result": "You have successfully added <ID 48: Small Wooden Block>.\nExisting Blocks: 48\n(Lower SWB (x=0, y=3, z=5) for East face brace connection (Block ID 12)) <ID 48: Small Wooden Block>\nPosition: [0.,3.,5.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 3. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  3. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 3. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [0. , 3. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 3.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 48,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=3, z=6) for East face brace connection (Block ID 12)"
+    },
+    "result": "You have successfully added <ID 49: Small Wooden Block>.\nExisting Blocks: 49\n(Upper SWB (x=0, y=3, z=6) for East face brace connection (Block ID 12)) <ID 49: Small Wooden Block>\nPosition: [0.,3.,6.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 3. , 6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  3. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 2.5, 6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 3.5, 6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 3. , 6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 47,
+      "face_a": "B",
+      "block_b": 49,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=2: z=5\u2192z=6, y+1) - Block ID 12 (East face)"
+    },
+    "result": "You have successfully added <ID 50: Brace>.\nExisting Blocks: 50\n(Diagonal brace (y=2: z=5\u2192z=6, y+1) - Block ID 12 (East face)) <ID 50: Brace>\nConnecting <ID 47: Small Wooden Block> at [0.5 2.  5. ] and <ID 49: Small Wooden Block> at [0.5 3.  6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 47,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=1, y=3, z=5) for East face brace connection (Block ID 13)"
+    },
+    "result": "You have successfully added <ID 51: Small Wooden Block>.\nExisting Blocks: 51\n(Lower SWB (x=1, y=3, z=5) for East face brace connection (Block ID 13)) <ID 51: Small Wooden Block>\nPosition: [1.,3.,5.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 3. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 3. , 5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 3. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [1. , 3. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [1. , 3.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 48,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=4, z=5) for East face brace connection (Block ID 13)"
+    },
+    "result": "You have successfully added <ID 52: Small Wooden Block>.\nExisting Blocks: 52\n(Lower SWB (x=0, y=4, z=5) for East face brace connection (Block ID 13)) <ID 52: Small Wooden Block>\nPosition: [0.,4.,5.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 4. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  4. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 4. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [0. , 4. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 4.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 52,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=4, z=6) for East face brace connection (Block ID 13)"
+    },
+    "result": "You have successfully added <ID 53: Small Wooden Block>.\nExisting Blocks: 53\n(Upper SWB (x=0, y=4, z=6) for East face brace connection (Block ID 13)) <ID 53: Small Wooden Block>\nPosition: [0.,4.,6.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 4. , 6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  4. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 3.5, 6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 4.5, 6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 4. , 6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 51,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=1, y=4, z=5) for East face brace connection (Block ID 14)"
+    },
+    "result": "You have successfully added <ID 54: Small Wooden Block>.\nExisting Blocks: 54\n(Lower SWB (x=1, y=4, z=5) for East face brace connection (Block ID 14)) <ID 54: Small Wooden Block>\nPosition: [1.,4.,5.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 4. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 4. , 5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 4. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [1. , 4. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [1. , 4.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 51,
+      "face_a": "B",
+      "block_b": 53,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=3: z=5\u2192z=6, y+1) - Block ID 13 (East face)"
+    },
+    "result": "You have successfully added <ID 55: Brace>.\nExisting Blocks: 55\n(Diagonal brace (y=3: z=5\u2192z=6, y+1) - Block ID 13 (East face)) <ID 55: Brace>\nConnecting <ID 51: Small Wooden Block> at [0.5 3.  5. ] and <ID 53: Small Wooden Block> at [0.5 4.  6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 52,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=5, z=5) for East face brace connection (Block ID 14)"
+    },
+    "result": "You have successfully added <ID 56: Small Wooden Block>.\nExisting Blocks: 56\n(Lower SWB (x=0, y=5, z=5) for East face brace connection (Block ID 14)) <ID 56: Small Wooden Block>\nPosition: [0.,5.,5.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 5. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  5. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 5. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [0. , 5. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 5.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 56,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=5, z=6) for East face brace connection (Block ID 14)"
+    },
+    "result": "You have successfully added <ID 57: Small Wooden Block>.\nExisting Blocks: 57\n(Upper SWB (x=0, y=5, z=6) for East face brace connection (Block ID 14)) <ID 57: Small Wooden Block>\nPosition: [0.,5.,6.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 5. , 6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  5. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 4.5, 6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 5.5, 6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 5. , 6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 54,
+      "face_a": "B",
+      "block_b": 57,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=4: z=5\u2192z=6, y+1) - Block ID 14 (East face)"
+    },
+    "result": "You have successfully added <ID 58: Brace>.\nExisting Blocks: 58\n(Diagonal brace (y=4: z=5\u2192z=6, y+1) - Block ID 14 (East face)) <ID 58: Brace>\nConnecting <ID 54: Small Wooden Block> at [0.5 4.  5. ] and <ID 57: Small Wooden Block> at [0.5 5.  6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 54,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=1, y=5, z=5) for East face brace connection (Block ID 15)"
+    },
+    "result": "You have successfully added <ID 59: Small Wooden Block>.\nExisting Blocks: 59\n(Lower SWB (x=1, y=5, z=5) for East face brace connection (Block ID 15)) <ID 59: Small Wooden Block>\nPosition: [1.,5.,5.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 5. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 5. , 5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 5. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [1. , 5. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [1. , 5.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 56,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=6, z=5) for East face brace connection (Block ID 15)"
+    },
+    "result": "You have successfully added <ID 60: Small Wooden Block>.\nExisting Blocks: 60\n(Lower SWB (x=0, y=6, z=5) for East face brace connection (Block ID 15)) <ID 60: Small Wooden Block>\nPosition: [0.,6.,5.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 6. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  6. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 6. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [0. , 6. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 6.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 60,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=6, z=6) for East face brace connection (Block ID 15)"
+    },
+    "result": "You have successfully added <ID 61: Small Wooden Block>.\nExisting Blocks: 61\n(Upper SWB (x=0, y=6, z=6) for East face brace connection (Block ID 15)) <ID 61: Small Wooden Block>\nPosition: [0.,6.,6.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 6. , 6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  6. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 5.5, 6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 6.5, 6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 6. , 6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 59,
+      "face_a": "B",
+      "block_b": 61,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=5: z=5\u2192z=6, y+1) - Block ID 15 (East face)"
+    },
+    "result": "You have successfully added <ID 62: Brace>.\nExisting Blocks: 62\n(Diagonal brace (y=5: z=5\u2192z=6, y+1) - Block ID 15 (East face)) <ID 62: Brace>\nConnecting <ID 59: Small Wooden Block> at [0.5 5.  5. ] and <ID 61: Small Wooden Block> at [0.5 6.  6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 59,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=1, y=6, z=5) for East face brace connection (Block ID 16)"
+    },
+    "result": "You have successfully added <ID 63: Small Wooden Block>.\nExisting Blocks: 63\n(Lower SWB (x=1, y=6, z=5) for East face brace connection (Block ID 16)) <ID 63: Small Wooden Block>\nPosition: [1.,6.,5.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 6. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 6. , 5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 6. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [1. , 6. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [1. , 6.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 60,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=7, z=5) for East face brace connection (Block ID 16)"
+    },
+    "result": "You have successfully added <ID 64: Small Wooden Block>.\nExisting Blocks: 64\n(Lower SWB (x=0, y=7, z=5) for East face brace connection (Block ID 16)) <ID 64: Small Wooden Block>\nPosition: [0.,7.,5.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 7. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  7. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 7. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [0. , 7. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 7.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 64,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=7, z=6) for East face brace connection (Block ID 16)"
+    },
+    "result": "You have successfully added <ID 65: Small Wooden Block>.\nExisting Blocks: 65\n(Upper SWB (x=0, y=7, z=6) for East face brace connection (Block ID 16)) <ID 65: Small Wooden Block>\nPosition: [0.,7.,6.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 7. , 6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  7. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 6.5, 6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 7.5, 6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 7. , 6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 63,
+      "face_a": "B",
+      "block_b": 65,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=6: z=5\u2192z=6, y+1) - Block ID 16 (East face)"
+    },
+    "result": "You have successfully added <ID 66: Brace>.\nExisting Blocks: 66\n(Diagonal brace (y=6: z=5\u2192z=6, y+1) - Block ID 16 (East face)) <ID 66: Brace>\nConnecting <ID 63: Small Wooden Block> at [0.5 6.  5. ] and <ID 65: Small Wooden Block> at [0.5 7.  6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 63,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=1, y=7, z=5) for East face brace connection (Block ID 17)"
+    },
+    "result": "You have successfully added <ID 67: Small Wooden Block>.\nExisting Blocks: 67\n(Lower SWB (x=1, y=7, z=5) for East face brace connection (Block ID 17)) <ID 67: Small Wooden Block>\nPosition: [1.,7.,5.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 7. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 7. , 5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 7. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [1. , 7. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [1. , 7.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 64,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=8, z=5) for East face brace connection (Block ID 17)"
+    },
+    "result": "You have successfully added <ID 68: Small Wooden Block>.\nExisting Blocks: 68\n(Lower SWB (x=0, y=8, z=5) for East face brace connection (Block ID 17)) <ID 68: Small Wooden Block>\nPosition: [0.,8.,5.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 8. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  8. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 8. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [0. , 8. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 8.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 68,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=8, z=6) for East face brace connection (Block ID 17)"
+    },
+    "result": "You have successfully added <ID 69: Small Wooden Block>.\nExisting Blocks: 69\n(Upper SWB (x=0, y=8, z=6) for East face brace connection (Block ID 17)) <ID 69: Small Wooden Block>\nPosition: [0.,8.,6.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 8. , 6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  8. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 7.5, 6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 8.5, 6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 8. , 6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 67,
+      "face_a": "B",
+      "block_b": 69,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=7: z=5\u2192z=6, y+1) - Block ID 17 (East face)"
+    },
+    "result": "You have successfully added <ID 70: Brace>.\nExisting Blocks: 70\n(Diagonal brace (y=7: z=5\u2192z=6, y+1) - Block ID 17 (East face)) <ID 70: Brace>\nConnecting <ID 67: Small Wooden Block> at [0.5 7.  5. ] and <ID 69: Small Wooden Block> at [0.5 8.  6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 67,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=1, y=8, z=5) for East face brace connection (Block ID 18)"
+    },
+    "result": "You have successfully added <ID 71: Small Wooden Block>.\nExisting Blocks: 71\n(Lower SWB (x=1, y=8, z=5) for East face brace connection (Block ID 18)) <ID 71: Small Wooden Block>\nPosition: [1.,8.,5.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 8. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 8. , 5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 8. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [1. , 8. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [1. , 8.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 68,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=9, z=5) for East face brace connection (Block ID 18)"
+    },
+    "result": "You have successfully added <ID 72: Small Wooden Block>.\nExisting Blocks: 72\n(Lower SWB (x=0, y=9, z=5) for East face brace connection (Block ID 18)) <ID 72: Small Wooden Block>\nPosition: [0.,9.,5.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 9. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  9. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 9. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [0. , 9. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 9.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 72,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=9, z=6) for East face brace connection (Block ID 18)"
+    },
+    "result": "You have successfully added <ID 73: Small Wooden Block>.\nExisting Blocks: 73\n(Upper SWB (x=0, y=9, z=6) for East face brace connection (Block ID 18)) <ID 73: Small Wooden Block>\nPosition: [0.,9.,6.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 9. , 6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  9. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 8.5, 6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 9.5, 6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 9. , 6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 71,
+      "face_a": "B",
+      "block_b": 73,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=8: z=5\u2192z=6, y+1) - Block ID 18 (East face)"
+    },
+    "result": "You have successfully added <ID 74: Brace>.\nExisting Blocks: 74\n(Diagonal brace (y=8: z=5\u2192z=6, y+1) - Block ID 18 (East face)) <ID 74: Brace>\nConnecting <ID 71: Small Wooden Block> at [0.5 8.  5. ] and <ID 73: Small Wooden Block> at [0.5 9.  6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 71,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=1, y=9, z=5) for East face brace connection (Block ID 19)"
+    },
+    "result": "You have successfully added <ID 75: Small Wooden Block>.\nExisting Blocks: 75\n(Lower SWB (x=1, y=9, z=5) for East face brace connection (Block ID 19)) <ID 75: Small Wooden Block>\nPosition: [1.,9.,5.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 9. , 5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 9. , 5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 9. , 5.5], Facing towards <straight up>\nFace label: D, Face center: [1. , 9. , 4.5], Facing towards <straight down>\nFace label: E, Face center: [1. , 9.5, 5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 72,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=0, y=10, z=5) for East face brace connection (Block ID 19)"
+    },
+    "result": "You have successfully added <ID 76: Small Wooden Block>.\nExisting Blocks: 76\n(Lower SWB (x=0, y=10, z=5) for East face brace connection (Block ID 19)) <ID 76: Small Wooden Block>\nPosition: [ 0.,10., 5.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, 10. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, 10. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , 10. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. , 10. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [ 0. , 10.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 76,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Upper SWB (x=0, y=10, z=6) for East face brace connection (Block ID 19)"
+    },
+    "result": "You have successfully added <ID 77: Small Wooden Block>.\nExisting Blocks: 77\n(Upper SWB (x=0, y=10, z=6) for East face brace connection (Block ID 19)) <ID 77: Small Wooden Block>\nPosition: [ 0.,10., 6.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, 10. ,  6. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, 10. ,  6. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 9.5, 6. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 0. , 10.5,  6. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 0. , 10. ,  6.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 75,
+      "face_a": "B",
+      "block_b": 77,
+      "face_b": "A",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=9: z=5\u2192z=6, y+1) - Block ID 19 (East face)"
+    },
+    "result": "You have successfully added <ID 78: Brace>.\nExisting Blocks: 78\n(Diagonal brace (y=9: z=5\u2192z=6, y+1) - Block ID 19 (East face)) <ID 78: Brace>\nConnecting <ID 75: Small Wooden Block> at [0.5 9.  5. ] and <ID 77: Small Wooden Block> at [ 0.5 10.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=-1, y=-9, z=5) for West face brace connection (Block ID 20)"
+    },
+    "result": "You have successfully added <ID 79: Small Wooden Block>.\nExisting Blocks: 79\n(Lower SWB (x=-1, y=-9, z=5) for West face brace connection (Block ID 20)) <ID 79: Small Wooden Block>\nPosition: [-1.,-9., 5.]\nAttachable Faces:\nFace label: A, Face center: [-1. , -8.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -9.5,  5. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -9. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. , -9. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1.5, -9. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 79,
+      "face_a": "A",
+      "block_b": 4,
+      "face_b": "D",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=-9: z=5\u2192z=6, y+1) - Block ID 20 (West face)"
+    },
+    "result": "You have successfully added <ID 80: Brace>.\nExisting Blocks: 80\n(Diagonal brace (y=-9: z=5\u2192z=6, y+1) - Block ID 20 (West face)) <ID 80: Brace>\nConnecting <ID 79: Small Wooden Block> at [-1.  -8.5  5. ] and <ID 4: Small Wooden Block> at [-0.5 -8.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 7,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=-1, y=-8, z=5) for West face brace connection (Block ID 21)"
+    },
+    "result": "You have successfully added <ID 81: Small Wooden Block>.\nExisting Blocks: 81\n(Lower SWB (x=-1, y=-8, z=5) for West face brace connection (Block ID 21)) <ID 81: Small Wooden Block>\nPosition: [-1.,-8., 5.]\nAttachable Faces:\nFace label: A, Face center: [-1. , -7.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -8.5,  5. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -8. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. , -8. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1.5, -8. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 81,
+      "face_a": "A",
+      "block_b": 9,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=-8: z=5\u2192z=6, y+1) - Block ID 21 (West face)"
+    },
+    "result": "You have successfully added <ID 82: Brace>.\nExisting Blocks: 82\n(Diagonal brace (y=-8: z=5\u2192z=6, y+1) - Block ID 21 (West face)) <ID 82: Brace>\nConnecting <ID 81: Small Wooden Block> at [-1.  -7.5  5. ] and <ID 9: Small Wooden Block> at [-0.5 -7.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 8,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=-1, y=-7, z=5) for West face brace connection (Block ID 22)"
+    },
+    "result": "You have successfully added <ID 83: Small Wooden Block>.\nExisting Blocks: 83\n(Lower SWB (x=-1, y=-7, z=5) for West face brace connection (Block ID 22)) <ID 83: Small Wooden Block>\nPosition: [-1.,-7., 5.]\nAttachable Faces:\nFace label: A, Face center: [-1. , -6.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -7.5,  5. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -7. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. , -7. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1.5, -7. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 83,
+      "face_a": "A",
+      "block_b": 13,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=-7: z=5\u2192z=6, y+1) - Block ID 22 (West face)"
+    },
+    "result": "You have successfully added <ID 84: Brace>.\nExisting Blocks: 84\n(Diagonal brace (y=-7: z=5\u2192z=6, y+1) - Block ID 22 (West face)) <ID 84: Brace>\nConnecting <ID 83: Small Wooden Block> at [-1.  -6.5  5. ] and <ID 13: Small Wooden Block> at [-0.5 -6.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 12,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=-1, y=-6, z=5) for West face brace connection (Block ID 23)"
+    },
+    "result": "You have successfully added <ID 85: Small Wooden Block>.\nExisting Blocks: 85\n(Lower SWB (x=-1, y=-6, z=5) for West face brace connection (Block ID 23)) <ID 85: Small Wooden Block>\nPosition: [-1.,-6., 5.]\nAttachable Faces:\nFace label: A, Face center: [-1. , -5.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -6.5,  5. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -6. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. , -6. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1.5, -6. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 85,
+      "face_a": "A",
+      "block_b": 17,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=-6: z=5\u2192z=6, y+1) - Block ID 23 (West face)"
+    },
+    "result": "You have successfully added <ID 86: Brace>.\nExisting Blocks: 86\n(Diagonal brace (y=-6: z=5\u2192z=6, y+1) - Block ID 23 (West face)) <ID 86: Brace>\nConnecting <ID 85: Small Wooden Block> at [-1.  -5.5  5. ] and <ID 17: Small Wooden Block> at [-0.5 -5.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 16,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=-1, y=-5, z=5) for West face brace connection (Block ID 24)"
+    },
+    "result": "You have successfully added <ID 87: Small Wooden Block>.\nExisting Blocks: 87\n(Lower SWB (x=-1, y=-5, z=5) for West face brace connection (Block ID 24)) <ID 87: Small Wooden Block>\nPosition: [-1.,-5., 5.]\nAttachable Faces:\nFace label: A, Face center: [-1. , -4.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -5.5,  5. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -5. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. , -5. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1.5, -5. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 20,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=-1, y=-4, z=5) for West face brace connection (Block ID 24)"
+    },
+    "result": "You have successfully added <ID 88: Small Wooden Block>.\nExisting Blocks: 88\n(Lower SWB (x=-1, y=-4, z=5) for West face brace connection (Block ID 24)) <ID 88: Small Wooden Block>\nPosition: [-1.,-4., 5.]\nAttachable Faces:\nFace label: A, Face center: [-1. , -3.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -4.5,  5. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -4. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. , -4. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1.5, -4. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 87,
+      "face_a": "A",
+      "block_b": 21,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=-5: z=5\u2192z=6, y+1) - Block ID 24 (West face)"
+    },
+    "result": "You have successfully added <ID 89: Brace>.\nExisting Blocks: 89\n(Diagonal brace (y=-5: z=5\u2192z=6, y+1) - Block ID 24 (West face)) <ID 89: Brace>\nConnecting <ID 87: Small Wooden Block> at [-1.  -4.5  5. ] and <ID 21: Small Wooden Block> at [-0.5 -4.   6. ].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 88,
+      "face_a": "A",
+      "block_b": 25,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=-4: z=5\u2192z=6, y+1) - Block ID 25 (West face)"
+    },
+    "result": "You have successfully added <ID 90: Brace>.\nExisting Blocks: 90\n(Diagonal brace (y=-4: z=5\u2192z=6, y+1) - Block ID 25 (West face)) <ID 90: Brace>\nConnecting <ID 88: Small Wooden Block> at [-1.  -3.5  5. ] and <ID 25: Small Wooden Block> at [-0.5 -3.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 24,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=-1, y=-3, z=5) for West face brace connection (Block ID 26)"
+    },
+    "result": "You have successfully added <ID 91: Small Wooden Block>.\nExisting Blocks: 91\n(Lower SWB (x=-1, y=-3, z=5) for West face brace connection (Block ID 26)) <ID 91: Small Wooden Block>\nPosition: [-1.,-3., 5.]\nAttachable Faces:\nFace label: A, Face center: [-1. , -2.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -3.5,  5. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -3. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. , -3. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1.5, -3. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 91,
+      "face_a": "A",
+      "block_b": 29,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=-3: z=5\u2192z=6, y+1) - Block ID 26 (West face)"
+    },
+    "result": "You have successfully added <ID 92: Brace>.\nExisting Blocks: 92\n(Diagonal brace (y=-3: z=5\u2192z=6, y+1) - Block ID 26 (West face)) <ID 92: Brace>\nConnecting <ID 91: Small Wooden Block> at [-1.  -2.5  5. ] and <ID 29: Small Wooden Block> at [-0.5 -2.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 28,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=-1, y=-2, z=5) for West face brace connection (Block ID 27)"
+    },
+    "result": "You have successfully added <ID 93: Small Wooden Block>.\nExisting Blocks: 93\n(Lower SWB (x=-1, y=-2, z=5) for West face brace connection (Block ID 27)) <ID 93: Small Wooden Block>\nPosition: [-1.,-2., 5.]\nAttachable Faces:\nFace label: A, Face center: [-1. , -1.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -2.5,  5. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -2. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. , -2. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1.5, -2. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 93,
+      "face_a": "A",
+      "block_b": 33,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=-2: z=5\u2192z=6, y+1) - Block ID 27 (West face)"
+    },
+    "result": "You have successfully added <ID 94: Brace>.\nExisting Blocks: 94\n(Diagonal brace (y=-2: z=5\u2192z=6, y+1) - Block ID 27 (West face)) <ID 94: Brace>\nConnecting <ID 93: Small Wooden Block> at [-1.  -1.5  5. ] and <ID 33: Small Wooden Block> at [-0.5 -1.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 32,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=-1, y=-1, z=5) for West face brace connection (Block ID 28)"
+    },
+    "result": "You have successfully added <ID 95: Small Wooden Block>.\nExisting Blocks: 95\n(Lower SWB (x=-1, y=-1, z=5) for West face brace connection (Block ID 28)) <ID 95: Small Wooden Block>\nPosition: [-1.,-1., 5.]\nAttachable Faces:\nFace label: A, Face center: [-1. , -0.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -1.5,  5. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -1. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. , -1. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1.5, -1. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 95,
+      "face_a": "A",
+      "block_b": 37,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=-1: z=5\u2192z=6, y+1) - Block ID 28 (West face)"
+    },
+    "result": "You have successfully added <ID 96: Brace>.\nExisting Blocks: 96\n(Diagonal brace (y=-1: z=5\u2192z=6, y+1) - Block ID 28 (West face)) <ID 96: Brace>\nConnecting <ID 95: Small Wooden Block> at [-1.  -0.5  5. ] and <ID 37: Small Wooden Block> at [-5.00000000e-01  1.11022302e-16  6.00000000e+00].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 95,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=-1, y=0, z=5) for West face brace connection (Block ID 29)"
+    },
+    "result": "You have successfully added <ID 97: Small Wooden Block>.\nExisting Blocks: 97\n(Lower SWB (x=-1, y=0, z=5) for West face brace connection (Block ID 29)) <ID 97: Small Wooden Block>\nPosition: [-1., 0., 5.]\nAttachable Faces:\nFace label: A, Face center: [-0.5,  0. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5,  0. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  0. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. ,  0. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1. ,  0.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 97,
+      "face_a": "E",
+      "block_b": 41,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=0: z=5\u2192z=6, y+1) - Block ID 29 (West face)"
+    },
+    "result": "You have successfully added <ID 98: Brace>.\nExisting Blocks: 98\n(Diagonal brace (y=0: z=5\u2192z=6, y+1) - Block ID 29 (West face)) <ID 98: Brace>\nConnecting <ID 97: Small Wooden Block> at [-1.   0.5  5. ] and <ID 41: Small Wooden Block> at [-0.5  1.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 97,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=-1, y=1, z=5) for West face brace connection (Block ID 30)"
+    },
+    "result": "You have successfully added <ID 99: Small Wooden Block>.\nExisting Blocks: 99\n(Lower SWB (x=-1, y=1, z=5) for West face brace connection (Block ID 30)) <ID 99: Small Wooden Block>\nPosition: [-1., 1., 5.]\nAttachable Faces:\nFace label: A, Face center: [-0.5,  1. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5,  1. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  1. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. ,  1. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1. ,  1.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 99,
+      "face_a": "E",
+      "block_b": 45,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=1: z=5\u2192z=6, y+1) - Block ID 30 (West face)"
+    },
+    "result": "You have successfully added <ID 100: Brace>.\nExisting Blocks: 100\n(Diagonal brace (y=1: z=5\u2192z=6, y+1) - Block ID 30 (West face)) <ID 100: Brace>\nConnecting <ID 99: Small Wooden Block> at [-1.   1.5  5. ] and <ID 45: Small Wooden Block> at [-0.5  2.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 99,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=-1, y=2, z=5) for West face brace connection (Block ID 31)"
+    },
+    "result": "You have successfully added <ID 101: Small Wooden Block>.\nExisting Blocks: 101\n(Lower SWB (x=-1, y=2, z=5) for West face brace connection (Block ID 31)) <ID 101: Small Wooden Block>\nPosition: [-1., 2., 5.]\nAttachable Faces:\nFace label: A, Face center: [-0.5,  2. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5,  2. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  2. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. ,  2. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1. ,  2.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 101,
+      "face_a": "E",
+      "block_b": 49,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=2: z=5\u2192z=6, y+1) - Block ID 31 (West face)"
+    },
+    "result": "You have successfully added <ID 102: Brace>.\nExisting Blocks: 102\n(Diagonal brace (y=2: z=5\u2192z=6, y+1) - Block ID 31 (West face)) <ID 102: Brace>\nConnecting <ID 101: Small Wooden Block> at [-1.   2.5  5. ] and <ID 49: Small Wooden Block> at [-0.5  3.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 101,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=-1, y=3, z=5) for West face brace connection (Block ID 32)"
+    },
+    "result": "You have successfully added <ID 103: Small Wooden Block>.\nExisting Blocks: 103\n(Lower SWB (x=-1, y=3, z=5) for West face brace connection (Block ID 32)) <ID 103: Small Wooden Block>\nPosition: [-1., 3., 5.]\nAttachable Faces:\nFace label: A, Face center: [-0.5,  3. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5,  3. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  3. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. ,  3. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1. ,  3.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 103,
+      "face_a": "E",
+      "block_b": 53,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=3: z=5\u2192z=6, y+1) - Block ID 32 (West face)"
+    },
+    "result": "You have successfully added <ID 104: Brace>.\nExisting Blocks: 104\n(Diagonal brace (y=3: z=5\u2192z=6, y+1) - Block ID 32 (West face)) <ID 104: Brace>\nConnecting <ID 103: Small Wooden Block> at [-1.   3.5  5. ] and <ID 53: Small Wooden Block> at [-0.5  4.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 103,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=-1, y=4, z=5) for West face brace connection (Block ID 33)"
+    },
+    "result": "You have successfully added <ID 105: Small Wooden Block>.\nExisting Blocks: 105\n(Lower SWB (x=-1, y=4, z=5) for West face brace connection (Block ID 33)) <ID 105: Small Wooden Block>\nPosition: [-1., 4., 5.]\nAttachable Faces:\nFace label: A, Face center: [-0.5,  4. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5,  4. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  4. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. ,  4. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1. ,  4.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 105,
+      "face_a": "E",
+      "block_b": 57,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=4: z=5\u2192z=6, y+1) - Block ID 33 (West face)"
+    },
+    "result": "You have successfully added <ID 106: Brace>.\nExisting Blocks: 106\n(Diagonal brace (y=4: z=5\u2192z=6, y+1) - Block ID 33 (West face)) <ID 106: Brace>\nConnecting <ID 105: Small Wooden Block> at [-1.   4.5  5. ] and <ID 57: Small Wooden Block> at [-0.5  5.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 105,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=-1, y=5, z=5) for West face brace connection (Block ID 34)"
+    },
+    "result": "You have successfully added <ID 107: Small Wooden Block>.\nExisting Blocks: 107\n(Lower SWB (x=-1, y=5, z=5) for West face brace connection (Block ID 34)) <ID 107: Small Wooden Block>\nPosition: [-1., 5., 5.]\nAttachable Faces:\nFace label: A, Face center: [-0.5,  5. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5,  5. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  5. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. ,  5. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1. ,  5.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 107,
+      "face_a": "E",
+      "block_b": 61,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=5: z=5\u2192z=6, y+1) - Block ID 34 (West face)"
+    },
+    "result": "You have successfully added <ID 108: Brace>.\nExisting Blocks: 108\n(Diagonal brace (y=5: z=5\u2192z=6, y+1) - Block ID 34 (West face)) <ID 108: Brace>\nConnecting <ID 107: Small Wooden Block> at [-1.   5.5  5. ] and <ID 61: Small Wooden Block> at [-0.5  6.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 107,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=-1, y=6, z=5) for West face brace connection (Block ID 35)"
+    },
+    "result": "You have successfully added <ID 109: Small Wooden Block>.\nExisting Blocks: 109\n(Lower SWB (x=-1, y=6, z=5) for West face brace connection (Block ID 35)) <ID 109: Small Wooden Block>\nPosition: [-1., 6., 5.]\nAttachable Faces:\nFace label: A, Face center: [-0.5,  6. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5,  6. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  6. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. ,  6. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1. ,  6.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 109,
+      "face_a": "E",
+      "block_b": 65,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=6: z=5\u2192z=6, y+1) - Block ID 35 (West face)"
+    },
+    "result": "You have successfully added <ID 110: Brace>.\nExisting Blocks: 110\n(Diagonal brace (y=6: z=5\u2192z=6, y+1) - Block ID 35 (West face)) <ID 110: Brace>\nConnecting <ID 109: Small Wooden Block> at [-1.   6.5  5. ] and <ID 65: Small Wooden Block> at [-0.5  7.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 109,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=-1, y=7, z=5) for West face brace connection (Block ID 36)"
+    },
+    "result": "You have successfully added <ID 111: Small Wooden Block>.\nExisting Blocks: 111\n(Lower SWB (x=-1, y=7, z=5) for West face brace connection (Block ID 36)) <ID 111: Small Wooden Block>\nPosition: [-1., 7., 5.]\nAttachable Faces:\nFace label: A, Face center: [-0.5,  7. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5,  7. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  7. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. ,  7. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1. ,  7.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 111,
+      "face_a": "E",
+      "block_b": 69,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=7: z=5\u2192z=6, y+1) - Block ID 36 (West face)"
+    },
+    "result": "You have successfully added <ID 112: Brace>.\nExisting Blocks: 112\n(Diagonal brace (y=7: z=5\u2192z=6, y+1) - Block ID 36 (West face)) <ID 112: Brace>\nConnecting <ID 111: Small Wooden Block> at [-1.   7.5  5. ] and <ID 69: Small Wooden Block> at [-0.5  8.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 111,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=-1, y=8, z=5) for West face brace connection (Block ID 37)"
+    },
+    "result": "You have successfully added <ID 113: Small Wooden Block>.\nExisting Blocks: 113\n(Lower SWB (x=-1, y=8, z=5) for West face brace connection (Block ID 37)) <ID 113: Small Wooden Block>\nPosition: [-1., 8., 5.]\nAttachable Faces:\nFace label: A, Face center: [-0.5,  8. ,  5. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1.5,  8. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  8. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. ,  8. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1. ,  8.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 113,
+      "face_a": "E",
+      "block_b": 73,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=8: z=5\u2192z=6, y+1) - Block ID 37 (West face)"
+    },
+    "result": "You have successfully added <ID 114: Brace>.\nExisting Blocks: 114\n(Diagonal brace (y=8: z=5\u2192z=6, y+1) - Block ID 37 (West face)) <ID 114: Brace>\nConnecting <ID 113: Small Wooden Block> at [-1.   8.5  5. ] and <ID 73: Small Wooden Block> at [-0.5  9.   6. ].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 72,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Lower SWB (x=-1, y=9, z=5) for West face brace connection (Block ID 38)"
+    },
+    "result": "You have successfully added <ID 115: Small Wooden Block>.\nExisting Blocks: 115\n(Lower SWB (x=-1, y=9, z=5) for West face brace connection (Block ID 38)) <ID 115: Small Wooden Block>\nPosition: [-1., 9., 5.]\nAttachable Faces:\nFace label: A, Face center: [-1. ,  9.5,  5. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. ,  8.5,  5. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  9. ,  5.5], Facing towards <straight up>\nFace label: D, Face center: [-1. ,  9. ,  4.5], Facing towards <straight down>\nFace label: E, Face center: [-1.5,  9. ,  5. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 115,
+      "face_a": "A",
+      "block_b": 77,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Diagonal brace (y=9: z=5\u2192z=6, y+1) - Block ID 38 (West face)"
+    },
+    "result": "You have successfully added <ID 116: Brace>.\nExisting Blocks: 116\n(Diagonal brace (y=9: z=5\u2192z=6, y+1) - Block ID 38 (West face)) <ID 116: Brace>\nConnecting <ID 115: Small Wooden Block> at [-1.   9.5  5. ] and <ID 77: Small Wooden Block> at [-0.5 10.   6. ].\t"
+  }
+]

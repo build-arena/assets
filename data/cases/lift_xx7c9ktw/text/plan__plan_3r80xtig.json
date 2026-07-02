@@ -1,0 +1,19 @@
+{
+  "overall_structure": {
+    "description": "The overall structure is a rocket consisting of a central vertical column built on the starting stone block, with two small wooden blocks stacked on top to provide height. At the top level (z=2 to 3), four horizontal arms extend outward in the +x, -x, +y, and -y directions. Each arm consists of two small wooden blocks placed side by side horizontally. A water cannon is attached to the bottom face of the outer wooden block of each arm, oriented to point downward (-z direction) for downward spray and upward recoil. A torch is attached to the east (or equivalent outward) side face of the inner wooden block of each arm, oriented to point downward, with its flame positioned to heat the corresponding water cannon, enabling steam mode for increased thrust. The design ensures symmetry for stable vertical ascent, with engine outlets above the ground plane to avoid conflicts.",
+    "functionality": "When the firing control key is pressed and held, all four water cannons activate simultaneously, spraying steam downward due to heating from the torches, generating upward recoil force. The total thrust exceeds the structure's weight, causing the rocket to lift off and accelerate upward. The symmetric placement of the engines ensures the thrust vector passes through the center of mass, minimizing lateral deviation and promoting a straight vertical trajectory. Continuous firing results in sustained acceleration, achieving high maximum height and speed.",
+    "assembly": "N/A - The rocket is constructed as a single sub-structure with all components directly attached.",
+    "motion_control": "The structure has no moving parts beyond the water cannons' firing mechanism. All water cannons are controlled by a single firing key, which is pressed and held continuously during simulation. The expected motion is a stable vertical ascent along the +z axis, with minimal lateral deviation due to symmetric thrust. The rocket lifts off from the ground and accelerates upward indefinitely under constant thrust, subject to simulation constraints."
+  },
+  "sub_structures": {
+    "sub_structure_1": {
+      "name": "Rocket",
+      "description": "The sub-structure is a symmetric rocket with a central column and four extending arms at the top, each arm supporting a steam-powered engine (water cannon heated by a torch) oriented downward for upward thrust.",
+      "components": "1 starting stone block, 10 small wooden blocks, 4 water cannons, 4 torches.",
+      "assembly": "N/A - Single sub-structure.",
+      "motion_control": "The water cannons are fired continuously via the control key, producing upward recoil for vertical ascent. No additional controls are needed; the design relies on symmetry for straight-line motion.",
+      "function": "This sub-structure serves as the complete rocket, providing sufficient symmetric thrust to achieve lift-off, high altitude, high speed, and minimal trajectory deviation while using a reasonable number of blocks.",
+      "design_requirements": "The structure must be symmetric in the x-y plane to minimize deviation. Water cannons must be oriented downward with outlets above z=0. Torches must be positioned such that their heating spheres overlap with the water cannons to enable steam mode, without the flames being extinguished by steam plumes or causing physical overlaps. Positions may be micro-adjusted in later stages to resolve conflicts based on actual build execution."
+    }
+  }
+}

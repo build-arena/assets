@@ -1,0 +1,409 @@
+[
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "Chassis base block (default 1x1x1; center at [0.0, 0.0, 0.5], bottom at z = 0.0)"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Chassis Block C (lower brace plane; keep east/west faces clear)"
+    },
+    "result": "You have successfully added <ID 2: Small Wooden Block>.\nExisting Blocks: 2\n(Chassis Block C (lower brace plane; keep east/west faces clear)) <ID 2: Small Wooden Block>\nPosition: [0.,0.,1.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Chassis Block D (upper brace plane; keep east/west faces clear)"
+    },
+    "result": "You have successfully added <ID 3: Small Wooden Block>.\nExisting Blocks: 3\n(Chassis Block D (upper brace plane; keep east/west faces clear)) <ID 3: Small Wooden Block>\nPosition: [0.,0.,2.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "East Engine Support Column Segment (E0), west face mated to ID 1 Face A"
+    },
+    "result": "You have successfully added <ID 4: Small Wooden Block>.\nExisting Blocks: 4\n(East Engine Support Column Segment (E0), west face mated to ID 1 Face A) <ID 4: Small Wooden Block>\nPosition: [1.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [1. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [1.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 4,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "East Engine Support Column Segment (E1), west face mated to ID 4 Face E"
+    },
+    "result": "You have successfully added <ID 5: Small Wooden Block>.\nExisting Blocks: 5\n(East Engine Support Column Segment (E1), west face mated to ID 4 Face E) <ID 5: Small Wooden Block>\nPosition: [2.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [2. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [2. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 2. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [2.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 5,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "East Engine Support Column Segment (E2), west face mated to ID 5 Face E; base for engine stack"
+    },
+    "result": "You have successfully added <ID 6: Small Wooden Block>.\nExisting Blocks: 6\n(East Engine Support Column Segment (E2), west face mated to ID 5 Face E; base for engine stack) <ID 6: Small Wooden Block>\nPosition: [3.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 3. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [3. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [3. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 3. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [3.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 6,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "East Engine Block A (lower) at [3.0, 0.0, 1.0]; west face reserved for lower east brace"
+    },
+    "result": "You have successfully added <ID 7: Small Wooden Block>.\nExisting Blocks: 7\n(East Engine Block A (lower) at [3.0, 0.0, 1.0]; west face reserved for lower east brace) <ID 7: Small Wooden Block>\nPosition: [3.,0.,1.]\nAttachable Faces:\nFace label: A, Face center: [ 3. , -0.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [3. , 0.5, 1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: C, Face center: [2.5, 0. , 1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [3.5, 0. , 1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [3. , 0. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 7,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "East Engine Block B (upper) at [3.0, 0.0, 2.0]; west face reserved for upper east brace"
+    },
+    "result": "You have successfully added <ID 8: Small Wooden Block>.\nExisting Blocks: 8\n(East Engine Block B (upper) at [3.0, 0.0, 2.0]; west face reserved for upper east brace) <ID 8: Small Wooden Block>\nPosition: [3.,0.,2.]\nAttachable Faces:\nFace label: A, Face center: [ 3. , -0.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [3. , 0.5, 2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [2.5, 0. , 2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [3.5, 0. , 2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [3. , 0. , 2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 2,
+      "face_a": "A",
+      "block_b": 7,
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "East lower brace linking East Engine Block A (ID 7 west face) to Chassis Block C (ID 2 east face); solid hinge/brace between endpoints [2.5, 0.0, 1.0] (engine A west face center) and [0.5, 0.0, 1.0] (Block C east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0."
+    },
+    "result": "You have successfully added <ID 9: Brace>.\nExisting Blocks: 9\n(East lower brace linking East Engine Block A (ID 7 west face) to Chassis Block C (ID 2 east face); solid hinge/brace between endpoints [2.5, 0.0, 1.0] (engine A west face center) and [0.5, 0.0, 1.0] (Block C east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0.) <ID 9: Brace>\nConnecting <ID 2: Small Wooden Block> at [5.00000000e-01 1.11022302e-16 1.00000000e+00] and <ID 7: Small Wooden Block> at [2.50000000e+00 4.71844785e-16 1.00000000e+00].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 3,
+      "face_a": "A",
+      "block_b": 8,
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "East upper brace linking East Engine Block B (ID 8 west face) to Chassis Block D (ID 3 east face); solid hinge/brace between endpoints [2.5, 0.0, 2.0] (engine B west face center) and [0.5, 0.0, 2.0] (Block D east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0."
+    },
+    "result": "You have successfully added <ID 10: Brace>.\nExisting Blocks: 10\n(East upper brace linking East Engine Block B (ID 8 west face) to Chassis Block D (ID 3 east face); solid hinge/brace between endpoints [2.5, 0.0, 2.0] (engine B west face center) and [0.5, 0.0, 2.0] (Block D east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0.) <ID 10: Brace>\nConnecting <ID 3: Small Wooden Block> at [5.00000000e-01 3.33066907e-16 2.00000000e+00] and <ID 8: Small Wooden Block> at [2.50000000e+00 4.99600361e-16 2.00000000e+00].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "West Engine Support Column Segment (W0), east face mated to ID 1 Face B"
+    },
+    "result": "You have successfully added <ID 11: Small Wooden Block>.\nExisting Blocks: 11\n(West Engine Support Column Segment (W0), east face mated to ID 1 Face B) <ID 11: Small Wooden Block>\nPosition: [-1., 0., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1. ,  0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  0. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-1. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-1.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 11,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "West Engine Support Column Segment (W1), east face mated to ID 11 Face E"
+    },
+    "result": "You have successfully added <ID 12: Small Wooden Block>.\nExisting Blocks: 12\n(West Engine Support Column Segment (W1), east face mated to ID 11 Face E) <ID 12: Small Wooden Block>\nPosition: [-2., 0., 0.]\nAttachable Faces:\nFace label: A, Face center: [-2. ,  0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. ,  0. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-2. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-2.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 12,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "West Engine Support Column Segment (W2), east face mated to ID 12 Face E; base for engine stack"
+    },
+    "result": "You have successfully added <ID 13: Small Wooden Block>.\nExisting Blocks: 13\n(West Engine Support Column Segment (W2), east face mated to ID 12 Face E; base for engine stack) <ID 13: Small Wooden Block>\nPosition: [-3., 0., 0.]\nAttachable Faces:\nFace label: A, Face center: [-3. ,  0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-3. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-3. ,  0. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-3. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-3.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 13,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "West Engine Block A (lower) at [-3.0, 0.0, 1.0]; east face reserved for lower west brace"
+    },
+    "result": "You have successfully added <ID 14: Small Wooden Block>.\nExisting Blocks: 14\n(West Engine Block A (lower) at [-3.0, 0.0, 1.0]; east face reserved for lower west brace) <ID 14: Small Wooden Block>\nPosition: [-3., 0., 1.]\nAttachable Faces:\nFace label: A, Face center: [-3. ,  0.5,  1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: B, Face center: [-3. , -0.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2.5,  0. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-3.5,  0. ,  1. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: E, Face center: [-3. ,  0. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 14,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "West Engine Block B (upper) at [-3.0, 0.0, 2.0]; east face reserved for upper west brace"
+    },
+    "result": "You have successfully added <ID 15: Small Wooden Block>.\nExisting Blocks: 15\n(West Engine Block B (upper) at [-3.0, 0.0, 2.0]; east face reserved for upper west brace) <ID 15: Small Wooden Block>\nPosition: [-3., 0., 2.]\nAttachable Faces:\nFace label: A, Face center: [-3. ,  0.5,  2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-3. , -0.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2.5,  0. ,  2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-3.5,  0. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [-3. ,  0. ,  2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 2,
+      "face_a": "B",
+      "block_b": 14,
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "West lower brace linking West Engine Block A (ID 14 east face) to Chassis Block C (ID 2 west face); solid hinge/brace between endpoints [-2.5, 0.0, 1.0] (engine A east face center) and [-0.5, 0.0, 1.0] (Block C west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0."
+    },
+    "result": "You have successfully added <ID 16: Brace>.\nExisting Blocks: 16\n(West lower brace linking West Engine Block A (ID 14 east face) to Chassis Block C (ID 2 west face); solid hinge/brace between endpoints [-2.5, 0.0, 1.0] (engine A east face center) and [-0.5, 0.0, 1.0] (Block C west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0.) <ID 16: Brace>\nConnecting <ID 2: Small Wooden Block> at [-5.00000000e-01  1.11022302e-16  1.00000000e+00] and <ID 14: Small Wooden Block> at [-2.50000000e+00  4.71844785e-16  1.00000000e+00].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 3,
+      "face_a": "B",
+      "block_b": 15,
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "West upper brace linking West Engine Block B (ID 15 east face) to Chassis Block D (ID 3 west face); solid hinge/brace between endpoints [-2.5, 0.0, 2.0] (engine B east face center) and [-0.5, 0.0, 2.0] (Block D west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0."
+    },
+    "result": "You have successfully added <ID 17: Brace>.\nExisting Blocks: 17\n(West upper brace linking West Engine Block B (ID 15 east face) to Chassis Block D (ID 3 west face); solid hinge/brace between endpoints [-2.5, 0.0, 2.0] (engine B east face center) and [-0.5, 0.0, 2.0] (Block D west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0.) <ID 17: Brace>\nConnecting <ID 3: Small Wooden Block> at [-5.00000000e-01  3.33066907e-16  2.00000000e+00] and <ID 15: Small Wooden Block> at [-2.50000000e+00  4.99600361e-16  2.00000000e+00].\t"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 17\n\nMachine Summary: Chassis base block (default 1x1x1; center at [0.0, 0.0, 0.5], bottom at z = 0.0)\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\n(Chassis Block C (lower brace plane; keep east/west faces clear)) <ID 2: Small Wooden Block>\nPosition: [0.,0.,1.]\n(Chassis Block D (upper brace plane; keep east/west faces clear)) <ID 3: Small Wooden Block>\nPosition: [0.,0.,2.]\n(East Engine Support Column Segment (E0), west face mated to ID 1 Face A) <ID 4: Small Wooden Block>\nPosition: [1.,0.,0.]\n(East Engine Support Column Segment (E1), west face mated to ID 4 Face E) <ID 5: Small Wooden Block>\nPosition: [2.,0.,0.]\n(East Engine Support Column Segment (E2), west face mated to ID 5 Face E; base for engine stack) <ID 6: Small Wooden Block>\nPosition: [3.,0.,0.]\n(East Engine Block A (lower) at [3.0, 0.0, 1.0]; west face reserved for lower east brace) <ID 7: Small Wooden Block>\nPosition: [3.,0.,1.]\n(East Engine Block B (upper) at [3.0, 0.0, 2.0]; west face reserved for upper east brace) <ID 8: Small Wooden Block>\nPosition: [3.,0.,2.]\n(East lower brace linking East Engine Block A (ID 7 west face) to Chassis Block C (ID 2 east face); solid hinge/brace between endpoints [2.5, 0.0, 1.0] (engine A west face center) and [0.5, 0.0, 1.0] (Block C east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0.) <ID 9: Brace>\nConnecting <ID 2: Small Wooden Block> at [5.00000000e-01 1.11022302e-16 1.00000000e+00] and <ID 7: Small Wooden Block> at [2.50000000e+00 4.71844785e-16 1.00000000e+00].\t\n(East upper brace linking East Engine Block B (ID 8 west face) to Chassis Block D (ID 3 east face); solid hinge/brace between endpoints [2.5, 0.0, 2.0] (engine B west face center) and [0.5, 0.0, 2.0] (Block D east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0.) <ID 10: Brace>\nConnecting <ID 3: Small Wooden Block> at [5.00000000e-01 3.33066907e-16 2.00000000e+00] and <ID 8: Small Wooden Block> at [2.50000000e+00 4.99600361e-16 2.00000000e+00].\t\n(West Engine Support Column Segment (W0), east face mated to ID 1 Face B) <ID 11: Small Wooden Block>\nPosition: [-1., 0., 0.]\n(West Engine Support Column Segment (W1), east face mated to ID 11 Face E) <ID 12: Small Wooden Block>\nPosition: [-2., 0., 0.]\n(West Engine Support Column Segment (W2), east face mated to ID 12 Face E; base for engine stack) <ID 13: Small Wooden Block>\nPosition: [-3., 0., 0.]\n(West Engine Block A (lower) at [-3.0, 0.0, 1.0]; east face reserved for lower west brace) <ID 14: Small Wooden Block>\nPosition: [-3., 0., 1.]\n(West Engine Block B (upper) at [-3.0, 0.0, 2.0]; east face reserved for upper west brace) <ID 15: Small Wooden Block>\nPosition: [-3., 0., 2.]\n(West lower brace linking West Engine Block A (ID 14 east face) to Chassis Block C (ID 2 west face); solid hinge/brace between endpoints [-2.5, 0.0, 1.0] (engine A east face center) and [-0.5, 0.0, 1.0] (Block C west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0.) <ID 16: Brace>\nConnecting <ID 2: Small Wooden Block> at [-5.00000000e-01  1.11022302e-16  1.00000000e+00] and <ID 14: Small Wooden Block> at [-2.50000000e+00  4.71844785e-16  1.00000000e+00].\t\n(West upper brace linking West Engine Block B (ID 15 east face) to Chassis Block D (ID 3 west face); solid hinge/brace between endpoints [-2.5, 0.0, 2.0] (engine B east face center) and [-0.5, 0.0, 2.0] (Block D west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0.) <ID 17: Brace>\nConnecting <ID 3: Small Wooden Block> at [-5.00000000e-01  3.33066907e-16  2.00000000e+00] and <ID 15: Small Wooden Block> at [-2.50000000e+00  4.99600361e-16  2.00000000e+00].\t"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 17\n\nMachine Summary: Chassis base block (default 1x1x1; center at [0.0, 0.0, 0.5], bottom at z = 0.0)\n(Chassis Block C (lower brace plane; keep east/west faces clear)) <ID 2: Small Wooden Block>\nPosition: [0.,0.,1.]\n(Chassis Block D (upper brace plane; keep east/west faces clear)) <ID 3: Small Wooden Block>\nPosition: [0.,0.,2.]\n(East Engine Support Column Segment (E0), west face mated to ID 1 Face A) <ID 4: Small Wooden Block>\nPosition: [1.,0.,0.]\n(East Engine Support Column Segment (E1), west face mated to ID 4 Face E) <ID 5: Small Wooden Block>\nPosition: [2.,0.,0.]\n(East Engine Support Column Segment (E2), west face mated to ID 5 Face E; base for engine stack) <ID 6: Small Wooden Block>\nPosition: [3.,0.,0.]\n(East Engine Block A (lower) at [3.0, 0.0, 1.0]; west face reserved for lower east brace) <ID 7: Small Wooden Block>\nPosition: [3.,0.,1.]\n(East Engine Block B (upper) at [3.0, 0.0, 2.0]; west face reserved for upper east brace) <ID 8: Small Wooden Block>\nPosition: [3.,0.,2.]\n(East lower brace linking East Engine Block A (ID 7 west face) to Chassis Block C (ID 2 east face); solid hinge/brace between endpoints [2.5, 0.0, 1.0] (engine A west face center) and [0.5, 0.0, 1.0] (Block C east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0.) <ID 9: Brace>\nConnecting <ID 2: Small Wooden Block> at [5.00000000e-01 1.11022302e-16 1.00000000e+00] and <ID 7: Small Wooden Block> at [2.50000000e+00 4.71844785e-16 1.00000000e+00].\t\n(East upper brace linking East Engine Block B (ID 8 west face) to Chassis Block D (ID 3 east face); solid hinge/brace between endpoints [2.5, 0.0, 2.0] (engine B west face center) and [0.5, 0.0, 2.0] (Block D east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0.) <ID 10: Brace>\nConnecting <ID 3: Small Wooden Block> at [5.00000000e-01 3.33066907e-16 2.00000000e+00] and <ID 8: Small Wooden Block> at [2.50000000e+00 4.99600361e-16 2.00000000e+00].\t\n(West Engine Support Column Segment (W0), east face mated to ID 1 Face B) <ID 11: Small Wooden Block>\nPosition: [-1., 0., 0.]\n(West Engine Support Column Segment (W1), east face mated to ID 11 Face E) <ID 12: Small Wooden Block>\nPosition: [-2., 0., 0.]\n(West Engine Support Column Segment (W2), east face mated to ID 12 Face E; base for engine stack) <ID 13: Small Wooden Block>\nPosition: [-3., 0., 0.]\n(West Engine Block A (lower) at [-3.0, 0.0, 1.0]; east face reserved for lower west brace) <ID 14: Small Wooden Block>\nPosition: [-3., 0., 1.]\n(West Engine Block B (upper) at [-3.0, 0.0, 2.0]; east face reserved for upper west brace) <ID 15: Small Wooden Block>\nPosition: [-3., 0., 2.]\n(West lower brace linking West Engine Block A (ID 14 east face) to Chassis Block C (ID 2 west face); solid hinge/brace between endpoints [-2.5, 0.0, 1.0] (engine A east face center) and [-0.5, 0.0, 1.0] (Block C west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0.) <ID 16: Brace>\nConnecting <ID 2: Small Wooden Block> at [-5.00000000e-01  1.11022302e-16  1.00000000e+00] and <ID 14: Small Wooden Block> at [-2.50000000e+00  4.71844785e-16  1.00000000e+00].\t\n(West upper brace linking West Engine Block B (ID 15 east face) to Chassis Block D (ID 3 west face); solid hinge/brace between endpoints [-2.5, 0.0, 2.0] (engine B east face center) and [-0.5, 0.0, 2.0] (Block D west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0.) <ID 17: Brace>\nConnecting <ID 3: Small Wooden Block> at [-5.00000000e-01  3.33066907e-16  2.00000000e+00] and <ID 15: Small Wooden Block> at [-2.50000000e+00  4.99600361e-16  2.00000000e+00].\t\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]"
+  },
+  {
+    "op": "reset",
+    "params": {},
+    "result": "The machine has been reset, please start again."
+  },
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "Chassis base block (default 1x1x1; center at [0.0, 0.0, 0.5], bottom at z = 0.0)"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Chassis Block C (lower brace plane; keep east/west faces clear)"
+    },
+    "result": "You have successfully added <ID 2: Small Wooden Block>.\nExisting Blocks: 2\n(Chassis Block C (lower brace plane; keep east/west faces clear)) <ID 2: Small Wooden Block>\nPosition: [0.,0.,1.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Chassis Block D (upper brace plane; keep east/west faces clear)"
+    },
+    "result": "You have successfully added <ID 3: Small Wooden Block>.\nExisting Blocks: 3\n(Chassis Block D (upper brace plane; keep east/west faces clear)) <ID 3: Small Wooden Block>\nPosition: [0.,0.,2.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "East Engine Support Column Segment (E0), west face mated to ID 1 Face A"
+    },
+    "result": "You have successfully added <ID 4: Small Wooden Block>.\nExisting Blocks: 4\n(East Engine Support Column Segment (E0), west face mated to ID 1 Face A) <ID 4: Small Wooden Block>\nPosition: [1.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [1. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 1. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [1.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 4,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "East Engine Support Column Segment (E1), west face mated to ID 4 Face E"
+    },
+    "result": "You have successfully added <ID 5: Small Wooden Block>.\nExisting Blocks: 5\n(East Engine Support Column Segment (E1), west face mated to ID 4 Face E) <ID 5: Small Wooden Block>\nPosition: [2.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [2. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [2. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 2. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [2.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 5,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "East Engine Support Column Segment (E2), west face mated to ID 5 Face E; base for engine stack"
+    },
+    "result": "You have successfully added <ID 6: Small Wooden Block>.\nExisting Blocks: 6\n(East Engine Support Column Segment (E2), west face mated to ID 5 Face E; base for engine stack) <ID 6: Small Wooden Block>\nPosition: [3.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [ 3. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [3. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [3. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 3. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [3.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 6,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "East Engine Block A (lower) at [3.0, 0.0, 1.0]; west face reserved for lower east brace"
+    },
+    "result": "You have successfully added <ID 7: Small Wooden Block>.\nExisting Blocks: 7\n(East Engine Block A (lower) at [3.0, 0.0, 1.0]; west face reserved for lower east brace) <ID 7: Small Wooden Block>\nPosition: [3.,0.,1.]\nAttachable Faces:\nFace label: A, Face center: [ 3. , -0.5,  1. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: B, Face center: [3. , 0.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [2.5, 0. , 1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [3.5, 0. , 1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [3. , 0. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 7,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "East Engine Block B (upper) at [3.0, 0.0, 2.0]; west face reserved for upper east brace"
+    },
+    "result": "You have successfully added <ID 8: Small Wooden Block>.\nExisting Blocks: 8\n(East Engine Block B (upper) at [3.0, 0.0, 2.0]; west face reserved for upper east brace) <ID 8: Small Wooden Block>\nPosition: [ 3.,-0., 2.]\nAttachable Faces:\nFace label: A, Face center: [ 3. , -0.5,  2. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: B, Face center: [3. , 0.5, 2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [2.5, 0. , 2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 3.5, -0. ,  2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 3. , -0. ,  2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 2,
+      "face_a": "A",
+      "block_b": 7,
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "East lower brace linking East Engine Block A (ID 7 west face) to Chassis Block C (ID 2 east face); solid hinge/brace between endpoints [2.5, 0.0, 1.0] (engine A west face center) and [0.5, 0.0, 1.0] (Block C east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0."
+    },
+    "result": "You have successfully added <ID 9: Brace>.\nExisting Blocks: 9\n(East lower brace linking East Engine Block A (ID 7 west face) to Chassis Block C (ID 2 east face); solid hinge/brace between endpoints [2.5, 0.0, 1.0] (engine A west face center) and [0.5, 0.0, 1.0] (Block C east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0.) <ID 9: Brace>\nConnecting <ID 2: Small Wooden Block> at [5.00000000e-01 1.11022302e-16 1.00000000e+00] and <ID 7: Small Wooden Block> at [2.50000000e+00 3.33066907e-16 1.00000000e+00].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 3,
+      "face_a": "A",
+      "block_b": 8,
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "East upper brace linking East Engine Block B (ID 8 west face) to Chassis Block D (ID 3 east face); solid hinge/brace between endpoints [2.5, 0.0, 2.0] (engine B west face center) and [0.5, 0.0, 2.0] (Block D east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0."
+    },
+    "result": "You have successfully added <ID 10: Brace>.\nExisting Blocks: 10\n(East upper brace linking East Engine Block B (ID 8 west face) to Chassis Block D (ID 3 east face); solid hinge/brace between endpoints [2.5, 0.0, 2.0] (engine B west face center) and [0.5, 0.0, 2.0] (Block D east face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0.) <ID 10: Brace>\nConnecting <ID 3: Small Wooden Block> at [5.00000000e-01 3.33066907e-16 2.00000000e+00] and <ID 8: Small Wooden Block> at [2.50000000e+00 5.55111512e-17 2.00000000e+00].\t"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "West Engine Support Column Segment (W0), east face mated to ID 1 Face B"
+    },
+    "result": "You have successfully added <ID 11: Small Wooden Block>.\nExisting Blocks: 11\n(West Engine Support Column Segment (W0), east face mated to ID 1 Face B) <ID 11: Small Wooden Block>\nPosition: [-1., 0., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1. ,  0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  0. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-1. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-1.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 11,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "West Engine Support Column Segment (W1), east face mated to ID 11 Face E"
+    },
+    "result": "You have successfully added <ID 12: Small Wooden Block>.\nExisting Blocks: 12\n(West Engine Support Column Segment (W1), east face mated to ID 11 Face E) <ID 12: Small Wooden Block>\nPosition: [-2., 0., 0.]\nAttachable Faces:\nFace label: A, Face center: [-2. ,  0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. ,  0. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-2. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-2.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 12,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "West Engine Support Column Segment (W2), east face mated to ID 12 Face E; base for engine stack"
+    },
+    "result": "You have successfully added <ID 13: Small Wooden Block>.\nExisting Blocks: 13\n(West Engine Support Column Segment (W2), east face mated to ID 12 Face E; base for engine stack) <ID 13: Small Wooden Block>\nPosition: [-3., 0., 0.]\nAttachable Faces:\nFace label: A, Face center: [-3. ,  0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-3. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-3. ,  0. ,  0.5], Facing towards <straight up>\nFace label: D, Face center: [-3. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [-3.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 13,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "West Engine Block A (lower) at [-3.0, 0.0, 1.0]; east face reserved for lower west brace"
+    },
+    "result": "You have successfully added <ID 14: Small Wooden Block>.\nExisting Blocks: 14\n(West Engine Block A (lower) at [-3.0, 0.0, 1.0]; east face reserved for lower west brace) <ID 14: Small Wooden Block>\nPosition: [-3., 0., 1.]\nAttachable Faces:\nFace label: A, Face center: [-3. ,  0.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-3. , -0.5,  1. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [-2.5,  0. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-3.5,  0. ,  1. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: E, Face center: [-3. ,  0. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 14,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "West Engine Block B (upper) at [-3.0, 0.0, 2.0]; east face reserved for upper west brace"
+    },
+    "result": "You have successfully added <ID 15: Small Wooden Block>.\nExisting Blocks: 15\n(West Engine Block B (upper) at [-3.0, 0.0, 2.0]; east face reserved for upper west brace) <ID 15: Small Wooden Block>\nPosition: [-3.,-0., 2.]\nAttachable Faces:\nFace label: A, Face center: [-3. ,  0.5,  2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-3. , -0.5,  2. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [-2.5,  0. ,  2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-3.5, -0. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [-3. , -0. ,  2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 2,
+      "face_a": "B",
+      "block_b": 14,
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "West lower brace linking West Engine Block A (ID 14 east face) to Chassis Block C (ID 2 west face); solid hinge/brace between endpoints [-2.5, 0.0, 1.0] (engine A east face center) and [-0.5, 0.0, 1.0] (Block C west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0."
+    },
+    "result": "You have successfully added <ID 16: Brace>.\nExisting Blocks: 16\n(West lower brace linking West Engine Block A (ID 14 east face) to Chassis Block C (ID 2 west face); solid hinge/brace between endpoints [-2.5, 0.0, 1.0] (engine A east face center) and [-0.5, 0.0, 1.0] (Block C west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=1.0, y=0.0.) <ID 16: Brace>\nConnecting <ID 2: Small Wooden Block> at [-5.00000000e-01  1.11022302e-16  1.00000000e+00] and <ID 14: Small Wooden Block> at [-2.50000000e+00  3.33066907e-16  1.00000000e+00].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 3,
+      "face_a": "B",
+      "block_b": 15,
+      "face_b": "C",
+      "connector": "Brace",
+      "note": "West upper brace linking West Engine Block B (ID 15 east face) to Chassis Block D (ID 3 west face); solid hinge/brace between endpoints [-2.5, 0.0, 2.0] (engine B east face center) and [-0.5, 0.0, 2.0] (Block D west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0."
+    },
+    "result": "You have successfully added <ID 17: Brace>.\nExisting Blocks: 17\n(West upper brace linking West Engine Block B (ID 15 east face) to Chassis Block D (ID 3 west face); solid hinge/brace between endpoints [-2.5, 0.0, 2.0] (engine B east face center) and [-0.5, 0.0, 2.0] (Block D west face center). Policy: micro-adjust \u00b10.1 on X on either endpoint if interference is detected while keeping z=2.0, y=0.0.) <ID 17: Brace>\nConnecting <ID 3: Small Wooden Block> at [-5.00000000e-01  3.33066907e-16  2.00000000e+00] and <ID 15: Small Wooden Block> at [-2.50000000e+00  5.55111512e-17  2.00000000e+00].\t"
+  },
+  {
+    "op": "reset",
+    "params": {},
+    "result": "The machine has been reset, please start again."
+  },
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "Chassis base block (default 1x1x1; center at [0.0, 0.0, 0.5], bottom at z = 0.0)"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  }
+]

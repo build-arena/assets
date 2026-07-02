@@ -1,0 +1,394 @@
+[
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "base of central column"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "1",
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "central column"
+    },
+    "result": "You have successfully added <ID 2: Small Wooden Block>.\nExisting Blocks: 2\n(central column) <ID 2: Small Wooden Block>\nPosition: [0.,0.,1.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "2",
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "top of central column"
+    },
+    "result": "You have successfully added <ID 3: Small Wooden Block>.\nExisting Blocks: 3\n(top of central column) <ID 3: Small Wooden Block>\nPosition: [0.,0.,2.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "3",
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "east arm base"
+    },
+    "result": "You have successfully added <ID 4: Small Wooden Block>.\nExisting Blocks: 4\n(east arm base) <ID 4: Small Wooden Block>\nPosition: [1.,0.,2.]\nAttachable Faces:\nFace label: A, Face center: [1. , 0. , 1.5], Facing towards <straight down>\nFace label: B, Face center: [1. , 0. , 2.5], Facing towards <straight up>\nFace label: C, Face center: [ 1. , -0.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [1. , 0.5, 2. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [1.5, 0. , 2. ], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "4",
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "east arm downward extension"
+    },
+    "result": "You have successfully added <ID 5: Small Wooden Block>.\nExisting Blocks: 5\n(east arm downward extension) <ID 5: Small Wooden Block>\nPosition: [1.,0.,1.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 1. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: B, Face center: [1.5, 0. , 1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -0.5,  1. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: D, Face center: [1. , 0.5, 1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [1. , 0. , 0.5], Facing towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "5",
+      "face": "B",
+      "new_block": "Water Cannon",
+      "note": "east steam engine"
+    },
+    "result": "You have successfully added <ID 6: Water Cannon>.\nExisting Blocks: 6\n(east steam engine) <ID 6: Water Cannon>\nPosition: [ 2.,-0., 1.]\nPointing at <North with 0.0\u00b0 pitch>\nInlet is at [2.00, -0.75, 1.00], outlet is at [2.00, 1.00, 1.00], sprays towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "get_block_details",
+    "params": {
+      "block_id": "6"
+    },
+    "result": "(east steam engine) <ID 6: Water Cannon>\nPosition: [ 2.,-0., 1.]\nPointing at <North with 0.0\u00b0 pitch>\nInlet is at [2.00, -0.75, 1.00], outlet is at [2.00, 1.00, 1.00], sprays towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": "6",
+      "angle": 90.0
+    },
+    "result": "The block 6 <Water Cannon> is twisted by 90.0 degrees. \n (east steam engine) <ID 6: Water Cannon>\nPosition: [ 2.,-0., 1.]\nPointing at <straight down>\nInlet is at [2.00, 0.00, 1.75], outlet is at [2.00, -0.00, 0.00], sprays towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "4",
+      "face": "E",
+      "new_block": "Torch",
+      "note": "heater for east water cannon"
+    },
+    "result": "You have successfully added <ID 7: Torch>.\nExisting Blocks: 7\n(heater for east water cannon) <ID 7: Torch>\nPosition: [2.,0.,2.]\nPointing at <South with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [2.00, -1.00, 2.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": "7",
+      "angle": 90.0
+    },
+    "result": "The block 7 <Torch> is twisted by 90.0 degrees. \n (heater for east water cannon) <ID 7: Torch>\nPosition: [2.,0.,2.]\nPointing at <straight up>\nHeating up a spherical area with radius 0.3 around [2.00, 0.00, 3.00]"
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "twist_block",
+      "message": "Operation failed! The block 7 <Torch> overlaps with existing blocks and it's been restored to previous state already, please try again\nOverlapping detected between <ID 6: Water Cannon> and <ID 7: Torch>"
+    }
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": "7",
+      "angle": 180.0
+    },
+    "result": "Operation failed! The block 7 <Torch> overlaps with existing blocks and it's been restored to previous state already, please try again\nOverlapping detected between <ID 6: Water Cannon> and <ID 7: Torch>"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": "6"
+    },
+    "result": "You have successfully removed <ID 6: Water Cannon>."
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": "7",
+      "angle": 180.0
+    },
+    "result": "The block 7 <Torch> is twisted by 180.0 degrees. \n (heater for east water cannon) <ID 7: Torch>\nPosition: [2.,0.,2.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [2.00, 0.00, 1.00]"
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "attach_block_to",
+      "message": "Operation failed! The new block <Water Cannon> overlaps with existing blocks and it's been restored to previous state already, please try again\nOverlapping detected between <ID 7: Torch> and <ID 8: Water Cannon>"
+    }
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "5",
+      "face": "B",
+      "new_block": "Water Cannon",
+      "note": "east steam engine"
+    },
+    "result": "Operation failed! The new block <Water Cannon> overlaps with existing blocks and it's been restored to previous state already, please try again\nOverlapping detected between <ID 7: Torch> and <ID 8: Water Cannon>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "5",
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "additional downward extension for east arm"
+    },
+    "result": "You have successfully added <ID 8: Small Wooden Block>.\nExisting Blocks: 7\n(additional downward extension for east arm) <ID 8: Small Wooden Block>\nPosition: [1.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: B, Face center: [1.5, 0. , 0. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -0.5,  0. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: D, Face center: [1. , 0.5, 0. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [ 1. ,  0. , -0.5], Facing towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "8",
+      "face": "B",
+      "new_block": "Water Cannon",
+      "note": "east steam engine"
+    },
+    "result": "You have successfully added <ID 9: Water Cannon>.\nExisting Blocks: 8\n(east steam engine) <ID 9: Water Cannon>\nPosition: [2.,0.,0.]\nPointing at <North with 0.0\u00b0 pitch>\nInlet is at [2.00, -0.75, 0.00], outlet is at [2.00, 1.00, 0.00], sprays towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": "9",
+      "angle": 90.0
+    },
+    "result": "The block 9 <Water Cannon> is twisted by 90.0 degrees. \n (east steam engine) <ID 9: Water Cannon>\nPosition: [2.,0.,0.]\nPointing at <straight down>\nInlet is at [2.00, 0.00, 0.75], outlet is at [2.00, 0.00, -1.00], sprays towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "3",
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "west arm base"
+    },
+    "result": "You have successfully added <ID 10: Small Wooden Block>.\nExisting Blocks: 9\n(west arm base) <ID 10: Small Wooden Block>\nPosition: [-1., 0., 2.]\nAttachable Faces:\nFace label: A, Face center: [-1. ,  0. ,  2.5], Facing towards <straight up>\nFace label: B, Face center: [-1. ,  0. ,  1.5], Facing towards <straight down>\nFace label: C, Face center: [-1. , -0.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1. ,  0.5,  2. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [-1.5,  0. ,  2. ], Facing towards <West with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "10",
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "west arm downward extension"
+    },
+    "result": "You have successfully added <ID 11: Small Wooden Block>.\nExisting Blocks: 10\n(west arm downward extension) <ID 11: Small Wooden Block>\nPosition: [-1., 0., 1.]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  0. ,  1. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -0.5,  1. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: D, Face center: [-1. ,  0.5,  1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [-1. ,  0. ,  0.5], Facing towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "11",
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "additional downward extension for west arm"
+    },
+    "result": "You have successfully added <ID 12: Small Wooden Block>.\nExisting Blocks: 11\n(additional downward extension for west arm) <ID 12: Small Wooden Block>\nPosition: [-1., 0., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  0. ,  0. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -0.5,  0. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: D, Face center: [-1. ,  0.5,  0. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [-1. ,  0. , -0.5], Facing towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "12",
+      "face": "A",
+      "new_block": "Water Cannon",
+      "note": "west steam engine"
+    },
+    "result": "You have successfully added <ID 13: Water Cannon>.\nExisting Blocks: 12\n(west steam engine) <ID 13: Water Cannon>\nPosition: [-2., 0., 0.]\nPointing at <North with 0.0\u00b0 pitch>\nInlet is at [-2.00, -0.75, 0.00], outlet is at [-2.00, 1.00, 0.00], sprays towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": "13",
+      "angle": 90.0
+    },
+    "result": "The block 13 <Water Cannon> is twisted by 90.0 degrees. \n (west steam engine) <ID 13: Water Cannon>\nPosition: [-2., 0., 0.]\nPointing at <straight up>\nInlet is at [-2.00, 0.00, -0.75], outlet is at [-2.00, 0.00, 1.00], sprays towards <straight up>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": "13",
+      "angle": 180.0
+    },
+    "result": "The block 13 <Water Cannon> is twisted by 180.0 degrees. \n (west steam engine) <ID 13: Water Cannon>\nPosition: [-2., 0., 0.]\nPointing at <straight down>\nInlet is at [-2.00, 0.00, 0.75], outlet is at [-2.00, 0.00, -1.00], sprays towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "10",
+      "face": "E",
+      "new_block": "Torch",
+      "note": "heater for west water cannon"
+    },
+    "result": "You have successfully added <ID 14: Torch>.\nExisting Blocks: 13\n(heater for west water cannon) <ID 14: Torch>\nPosition: [-2., 0., 2.]\nPointing at <South with 0.0\u00b0 pitch>\nHeating up a spherical area with radius 0.3 around [-2.00, -1.00, 2.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": "14",
+      "angle": 90.0
+    },
+    "result": "The block 14 <Torch> is twisted by 90.0 degrees. \n (heater for west water cannon) <ID 14: Torch>\nPosition: [-2., 0., 2.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [-2.00, 0.00, 1.00]"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "3",
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "north arm base"
+    },
+    "result": "You have successfully added <ID 15: Small Wooden Block>.\nExisting Blocks: 14\n(north arm base) <ID 15: Small Wooden Block>\nPosition: [0.,1.,2.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 1. , 2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  1. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 1. , 2.5], Facing towards <straight up>\nFace label: D, Face center: [0. , 1. , 1.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 1.5, 2. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "15",
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "north arm downward extension"
+    },
+    "result": "You have successfully added <ID 16: Small Wooden Block>.\nExisting Blocks: 15\n(north arm downward extension) <ID 16: Small Wooden Block>\nPosition: [0.,1.,1.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 1. , 1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  1. ,  1. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 1.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 1. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 1. , 0.5], Facing towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "16",
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "additional downward extension for north arm"
+    },
+    "result": "You have successfully added <ID 17: Small Wooden Block>.\nExisting Blocks: 16\n(additional downward extension for north arm) <ID 17: Small Wooden Block>\nPosition: [0.,1.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 1. , 0. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  1. ,  0. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 1.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 0. ,  0.5, -0. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: E, Face center: [ 0. ,  1. , -0.5], Facing towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "17",
+      "face": "C",
+      "new_block": "Water Cannon",
+      "note": "north steam engine"
+    },
+    "result": "You have successfully added <ID 18: Water Cannon>.\nExisting Blocks: 17\n(north steam engine) <ID 18: Water Cannon>\nPosition: [0.,2.,0.]\nPointing at <straight down>\nInlet is at [0.00, 2.00, 0.75], outlet is at [0.00, 2.00, -1.00], sprays towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "15",
+      "face": "E",
+      "new_block": "Torch",
+      "note": "heater for north water cannon"
+    },
+    "result": "You have successfully added <ID 19: Torch>.\nExisting Blocks: 18\n(heater for north water cannon) <ID 19: Torch>\nPosition: [0.,2.,2.]\nPointing at <straight up>\nHeating up a spherical area with radius 0.3 around [0.00, 2.00, 3.00]"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "3",
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "south arm base"
+    },
+    "result": "You have successfully added <ID 20: Small Wooden Block>.\nExisting Blocks: 19\n(south arm base) <ID 20: Small Wooden Block>\nPosition: [ 0.,-1., 2.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -1. ,  2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -1. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -1. ,  1.5], Facing towards <straight down>\nFace label: D, Face center: [ 0. , -1. ,  2.5], Facing towards <straight up>\nFace label: E, Face center: [ 0. , -1.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": "19",
+      "angle": 180.0
+    },
+    "result": "The block 19 <Torch> is twisted by 180.0 degrees. \n (heater for north water cannon) <ID 19: Torch>\nPosition: [0.,2.,2.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [0.00, 2.00, 1.00]"
+  },
+  {
+    "op": "failed",
+    "params": {
+      "func_name": "attach_block_to",
+      "message": "Base block 21 not found, please try again."
+    }
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "21",
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "additional downward extension for south arm"
+    },
+    "result": "Base block 21 not found, please try again."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "20",
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "south arm downward extension"
+    },
+    "result": "You have successfully added <ID 21: Small Wooden Block>.\nExisting Blocks: 20\n(south arm downward extension) <ID 21: Small Wooden Block>\nPosition: [ 0.,-1., 1.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -1. ,  1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -1. ,  1. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 0. , -1.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 0. , -1. ,  0.5], Facing towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "21",
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "additional downward extension for south arm"
+    },
+    "result": "You have successfully added <ID 22: Small Wooden Block>.\nExisting Blocks: 21\n(additional downward extension for south arm) <ID 22: Small Wooden Block>\nPosition: [ 0.,-1., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -1. ,  0. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -1. ,  0. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5, -0. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 0. , -1.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 0. , -1. , -0.5], Facing towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "22",
+      "face": "D",
+      "new_block": "Water Cannon",
+      "note": "south steam engine"
+    },
+    "result": "You have successfully added <ID 23: Water Cannon>.\nExisting Blocks: 22\n(south steam engine) <ID 23: Water Cannon>\nPosition: [ 0.,-2., 0.]\nPointing at <straight up>\nInlet is at [0.00, -2.00, -0.75], outlet is at [0.00, -2.00, 1.00], sprays towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": "20",
+      "face": "E",
+      "new_block": "Torch",
+      "note": "heater for south water cannon"
+    },
+    "result": "You have successfully added <ID 24: Torch>.\nExisting Blocks: 23\n(heater for south water cannon) <ID 24: Torch>\nPosition: [ 0.,-2., 2.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [0.00, -2.00, 1.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": "23",
+      "angle": 180.0
+    },
+    "result": "The block 23 <Water Cannon> is twisted by 180.0 degrees. \n (south steam engine) <ID 23: Water Cannon>\nPosition: [ 0.,-2., 0.]\nPointing at <straight down>\nInlet is at [0.00, -2.00, 0.75], outlet is at [0.00, -2.00, -1.00], sprays towards <straight down>"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 23\n\nMachine Summary: base of central column\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\n(central column) <ID 2: Small Wooden Block>\nPosition: [0.,0.,1.]\n(top of central column) <ID 3: Small Wooden Block>\nPosition: [0.,0.,2.]\n(east arm base) <ID 4: Small Wooden Block>\nPosition: [1.,0.,2.]\n(east arm downward extension) <ID 5: Small Wooden Block>\nPosition: [1.,0.,1.]\n(heater for east water cannon) <ID 7: Torch>\nPosition: [2.,0.,2.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [2.00, 0.00, 1.00]\n(additional downward extension for east arm) <ID 8: Small Wooden Block>\nPosition: [1.,0.,0.]\n(east steam engine) <ID 9: Water Cannon>\nPosition: [2.,0.,0.]\nPointing at <straight down>\nInlet is at [2.00, 0.00, 0.75], outlet is at [2.00, 0.00, -1.00], sprays towards <straight down>\n(west arm base) <ID 10: Small Wooden Block>\nPosition: [-1., 0., 2.]\n(west arm downward extension) <ID 11: Small Wooden Block>\nPosition: [-1., 0., 1.]\n(additional downward extension for west arm) <ID 12: Small Wooden Block>\nPosition: [-1., 0., 0.]\n(west steam engine) <ID 13: Water Cannon>\nPosition: [-2., 0., 0.]\nPointing at <straight down>\nInlet is at [-2.00, 0.00, 0.75], outlet is at [-2.00, 0.00, -1.00], sprays towards <straight down>\n(heater for west water cannon) <ID 14: Torch>\nPosition: [-2., 0., 2.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [-2.00, 0.00, 1.00]\n(north arm base) <ID 15: Small Wooden Block>\nPosition: [0.,1.,2.]\n(north arm downward extension) <ID 16: Small Wooden Block>\nPosition: [0.,1.,1.]\n(additional downward extension for north arm) <ID 17: Small Wooden Block>\nPosition: [0.,1.,0.]\n(north steam engine) <ID 18: Water Cannon>\nPosition: [0.,2.,0.]\nPointing at <straight down>\nInlet is at [0.00, 2.00, 0.75], outlet is at [0.00, 2.00, -1.00], sprays towards <straight down>\n(south arm base) <ID 20: Small Wooden Block>\nPosition: [ 0.,-1., 2.]\n(heater for north water cannon) <ID 19: Torch>\nPosition: [0.,2.,2.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [0.00, 2.00, 1.00]\n(south arm downward extension) <ID 21: Small Wooden Block>\nPosition: [ 0.,-1., 1.]\n(additional downward extension for south arm) <ID 22: Small Wooden Block>\nPosition: [ 0.,-1., 0.]\n(heater for south water cannon) <ID 24: Torch>\nPosition: [ 0.,-2., 2.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [0.00, -2.00, 1.00]\n(south steam engine) <ID 23: Water Cannon>\nPosition: [ 0.,-2., 0.]\nPointing at <straight down>\nInlet is at [0.00, -2.00, 0.75], outlet is at [0.00, -2.00, -1.00], sprays towards <straight down>"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 23\n\nMachine Summary: base of central column\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\n(central column) <ID 2: Small Wooden Block>\nPosition: [0.,0.,1.]\n(top of central column) <ID 3: Small Wooden Block>\nPosition: [0.,0.,2.]\n(east arm base) <ID 4: Small Wooden Block>\nPosition: [1.,0.,2.]\n(east arm downward extension) <ID 5: Small Wooden Block>\nPosition: [1.,0.,1.]\n(heater for east water cannon) <ID 7: Torch>\nPosition: [2.,0.,2.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [2.00, 0.00, 1.00]\n(additional downward extension for east arm) <ID 8: Small Wooden Block>\nPosition: [1.,0.,0.]\n(east steam engine) <ID 9: Water Cannon>\nPosition: [2.,0.,0.]\nPointing at <straight down>\nInlet is at [2.00, 0.00, 0.75], outlet is at [2.00, 0.00, -1.00], sprays towards <straight down>\n(west arm base) <ID 10: Small Wooden Block>\nPosition: [-1., 0., 2.]\n(west arm downward extension) <ID 11: Small Wooden Block>\nPosition: [-1., 0., 1.]\n(additional downward extension for west arm) <ID 12: Small Wooden Block>\nPosition: [-1., 0., 0.]\n(west steam engine) <ID 13: Water Cannon>\nPosition: [-2., 0., 0.]\nPointing at <straight down>\nInlet is at [-2.00, 0.00, 0.75], outlet is at [-2.00, 0.00, -1.00], sprays towards <straight down>\n(heater for west water cannon) <ID 14: Torch>\nPosition: [-2., 0., 2.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [-2.00, 0.00, 1.00]\n(north arm base) <ID 15: Small Wooden Block>\nPosition: [0.,1.,2.]\n(north arm downward extension) <ID 16: Small Wooden Block>\nPosition: [0.,1.,1.]\n(additional downward extension for north arm) <ID 17: Small Wooden Block>\nPosition: [0.,1.,0.]\n(north steam engine) <ID 18: Water Cannon>\nPosition: [0.,2.,0.]\nPointing at <straight down>\nInlet is at [0.00, 2.00, 0.75], outlet is at [0.00, 2.00, -1.00], sprays towards <straight down>\n(south arm base) <ID 20: Small Wooden Block>\nPosition: [ 0.,-1., 2.]\n(heater for north water cannon) <ID 19: Torch>\nPosition: [0.,2.,2.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [0.00, 2.00, 1.00]\n(south arm downward extension) <ID 21: Small Wooden Block>\nPosition: [ 0.,-1., 1.]\n(additional downward extension for south arm) <ID 22: Small Wooden Block>\nPosition: [ 0.,-1., 0.]\n(heater for south water cannon) <ID 24: Torch>\nPosition: [ 0.,-2., 2.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [0.00, -2.00, 1.00]\n(south steam engine) <ID 23: Water Cannon>\nPosition: [ 0.,-2., 0.]\nPointing at <straight down>\nInlet is at [0.00, -2.00, 0.75], outlet is at [0.00, -2.00, -1.00], sprays towards <straight down>"
+  }
+]

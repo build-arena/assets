@@ -1,0 +1,118 @@
+# user (default) (TextMessage): 
+
+**Constraints:**
+- Use only two sub-structures.
+
+**Goal:**
+- Build a single rocket engine capable of providing propulsion to a single direction.
+- Build a simple chassis to assemble the rocket engines using braces to form a symmetric rocket.
+- The assembled rocket should be able to lift off from the ground to the sky in the simulation environment.
+
+**Evaluation Protocol:**
+- The assembled rocket will be placed at position (x=0, y=0, z=0) on the ground plane.
+- During the simulation, the firing control key of the rocket engine will be pressed and held continuously.
+- The motion trajectory of the assembled rocket will be recorded throughout the simulation.
+
+**Scoring Metrics:**
+- *Maximum Height:* The highest vertical position (z) reached by any block of the assembled rocket (higher is better).
+- *Trajectory Deviation:* The average lateral distance between the assembled rocket’s actual trajectory and the ideal vertical line (smaller is better).
+- *Maximum Speed:* The highest speed achieved by any block of the assembled rocket (higher is better).
+- *Cost:* The total number of blocks used to construct the assembled rocket (fewer is better).
+
+# planner (gpt-5) (TextMessage): 
+
+<building_plan>
+  <overall_structure>
+    <description>
+      The final rocket consists of two identical steam-powered rocket engine sub-structures mounted symmetrically to a central chassis sub-structure using braces. Each engine is a compact vertical stack: a stone base, two small wooden blocks stacked upward, a downward-pointing water cannon mounted under the upper wooden block, and a torch mounted on the top face of the upper wooden block pointing downward to heat the water cannon inlet for steam mode. The central chassis is a simple vertical column (stone base plus two small wooden blocks stacked upward) that provides two clear side faces at the same heights as the engine’s two wooden blocks. Two braces per engine connect the engine’s wooden blocks to the corresponding wooden blocks on the chassis, creating a rigid, symmetric rocket with both engines producing upward thrust when fired.
+    </description>
+    <functionality>
+      When both water cannons fire, their spray is directed downward; their recoil produces upward thrust. The torches heat the cannons’ inlet ends so each cannon operates in steam mode, multiplying thrust by 8.6 and providing ample lift. Symmetric placement around the chassis ensures the net thrust vector passes close to the overall center of mass, minimizing lateral forces and trajectory deviation. The braces hold the engines rigidly in mirrored positions so the rocket lifts vertically with minimal yaw or roll.
+    </functionality>
+    <assembly>
+      Build the two sub-structures independently. Replicate the engine unit twice. Place the central chassis at world center. Position the two engines equidistant to the east and west of the chassis. Connect the engines to the chassis using four braces: upper-left and lower-left braces for the west engine, and upper-right and lower-right braces for the east engine. This forms a single symmetric rocket assembly.
+    </assembly>
+    <motion_control>
+      Configure both water cannons to the same firing control (e.g., Fire). During evaluation, hold the firing control continuously. No wheels or other motion blocks are used. Expect a strong upward acceleration from rest and a predominantly vertical trajectory due to symmetry and rigid bracing.
+    </motion_control>
+  </overall_structure>
+
+  <sub_structures>
+    <sub_structure_1>
+      <name>Steam Rocket Engine Unit</name>
+      <description>
+        A single-direction rocket engine that produces upward thrust via a downward-pointing water cannon operated in steam mode by a downward-facing torch heating its inlet end. It is built as a vertical stack so the nozzle sits above ground, avoiding collisions at liftoff and ensuring the torch is safely out of the steam plume.
+      </description>
+      <components>
+        - Base: Default 1x1x1 stone block (mass 0.25)
+        - Structural: Small Wooden Block A (1x1x1, mass 0.3), Small Wooden Block B (1x1x1, mass 0.3)
+        - Propulsion: Water Cannon (1.75x1x1, mass 1.5)
+        - Heat Source: Torch (1.5x0.5x0.5, mass 1.0)
+      </components>
+      <assembly>
+        Build relative to the engine’s own base stone (centered initially at its own origin; later positioned in the overall assembly):
+        - Step 1: Attach Small Wooden Block A to the top (z+) face of the base stone. This places Block A’s center 0.5 units above the base’s top face center (A’s center ends at z = base center z + 1.0).
+        - Step 2: Attach Small Wooden Block B to the top (z+) face of Block A so Block B’s center is at z = base center z + 2.0.
+        - Step 3: Attach the Water Cannon to the bottom (z−) face of Block B, oriented to point straight down (negative z). The cannon’s center sits 0.5 units below Block B’s bottom face; its outlet end is 1.0 unit below the cannon center and its inlet end is 0.75 unit above the cannon center.
+          • With base center at z = 0.5 (ground), Block A center at z = 1.5 and Block B center at z = 2.5, the cannon center is at z = 1.5; the outlet end is at z = 0.5 (safely above ground), and the inlet end is at z = 2.25.
+        - Step 4: Attach the Torch to the top (z+) face of Block B, oriented to point straight down (negative z). The torch body sits 0.5 units above Block B’s top face, and the flame center is 1.0 unit below the torch body center, placing the heating sphere center at z = 2.5. This is 0.25 units above the water cannon inlet (z = 2.25), so the 0.3-radius heating sphere overlaps the inlet end. This reliably triggers steam mode while keeping the torch clear of the downward steam plume.
+        - Reserve faces for bracing: Leave Block A’s west/east faces and Block B’s west/east faces free for brace connections to the chassis in the final assembly.
+      </assembly>
+      <motion_control>
+        - Control: Configure this engine’s Water Cannon to respond to the shared Fire control input. No control is needed for the torch; it remains lit until extinguished (placement above the nozzle minimizes extinguishing risk).
+        - Expected behavior: When fired, the cannon produces steam-powered recoil upward (~13.76 units of mass-equivalent thrust per cannon). The engine provides thrust in a single direction (up) continuously.
+      </motion_control>
+      <function>
+        Provides upward propulsion. One unit is used for the east side and one identical unit for the west side of the rocket to achieve symmetric thrust.
+      </function>
+      <design_requirements>
+        - Keep the water cannon axis exactly vertical (pointing down) for maximum vertical lift.
+        - Ensure the torch’s heating sphere overlaps the water cannon inlet end to trigger steam mode while staying out of the downward plume.
+        - Maintain Block A and Block B side faces unoccupied for brace connection to the chassis.
+        - The lowest part of the cannon (outlet) must remain at or above z = 0.5 so nothing intersects the ground at placement.
+        - Positions may be micro‑adjusted in later stages to resolve conflicts based on actual build execution.
+      </design_requirements>
+    </sub_structure_1>
+
+    <sub_structure_2>
+      <name>Symmetric Central Chassis</name>
+      <description>
+        A minimal vertical frame to which two identical engine units are braced symmetrically to the east and west. The chassis aligns its side faces at the same two heights as the engine’s stacked wooden blocks for rigid dual-point bracing per engine. This maintains symmetry and reduces trajectory deviation.
+      </description>
+      <components>
+        - Base: Default 1x1x1 stone block (mass 0.25)
+        - Structural: Small Wooden Block C (1x1x1, mass 0.3), Small Wooden Block D (1x1x1, mass 0.3), stacked vertically
+        - Connectors: 4 Braces (mass 0.5 each) for engine-to-chassis links (two per engine, upper and lower)
+      </components>
+      <assembly>
+        Build relative to the chassis base stone and then assemble engines:
+        - Step 1: Place the chassis base stone so its bottom rests at z = 0 (world origin for the assembled rocket). Its center is at (x = 0, y = 0, z = 0.5).
+        - Step 2: Attach Small Wooden Block C to the chassis base’s top (z+) face; C’s center at z = 1.5.
+        - Step 3: Attach Small Wooden Block D to the top (z+) face of C; D’s center at z = 2.5.
+        - Step 4: Position the two completed Engine Units:
+          • East Engine: place its base stone so its center is at (x = +3.0, y = 0.0, z = 0.5). This sets its Block A center at z = 1.5 and Block B center at z = 2.5; the water cannon outlet at z = 0.5.
+          • West Engine: place its base stone so its center is at (x = −3.0, y = 0.0, z = 0.5), mirroring the east engine.
+        - Step 5: Connect Braces (each between free faces of wooden blocks):
+          • East lower brace: from the West face center of East Engine Block A (x = +2.5, y = 0.0, z = 1.5) to the East face center of Chassis Block C (x = +0.5, y = 0.0, z = 1.5).
+          • East upper brace: from the West face center of East Engine Block B (x = +2.5, y = 0.0, z = 2.5) to the East face center of Chassis Block D (x = +0.5, y = 0.0, z = 2.5).
+          • West lower brace: from the East face center of West Engine Block A (x = −2.5, y = 0.0, z = 1.5) to the West face center of Chassis Block C (x = −0.5, y = 0.0, z = 1.5).
+          • West upper brace: from the East face center of West Engine Block B (x = −2.5, y = 0.0, z = 2.5) to the West face center of Chassis Block D (x = −0.5, y = 0.0, z = 2.5).
+        This creates two rigid, mirrored brace pairs, holding both engines symmetrically on either side of the central chassis.
+      </assembly>
+      <motion_control>
+        - No active motion blocks in the chassis. It provides passive structural alignment. Ensure both engines’ water cannons are mapped to the same Fire control input to operate simultaneously.
+      </motion_control>
+      <function>
+        Provides structural integrity and a symmetry reference for mounting the engines. The dual-height bracing per engine reduces flex, keeps thrust vectors parallel and centered, and minimizes trajectory deviation.
+      </function>
+      <design_requirements>
+        - Keep Block C and Block D side faces free and aligned with the engine Blocks A and B to accept braces.
+        - Braces must connect between unoccupied wooden block faces, not to water cannons or torches.
+        - Position the two engines equidistant (±3.0 in x) from the chassis centerline for symmetry.
+        - Ensure all components’ lowest points remain at z ≥ 0 to avoid ground intersection.
+        - Positions may be micro‑adjusted in later stages to resolve conflicts based on actual build execution.
+      </design_requirements>
+    </sub_structure_2>
+  </sub_structures>
+</building_plan>
+

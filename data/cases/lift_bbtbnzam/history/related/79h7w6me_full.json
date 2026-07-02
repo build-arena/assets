@@ -1,0 +1,209 @@
+[
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "Base Starting Block - default 1x1x1 cubic base (mass 0.25), center at (0, 0, 0.5) - starting reference"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Small Wooden Block A - first vertical riser; reserve east/west faces for bracing; attached flush on ID 1 Face C"
+    },
+    "result": "You have successfully added <ID 2: Small Wooden Block>.\nExisting Blocks: 2\n(Small Wooden Block A - first vertical riser; reserve east/west faces for bracing; attached flush on ID 1 Face C) <ID 2: Small Wooden Block>\nPosition: [0.,0.,1.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Small Wooden Block B - second vertical riser; reserve east/west faces for bracing; attached flush on ID 2 Face E"
+    },
+    "result": "You have successfully added <ID 3: Small Wooden Block>.\nExisting Blocks: 3\n(Small Wooden Block B - second vertical riser; reserve east/west faces for bracing; attached flush on ID 2 Face E) <ID 3: Small Wooden Block>\nPosition: [0.,0.,2.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "D",
+      "new_block": "Water Cannon",
+      "note": "Water Cannon - downward-pointing vertical-axis propulsion unit; attached 0.5 outward from ID 3 North face; target center (0, 1.0, 2.0); configure to shared Fire control; operate in steam mode via inlet heating; will verify orientation and twist to ensure outlet points -z and inlet +z"
+    },
+    "result": "You have successfully added <ID 4: Water Cannon>.\nExisting Blocks: 4\n(Water Cannon - downward-pointing vertical-axis propulsion unit; attached 0.5 outward from ID 3 North face; target center (0, 1.0, 2.0); configure to shared Fire control; operate in steam mode via inlet heating; will verify orientation and twist to ensure outlet points -z and inlet +z) <ID 4: Water Cannon>\nPosition: [0.,1.,2.]\nPointing at <straight down>\nInlet is at [0.00, 1.00, 2.75], outlet is at [0.00, 1.00, 1.00], sprays towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Small Wooden Block C - torch standoff riser; reserve east/west faces for bracing; attached flush on ID 3 Face E"
+    },
+    "result": "You have successfully added <ID 5: Small Wooden Block>.\nExisting Blocks: 5\n(Small Wooden Block C - torch standoff riser; reserve east/west faces for bracing; attached flush on ID 3 Face E) <ID 5: Small Wooden Block>\nPosition: [0.,0.,3.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 3. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  3. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  3. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 3. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 3.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 5,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Small Wooden Block D - additional torch standoff riser to align heating sphere with cannon inlet; reserve east/west faces for bracing; attached flush on ID 5 Face E"
+    },
+    "result": "You have successfully added <ID 6: Small Wooden Block>.\nExisting Blocks: 6\n(Small Wooden Block D - additional torch standoff riser to align heating sphere with cannon inlet; reserve east/west faces for bracing; attached flush on ID 5 Face E) <ID 6: Small Wooden Block>\nPosition: [0.,0.,4.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 4. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  4. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  4. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 4. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 4.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 6,
+      "face": "D",
+      "new_block": "Torch",
+      "note": "Torch - downward-facing heater; body center 0.5 outward from ID 6 North face; heating sphere center 1.0 below body (radius 0.3); no control (remains lit); heats Water Cannon inlet to trigger steam mode while staying clear of the downward plume"
+    },
+    "result": "You have successfully added <ID 7: Torch>.\nExisting Blocks: 7\n(Torch - downward-facing heater; body center 0.5 outward from ID 6 North face; heating sphere center 1.0 below body (radius 0.3); no control (remains lit); heats Water Cannon inlet to trigger steam mode while staying clear of the downward plume) <ID 7: Torch>\nPosition: [0.,1.,4.]\nPointing at <straight up>\nHeating up a spherical area with radius 0.3 around [0.00, 1.00, 5.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 7,
+      "angle": 180.0
+    },
+    "result": "The block 7 <Torch> is twisted by 180.0 degrees. \n (Torch - downward-facing heater; body center 0.5 outward from ID 6 North face; heating sphere center 1.0 below body (radius 0.3); no control (remains lit); heats Water Cannon inlet to trigger steam mode while staying clear of the downward plume) <ID 7: Torch>\nPosition: [0.,1.,4.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [0.00, 1.00, 3.00]"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 7\n\nMachine Summary: Base Starting Block - default 1x1x1 cubic base (mass 0.25), center at (0, 0, 0.5) - starting reference\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\n(Small Wooden Block A - first vertical riser; reserve east/west faces for bracing; attached flush on ID 1 Face C) <ID 2: Small Wooden Block>\nPosition: [0.,0.,1.]\n(Small Wooden Block B - second vertical riser; reserve east/west faces for bracing; attached flush on ID 2 Face E) <ID 3: Small Wooden Block>\nPosition: [0.,0.,2.]\n(Water Cannon - downward-pointing vertical-axis propulsion unit; attached 0.5 outward from ID 3 North face; target center (0, 1.0, 2.0); configure to shared Fire control; operate in steam mode via inlet heating; will verify orientation and twist to ensure outlet points -z and inlet +z) <ID 4: Water Cannon>\nPosition: [0.,1.,2.]\nPointing at <straight down>\nInlet is at [0.00, 1.00, 2.75], outlet is at [0.00, 1.00, 1.00], sprays towards <straight down>\n(Small Wooden Block C - torch standoff riser; reserve east/west faces for bracing; attached flush on ID 3 Face E) <ID 5: Small Wooden Block>\nPosition: [0.,0.,3.]\n(Small Wooden Block D - additional torch standoff riser to align heating sphere with cannon inlet; reserve east/west faces for bracing; attached flush on ID 5 Face E) <ID 6: Small Wooden Block>\nPosition: [0.,0.,4.]\n(Torch - downward-facing heater; body center 0.5 outward from ID 6 North face; heating sphere center 1.0 below body (radius 0.3); no control (remains lit); heats Water Cannon inlet to trigger steam mode while staying clear of the downward plume) <ID 7: Torch>\nPosition: [0.,1.,4.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [0.00, 1.00, 3.00]"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 7\n\nMachine Summary: Base Starting Block - default 1x1x1 cubic base (mass 0.25), center at (0, 0, 0.5) - starting reference\n(Small Wooden Block A - first vertical riser; reserve east/west faces for bracing; attached flush on ID 1 Face C) <ID 2: Small Wooden Block>\nPosition: [0.,0.,1.]\n(Small Wooden Block B - second vertical riser; reserve east/west faces for bracing; attached flush on ID 2 Face E) <ID 3: Small Wooden Block>\nPosition: [0.,0.,2.]\n(Water Cannon - downward-pointing vertical-axis propulsion unit; attached 0.5 outward from ID 3 North face; target center (0, 1.0, 2.0); configure to shared Fire control; operate in steam mode via inlet heating; will verify orientation and twist to ensure outlet points -z and inlet +z) <ID 4: Water Cannon>\nPosition: [0.,1.,2.]\nPointing at <straight down>\nInlet is at [0.00, 1.00, 2.75], outlet is at [0.00, 1.00, 1.00], sprays towards <straight down>\n(Small Wooden Block C - torch standoff riser; reserve east/west faces for bracing; attached flush on ID 3 Face E) <ID 5: Small Wooden Block>\nPosition: [0.,0.,3.]\n(Small Wooden Block D - additional torch standoff riser to align heating sphere with cannon inlet; reserve east/west faces for bracing; attached flush on ID 5 Face E) <ID 6: Small Wooden Block>\nPosition: [0.,0.,4.]\n(Torch - downward-facing heater; body center 0.5 outward from ID 6 North face; heating sphere center 1.0 below body (radius 0.3); no control (remains lit); heats Water Cannon inlet to trigger steam mode while staying clear of the downward plume) <ID 7: Torch>\nPosition: [0.,1.,4.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [0.00, 1.00, 3.00]\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]"
+  },
+  {
+    "op": "reset",
+    "params": {},
+    "result": "The machine has been reset, please start again."
+  },
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "Base Starting Block - default 1x1x1 cubic base (mass 0.25), center at (0, 0, 0.5) - starting reference"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Small Wooden Block A - first vertical riser; reserve east/west faces for bracing; attached flush on ID 1 Face C"
+    },
+    "result": "You have successfully added <ID 2: Small Wooden Block>.\nExisting Blocks: 2\n(Small Wooden Block A - first vertical riser; reserve east/west faces for bracing; attached flush on ID 1 Face C) <ID 2: Small Wooden Block>\nPosition: [0.,0.,1.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Small Wooden Block B - second vertical riser; reserve east/west faces for bracing; attached flush on ID 2 Face E"
+    },
+    "result": "You have successfully added <ID 3: Small Wooden Block>.\nExisting Blocks: 3\n(Small Wooden Block B - second vertical riser; reserve east/west faces for bracing; attached flush on ID 2 Face E) <ID 3: Small Wooden Block>\nPosition: [0.,0.,2.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "D",
+      "new_block": "Water Cannon",
+      "note": "Water Cannon - downward-pointing vertical-axis propulsion unit; attached 0.5 outward from ID 3 North face; target center (0, 1.0, 2.0); configure to shared Fire control; operate in steam mode via inlet heating; will verify orientation and twist to ensure outlet points -z and inlet +z"
+    },
+    "result": "You have successfully added <ID 4: Water Cannon>.\nExisting Blocks: 4\n(Water Cannon - downward-pointing vertical-axis propulsion unit; attached 0.5 outward from ID 3 North face; target center (0, 1.0, 2.0); configure to shared Fire control; operate in steam mode via inlet heating; will verify orientation and twist to ensure outlet points -z and inlet +z) <ID 4: Water Cannon>\nPosition: [0.,1.,2.]\nPointing at <straight down>\nInlet is at [0.00, 1.00, 2.75], outlet is at [0.00, 1.00, 1.00], sprays towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Small Wooden Block C - torch standoff riser; reserve east/west faces for bracing; attached flush on ID 3 Face E"
+    },
+    "result": "You have successfully added <ID 5: Small Wooden Block>.\nExisting Blocks: 5\n(Small Wooden Block C - torch standoff riser; reserve east/west faces for bracing; attached flush on ID 3 Face E) <ID 5: Small Wooden Block>\nPosition: [0.,0.,3.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 3. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  3. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  3. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 3. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 3.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 5,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Small Wooden Block D - additional torch standoff riser to align heating sphere with cannon inlet; reserve east/west faces for bracing; attached flush on ID 5 Face E"
+    },
+    "result": "You have successfully added <ID 6: Small Wooden Block>.\nExisting Blocks: 6\n(Small Wooden Block D - additional torch standoff riser to align heating sphere with cannon inlet; reserve east/west faces for bracing; attached flush on ID 5 Face E) <ID 6: Small Wooden Block>\nPosition: [0.,0.,4.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 4. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  4. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -0.5,  4. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 0.5, 4. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 0. , 4.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 6,
+      "face": "D",
+      "new_block": "Torch",
+      "note": "Torch - downward-facing heater; body center 0.5 outward from ID 6 North face; heating sphere center 1.0 below body (radius 0.3); no control (remains lit); heats Water Cannon inlet to trigger steam mode while staying clear of the downward plume"
+    },
+    "result": "You have successfully added <ID 7: Torch>.\nExisting Blocks: 7\n(Torch - downward-facing heater; body center 0.5 outward from ID 6 North face; heating sphere center 1.0 below body (radius 0.3); no control (remains lit); heats Water Cannon inlet to trigger steam mode while staying clear of the downward plume) <ID 7: Torch>\nPosition: [0.,1.,4.]\nPointing at <straight up>\nHeating up a spherical area with radius 0.3 around [0.00, 1.00, 5.00]"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 7,
+      "angle": 180.0
+    },
+    "result": "The block 7 <Torch> is twisted by 180.0 degrees. \n (Torch - downward-facing heater; body center 0.5 outward from ID 6 North face; heating sphere center 1.0 below body (radius 0.3); no control (remains lit); heats Water Cannon inlet to trigger steam mode while staying clear of the downward plume) <ID 7: Torch>\nPosition: [0.,1.,4.]\nPointing at <straight down>\nHeating up a spherical area with radius 0.3 around [0.00, 1.00, 3.00]"
+  },
+  {
+    "op": "reset",
+    "params": {},
+    "result": "The machine has been reset, please start again."
+  },
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "Base Starting Block - default 1x1x1 cubic base (mass 0.25), center at (0, 0, 0.5) - starting reference"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  }
+]

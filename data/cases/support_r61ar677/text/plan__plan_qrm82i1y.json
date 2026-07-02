@@ -1,0 +1,19 @@
+{
+  "overall_structure": {
+    "description": "A single-span truss bridge constructed from Small Wooden Blocks arranged in a triangular lattice pattern. The bridge will be 5 units long to span the gap, 2.5 units wide to accommodate the cargo, and approximately 1.5 units thick to provide adequate structural depth. The truss design will distribute the load efficiently through the structure while minimizing material usage.",
+    "functionality": "The bridge works by distributing the cargo weight through a triangular truss system. When the cargo is placed at the center, the load is transferred through the top chord into compression members and through the bottom chord into tension members. The triangular arrangement ensures that forces are directed toward the support points at each end of the bridge, preventing excessive deflection or structural failure.",
+    "assembly": "The entire bridge is constructed as a single integrated structure using only Small Wooden Blocks. No separate assembly of sub-structures is required.",
+    "motion_control": "The bridge will be initially placed at (x=0, y=0, z=7) and will gently fall into position due to gravity, coming to rest with its ends on the terrain edges at y=2.5 and y=-2.5. The structure is static once positioned and does not require active control."
+  },
+  "sub_structures": {
+    "sub_structure_1": {
+      "name": "Triangular Truss Bridge",
+      "description": "A single-span truss bridge with triangular web members connecting top and bottom chords, designed to efficiently carry loads across a 5-unit gap",
+      "components": "Small Wooden Blocks (quantity: 25-30 blocks)",
+      "assembly": "The bridge is constructed as follows:\n        1. Start with the base stone block at position (0, 0, 7)\n        2. Build the bottom chord: Extend 5 blocks north and 5 blocks south from center, creating a 11-block long bottom chord\n        3. Build vertical members at regular intervals (every 1.25 units) rising to height of 1.5 units\n        4. Connect top ends of vertical members with top chord blocks\n        5. Add diagonal web members in triangular pattern between top and bottom chords\n        6. Create deck surface by placing blocks horizontally across the top at cargo contact points\n        7. Ensure the bridge width is 2.5 units to fully support the cargo footprint",
+      "motion_control": "No active motion control required - the bridge is a static structure",
+      "function": "To span the 5-unit gap between terrains while supporting a 2.5×2.5×1.5 cargo at its center",
+      "design_requirements": "- Bridge must be exactly 5 units long to span the gap\n        - Width must be at least 2.5 units to fully support cargo footprint\n        - Structural depth of 1.5 units provides adequate strength\n        - Total weight should be minimized while maintaining structural integrity\n        - Ends of bridge must rest stably on terrain edges\n        - Positions may be micro-adjusted in later stages to resolve conflicts based on actual build execution"
+    }
+  }
+}

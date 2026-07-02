@@ -1,0 +1,1634 @@
+[
+  {
+    "op": "reset",
+    "params": {},
+    "result": "The machine has been reset, please start again."
+  },
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "init_rotation": [
+        0,
+        0,
+        0
+      ],
+      "note": "Block 1: Default Base Block - 1x1x1 base stone at origin reference (center [0,0,0.5]); foundation for NE Cargo Cart with Yaw Thrusters"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0. ,0. ,0.5]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0., 0., 1.], Facing towards <straight up>\nFace label: D, Face center: [0., 0., 0.], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Block 2: Small Wooden Block - lower frame east mid at [1,0,0.5]; attached to East face (Face A) of Block 1 (Starting Block). Placement per blueprint Step 2."
+    },
+    "result": "You have successfully added <ID 2: Small Wooden Block>.\nExisting Blocks: 2\n(Block 2: Small Wooden Block - lower frame east mid at [1,0,0.5]; attached to East face (Face A) of Block 1 (Starting Block). Placement per blueprint Step 2.) <ID 2: Small Wooden Block>\nPosition: [1. ,0. ,0.5]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -0.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [1. , 0.5, 0.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [1., 0., 1.], Facing towards <straight up>\nFace label: D, Face center: [1., 0., 0.], Facing towards <straight down>\nFace label: E, Face center: [1.5, 0. , 0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Block 3: Small Wooden Block - lower frame NE corner at [1,1,0.5]; attached to North face (Face B) of Block 2 per blueprint Step 3."
+    },
+    "result": "You have successfully added <ID 3: Small Wooden Block>.\nExisting Blocks: 3\n(Block 3: Small Wooden Block - lower frame NE corner at [1,1,0.5]; attached to North face (Face B) of Block 2 per blueprint Step 3.) <ID 3: Small Wooden Block>\nPosition: [1. ,1. ,0.5]\nAttachable Faces:\nFace label: A, Face center: [1.5, 1. , 0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 1. , 0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1., 1., 1.], Facing towards <straight up>\nFace label: D, Face center: [1., 1., 0.], Facing towards <straight down>\nFace label: E, Face center: [1. , 1.5, 0.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "A",
+      "new_block": "Powered Wheel",
+      "note": "Block 4: Powered Wheel - mounted on East face (Face A) of Block 3 at [1,1,0.5]; rotation axis \u27c2 face (\u00b1x), wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +x."
+    },
+    "result": "You have successfully added <ID 4: Powered Wheel>.\nExisting Blocks: 4\n(Block 4: Powered Wheel - mounted on East face (Face A) of Block 3 at [1,1,0.5]; rotation axis \u27c2 face (\u00b1x), wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +x.) <ID 4: Powered Wheel>\nPosition: [1.5,1. ,0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [2. , 1. , 0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Block 5: Small Wooden Block - lower frame north mid at [0,1,0.5]; attached to West face (Face B) of Block 3 per blueprint Step 5."
+    },
+    "result": "You have successfully added <ID 5: Small Wooden Block>.\nExisting Blocks: 5\n(Block 5: Small Wooden Block - lower frame north mid at [0,1,0.5]; attached to West face (Face B) of Block 3 per blueprint Step 5.) <ID 5: Small Wooden Block>\nPosition: [-0. , 1. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [0. , 1.5, 0.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0. ,  0.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-0.,  1.,  1.], Facing towards <straight up>\nFace label: D, Face center: [-0.,  1.,  0.], Facing towards <straight down>\nFace label: E, Face center: [-0.5,  1. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 5,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 6: Small Wooden Block - lower frame NW corner at [-1,1,0.5]; attached to West face (Face E) of Block 5 per blueprint Step 6."
+    },
+    "result": "You have successfully added <ID 6: Small Wooden Block>.\nExisting Blocks: 6\n(Block 6: Small Wooden Block - lower frame NW corner at [-1,1,0.5]; attached to West face (Face E) of Block 5 per blueprint Step 6.) <ID 6: Small Wooden Block>\nPosition: [-1. , 1. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [-1. ,  1.5,  0.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. ,  0.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1.,  1.,  1.], Facing towards <straight up>\nFace label: D, Face center: [-1.,  1.,  0.], Facing towards <straight down>\nFace label: E, Face center: [-1.5,  1. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 6,
+      "face": "E",
+      "new_block": "Powered Wheel",
+      "note": "Block 7: Powered Wheel - mounted on West face (Face E) of Block 6 at [-1,1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north) to match environment behavior and earlier wheel\u2019s readout."
+    },
+    "result": "You have successfully added <ID 7: Powered Wheel>.\nExisting Blocks: 7\n(Block 7: Powered Wheel - mounted on West face (Face E) of Block 6 at [-1,1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north) to match environment behavior and earlier wheel\u2019s readout.) <ID 7: Powered Wheel>\nPosition: [-1.5, 1. , 0.5]\nRolling towards <South with -0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [-2. ,  1. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 6,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Block 8: Small Wooden Block - lower frame west mid at [-1,0,0.5]; attached to South face (Face B) of Block 6 per blueprint Step 8."
+    },
+    "result": "You have successfully added <ID 8: Small Wooden Block>.\nExisting Blocks: 8\n(Block 8: Small Wooden Block - lower frame west mid at [-1,0,0.5]; attached to South face (Face B) of Block 6 per blueprint Step 8.) <ID 8: Small Wooden Block>\nPosition: [-1. , 0. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  0. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1.,  0.,  1.], Facing towards <straight up>\nFace label: D, Face center: [-1.,  0.,  0.], Facing towards <straight down>\nFace label: E, Face center: [-1. , -0.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 8,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 9: Small Wooden Block - lower frame SW corner at [-1,-1,0.5]; attached to South face (Face E) of Block 8 per blueprint (Block 9)."
+    },
+    "result": "You have successfully added <ID 9: Small Wooden Block>.\nExisting Blocks: 9\n(Block 9: Small Wooden Block - lower frame SW corner at [-1,-1,0.5]; attached to South face (Face E) of Block 8 per blueprint (Block 9).) <ID 9: Small Wooden Block>\nPosition: [-1. ,-1. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -1. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -1. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1., -1.,  1.], Facing towards <straight up>\nFace label: D, Face center: [-1., -1.,  0.], Facing towards <straight down>\nFace label: E, Face center: [-1. , -1.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 9,
+      "face": "A",
+      "new_block": "Powered Wheel",
+      "note": "Block 10: Powered Wheel - mounted on West face (Face A) of Block 9 at [-1,-1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north)."
+    },
+    "result": "You have successfully added <ID 10: Powered Wheel>.\nExisting Blocks: 10\n(Block 10: Powered Wheel - mounted on West face (Face A) of Block 9 at [-1,-1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north).) <ID 10: Powered Wheel>\nPosition: [-1.5,-1. , 0.5]\nRolling towards <South with -0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [-2. , -1. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 9,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Block 11: Small Wooden Block - lower frame south mid at [0,-1,0.5]; attached to East face (Face B) of Block 9 per blueprint (Block 11)."
+    },
+    "result": "You have successfully added <ID 11: Small Wooden Block>.\nExisting Blocks: 11\n(Block 11: Small Wooden Block - lower frame south mid at [0,-1,0.5]; attached to East face (Face B) of Block 9 per blueprint (Block 11).) <ID 11: Small Wooden Block>\nPosition: [-0. ,-1. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [-0. , -1.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0. , -0.5,  0.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [-0., -1.,  1.], Facing towards <straight up>\nFace label: D, Face center: [-0., -1.,  0.], Facing towards <straight down>\nFace label: E, Face center: [ 0.5, -1. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 11,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 12: Small Wooden Block - lower frame SE corner at [1,-1,0.5]; attached to East face (Face E) of Block 11 per blueprint (Block 12)."
+    },
+    "result": "You have successfully added <ID 12: Small Wooden Block>.\nExisting Blocks: 12\n(Block 12: Small Wooden Block - lower frame SE corner at [1,-1,0.5]; attached to East face (Face E) of Block 11 per blueprint (Block 12).) <ID 12: Small Wooden Block>\nPosition: [ 1. ,-1. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -1.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 1. , -0.5,  0.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1., -1.,  1.], Facing towards <straight up>\nFace label: D, Face center: [ 1., -1.,  0.], Facing towards <straight down>\nFace label: E, Face center: [ 1.5, -1. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 12,
+      "face": "E",
+      "new_block": "Powered Wheel",
+      "note": "Block 13: Powered Wheel - mounted on East face (Face E) of Block 12 at [1,-1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configure \u2018Forward\u2019 to roll +y (north) to match environment behavior; will verify and unify all wheels after installation."
+    },
+    "result": "You have successfully added <ID 13: Powered Wheel>.\nExisting Blocks: 13\n(Block 13: Powered Wheel - mounted on East face (Face E) of Block 12 at [1,-1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configure \u2018Forward\u2019 to roll +y (north) to match environment behavior; will verify and unify all wheels after installation.) <ID 13: Powered Wheel>\nPosition: [ 1.5,-1. , 0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [ 2. , -1. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 12,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Block 14: Small Wooden Block - corner post above SE at [1,-1,1.5]; attached to Top face (Face C) of Block 12 per blueprint (Block 14)."
+    },
+    "result": "You have successfully added <ID 14: Small Wooden Block>.\nExisting Blocks: 14\n(Block 14: Small Wooden Block - corner post above SE at [1,-1,1.5]; attached to Top face (Face C) of Block 12 per blueprint (Block 14).) <ID 14: Small Wooden Block>\nPosition: [ 1. ,-1. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -1.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 1. , -0.5,  1.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0.5, -1. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -1. ,  1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 1., -1.,  2.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 14,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 15: Small Wooden Block - inner-corner deck node at [1,-1,2.5]; attached to Top face (Face E) of Block 14 per blueprint (Block 15)."
+    },
+    "result": "You have successfully added <ID 15: Small Wooden Block>.\nExisting Blocks: 15\n(Block 15: Small Wooden Block - inner-corner deck node at [1,-1,2.5]; attached to Top face (Face E) of Block 14 per blueprint (Block 15).) <ID 15: Small Wooden Block>\nPosition: [ 1. ,-1. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -1.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 1. , -0.5,  2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: C, Face center: [ 0.5, -1. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -1. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [ 1., -1.,  3.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 15,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Block 16: Small Wooden Block - deck at [1,0,2.5]; attached to North face (Face B) of Block 15 per blueprint (Block 16)."
+    },
+    "result": "You have successfully added <ID 16: Small Wooden Block>.\nExisting Blocks: 16\n(Block 16: Small Wooden Block - deck at [1,0,2.5]; attached to North face (Face B) of Block 15 per blueprint (Block 16).) <ID 16: Small Wooden Block>\nPosition: [ 1. ,-0. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [ 1., -0.,  3.], Facing towards <straight up>\nFace label: B, Face center: [ 1., -0.,  2.], Facing towards <straight down>\nFace label: C, Face center: [ 0.5, -0. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -0. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [1. , 0.5, 2.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 16,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 17: Small Wooden Block - deck at [1,1,2.5]; attached to North face (Face E) of Block 16 per blueprint (Block 17)."
+    },
+    "result": "You have successfully added <ID 17: Small Wooden Block>.\nExisting Blocks: 17\n(Block 17: Small Wooden Block - deck at [1,1,2.5]; attached to North face (Face E) of Block 16 per blueprint (Block 17).) <ID 17: Small Wooden Block>\nPosition: [1. ,1. ,2.5]\nAttachable Faces:\nFace label: A, Face center: [1., 1., 3.], Facing towards <straight up>\nFace label: B, Face center: [1., 1., 2.], Facing towards <straight down>\nFace label: C, Face center: [0.5, 1. , 2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [1.5, 1. , 2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [1. , 1.5, 2.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 17,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Block 18: Small Wooden Block - deck at [0,1,2.5]; attached to West face (Face C) of Block 17 per blueprint (Block 18)."
+    },
+    "result": "You have successfully added <ID 18: Small Wooden Block>.\nExisting Blocks: 18\n(Block 18: Small Wooden Block - deck at [0,1,2.5]; attached to West face (Face C) of Block 17 per blueprint (Block 18).) <ID 18: Small Wooden Block>\nPosition: [0. ,1. ,2.5]\nAttachable Faces:\nFace label: A, Face center: [0., 1., 3.], Facing towards <straight up>\nFace label: B, Face center: [0., 1., 2.], Facing towards <straight down>\nFace label: C, Face center: [0. , 0.5, 2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 1.5, 2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [-0.5,  1. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 18,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 19: Small Wooden Block - deck at [-1,1,2.5]; attached to West face (Face E) of Block 18 per blueprint (Block 19)."
+    },
+    "result": "You have successfully added <ID 19: Small Wooden Block>.\nExisting Blocks: 19\n(Block 19: Small Wooden Block - deck at [-1,1,2.5]; attached to West face (Face E) of Block 18 per blueprint (Block 19).) <ID 19: Small Wooden Block>\nPosition: [-1. , 1. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-1.,  1.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-1.,  1.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-1. ,  0.5,  2.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: D, Face center: [-1. ,  1.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1.5,  1. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 19,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 20: Small Wooden Block - deck at [-2,1,2.5]; attached to West face (Face E) of Block 19 per blueprint (Block 20)."
+    },
+    "result": "You have successfully added <ID 20: Small Wooden Block>.\nExisting Blocks: 20\n(Block 20: Small Wooden Block - deck at [-2,1,2.5]; attached to West face (Face E) of Block 19 per blueprint (Block 20).) <ID 20: Small Wooden Block>\nPosition: [-2. , 1. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-2.,  1.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-2.,  1.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-2. ,  0.5,  2.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: D, Face center: [-2. ,  1.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2.5,  1. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 20,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 21: Small Wooden Block - deck at [-2,2,2.5]; attached to North face (Face D) of Block 20 per blueprint (Block 21)."
+    },
+    "result": "You have successfully added <ID 21: Small Wooden Block>.\nExisting Blocks: 21\n(Block 21: Small Wooden Block - deck at [-2,2,2.5]; attached to North face (Face D) of Block 20 per blueprint (Block 21).) <ID 21: Small Wooden Block>\nPosition: [-2. , 2. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-2.,  2.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-2.,  2.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-2.5,  2. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5,  2. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [-2. ,  2.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 21,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 22: Small Wooden Block - deck at [-1,2,2.5]; attached to East face (Face D) of Block 21 per blueprint (Block 22)."
+    },
+    "result": "You have successfully added <ID 22: Small Wooden Block>.\nExisting Blocks: 22\n(Block 22: Small Wooden Block - deck at [-1,2,2.5]; attached to East face (Face D) of Block 21 per blueprint (Block 22).) <ID 22: Small Wooden Block>\nPosition: [-1. , 2. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-1.,  2.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-1.,  2.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-1. ,  2.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1. ,  1.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [-0.5,  2. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 22,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 23: Small Wooden Block - deck at [0,2,2.5]; attached to East face (Face E) of Block 22 per blueprint (Block 23)."
+    },
+    "result": "You have successfully added <ID 23: Small Wooden Block>.\nExisting Blocks: 23\n(Block 23: Small Wooden Block - deck at [0,2,2.5]; attached to East face (Face E) of Block 22 per blueprint (Block 23).) <ID 23: Small Wooden Block>\nPosition: [0. ,2. ,2.5]\nAttachable Faces:\nFace label: A, Face center: [0., 2., 3.], Facing towards <straight up>\nFace label: B, Face center: [0., 2., 2.], Facing towards <straight down>\nFace label: C, Face center: [0. , 2.5, 2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 1.5, 2.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: E, Face center: [0.5, 2. , 2.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 23,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 24: Small Wooden Block - deck at [1,2,2.5]; attached to East face (Face E) of Block 23 per blueprint (Block 24)."
+    },
+    "result": "You have successfully added <ID 24: Small Wooden Block>.\nExisting Blocks: 24\n(Block 24: Small Wooden Block - deck at [1,2,2.5]; attached to East face (Face E) of Block 23 per blueprint (Block 24).) <ID 24: Small Wooden Block>\nPosition: [1. ,2. ,2.5]\nAttachable Faces:\nFace label: A, Face center: [1., 2., 3.], Facing towards <straight up>\nFace label: B, Face center: [1., 2., 2.], Facing towards <straight down>\nFace label: C, Face center: [1. , 2.5, 2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [1. , 1.5, 2.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: E, Face center: [1.5, 2. , 2.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 24,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 25: Small Wooden Block - deck at [2,2,2.5]; attached to East face (Face E) of Block 24 per blueprint (Block 25)."
+    },
+    "result": "You have successfully added <ID 25: Small Wooden Block>.\nExisting Blocks: 25\n(Block 25: Small Wooden Block - deck at [2,2,2.5]; attached to East face (Face E) of Block 24 per blueprint (Block 25).) <ID 25: Small Wooden Block>\nPosition: [2. ,2. ,2.5]\nAttachable Faces:\nFace label: A, Face center: [2., 2., 3.], Facing towards <straight up>\nFace label: B, Face center: [2., 2., 2.], Facing towards <straight down>\nFace label: C, Face center: [2. , 2.5, 2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: D, Face center: [2. , 1.5, 2.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: E, Face center: [2.5, 2. , 2.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 25,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 26: Small Wooden Block - deck at [2,1,2.5]; attached to South face (Face D) of Block 25 per blueprint (Block 26)."
+    },
+    "result": "You have successfully added <ID 26: Small Wooden Block>.\nExisting Blocks: 26\n(Block 26: Small Wooden Block - deck at [2,1,2.5]; attached to South face (Face D) of Block 25 per blueprint (Block 26).) <ID 26: Small Wooden Block>\nPosition: [2. ,1. ,2.5]\nAttachable Faces:\nFace label: A, Face center: [2., 1., 3.], Facing towards <straight up>\nFace label: B, Face center: [2., 1., 2.], Facing towards <straight down>\nFace label: C, Face center: [2.5, 1. , 2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [1.5, 1. , 2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [2. , 0.5, 2.5], Facing towards <South with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 26,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 27: Small Wooden Block - deck at [2,0,2.5]; attached to South face (Face E) of Block 26 per blueprint (Block 27)."
+    },
+    "result": "You have successfully added <ID 27: Small Wooden Block>.\nExisting Blocks: 27\n(Block 27: Small Wooden Block - deck at [2,0,2.5]; attached to South face (Face E) of Block 26 per blueprint (Block 27).) <ID 27: Small Wooden Block>\nPosition: [2. ,0. ,2.5]\nAttachable Faces:\nFace label: A, Face center: [ 2., -0.,  3.], Facing towards <straight up>\nFace label: B, Face center: [2., 0., 2.], Facing towards <straight down>\nFace label: C, Face center: [ 2.5, -0. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [1.5, 0. , 2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2. , -0.5,  2.5], Facing towards <South with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 27,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 28: Small Wooden Block - deck at [2,-1,2.5]; attached to South face (Face E) of Block 27 per blueprint (Block 28)."
+    },
+    "result": "You have successfully added <ID 28: Small Wooden Block>.\nExisting Blocks: 28\n(Block 28: Small Wooden Block - deck at [2,-1,2.5]; attached to South face (Face E) of Block 27 per blueprint (Block 28).) <ID 28: Small Wooden Block>\nPosition: [ 2. ,-1. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [ 2., -1.,  3.], Facing towards <straight up>\nFace label: B, Face center: [ 2., -1.,  2.], Facing towards <straight down>\nFace label: C, Face center: [ 2.5, -1. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -1. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2. , -1.5,  2.5], Facing towards <South with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 28,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 29: Small Wooden Block - deck at [2,-2,2.5]; attached to South face (Face E) of Block 28 per blueprint (Block 29)."
+    },
+    "result": "You have successfully added <ID 29: Small Wooden Block>.\nExisting Blocks: 29\n(Block 29: Small Wooden Block - deck at [2,-2,2.5]; attached to South face (Face E) of Block 28 per blueprint (Block 29).) <ID 29: Small Wooden Block>\nPosition: [ 2. ,-2. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [ 2., -2.,  3.], Facing towards <straight up>\nFace label: B, Face center: [ 2., -2.,  2.], Facing towards <straight down>\nFace label: C, Face center: [ 2.5, -2. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -2. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2. , -2.5,  2.5], Facing towards <South with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 29,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 30: Small Wooden Block - deck at [1,-2,2.5]; attached to West face (Face D) of Block 29 per blueprint (Block 30)."
+    },
+    "result": "You have successfully added <ID 30: Small Wooden Block>.\nExisting Blocks: 30\n(Block 30: Small Wooden Block - deck at [1,-2,2.5]; attached to West face (Face D) of Block 29 per blueprint (Block 30).) <ID 30: Small Wooden Block>\nPosition: [ 1. ,-2. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [ 1., -2.,  3.], Facing towards <straight up>\nFace label: B, Face center: [ 1., -2.,  2.], Facing towards <straight down>\nFace label: C, Face center: [ 1. , -2.5,  2.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 1. , -1.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 0.5, -2. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 30,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 31: Small Wooden Block - deck at [0,-2,2.5]; attached to West face (Face E) of Block 30 per blueprint (Block 31)."
+    },
+    "result": "You have successfully added <ID 31: Small Wooden Block>.\nExisting Blocks: 31\n(Block 31: Small Wooden Block - deck at [0,-2,2.5]; attached to West face (Face E) of Block 30 per blueprint (Block 31).) <ID 31: Small Wooden Block>\nPosition: [-0. ,-2. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [ 0., -2.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-0., -2.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-0. , -2.5,  2.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: D, Face center: [-0. , -1.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-0.5, -2. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 31,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 32: Small Wooden Block - deck at [-1,-2,2.5]; attached to West face (Face E) of Block 31 per blueprint (Block 32)."
+    },
+    "result": "You have successfully added <ID 32: Small Wooden Block>.\nExisting Blocks: 32\n(Block 32: Small Wooden Block - deck at [-1,-2,2.5]; attached to West face (Face E) of Block 31 per blueprint (Block 32).) <ID 32: Small Wooden Block>\nPosition: [-1. ,-2. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-1., -2.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-1., -2.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-1. , -2.5,  2.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: D, Face center: [-1. , -1.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1.5, -2. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 32,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 33: Small Wooden Block - deck at [-2,-2,2.5]; attached to West face (Face E) of Block 32 per blueprint (Block 33)."
+    },
+    "result": "You have successfully added <ID 33: Small Wooden Block>.\nExisting Blocks: 33\n(Block 33: Small Wooden Block - deck at [-2,-2,2.5]; attached to West face (Face E) of Block 32 per blueprint (Block 33).) <ID 33: Small Wooden Block>\nPosition: [-2. ,-2. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-2., -2.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-2., -2.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-2. , -2.5,  2.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: D, Face center: [-2. , -1.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2.5, -2. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 33,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 34: Small Wooden Block - deck at [-2,-1,2.5]; attached to North face (Face D) of Block 33 per blueprint (Block 34)."
+    },
+    "result": "You have successfully added <ID 34: Small Wooden Block>.\nExisting Blocks: 34\n(Block 34: Small Wooden Block - deck at [-2,-1,2.5]; attached to North face (Face D) of Block 33 per blueprint (Block 34).) <ID 34: Small Wooden Block>\nPosition: [-2. ,-1. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-2., -1.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-2., -1.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-2.5, -1. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5, -1. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [-2. , -0.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 34,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 35: Small Wooden Block - deck at [-2,0,2.5]; attached to North face (Face E) of Block 34 per blueprint (Block 35)."
+    },
+    "result": "You have successfully added <ID 35: Small Wooden Block>.\nExisting Blocks: 35\n(Block 35: Small Wooden Block - deck at [-2,0,2.5]; attached to North face (Face E) of Block 34 per blueprint (Block 35).) <ID 35: Small Wooden Block>\nPosition: [-2. ,-0. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-2., -0.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-2., -0.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-2.5, -0. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5, -0. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [-2. ,  0.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 35,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 36: Small Wooden Block - deck at [-1,0,2.5]; attached to East face (Face D) of Block 35 per blueprint (Block 36)."
+    },
+    "result": "You have successfully added <ID 36: Small Wooden Block>.\nExisting Blocks: 36\n(Block 36: Small Wooden Block - deck at [-1,0,2.5]; attached to East face (Face D) of Block 35 per blueprint (Block 36).) <ID 36: Small Wooden Block>\nPosition: [-1. , 0. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-1.,  0.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-1.,  0.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-1. ,  0.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1. , -0.5,  2.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: E, Face center: [-0.5,  0. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 36,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 37: Small Wooden Block - center deck at [0,0,2.5]; attached to East face (Face E) of Block 36 per blueprint (Block 37)."
+    },
+    "result": "You have successfully added <ID 37: Small Wooden Block>.\nExisting Blocks: 37\n(Block 37: Small Wooden Block - center deck at [0,0,2.5]; attached to East face (Face E) of Block 36 per blueprint (Block 37).) <ID 37: Small Wooden Block>\nPosition: [-0. , 0. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-0.,  0.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-0.,  0.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-0. ,  0.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: D, Face center: [-0. , -0.5,  2.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: E, Face center: [0.5, 0. , 2.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 37,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Block 38: Small Wooden Block - center post below deck at [0,0,1.5]; attached to Bottom face (Face B) of Block 37; aligns to top face of Block 1 per blueprint (Block 38)."
+    },
+    "result": "You have successfully added <ID 38: Small Wooden Block>.\nExisting Blocks: 38\n(Block 38: Small Wooden Block - center post below deck at [0,0,1.5]; attached to Bottom face (Face B) of Block 37; aligns to top face of Block 1 per blueprint (Block 38).) <ID 38: Small Wooden Block>\nPosition: [-0. , 0. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 1.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-0. ,  0.5,  1.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [-0. , -0.5,  1.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: E, Face center: [-0.,  0.,  1.], Facing towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 37,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 39: Small Wooden Block - deck at [0,-1,2.5]; attached to South face (Face D) of Block 37 per blueprint (Block 39)."
+    },
+    "result": "You have successfully added <ID 39: Small Wooden Block>.\nExisting Blocks: 39\n(Block 39: Small Wooden Block - deck at [0,-1,2.5]; attached to South face (Face D) of Block 37 per blueprint (Block 39).) <ID 39: Small Wooden Block>\nPosition: [-0. ,-1. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-0., -1.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-0., -1.,  2.], Facing towards <straight down>\nFace label: C, Face center: [ 0.5, -1. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [-0.5, -1. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [-0. , -1.5,  2.5], Facing towards <South with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 39,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 40: Small Wooden Block - deck at [-1,-1,2.5]; attached to West face (Face D) of Block 39 per blueprint (Block 40)."
+    },
+    "result": "You have successfully added <ID 40: Small Wooden Block>.\nExisting Blocks: 40\n(Block 40: Small Wooden Block - deck at [-1,-1,2.5]; attached to West face (Face D) of Block 39 per blueprint (Block 40).) <ID 40: Small Wooden Block>\nPosition: [-1. ,-1. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-1., -1.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-1., -1.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-1. , -1.5,  2.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: D, Face center: [-1. , -0.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1.5, -1. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 6,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Block 41: Small Wooden Block - corner post at [-1,1,1.5]; attached to Top face (Face C) of Block 6 per blueprint (corner post under deck node)."
+    },
+    "result": "You have successfully added <ID 41: Small Wooden Block>.\nExisting Blocks: 41\n(Block 41: Small Wooden Block - corner post at [-1,1,1.5]; attached to Top face (Face C) of Block 6 per blueprint (corner post under deck node).) <ID 41: Small Wooden Block>\nPosition: [-1. , 1. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [-1. ,  1.5,  1.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: B, Face center: [-1. ,  0.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-0.5,  1. ,  1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5,  1. ,  1.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: E, Face center: [-1.,  1.,  2.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Block 42: Small Wooden Block - corner post at [1,1,1.5]; attached to Top face (Face C) of Block 3 per blueprint (Block 42)."
+    },
+    "result": "You have successfully added <ID 42: Small Wooden Block>.\nExisting Blocks: 42\n(Block 42: Small Wooden Block - corner post at [1,1,1.5]; attached to Top face (Face C) of Block 3 per blueprint (Block 42).) <ID 42: Small Wooden Block>\nPosition: [1. ,1. ,1.5]\nAttachable Faces:\nFace label: A, Face center: [1.5, 1. , 1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 1. , 1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 0.5, 1.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [1. , 1.5, 1.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [1., 1., 2.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 9,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Block 43: Small Wooden Block - corner post at [-1,-1,1.5]; attached to Top face (Face C) of Block 9 per blueprint (Block 43)."
+    },
+    "result": "You have successfully added <ID 43: Small Wooden Block>.\nExisting Blocks: 43\n(Block 43: Small Wooden Block - corner post at [-1,-1,1.5]; attached to Top face (Face C) of Block 9 per blueprint (Block 43).) <ID 43: Small Wooden Block>\nPosition: [-1. ,-1. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -1. ,  1.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -1. ,  1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -0.5,  1.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [-1. , -1.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1., -1.,  2.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 21,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Block 44: Small Wooden Block - north wall at [-2,2,3.5]; attached to Top face (Face A) of Block 21 per blueprint (start of North wall)."
+    },
+    "result": "You have successfully added <ID 44: Small Wooden Block>.\nExisting Blocks: 44\n(Block 44: Small Wooden Block - north wall at [-2,2,3.5]; attached to Top face (Face A) of Block 21 per blueprint (start of North wall).) <ID 44: Small Wooden Block>\nPosition: [-2. , 2. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [-2. ,  1.5,  3.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. ,  2.5,  3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2.5,  2. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5,  2. ,  3.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [-2.,  2.,  4.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 44,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 45: Small Wooden Block - north wall at [-1,2,3.5]; attached to East face (Face D) of Block 44 per blueprint (North wall sequence)."
+    },
+    "result": "You have successfully added <ID 45: Small Wooden Block>.\nExisting Blocks: 45\n(Block 45: Small Wooden Block - north wall at [-1,2,3.5]; attached to East face (Face D) of Block 44 per blueprint (North wall sequence).) <ID 45: Small Wooden Block>\nPosition: [-1. , 2. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [-1. ,  1.5,  3.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: B, Face center: [-1. ,  2.5,  3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1.,  2.,  4.], Facing towards <straight up>\nFace label: D, Face center: [-1.,  2.,  3.], Facing towards <straight down>\nFace label: E, Face center: [-0.5,  2. ,  3.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 45,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 46: Small Wooden Block - north wall at [0,2,3.5]; attached to East face (Face E) of Block 45 per blueprint (North wall sequence)."
+    },
+    "result": "You have successfully added <ID 46: Small Wooden Block>.\nExisting Blocks: 46\n(Block 46: Small Wooden Block - north wall at [0,2,3.5]; attached to East face (Face E) of Block 45 per blueprint (North wall sequence).) <ID 46: Small Wooden Block>\nPosition: [0. ,2. ,3.5]\nAttachable Faces:\nFace label: A, Face center: [0. , 1.5, 3.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: B, Face center: [0. , 2.5, 3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [0., 2., 4.], Facing towards <straight up>\nFace label: D, Face center: [0., 2., 3.], Facing towards <straight down>\nFace label: E, Face center: [0.5, 2. , 3.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 46,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 47: Small Wooden Block - north wall at [1,2,3.5]; attached to East face (Face E) of Block 46 per blueprint (North wall sequence)."
+    },
+    "result": "You have successfully added <ID 47: Small Wooden Block>.\nExisting Blocks: 47\n(Block 47: Small Wooden Block - north wall at [1,2,3.5]; attached to East face (Face E) of Block 46 per blueprint (North wall sequence).) <ID 47: Small Wooden Block>\nPosition: [1. ,2. ,3.5]\nAttachable Faces:\nFace label: A, Face center: [1. , 1.5, 3.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: B, Face center: [1. , 2.5, 3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [1., 2., 4.], Facing towards <straight up>\nFace label: D, Face center: [1., 2., 3.], Facing towards <straight down>\nFace label: E, Face center: [1.5, 2. , 3.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 47,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 48: Small Wooden Block - north wall at [2,2,3.5]; attached to East face (Face E) of Block 47 per blueprint (North wall sequence)."
+    },
+    "result": "You have successfully added <ID 48: Small Wooden Block>.\nExisting Blocks: 48\n(Block 48: Small Wooden Block - north wall at [2,2,3.5]; attached to East face (Face E) of Block 47 per blueprint (North wall sequence).) <ID 48: Small Wooden Block>\nPosition: [2. ,2. ,3.5]\nAttachable Faces:\nFace label: A, Face center: [2. , 1.5, 3.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: B, Face center: [2. , 2.5, 3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [2., 2., 4.], Facing towards <straight up>\nFace label: D, Face center: [2., 2., 3.], Facing towards <straight down>\nFace label: E, Face center: [2.5, 2. , 3.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 29,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Block 49: Small Wooden Block - south wall start at [2,-2,3.5]; attached to Top face (Face A) of Block 29 per blueprint (start of South wall)."
+    },
+    "result": "You have successfully added <ID 49: Small Wooden Block>.\nExisting Blocks: 49\n(Block 49: Small Wooden Block - south wall start at [2,-2,3.5]; attached to Top face (Face A) of Block 29 per blueprint (start of South wall).) <ID 49: Small Wooden Block>\nPosition: [ 2. ,-2. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -1.5,  3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2. , -2.5,  3.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [ 2.5, -2. ,  3.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -2. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2., -2.,  4.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 49,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 50: Small Wooden Block - south wall at [1,-2,3.5]; attached to West face (Face D) of Block 49 per blueprint (South wall sequence)."
+    },
+    "result": "You have successfully added <ID 50: Small Wooden Block>.\nExisting Blocks: 50\n(Block 50: Small Wooden Block - south wall at [1,-2,3.5]; attached to West face (Face D) of Block 49 per blueprint (South wall sequence).) <ID 50: Small Wooden Block>\nPosition: [ 1. ,-2. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -1.5,  3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 1. , -2.5,  3.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [ 1., -2.,  4.], Facing towards <straight up>\nFace label: D, Face center: [ 1., -2.,  3.], Facing towards <straight down>\nFace label: E, Face center: [ 0.5, -2. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 50,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 51: Small Wooden Block - south wall at [0,-2,3.5]; attached to West face (Face E) of Block 50 per blueprint (South wall sequence)."
+    },
+    "result": "You have successfully added <ID 51: Small Wooden Block>.\nExisting Blocks: 51\n(Block 51: Small Wooden Block - south wall at [0,-2,3.5]; attached to West face (Face E) of Block 50 per blueprint (South wall sequence).) <ID 51: Small Wooden Block>\nPosition: [ 0. ,-2. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [ 0. , -1.5,  3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 0. , -2.5,  3.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [ 0., -2.,  4.], Facing towards <straight up>\nFace label: D, Face center: [ 0., -2.,  3.], Facing towards <straight down>\nFace label: E, Face center: [-0.5, -2. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 51,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 52: Small Wooden Block - south wall at [-1,-2,3.5]; attached to West face (Face E) of Block 51 per blueprint (South wall sequence)."
+    },
+    "result": "You have successfully added <ID 52: Small Wooden Block>.\nExisting Blocks: 52\n(Block 52: Small Wooden Block - south wall at [-1,-2,3.5]; attached to West face (Face E) of Block 51 per blueprint (South wall sequence).) <ID 52: Small Wooden Block>\nPosition: [-1. ,-2. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [-1. , -1.5,  3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -2.5,  3.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [-1., -2.,  4.], Facing towards <straight up>\nFace label: D, Face center: [-1., -2.,  3.], Facing towards <straight down>\nFace label: E, Face center: [-1.5, -2. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 52,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 53: Small Wooden Block - south wall at [-2,-2,3.5]; attached to West face (Face E) of Block 52 per blueprint (South wall sequence)."
+    },
+    "result": "You have successfully added <ID 53: Small Wooden Block>.\nExisting Blocks: 53\n(Block 53: Small Wooden Block - south wall at [-2,-2,3.5]; attached to West face (Face E) of Block 52 per blueprint (South wall sequence).) <ID 53: Small Wooden Block>\nPosition: [-2. ,-2. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [-2. , -1.5,  3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. , -2.5,  3.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [-2., -2.,  4.], Facing towards <straight up>\nFace label: D, Face center: [-2., -2.,  3.], Facing towards <straight down>\nFace label: E, Face center: [-2.5, -2. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 20,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Block 54: Small Wooden Block - west wall at [-2,1,3.5]; attached to Top face (Face A) of Block 20 per blueprint (start of West wall segment)."
+    },
+    "result": "You have successfully added <ID 54: Small Wooden Block>.\nExisting Blocks: 54\n(Block 54: Small Wooden Block - west wall at [-2,1,3.5]; attached to Top face (Face A) of Block 20 per blueprint (start of West wall segment).) <ID 54: Small Wooden Block>\nPosition: [-2. , 1. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  1. ,  3.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5,  1. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. ,  0.5,  3.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: D, Face center: [-2. ,  1.5,  3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2.,  1.,  4.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 54,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Block 55: Small Wooden Block - west wall mid at [-2,0,3.5]; attached to South face (Face C) of Block 54 per blueprint (Block 55)."
+    },
+    "result": "You have successfully added <ID 55: Small Wooden Block>.\nExisting Blocks: 55\n(Block 55: Small Wooden Block - west wall mid at [-2,0,3.5]; attached to South face (Face C) of Block 54 per blueprint (Block 55).) <ID 55: Small Wooden Block>\nPosition: [-2. , 0. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  0. ,  3.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5,  0. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2.,  0.,  3.], Facing towards <straight down>\nFace label: D, Face center: [-2.,  0.,  4.], Facing towards <straight up>\nFace label: E, Face center: [-2. , -0.5,  3.5], Facing towards <South with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 55,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 56: Small Wooden Block - west wall at [-2,-1,3.5]; attached to South face (Face E) of Block 55 per blueprint (Block 56)."
+    },
+    "result": "You have successfully added <ID 56: Small Wooden Block>.\nExisting Blocks: 56\n(Block 56: Small Wooden Block - west wall at [-2,-1,3.5]; attached to South face (Face E) of Block 55 per blueprint (Block 56).) <ID 56: Small Wooden Block>\nPosition: [-2. ,-1. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -1. ,  3.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5, -1. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2., -1.,  3.], Facing towards <straight down>\nFace label: D, Face center: [-2., -1.,  4.], Facing towards <straight up>\nFace label: E, Face center: [-2. , -1.5,  3.5], Facing towards <South with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 28,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Block 57: Small Wooden Block - east wall at [2,-1,3.5]; attached to Top face (Face A) of Block 28 per blueprint (Block 57)."
+    },
+    "result": "You have successfully added <ID 57: Small Wooden Block>.\nExisting Blocks: 57\n(Block 57: Small Wooden Block - east wall at [2,-1,3.5]; attached to Top face (Face A) of Block 28 per blueprint (Block 57).) <ID 57: Small Wooden Block>\nPosition: [ 2. ,-1. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -0.5,  3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2. , -1.5,  3.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [ 2.5, -1. ,  3.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -1. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2., -1.,  4.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 27,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Block 58: Small Wooden Block - east wall at [2,0,3.5]; attached to Top face (Face A) of Block 27 per blueprint (Block 58)."
+    },
+    "result": "You have successfully added <ID 58: Small Wooden Block>.\nExisting Blocks: 58\n(Block 58: Small Wooden Block - east wall at [2,0,3.5]; attached to Top face (Face A) of Block 27 per blueprint (Block 58).) <ID 58: Small Wooden Block>\nPosition: [ 2. ,-0. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [2. , 0.5, 3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2. , -0.5,  3.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [ 2.5, -0. ,  3.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -0. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2., -0.,  4.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 26,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Block 59: Small Wooden Block - east wall at [2,1,3.5]; attached to Top face (Face A) of Block 26 per blueprint (Block 59)."
+    },
+    "result": "You have successfully added <ID 59: Small Wooden Block>.\nExisting Blocks: 59\n(Block 59: Small Wooden Block - east wall at [2,1,3.5]; attached to Top face (Face A) of Block 26 per blueprint (Block 59).) <ID 59: Small Wooden Block>\nPosition: [2. ,1. ,3.5]\nAttachable Faces:\nFace label: A, Face center: [2. , 1.5, 3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [2. , 0.5, 3.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [2.5, 1. , 3.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [1.5, 1. , 3.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [2., 1., 4.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 46,
+      "face": "B",
+      "new_block": "Water Cannon",
+      "note": "Block 60: Water Cannon - north yaw cannon mounted on North outer face (Face B) of Block 46 at [0,2,3.5]; nozzle oriented +x (east) with recoil \u2212x; assigned to control \u2018Yaw CCW\u2019 (hold to fire)."
+    },
+    "result": "You have successfully added <ID 60: Water Cannon>.\nExisting Blocks: 60\n(Block 60: Water Cannon - north yaw cannon mounted on North outer face (Face B) of Block 46 at [0,2,3.5]; nozzle oriented +x (east) with recoil \u2212x; assigned to control \u2018Yaw CCW\u2019 (hold to fire).) <ID 60: Water Cannon>\nPosition: [0. ,3. ,3.5]\nPointing at <straight down>\nInlet is at [0.00, 3.00, 4.25], outlet is at [0.00, 3.00, 2.50], sprays towards <straight down>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 60,
+      "angle": 90.0
+    },
+    "result": "The block 60 <Water Cannon> is twisted by 90.0 degrees. \n (Block 60: Water Cannon - north yaw cannon mounted on North outer face (Face B) of Block 46 at [0,2,3.5]; nozzle oriented +x (east) with recoil \u2212x; assigned to control \u2018Yaw CCW\u2019 (hold to fire).) <ID 60: Water Cannon>\nPosition: [0. ,3. ,3.5]\nPointing at <East with -0.0\u00b0 pitch>\nInlet is at [-0.75, 3.00, 3.50], outlet is at [1.00, 3.00, 3.50], sprays towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 51,
+      "face": "B",
+      "new_block": "Water Cannon",
+      "note": "Block 61: Water Cannon - south yaw cannon mounted on South outer face (Face B) of Block 51 at [0,-2,3.5]; target nozzle orientation \u2212x (west) for CCW yaw pair with Block 60; mapped to control \u2018Yaw CCW\u2019 (hold to fire)."
+    },
+    "result": "You have successfully added <ID 61: Water Cannon>.\nExisting Blocks: 61\n(Block 61: Water Cannon - south yaw cannon mounted on South outer face (Face B) of Block 51 at [0,-2,3.5]; target nozzle orientation \u2212x (west) for CCW yaw pair with Block 60; mapped to control \u2018Yaw CCW\u2019 (hold to fire).) <ID 61: Water Cannon>\nPosition: [-0. ,-3. , 3.5]\nPointing at <straight down>\nInlet is at [0.00, -3.00, 4.25], outlet is at [-0.00, -3.00, 2.50], sprays towards <straight down>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 61,
+      "angle": 90.0
+    },
+    "result": "The block 61 <Water Cannon> is twisted by 90.0 degrees. \n (Block 61: Water Cannon - south yaw cannon mounted on South outer face (Face B) of Block 51 at [0,-2,3.5]; target nozzle orientation \u2212x (west) for CCW yaw pair with Block 60; mapped to control \u2018Yaw CCW\u2019 (hold to fire).) <ID 61: Water Cannon>\nPosition: [-0. ,-3. , 3.5]\nPointing at <West with 0.0\u00b0 pitch>\nInlet is at [0.75, -3.00, 3.50], outlet is at [-1.00, -3.00, 3.50], sprays towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 3,
+      "face_a": "E",
+      "block_b": 25,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Block 62: Brace - diagonal NE corner brace connecting Block 3 north face (Face E, ~[1,1.5,0.5]) to Block 25 bottom face (Face B, ~[2,2,2.0]); function: solid diagonal hinge to increase torsional stiffness."
+    },
+    "result": "You have successfully added <ID 62: Brace>.\nExisting Blocks: 62\n(Block 62: Brace - diagonal NE corner brace connecting Block 3 north face (Face E, ~[1,1.5,0.5]) to Block 25 bottom face (Face B, ~[2,2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 62: Brace>\nConnecting <ID 3: Small Wooden Block> at [1.  1.5 0.5] and <ID 25: Small Wooden Block> at [2. 2. 2.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 6,
+      "face_a": "A",
+      "block_b": 21,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Block 63: Brace - diagonal NW corner brace connecting Block 6 north face (Face A, ~[-1,1.5,0.5]) to Block 21 bottom face (Face B, ~[-2,2,2.0]); function: solid diagonal hinge to increase torsional stiffness."
+    },
+    "result": "You have successfully added <ID 63: Brace>.\nExisting Blocks: 63\n(Block 63: Brace - diagonal NW corner brace connecting Block 6 north face (Face A, ~[-1,1.5,0.5]) to Block 21 bottom face (Face B, ~[-2,2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 63: Brace>\nConnecting <ID 6: Small Wooden Block> at [-1.   1.5  0.5] and <ID 21: Small Wooden Block> at [-2.  2.  2.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 12,
+      "face_a": "A",
+      "block_b": 29,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Block 64: Brace - diagonal SE corner brace connecting Block 12 south face (Face A, ~[1,-1.5,0.5]) to Block 29 bottom face (Face B, ~[2,-2,2.0]); function: solid diagonal hinge to increase torsional stiffness."
+    },
+    "result": "You have successfully added <ID 64: Brace>.\nExisting Blocks: 64\n(Block 64: Brace - diagonal SE corner brace connecting Block 12 south face (Face A, ~[1,-1.5,0.5]) to Block 29 bottom face (Face B, ~[2,-2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 64: Brace>\nConnecting <ID 12: Small Wooden Block> at [ 1.  -1.5  0.5] and <ID 29: Small Wooden Block> at [ 2. -2.  2.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 9,
+      "face_a": "E",
+      "block_b": 33,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Block 65: Brace - diagonal SW corner brace connecting Block 9 south face (Face E, ~[-1,-1.5,0.5]) to Block 33 bottom face (Face B, ~[-2,-2,2.0]); function: solid diagonal hinge to increase torsional stiffness."
+    },
+    "result": "You have successfully added <ID 65: Brace>.\nExisting Blocks: 65\n(Block 65: Brace - diagonal SW corner brace connecting Block 9 south face (Face E, ~[-1,-1.5,0.5]) to Block 33 bottom face (Face B, ~[-2,-2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 65: Brace>\nConnecting <ID 9: Small Wooden Block> at [-1.  -1.5  0.5] and <ID 33: Small Wooden Block> at [-2. -2.  2.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 5,
+      "face_a": "C",
+      "block_b": 23,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Block 66: Brace - mid-span north brace connecting Block 5 top face (Face C, ~[0,1,1.0]) to Block 23 bottom face (Face B, ~[0,2,2.0]); function: rigid diagonal to stiffen north side."
+    },
+    "result": "You have successfully added <ID 66: Brace>.\nExisting Blocks: 66\n(Block 66: Brace - mid-span north brace connecting Block 5 top face (Face C, ~[0,1,1.0]) to Block 23 bottom face (Face B, ~[0,2,2.0]); function: rigid diagonal to stiffen north side.) <ID 66: Brace>\nConnecting <ID 5: Small Wooden Block> at [-1.11022302e-16  1.00000000e+00  1.00000000e+00] and <ID 23: Small Wooden Block> at [9.43689571e-16 2.00000000e+00 2.00000000e+00].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 11,
+      "face_a": "C",
+      "block_b": 31,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Block 67: Brace - mid-span south brace connecting Block 11 top face (Face C, ~[0,-1,1.0]) to Block 31 bottom face (Face B, ~[0,-2,2.0]); function: rigid diagonal to stiffen south side."
+    },
+    "result": "You have successfully added <ID 67: Brace>.\nExisting Blocks: 67\n(Block 67: Brace - mid-span south brace connecting Block 11 top face (Face C, ~[0,-1,1.0]) to Block 31 bottom face (Face B, ~[0,-2,2.0]); function: rigid diagonal to stiffen south side.) <ID 67: Brace>\nConnecting <ID 11: Small Wooden Block> at [-8.8817842e-16 -1.0000000e+00  1.0000000e+00] and <ID 31: Small Wooden Block> at [-1.22124533e-15 -2.00000000e+00  2.00000000e+00].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 8,
+      "face_a": "C",
+      "block_b": 35,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Block 68: Brace - mid-span west brace connecting Block 8 top face (Face C, ~[-1,0,1.0]) to Block 35 bottom face (Face B, ~[-2,0,2.0]); function: rigid diagonal to stiffen west side."
+    },
+    "result": "You have successfully added <ID 68: Brace>.\nExisting Blocks: 68\n(Block 68: Brace - mid-span west brace connecting Block 8 top face (Face C, ~[-1,0,1.0]) to Block 35 bottom face (Face B, ~[-2,0,2.0]); function: rigid diagonal to stiffen west side.) <ID 68: Brace>\nConnecting <ID 8: Small Wooden Block> at [-1.00000000e+00  3.33066907e-16  1.00000000e+00] and <ID 35: Small Wooden Block> at [-2.00000000e+00 -1.11022302e-16  2.00000000e+00].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 2,
+      "face_a": "C",
+      "block_b": 27,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Block 69: Brace - mid-span east brace connecting Block 2 top face (Face C, ~[1,0,1.0]) to Block 27 bottom face (Face B, ~[2,0,2.0]); function: rigid diagonal to stiffen east side."
+    },
+    "result": "You have successfully added <ID 69: Brace>.\nExisting Blocks: 69\n(Block 69: Brace - mid-span east brace connecting Block 2 top face (Face C, ~[1,0,1.0]) to Block 27 bottom face (Face B, ~[2,0,2.0]); function: rigid diagonal to stiffen east side.) <ID 69: Brace>\nConnecting <ID 2: Small Wooden Block> at [1.00000000e+00 1.11022302e-16 1.00000000e+00] and <ID 27: Small Wooden Block> at [2.00000000e+00 5.55111512e-17 2.00000000e+00].\t"
+  },
+  {
+    "op": "flip_spin",
+    "params": {
+      "block_id": 7
+    },
+    "result": "The block 7 <Powered Wheel> is flipped. \n (Block 7: Powered Wheel - mounted on West face (Face E) of Block 6 at [-1,1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north) to match environment behavior and earlier wheel\u2019s readout.) <ID 7: Powered Wheel>\nPosition: [-1.5, 1. , 0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [-2. ,  1. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "flip_spin",
+    "params": {
+      "block_id": 10
+    },
+    "result": "The block 10 <Powered Wheel> is flipped. \n (Block 10: Powered Wheel - mounted on West face (Face A) of Block 9 at [-1,-1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north).) <ID 10: Powered Wheel>\nPosition: [-1.5,-1. , 0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [-2. , -1. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "get_block_details",
+    "params": {
+      "block_id": 4
+    },
+    "result": "(Block 4: Powered Wheel - mounted on East face (Face A) of Block 3 at [1,1,0.5]; rotation axis \u27c2 face (\u00b1x), wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +x.) <ID 4: Powered Wheel>\nPosition: [1.5,1. ,0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [2. , 1. , 0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "get_block_details",
+    "params": {
+      "block_id": 7
+    },
+    "result": "(Block 7: Powered Wheel - mounted on West face (Face E) of Block 6 at [-1,1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north) to match environment behavior and earlier wheel\u2019s readout.) <ID 7: Powered Wheel>\nPosition: [-1.5, 1. , 0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [-2. ,  1. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "get_block_details",
+    "params": {
+      "block_id": 10
+    },
+    "result": "(Block 10: Powered Wheel - mounted on West face (Face A) of Block 9 at [-1,-1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north).) <ID 10: Powered Wheel>\nPosition: [-1.5,-1. , 0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [-2. , -1. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "get_block_details",
+    "params": {
+      "block_id": 60
+    },
+    "result": "(Block 60: Water Cannon - north yaw cannon mounted on North outer face (Face B) of Block 46 at [0,2,3.5]; nozzle oriented +x (east) with recoil \u2212x; assigned to control \u2018Yaw CCW\u2019 (hold to fire).) <ID 60: Water Cannon>\nPosition: [0. ,3. ,3.5]\nPointing at <East with -0.0\u00b0 pitch>\nInlet is at [-0.75, 3.00, 3.50], outlet is at [1.00, 3.00, 3.50], sprays towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 4,
+      "angle": 90.0
+    },
+    "result": "The block 4 <Powered Wheel> is twisted by 90.0 degrees. \n (Block 4: Powered Wheel - mounted on East face (Face A) of Block 3 at [1,1,0.5]; rotation axis \u27c2 face (\u00b1x), wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +x.) <ID 4: Powered Wheel>\nPosition: [1.5,1. ,0.5]\nRolling towards <North with 0.0\u00b0 pitch> with -0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [2. , 1. , 0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 4,
+      "angle": -90.0
+    },
+    "result": "The block 4 <Powered Wheel> is twisted by -90.0 degrees. \n (Block 4: Powered Wheel - mounted on East face (Face A) of Block 3 at [1,1,0.5]; rotation axis \u27c2 face (\u00b1x), wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +x.) <ID 4: Powered Wheel>\nPosition: [1.5,1. ,0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [2. , 1. , 0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 4,
+      "angle": 90.0
+    },
+    "result": "The block 4 <Powered Wheel> is twisted by 90.0 degrees. \n (Block 4: Powered Wheel - mounted on East face (Face A) of Block 3 at [1,1,0.5]; rotation axis \u27c2 face (\u00b1x), wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +x.) <ID 4: Powered Wheel>\nPosition: [1.5,1. ,0.5]\nRolling towards <North with 0.0\u00b0 pitch> with -0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [2. , 1. , 0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 4,
+      "angle": -90.0
+    },
+    "result": "The block 4 <Powered Wheel> is twisted by -90.0 degrees. \n (Block 4: Powered Wheel - mounted on East face (Face A) of Block 3 at [1,1,0.5]; rotation axis \u27c2 face (\u00b1x), wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +x.) <ID 4: Powered Wheel>\nPosition: [1.5,1. ,0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [2. , 1. , 0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "get_block_details",
+    "params": {
+      "block_id": 13
+    },
+    "result": "(Block 13: Powered Wheel - mounted on East face (Face E) of Block 12 at [1,-1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configure \u2018Forward\u2019 to roll +y (north) to match environment behavior; will verify and unify all wheels after installation.) <ID 13: Powered Wheel>\nPosition: [ 1.5,-1. , 0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [ 2. , -1. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 69\n\nMachine Summary: Block 1: Default Base Block - 1x1x1 base stone at origin reference (center [0,0,0.5]); foundation for NE Cargo Cart with Yaw Thrusters\n(The starting block) <ID 1: Starting Block>\nPosition: [0. ,0. ,0.5]\n(Block 2: Small Wooden Block - lower frame east mid at [1,0,0.5]; attached to East face (Face A) of Block 1 (Starting Block). Placement per blueprint Step 2.) <ID 2: Small Wooden Block>\nPosition: [1. ,0. ,0.5]\n(Block 3: Small Wooden Block - lower frame NE corner at [1,1,0.5]; attached to North face (Face B) of Block 2 per blueprint Step 3.) <ID 3: Small Wooden Block>\nPosition: [1. ,1. ,0.5]\n(Block 5: Small Wooden Block - lower frame north mid at [0,1,0.5]; attached to West face (Face B) of Block 3 per blueprint Step 5.) <ID 5: Small Wooden Block>\nPosition: [-0. , 1. , 0.5]\n(Block 6: Small Wooden Block - lower frame NW corner at [-1,1,0.5]; attached to West face (Face E) of Block 5 per blueprint Step 6.) <ID 6: Small Wooden Block>\nPosition: [-1. , 1. , 0.5]\n(Block 7: Powered Wheel - mounted on West face (Face E) of Block 6 at [-1,1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north) to match environment behavior and earlier wheel\u2019s readout.) <ID 7: Powered Wheel>\nPosition: [-1.5, 1. , 0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\n(Block 8: Small Wooden Block - lower frame west mid at [-1,0,0.5]; attached to South face (Face B) of Block 6 per blueprint Step 8.) <ID 8: Small Wooden Block>\nPosition: [-1. , 0. , 0.5]\n(Block 9: Small Wooden Block - lower frame SW corner at [-1,-1,0.5]; attached to South face (Face E) of Block 8 per blueprint (Block 9).) <ID 9: Small Wooden Block>\nPosition: [-1. ,-1. , 0.5]\n(Block 10: Powered Wheel - mounted on West face (Face A) of Block 9 at [-1,-1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north).) <ID 10: Powered Wheel>\nPosition: [-1.5,-1. , 0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\n(Block 11: Small Wooden Block - lower frame south mid at [0,-1,0.5]; attached to East face (Face B) of Block 9 per blueprint (Block 11).) <ID 11: Small Wooden Block>\nPosition: [-0. ,-1. , 0.5]\n(Block 12: Small Wooden Block - lower frame SE corner at [1,-1,0.5]; attached to East face (Face E) of Block 11 per blueprint (Block 12).) <ID 12: Small Wooden Block>\nPosition: [ 1. ,-1. , 0.5]\n(Block 13: Powered Wheel - mounted on East face (Face E) of Block 12 at [1,-1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configure \u2018Forward\u2019 to roll +y (north) to match environment behavior; will verify and unify all wheels after installation.) <ID 13: Powered Wheel>\nPosition: [ 1.5,-1. , 0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\n(Block 14: Small Wooden Block - corner post above SE at [1,-1,1.5]; attached to Top face (Face C) of Block 12 per blueprint (Block 14).) <ID 14: Small Wooden Block>\nPosition: [ 1. ,-1. , 1.5]\n(Block 15: Small Wooden Block - inner-corner deck node at [1,-1,2.5]; attached to Top face (Face E) of Block 14 per blueprint (Block 15).) <ID 15: Small Wooden Block>\nPosition: [ 1. ,-1. , 2.5]\n(Block 16: Small Wooden Block - deck at [1,0,2.5]; attached to North face (Face B) of Block 15 per blueprint (Block 16).) <ID 16: Small Wooden Block>\nPosition: [ 1. ,-0. , 2.5]\n(Block 17: Small Wooden Block - deck at [1,1,2.5]; attached to North face (Face E) of Block 16 per blueprint (Block 17).) <ID 17: Small Wooden Block>\nPosition: [1. ,1. ,2.5]\n(Block 18: Small Wooden Block - deck at [0,1,2.5]; attached to West face (Face C) of Block 17 per blueprint (Block 18).) <ID 18: Small Wooden Block>\nPosition: [0. ,1. ,2.5]\n(Block 19: Small Wooden Block - deck at [-1,1,2.5]; attached to West face (Face E) of Block 18 per blueprint (Block 19).) <ID 19: Small Wooden Block>\nPosition: [-1. , 1. , 2.5]\n(Block 20: Small Wooden Block - deck at [-2,1,2.5]; attached to West face (Face E) of Block 19 per blueprint (Block 20).) <ID 20: Small Wooden Block>\nPosition: [-2. , 1. , 2.5]\n(Block 21: Small Wooden Block - deck at [-2,2,2.5]; attached to North face (Face D) of Block 20 per blueprint (Block 21).) <ID 21: Small Wooden Block>\nPosition: [-2. , 2. , 2.5]\n(Block 22: Small Wooden Block - deck at [-1,2,2.5]; attached to East face (Face D) of Block 21 per blueprint (Block 22).) <ID 22: Small Wooden Block>\nPosition: [-1. , 2. , 2.5]\n(Block 23: Small Wooden Block - deck at [0,2,2.5]; attached to East face (Face E) of Block 22 per blueprint (Block 23).) <ID 23: Small Wooden Block>\nPosition: [0. ,2. ,2.5]\n(Block 24: Small Wooden Block - deck at [1,2,2.5]; attached to East face (Face E) of Block 23 per blueprint (Block 24).) <ID 24: Small Wooden Block>\nPosition: [1. ,2. ,2.5]\n(Block 25: Small Wooden Block - deck at [2,2,2.5]; attached to East face (Face E) of Block 24 per blueprint (Block 25).) <ID 25: Small Wooden Block>\nPosition: [2. ,2. ,2.5]\n(Block 26: Small Wooden Block - deck at [2,1,2.5]; attached to South face (Face D) of Block 25 per blueprint (Block 26).) <ID 26: Small Wooden Block>\nPosition: [2. ,1. ,2.5]\n(Block 27: Small Wooden Block - deck at [2,0,2.5]; attached to South face (Face E) of Block 26 per blueprint (Block 27).) <ID 27: Small Wooden Block>\nPosition: [2. ,0. ,2.5]\n(Block 28: Small Wooden Block - deck at [2,-1,2.5]; attached to South face (Face E) of Block 27 per blueprint (Block 28).) <ID 28: Small Wooden Block>\nPosition: [ 2. ,-1. , 2.5]\n(Block 29: Small Wooden Block - deck at [2,-2,2.5]; attached to South face (Face E) of Block 28 per blueprint (Block 29).) <ID 29: Small Wooden Block>\nPosition: [ 2. ,-2. , 2.5]\n(Block 30: Small Wooden Block - deck at [1,-2,2.5]; attached to West face (Face D) of Block 29 per blueprint (Block 30).) <ID 30: Small Wooden Block>\nPosition: [ 1. ,-2. , 2.5]\n(Block 31: Small Wooden Block - deck at [0,-2,2.5]; attached to West face (Face E) of Block 30 per blueprint (Block 31).) <ID 31: Small Wooden Block>\nPosition: [-0. ,-2. , 2.5]\n(Block 32: Small Wooden Block - deck at [-1,-2,2.5]; attached to West face (Face E) of Block 31 per blueprint (Block 32).) <ID 32: Small Wooden Block>\nPosition: [-1. ,-2. , 2.5]\n(Block 33: Small Wooden Block - deck at [-2,-2,2.5]; attached to West face (Face E) of Block 32 per blueprint (Block 33).) <ID 33: Small Wooden Block>\nPosition: [-2. ,-2. , 2.5]\n(Block 34: Small Wooden Block - deck at [-2,-1,2.5]; attached to North face (Face D) of Block 33 per blueprint (Block 34).) <ID 34: Small Wooden Block>\nPosition: [-2. ,-1. , 2.5]\n(Block 35: Small Wooden Block - deck at [-2,0,2.5]; attached to North face (Face E) of Block 34 per blueprint (Block 35).) <ID 35: Small Wooden Block>\nPosition: [-2. ,-0. , 2.5]\n(Block 36: Small Wooden Block - deck at [-1,0,2.5]; attached to East face (Face D) of Block 35 per blueprint (Block 36).) <ID 36: Small Wooden Block>\nPosition: [-1. , 0. , 2.5]\n(Block 37: Small Wooden Block - center deck at [0,0,2.5]; attached to East face (Face E) of Block 36 per blueprint (Block 37).) <ID 37: Small Wooden Block>\nPosition: [-0. , 0. , 2.5]\n(Block 38: Small Wooden Block - center post below deck at [0,0,1.5]; attached to Bottom face (Face B) of Block 37; aligns to top face of Block 1 per blueprint (Block 38).) <ID 38: Small Wooden Block>\nPosition: [-0. , 0. , 1.5]\n(Block 39: Small Wooden Block - deck at [0,-1,2.5]; attached to South face (Face D) of Block 37 per blueprint (Block 39).) <ID 39: Small Wooden Block>\nPosition: [-0. ,-1. , 2.5]\n(Block 40: Small Wooden Block - deck at [-1,-1,2.5]; attached to West face (Face D) of Block 39 per blueprint (Block 40).) <ID 40: Small Wooden Block>\nPosition: [-1. ,-1. , 2.5]\n(Block 41: Small Wooden Block - corner post at [-1,1,1.5]; attached to Top face (Face C) of Block 6 per blueprint (corner post under deck node).) <ID 41: Small Wooden Block>\nPosition: [-1. , 1. , 1.5]\n(Block 42: Small Wooden Block - corner post at [1,1,1.5]; attached to Top face (Face C) of Block 3 per blueprint (Block 42).) <ID 42: Small Wooden Block>\nPosition: [1. ,1. ,1.5]\n(Block 43: Small Wooden Block - corner post at [-1,-1,1.5]; attached to Top face (Face C) of Block 9 per blueprint (Block 43).) <ID 43: Small Wooden Block>\nPosition: [-1. ,-1. , 1.5]\n(Block 44: Small Wooden Block - north wall at [-2,2,3.5]; attached to Top face (Face A) of Block 21 per blueprint (start of North wall).) <ID 44: Small Wooden Block>\nPosition: [-2. , 2. , 3.5]\n(Block 45: Small Wooden Block - north wall at [-1,2,3.5]; attached to East face (Face D) of Block 44 per blueprint (North wall sequence).) <ID 45: Small Wooden Block>\nPosition: [-1. , 2. , 3.5]\n(Block 46: Small Wooden Block - north wall at [0,2,3.5]; attached to East face (Face E) of Block 45 per blueprint (North wall sequence).) <ID 46: Small Wooden Block>\nPosition: [0. ,2. ,3.5]\n(Block 47: Small Wooden Block - north wall at [1,2,3.5]; attached to East face (Face E) of Block 46 per blueprint (North wall sequence).) <ID 47: Small Wooden Block>\nPosition: [1. ,2. ,3.5]\n(Block 48: Small Wooden Block - north wall at [2,2,3.5]; attached to East face (Face E) of Block 47 per blueprint (North wall sequence).) <ID 48: Small Wooden Block>\nPosition: [2. ,2. ,3.5]\n(Block 49: Small Wooden Block - south wall start at [2,-2,3.5]; attached to Top face (Face A) of Block 29 per blueprint (start of South wall).) <ID 49: Small Wooden Block>\nPosition: [ 2. ,-2. , 3.5]\n(Block 50: Small Wooden Block - south wall at [1,-2,3.5]; attached to West face (Face D) of Block 49 per blueprint (South wall sequence).) <ID 50: Small Wooden Block>\nPosition: [ 1. ,-2. , 3.5]\n(Block 51: Small Wooden Block - south wall at [0,-2,3.5]; attached to West face (Face E) of Block 50 per blueprint (South wall sequence).) <ID 51: Small Wooden Block>\nPosition: [ 0. ,-2. , 3.5]\n(Block 52: Small Wooden Block - south wall at [-1,-2,3.5]; attached to West face (Face E) of Block 51 per blueprint (South wall sequence).) <ID 52: Small Wooden Block>\nPosition: [-1. ,-2. , 3.5]\n(Block 53: Small Wooden Block - south wall at [-2,-2,3.5]; attached to West face (Face E) of Block 52 per blueprint (South wall sequence).) <ID 53: Small Wooden Block>\nPosition: [-2. ,-2. , 3.5]\n(Block 54: Small Wooden Block - west wall at [-2,1,3.5]; attached to Top face (Face A) of Block 20 per blueprint (start of West wall segment).) <ID 54: Small Wooden Block>\nPosition: [-2. , 1. , 3.5]\n(Block 55: Small Wooden Block - west wall mid at [-2,0,3.5]; attached to South face (Face C) of Block 54 per blueprint (Block 55).) <ID 55: Small Wooden Block>\nPosition: [-2. , 0. , 3.5]\n(Block 56: Small Wooden Block - west wall at [-2,-1,3.5]; attached to South face (Face E) of Block 55 per blueprint (Block 56).) <ID 56: Small Wooden Block>\nPosition: [-2. ,-1. , 3.5]\n(Block 57: Small Wooden Block - east wall at [2,-1,3.5]; attached to Top face (Face A) of Block 28 per blueprint (Block 57).) <ID 57: Small Wooden Block>\nPosition: [ 2. ,-1. , 3.5]\n(Block 58: Small Wooden Block - east wall at [2,0,3.5]; attached to Top face (Face A) of Block 27 per blueprint (Block 58).) <ID 58: Small Wooden Block>\nPosition: [ 2. ,-0. , 3.5]\n(Block 59: Small Wooden Block - east wall at [2,1,3.5]; attached to Top face (Face A) of Block 26 per blueprint (Block 59).) <ID 59: Small Wooden Block>\nPosition: [2. ,1. ,3.5]\n(Block 60: Water Cannon - north yaw cannon mounted on North outer face (Face B) of Block 46 at [0,2,3.5]; nozzle oriented +x (east) with recoil \u2212x; assigned to control \u2018Yaw CCW\u2019 (hold to fire).) <ID 60: Water Cannon>\nPosition: [0. ,3. ,3.5]\nPointing at <East with -0.0\u00b0 pitch>\nInlet is at [-0.75, 3.00, 3.50], outlet is at [1.00, 3.00, 3.50], sprays towards <East with -0.0\u00b0 pitch>\n(Block 61: Water Cannon - south yaw cannon mounted on South outer face (Face B) of Block 51 at [0,-2,3.5]; target nozzle orientation \u2212x (west) for CCW yaw pair with Block 60; mapped to control \u2018Yaw CCW\u2019 (hold to fire).) <ID 61: Water Cannon>\nPosition: [-0. ,-3. , 3.5]\nPointing at <West with 0.0\u00b0 pitch>\nInlet is at [0.75, -3.00, 3.50], outlet is at [-1.00, -3.00, 3.50], sprays towards <West with 0.0\u00b0 pitch>\n(Block 62: Brace - diagonal NE corner brace connecting Block 3 north face (Face E, ~[1,1.5,0.5]) to Block 25 bottom face (Face B, ~[2,2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 62: Brace>\nConnecting <ID 3: Small Wooden Block> at [1.  1.5 0.5] and <ID 25: Small Wooden Block> at [2. 2. 2.].\t\n(Block 63: Brace - diagonal NW corner brace connecting Block 6 north face (Face A, ~[-1,1.5,0.5]) to Block 21 bottom face (Face B, ~[-2,2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 63: Brace>\nConnecting <ID 6: Small Wooden Block> at [-1.   1.5  0.5] and <ID 21: Small Wooden Block> at [-2.  2.  2.].\t\n(Block 64: Brace - diagonal SE corner brace connecting Block 12 south face (Face A, ~[1,-1.5,0.5]) to Block 29 bottom face (Face B, ~[2,-2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 64: Brace>\nConnecting <ID 12: Small Wooden Block> at [ 1.  -1.5  0.5] and <ID 29: Small Wooden Block> at [ 2. -2.  2.].\t\n(Block 65: Brace - diagonal SW corner brace connecting Block 9 south face (Face E, ~[-1,-1.5,0.5]) to Block 33 bottom face (Face B, ~[-2,-2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 65: Brace>\nConnecting <ID 9: Small Wooden Block> at [-1.  -1.5  0.5] and <ID 33: Small Wooden Block> at [-2. -2.  2.].\t\n(Block 66: Brace - mid-span north brace connecting Block 5 top face (Face C, ~[0,1,1.0]) to Block 23 bottom face (Face B, ~[0,2,2.0]); function: rigid diagonal to stiffen north side.) <ID 66: Brace>\nConnecting <ID 5: Small Wooden Block> at [-1.11022302e-16  1.00000000e+00  1.00000000e+00] and <ID 23: Small Wooden Block> at [9.43689571e-16 2.00000000e+00 2.00000000e+00].\t\n(Block 67: Brace - mid-span south brace connecting Block 11 top face (Face C, ~[0,-1,1.0]) to Block 31 bottom face (Face B, ~[0,-2,2.0]); function: rigid diagonal to stiffen south side.) <ID 67: Brace>\nConnecting <ID 11: Small Wooden Block> at [-8.8817842e-16 -1.0000000e+00  1.0000000e+00] and <ID 31: Small Wooden Block> at [-1.22124533e-15 -2.00000000e+00  2.00000000e+00].\t\n(Block 68: Brace - mid-span west brace connecting Block 8 top face (Face C, ~[-1,0,1.0]) to Block 35 bottom face (Face B, ~[-2,0,2.0]); function: rigid diagonal to stiffen west side.) <ID 68: Brace>\nConnecting <ID 8: Small Wooden Block> at [-1.00000000e+00  3.33066907e-16  1.00000000e+00] and <ID 35: Small Wooden Block> at [-2.00000000e+00 -1.11022302e-16  2.00000000e+00].\t\n(Block 69: Brace - mid-span east brace connecting Block 2 top face (Face C, ~[1,0,1.0]) to Block 27 bottom face (Face B, ~[2,0,2.0]); function: rigid diagonal to stiffen east side.) <ID 69: Brace>\nConnecting <ID 2: Small Wooden Block> at [1.00000000e+00 1.11022302e-16 1.00000000e+00] and <ID 27: Small Wooden Block> at [2.00000000e+00 5.55111512e-17 2.00000000e+00].\t\n(Block 4: Powered Wheel - mounted on East face (Face A) of Block 3 at [1,1,0.5]; rotation axis \u27c2 face (\u00b1x), wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +x.) <ID 4: Powered Wheel>\nPosition: [1.5,1. ,0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 69\n\nMachine Summary: Block 1: Default Base Block - 1x1x1 base stone at origin reference (center [0,0,0.5]); foundation for NE Cargo Cart with Yaw Thrusters\n(The starting block) <ID 1: Starting Block>\nPosition: [0. ,0. ,0.5]\n(Block 2: Small Wooden Block - lower frame east mid at [1,0,0.5]; attached to East face (Face A) of Block 1 (Starting Block). Placement per blueprint Step 2.) <ID 2: Small Wooden Block>\nPosition: [1. ,0. ,0.5]\n(Block 3: Small Wooden Block - lower frame NE corner at [1,1,0.5]; attached to North face (Face B) of Block 2 per blueprint Step 3.) <ID 3: Small Wooden Block>\nPosition: [1. ,1. ,0.5]\n(Block 5: Small Wooden Block - lower frame north mid at [0,1,0.5]; attached to West face (Face B) of Block 3 per blueprint Step 5.) <ID 5: Small Wooden Block>\nPosition: [-0. , 1. , 0.5]\n(Block 6: Small Wooden Block - lower frame NW corner at [-1,1,0.5]; attached to West face (Face E) of Block 5 per blueprint Step 6.) <ID 6: Small Wooden Block>\nPosition: [-1. , 1. , 0.5]\n(Block 7: Powered Wheel - mounted on West face (Face E) of Block 6 at [-1,1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north) to match environment behavior and earlier wheel\u2019s readout.) <ID 7: Powered Wheel>\nPosition: [-1.5, 1. , 0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\n(Block 8: Small Wooden Block - lower frame west mid at [-1,0,0.5]; attached to South face (Face B) of Block 6 per blueprint Step 8.) <ID 8: Small Wooden Block>\nPosition: [-1. , 0. , 0.5]\n(Block 9: Small Wooden Block - lower frame SW corner at [-1,-1,0.5]; attached to South face (Face E) of Block 8 per blueprint (Block 9).) <ID 9: Small Wooden Block>\nPosition: [-1. ,-1. , 0.5]\n(Block 10: Powered Wheel - mounted on West face (Face A) of Block 9 at [-1,-1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north).) <ID 10: Powered Wheel>\nPosition: [-1.5,-1. , 0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\n(Block 11: Small Wooden Block - lower frame south mid at [0,-1,0.5]; attached to East face (Face B) of Block 9 per blueprint (Block 11).) <ID 11: Small Wooden Block>\nPosition: [-0. ,-1. , 0.5]\n(Block 12: Small Wooden Block - lower frame SE corner at [1,-1,0.5]; attached to East face (Face E) of Block 11 per blueprint (Block 12).) <ID 12: Small Wooden Block>\nPosition: [ 1. ,-1. , 0.5]\n(Block 13: Powered Wheel - mounted on East face (Face E) of Block 12 at [1,-1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configure \u2018Forward\u2019 to roll +y (north) to match environment behavior; will verify and unify all wheels after installation.) <ID 13: Powered Wheel>\nPosition: [ 1.5,-1. , 0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\n(Block 14: Small Wooden Block - corner post above SE at [1,-1,1.5]; attached to Top face (Face C) of Block 12 per blueprint (Block 14).) <ID 14: Small Wooden Block>\nPosition: [ 1. ,-1. , 1.5]\n(Block 15: Small Wooden Block - inner-corner deck node at [1,-1,2.5]; attached to Top face (Face E) of Block 14 per blueprint (Block 15).) <ID 15: Small Wooden Block>\nPosition: [ 1. ,-1. , 2.5]\n(Block 16: Small Wooden Block - deck at [1,0,2.5]; attached to North face (Face B) of Block 15 per blueprint (Block 16).) <ID 16: Small Wooden Block>\nPosition: [ 1. ,-0. , 2.5]\n(Block 17: Small Wooden Block - deck at [1,1,2.5]; attached to North face (Face E) of Block 16 per blueprint (Block 17).) <ID 17: Small Wooden Block>\nPosition: [1. ,1. ,2.5]\n(Block 18: Small Wooden Block - deck at [0,1,2.5]; attached to West face (Face C) of Block 17 per blueprint (Block 18).) <ID 18: Small Wooden Block>\nPosition: [0. ,1. ,2.5]\n(Block 19: Small Wooden Block - deck at [-1,1,2.5]; attached to West face (Face E) of Block 18 per blueprint (Block 19).) <ID 19: Small Wooden Block>\nPosition: [-1. , 1. , 2.5]\n(Block 20: Small Wooden Block - deck at [-2,1,2.5]; attached to West face (Face E) of Block 19 per blueprint (Block 20).) <ID 20: Small Wooden Block>\nPosition: [-2. , 1. , 2.5]\n(Block 21: Small Wooden Block - deck at [-2,2,2.5]; attached to North face (Face D) of Block 20 per blueprint (Block 21).) <ID 21: Small Wooden Block>\nPosition: [-2. , 2. , 2.5]\n(Block 22: Small Wooden Block - deck at [-1,2,2.5]; attached to East face (Face D) of Block 21 per blueprint (Block 22).) <ID 22: Small Wooden Block>\nPosition: [-1. , 2. , 2.5]\n(Block 23: Small Wooden Block - deck at [0,2,2.5]; attached to East face (Face E) of Block 22 per blueprint (Block 23).) <ID 23: Small Wooden Block>\nPosition: [0. ,2. ,2.5]\n(Block 24: Small Wooden Block - deck at [1,2,2.5]; attached to East face (Face E) of Block 23 per blueprint (Block 24).) <ID 24: Small Wooden Block>\nPosition: [1. ,2. ,2.5]\n(Block 25: Small Wooden Block - deck at [2,2,2.5]; attached to East face (Face E) of Block 24 per blueprint (Block 25).) <ID 25: Small Wooden Block>\nPosition: [2. ,2. ,2.5]\n(Block 26: Small Wooden Block - deck at [2,1,2.5]; attached to South face (Face D) of Block 25 per blueprint (Block 26).) <ID 26: Small Wooden Block>\nPosition: [2. ,1. ,2.5]\n(Block 27: Small Wooden Block - deck at [2,0,2.5]; attached to South face (Face E) of Block 26 per blueprint (Block 27).) <ID 27: Small Wooden Block>\nPosition: [2. ,0. ,2.5]\n(Block 28: Small Wooden Block - deck at [2,-1,2.5]; attached to South face (Face E) of Block 27 per blueprint (Block 28).) <ID 28: Small Wooden Block>\nPosition: [ 2. ,-1. , 2.5]\n(Block 29: Small Wooden Block - deck at [2,-2,2.5]; attached to South face (Face E) of Block 28 per blueprint (Block 29).) <ID 29: Small Wooden Block>\nPosition: [ 2. ,-2. , 2.5]\n(Block 30: Small Wooden Block - deck at [1,-2,2.5]; attached to West face (Face D) of Block 29 per blueprint (Block 30).) <ID 30: Small Wooden Block>\nPosition: [ 1. ,-2. , 2.5]\n(Block 31: Small Wooden Block - deck at [0,-2,2.5]; attached to West face (Face E) of Block 30 per blueprint (Block 31).) <ID 31: Small Wooden Block>\nPosition: [-0. ,-2. , 2.5]\n(Block 32: Small Wooden Block - deck at [-1,-2,2.5]; attached to West face (Face E) of Block 31 per blueprint (Block 32).) <ID 32: Small Wooden Block>\nPosition: [-1. ,-2. , 2.5]\n(Block 33: Small Wooden Block - deck at [-2,-2,2.5]; attached to West face (Face E) of Block 32 per blueprint (Block 33).) <ID 33: Small Wooden Block>\nPosition: [-2. ,-2. , 2.5]\n(Block 34: Small Wooden Block - deck at [-2,-1,2.5]; attached to North face (Face D) of Block 33 per blueprint (Block 34).) <ID 34: Small Wooden Block>\nPosition: [-2. ,-1. , 2.5]\n(Block 35: Small Wooden Block - deck at [-2,0,2.5]; attached to North face (Face E) of Block 34 per blueprint (Block 35).) <ID 35: Small Wooden Block>\nPosition: [-2. ,-0. , 2.5]\n(Block 36: Small Wooden Block - deck at [-1,0,2.5]; attached to East face (Face D) of Block 35 per blueprint (Block 36).) <ID 36: Small Wooden Block>\nPosition: [-1. , 0. , 2.5]\n(Block 37: Small Wooden Block - center deck at [0,0,2.5]; attached to East face (Face E) of Block 36 per blueprint (Block 37).) <ID 37: Small Wooden Block>\nPosition: [-0. , 0. , 2.5]\n(Block 38: Small Wooden Block - center post below deck at [0,0,1.5]; attached to Bottom face (Face B) of Block 37; aligns to top face of Block 1 per blueprint (Block 38).) <ID 38: Small Wooden Block>\nPosition: [-0. , 0. , 1.5]\n(Block 39: Small Wooden Block - deck at [0,-1,2.5]; attached to South face (Face D) of Block 37 per blueprint (Block 39).) <ID 39: Small Wooden Block>\nPosition: [-0. ,-1. , 2.5]\n(Block 40: Small Wooden Block - deck at [-1,-1,2.5]; attached to West face (Face D) of Block 39 per blueprint (Block 40).) <ID 40: Small Wooden Block>\nPosition: [-1. ,-1. , 2.5]\n(Block 41: Small Wooden Block - corner post at [-1,1,1.5]; attached to Top face (Face C) of Block 6 per blueprint (corner post under deck node).) <ID 41: Small Wooden Block>\nPosition: [-1. , 1. , 1.5]\n(Block 42: Small Wooden Block - corner post at [1,1,1.5]; attached to Top face (Face C) of Block 3 per blueprint (Block 42).) <ID 42: Small Wooden Block>\nPosition: [1. ,1. ,1.5]\n(Block 43: Small Wooden Block - corner post at [-1,-1,1.5]; attached to Top face (Face C) of Block 9 per blueprint (Block 43).) <ID 43: Small Wooden Block>\nPosition: [-1. ,-1. , 1.5]\n(Block 44: Small Wooden Block - north wall at [-2,2,3.5]; attached to Top face (Face A) of Block 21 per blueprint (start of North wall).) <ID 44: Small Wooden Block>\nPosition: [-2. , 2. , 3.5]\n(Block 45: Small Wooden Block - north wall at [-1,2,3.5]; attached to East face (Face D) of Block 44 per blueprint (North wall sequence).) <ID 45: Small Wooden Block>\nPosition: [-1. , 2. , 3.5]\n(Block 46: Small Wooden Block - north wall at [0,2,3.5]; attached to East face (Face E) of Block 45 per blueprint (North wall sequence).) <ID 46: Small Wooden Block>\nPosition: [0. ,2. ,3.5]\n(Block 47: Small Wooden Block - north wall at [1,2,3.5]; attached to East face (Face E) of Block 46 per blueprint (North wall sequence).) <ID 47: Small Wooden Block>\nPosition: [1. ,2. ,3.5]\n(Block 48: Small Wooden Block - north wall at [2,2,3.5]; attached to East face (Face E) of Block 47 per blueprint (North wall sequence).) <ID 48: Small Wooden Block>\nPosition: [2. ,2. ,3.5]\n(Block 49: Small Wooden Block - south wall start at [2,-2,3.5]; attached to Top face (Face A) of Block 29 per blueprint (start of South wall).) <ID 49: Small Wooden Block>\nPosition: [ 2. ,-2. , 3.5]\n(Block 50: Small Wooden Block - south wall at [1,-2,3.5]; attached to West face (Face D) of Block 49 per blueprint (South wall sequence).) <ID 50: Small Wooden Block>\nPosition: [ 1. ,-2. , 3.5]\n(Block 51: Small Wooden Block - south wall at [0,-2,3.5]; attached to West face (Face E) of Block 50 per blueprint (South wall sequence).) <ID 51: Small Wooden Block>\nPosition: [ 0. ,-2. , 3.5]\n(Block 52: Small Wooden Block - south wall at [-1,-2,3.5]; attached to West face (Face E) of Block 51 per blueprint (South wall sequence).) <ID 52: Small Wooden Block>\nPosition: [-1. ,-2. , 3.5]\n(Block 53: Small Wooden Block - south wall at [-2,-2,3.5]; attached to West face (Face E) of Block 52 per blueprint (South wall sequence).) <ID 53: Small Wooden Block>\nPosition: [-2. ,-2. , 3.5]\n(Block 54: Small Wooden Block - west wall at [-2,1,3.5]; attached to Top face (Face A) of Block 20 per blueprint (start of West wall segment).) <ID 54: Small Wooden Block>\nPosition: [-2. , 1. , 3.5]\n(Block 55: Small Wooden Block - west wall mid at [-2,0,3.5]; attached to South face (Face C) of Block 54 per blueprint (Block 55).) <ID 55: Small Wooden Block>\nPosition: [-2. , 0. , 3.5]\n(Block 56: Small Wooden Block - west wall at [-2,-1,3.5]; attached to South face (Face E) of Block 55 per blueprint (Block 56).) <ID 56: Small Wooden Block>\nPosition: [-2. ,-1. , 3.5]\n(Block 57: Small Wooden Block - east wall at [2,-1,3.5]; attached to Top face (Face A) of Block 28 per blueprint (Block 57).) <ID 57: Small Wooden Block>\nPosition: [ 2. ,-1. , 3.5]\n(Block 58: Small Wooden Block - east wall at [2,0,3.5]; attached to Top face (Face A) of Block 27 per blueprint (Block 58).) <ID 58: Small Wooden Block>\nPosition: [ 2. ,-0. , 3.5]\n(Block 59: Small Wooden Block - east wall at [2,1,3.5]; attached to Top face (Face A) of Block 26 per blueprint (Block 59).) <ID 59: Small Wooden Block>\nPosition: [2. ,1. ,3.5]\n(Block 60: Water Cannon - north yaw cannon mounted on North outer face (Face B) of Block 46 at [0,2,3.5]; nozzle oriented +x (east) with recoil \u2212x; assigned to control \u2018Yaw CCW\u2019 (hold to fire).) <ID 60: Water Cannon>\nPosition: [0. ,3. ,3.5]\nPointing at <East with -0.0\u00b0 pitch>\nInlet is at [-0.75, 3.00, 3.50], outlet is at [1.00, 3.00, 3.50], sprays towards <East with -0.0\u00b0 pitch>\n(Block 61: Water Cannon - south yaw cannon mounted on South outer face (Face B) of Block 51 at [0,-2,3.5]; target nozzle orientation \u2212x (west) for CCW yaw pair with Block 60; mapped to control \u2018Yaw CCW\u2019 (hold to fire).) <ID 61: Water Cannon>\nPosition: [-0. ,-3. , 3.5]\nPointing at <West with 0.0\u00b0 pitch>\nInlet is at [0.75, -3.00, 3.50], outlet is at [-1.00, -3.00, 3.50], sprays towards <West with 0.0\u00b0 pitch>\n(Block 62: Brace - diagonal NE corner brace connecting Block 3 north face (Face E, ~[1,1.5,0.5]) to Block 25 bottom face (Face B, ~[2,2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 62: Brace>\nConnecting <ID 3: Small Wooden Block> at [1.  1.5 0.5] and <ID 25: Small Wooden Block> at [2. 2. 2.].\t\n(Block 63: Brace - diagonal NW corner brace connecting Block 6 north face (Face A, ~[-1,1.5,0.5]) to Block 21 bottom face (Face B, ~[-2,2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 63: Brace>\nConnecting <ID 6: Small Wooden Block> at [-1.   1.5  0.5] and <ID 21: Small Wooden Block> at [-2.  2.  2.].\t\n(Block 64: Brace - diagonal SE corner brace connecting Block 12 south face (Face A, ~[1,-1.5,0.5]) to Block 29 bottom face (Face B, ~[2,-2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 64: Brace>\nConnecting <ID 12: Small Wooden Block> at [ 1.  -1.5  0.5] and <ID 29: Small Wooden Block> at [ 2. -2.  2.].\t\n(Block 65: Brace - diagonal SW corner brace connecting Block 9 south face (Face E, ~[-1,-1.5,0.5]) to Block 33 bottom face (Face B, ~[-2,-2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 65: Brace>\nConnecting <ID 9: Small Wooden Block> at [-1.  -1.5  0.5] and <ID 33: Small Wooden Block> at [-2. -2.  2.].\t\n(Block 66: Brace - mid-span north brace connecting Block 5 top face (Face C, ~[0,1,1.0]) to Block 23 bottom face (Face B, ~[0,2,2.0]); function: rigid diagonal to stiffen north side.) <ID 66: Brace>\nConnecting <ID 5: Small Wooden Block> at [-1.11022302e-16  1.00000000e+00  1.00000000e+00] and <ID 23: Small Wooden Block> at [9.43689571e-16 2.00000000e+00 2.00000000e+00].\t\n(Block 67: Brace - mid-span south brace connecting Block 11 top face (Face C, ~[0,-1,1.0]) to Block 31 bottom face (Face B, ~[0,-2,2.0]); function: rigid diagonal to stiffen south side.) <ID 67: Brace>\nConnecting <ID 11: Small Wooden Block> at [-8.8817842e-16 -1.0000000e+00  1.0000000e+00] and <ID 31: Small Wooden Block> at [-1.22124533e-15 -2.00000000e+00  2.00000000e+00].\t\n(Block 68: Brace - mid-span west brace connecting Block 8 top face (Face C, ~[-1,0,1.0]) to Block 35 bottom face (Face B, ~[-2,0,2.0]); function: rigid diagonal to stiffen west side.) <ID 68: Brace>\nConnecting <ID 8: Small Wooden Block> at [-1.00000000e+00  3.33066907e-16  1.00000000e+00] and <ID 35: Small Wooden Block> at [-2.00000000e+00 -1.11022302e-16  2.00000000e+00].\t\n(Block 69: Brace - mid-span east brace connecting Block 2 top face (Face C, ~[1,0,1.0]) to Block 27 bottom face (Face B, ~[2,0,2.0]); function: rigid diagonal to stiffen east side.) <ID 69: Brace>\nConnecting <ID 2: Small Wooden Block> at [1.00000000e+00 1.11022302e-16 1.00000000e+00] and <ID 27: Small Wooden Block> at [2.00000000e+00 5.55111512e-17 2.00000000e+00].\t\n(Block 4: Powered Wheel - mounted on East face (Face A) of Block 3 at [1,1,0.5]; rotation axis \u27c2 face (\u00b1x), wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +x.) <ID 4: Powered Wheel>\nPosition: [1.5,1. ,0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber"
+  },
+  {
+    "op": "get_machine_summary",
+    "params": {},
+    "result": "Existing Blocks: 69\n\nMachine Summary: Block 1: Default Base Block - 1x1x1 base stone at origin reference (center [0,0,0.5]); foundation for NE Cargo Cart with Yaw Thrusters\n(Block 2: Small Wooden Block - lower frame east mid at [1,0,0.5]; attached to East face (Face A) of Block 1 (Starting Block). Placement per blueprint Step 2.) <ID 2: Small Wooden Block>\nPosition: [1. ,0. ,0.5]\n(Block 3: Small Wooden Block - lower frame NE corner at [1,1,0.5]; attached to North face (Face B) of Block 2 per blueprint Step 3.) <ID 3: Small Wooden Block>\nPosition: [1. ,1. ,0.5]\n(Block 5: Small Wooden Block - lower frame north mid at [0,1,0.5]; attached to West face (Face B) of Block 3 per blueprint Step 5.) <ID 5: Small Wooden Block>\nPosition: [-0. , 1. , 0.5]\n(Block 6: Small Wooden Block - lower frame NW corner at [-1,1,0.5]; attached to West face (Face E) of Block 5 per blueprint Step 6.) <ID 6: Small Wooden Block>\nPosition: [-1. , 1. , 0.5]\n(Block 7: Powered Wheel - mounted on West face (Face E) of Block 6 at [-1,1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north) to match environment behavior and earlier wheel\u2019s readout.) <ID 7: Powered Wheel>\nPosition: [-1.5, 1. , 0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\n(Block 8: Small Wooden Block - lower frame west mid at [-1,0,0.5]; attached to South face (Face B) of Block 6 per blueprint Step 8.) <ID 8: Small Wooden Block>\nPosition: [-1. , 0. , 0.5]\n(Block 9: Small Wooden Block - lower frame SW corner at [-1,-1,0.5]; attached to South face (Face E) of Block 8 per blueprint (Block 9).) <ID 9: Small Wooden Block>\nPosition: [-1. ,-1. , 0.5]\n(Block 10: Powered Wheel - mounted on West face (Face A) of Block 9 at [-1,-1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north).) <ID 10: Powered Wheel>\nPosition: [-1.5,-1. , 0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\n(Block 11: Small Wooden Block - lower frame south mid at [0,-1,0.5]; attached to East face (Face B) of Block 9 per blueprint (Block 11).) <ID 11: Small Wooden Block>\nPosition: [-0. ,-1. , 0.5]\n(Block 12: Small Wooden Block - lower frame SE corner at [1,-1,0.5]; attached to East face (Face E) of Block 11 per blueprint (Block 12).) <ID 12: Small Wooden Block>\nPosition: [ 1. ,-1. , 0.5]\n(Block 13: Powered Wheel - mounted on East face (Face E) of Block 12 at [1,-1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configure \u2018Forward\u2019 to roll +y (north) to match environment behavior; will verify and unify all wheels after installation.) <ID 13: Powered Wheel>\nPosition: [ 1.5,-1. , 0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\n(Block 14: Small Wooden Block - corner post above SE at [1,-1,1.5]; attached to Top face (Face C) of Block 12 per blueprint (Block 14).) <ID 14: Small Wooden Block>\nPosition: [ 1. ,-1. , 1.5]\n(Block 15: Small Wooden Block - inner-corner deck node at [1,-1,2.5]; attached to Top face (Face E) of Block 14 per blueprint (Block 15).) <ID 15: Small Wooden Block>\nPosition: [ 1. ,-1. , 2.5]\n(Block 16: Small Wooden Block - deck at [1,0,2.5]; attached to North face (Face B) of Block 15 per blueprint (Block 16).) <ID 16: Small Wooden Block>\nPosition: [ 1. ,-0. , 2.5]\n(Block 17: Small Wooden Block - deck at [1,1,2.5]; attached to North face (Face E) of Block 16 per blueprint (Block 17).) <ID 17: Small Wooden Block>\nPosition: [1. ,1. ,2.5]\n(Block 18: Small Wooden Block - deck at [0,1,2.5]; attached to West face (Face C) of Block 17 per blueprint (Block 18).) <ID 18: Small Wooden Block>\nPosition: [0. ,1. ,2.5]\n(Block 19: Small Wooden Block - deck at [-1,1,2.5]; attached to West face (Face E) of Block 18 per blueprint (Block 19).) <ID 19: Small Wooden Block>\nPosition: [-1. , 1. , 2.5]\n(Block 20: Small Wooden Block - deck at [-2,1,2.5]; attached to West face (Face E) of Block 19 per blueprint (Block 20).) <ID 20: Small Wooden Block>\nPosition: [-2. , 1. , 2.5]\n(Block 21: Small Wooden Block - deck at [-2,2,2.5]; attached to North face (Face D) of Block 20 per blueprint (Block 21).) <ID 21: Small Wooden Block>\nPosition: [-2. , 2. , 2.5]\n(Block 22: Small Wooden Block - deck at [-1,2,2.5]; attached to East face (Face D) of Block 21 per blueprint (Block 22).) <ID 22: Small Wooden Block>\nPosition: [-1. , 2. , 2.5]\n(Block 23: Small Wooden Block - deck at [0,2,2.5]; attached to East face (Face E) of Block 22 per blueprint (Block 23).) <ID 23: Small Wooden Block>\nPosition: [0. ,2. ,2.5]\n(Block 24: Small Wooden Block - deck at [1,2,2.5]; attached to East face (Face E) of Block 23 per blueprint (Block 24).) <ID 24: Small Wooden Block>\nPosition: [1. ,2. ,2.5]\n(Block 25: Small Wooden Block - deck at [2,2,2.5]; attached to East face (Face E) of Block 24 per blueprint (Block 25).) <ID 25: Small Wooden Block>\nPosition: [2. ,2. ,2.5]\n(Block 26: Small Wooden Block - deck at [2,1,2.5]; attached to South face (Face D) of Block 25 per blueprint (Block 26).) <ID 26: Small Wooden Block>\nPosition: [2. ,1. ,2.5]\n(Block 27: Small Wooden Block - deck at [2,0,2.5]; attached to South face (Face E) of Block 26 per blueprint (Block 27).) <ID 27: Small Wooden Block>\nPosition: [2. ,0. ,2.5]\n(Block 28: Small Wooden Block - deck at [2,-1,2.5]; attached to South face (Face E) of Block 27 per blueprint (Block 28).) <ID 28: Small Wooden Block>\nPosition: [ 2. ,-1. , 2.5]\n(Block 29: Small Wooden Block - deck at [2,-2,2.5]; attached to South face (Face E) of Block 28 per blueprint (Block 29).) <ID 29: Small Wooden Block>\nPosition: [ 2. ,-2. , 2.5]\n(Block 30: Small Wooden Block - deck at [1,-2,2.5]; attached to West face (Face D) of Block 29 per blueprint (Block 30).) <ID 30: Small Wooden Block>\nPosition: [ 1. ,-2. , 2.5]\n(Block 31: Small Wooden Block - deck at [0,-2,2.5]; attached to West face (Face E) of Block 30 per blueprint (Block 31).) <ID 31: Small Wooden Block>\nPosition: [-0. ,-2. , 2.5]\n(Block 32: Small Wooden Block - deck at [-1,-2,2.5]; attached to West face (Face E) of Block 31 per blueprint (Block 32).) <ID 32: Small Wooden Block>\nPosition: [-1. ,-2. , 2.5]\n(Block 33: Small Wooden Block - deck at [-2,-2,2.5]; attached to West face (Face E) of Block 32 per blueprint (Block 33).) <ID 33: Small Wooden Block>\nPosition: [-2. ,-2. , 2.5]\n(Block 34: Small Wooden Block - deck at [-2,-1,2.5]; attached to North face (Face D) of Block 33 per blueprint (Block 34).) <ID 34: Small Wooden Block>\nPosition: [-2. ,-1. , 2.5]\n(Block 35: Small Wooden Block - deck at [-2,0,2.5]; attached to North face (Face E) of Block 34 per blueprint (Block 35).) <ID 35: Small Wooden Block>\nPosition: [-2. ,-0. , 2.5]\n(Block 36: Small Wooden Block - deck at [-1,0,2.5]; attached to East face (Face D) of Block 35 per blueprint (Block 36).) <ID 36: Small Wooden Block>\nPosition: [-1. , 0. , 2.5]\n(Block 37: Small Wooden Block - center deck at [0,0,2.5]; attached to East face (Face E) of Block 36 per blueprint (Block 37).) <ID 37: Small Wooden Block>\nPosition: [-0. , 0. , 2.5]\n(Block 38: Small Wooden Block - center post below deck at [0,0,1.5]; attached to Bottom face (Face B) of Block 37; aligns to top face of Block 1 per blueprint (Block 38).) <ID 38: Small Wooden Block>\nPosition: [-0. , 0. , 1.5]\n(Block 39: Small Wooden Block - deck at [0,-1,2.5]; attached to South face (Face D) of Block 37 per blueprint (Block 39).) <ID 39: Small Wooden Block>\nPosition: [-0. ,-1. , 2.5]\n(Block 40: Small Wooden Block - deck at [-1,-1,2.5]; attached to West face (Face D) of Block 39 per blueprint (Block 40).) <ID 40: Small Wooden Block>\nPosition: [-1. ,-1. , 2.5]\n(Block 41: Small Wooden Block - corner post at [-1,1,1.5]; attached to Top face (Face C) of Block 6 per blueprint (corner post under deck node).) <ID 41: Small Wooden Block>\nPosition: [-1. , 1. , 1.5]\n(Block 42: Small Wooden Block - corner post at [1,1,1.5]; attached to Top face (Face C) of Block 3 per blueprint (Block 42).) <ID 42: Small Wooden Block>\nPosition: [1. ,1. ,1.5]\n(Block 43: Small Wooden Block - corner post at [-1,-1,1.5]; attached to Top face (Face C) of Block 9 per blueprint (Block 43).) <ID 43: Small Wooden Block>\nPosition: [-1. ,-1. , 1.5]\n(Block 44: Small Wooden Block - north wall at [-2,2,3.5]; attached to Top face (Face A) of Block 21 per blueprint (start of North wall).) <ID 44: Small Wooden Block>\nPosition: [-2. , 2. , 3.5]\n(Block 45: Small Wooden Block - north wall at [-1,2,3.5]; attached to East face (Face D) of Block 44 per blueprint (North wall sequence).) <ID 45: Small Wooden Block>\nPosition: [-1. , 2. , 3.5]\n(Block 46: Small Wooden Block - north wall at [0,2,3.5]; attached to East face (Face E) of Block 45 per blueprint (North wall sequence).) <ID 46: Small Wooden Block>\nPosition: [0. ,2. ,3.5]\n(Block 47: Small Wooden Block - north wall at [1,2,3.5]; attached to East face (Face E) of Block 46 per blueprint (North wall sequence).) <ID 47: Small Wooden Block>\nPosition: [1. ,2. ,3.5]\n(Block 48: Small Wooden Block - north wall at [2,2,3.5]; attached to East face (Face E) of Block 47 per blueprint (North wall sequence).) <ID 48: Small Wooden Block>\nPosition: [2. ,2. ,3.5]\n(Block 49: Small Wooden Block - south wall start at [2,-2,3.5]; attached to Top face (Face A) of Block 29 per blueprint (start of South wall).) <ID 49: Small Wooden Block>\nPosition: [ 2. ,-2. , 3.5]\n(Block 50: Small Wooden Block - south wall at [1,-2,3.5]; attached to West face (Face D) of Block 49 per blueprint (South wall sequence).) <ID 50: Small Wooden Block>\nPosition: [ 1. ,-2. , 3.5]\n(Block 51: Small Wooden Block - south wall at [0,-2,3.5]; attached to West face (Face E) of Block 50 per blueprint (South wall sequence).) <ID 51: Small Wooden Block>\nPosition: [ 0. ,-2. , 3.5]\n(Block 52: Small Wooden Block - south wall at [-1,-2,3.5]; attached to West face (Face E) of Block 51 per blueprint (South wall sequence).) <ID 52: Small Wooden Block>\nPosition: [-1. ,-2. , 3.5]\n(Block 53: Small Wooden Block - south wall at [-2,-2,3.5]; attached to West face (Face E) of Block 52 per blueprint (South wall sequence).) <ID 53: Small Wooden Block>\nPosition: [-2. ,-2. , 3.5]\n(Block 54: Small Wooden Block - west wall at [-2,1,3.5]; attached to Top face (Face A) of Block 20 per blueprint (start of West wall segment).) <ID 54: Small Wooden Block>\nPosition: [-2. , 1. , 3.5]\n(Block 55: Small Wooden Block - west wall mid at [-2,0,3.5]; attached to South face (Face C) of Block 54 per blueprint (Block 55).) <ID 55: Small Wooden Block>\nPosition: [-2. , 0. , 3.5]\n(Block 56: Small Wooden Block - west wall at [-2,-1,3.5]; attached to South face (Face E) of Block 55 per blueprint (Block 56).) <ID 56: Small Wooden Block>\nPosition: [-2. ,-1. , 3.5]\n(Block 57: Small Wooden Block - east wall at [2,-1,3.5]; attached to Top face (Face A) of Block 28 per blueprint (Block 57).) <ID 57: Small Wooden Block>\nPosition: [ 2. ,-1. , 3.5]\n(Block 58: Small Wooden Block - east wall at [2,0,3.5]; attached to Top face (Face A) of Block 27 per blueprint (Block 58).) <ID 58: Small Wooden Block>\nPosition: [ 2. ,-0. , 3.5]\n(Block 59: Small Wooden Block - east wall at [2,1,3.5]; attached to Top face (Face A) of Block 26 per blueprint (Block 59).) <ID 59: Small Wooden Block>\nPosition: [2. ,1. ,3.5]\n(Block 60: Water Cannon - north yaw cannon mounted on North outer face (Face B) of Block 46 at [0,2,3.5]; nozzle oriented +x (east) with recoil \u2212x; assigned to control \u2018Yaw CCW\u2019 (hold to fire).) <ID 60: Water Cannon>\nPosition: [0. ,3. ,3.5]\nPointing at <East with -0.0\u00b0 pitch>\nInlet is at [-0.75, 3.00, 3.50], outlet is at [1.00, 3.00, 3.50], sprays towards <East with -0.0\u00b0 pitch>\n(Block 61: Water Cannon - south yaw cannon mounted on South outer face (Face B) of Block 51 at [0,-2,3.5]; target nozzle orientation \u2212x (west) for CCW yaw pair with Block 60; mapped to control \u2018Yaw CCW\u2019 (hold to fire).) <ID 61: Water Cannon>\nPosition: [-0. ,-3. , 3.5]\nPointing at <West with 0.0\u00b0 pitch>\nInlet is at [0.75, -3.00, 3.50], outlet is at [-1.00, -3.00, 3.50], sprays towards <West with 0.0\u00b0 pitch>\n(Block 62: Brace - diagonal NE corner brace connecting Block 3 north face (Face E, ~[1,1.5,0.5]) to Block 25 bottom face (Face B, ~[2,2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 62: Brace>\nConnecting <ID 3: Small Wooden Block> at [1.  1.5 0.5] and <ID 25: Small Wooden Block> at [2. 2. 2.].\t\n(Block 63: Brace - diagonal NW corner brace connecting Block 6 north face (Face A, ~[-1,1.5,0.5]) to Block 21 bottom face (Face B, ~[-2,2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 63: Brace>\nConnecting <ID 6: Small Wooden Block> at [-1.   1.5  0.5] and <ID 21: Small Wooden Block> at [-2.  2.  2.].\t\n(Block 64: Brace - diagonal SE corner brace connecting Block 12 south face (Face A, ~[1,-1.5,0.5]) to Block 29 bottom face (Face B, ~[2,-2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 64: Brace>\nConnecting <ID 12: Small Wooden Block> at [ 1.  -1.5  0.5] and <ID 29: Small Wooden Block> at [ 2. -2.  2.].\t\n(Block 65: Brace - diagonal SW corner brace connecting Block 9 south face (Face E, ~[-1,-1.5,0.5]) to Block 33 bottom face (Face B, ~[-2,-2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 65: Brace>\nConnecting <ID 9: Small Wooden Block> at [-1.  -1.5  0.5] and <ID 33: Small Wooden Block> at [-2. -2.  2.].\t\n(Block 66: Brace - mid-span north brace connecting Block 5 top face (Face C, ~[0,1,1.0]) to Block 23 bottom face (Face B, ~[0,2,2.0]); function: rigid diagonal to stiffen north side.) <ID 66: Brace>\nConnecting <ID 5: Small Wooden Block> at [-1.11022302e-16  1.00000000e+00  1.00000000e+00] and <ID 23: Small Wooden Block> at [9.43689571e-16 2.00000000e+00 2.00000000e+00].\t\n(Block 67: Brace - mid-span south brace connecting Block 11 top face (Face C, ~[0,-1,1.0]) to Block 31 bottom face (Face B, ~[0,-2,2.0]); function: rigid diagonal to stiffen south side.) <ID 67: Brace>\nConnecting <ID 11: Small Wooden Block> at [-8.8817842e-16 -1.0000000e+00  1.0000000e+00] and <ID 31: Small Wooden Block> at [-1.22124533e-15 -2.00000000e+00  2.00000000e+00].\t\n(Block 68: Brace - mid-span west brace connecting Block 8 top face (Face C, ~[-1,0,1.0]) to Block 35 bottom face (Face B, ~[-2,0,2.0]); function: rigid diagonal to stiffen west side.) <ID 68: Brace>\nConnecting <ID 8: Small Wooden Block> at [-1.00000000e+00  3.33066907e-16  1.00000000e+00] and <ID 35: Small Wooden Block> at [-2.00000000e+00 -1.11022302e-16  2.00000000e+00].\t\n(Block 69: Brace - mid-span east brace connecting Block 2 top face (Face C, ~[1,0,1.0]) to Block 27 bottom face (Face B, ~[2,0,2.0]); function: rigid diagonal to stiffen east side.) <ID 69: Brace>\nConnecting <ID 2: Small Wooden Block> at [1.00000000e+00 1.11022302e-16 1.00000000e+00] and <ID 27: Small Wooden Block> at [2.00000000e+00 5.55111512e-17 2.00000000e+00].\t\n(Block 4: Powered Wheel - mounted on East face (Face A) of Block 3 at [1,1,0.5]; rotation axis \u27c2 face (\u00b1x), wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +x.) <ID 4: Powered Wheel>\nPosition: [1.5,1. ,0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\n(The starting block) <ID 1: Starting Block>\nPosition: [0. ,0. ,0.5]"
+  },
+  {
+    "op": "reset",
+    "params": {},
+    "result": "The machine has been reset, please start again."
+  },
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "init_rotation": [
+        0,
+        0,
+        0
+      ],
+      "note": "Block 1: Default Base Block - 1x1x1 base stone at origin reference (center [0,0,0.5]); foundation for NE Cargo Cart with Yaw Thrusters"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0. ,0. ,0.5]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0., 0., 1.], Facing towards <straight up>\nFace label: D, Face center: [0., 0., 0.], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Block 2: Small Wooden Block - lower frame east mid at [1,0,0.5]; attached to East face (Face A) of Block 1 (Starting Block). Placement per blueprint Step 2."
+    },
+    "result": "You have successfully added <ID 2: Small Wooden Block>.\nExisting Blocks: 2\n(Block 2: Small Wooden Block - lower frame east mid at [1,0,0.5]; attached to East face (Face A) of Block 1 (Starting Block). Placement per blueprint Step 2.) <ID 2: Small Wooden Block>\nPosition: [1. ,0. ,0.5]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -0.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [1. , 0.5, 0.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [1., 0., 1.], Facing towards <straight up>\nFace label: D, Face center: [1., 0., 0.], Facing towards <straight down>\nFace label: E, Face center: [1.5, 0. , 0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Block 3: Small Wooden Block - lower frame NE corner at [1,1,0.5]; attached to North face (Face B) of Block 2 per blueprint Step 3."
+    },
+    "result": "You have successfully added <ID 3: Small Wooden Block>.\nExisting Blocks: 3\n(Block 3: Small Wooden Block - lower frame NE corner at [1,1,0.5]; attached to North face (Face B) of Block 2 per blueprint Step 3.) <ID 3: Small Wooden Block>\nPosition: [1. ,1. ,0.5]\nAttachable Faces:\nFace label: A, Face center: [1.5, 1. , 0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 1. , 0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1., 1., 1.], Facing towards <straight up>\nFace label: D, Face center: [1., 1., 0.], Facing towards <straight down>\nFace label: E, Face center: [1. , 1.5, 0.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "A",
+      "new_block": "Powered Wheel",
+      "note": "Block 4: Powered Wheel - mounted on East face (Face A) of Block 3 at [1,1,0.5]; rotation axis \u27c2 face (\u00b1x), wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +x."
+    },
+    "result": "You have successfully added <ID 4: Powered Wheel>.\nExisting Blocks: 4\n(Block 4: Powered Wheel - mounted on East face (Face A) of Block 3 at [1,1,0.5]; rotation axis \u27c2 face (\u00b1x), wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +x.) <ID 4: Powered Wheel>\nPosition: [1.5,1. ,0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [2. , 1. , 0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Block 5: Small Wooden Block - lower frame north mid at [0,1,0.5]; attached to West face (Face B) of Block 3 per blueprint Step 5."
+    },
+    "result": "You have successfully added <ID 5: Small Wooden Block>.\nExisting Blocks: 5\n(Block 5: Small Wooden Block - lower frame north mid at [0,1,0.5]; attached to West face (Face B) of Block 3 per blueprint Step 5.) <ID 5: Small Wooden Block>\nPosition: [-0. , 1. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [0. , 1.5, 0.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0. ,  0.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-0.,  1.,  1.], Facing towards <straight up>\nFace label: D, Face center: [-0.,  1.,  0.], Facing towards <straight down>\nFace label: E, Face center: [-0.5,  1. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 5,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 6: Small Wooden Block - lower frame NW corner at [-1,1,0.5]; attached to West face (Face E) of Block 5 per blueprint Step 6."
+    },
+    "result": "You have successfully added <ID 6: Small Wooden Block>.\nExisting Blocks: 6\n(Block 6: Small Wooden Block - lower frame NW corner at [-1,1,0.5]; attached to West face (Face E) of Block 5 per blueprint Step 6.) <ID 6: Small Wooden Block>\nPosition: [-1. , 1. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [-1. ,  1.5,  0.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. ,  0.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1.,  1.,  1.], Facing towards <straight up>\nFace label: D, Face center: [-1.,  1.,  0.], Facing towards <straight down>\nFace label: E, Face center: [-1.5,  1. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 6,
+      "face": "E",
+      "new_block": "Powered Wheel",
+      "note": "Block 7: Powered Wheel - mounted on West face (Face E) of Block 6 at [-1,1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north) to match environment behavior and earlier wheel\u2019s readout."
+    },
+    "result": "You have successfully added <ID 7: Powered Wheel>.\nExisting Blocks: 7\n(Block 7: Powered Wheel - mounted on West face (Face E) of Block 6 at [-1,1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north) to match environment behavior and earlier wheel\u2019s readout.) <ID 7: Powered Wheel>\nPosition: [-1.5, 1. , 0.5]\nRolling towards <South with -0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [-2. ,  1. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 6,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Block 8: Small Wooden Block - lower frame west mid at [-1,0,0.5]; attached to South face (Face B) of Block 6 per blueprint Step 8."
+    },
+    "result": "You have successfully added <ID 8: Small Wooden Block>.\nExisting Blocks: 8\n(Block 8: Small Wooden Block - lower frame west mid at [-1,0,0.5]; attached to South face (Face B) of Block 6 per blueprint Step 8.) <ID 8: Small Wooden Block>\nPosition: [-1. , 0. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  0. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1.,  0.,  1.], Facing towards <straight up>\nFace label: D, Face center: [-1.,  0.,  0.], Facing towards <straight down>\nFace label: E, Face center: [-1. , -0.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 8,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 9: Small Wooden Block - lower frame SW corner at [-1,-1,0.5]; attached to South face (Face E) of Block 8 per blueprint (Block 9)."
+    },
+    "result": "You have successfully added <ID 9: Small Wooden Block>.\nExisting Blocks: 9\n(Block 9: Small Wooden Block - lower frame SW corner at [-1,-1,0.5]; attached to South face (Face E) of Block 8 per blueprint (Block 9).) <ID 9: Small Wooden Block>\nPosition: [-1. ,-1. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -1. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -1. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1., -1.,  1.], Facing towards <straight up>\nFace label: D, Face center: [-1., -1.,  0.], Facing towards <straight down>\nFace label: E, Face center: [-1. , -1.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 9,
+      "face": "A",
+      "new_block": "Powered Wheel",
+      "note": "Block 10: Powered Wheel - mounted on West face (Face A) of Block 9 at [-1,-1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north)."
+    },
+    "result": "You have successfully added <ID 10: Powered Wheel>.\nExisting Blocks: 10\n(Block 10: Powered Wheel - mounted on West face (Face A) of Block 9 at [-1,-1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north).) <ID 10: Powered Wheel>\nPosition: [-1.5,-1. , 0.5]\nRolling towards <South with -0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [-2. , -1. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 9,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Block 11: Small Wooden Block - lower frame south mid at [0,-1,0.5]; attached to East face (Face B) of Block 9 per blueprint (Block 11)."
+    },
+    "result": "You have successfully added <ID 11: Small Wooden Block>.\nExisting Blocks: 11\n(Block 11: Small Wooden Block - lower frame south mid at [0,-1,0.5]; attached to East face (Face B) of Block 9 per blueprint (Block 11).) <ID 11: Small Wooden Block>\nPosition: [-0. ,-1. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [-0. , -1.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0. , -0.5,  0.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [-0., -1.,  1.], Facing towards <straight up>\nFace label: D, Face center: [-0., -1.,  0.], Facing towards <straight down>\nFace label: E, Face center: [ 0.5, -1. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 11,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 12: Small Wooden Block - lower frame SE corner at [1,-1,0.5]; attached to East face (Face E) of Block 11 per blueprint (Block 12)."
+    },
+    "result": "You have successfully added <ID 12: Small Wooden Block>.\nExisting Blocks: 12\n(Block 12: Small Wooden Block - lower frame SE corner at [1,-1,0.5]; attached to East face (Face E) of Block 11 per blueprint (Block 12).) <ID 12: Small Wooden Block>\nPosition: [ 1. ,-1. , 0.5]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -1.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 1. , -0.5,  0.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1., -1.,  1.], Facing towards <straight up>\nFace label: D, Face center: [ 1., -1.,  0.], Facing towards <straight down>\nFace label: E, Face center: [ 1.5, -1. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 12,
+      "face": "E",
+      "new_block": "Powered Wheel",
+      "note": "Block 13: Powered Wheel - mounted on East face (Face E) of Block 12 at [1,-1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configure \u2018Forward\u2019 to roll +y (north) to match environment behavior; will verify and unify all wheels after installation."
+    },
+    "result": "You have successfully added <ID 13: Powered Wheel>.\nExisting Blocks: 13\n(Block 13: Powered Wheel - mounted on East face (Face E) of Block 12 at [1,-1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configure \u2018Forward\u2019 to roll +y (north) to match environment behavior; will verify and unify all wheels after installation.) <ID 13: Powered Wheel>\nPosition: [ 1.5,-1. , 0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [ 2. , -1. ,  0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 12,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Block 14: Small Wooden Block - corner post above SE at [1,-1,1.5]; attached to Top face (Face C) of Block 12 per blueprint (Block 14)."
+    },
+    "result": "You have successfully added <ID 14: Small Wooden Block>.\nExisting Blocks: 14\n(Block 14: Small Wooden Block - corner post above SE at [1,-1,1.5]; attached to Top face (Face C) of Block 12 per blueprint (Block 14).) <ID 14: Small Wooden Block>\nPosition: [ 1. ,-1. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -1.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 1. , -0.5,  1.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0.5, -1. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -1. ,  1.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [ 1., -1.,  2.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 14,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 15: Small Wooden Block - inner-corner deck node at [1,-1,2.5]; attached to Top face (Face E) of Block 14 per blueprint (Block 15)."
+    },
+    "result": "You have successfully added <ID 15: Small Wooden Block>.\nExisting Blocks: 15\n(Block 15: Small Wooden Block - inner-corner deck node at [1,-1,2.5]; attached to Top face (Face E) of Block 14 per blueprint (Block 15).) <ID 15: Small Wooden Block>\nPosition: [ 1. ,-1. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -1.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 1. , -0.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0.5, -1. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -1. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [ 1., -1.,  3.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 15,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Block 16: Small Wooden Block - deck at [1,0,2.5]; attached to North face (Face B) of Block 15 per blueprint (Block 16)."
+    },
+    "result": "You have successfully added <ID 16: Small Wooden Block>.\nExisting Blocks: 16\n(Block 16: Small Wooden Block - deck at [1,0,2.5]; attached to North face (Face B) of Block 15 per blueprint (Block 16).) <ID 16: Small Wooden Block>\nPosition: [ 1. ,-0. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [ 1., -0.,  3.], Facing towards <straight up>\nFace label: B, Face center: [ 1., -0.,  2.], Facing towards <straight down>\nFace label: C, Face center: [ 0.5, -0. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -0. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [1. , 0.5, 2.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 16,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 17: Small Wooden Block - deck at [1,1,2.5]; attached to North face (Face E) of Block 16 per blueprint (Block 17)."
+    },
+    "result": "You have successfully added <ID 17: Small Wooden Block>.\nExisting Blocks: 17\n(Block 17: Small Wooden Block - deck at [1,1,2.5]; attached to North face (Face E) of Block 16 per blueprint (Block 17).) <ID 17: Small Wooden Block>\nPosition: [1. ,1. ,2.5]\nAttachable Faces:\nFace label: A, Face center: [1., 1., 3.], Facing towards <straight up>\nFace label: B, Face center: [1., 1., 2.], Facing towards <straight down>\nFace label: C, Face center: [0.5, 1. , 2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [1.5, 1. , 2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [1. , 1.5, 2.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 17,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Block 18: Small Wooden Block - deck at [0,1,2.5]; attached to West face (Face C) of Block 17 per blueprint (Block 18)."
+    },
+    "result": "You have successfully added <ID 18: Small Wooden Block>.\nExisting Blocks: 18\n(Block 18: Small Wooden Block - deck at [0,1,2.5]; attached to West face (Face C) of Block 17 per blueprint (Block 18).) <ID 18: Small Wooden Block>\nPosition: [0. ,1. ,2.5]\nAttachable Faces:\nFace label: A, Face center: [0., 1., 3.], Facing towards <straight up>\nFace label: B, Face center: [0., 1., 2.], Facing towards <straight down>\nFace label: C, Face center: [0. , 0.5, 2.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 1.5, 2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-0.5,  1. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 18,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 19: Small Wooden Block - deck at [-1,1,2.5]; attached to West face (Face E) of Block 18 per blueprint (Block 19)."
+    },
+    "result": "You have successfully added <ID 19: Small Wooden Block>.\nExisting Blocks: 19\n(Block 19: Small Wooden Block - deck at [-1,1,2.5]; attached to West face (Face E) of Block 18 per blueprint (Block 19).) <ID 19: Small Wooden Block>\nPosition: [-1. , 1. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-1.,  1.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-1.,  1.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-1. ,  0.5,  2.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: D, Face center: [-1. ,  1.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1.5,  1. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 19,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 20: Small Wooden Block - deck at [-2,1,2.5]; attached to West face (Face E) of Block 19 per blueprint (Block 20)."
+    },
+    "result": "You have successfully added <ID 20: Small Wooden Block>.\nExisting Blocks: 20\n(Block 20: Small Wooden Block - deck at [-2,1,2.5]; attached to West face (Face E) of Block 19 per blueprint (Block 20).) <ID 20: Small Wooden Block>\nPosition: [-2. , 1. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-2.,  1.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-2.,  1.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-2. ,  0.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2. ,  1.5,  2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [-2.5,  1. ,  2.5], Facing towards <West with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 20,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 21: Small Wooden Block - deck at [-2,2,2.5]; attached to North face (Face D) of Block 20 per blueprint (Block 21)."
+    },
+    "result": "You have successfully added <ID 21: Small Wooden Block>.\nExisting Blocks: 21\n(Block 21: Small Wooden Block - deck at [-2,2,2.5]; attached to North face (Face D) of Block 20 per blueprint (Block 21).) <ID 21: Small Wooden Block>\nPosition: [-2. , 2. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-2.,  2.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-2.,  2.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-2.5,  2. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5,  2. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [-2. ,  2.5,  2.5], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 21,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 22: Small Wooden Block - deck at [-1,2,2.5]; attached to East face (Face D) of Block 21 per blueprint (Block 22)."
+    },
+    "result": "You have successfully added <ID 22: Small Wooden Block>.\nExisting Blocks: 22\n(Block 22: Small Wooden Block - deck at [-1,2,2.5]; attached to East face (Face D) of Block 21 per blueprint (Block 22).) <ID 22: Small Wooden Block>\nPosition: [-1. , 2. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-1.,  2.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-1.,  2.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-1. ,  2.5,  2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [-1. ,  1.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [-0.5,  2. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 22,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 23: Small Wooden Block - deck at [0,2,2.5]; attached to East face (Face E) of Block 22 per blueprint (Block 23)."
+    },
+    "result": "You have successfully added <ID 23: Small Wooden Block>.\nExisting Blocks: 23\n(Block 23: Small Wooden Block - deck at [0,2,2.5]; attached to East face (Face E) of Block 22 per blueprint (Block 23).) <ID 23: Small Wooden Block>\nPosition: [0. ,2. ,2.5]\nAttachable Faces:\nFace label: A, Face center: [0., 2., 3.], Facing towards <straight up>\nFace label: B, Face center: [0., 2., 2.], Facing towards <straight down>\nFace label: C, Face center: [0. , 2.5, 2.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: D, Face center: [0. , 1.5, 2.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: E, Face center: [0.5, 2. , 2.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 23,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 24: Small Wooden Block - deck at [1,2,2.5]; attached to East face (Face E) of Block 23 per blueprint (Block 24)."
+    },
+    "result": "You have successfully added <ID 24: Small Wooden Block>.\nExisting Blocks: 24\n(Block 24: Small Wooden Block - deck at [1,2,2.5]; attached to East face (Face E) of Block 23 per blueprint (Block 24).) <ID 24: Small Wooden Block>\nPosition: [1. ,2. ,2.5]\nAttachable Faces:\nFace label: A, Face center: [1., 2., 3.], Facing towards <straight up>\nFace label: B, Face center: [1., 2., 2.], Facing towards <straight down>\nFace label: C, Face center: [1. , 2.5, 2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [1. , 1.5, 2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [1.5, 2. , 2.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 24,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 25: Small Wooden Block - deck at [2,2,2.5]; attached to East face (Face E) of Block 24 per blueprint (Block 25)."
+    },
+    "result": "You have successfully added <ID 25: Small Wooden Block>.\nExisting Blocks: 25\n(Block 25: Small Wooden Block - deck at [2,2,2.5]; attached to East face (Face E) of Block 24 per blueprint (Block 25).) <ID 25: Small Wooden Block>\nPosition: [2. ,2. ,2.5]\nAttachable Faces:\nFace label: A, Face center: [2., 2., 3.], Facing towards <straight up>\nFace label: B, Face center: [2., 2., 2.], Facing towards <straight down>\nFace label: C, Face center: [2. , 2.5, 2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [2. , 1.5, 2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [2.5, 2. , 2.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 25,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 26: Small Wooden Block - deck at [2,1,2.5]; attached to South face (Face D) of Block 25 per blueprint (Block 26)."
+    },
+    "result": "You have successfully added <ID 26: Small Wooden Block>.\nExisting Blocks: 26\n(Block 26: Small Wooden Block - deck at [2,1,2.5]; attached to South face (Face D) of Block 25 per blueprint (Block 26).) <ID 26: Small Wooden Block>\nPosition: [2. ,1. ,2.5]\nAttachable Faces:\nFace label: A, Face center: [2., 1., 3.], Facing towards <straight up>\nFace label: B, Face center: [2., 1., 2.], Facing towards <straight down>\nFace label: C, Face center: [2.5, 1. , 2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [1.5, 1. , 2.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: E, Face center: [2. , 0.5, 2.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 26,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 27: Small Wooden Block - deck at [2,0,2.5]; attached to South face (Face E) of Block 26 per blueprint (Block 27)."
+    },
+    "result": "You have successfully added <ID 27: Small Wooden Block>.\nExisting Blocks: 27\n(Block 27: Small Wooden Block - deck at [2,0,2.5]; attached to South face (Face E) of Block 26 per blueprint (Block 27).) <ID 27: Small Wooden Block>\nPosition: [ 2. ,-0. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [ 2., -0.,  3.], Facing towards <straight up>\nFace label: B, Face center: [ 2., -0.,  2.], Facing towards <straight down>\nFace label: C, Face center: [ 2.5, -0. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -0. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2. , -0.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 27,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 28: Small Wooden Block - deck at [2,-1,2.5]; attached to South face (Face E) of Block 27 per blueprint (Block 28)."
+    },
+    "result": "You have successfully added <ID 28: Small Wooden Block>.\nExisting Blocks: 28\n(Block 28: Small Wooden Block - deck at [2,-1,2.5]; attached to South face (Face E) of Block 27 per blueprint (Block 28).) <ID 28: Small Wooden Block>\nPosition: [ 2. ,-1. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [ 2., -1.,  3.], Facing towards <straight up>\nFace label: B, Face center: [ 2., -1.,  2.], Facing towards <straight down>\nFace label: C, Face center: [ 2.5, -1. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -1. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2. , -1.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 28,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 29: Small Wooden Block - deck at [2,-2,2.5]; attached to South face (Face E) of Block 28 per blueprint (Block 29)."
+    },
+    "result": "You have successfully added <ID 29: Small Wooden Block>.\nExisting Blocks: 29\n(Block 29: Small Wooden Block - deck at [2,-2,2.5]; attached to South face (Face E) of Block 28 per blueprint (Block 29).) <ID 29: Small Wooden Block>\nPosition: [ 2. ,-2. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [ 2., -2.,  3.], Facing towards <straight up>\nFace label: B, Face center: [ 2., -2.,  2.], Facing towards <straight down>\nFace label: C, Face center: [ 2.5, -2. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -2. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2. , -2.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 29,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 30: Small Wooden Block - deck at [1,-2,2.5]; attached to West face (Face D) of Block 29 per blueprint (Block 30)."
+    },
+    "result": "You have successfully added <ID 30: Small Wooden Block>.\nExisting Blocks: 30\n(Block 30: Small Wooden Block - deck at [1,-2,2.5]; attached to West face (Face D) of Block 29 per blueprint (Block 30).) <ID 30: Small Wooden Block>\nPosition: [ 1. ,-2. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [ 1., -2.,  3.], Facing towards <straight up>\nFace label: B, Face center: [ 1., -2.,  2.], Facing towards <straight down>\nFace label: C, Face center: [ 1. , -2.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 1. , -1.5,  2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [ 0.5, -2. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 30,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 31: Small Wooden Block - deck at [0,-2,2.5]; attached to West face (Face E) of Block 30 per blueprint (Block 31)."
+    },
+    "result": "You have successfully added <ID 31: Small Wooden Block>.\nExisting Blocks: 31\n(Block 31: Small Wooden Block - deck at [0,-2,2.5]; attached to West face (Face E) of Block 30 per blueprint (Block 31).) <ID 31: Small Wooden Block>\nPosition: [-0. ,-2. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-0., -2.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-0., -2.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-0. , -2.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-0. , -1.5,  2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [-0.5, -2. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 31,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 32: Small Wooden Block - deck at [-1,-2,2.5]; attached to West face (Face E) of Block 31 per blueprint (Block 32)."
+    },
+    "result": "You have successfully added <ID 32: Small Wooden Block>.\nExisting Blocks: 32\n(Block 32: Small Wooden Block - deck at [-1,-2,2.5]; attached to West face (Face E) of Block 31 per blueprint (Block 32).) <ID 32: Small Wooden Block>\nPosition: [-1. ,-2. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-1., -2.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-1., -2.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-1. , -2.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1. , -1.5,  2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [-1.5, -2. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 32,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 33: Small Wooden Block - deck at [-2,-2,2.5]; attached to West face (Face E) of Block 32 per blueprint (Block 33)."
+    },
+    "result": "You have successfully added <ID 33: Small Wooden Block>.\nExisting Blocks: 33\n(Block 33: Small Wooden Block - deck at [-2,-2,2.5]; attached to West face (Face E) of Block 32 per blueprint (Block 33).) <ID 33: Small Wooden Block>\nPosition: [-2. ,-2. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-2., -2.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-2., -2.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-2. , -2.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2. , -1.5,  2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [-2.5, -2. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 33,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 34: Small Wooden Block - deck at [-2,-1,2.5]; attached to North face (Face D) of Block 33 per blueprint (Block 34)."
+    },
+    "result": "You have successfully added <ID 34: Small Wooden Block>.\nExisting Blocks: 34\n(Block 34: Small Wooden Block - deck at [-2,-1,2.5]; attached to North face (Face D) of Block 33 per blueprint (Block 34).) <ID 34: Small Wooden Block>\nPosition: [-2. ,-1. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-2., -1.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-2., -1.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-2.5, -1. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5, -1. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [-2. , -0.5,  2.5], Facing towards <North with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 34,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 35: Small Wooden Block - deck at [-2,0,2.5]; attached to North face (Face E) of Block 34 per blueprint (Block 35)."
+    },
+    "result": "You have successfully added <ID 35: Small Wooden Block>.\nExisting Blocks: 35\n(Block 35: Small Wooden Block - deck at [-2,0,2.5]; attached to North face (Face E) of Block 34 per blueprint (Block 35).) <ID 35: Small Wooden Block>\nPosition: [-2. , 0. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-2.,  0.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-2.,  0.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-2.5,  0. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5,  0. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [-2. ,  0.5,  2.5], Facing towards <North with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 35,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 36: Small Wooden Block - deck at [-1,0,2.5]; attached to East face (Face D) of Block 35 per blueprint (Block 36)."
+    },
+    "result": "You have successfully added <ID 36: Small Wooden Block>.\nExisting Blocks: 36\n(Block 36: Small Wooden Block - deck at [-1,0,2.5]; attached to East face (Face D) of Block 35 per blueprint (Block 36).) <ID 36: Small Wooden Block>\nPosition: [-1. , 0. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-1.,  0.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-1.,  0.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-1. ,  0.5,  2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [-1. , -0.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [-0.5,  0. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 36,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 37: Small Wooden Block - center deck at [0,0,2.5]; attached to East face (Face E) of Block 36 per blueprint (Block 37)."
+    },
+    "result": "You have successfully added <ID 37: Small Wooden Block>.\nExisting Blocks: 37\n(Block 37: Small Wooden Block - center deck at [0,0,2.5]; attached to East face (Face E) of Block 36 per blueprint (Block 37).) <ID 37: Small Wooden Block>\nPosition: [-0. , 0. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [0., 0., 3.], Facing towards <straight up>\nFace label: B, Face center: [-0.,  0.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-0. ,  0.5,  2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [-0. , -0.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [0.5, 0. , 2.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 37,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Block 38: Small Wooden Block - center post below deck at [0,0,1.5]; attached to Bottom face (Face B) of Block 37; aligns to top face of Block 1 per blueprint (Block 38)."
+    },
+    "result": "You have successfully added <ID 38: Small Wooden Block>.\nExisting Blocks: 38\n(Block 38: Small Wooden Block - center post below deck at [0,0,1.5]; attached to Bottom face (Face B) of Block 37; aligns to top face of Block 1 per blueprint (Block 38).) <ID 38: Small Wooden Block>\nPosition: [-0. , 0. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -0. ,  1.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-0. ,  0.5,  1.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [-0. , -0.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [-0., -0.,  1.], Facing towards <straight down>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 37,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 39: Small Wooden Block - deck at [0,-1,2.5]; attached to South face (Face D) of Block 37 per blueprint (Block 39)."
+    },
+    "result": "You have successfully added <ID 39: Small Wooden Block>.\nExisting Blocks: 39\n(Block 39: Small Wooden Block - deck at [0,-1,2.5]; attached to South face (Face D) of Block 37 per blueprint (Block 39).) <ID 39: Small Wooden Block>\nPosition: [-0. ,-1. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-0., -1.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-0., -1.,  2.], Facing towards <straight down>\nFace label: C, Face center: [ 0.5, -1. ,  2.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [-0.5, -1. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [-0. , -1.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 39,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 40: Small Wooden Block - deck at [-1,-1,2.5]; attached to West face (Face D) of Block 39 per blueprint (Block 40)."
+    },
+    "result": "You have successfully added <ID 40: Small Wooden Block>.\nExisting Blocks: 40\n(Block 40: Small Wooden Block - deck at [-1,-1,2.5]; attached to West face (Face D) of Block 39 per blueprint (Block 40).) <ID 40: Small Wooden Block>\nPosition: [-1. ,-1. , 2.5]\nAttachable Faces:\nFace label: A, Face center: [-1., -1.,  3.], Facing towards <straight up>\nFace label: B, Face center: [-1., -1.,  2.], Facing towards <straight down>\nFace label: C, Face center: [-1. , -1.5,  2.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1. , -0.5,  2.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: E, Face center: [-1.5, -1. ,  2.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 6,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Block 41: Small Wooden Block - corner post at [-1,1,1.5]; attached to Top face (Face C) of Block 6 per blueprint (corner post under deck node)."
+    },
+    "result": "You have successfully added <ID 41: Small Wooden Block>.\nExisting Blocks: 41\n(Block 41: Small Wooden Block - corner post at [-1,1,1.5]; attached to Top face (Face C) of Block 6 per blueprint (corner post under deck node).) <ID 41: Small Wooden Block>\nPosition: [-1. , 1. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [-1. ,  1.5,  1.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. ,  0.5,  1.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [-0.5,  1. ,  1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5,  1. ,  1.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: E, Face center: [-1.,  1.,  2.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Block 42: Small Wooden Block - corner post at [1,1,1.5]; attached to Top face (Face C) of Block 3 per blueprint (Block 42)."
+    },
+    "result": "You have successfully added <ID 42: Small Wooden Block>.\nExisting Blocks: 42\n(Block 42: Small Wooden Block - corner post at [1,1,1.5]; attached to Top face (Face C) of Block 3 per blueprint (Block 42).) <ID 42: Small Wooden Block>\nPosition: [1. ,1. ,1.5]\nAttachable Faces:\nFace label: A, Face center: [1.5, 1. , 1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 1. , 1.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [1. , 0.5, 1.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [1. , 1.5, 1.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [1., 1., 2.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 9,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Block 43: Small Wooden Block - corner post at [-1,-1,1.5]; attached to Top face (Face C) of Block 9 per blueprint (Block 43)."
+    },
+    "result": "You have successfully added <ID 43: Small Wooden Block>.\nExisting Blocks: 43\n(Block 43: Small Wooden Block - corner post at [-1,-1,1.5]; attached to Top face (Face C) of Block 9 per blueprint (Block 43).) <ID 43: Small Wooden Block>\nPosition: [-1. ,-1. , 1.5]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -1. ,  1.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -1. ,  1.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -0.5,  1.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1. , -1.5,  1.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1., -1.,  2.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 21,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Block 44: Small Wooden Block - north wall at [-2,2,3.5]; attached to Top face (Face A) of Block 21 per blueprint (start of North wall)."
+    },
+    "result": "You have successfully added <ID 44: Small Wooden Block>.\nExisting Blocks: 44\n(Block 44: Small Wooden Block - north wall at [-2,2,3.5]; attached to Top face (Face A) of Block 21 per blueprint (start of North wall).) <ID 44: Small Wooden Block>\nPosition: [-2. , 2. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [-2. ,  1.5,  3.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. ,  2.5,  3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2.5,  2. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5,  2. ,  3.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [-2.,  2.,  4.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 44,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 45: Small Wooden Block - north wall at [-1,2,3.5]; attached to East face (Face D) of Block 44 per blueprint (North wall sequence)."
+    },
+    "result": "You have successfully added <ID 45: Small Wooden Block>.\nExisting Blocks: 45\n(Block 45: Small Wooden Block - north wall at [-1,2,3.5]; attached to East face (Face D) of Block 44 per blueprint (North wall sequence).) <ID 45: Small Wooden Block>\nPosition: [-1. , 2. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [-1. ,  1.5,  3.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. ,  2.5,  3.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: C, Face center: [-1.,  2.,  4.], Facing towards <straight up>\nFace label: D, Face center: [-1.,  2.,  3.], Facing towards <straight down>\nFace label: E, Face center: [-0.5,  2. ,  3.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 45,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 46: Small Wooden Block - north wall at [0,2,3.5]; attached to East face (Face E) of Block 45 per blueprint (North wall sequence)."
+    },
+    "result": "You have successfully added <ID 46: Small Wooden Block>.\nExisting Blocks: 46\n(Block 46: Small Wooden Block - north wall at [0,2,3.5]; attached to East face (Face E) of Block 45 per blueprint (North wall sequence).) <ID 46: Small Wooden Block>\nPosition: [0. ,2. ,3.5]\nAttachable Faces:\nFace label: A, Face center: [0. , 1.5, 3.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [0. , 2.5, 3.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: C, Face center: [0., 2., 4.], Facing towards <straight up>\nFace label: D, Face center: [0., 2., 3.], Facing towards <straight down>\nFace label: E, Face center: [0.5, 2. , 3.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 46,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 47: Small Wooden Block - north wall at [1,2,3.5]; attached to East face (Face E) of Block 46 per blueprint (North wall sequence)."
+    },
+    "result": "You have successfully added <ID 47: Small Wooden Block>.\nExisting Blocks: 47\n(Block 47: Small Wooden Block - north wall at [1,2,3.5]; attached to East face (Face E) of Block 46 per blueprint (North wall sequence).) <ID 47: Small Wooden Block>\nPosition: [1. ,2. ,3.5]\nAttachable Faces:\nFace label: A, Face center: [1. , 1.5, 3.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [1. , 2.5, 3.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: C, Face center: [1., 2., 4.], Facing towards <straight up>\nFace label: D, Face center: [1., 2., 3.], Facing towards <straight down>\nFace label: E, Face center: [1.5, 2. , 3.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 47,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 48: Small Wooden Block - north wall at [2,2,3.5]; attached to East face (Face E) of Block 47 per blueprint (North wall sequence)."
+    },
+    "result": "You have successfully added <ID 48: Small Wooden Block>.\nExisting Blocks: 48\n(Block 48: Small Wooden Block - north wall at [2,2,3.5]; attached to East face (Face E) of Block 47 per blueprint (North wall sequence).) <ID 48: Small Wooden Block>\nPosition: [2. ,2. ,3.5]\nAttachable Faces:\nFace label: A, Face center: [2. , 1.5, 3.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [2. , 2.5, 3.5], Facing towards <North with -0.0\u00b0 pitch>\nFace label: C, Face center: [2., 2., 4.], Facing towards <straight up>\nFace label: D, Face center: [2., 2., 3.], Facing towards <straight down>\nFace label: E, Face center: [2.5, 2. , 3.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 29,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Block 49: Small Wooden Block - south wall start at [2,-2,3.5]; attached to Top face (Face A) of Block 29 per blueprint (start of South wall)."
+    },
+    "result": "You have successfully added <ID 49: Small Wooden Block>.\nExisting Blocks: 49\n(Block 49: Small Wooden Block - south wall start at [2,-2,3.5]; attached to Top face (Face A) of Block 29 per blueprint (start of South wall).) <ID 49: Small Wooden Block>\nPosition: [ 2. ,-2. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -1.5,  3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2. , -2.5,  3.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2.5, -2. ,  3.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -2. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2., -2.,  4.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 49,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Block 50: Small Wooden Block - south wall at [1,-2,3.5]; attached to West face (Face D) of Block 49 per blueprint (South wall sequence)."
+    },
+    "result": "You have successfully added <ID 50: Small Wooden Block>.\nExisting Blocks: 50\n(Block 50: Small Wooden Block - south wall at [1,-2,3.5]; attached to West face (Face D) of Block 49 per blueprint (South wall sequence).) <ID 50: Small Wooden Block>\nPosition: [ 1. ,-2. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -1.5,  3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 1. , -2.5,  3.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [ 1., -2.,  4.], Facing towards <straight up>\nFace label: D, Face center: [ 1., -2.,  3.], Facing towards <straight down>\nFace label: E, Face center: [ 0.5, -2. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 50,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 51: Small Wooden Block - south wall at [0,-2,3.5]; attached to West face (Face E) of Block 50 per blueprint (South wall sequence)."
+    },
+    "result": "You have successfully added <ID 51: Small Wooden Block>.\nExisting Blocks: 51\n(Block 51: Small Wooden Block - south wall at [0,-2,3.5]; attached to West face (Face E) of Block 50 per blueprint (South wall sequence).) <ID 51: Small Wooden Block>\nPosition: [-0. ,-2. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [-0. , -1.5,  3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0. , -2.5,  3.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [-0., -2.,  4.], Facing towards <straight up>\nFace label: D, Face center: [-0., -2.,  3.], Facing towards <straight down>\nFace label: E, Face center: [-0.5, -2. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 51,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 52: Small Wooden Block - south wall at [-1,-2,3.5]; attached to West face (Face E) of Block 51 per blueprint (South wall sequence)."
+    },
+    "result": "You have successfully added <ID 52: Small Wooden Block>.\nExisting Blocks: 52\n(Block 52: Small Wooden Block - south wall at [-1,-2,3.5]; attached to West face (Face E) of Block 51 per blueprint (South wall sequence).) <ID 52: Small Wooden Block>\nPosition: [-1. ,-2. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [-1. , -1.5,  3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -2.5,  3.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [-1., -2.,  4.], Facing towards <straight up>\nFace label: D, Face center: [-1., -2.,  3.], Facing towards <straight down>\nFace label: E, Face center: [-1.5, -2. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 52,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 53: Small Wooden Block - south wall at [-2,-2,3.5]; attached to West face (Face E) of Block 52 per blueprint (South wall sequence)."
+    },
+    "result": "You have successfully added <ID 53: Small Wooden Block>.\nExisting Blocks: 53\n(Block 53: Small Wooden Block - south wall at [-2,-2,3.5]; attached to West face (Face E) of Block 52 per blueprint (South wall sequence).) <ID 53: Small Wooden Block>\nPosition: [-2. ,-2. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [-2. , -1.5,  3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. , -2.5,  3.5], Facing towards <South with -0.0\u00b0 pitch>\nFace label: C, Face center: [-2., -2.,  4.], Facing towards <straight up>\nFace label: D, Face center: [-2., -2.,  3.], Facing towards <straight down>\nFace label: E, Face center: [-2.5, -2. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 20,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Block 54: Small Wooden Block - west wall at [-2,1,3.5]; attached to Top face (Face A) of Block 20 per blueprint (start of West wall segment)."
+    },
+    "result": "You have successfully added <ID 54: Small Wooden Block>.\nExisting Blocks: 54\n(Block 54: Small Wooden Block - west wall at [-2,1,3.5]; attached to Top face (Face A) of Block 20 per blueprint (start of West wall segment).) <ID 54: Small Wooden Block>\nPosition: [-2. , 1. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  1. ,  3.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5,  1. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. ,  0.5,  3.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2. ,  1.5,  3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2.,  1.,  4.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 54,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Block 55: Small Wooden Block - west wall mid at [-2,0,3.5]; attached to South face (Face C) of Block 54 per blueprint (Block 55)."
+    },
+    "result": "You have successfully added <ID 55: Small Wooden Block>.\nExisting Blocks: 55\n(Block 55: Small Wooden Block - west wall mid at [-2,0,3.5]; attached to South face (Face C) of Block 54 per blueprint (Block 55).) <ID 55: Small Wooden Block>\nPosition: [-2. , 0. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  0. ,  3.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5,  0. ,  3.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: C, Face center: [-2.,  0.,  3.], Facing towards <straight down>\nFace label: D, Face center: [-2.,  0.,  4.], Facing towards <straight up>\nFace label: E, Face center: [-2. , -0.5,  3.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 55,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Block 56: Small Wooden Block - west wall at [-2,-1,3.5]; attached to South face (Face E) of Block 55 per blueprint (Block 56)."
+    },
+    "result": "You have successfully added <ID 56: Small Wooden Block>.\nExisting Blocks: 56\n(Block 56: Small Wooden Block - west wall at [-2,-1,3.5]; attached to South face (Face E) of Block 55 per blueprint (Block 56).) <ID 56: Small Wooden Block>\nPosition: [-2. ,-1. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -1. ,  3.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5, -1. ,  3.5], Facing towards <West with -0.0\u00b0 pitch>\nFace label: C, Face center: [-2., -1.,  3.], Facing towards <straight down>\nFace label: D, Face center: [-2., -1.,  4.], Facing towards <straight up>\nFace label: E, Face center: [-2. , -1.5,  3.5], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 28,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Block 57: Small Wooden Block - east wall at [2,-1,3.5]; attached to Top face (Face A) of Block 28 per blueprint (Block 57)."
+    },
+    "result": "You have successfully added <ID 57: Small Wooden Block>.\nExisting Blocks: 57\n(Block 57: Small Wooden Block - east wall at [2,-1,3.5]; attached to Top face (Face A) of Block 28 per blueprint (Block 57).) <ID 57: Small Wooden Block>\nPosition: [ 2. ,-1. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -0.5,  3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2. , -1.5,  3.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2.5, -1. ,  3.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -1. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2., -1.,  4.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 27,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Block 58: Small Wooden Block - east wall at [2,0,3.5]; attached to Top face (Face A) of Block 27 per blueprint (Block 58)."
+    },
+    "result": "You have successfully added <ID 58: Small Wooden Block>.\nExisting Blocks: 58\n(Block 58: Small Wooden Block - east wall at [2,0,3.5]; attached to Top face (Face A) of Block 27 per blueprint (Block 58).) <ID 58: Small Wooden Block>\nPosition: [ 2. ,-0. , 3.5]\nAttachable Faces:\nFace label: A, Face center: [2. , 0.5, 3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2. , -0.5,  3.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2.5, -0. ,  3.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -0. ,  3.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2., -0.,  4.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 26,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Block 59: Small Wooden Block - east wall at [2,1,3.5]; attached to Top face (Face A) of Block 26 per blueprint (Block 59)."
+    },
+    "result": "You have successfully added <ID 59: Small Wooden Block>.\nExisting Blocks: 59\n(Block 59: Small Wooden Block - east wall at [2,1,3.5]; attached to Top face (Face A) of Block 26 per blueprint (Block 59).) <ID 59: Small Wooden Block>\nPosition: [2. ,1. ,3.5]\nAttachable Faces:\nFace label: A, Face center: [2. , 1.5, 3.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [2. , 0.5, 3.5], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [2.5, 1. , 3.5], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [1.5, 1. , 3.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [2., 1., 4.], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 46,
+      "face": "B",
+      "new_block": "Water Cannon",
+      "note": "Block 60: Water Cannon - north yaw cannon mounted on North outer face (Face B) of Block 46 at [0,2,3.5]; nozzle oriented +x (east) with recoil \u2212x; assigned to control \u2018Yaw CCW\u2019 (hold to fire)."
+    },
+    "result": "You have successfully added <ID 60: Water Cannon>.\nExisting Blocks: 60\n(Block 60: Water Cannon - north yaw cannon mounted on North outer face (Face B) of Block 46 at [0,2,3.5]; nozzle oriented +x (east) with recoil \u2212x; assigned to control \u2018Yaw CCW\u2019 (hold to fire).) <ID 60: Water Cannon>\nPosition: [0. ,3. ,3.5]\nPointing at <straight down>\nInlet is at [0.00, 3.00, 4.25], outlet is at [0.00, 3.00, 2.50], sprays towards <straight down>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 60,
+      "angle": 90.0
+    },
+    "result": "The block 60 <Water Cannon> is twisted by 90.0 degrees. \n (Block 60: Water Cannon - north yaw cannon mounted on North outer face (Face B) of Block 46 at [0,2,3.5]; nozzle oriented +x (east) with recoil \u2212x; assigned to control \u2018Yaw CCW\u2019 (hold to fire).) <ID 60: Water Cannon>\nPosition: [0. ,3. ,3.5]\nPointing at <East with -0.0\u00b0 pitch>\nInlet is at [-0.75, 3.00, 3.50], outlet is at [1.00, 3.00, 3.50], sprays towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 51,
+      "face": "B",
+      "new_block": "Water Cannon",
+      "note": "Block 61: Water Cannon - south yaw cannon mounted on South outer face (Face B) of Block 51 at [0,-2,3.5]; target nozzle orientation \u2212x (west) for CCW yaw pair with Block 60; mapped to control \u2018Yaw CCW\u2019 (hold to fire)."
+    },
+    "result": "You have successfully added <ID 61: Water Cannon>.\nExisting Blocks: 61\n(Block 61: Water Cannon - south yaw cannon mounted on South outer face (Face B) of Block 51 at [0,-2,3.5]; target nozzle orientation \u2212x (west) for CCW yaw pair with Block 60; mapped to control \u2018Yaw CCW\u2019 (hold to fire).) <ID 61: Water Cannon>\nPosition: [-0. ,-3. , 3.5]\nPointing at <straight down>\nInlet is at [-0.00, -3.00, 4.25], outlet is at [-0.00, -3.00, 2.50], sprays towards <straight down>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 61,
+      "angle": 90.0
+    },
+    "result": "The block 61 <Water Cannon> is twisted by 90.0 degrees. \n (Block 61: Water Cannon - south yaw cannon mounted on South outer face (Face B) of Block 51 at [0,-2,3.5]; target nozzle orientation \u2212x (west) for CCW yaw pair with Block 60; mapped to control \u2018Yaw CCW\u2019 (hold to fire).) <ID 61: Water Cannon>\nPosition: [-0. ,-3. , 3.5]\nPointing at <West with 0.0\u00b0 pitch>\nInlet is at [0.75, -3.00, 3.50], outlet is at [-1.00, -3.00, 3.50], sprays towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 3,
+      "face_a": "E",
+      "block_b": 25,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Block 62: Brace - diagonal NE corner brace connecting Block 3 north face (Face E, ~[1,1.5,0.5]) to Block 25 bottom face (Face B, ~[2,2,2.0]); function: solid diagonal hinge to increase torsional stiffness."
+    },
+    "result": "You have successfully added <ID 62: Brace>.\nExisting Blocks: 62\n(Block 62: Brace - diagonal NE corner brace connecting Block 3 north face (Face E, ~[1,1.5,0.5]) to Block 25 bottom face (Face B, ~[2,2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 62: Brace>\nConnecting <ID 3: Small Wooden Block> at [1.  1.5 0.5] and <ID 25: Small Wooden Block> at [2. 2. 2.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 6,
+      "face_a": "A",
+      "block_b": 21,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Block 63: Brace - diagonal NW corner brace connecting Block 6 north face (Face A, ~[-1,1.5,0.5]) to Block 21 bottom face (Face B, ~[-2,2,2.0]); function: solid diagonal hinge to increase torsional stiffness."
+    },
+    "result": "You have successfully added <ID 63: Brace>.\nExisting Blocks: 63\n(Block 63: Brace - diagonal NW corner brace connecting Block 6 north face (Face A, ~[-1,1.5,0.5]) to Block 21 bottom face (Face B, ~[-2,2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 63: Brace>\nConnecting <ID 6: Small Wooden Block> at [-1.   1.5  0.5] and <ID 21: Small Wooden Block> at [-2.  2.  2.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 12,
+      "face_a": "A",
+      "block_b": 29,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Block 64: Brace - diagonal SE corner brace connecting Block 12 south face (Face A, ~[1,-1.5,0.5]) to Block 29 bottom face (Face B, ~[2,-2,2.0]); function: solid diagonal hinge to increase torsional stiffness."
+    },
+    "result": "You have successfully added <ID 64: Brace>.\nExisting Blocks: 64\n(Block 64: Brace - diagonal SE corner brace connecting Block 12 south face (Face A, ~[1,-1.5,0.5]) to Block 29 bottom face (Face B, ~[2,-2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 64: Brace>\nConnecting <ID 12: Small Wooden Block> at [ 1.  -1.5  0.5] and <ID 29: Small Wooden Block> at [ 2. -2.  2.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 9,
+      "face_a": "E",
+      "block_b": 33,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Block 65: Brace - diagonal SW corner brace connecting Block 9 south face (Face E, ~[-1,-1.5,0.5]) to Block 33 bottom face (Face B, ~[-2,-2,2.0]); function: solid diagonal hinge to increase torsional stiffness."
+    },
+    "result": "You have successfully added <ID 65: Brace>.\nExisting Blocks: 65\n(Block 65: Brace - diagonal SW corner brace connecting Block 9 south face (Face E, ~[-1,-1.5,0.5]) to Block 33 bottom face (Face B, ~[-2,-2,2.0]); function: solid diagonal hinge to increase torsional stiffness.) <ID 65: Brace>\nConnecting <ID 9: Small Wooden Block> at [-1.  -1.5  0.5] and <ID 33: Small Wooden Block> at [-2. -2.  2.].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 5,
+      "face_a": "C",
+      "block_b": 23,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Block 66: Brace - mid-span north brace connecting Block 5 top face (Face C, ~[0,1,1.0]) to Block 23 bottom face (Face B, ~[0,2,2.0]); function: rigid diagonal to stiffen north side."
+    },
+    "result": "You have successfully added <ID 66: Brace>.\nExisting Blocks: 66\n(Block 66: Brace - mid-span north brace connecting Block 5 top face (Face C, ~[0,1,1.0]) to Block 23 bottom face (Face B, ~[0,2,2.0]); function: rigid diagonal to stiffen north side.) <ID 66: Brace>\nConnecting <ID 5: Small Wooden Block> at [-1.11022302e-16  1.00000000e+00  1.00000000e+00] and <ID 23: Small Wooden Block> at [4.6629367e-15 2.0000000e+00 2.0000000e+00].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 11,
+      "face_a": "C",
+      "block_b": 31,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Block 67: Brace - mid-span south brace connecting Block 11 top face (Face C, ~[0,-1,1.0]) to Block 31 bottom face (Face B, ~[0,-2,2.0]); function: rigid diagonal to stiffen south side."
+    },
+    "result": "You have successfully added <ID 67: Brace>.\nExisting Blocks: 67\n(Block 67: Brace - mid-span south brace connecting Block 11 top face (Face C, ~[0,-1,1.0]) to Block 31 bottom face (Face B, ~[0,-2,2.0]); function: rigid diagonal to stiffen south side.) <ID 67: Brace>\nConnecting <ID 11: Small Wooden Block> at [-7.77156117e-16 -1.00000000e+00  1.00000000e+00] and <ID 31: Small Wooden Block> at [-2.10942375e-15 -2.00000000e+00  2.00000000e+00].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 8,
+      "face_a": "C",
+      "block_b": 35,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Block 68: Brace - mid-span west brace connecting Block 8 top face (Face C, ~[-1,0,1.0]) to Block 35 bottom face (Face B, ~[-2,0,2.0]); function: rigid diagonal to stiffen west side."
+    },
+    "result": "You have successfully added <ID 68: Brace>.\nExisting Blocks: 68\n(Block 68: Brace - mid-span west brace connecting Block 8 top face (Face C, ~[-1,0,1.0]) to Block 35 bottom face (Face B, ~[-2,0,2.0]); function: rigid diagonal to stiffen west side.) <ID 68: Brace>\nConnecting <ID 8: Small Wooden Block> at [-1.00000000e+00  3.33066907e-16  1.00000000e+00] and <ID 35: Small Wooden Block> at [-2.00000000e+00  1.66533454e-15  2.00000000e+00].\t"
+  },
+  {
+    "op": "connect_blocks",
+    "params": {
+      "block_a": 2,
+      "face_a": "C",
+      "block_b": 27,
+      "face_b": "B",
+      "connector": "Brace",
+      "note": "Block 69: Brace - mid-span east brace connecting Block 2 top face (Face C, ~[1,0,1.0]) to Block 27 bottom face (Face B, ~[2,0,2.0]); function: rigid diagonal to stiffen east side."
+    },
+    "result": "You have successfully added <ID 69: Brace>.\nExisting Blocks: 69\n(Block 69: Brace - mid-span east brace connecting Block 2 top face (Face C, ~[1,0,1.0]) to Block 27 bottom face (Face B, ~[2,0,2.0]); function: rigid diagonal to stiffen east side.) <ID 69: Brace>\nConnecting <ID 2: Small Wooden Block> at [1.00000000e+00 1.11022302e-16 1.00000000e+00] and <ID 27: Small Wooden Block> at [ 2.0000000e+00 -4.5519144e-15  2.0000000e+00].\t"
+  },
+  {
+    "op": "flip_spin",
+    "params": {
+      "block_id": 7
+    },
+    "result": "The block 7 <Powered Wheel> is flipped. \n (Block 7: Powered Wheel - mounted on West face (Face E) of Block 6 at [-1,1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north) to match environment behavior and earlier wheel\u2019s readout.) <ID 7: Powered Wheel>\nPosition: [-1.5, 1. , 0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [-2. ,  1. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "flip_spin",
+    "params": {
+      "block_id": 10
+    },
+    "result": "The block 10 <Powered Wheel> is flipped. \n (Block 10: Powered Wheel - mounted on West face (Face A) of Block 9 at [-1,-1,0.5]; rotation axis \u27c2 face, wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +y (north).) <ID 10: Powered Wheel>\nPosition: [-1.5,-1. , 0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [-2. , -1. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 4,
+      "angle": 90.0
+    },
+    "result": "The block 4 <Powered Wheel> is twisted by 90.0 degrees. \n (Block 4: Powered Wheel - mounted on East face (Face A) of Block 3 at [1,1,0.5]; rotation axis \u27c2 face (\u00b1x), wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +x.) <ID 4: Powered Wheel>\nPosition: [1.5,1. ,0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [2. , 1. , 0.5], Facing towards <East with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 4,
+      "angle": -90.0
+    },
+    "result": "The block 4 <Powered Wheel> is twisted by -90.0 degrees. \n (Block 4: Powered Wheel - mounted on East face (Face A) of Block 3 at [1,1,0.5]; rotation axis \u27c2 face (\u00b1x), wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +x.) <ID 4: Powered Wheel>\nPosition: [1.5,1. ,0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [2. , 1. , 0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 4,
+      "angle": 90.0
+    },
+    "result": "The block 4 <Powered Wheel> is twisted by 90.0 degrees. \n (Block 4: Powered Wheel - mounted on East face (Face A) of Block 3 at [1,1,0.5]; rotation axis \u27c2 face (\u00b1x), wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +x.) <ID 4: Powered Wheel>\nPosition: [1.5,1. ,0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [2. , 1. , 0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 4,
+      "angle": -90.0
+    },
+    "result": "The block 4 <Powered Wheel> is twisted by -90.0 degrees. \n (Block 4: Powered Wheel - mounted on East face (Face A) of Block 3 at [1,1,0.5]; rotation axis \u27c2 face (\u00b1x), wheel plane \u2225 face; configured so pressing \u2018Forward\u2019 rolls +x.) <ID 4: Powered Wheel>\nPosition: [1.5,1. ,0.5]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [2. , 1. , 0.5], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "reset",
+    "params": {},
+    "result": "The machine has been reset, please start again."
+  },
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "init_rotation": [
+        0,
+        0,
+        0
+      ],
+      "note": "Block 1: Default Base Block - 1x1x1 base stone at origin reference (center [0,0,0.5]); foundation for NE Cargo Cart with Yaw Thrusters"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0. ,0. ,0.5]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0.5], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0.5], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0., 0., 1.], Facing towards <straight up>\nFace label: D, Face center: [0., 0., 0.], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0.5], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0.5], Facing towards <South with 0.0\u00b0 pitch>"
+  }
+]

@@ -1,0 +1,998 @@
+[
+  {
+    "op": "start",
+    "params": {
+      "init_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "init_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "Flatbed Cage Transporter with Differential Drive (Sub-Structure 1) - Starting deck tile at [0, 0, 0.5]"
+    },
+    "result": "You have successfully added <ID 1: Starting Block>.\nExisting Blocks: 1\n(The starting block) <ID 1: Starting Block>\nPosition: [0.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 0. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [0. , 0. , 0.5], Facing towards <straight up>\nFace label: D, Face center: [ 0. ,  0. , -0.5], Facing towards <straight down>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: F, Face center: [ 0. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 1,
+      "face": "F",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 1 @ [0, -1, 0.0] (z-offset applied from blueprint), attached to south face of Starting Block (ID 1)"
+    },
+    "result": "You have successfully added <ID 2: Small Wooden Block>.\nExisting Blocks: 2\n(Deck 1 @ [0, -1, 0.0] (z-offset applied from blueprint), attached to south face of Starting Block (ID 1)) <ID 2: Small Wooden Block>\nPosition: [ 0.,-1., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -1. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -1. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [ 0. , -1. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [ 0. , -1.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 2,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 2 @ [0, -2, 0.0] (z-offset applied), attached to south face (E) of Deck 1 (ID 2)"
+    },
+    "result": "You have successfully added <ID 3: Small Wooden Block>.\nExisting Blocks: 3\n(Deck 2 @ [0, -2, 0.0] (z-offset applied), attached to south face (E) of Deck 1 (ID 2)) <ID 3: Small Wooden Block>\nPosition: [ 0.,-2., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -2. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -2. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -2. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [ 0. , -2. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [ 0. , -2.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 3,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 3 @ [0, -3, 0.0] (z-offset applied), attached to south face (E) of Deck 2 (ID 3)"
+    },
+    "result": "You have successfully added <ID 4: Small Wooden Block>.\nExisting Blocks: 4\n(Deck 3 @ [0, -3, 0.0] (z-offset applied), attached to south face (E) of Deck 2 (ID 3)) <ID 4: Small Wooden Block>\nPosition: [ 0.,-3., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -3. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -3. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -3. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [ 0. , -3. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [ 0. , -3.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 4,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 4 @ [0, -4, 0.0] (z-offset applied), attached to south face (E) of Deck 3 (ID 4)"
+    },
+    "result": "You have successfully added <ID 5: Small Wooden Block>.\nExisting Blocks: 5\n(Deck 4 @ [0, -4, 0.0] (z-offset applied), attached to south face (E) of Deck 3 (ID 4)) <ID 5: Small Wooden Block>\nPosition: [ 0.,-4., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -4. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -4. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -4. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [ 0. , -4. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [ 0. , -4.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 5,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 5 @ [1, -4, 0.0] (z-offset applied), attached to east face (A) of Deck 4 (ID 5)"
+    },
+    "result": "You have successfully added <ID 6: Small Wooden Block>.\nExisting Blocks: 6\n(Deck 5 @ [1, -4, 0.0] (z-offset applied), attached to east face (A) of Deck 4 (ID 5)) <ID 6: Small Wooden Block>\nPosition: [ 1.,-4., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -3.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 1. , -4.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -4. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [ 1. , -4. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [ 1.5, -4. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 6,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 6 @ [2, -4, 0.0] (z-offset applied), attached to east face (E) of Deck 5 (ID 6)"
+    },
+    "result": "You have successfully added <ID 7: Small Wooden Block>.\nExisting Blocks: 7\n(Deck 6 @ [2, -4, 0.0] (z-offset applied), attached to east face (E) of Deck 5 (ID 6)) <ID 7: Small Wooden Block>\nPosition: [ 2.,-4., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -3.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2. , -4.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2. , -4. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [ 2. , -4. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [ 2.5, -4. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 7,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 7 @ [2, -3, 0.0] (z-offset applied), attached to north face (A) of Deck 6 (ID 7)"
+    },
+    "result": "You have successfully added <ID 8: Small Wooden Block>.\nExisting Blocks: 8\n(Deck 7 @ [2, -3, 0.0] (z-offset applied), attached to north face (A) of Deck 6 (ID 7)) <ID 8: Small Wooden Block>\nPosition: [ 2.,-3., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -3. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2.5, -3. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2. , -3. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [ 2. , -3. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [ 2. , -2.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 8,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 8 @ [2, -2, 0.0] (z-offset applied), attached to north face (E) of Deck 7 (ID 8)"
+    },
+    "result": "You have successfully added <ID 9: Small Wooden Block>.\nExisting Blocks: 9\n(Deck 8 @ [2, -2, 0.0] (z-offset applied), attached to north face (E) of Deck 7 (ID 8)) <ID 9: Small Wooden Block>\nPosition: [ 2.,-2., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -2. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2.5, -2. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2. , -2. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [ 2. , -2. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [ 2. , -1.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 9,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 9 @ [2, -1, 0.0] (z-offset applied), attached to north face (E) of Deck 8 (ID 9)"
+    },
+    "result": "You have successfully added <ID 10: Small Wooden Block>.\nExisting Blocks: 10\n(Deck 9 @ [2, -1, 0.0] (z-offset applied), attached to north face (E) of Deck 8 (ID 9)) <ID 10: Small Wooden Block>\nPosition: [ 2.,-1., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2.5, -1. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2. , -1. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [ 2. , -1. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [ 2. , -0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 10,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 10 @ [2, 0, 0.0] (z-offset applied), attached to north face (E) of Deck 9 (ID 10)"
+    },
+    "result": "You have successfully added <ID 11: Small Wooden Block>.\nExisting Blocks: 11\n(Deck 10 @ [2, 0, 0.0] (z-offset applied), attached to north face (E) of Deck 9 (ID 10)) <ID 11: Small Wooden Block>\nPosition: [2.,0.,0.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 0. , 0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2.5, -0. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2. ,  0. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [2. , 0. , 0.5], Facing towards <straight up>\nFace label: E, Face center: [2. , 0.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 11,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 11 @ [2, 1, 0.0] (z-offset applied), attached to north face (E) of Deck 10 (ID 11)"
+    },
+    "result": "You have successfully added <ID 12: Small Wooden Block>.\nExisting Blocks: 12\n(Deck 11 @ [2, 1, 0.0] (z-offset applied), attached to north face (E) of Deck 10 (ID 11)) <ID 12: Small Wooden Block>\nPosition: [2.,1.,0.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 1. , 0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [2.5, 1. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2. ,  1. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [2. , 1. , 0.5], Facing towards <straight up>\nFace label: E, Face center: [2. , 1.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 12,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 12 @ [2, 2, 0.0] (z-offset applied), attached to north face (E) of Deck 11 (ID 12)"
+    },
+    "result": "You have successfully added <ID 13: Small Wooden Block>.\nExisting Blocks: 13\n(Deck 12 @ [2, 2, 0.0] (z-offset applied), attached to north face (E) of Deck 11 (ID 12)) <ID 13: Small Wooden Block>\nPosition: [2.,2.,0.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 2. , 0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [2.5, 2. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2. ,  2. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [2. , 2. , 0.5], Facing towards <straight up>\nFace label: E, Face center: [2. , 2.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 13,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 13 @ [2, 3, 0.0] (z-offset applied), attached to north face (E) of Deck 12 (ID 13)"
+    },
+    "result": "You have successfully added <ID 14: Small Wooden Block>.\nExisting Blocks: 14\n(Deck 13 @ [2, 3, 0.0] (z-offset applied), attached to north face (E) of Deck 12 (ID 13)) <ID 14: Small Wooden Block>\nPosition: [2.,3.,0.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 3. , 0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [2.5, 3. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2. ,  3. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [2. , 3. , 0.5], Facing towards <straight up>\nFace label: E, Face center: [2. , 3.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 14,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 14 @ [2, 4, 0.0] (z-offset applied), attached to north face (E) of Deck 13 (ID 14)"
+    },
+    "result": "You have successfully added <ID 15: Small Wooden Block>.\nExisting Blocks: 15\n(Deck 14 @ [2, 4, 0.0] (z-offset applied), attached to north face (E) of Deck 13 (ID 14)) <ID 15: Small Wooden Block>\nPosition: [2.,4.,0.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 4. , 0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [2.5, 4. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2. ,  4. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [2. , 4. , 0.5], Facing towards <straight up>\nFace label: E, Face center: [2. , 4.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 15,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 15 @ [1, 4, 0.0] (z-offset applied), attached to west face (A) of Deck 14 (ID 15)"
+    },
+    "result": "You have successfully added <ID 16: Small Wooden Block>.\nExisting Blocks: 16\n(Deck 15 @ [1, 4, 0.0] (z-offset applied), attached to west face (A) of Deck 14 (ID 15)) <ID 16: Small Wooden Block>\nPosition: [1.,4.,0.]\nAttachable Faces:\nFace label: A, Face center: [1. , 3.5, 0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [1. , 4.5, 0. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. ,  4. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [1. , 4. , 0.5], Facing towards <straight up>\nFace label: E, Face center: [0.5, 4. , 0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 16,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 16 @ [0, 4, 0.0] (z-offset applied), attached to west face (E) of Deck 15 (ID 16)"
+    },
+    "result": "You have successfully added <ID 17: Small Wooden Block>.\nExisting Blocks: 17\n(Deck 16 @ [0, 4, 0.0] (z-offset applied), attached to west face (E) of Deck 15 (ID 16)) <ID 17: Small Wooden Block>\nPosition: [0.,4.,0.]\nAttachable Faces:\nFace label: A, Face center: [0. , 3.5, 0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [0. , 4.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. ,  4. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [0. , 4. , 0.5], Facing towards <straight up>\nFace label: E, Face center: [-0.5,  4. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 17,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 17 @ [-1, 4, 0.0] (z-offset applied), attached to west face (E) of Deck 16 (ID 17)"
+    },
+    "result": "You have successfully added <ID 18: Small Wooden Block>.\nExisting Blocks: 18\n(Deck 17 @ [-1, 4, 0.0] (z-offset applied), attached to west face (E) of Deck 16 (ID 17)) <ID 18: Small Wooden Block>\nPosition: [-1., 4., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1. ,  3.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. ,  4.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  4. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [-1. ,  4. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [-1.5,  4. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 18,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 18 @ [-2, 4, 0.0] (z-offset applied), attached to west face (E) of Deck 17 (ID 18)"
+    },
+    "result": "You have successfully added <ID 19: Small Wooden Block>.\nExisting Blocks: 19\n(Deck 18 @ [-2, 4, 0.0] (z-offset applied), attached to west face (E) of Deck 17 (ID 18)) <ID 19: Small Wooden Block>\nPosition: [-2., 4., 0.]\nAttachable Faces:\nFace label: A, Face center: [-2. ,  3.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. ,  4.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. ,  4. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [-2. ,  4. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [-2.5,  4. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 19,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 19 @ [-2, 3, 0.0] (z-offset applied), attached to south face (A) of Deck 18 (ID 19)"
+    },
+    "result": "You have successfully added <ID 20: Small Wooden Block>.\nExisting Blocks: 20\n(Deck 19 @ [-2, 3, 0.0] (z-offset applied), attached to south face (A) of Deck 18 (ID 19)) <ID 20: Small Wooden Block>\nPosition: [-2., 3., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  3. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5,  3. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. ,  3. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [-2. ,  3. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [-2. ,  2.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 20,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 20 @ [-2, 2, 0.0] (z-offset applied), attached to south face (E) of Deck 19 (ID 20)"
+    },
+    "result": "You have successfully added <ID 21: Small Wooden Block>.\nExisting Blocks: 21\n(Deck 20 @ [-2, 2, 0.0] (z-offset applied), attached to south face (E) of Deck 19 (ID 20)) <ID 21: Small Wooden Block>\nPosition: [-2., 2., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  2. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5,  2. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. ,  2. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [-2. ,  2. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [-2. ,  1.5,  0. ], Facing towards <South with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 21,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 21 @ [-2, 1, 0.0] (z-offset applied), attached to south face (E) of Deck 20 (ID 21)"
+    },
+    "result": "You have successfully added <ID 22: Small Wooden Block>.\nExisting Blocks: 22\n(Deck 21 @ [-2, 1, 0.0] (z-offset applied), attached to south face (E) of Deck 20 (ID 21)) <ID 22: Small Wooden Block>\nPosition: [-2., 1.,-0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  1. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5,  1. , -0. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: C, Face center: [-2. ,  1. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [-2. ,  1. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [-2. ,  0.5, -0. ], Facing towards <South with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 22,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 22 @ [-2, 0, 0.0] (z-offset applied), attached to south face (E) of Deck 21 (ID 22)"
+    },
+    "result": "You have successfully added <ID 23: Small Wooden Block>.\nExisting Blocks: 23\n(Deck 22 @ [-2, 0, 0.0] (z-offset applied), attached to south face (E) of Deck 21 (ID 22)) <ID 23: Small Wooden Block>\nPosition: [-2., 0.,-0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  0. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5,  0. , -0. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: C, Face center: [-2. ,  0. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [-2. ,  0. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [-2. , -0.5, -0. ], Facing towards <South with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 23,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 23 @ [-2, -1, 0.0] (z-offset applied), attached to south face (E) of Deck 22 (ID 23)"
+    },
+    "result": "You have successfully added <ID 24: Small Wooden Block>.\nExisting Blocks: 24\n(Deck 23 @ [-2, -1, 0.0] (z-offset applied), attached to south face (E) of Deck 22 (ID 23)) <ID 24: Small Wooden Block>\nPosition: [-2.,-1.,-0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -1. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5, -1. , -0. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: C, Face center: [-2. , -1. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [-2. , -1. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [-2. , -1.5, -0. ], Facing towards <South with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 24,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 24 @ [-2, -2, 0.0] (z-offset applied), attached to south face (E) of Deck 23 (ID 24)"
+    },
+    "result": "You have successfully added <ID 25: Small Wooden Block>.\nExisting Blocks: 25\n(Deck 24 @ [-2, -2, 0.0] (z-offset applied), attached to south face (E) of Deck 23 (ID 24)) <ID 25: Small Wooden Block>\nPosition: [-2.,-2.,-0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -2. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5, -2. , -0. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: C, Face center: [-2. , -2. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [-2. , -2. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [-2. , -2.5, -0. ], Facing towards <South with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 25,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 25 @ [-2, -3, 0.0] (z-offset applied), attached to south face (E) of Deck 24 (ID 25)"
+    },
+    "result": "You have successfully added <ID 26: Small Wooden Block>.\nExisting Blocks: 26\n(Deck 25 @ [-2, -3, 0.0] (z-offset applied), attached to south face (E) of Deck 24 (ID 25)) <ID 26: Small Wooden Block>\nPosition: [-2.,-3.,-0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -3. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5, -3. , -0. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: C, Face center: [-2. , -3. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [-2. , -3. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [-2. , -3.5, -0. ], Facing towards <South with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 26,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 26 @ [-2, -4, 0.0] (z-offset applied), attached to south face (E) of Deck 25 (ID 26)"
+    },
+    "result": "You have successfully added <ID 27: Small Wooden Block>.\nExisting Blocks: 27\n(Deck 26 @ [-2, -4, 0.0] (z-offset applied), attached to south face (E) of Deck 25 (ID 26)) <ID 27: Small Wooden Block>\nPosition: [-2.,-4.,-0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -4. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5, -4. , -0. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: C, Face center: [-2. , -4. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [-2. , -4. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [-2. , -4.5, -0. ], Facing towards <South with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 27,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 27 @ [-1, -4, 0.0] (z-offset applied), attached to east face (A) of Deck 26 (ID 27)"
+    },
+    "result": "You have successfully added <ID 28: Small Wooden Block>.\nExisting Blocks: 28\n(Deck 27 @ [-1, -4, 0.0] (z-offset applied), attached to east face (A) of Deck 26 (ID 27)) <ID 28: Small Wooden Block>\nPosition: [-1.,-4., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1. , -3.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -4.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -4. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [-1. , -4. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [-0.5, -4. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 28,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 28 @ [-1, -3, 0.0] (z-offset applied), attached to north face (A) of Deck 27 (ID 28)"
+    },
+    "result": "You have successfully added <ID 29: Small Wooden Block>.\nExisting Blocks: 29\n(Deck 28 @ [-1, -3, 0.0] (z-offset applied), attached to north face (A) of Deck 27 (ID 28)) <ID 29: Small Wooden Block>\nPosition: [-1.,-3., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -3. ,  0. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -3. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -3. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [-1. , -3. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [-1. , -2.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 29,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 29 @ [-1, -2, 0.0] (z-offset applied), attached to north face (E) of Deck 28 (ID 29)"
+    },
+    "result": "You have successfully added <ID 30: Small Wooden Block>.\nExisting Blocks: 30\n(Deck 29 @ [-1, -2, 0.0] (z-offset applied), attached to north face (E) of Deck 28 (ID 29)) <ID 30: Small Wooden Block>\nPosition: [-1.,-2., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -2. ,  0. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -2. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -2. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [-1. , -2. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [-1. , -1.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 30,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 30 @ [-1, -1, 0.0] (z-offset applied), attached to north face (E) of Deck 29 (ID 30)"
+    },
+    "result": "You have successfully added <ID 31: Small Wooden Block>.\nExisting Blocks: 31\n(Deck 30 @ [-1, -1, 0.0] (z-offset applied), attached to north face (E) of Deck 29 (ID 30)) <ID 31: Small Wooden Block>\nPosition: [-1.,-1., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -1. ,  0. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -1. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. , -1. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [-1. , -1. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [-1. , -0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 31,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 31 @ [-1, 0, 0.0] (z-offset applied), attached to north face (E) of Deck 30 (ID 31)"
+    },
+    "result": "You have successfully added <ID 32: Small Wooden Block>.\nExisting Blocks: 32\n(Deck 31 @ [-1, 0, 0.0] (z-offset applied), attached to north face (E) of Deck 30 (ID 31)) <ID 32: Small Wooden Block>\nPosition: [-1., 0., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  0. ,  0. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  0. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  0. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [-1. ,  0. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [-1. ,  0.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 32,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 32 @ [-1, 1, 0.0] (z-offset applied), attached to north face (E) of Deck 31 (ID 32)"
+    },
+    "result": "You have successfully added <ID 33: Small Wooden Block>.\nExisting Blocks: 33\n(Deck 32 @ [-1, 1, 0.0] (z-offset applied), attached to north face (E) of Deck 31 (ID 32)) <ID 33: Small Wooden Block>\nPosition: [-1., 1., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  1. ,  0. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  1. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  1. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [-1. ,  1. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [-1. ,  1.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 33,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 33 @ [-1, 2, 0.0] (z-offset applied), attached to north face (E) of Deck 32 (ID 33)"
+    },
+    "result": "You have successfully added <ID 34: Small Wooden Block>.\nExisting Blocks: 34\n(Deck 33 @ [-1, 2, 0.0] (z-offset applied), attached to north face (E) of Deck 32 (ID 33)) <ID 34: Small Wooden Block>\nPosition: [-1., 2., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  2. ,  0. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  2. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  2. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [-1. ,  2. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [-1. ,  2.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 34,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 34 @ [-1, 3, 0.0] (z-offset applied), attached to north face (E) of Deck 33 (ID 34)"
+    },
+    "result": "You have successfully added <ID 35: Small Wooden Block>.\nExisting Blocks: 35\n(Deck 34 @ [-1, 3, 0.0] (z-offset applied), attached to north face (E) of Deck 33 (ID 34)) <ID 35: Small Wooden Block>\nPosition: [-1., 3., 0.]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  3. ,  0. ], Facing towards <West with -0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  3. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1. ,  3. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [-1. ,  3. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [-1. ,  3.5,  0. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 35,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 35 @ [0, 3, 0.0] (z-offset applied), attached to east face (B) of Deck 34 (ID 35)"
+    },
+    "result": "You have successfully added <ID 36: Small Wooden Block>.\nExisting Blocks: 36\n(Deck 35 @ [0, 3, 0.0] (z-offset applied), attached to east face (B) of Deck 34 (ID 35)) <ID 36: Small Wooden Block>\nPosition: [0.,3.,0.]\nAttachable Faces:\nFace label: A, Face center: [0. , 3.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [0. , 2.5, 0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. ,  3. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [0. , 3. , 0.5], Facing towards <straight up>\nFace label: E, Face center: [0.5, 3. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 36,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 36 @ [1, 3, 0.0] (z-offset applied), attached to east face (E) of Deck 35 (ID 36)"
+    },
+    "result": "You have successfully added <ID 37: Small Wooden Block>.\nExisting Blocks: 37\n(Deck 36 @ [1, 3, 0.0] (z-offset applied), attached to east face (E) of Deck 35 (ID 36)) <ID 37: Small Wooden Block>\nPosition: [1.,3.,0.]\nAttachable Faces:\nFace label: A, Face center: [1. , 3.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [1. , 2.5, 0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. ,  3. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [1. , 3. , 0.5], Facing towards <straight up>\nFace label: E, Face center: [1.5, 3. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 37,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 37 @ [1, 2, 0.0] (z-offset applied), attached to south face (B) of Deck 36 (ID 37)"
+    },
+    "result": "You have successfully added <ID 38: Small Wooden Block>.\nExisting Blocks: 38\n(Deck 37 @ [1, 2, 0.0] (z-offset applied), attached to south face (B) of Deck 36 (ID 37)) <ID 38: Small Wooden Block>\nPosition: [1.,2.,0.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 2. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [0.5, 2. , 0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. ,  2. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [1. , 2. , 0.5], Facing towards <straight up>\nFace label: E, Face center: [1. , 1.5, 0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 38,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 38 @ [0, 2, 0.0] (z-offset applied), attached to west face (B) of Deck 37 (ID 38)"
+    },
+    "result": "You have successfully added <ID 39: Small Wooden Block>.\nExisting Blocks: 39\n(Deck 38 @ [0, 2, 0.0] (z-offset applied), attached to west face (B) of Deck 37 (ID 38)) <ID 39: Small Wooden Block>\nPosition: [0.,2.,0.]\nAttachable Faces:\nFace label: A, Face center: [0. , 1.5, 0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [0. , 2.5, 0. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. ,  2. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [0. , 2. , 0.5], Facing towards <straight up>\nFace label: E, Face center: [-0.5,  2. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 39,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 39 @ [0, 1, 0.0] (z-offset applied), attached to south face (A) of Deck 38 (ID 39)"
+    },
+    "result": "You have successfully added <ID 40: Small Wooden Block>.\nExisting Blocks: 40\n(Deck 39 @ [0, 1, 0.0] (z-offset applied), attached to south face (A) of Deck 38 (ID 39)) <ID 40: Small Wooden Block>\nPosition: [0.,1.,0.]\nAttachable Faces:\nFace label: A, Face center: [0.5, 1. , 0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5,  1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. ,  1. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [0. , 1. , 0.5], Facing towards <straight up>\nFace label: E, Face center: [0. , 0.5, 0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 40,
+      "face": "A",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 40 @ [1, 1, 0.0] (z-offset applied), attached to east face (A) of Deck 39 (ID 40)"
+    },
+    "result": "You have successfully added <ID 41: Small Wooden Block>.\nExisting Blocks: 41\n(Deck 40 @ [1, 1, 0.0] (z-offset applied), attached to east face (A) of Deck 39 (ID 40)) <ID 41: Small Wooden Block>\nPosition: [1.,1.,0.]\nAttachable Faces:\nFace label: A, Face center: [1. , 1.5, 0. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [1. , 0.5, 0. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. ,  1. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [1. , 1. , 0.5], Facing towards <straight up>\nFace label: E, Face center: [1.5, 1. , 0. ], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 41,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 41 @ [1, 0, 0.0] (z-offset applied), attached to south face (B) of Deck 40 (ID 41)"
+    },
+    "result": "You have successfully added <ID 42: Small Wooden Block>.\nExisting Blocks: 42\n(Deck 41 @ [1, 0, 0.0] (z-offset applied), attached to south face (B) of Deck 40 (ID 41)) <ID 42: Small Wooden Block>\nPosition: [ 1.,-0., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -0. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 0.5, -0. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -0. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [ 1. , -0. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [ 1. , -0.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 42,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 42 @ [1, -1, 0.0] (z-offset applied), attached to south face (E) of Deck 41 (ID 42)"
+    },
+    "result": "You have successfully added <ID 43: Small Wooden Block>.\nExisting Blocks: 43\n(Deck 42 @ [1, -1, 0.0] (z-offset applied), attached to south face (E) of Deck 41 (ID 42)) <ID 43: Small Wooden Block>\nPosition: [ 1.,-1., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -1. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 0.5, -1. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -1. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [ 1. , -1. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [ 1. , -1.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 43,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 43 @ [1, -2, 0.0] (z-offset applied), attached to south face (E) of Deck 42 (ID 43)"
+    },
+    "result": "You have successfully added <ID 44: Small Wooden Block>.\nExisting Blocks: 44\n(Deck 43 @ [1, -2, 0.0] (z-offset applied), attached to south face (E) of Deck 42 (ID 43)) <ID 44: Small Wooden Block>\nPosition: [ 1.,-2., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -2. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 0.5, -2. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -2. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [ 1. , -2. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [ 1. , -2.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 44,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Deck 44 @ [1, -3, 0.0] (z-offset applied), attached to south face (E) of Deck 43 (ID 44)"
+    },
+    "result": "You have successfully added <ID 45: Small Wooden Block>.\nExisting Blocks: 45\n(Deck 44 @ [1, -3, 0.0] (z-offset applied), attached to south face (E) of Deck 43 (ID 44)) <ID 45: Small Wooden Block>\nPosition: [ 1.,-3., 0.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -3. ,  0. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 0.5, -3. ,  0. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1. , -3. , -0.5], Facing towards <straight down>\nFace label: D, Face center: [ 1. , -3. ,  0.5], Facing towards <straight up>\nFace label: E, Face center: [ 1. , -3.5,  0. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 27,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Side rail 45 @ [-2, -4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 27 at [-2, -4, 0.0]"
+    },
+    "result": "You have successfully added <ID 46: Small Wooden Block>.\nExisting Blocks: 46\n(Side rail 45 @ [-2, -4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 27 at [-2, -4, 0.0]) <ID 46: Small Wooden Block>\nPosition: [-2.,-4., 1.]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -4. ,  1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5, -4. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. , -4.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2. , -3.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2. , -4. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 26,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Side rail 46 @ [-2, -3, 1.0] (z-offset applied), attached to top face (D) of deck block ID 26 at [-2, -3, 0.0]"
+    },
+    "result": "You have successfully added <ID 47: Small Wooden Block>.\nExisting Blocks: 47\n(Side rail 46 @ [-2, -3, 1.0] (z-offset applied), attached to top face (D) of deck block ID 26 at [-2, -3, 0.0]) <ID 47: Small Wooden Block>\nPosition: [-2.,-3., 1.]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -3. ,  1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5, -3. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. , -3.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2. , -2.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2. , -3. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 25,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Side rail 47 @ [-2, -2, 1.0] (z-offset applied), attached to top face (D) of deck block ID 25 at [-2, -2, 0.0]"
+    },
+    "result": "You have successfully added <ID 48: Small Wooden Block>.\nExisting Blocks: 48\n(Side rail 47 @ [-2, -2, 1.0] (z-offset applied), attached to top face (D) of deck block ID 25 at [-2, -2, 0.0]) <ID 48: Small Wooden Block>\nPosition: [-2.,-2., 1.]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -2. ,  1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5, -2. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. , -2.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2. , -1.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2. , -2. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 24,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Side rail 48 @ [-2, -1, 1.0] (z-offset applied), attached to top face (D) of deck block ID 24 at [-2, -1, 0.0]"
+    },
+    "result": "You have successfully added <ID 49: Small Wooden Block>.\nExisting Blocks: 49\n(Side rail 48 @ [-2, -1, 1.0] (z-offset applied), attached to top face (D) of deck block ID 24 at [-2, -1, 0.0]) <ID 49: Small Wooden Block>\nPosition: [-2.,-1., 1.]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -1. ,  1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5, -1. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. , -1.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2. , -0.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2. , -1. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 23,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Side rail 49 @ [-2, 0, 1.0] (z-offset applied), attached to top face (D) of deck block ID 23 at [-2, 0, 0.0]"
+    },
+    "result": "You have successfully added <ID 50: Small Wooden Block>.\nExisting Blocks: 50\n(Side rail 49 @ [-2, 0, 1.0] (z-offset applied), attached to top face (D) of deck block ID 23 at [-2, 0, 0.0]) <ID 50: Small Wooden Block>\nPosition: [-2., 0., 1.]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  0. ,  1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5,  0. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. , -0.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2. ,  0.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2. ,  0. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 22,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Side rail 50 @ [-2, 1, 1.0] (z-offset applied), attached to top face (D) of deck block ID 22 at [-2, 1, 0.0]"
+    },
+    "result": "You have successfully added <ID 51: Small Wooden Block>.\nExisting Blocks: 51\n(Side rail 50 @ [-2, 1, 1.0] (z-offset applied), attached to top face (D) of deck block ID 22 at [-2, 1, 0.0]) <ID 51: Small Wooden Block>\nPosition: [-2., 1., 1.]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  1. ,  1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5,  1. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. ,  0.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2. ,  1.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2. ,  1. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 21,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Side rail 51 @ [-2, 2, 1.0] (z-offset applied), attached to top face (D) of deck block ID 21 at [-2, 2, 0.0]"
+    },
+    "result": "You have successfully added <ID 52: Small Wooden Block>.\nExisting Blocks: 52\n(Side rail 51 @ [-2, 2, 1.0] (z-offset applied), attached to top face (D) of deck block ID 21 at [-2, 2, 0.0]) <ID 52: Small Wooden Block>\nPosition: [-2., 2., 1.]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  2. ,  1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5,  2. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. ,  1.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2. ,  2.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2. ,  2. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 20,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Side rail 52 @ [-2, 3, 1.0] (z-offset applied), attached to top face (D) of deck block ID 20 at [-2, 3, 0.0]"
+    },
+    "result": "You have successfully added <ID 53: Small Wooden Block>.\nExisting Blocks: 53\n(Side rail 52 @ [-2, 3, 1.0] (z-offset applied), attached to top face (D) of deck block ID 20 at [-2, 3, 0.0]) <ID 53: Small Wooden Block>\nPosition: [-2., 3., 1.]\nAttachable Faces:\nFace label: A, Face center: [-1.5,  3. ,  1. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5,  3. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. ,  2.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2. ,  3.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2. ,  3. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 19,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Side rail 53 @ [-2, 4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 19 at [-2, 4, 0.0]"
+    },
+    "result": "You have successfully added <ID 54: Small Wooden Block>.\nExisting Blocks: 54\n(Side rail 53 @ [-2, 4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 19 at [-2, 4, 0.0]) <ID 54: Small Wooden Block>\nPosition: [-2., 4., 1.]\nAttachable Faces:\nFace label: A, Face center: [-2. ,  3.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. ,  4.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2.5,  4. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5,  4. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2. ,  4. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 7,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Side rail 54 @ [2, -4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 7 at [2, -4, 0.0]"
+    },
+    "result": "You have successfully added <ID 55: Small Wooden Block>.\nExisting Blocks: 55\n(Side rail 54 @ [2, -4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 7 at [2, -4, 0.0]) <ID 55: Small Wooden Block>\nPosition: [ 2.,-4., 1.]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -3.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2. , -4.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2.5, -4. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -4. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2. , -4. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 8,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Side rail 55 @ [2, -3, 1.0] (z-offset applied), attached to top face (D) of deck block ID 8 at [2, -3, 0.0]"
+    },
+    "result": "You have successfully added <ID 56: Small Wooden Block>.\nExisting Blocks: 56\n(Side rail 55 @ [2, -3, 1.0] (z-offset applied), attached to top face (D) of deck block ID 8 at [2, -3, 0.0]) <ID 56: Small Wooden Block>\nPosition: [ 2.,-3., 1.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -3. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2.5, -3. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2. , -2.5,  1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 2. , -3.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2. , -3. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 9,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Side rail 56 @ [2, -2, 1.0] (z-offset applied), attached to top face (D) of deck block ID 9 at [2, -2, 0.0]"
+    },
+    "result": "You have successfully added <ID 57: Small Wooden Block>.\nExisting Blocks: 57\n(Side rail 56 @ [2, -2, 1.0] (z-offset applied), attached to top face (D) of deck block ID 9 at [2, -2, 0.0]) <ID 57: Small Wooden Block>\nPosition: [ 2.,-2., 1.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -2. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2.5, -2. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2. , -1.5,  1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 2. , -2.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2. , -2. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 10,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Side rail 57 @ [2, -1, 1.0] (z-offset applied), attached to top face (D) of deck block ID 10 at [2, -1, 0.0]"
+    },
+    "result": "You have successfully added <ID 58: Small Wooden Block>.\nExisting Blocks: 58\n(Side rail 57 @ [2, -1, 1.0] (z-offset applied), attached to top face (D) of deck block ID 10 at [2, -1, 0.0]) <ID 58: Small Wooden Block>\nPosition: [ 2.,-1., 1.]\nAttachable Faces:\nFace label: A, Face center: [ 1.5, -1. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 2.5, -1. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2. , -0.5,  1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 2. , -1.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2. , -1. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 11,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Side rail 59 @ [2, 0, 1.0] (z-offset applied), attached to top face (D) of deck block ID 11 at [2, 0, 0.0]"
+    },
+    "result": "You have successfully added <ID 59: Small Wooden Block>.\nExisting Blocks: 59\n(Side rail 59 @ [2, 0, 1.0] (z-offset applied), attached to top face (D) of deck block ID 11 at [2, 0, 0.0]) <ID 59: Small Wooden Block>\nPosition: [2.,0.,1.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 0. , 1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [2.5, 0. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [2. , 0.5, 1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 2. , -0.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [2. , 0. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 12,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Side rail 60 @ [2, 1, 1.0] (z-offset applied), attached to top face (D) of deck block ID 12 at [2, 1, 0.0]"
+    },
+    "result": "You have successfully added <ID 60: Small Wooden Block>.\nExisting Blocks: 60\n(Side rail 60 @ [2, 1, 1.0] (z-offset applied), attached to top face (D) of deck block ID 12 at [2, 1, 0.0]) <ID 60: Small Wooden Block>\nPosition: [2.,1.,1.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 1. , 1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [2.5, 1. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [2. , 1.5, 1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [2. , 0.5, 1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [2. , 1. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 13,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Side rail 61 @ [2, 2, 1.0] (z-offset applied), attached to top face (D) of deck block ID 13 at [2, 2, 0.0]"
+    },
+    "result": "You have successfully added <ID 61: Small Wooden Block>.\nExisting Blocks: 61\n(Side rail 61 @ [2, 2, 1.0] (z-offset applied), attached to top face (D) of deck block ID 13 at [2, 2, 0.0]) <ID 61: Small Wooden Block>\nPosition: [2.,2.,1.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 2. , 1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [2.5, 2. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [2. , 2.5, 1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [2. , 1.5, 1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [2. , 2. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 14,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Side rail 62 @ [2, 3, 1.0] (z-offset applied), attached to top face (D) of deck block ID 14 at [2, 3, 0.0]"
+    },
+    "result": "You have successfully added <ID 62: Small Wooden Block>.\nExisting Blocks: 62\n(Side rail 62 @ [2, 3, 1.0] (z-offset applied), attached to top face (D) of deck block ID 14 at [2, 3, 0.0]) <ID 62: Small Wooden Block>\nPosition: [2.,3.,1.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 3. , 1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [2.5, 3. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [2. , 3.5, 1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [2. , 2.5, 1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [2. , 3. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 15,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Side rail 62 @ [2, 4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 15 at [2, 4, 0.0]"
+    },
+    "result": "You have successfully added <ID 63: Small Wooden Block>.\nExisting Blocks: 63\n(Side rail 62 @ [2, 4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 15 at [2, 4, 0.0]) <ID 63: Small Wooden Block>\nPosition: [2.,4.,1.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 4. , 1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [2.5, 4. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [2. , 4.5, 1. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [2. , 3.5, 1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [2. , 4. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 18,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Front post lower 63 @ [-1, 4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 18 at [-1, 4, 0.0]"
+    },
+    "result": "You have successfully added <ID 64: Small Wooden Block>.\nExisting Blocks: 64\n(Front post lower 63 @ [-1, 4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 18 at [-1, 4, 0.0]) <ID 64: Small Wooden Block>\nPosition: [-1., 4., 1.]\nAttachable Faces:\nFace label: A, Face center: [-1. ,  3.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. ,  4.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1.5,  4. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [-0.5,  4. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1. ,  4. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 17,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Front post lower 64 @ [0, 4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 17 at [0, 4, 0.0]"
+    },
+    "result": "You have successfully added <ID 65: Small Wooden Block>.\nExisting Blocks: 65\n(Front post lower 64 @ [0, 4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 17 at [0, 4, 0.0]) <ID 65: Small Wooden Block>\nPosition: [0.,4.,1.]\nAttachable Faces:\nFace label: A, Face center: [0. , 3.5, 1. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: B, Face center: [0. , 4.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [-0.5,  4. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [0.5, 4. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 4. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 16,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Front post lower 65 @ [1, 4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 16 at [1, 4, 0.0]"
+    },
+    "result": "You have successfully added <ID 66: Small Wooden Block>.\nExisting Blocks: 66\n(Front post lower 65 @ [1, 4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 16 at [1, 4, 0.0]) <ID 66: Small Wooden Block>\nPosition: [1.,4.,1.]\nAttachable Faces:\nFace label: A, Face center: [1. , 3.5, 1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [1. , 4.5, 1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [0.5, 4. , 1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [1.5, 4. , 1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [1. , 4. , 1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 28,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Rear post lower 66 @ [-1, -4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 28 at [-1, -4, 0.0]"
+    },
+    "result": "You have successfully added <ID 67: Small Wooden Block>.\nExisting Blocks: 67\n(Rear post lower 66 @ [-1, -4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 28 at [-1, -4, 0.0]) <ID 67: Small Wooden Block>\nPosition: [-1.,-4., 1.]\nAttachable Faces:\nFace label: A, Face center: [-1. , -3.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -4.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-0.5, -4. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5, -4. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1. , -4. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 5,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Rear post lower 67 @ [0, -4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 5 at [0, -4, 0.0]"
+    },
+    "result": "You have successfully added <ID 68: Small Wooden Block>.\nExisting Blocks: 68\n(Rear post lower 67 @ [0, -4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 5 at [0, -4, 0.0]) <ID 68: Small Wooden Block>\nPosition: [ 0.,-4., 1.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -4. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -4. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -4.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 0. , -3.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 0. , -4. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 6,
+      "face": "D",
+      "new_block": "Small Wooden Block",
+      "note": "Rear post lower 68 @ [1, -4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 6 at [1, -4, 0.0]"
+    },
+    "result": "You have successfully added <ID 69: Small Wooden Block>.\nExisting Blocks: 69\n(Rear post lower 68 @ [1, -4, 1.0] (z-offset applied), attached to top face (D) of deck block ID 6 at [1, -4, 0.0]) <ID 69: Small Wooden Block>\nPosition: [ 1.,-4., 1.]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -3.5,  1. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [ 1. , -4.5,  1. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1.5, -4. ,  1. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 0.5, -4. ,  1. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 1. , -4. ,  1.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 54,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Front post upper 69 @ [-2, 4, 2.0] (z-offset applied), attached to top face of side rail block ID 54 at [-2, 4, 1.0]"
+    },
+    "result": "You have successfully added <ID 70: Small Wooden Block>.\nExisting Blocks: 70\n(Front post upper 69 @ [-2, 4, 2.0] (z-offset applied), attached to top face of side rail block ID 54 at [-2, 4, 1.0]) <ID 70: Small Wooden Block>\nPosition: [-2., 4., 2.]\nAttachable Faces:\nFace label: A, Face center: [-2. ,  3.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [-2. ,  4.5,  2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2.5,  4. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5,  4. ,  2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2. ,  4. ,  2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 64,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Front post upper 70 @ [-1, 4, 2.0] (z-offset applied), attached to top face (E) of lower front post block ID 64 at [-1, 4, 1.0]"
+    },
+    "result": "You have successfully added <ID 71: Small Wooden Block>.\nExisting Blocks: 71\n(Front post upper 70 @ [-1, 4, 2.0] (z-offset applied), attached to top face (E) of lower front post block ID 64 at [-1, 4, 1.0]) <ID 71: Small Wooden Block>\nPosition: [-1., 4., 2.]\nAttachable Faces:\nFace label: A, Face center: [-1. ,  3.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. ,  4.5,  2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [-1.5,  4. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [-0.5,  4. ,  2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1. ,  4. ,  2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 65,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Front post upper 71 @ [0, 4, 2.0] (z-offset applied), attached to top face (E) of lower front post block ID 65 at [0, 4, 1.0]"
+    },
+    "result": "You have successfully added <ID 72: Small Wooden Block>.\nExisting Blocks: 72\n(Front post upper 71 @ [0, 4, 2.0] (z-offset applied), attached to top face (E) of lower front post block ID 65 at [0, 4, 1.0]) <ID 72: Small Wooden Block>\nPosition: [0.,4.,2.]\nAttachable Faces:\nFace label: A, Face center: [0. , 3.5, 2. ], Facing towards <South with -0.0\u00b0 pitch>\nFace label: B, Face center: [0. , 4.5, 2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [-0.5,  4. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [0.5, 4. , 2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 4. , 2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 66,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Front post upper 72 @ [1, 4, 2.0] (z-offset applied), attached to top face (E) of lower front post block ID 66 at [1, 4, 1.0]"
+    },
+    "result": "You have successfully added <ID 73: Small Wooden Block>.\nExisting Blocks: 73\n(Front post upper 72 @ [1, 4, 2.0] (z-offset applied), attached to top face (E) of lower front post block ID 66 at [1, 4, 1.0]) <ID 73: Small Wooden Block>\nPosition: [1.,4.,2.]\nAttachable Faces:\nFace label: A, Face center: [1. , 3.5, 2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: B, Face center: [1. , 4.5, 2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: C, Face center: [0.5, 4. , 2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [1.5, 4. , 2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [1. , 4. , 2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 63,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Front post upper 73 @ [2, 4, 2.0] (z-offset applied), attached to top face (E) of side rail block ID 63 at [2, 4, 1.0]"
+    },
+    "result": "You have successfully added <ID 74: Small Wooden Block>.\nExisting Blocks: 74\n(Front post upper 73 @ [2, 4, 2.0] (z-offset applied), attached to top face (E) of side rail block ID 63 at [2, 4, 1.0]) <ID 74: Small Wooden Block>\nPosition: [2.,4.,2.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 4. , 2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [2.5, 4. , 2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: C, Face center: [2. , 4.5, 2. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: D, Face center: [2. , 3.5, 2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: E, Face center: [2. , 4. , 2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 46,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Rear post upper 74 @ [-2, -4, 2.0] (z-offset applied), attached to top face (E) of side rail block ID 46 at [-2, -4, 1.0]"
+    },
+    "result": "You have successfully added <ID 75: Small Wooden Block>.\nExisting Blocks: 75\n(Rear post upper 74 @ [-2, -4, 2.0] (z-offset applied), attached to top face (E) of side rail block ID 46 at [-2, -4, 1.0]) <ID 75: Small Wooden Block>\nPosition: [-2.,-4., 2.]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -4. ,  2. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5, -4. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. , -4.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [-2. , -3.5,  2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2. , -4. ,  2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 67,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Rear post upper 75 @ [-1, -4, 2.0] (z-offset applied), attached to top face (E) of lower rear post block ID 67 at [-1, -4, 1.0]"
+    },
+    "result": "You have successfully added <ID 76: Small Wooden Block>.\nExisting Blocks: 76\n(Rear post upper 75 @ [-1, -4, 2.0] (z-offset applied), attached to top face (E) of lower rear post block ID 67 at [-1, -4, 1.0]) <ID 76: Small Wooden Block>\nPosition: [-1.,-4., 2.]\nAttachable Faces:\nFace label: A, Face center: [-1. , -3.5,  2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: B, Face center: [-1. , -4.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [-0.5, -4. ,  2. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5, -4. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1. , -4. ,  2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 68,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Rear post upper 76 @ [0, -4, 2.0] (z-offset applied), attached to top face (E) of lower rear post block ID 68 at [0, -4, 1.0]"
+    },
+    "result": "You have successfully added <ID 77: Small Wooden Block>.\nExisting Blocks: 77\n(Rear post upper 76 @ [0, -4, 2.0] (z-offset applied), attached to top face (E) of lower rear post block ID 68 at [0, -4, 1.0]) <ID 77: Small Wooden Block>\nPosition: [ 0.,-4., 2.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -4. ,  2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -4. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -4.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 0. , -3.5,  2. ], Facing towards <North with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 0. , -4. ,  2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 69,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Rear post upper 77 @ [1, -4, 2.0] (z-offset applied), attached to top face (E) of lower rear post block ID 69 at [1, -4, 1.0]"
+    },
+    "result": "You have successfully added <ID 78: Small Wooden Block>.\nExisting Blocks: 78\n(Rear post upper 77 @ [1, -4, 2.0] (z-offset applied), attached to top face (E) of lower rear post block ID 69 at [1, -4, 1.0]) <ID 78: Small Wooden Block>\nPosition: [ 1.,-4., 2.]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -3.5,  2. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: B, Face center: [ 1. , -4.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 1.5, -4. ,  2. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 0.5, -4. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 1. , -4. ,  2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 55,
+      "face": "E",
+      "new_block": "Small Wooden Block",
+      "note": "Rear post upper 78 @ [2, -4, 2.0] (z-offset applied), attached to top face (E) of side rail block ID 55 at [2, -4, 1.0]"
+    },
+    "result": "You have successfully added <ID 79: Small Wooden Block>.\nExisting Blocks: 79\n(Rear post upper 78 @ [2, -4, 2.0] (z-offset applied), attached to top face (E) of side rail block ID 55 at [2, -4, 1.0]) <ID 79: Small Wooden Block>\nPosition: [ 2.,-4., 2.]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -3.5,  2. ], Facing towards <North with -0.0\u00b0 pitch>\nFace label: B, Face center: [ 2. , -4.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 2.5, -4. ,  2. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -4. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2. , -4. ,  2.5], Facing towards <straight up>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 70,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Front bumper 79 @ [-2, 5, 2.0] (z-offset applied), attached to north face (B) of front post upper block ID 70 at [-2, 4, 2.0]"
+    },
+    "result": "You have successfully added <ID 80: Small Wooden Block>.\nExisting Blocks: 80\n(Front bumper 79 @ [-2, 5, 2.0] (z-offset applied), attached to north face (B) of front post upper block ID 70 at [-2, 4, 2.0]) <ID 80: Small Wooden Block>\nPosition: [-2., 5., 2.]\nAttachable Faces:\nFace label: A, Face center: [-2. ,  5. ,  2.5], Facing towards <straight up>\nFace label: B, Face center: [-2. ,  5. ,  1.5], Facing towards <straight down>\nFace label: C, Face center: [-2.5,  5. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5,  5. ,  2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: E, Face center: [-2. ,  5.5,  2. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 71,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Front bumper 80 @ [-1, 5, 2.0] (z-offset applied), attached to north face (B) of front post upper block ID 71 at [-1, 4, 2.0]"
+    },
+    "result": "You have successfully added <ID 81: Small Wooden Block>.\nExisting Blocks: 81\n(Front bumper 80 @ [-1, 5, 2.0] (z-offset applied), attached to north face (B) of front post upper block ID 71 at [-1, 4, 2.0]) <ID 81: Small Wooden Block>\nPosition: [-1., 5., 2.]\nAttachable Faces:\nFace label: A, Face center: [-1. ,  5. ,  2.5], Facing towards <straight up>\nFace label: B, Face center: [-1. ,  5. ,  1.5], Facing towards <straight down>\nFace label: C, Face center: [-1.5,  5. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [-0.5,  5. ,  2. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [-1. ,  5.5,  2. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 72,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Front bumper 81 @ [0, 5, 2.0] (z-offset applied), attached to north face (B) of front post upper block ID 72 at [0, 4, 2.0]"
+    },
+    "result": "You have successfully added <ID 82: Small Wooden Block>.\nExisting Blocks: 82\n(Front bumper 81 @ [0, 5, 2.0] (z-offset applied), attached to north face (B) of front post upper block ID 72 at [0, 4, 2.0]) <ID 82: Small Wooden Block>\nPosition: [0.,5.,2.]\nAttachable Faces:\nFace label: A, Face center: [0. , 5. , 2.5], Facing towards <straight up>\nFace label: B, Face center: [0. , 5. , 1.5], Facing towards <straight down>\nFace label: C, Face center: [-0.5,  5. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [0.5, 5. , 2. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [0. , 5.5, 2. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 73,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Front bumper 82 @ [1, 5, 2.0] (z-offset applied), attached to north face (B) of front post upper block ID 73 at [1, 4, 2.0]"
+    },
+    "result": "You have successfully added <ID 83: Small Wooden Block>.\nExisting Blocks: 83\n(Front bumper 82 @ [1, 5, 2.0] (z-offset applied), attached to north face (B) of front post upper block ID 73 at [1, 4, 2.0]) <ID 83: Small Wooden Block>\nPosition: [1.,5.,2.]\nAttachable Faces:\nFace label: A, Face center: [1. , 5. , 2.5], Facing towards <straight up>\nFace label: B, Face center: [1. , 5. , 1.5], Facing towards <straight down>\nFace label: C, Face center: [0.5, 5. , 2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: D, Face center: [1.5, 5. , 2. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: E, Face center: [1. , 5.5, 2. ], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 74,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Front bumper 83 @ [2, 5, 2.0] (z-offset applied), attached to north face (C) of front post upper block ID 74 at [2, 4, 2.0]"
+    },
+    "result": "You have successfully added <ID 84: Small Wooden Block>.\nExisting Blocks: 84\n(Front bumper 83 @ [2, 5, 2.0] (z-offset applied), attached to north face (C) of front post upper block ID 74 at [2, 4, 2.0]) <ID 84: Small Wooden Block>\nPosition: [2.,5.,2.]\nAttachable Faces:\nFace label: A, Face center: [1.5, 5. , 2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: B, Face center: [2.5, 5. , 2. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: C, Face center: [2. , 5. , 1.5], Facing towards <straight down>\nFace label: D, Face center: [2. , 5. , 2.5], Facing towards <straight up>\nFace label: E, Face center: [2. , 5.5, 2. ], Facing towards <North with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 75,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Rear bumper 84 @ [-2, -5, 2.0] (z-offset applied), attached to south face (C) of rear post upper block ID 75 at [-2, -4, 2.0]"
+    },
+    "result": "You have successfully added <ID 85: Small Wooden Block>.\nExisting Blocks: 85\n(Rear bumper 84 @ [-2, -5, 2.0] (z-offset applied), attached to south face (C) of rear post upper block ID 75 at [-2, -4, 2.0]) <ID 85: Small Wooden Block>\nPosition: [-2.,-5., 2.]\nAttachable Faces:\nFace label: A, Face center: [-1.5, -5. ,  2. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: B, Face center: [-2.5, -5. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [-2. , -5. ,  1.5], Facing towards <straight down>\nFace label: D, Face center: [-2. , -5. ,  2.5], Facing towards <straight up>\nFace label: E, Face center: [-2. , -5.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 76,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Rear bumper 85 @ [-1, -5, 2.0] (z-offset applied), attached to south face (B) of rear post upper block ID 76 at [-1, -4, 2.0]"
+    },
+    "result": "You have successfully added <ID 86: Small Wooden Block>.\nExisting Blocks: 86\n(Rear bumper 85 @ [-1, -5, 2.0] (z-offset applied), attached to south face (B) of rear post upper block ID 76 at [-1, -4, 2.0]) <ID 86: Small Wooden Block>\nPosition: [-1.,-5., 2.]\nAttachable Faces:\nFace label: A, Face center: [-1. , -5. ,  2.5], Facing towards <straight up>\nFace label: B, Face center: [-1. , -5. ,  1.5], Facing towards <straight down>\nFace label: C, Face center: [-0.5, -5. ,  2. ], Facing towards <East with -0.0\u00b0 pitch>\nFace label: D, Face center: [-1.5, -5. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [-1. , -5.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 77,
+      "face": "C",
+      "new_block": "Small Wooden Block",
+      "note": "Rear bumper 86 @ [0, -5, 2.0] (z-offset applied), attached to south face (C) of rear post upper block ID 77 at [0, -4, 2.0]"
+    },
+    "result": "You have successfully added <ID 87: Small Wooden Block>.\nExisting Blocks: 87\n(Rear bumper 86 @ [0, -5, 2.0] (z-offset applied), attached to south face (C) of rear post upper block ID 77 at [0, -4, 2.0]) <ID 87: Small Wooden Block>\nPosition: [ 0.,-5., 2.]\nAttachable Faces:\nFace label: A, Face center: [ 0.5, -5. ,  2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: B, Face center: [-0.5, -5. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: C, Face center: [ 0. , -5. ,  1.5], Facing towards <straight down>\nFace label: D, Face center: [ 0. , -5. ,  2.5], Facing towards <straight up>\nFace label: E, Face center: [ 0. , -5.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 78,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Rear bumper 87 @ [1, -5, 2.0] (z-offset applied), attached to south face (B) of rear post upper block ID 78 at [1, -4, 2.0]"
+    },
+    "result": "You have successfully added <ID 88: Small Wooden Block>.\nExisting Blocks: 88\n(Rear bumper 87 @ [1, -5, 2.0] (z-offset applied), attached to south face (B) of rear post upper block ID 78 at [1, -4, 2.0]) <ID 88: Small Wooden Block>\nPosition: [ 1.,-5., 2.]\nAttachable Faces:\nFace label: A, Face center: [ 1. , -5. ,  2.5], Facing towards <straight up>\nFace label: B, Face center: [ 1. , -5. ,  1.5], Facing towards <straight down>\nFace label: C, Face center: [ 1.5, -5. ,  2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 0.5, -5. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 1. , -5.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 79,
+      "face": "B",
+      "new_block": "Small Wooden Block",
+      "note": "Rear bumper 88 @ [2, -5, 2.0] (z-offset applied), attached to south face (B) of rear post upper block ID 79 at [2, -4, 2.0]"
+    },
+    "result": "You have successfully added <ID 89: Small Wooden Block>.\nExisting Blocks: 89\n(Rear bumper 88 @ [2, -5, 2.0] (z-offset applied), attached to south face (B) of rear post upper block ID 79 at [2, -4, 2.0]) <ID 89: Small Wooden Block>\nPosition: [ 2.,-5., 2.]\nAttachable Faces:\nFace label: A, Face center: [ 2. , -5. ,  2.5], Facing towards <straight up>\nFace label: B, Face center: [ 2. , -5. ,  1.5], Facing towards <straight down>\nFace label: C, Face center: [ 2.5, -5. ,  2. ], Facing towards <East with 0.0\u00b0 pitch>\nFace label: D, Face center: [ 1.5, -5. ,  2. ], Facing towards <West with 0.0\u00b0 pitch>\nFace label: E, Face center: [ 2. , -5.5,  2. ], Facing towards <South with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 19,
+      "face": "B",
+      "new_block": "Powered Wheel",
+      "note": "Powered Wheel WN (West Front) @ [-2, 4.5, 0.0]; mounted on NORTH face (B) of deck block ID 19 at [-2, 4, 0.0]; oriented to roll along y-axis; controls: LfF forward, LfB backward"
+    },
+    "result": "You have successfully added <ID 90: Powered Wheel>.\nExisting Blocks: 90\n(Powered Wheel WN (West Front) @ [-2, 4.5, 0.0]; mounted on NORTH face (B) of deck block ID 19 at [-2, 4, 0.0]; oriented to roll along y-axis; controls: LfF forward, LfB backward) <ID 90: Powered Wheel>\nPosition: [-2. , 4.5, 0. ]\nRolling towards <West with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [-2.,  5.,  0.], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 17,
+      "face": "B",
+      "new_block": "Powered Wheel",
+      "note": "Powered Wheel CN (Center Front) @ [0, 4.5, 0.0]; mounted on NORTH face (B) of deck block ID 17 at [0, 4, 0.0]; intended to roll along y-axis; controls: CtF forward, CtB backward"
+    },
+    "result": "You have successfully added <ID 91: Powered Wheel>.\nExisting Blocks: 91\n(Powered Wheel CN (Center Front) @ [0, 4.5, 0.0]; mounted on NORTH face (B) of deck block ID 17 at [0, 4, 0.0]; intended to roll along y-axis; controls: CtF forward, CtB backward) <ID 91: Powered Wheel>\nPosition: [0. ,4.5,0. ]\nRolling towards <West with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [0., 5., 0.], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 15,
+      "face": "E",
+      "new_block": "Powered Wheel",
+      "note": "Powered Wheel EN (East Front) @ [2, 4.5, 0.0]; mounted on NORTH face (E) of deck block ID 15 at [2, 4, 0.0]; intended to roll along y-axis; controls: RtF forward, RtB backward"
+    },
+    "result": "You have successfully added <ID 92: Powered Wheel>.\nExisting Blocks: 92\n(Powered Wheel EN (East Front) @ [2, 4.5, 0.0]; mounted on NORTH face (E) of deck block ID 15 at [2, 4, 0.0]; intended to roll along y-axis; controls: RtF forward, RtB backward) <ID 92: Powered Wheel>\nPosition: [2. ,4.5,0. ]\nRolling towards <West with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [2., 5., 0.], Facing towards <North with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "twist_block",
+    "params": {
+      "block_id": 90,
+      "angle": 90.0
+    },
+    "result": "The block 90 <Powered Wheel> is twisted by 90.0 degrees. \n (Powered Wheel WN (West Front) @ [-2, 4.5, 0.0]; mounted on NORTH face (B) of deck block ID 19 at [-2, 4, 0.0]; oriented to roll along y-axis; controls: LfF forward, LfB backward) <ID 90: Powered Wheel>\nPosition: [-2. , 4.5, 0. ]\nRolling towards <West with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [-2.,  5.,  0.], Facing towards <North with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 90
+    },
+    "result": "You have successfully removed <ID 90: Powered Wheel>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 19,
+      "face": "E",
+      "new_block": "Powered Wheel",
+      "note": "Powered Wheel WN (West Front, remounted) @ [-2.5, 4.0, 0.0]; mounted on WEST face (E) of deck block ID 19 at [-2, 4, 0.0]; intended to roll along y-axis; controls: LfF forward, LfB backward"
+    },
+    "result": "You have successfully added <ID 93: Powered Wheel>.\nExisting Blocks: 92\n(Powered Wheel WN (West Front, remounted) @ [-2.5, 4.0, 0.0]; mounted on WEST face (E) of deck block ID 19 at [-2, 4, 0.0]; intended to roll along y-axis; controls: LfF forward, LfB backward) <ID 93: Powered Wheel>\nPosition: [-2.5, 4. , 0. ]\nRolling towards <South with -0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [-3.,  4.,  0.], Facing towards <West with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 91
+    },
+    "result": "You have successfully removed <ID 91: Powered Wheel>."
+  },
+  {
+    "op": "remove_block",
+    "params": {
+      "block_id": 92
+    },
+    "result": "You have successfully removed <ID 92: Powered Wheel>."
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 15,
+      "face": "B",
+      "new_block": "Powered Wheel",
+      "note": "Powered Wheel EN (East Front, remounted) @ [2.5, 4.0, 0.0]; mounted on EAST face (B) of deck block ID 15 at [2, 4, 0.0]; intended to roll along y-axis; controls: RtF forward, RtB backward"
+    },
+    "result": "You have successfully added <ID 94: Powered Wheel>.\nExisting Blocks: 91\n(Powered Wheel EN (East Front, remounted) @ [2.5, 4.0, 0.0]; mounted on EAST face (B) of deck block ID 15 at [2, 4, 0.0]; intended to roll along y-axis; controls: RtF forward, RtB backward) <ID 94: Powered Wheel>\nPosition: [2.5,4. ,0. ]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [3., 4., 0.], Facing towards <East with 0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 27,
+      "face": "B",
+      "new_block": "Powered Wheel",
+      "note": "Powered Wheel WS (West Rear) @ [-2.5, -4.0, 0.0]; mounted on WEST face (B) of deck block ID 27 at [-2, -4, 0.0]; intended to roll along y-axis; controls: LfF forward, LfB backward"
+    },
+    "result": "You have successfully added <ID 95: Powered Wheel>.\nExisting Blocks: 92\n(Powered Wheel WS (West Rear) @ [-2.5, -4.0, 0.0]; mounted on WEST face (B) of deck block ID 27 at [-2, -4, 0.0]; intended to roll along y-axis; controls: LfF forward, LfB backward) <ID 95: Powered Wheel>\nPosition: [-2.5,-4. ,-0. ]\nRolling towards <South with -0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [-3., -4., -0.], Facing towards <West with -0.0\u00b0 pitch>"
+  },
+  {
+    "op": "attach_block_to",
+    "params": {
+      "base_block": 7,
+      "face": "E",
+      "new_block": "Powered Wheel",
+      "note": "Powered Wheel ES (East Rear) @ [2.5, -4.0, 0.0]; mounted on EAST face (E) of deck block ID 7 at [2, -4, 0.0]; intended to roll along y-axis; controls: RtF forward, RtB backward"
+    },
+    "result": "You have successfully added <ID 96: Powered Wheel>.\nExisting Blocks: 93\n(Powered Wheel ES (East Rear) @ [2.5, -4.0, 0.0]; mounted on EAST face (E) of deck block ID 7 at [2, -4, 0.0]; intended to roll along y-axis; controls: RtF forward, RtB backward) <ID 96: Powered Wheel>\nPosition: [ 2.5,-4. , 0. ]\nRolling towards <North with 0.0\u00b0 pitch> with 0\u00b0 camber\nAttachable Faces:\nFace label: E, Face center: [ 3., -4.,  0.], Facing towards <East with 0.0\u00b0 pitch>"
+  }
+]
